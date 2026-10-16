@@ -1032,6 +1032,158 @@
       gap: 18px;
     }
 
+    .wizard-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--bg-page);
+      z-index: 300;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 28px;
+      overflow-y: auto;
+    }
+
+    .wizard-overlay.active {
+      display: flex;
+    }
+
+    .wizard-shell {
+      max-width: 780px;
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .wizard-top {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .wizard-step-dots {
+      display: flex;
+      gap: 8px;
+      flex: 1;
+    }
+
+    .wizard-step-bar {
+      flex: 1;
+      height: 12px;
+      border-radius: 99px;
+      background: var(--bg-panel);
+      border: 2px solid var(--border-line);
+      overflow: hidden;
+    }
+
+    .wizard-step-bar.done {
+      background: var(--duo-green);
+      border-color: var(--duo-green-dark);
+    }
+
+    .wizard-stage {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .wizard-mascot-header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .wizard-bubble {
+      background: var(--bg-panel);
+      border: 2px solid var(--border-line);
+      border-radius: 18px;
+      padding: 16px 20px;
+      font-size: 1.22rem;
+      font-weight: 900;
+      line-height: 1.4;
+      flex: 1;
+    }
+
+    .wizard-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 14px;
+    }
+
+    .wizard-choice-card {
+      background: var(--bg-panel);
+      border: 2px solid var(--border-line);
+      border-bottom: 5px solid var(--border-lip);
+      border-radius: 18px;
+      padding: 18px 14px;
+      color: var(--text-main);
+      font-family: inherit;
+      font-weight: 900;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .wizard-choice-card:hover {
+      background: var(--bg-hover);
+    }
+
+    .wizard-choice-card.selected {
+      background: rgba(88, 204, 2, 0.16);
+      border-color: var(--duo-green);
+      border-bottom-color: var(--duo-green-dark);
+      color: var(--duo-green);
+    }
+
+    .sidebar-course-box {
+      background: var(--bg-panel);
+      border: 2px solid var(--border-line);
+      border-radius: 16px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .enrolled-courses-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .enrolled-pill {
+      background: var(--bg-elevated);
+      border: 2px solid var(--border-line);
+      border-bottom: 3px solid var(--border-lip);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.78rem;
+      font-weight: 900;
+      padding: 5px 9px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .enrolled-pill.active {
+      border-color: var(--duo-green);
+      background: rgba(88, 204, 2, 0.18);
+      color: var(--duo-green);
+    }
+
     .modal-header {
       display: flex;
       align-items: center;
@@ -1277,6 +1429,17 @@
             <polygon points="32,32 26,41 38,41" fill="#ffc800"/>
           </svg>
           <span class="brand-logo-text nav-tab-label">PolyglotTV</span>
+        </div>
+
+        <div class="sidebar-course-box">
+          <div style="font-size:0.72rem;font-weight:900;text-transform:uppercase;color:var(--text-muted);letter-spacing:0.05em;" class="nav-tab-label" id="nav-lbl-mycourses">
+            My Courses
+          </div>
+          <div class="enrolled-courses-pills" id="sidebar-enrolled-courses"></div>
+          <button class="btn-duo green focusable" tabindex="0" data-action="open-wizard" style="padding:8px 10px;font-size:0.78rem;width:100%;">
+            <span>🌍</span>
+            <span class="nav-tab-label" id="nav-lbl-newcourse">+ Switch / New Language</span>
+          </button>
         </div>
 
         <button class="nav-tab-btn active focusable" tabindex="0" data-action="switch-tab" data-tab="learn">
@@ -1537,6 +1700,10 @@
             <span style="font-size:1.25rem;">🏠</span>
             <span id="mob-lbl-learn">Learn</span>
           </button>
+          <button class="mob-tab focusable" tabindex="0" data-action="open-wizard">
+            <span style="font-size:1.25rem;">🌍</span>
+            <span id="mob-lbl-courses">Courses</span>
+          </button>
           <button class="mob-tab focusable" tabindex="0" data-action="switch-tab" data-tab="practice">
             <span style="font-size:1.25rem;">🏋️</span>
             <span id="mob-lbl-practice">Practice</span>
@@ -1716,6 +1883,30 @@
     </div>
   </div>
 
+  <div class="wizard-overlay" id="overlay-wizard">
+    <div class="wizard-shell">
+      <div class="wizard-top">
+        <button class="lesson-close-x focusable" tabindex="0" data-action="close-wizard" id="btn-wizard-close" title="Cancel" style="display:none;">✕</button>
+        <div class="wizard-step-dots" id="wizard-progress-bars">
+          <div class="wizard-step-bar done"></div>
+          <div class="wizard-step-bar"></div>
+          <div class="wizard-step-bar"></div>
+          <div class="wizard-step-bar"></div>
+        </div>
+      </div>
+
+      <div class="wizard-stage" id="wizard-stage-content">
+        <!-- Dynamically rendered by WizardEngine -->
+      </div>
+
+      <div class="lesson-bottom-dock" id="wizard-bottom-dock">
+        <button class="btn-duo outline focusable" tabindex="0" data-action="wizard-prev" id="btn-wizard-prev">← Back</button>
+        <div style="font-size:0.9rem;color:var(--text-muted);font-weight:800;" id="wizard-status-hint"></div>
+        <button class="btn-duo green focusable" tabindex="0" data-action="wizard-next" id="btn-wizard-next">CONTINUE →</button>
+      </div>
+    </div>
+  </div>
+
   <script>
     (function () {
       "use strict";
@@ -1816,6 +2007,76 @@
           speakPrompt: "Pronuncia esta frase en voz alta"
         }
       };
+
+      const WIZARD_I18N = {
+        en: {
+          step1Msg: "Welcome to PolyglotTV! First, choose the language you speak (this will also set your app interface language):",
+          step2Msg: "Awesome! Which language would you like to learn?",
+          step3Msg: "How much of this language do you already know?",
+          scratchTitle: "🌱 I'm starting from scratch (CEFR A1)",
+          scratchDesc: "Begin with core greetings, basic script, and essential phrases.",
+          quizTitle: "🎯 Find my exact level (5-Question Placement Quiz)",
+          quizDesc: "Take a quick 60-second adaptive test from A1 to C2 to estimate your exact level.",
+          manualTitle: "⚡ Or pick a specific CEFR level directly:",
+          quizPrompt: "Placement Question",
+          resultTitle: "Placement Complete! Estimated Level:",
+          resultSub: "We customized your learning path based on your answers. You can adjust this anytime.",
+          startCourseBtn: "🚀 Start Learning Now",
+          myCourses: "My Courses",
+          newCourseBtn: "+ Switch / New Language"
+        },
+        fr: {
+          step1Msg: "Bienvenue sur PolyglotTV ! Choisissez la langue que vous parlez (langue de l'interface) :",
+          step2Msg: "Super ! Quelle langue souhaitez-vous apprendre ?",
+          step3Msg: "Quel est votre niveau actuel dans cette langue ?",
+          scratchTitle: "🌱 Je débute de zéro (CECRL A1)",
+          scratchDesc: "Commencez par les salutations, l'alphabet et les bases.",
+          quizTitle: "🎯 Évaluer mon niveau exact (Quiz de 5 questions)",
+          quizDesc: "Passez un test rapide de A1 à C2 pour estimer votre niveau.",
+          manualTitle: "⚡ Ou choisissez directement un niveau CECRL :",
+          quizPrompt: "Question d'évaluation",
+          resultTitle: "Évaluation terminée ! Niveau estimé :",
+          resultSub: "Votre parcours est prêt selon vos réponses.",
+          startCourseBtn: "🚀 Commencer le cours",
+          myCourses: "Mes Cours",
+          newCourseBtn: "+ Changer / Nouvelle langue"
+        },
+        ar: {
+          step1Msg: "مرحباً بك في PolyglotTV! أولاً، اختر لغتك الأم (ستكون أيضاً لغة واجهة التطبيق):",
+          step2Msg: "رائع! ما هي اللغة التي ترغب في تعلّمها؟",
+          step3Msg: "ما هو مستواك الحالي في هذه اللغة؟",
+          scratchTitle: "🌱 أبدأ من الصفر (المستوى المبتدئ A1)",
+          scratchDesc: "ابدأ بالتحيات الأساسية والمفردات اليومية البسيطة.",
+          quizTitle: "🎯 تحديد مستواي بدقة (اختبار قصير من 5 أسئلة)",
+          quizDesc: "أجب عن 5 أسئلة متدرجة الصعوبة لتحديد مستواك الدقيق من A1 إلى C2.",
+          manualTitle: "⚡ أو اختر مستواك يدوياً بشكل مباشر:",
+          quizPrompt: "سؤال تحديد المستوى",
+          resultTitle: "اكتمل الاختبار! مستواك المقترح:",
+          resultSub: "تم إعداد مسار التعلم الخاص بك بناءً على إجاباتك.",
+          startCourseBtn: "🚀 ابدأ التعلّم الآن",
+          myCourses: "دوراتي",
+          newCourseBtn: "+ تبديل / لغة جديدة"
+        },
+        es: {
+          step1Msg: "¡Bienvenido a PolyglotTV! Primero, elige el idioma que hablas (idioma de la interfaz):",
+          step2Msg: "¡Genial! ¿Qué idioma te gustaría aprender?",
+          step3Msg: "¿Cuánto sabes ya de este idioma?",
+          scratchTitle: "🌱 Empiezo desde cero (MCER A1)",
+          scratchDesc: "Comienza con saludos básicos y frases esenciales.",
+          quizTitle: "🎯 Descubrir mi nivel exacto (Test de 5 preguntas)",
+          quizDesc: "Responde 5 preguntas progresivas para estimar tu nivel (A1 a C2).",
+          manualTitle: "⚡ O selecciona un nivel MCER directamente:",
+          quizPrompt: "Pregunta de nivelación",
+          resultTitle: "¡Test completado! Nivel estimado:",
+          resultSub: "Hemos adaptado tu ruta de aprendizaje según tus respuestas.",
+          startCourseBtn: "🚀 Empezar a aprender",
+          myCourses: "Mis Cursos",
+          newCourseBtn: "+ Cambiar / Nuevo idioma"
+        }
+      };
+
+      // 5 progressive items (A1 -> A2 -> B1 -> B2 -> C1/C2) for the placement quiz
+      const PLACEMENT_QUIZ_INDICES = [0, 3, 4, 5, 6];
 
       const LANGUAGES = [
         { code: "zgh", name: "Tamazight", native: "ⵜⴰⵎⴰⵣⵉⵖⵜ", flag: "ⵣ", rtl: false, speech: "tzm-MA", riva: false },
@@ -1919,10 +2180,14 @@
 
       const State = {
         activeTab: "learn",
+        onboarded: false,      // Triggers First-Time Setup Wizard when false
         uiLang: "en",
         srcLang: "en",
         tgtLang: "zgh",
         cefr: "A1",
+        enrolledCourses: [     // Multi-course registry so user can switch between languages on left menu
+          { srcLang: "en", tgtLang: "zgh", cefr: "A1" }
+        ],
         showTopBar: false,     // Disabled by default per user preference
         showFooterHud: false,  // Hidden by default per user preference
         xp: 140,
@@ -1934,6 +2199,7 @@
         crowns: {},
         srs: {},
         session: null,
+        wizard: null,
         admin: {
           scope: "global",
           llmProvider: "nvidia",
@@ -2219,8 +2485,44 @@
       /**/
       function renderApp() {
         const i18n = UI_I18N[State.uiLang] || UI_I18N.en;
+        const wizI18n = WIZARD_I18N[State.uiLang] || WIZARD_I18N.en;
         document.documentElement.lang = State.uiLang;
         document.documentElement.dir = State.uiLang === "ar" ? "rtl" : "ltr";
+
+        // Update Left Menu Multi-Course Switcher Box
+        const myCoursesLbl = document.getElementById("nav-lbl-mycourses");
+        if (myCoursesLbl) myCoursesLbl.textContent = wizI18n.myCourses;
+        const newCourseLbl = document.getElementById("nav-lbl-newcourse");
+        if (newCourseLbl) newCourseLbl.textContent = wizI18n.newCourseBtn;
+
+        const enrolledBox = document.getElementById("sidebar-enrolled-courses");
+        if (enrolledBox) {
+          enrolledBox.innerHTML = "";
+          if (!Array.isArray(State.enrolledCourses) || !State.enrolledCourses.length) {
+            State.enrolledCourses = [{ srcLang: State.srcLang, tgtLang: State.tgtLang, cefr: State.cefr }];
+          }
+          State.enrolledCourses.forEach((course) => {
+            const tMeta = LANGUAGES.find(l => l.code === course.tgtLang) || LANGUAGES[0];
+            const isAct = course.tgtLang === State.tgtLang && course.srcLang === State.srcLang;
+            const pill = document.createElement("button");
+            pill.className = `enrolled-pill focusable ${isAct ? "active" : ""}`;
+            pill.tabIndex = 0;
+            pill.title = `${tMeta.name} (${course.cefr})`;
+            pill.innerHTML = `<span>${tMeta.flag}</span><span>${tMeta.code.toUpperCase()} • ${course.cefr}</span>`;
+            pill.onclick = () => {
+              SoundFX.pop();
+              State.srcLang = course.srcLang;
+              State.tgtLang = course.tgtLang;
+              State.cefr = course.cefr;
+              if (["en", "fr", "ar", "es"].includes(course.srcLang)) {
+                State.uiLang = course.srcLang;
+              }
+              saveAll();
+              renderApp();
+            };
+            enrolledBox.appendChild(pill);
+          });
+        }
 
         // Toggle Optional Top Bar & Optional Footer HUD (both OFF by default)
         const topNavbar = document.querySelector(".permanent-top-navbar");
@@ -2360,6 +2662,348 @@
         };
         renderRows(document.getElementById("sidebar-league-rows"));
         renderRows(document.getElementById("full-leaderboard-list"));
+      }
+
+      function enrollOrUpdateCourse(srcLang, tgtLang, cefr) {
+        if (!Array.isArray(State.enrolledCourses)) State.enrolledCourses = [];
+        const existing = State.enrolledCourses.find(c => c.tgtLang === tgtLang && c.srcLang === srcLang);
+        if (existing) {
+          existing.cefr = cefr;
+        } else {
+          State.enrolledCourses.push({ srcLang, tgtLang, cefr });
+        }
+      }
+
+      function openSetupWizard(canCancel = true) {
+        State.wizard = {
+          step: 1, // 1: Native/UI Lang, 2: Target Lang, 3: Level Mode or Quiz, 4: Placement Quiz / Result
+          canCancel,
+          uiSrcLang: ["en", "fr", "ar", "es"].includes(State.srcLang) ? State.srcLang : State.uiLang,
+          tgtLang: State.tgtLang === State.srcLang ? "zgh" : State.tgtLang,
+          mode: "quiz", // "scratch" | "quiz" | "manual"
+          cefr: State.cefr || "A1",
+          quizIndex: 0,
+          quizScore: 0,
+          quizSelectedOption: null
+        };
+        const closeBtn = document.getElementById("btn-wizard-close");
+        if (closeBtn) closeBtn.style.display = canCancel ? "inline-block" : "none";
+        document.getElementById("overlay-wizard").classList.add("active");
+        renderWizardStep();
+      }
+
+      function renderWizardStep() {
+        const w = State.wizard;
+        if (!w) return;
+        const t = WIZARD_I18N[w.uiSrcLang] || WIZARD_I18N.en;
+        const isRtl = w.uiSrcLang === "ar";
+        const overlay = document.getElementById("overlay-wizard");
+        overlay.dir = isRtl ? "rtl" : "ltr";
+
+        // Progress bars
+        const bars = document.querySelectorAll("#wizard-progress-bars .wizard-step-bar");
+        bars.forEach((b, i) => b.classList.toggle("done", i < w.step));
+
+        const stage = document.getElementById("wizard-stage-content");
+        const prevBtn = document.getElementById("btn-wizard-prev");
+        const nextBtn = document.getElementById("btn-wizard-next");
+        const hintEl = document.getElementById("wizard-status-hint");
+        stage.innerHTML = "";
+        hintEl.textContent = "";
+
+        prevBtn.style.visibility = w.step > 1 ? "visible" : "hidden";
+        nextBtn.style.display = "inline-flex";
+        nextBtn.textContent = (UI_I18N[w.uiSrcLang] || UI_I18N.en).next + " →";
+
+        if (w.step === 1) {
+          // STEP 1: Select User's Native / Source Language (Sets UI Language too)
+          const uiChoices = [
+            { code: "en", name: "English", native: "English", flag: "🇬🇧" },
+            { code: "fr", name: "French", native: "Français", flag: "🇫🇷" },
+            { code: "ar", name: "Arabic", native: "العربية", flag: "🇲🇦" },
+            { code: "es", name: "Spanish", native: "Español", flag: "🇪🇸" }
+          ];
+          stage.innerHTML = `
+            <div class="wizard-mascot-header">
+              <div>${mascotSVG("idle", 64)}</div>
+              <div class="wizard-bubble">${t.step1Msg}</div>
+            </div>
+            <div class="wizard-cards-grid" id="wiz-grid-step1"></div>
+          `;
+          const grid = stage.querySelector("#wiz-grid-step1");
+          uiChoices.forEach(lang => {
+            const card = document.createElement("button");
+            card.className = `wizard-choice-card focusable ${w.uiSrcLang === lang.code ? "selected" : ""}`;
+            card.tabIndex = 0;
+            card.innerHTML = `
+              <span style="font-size:2.4rem;">${lang.flag}</span>
+              <span style="font-size:1.1rem;">${lang.native}</span>
+              <span style="font-size:0.82rem;color:var(--text-muted);">${lang.name}</span>
+            `;
+            card.onclick = () => {
+              SoundFX.pop();
+              w.uiSrcLang = lang.code;
+              if (w.tgtLang === w.uiSrcLang) {
+                w.tgtLang = LANGUAGES.find(l => l.code !== w.uiSrcLang).code;
+              }
+              renderWizardStep();
+            };
+            grid.appendChild(card);
+          });
+        } else if (w.step === 2) {
+          // STEP 2: Select Target Language to Learn (plus Custom Language Adder)
+          stage.innerHTML = `
+            <div class="wizard-mascot-header">
+              <div>${mascotSVG("idle", 64)}</div>
+              <div class="wizard-bubble">${t.step2Msg}</div>
+            </div>
+            <div class="wizard-cards-grid" id="wiz-grid-step2"></div>
+            <div class="widget-box" style="background:var(--bg-panel);margin-top:4px;">
+              <div style="font-size:0.85rem;font-weight:900;color:var(--text-muted);">➕ Add Another Language to Learn:</div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <input type="text" id="wiz-custom-name" class="focusable" tabindex="0" placeholder="Language Name (e.g. German, Italian)" style="flex:1;background:var(--bg-elevated);border:2px solid var(--border-line);color:#fff;padding:8px 12px;border-radius:10px;font-weight:700;" />
+                <input type="text" id="wiz-custom-code" class="focusable" tabindex="0" placeholder="Code (de, it)" style="width:95px;background:var(--bg-elevated);border:2px solid var(--border-line);color:#fff;padding:8px 12px;border-radius:10px;font-weight:700;" />
+                <button class="btn-duo blue focusable" tabindex="0" id="btn-wiz-add-lang" style="padding:8px 14px;">+ Add</button>
+              </div>
+            </div>
+          `;
+          const grid = stage.querySelector("#wiz-grid-step2");
+          LANGUAGES.filter(l => l.code !== w.uiSrcLang).forEach(lang => {
+            const card = document.createElement("button");
+            card.className = `wizard-choice-card focusable ${w.tgtLang === lang.code ? "selected" : ""}`;
+            card.tabIndex = 0;
+            card.innerHTML = `
+              <span style="font-size:2.4rem;">${lang.flag}</span>
+              <span style="font-size:1.1rem;">${lang.name}</span>
+              <span style="font-size:0.82rem;color:var(--text-muted);">${lang.native}</span>
+            `;
+            card.onclick = () => {
+              SoundFX.pop();
+              w.tgtLang = lang.code;
+              renderWizardStep();
+            };
+            grid.appendChild(card);
+          });
+
+          stage.querySelector("#btn-wiz-add-lang").onclick = () => {
+            const nm = stage.querySelector("#wiz-custom-name").value.trim();
+            const cd = stage.querySelector("#wiz-custom-code").value.trim().toLowerCase();
+            if (nm && cd) {
+              if (!LANGUAGES.some(l => l.code === cd)) {
+                LANGUAGES.push({ code: cd, name: nm, native: nm, flag: "🌐", rtl: false, speech: cd, riva: false });
+              }
+              w.tgtLang = cd;
+              SoundFX.pop();
+              renderWizardStep();
+            }
+          };
+        } else if (w.step === 3) {
+          // STEP 3: Choose Starting Path (Start from Scratch A1, 5-Question Placement Quiz, or Direct CEFR Selection)
+          const tgtMeta = LANGUAGES.find(l => l.code === w.tgtLang) || LANGUAGES[0];
+          stage.innerHTML = `
+            <div class="wizard-mascot-header">
+              <div>${mascotSVG("idle", 64)}</div>
+              <div class="wizard-bubble">${t.step3Msg} (${tgtMeta.flag} ${tgtMeta.name})</div>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <button class="mc-option focusable ${w.mode === "scratch" ? "selected" : ""}" id="wiz-opt-scratch" tabindex="0">
+                <div>
+                  <div style="font-size:1.15rem;font-weight:900;">${t.scratchTitle}</div>
+                  <div style="font-size:0.88rem;color:var(--text-muted);margin-top:4px;">${t.scratchDesc}</div>
+                </div>
+                <span>→</span>
+              </button>
+
+              <button class="mc-option focusable ${w.mode === "quiz" ? "selected" : ""}" id="wiz-opt-quiz" tabindex="0">
+                <div>
+                  <div style="font-size:1.15rem;font-weight:900;color:var(--duo-gold);">${t.quizTitle}</div>
+                  <div style="font-size:0.88rem;color:var(--text-muted);margin-top:4px;">${t.quizDesc}</div>
+                </div>
+                <span>🎯</span>
+              </button>
+            </div>
+
+            <div class="widget-box" style="background:var(--bg-panel);">
+              <div style="font-size:0.88rem;font-weight:900;color:var(--text-muted);">${t.manualTitle}</div>
+              <div class="cefr-pill-group" id="wiz-manual-cefr"></div>
+            </div>
+          `;
+
+          stage.querySelector("#wiz-opt-scratch").onclick = () => {
+            SoundFX.pop();
+            w.mode = "scratch";
+            w.cefr = "A1";
+            renderWizardStep();
+          };
+          stage.querySelector("#wiz-opt-quiz").onclick = () => {
+            SoundFX.pop();
+            w.mode = "quiz";
+            w.quizIndex = 0;
+            w.quizScore = 0;
+            renderWizardStep();
+          };
+
+          const cefrBar = stage.querySelector("#wiz-manual-cefr");
+          SECTIONS.forEach(sec => {
+            const btn = document.createElement("button");
+            btn.className = `cefr-chip-btn focusable ${w.mode === "manual" && w.cefr === sec.cefr ? "active" : ""}`;
+            btn.tabIndex = 0;
+            btn.textContent = `${sec.cefr} • ${sec.name.split(":")[1] || sec.name}`;
+            btn.onclick = () => {
+              SoundFX.pop();
+              w.mode = "manual";
+              w.cefr = sec.cefr;
+              renderWizardStep();
+            };
+            cefrBar.appendChild(btn);
+          });
+        } else if (w.step === 4) {
+          // STEP 4: Either Run the 5-Question Placement Quiz OR Show Final Level Summary
+          if (w.mode === "quiz" && w.quizIndex < 5) {
+            const itemIdx = PLACEMENT_QUIZ_INDICES[w.quizIndex] ?? w.quizIndex;
+            const item = CURRICULUM[itemIdx] || CURRICULUM[0];
+            const tgtMeta = LANGUAGES.find(l => l.code === w.tgtLang) || LANGUAGES[0];
+
+            const promptSentence = item.text[w.tgtLang] || item.text.zgh || item.text.en;
+            const correctTranslation = item.text[w.uiSrcLang] || item.text.en;
+            const decoys = CURRICULUM
+              .filter(c => c.id !== item.id)
+              .slice(0, 3)
+              .map(c => c.text[w.uiSrcLang] || c.text.en);
+
+            if (!w.currentQuizOptions || w.currentQuizId !== item.id) {
+              w.currentQuizId = item.id;
+              w.currentQuizCorrect = correctTranslation;
+              w.currentQuizOptions = [...decoys, correctTranslation].sort(() => Math.random() - 0.5);
+              w.quizSelectedOption = null;
+            }
+
+            stage.innerHTML = `
+              <div class="ex-kicker">${t.quizPrompt} ${w.quizIndex + 1} / 5 • CEFR ${item.cefr}</div>
+              <div class="wizard-mascot-header">
+                <div>${mascotSVG("idle", 58)}</div>
+                <div class="wizard-bubble">
+                  <div style="font-size:0.85rem;color:var(--text-muted);margin-bottom:4px;">What does this ${tgtMeta.name} sentence mean?</div>
+                  <div style="color:var(--duo-gold);font-size:1.35rem;">${promptSentence}</div>
+                  ${w.tgtLang === "zgh" && item.phoneticZgh ? `<div style="font-size:0.82rem;color:var(--text-muted);margin-top:4px;">Phonetic: ${item.phoneticZgh}</div>` : ""}
+                </div>
+              </div>
+              <div class="mc-grid" id="wiz-quiz-options"></div>
+            `;
+
+            const optGrid = stage.querySelector("#wiz-quiz-options");
+            w.currentQuizOptions.forEach((optText, i) => {
+              const btn = document.createElement("button");
+              btn.className = `mc-option focusable ${w.quizSelectedOption === optText ? "selected" : ""}`;
+              btn.tabIndex = 0;
+              btn.innerHTML = `<span>${optText}</span><span class="key-badge">${i + 1}</span>`;
+              btn.onclick = () => {
+                SoundFX.pop();
+                w.quizSelectedOption = optText;
+                renderWizardStep();
+              };
+              optGrid.appendChild(btn);
+            });
+
+            // Also add an "I don't know yet" option so beginners aren't forced to guess blindly
+            const skipBtn = document.createElement("button");
+            skipBtn.className = `mc-option focusable ${w.quizSelectedOption === "__SKIP__" ? "selected" : ""}`;
+            skipBtn.tabIndex = 0;
+            skipBtn.innerHTML = `<span style="color:var(--text-muted);">🤷 I'm not sure yet</span>`;
+            skipBtn.onclick = () => {
+              SoundFX.pop();
+              w.quizSelectedOption = "__SKIP__";
+              renderWizardStep();
+            };
+            optGrid.appendChild(skipBtn);
+
+            nextBtn.textContent = w.quizIndex === 4 ? "See My Level →" : "Next Question →";
+          } else {
+            // Placement Quiz Complete OR Direct Level Confirmation
+            const tgtMeta = LANGUAGES.find(l => l.code === w.tgtLang) || LANGUAGES[0];
+            const secObj = SECTIONS.find(s => s.cefr === w.cefr) || SECTIONS[0];
+            stage.innerHTML = `
+              <div class="speaking-card" style="padding:28px;">
+                <div>${mascotSVG("idle", 76)}</div>
+                <div style="font-size:0.9rem;font-weight:900;color:var(--duo-purple);text-transform:uppercase;">
+                  ${w.mode === "quiz" ? `Score: ${w.quizScore} / 5 Correct` : "Course Ready"}
+                </div>
+                <h2 style="font-size:1.75rem;font-weight:900;">
+                  ${t.resultTitle} <span style="color:var(--duo-green);">${w.cefr}</span>
+                </h2>
+                <div style="font-size:1.15rem;font-weight:800;color:var(--duo-gold);">
+                  ${tgtMeta.flag} ${tgtMeta.name} — ${secObj.name}
+                </div>
+                <p style="color:var(--text-muted);max-width:480px;line-height:1.5;">
+                  ${t.resultSub}
+                </p>
+              </div>
+            `;
+            nextBtn.textContent = t.startCourseBtn;
+          }
+        }
+      }
+
+      async function advanceWizardStep() {
+        const w = State.wizard;
+        if (!w) return;
+
+        if (w.step === 1) {
+          SoundFX.pop();
+          w.step = 2;
+          renderWizardStep();
+        } else if (w.step === 2) {
+          SoundFX.pop();
+          w.step = 3;
+          renderWizardStep();
+        } else if (w.step === 3) {
+          SoundFX.pop();
+          w.step = 4;
+          if (w.mode === "quiz") {
+            w.quizIndex = 0;
+            w.quizScore = 0;
+            w.currentQuizId = null;
+          }
+          renderWizardStep();
+        } else if (w.step === 4) {
+          if (w.mode === "quiz" && w.quizIndex < 5) {
+            if (!w.quizSelectedOption) {
+              document.getElementById("wizard-status-hint").textContent = "Please choose an answer first.";
+              SoundFX.wrong();
+              return;
+            }
+            if (w.quizSelectedOption === w.currentQuizCorrect) {
+              w.quizScore++;
+              SoundFX.correct();
+            } else {
+              SoundFX.pop();
+            }
+            w.quizIndex++;
+            w.currentQuizId = null;
+
+            if (w.quizIndex >= 5) {
+              // Map 0-5 score to CEFR A1-C2
+              const scoreMap = ["A1", "A1", "A2", "B1", "B2", "C1"];
+              w.cefr = scoreMap[Math.min(5, w.quizScore)] || "A1";
+            }
+            renderWizardStep();
+          } else {
+            // Finalize Wizard & Save Course
+            SoundFX.correct();
+            State.uiLang = w.uiSrcLang;
+            State.srcLang = w.uiSrcLang;
+            State.tgtLang = w.tgtLang;
+            State.cefr = w.cefr;
+            State.onboarded = true;
+            enrollOrUpdateCourse(State.srcLang, State.tgtLang, State.cefr);
+            State.wizard = null;
+            document.getElementById("overlay-wizard").classList.remove("active");
+            await saveAll();
+            switchTab("learn");
+            renderApp();
+          }
+        }
       }
 
       function openCourseModal() {
@@ -2812,10 +3456,12 @@
 
       async function saveAll() {
         await Storage.set(`state_${Storage.profileId()}`, {
+          onboarded: State.onboarded,
           uiLang: State.uiLang,
           srcLang: State.srcLang,
           tgtLang: State.tgtLang,
           cefr: State.cefr,
+          enrolledCourses: State.enrolledCourses,
           showTopBar: State.showTopBar,
           showFooterHud: State.showFooterHud,
           xp: State.xp,
@@ -3009,6 +3655,7 @@
           if (State.srcLang === State.tgtLang) {
             State.srcLang = LANGUAGES.find(x => x.code !== State.tgtLang).code;
           }
+          enrollOrUpdateCourse(State.srcLang, State.tgtLang, State.cefr);
           saveAll();
           renderApp();
         };
@@ -3019,6 +3666,10 @@
           if (State.srcLang === State.tgtLang) {
             State.tgtLang = LANGUAGES.find(x => x.code !== State.srcLang).code;
           }
+          if (["en", "fr", "ar", "es"].includes(State.srcLang)) {
+            State.uiLang = State.srcLang;
+          }
+          enrollOrUpdateCourse(State.srcLang, State.tgtLang, State.cefr);
           saveAll();
           renderApp();
         };
@@ -3026,6 +3677,7 @@
         const handleCefrChange = (val) => {
           SoundFX.pop();
           State.cefr = val;
+          enrollOrUpdateCourse(State.srcLang, State.tgtLang, State.cefr);
           saveAll();
           renderApp();
         };
@@ -3061,6 +3713,21 @@
           if (act === "switch-tab") {
             SoundFX.pop();
             switchTab(el.dataset.tab);
+          } else if (act === "open-wizard") {
+            SoundFX.pop();
+            openSetupWizard(true);
+          } else if (act === "close-wizard") {
+            SoundFX.pop();
+            State.wizard = null;
+            document.getElementById("overlay-wizard").classList.remove("active");
+          } else if (act === "wizard-prev") {
+            if (State.wizard && State.wizard.step > 1) {
+              SoundFX.pop();
+              State.wizard.step--;
+              renderWizardStep();
+            }
+          } else if (act === "wizard-next") {
+            advanceWizardStep();
           } else if (act === "toggle-topbar") {
             SoundFX.pop();
             State.showTopBar = !State.showTopBar;
@@ -3173,6 +3840,11 @@
         });
 
         renderApp();
+
+        // Automatically open the First-Time Onboarding Setup Wizard if user hasn't completed setup yet
+        if (!State.onboarded) {
+          openSetupWizard(false);
+        }
       }
 
       window.addEventListener("DOMContentLoaded", boot);
