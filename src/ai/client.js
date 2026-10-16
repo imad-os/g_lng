@@ -1,8 +1,8 @@
 // Language model client: OpenAI-compatible chat (NVIDIA NIM, OpenAI) and Gemini generateContent.
 // Error messages come from t('ai.err*') and never contain the key.
-import { aiConfig, viaProxy } from './config.js?v=2.5.3';
-import { setAiStatus } from './status.js?v=2.5.3';
-import { t } from '../platform/i18n.js?v=2.5.3';
+import { aiConfig, viaProxy } from './config.js?v=2.5.4';
+import { setAiStatus } from './status.js?v=2.5.4';
+import { t } from '../platform/i18n.js?v=2.5.4';
 
 const TIMEOUT_MS = 30000;
 
@@ -57,7 +57,7 @@ async function send(req, outer) {
   } catch (e) {
     if (ctl.signal.reason === 'timeout') throw new Error(t('ai.errTimeout'));
     if (ctl.signal.aborted) throw new Error(t('ai.errCancelled'));
-    throw new Error(t('ai.errNetwork'));
+    throw new Error(t('ai.errNetwork') + (aiConfig().corsProxy ? '' : ` ${t('ai.errCors')}`));
   } finally {
     clearTimeout(timer);
     if (outer) outer.removeEventListener('abort', onOuter);
@@ -75,16 +75,31 @@ export async function chat({ system, user, messages, json = false, signal } = {}
   try { return await run(cfg, req, signal); } finally { setAiStatus({ kind: 'llm', busy: false, label: `${cfg.llm.model}` }); }
 }
 
+// A short reason from the provider's error body (never the key), as ": message".
+async function detail(res) {
+  try {
+    const txt = await res.text();
+    let msg = txt;
+    try { const j = JSON.parse(txt); msg = (j.error && (j.error.message || j.error)) || j.detail || j.message || txt; } catch (e) { /* plain text */ }
+    msg = String(typeof msg === 'string' ? msg : JSON.stringify(msg)).replace(/\s+/g, ' ').trim().slice(0, 140);
+    return msg ? `: ${msg}` : '';
+  } catch (e) { return ''; }
+}
+
 async function run(cfg, req, signal) {
   let res = await send(req, signal);
   if (res.status === 429 || res.status >= 500) {          // one retry for busy servers
     await new Promise((r) => setTimeout(r, 1200));
     res = await send(req, signal);
   }
-  if (res.status === 401 || res.status === 403) throw new Error(t('ai.errKey'));
-  if (res.status === 404) throw new Error(t('ai.errModel'));
-  if (res.status === 429) throw new Error(t('ai.errBusy'));
-  if (!res.ok) throw new Error(t('ai.errServer', { n: res.status }));
+  if (!res.ok) {
+    const more = await detail(res);
+    const where = `${cfg.llm.provider} · ${cfg.llm.model}`;
+    if (res.status === 401 || res.status === 403) throw new Error(`${t('ai.errKey')} [${res.status}${more}]`);
+    if (res.status === 404) throw new Error(`${t('ai.errModel')} [${where}${more}]`);
+    if (res.status === 429) throw new Error(t('ai.errBusy'));
+    throw new Error(`${t('ai.errServer', { n: res.status })}${more ? ` [${more.slice(2)}]` : ''}`);
+  }
   let data;
   try { data = await res.json(); } catch (e) { throw new Error(t('ai.errEmpty')); }
   return extract(cfg.llm.provider, data);

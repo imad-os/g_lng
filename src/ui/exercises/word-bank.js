@@ -1,8 +1,8 @@
 // word_bank: build the sentence from word tiles. OK on a tile in the bank adds it; OK on a placed tile removes it.
-import { h, focusable, clear } from '../../platform/dom.js?v=2.5.3';
-import { setFocus } from '../../platform/input.js?v=2.5.3';
-import { tokenize, sameText } from '../../learning/text.js?v=2.5.3';
-import { gloss, shuffle } from './common.js?v=2.5.3';
+import { h, focusable, clear } from '../../platform/dom.js?v=2.5.4';
+import { setFocus } from '../../platform/input.js?v=2.5.4';
+import { tokenize, sameText } from '../../learning/text.js?v=2.5.4';
+import { gloss, shuffle } from './common.js?v=2.5.4';
 
 export default function wordBank(ctx) {
   const { ex, vocab, from, course } = ctx;

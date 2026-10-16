@@ -1,9 +1,9 @@
 // After a lesson: stars, XP, gems, accuracy, best combo and any quest finished on the way.
-import { h, focusable } from '../../platform/dom.js?v=2.5.3';
-import { t } from '../../platform/i18n.js?v=2.5.3';
-import { sfx } from '../../platform/audio.js?v=2.5.3';
-import { starsRow } from '../components.js?v=2.5.3';
-import { mascot } from '../mascot.js?v=2.5.3';
+import { h, focusable } from '../../platform/dom.js?v=2.5.4';
+import { t } from '../../platform/i18n.js?v=2.5.4';
+import { sfx } from '../../platform/audio.js?v=2.5.4';
+import { starsRow } from '../components.js?v=2.5.4';
+import { mascot } from '../mascot.js?v=2.5.4';
 
 export function resultsScreen(app, lesson, result) {
   const title = lesson.review ? t('reviewDone') : t('lessonDone');

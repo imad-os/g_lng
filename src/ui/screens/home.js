@@ -1,16 +1,16 @@
 // Home: left rail (coach, blitz, quests, review), the winding course path in the middle, right rail (league, AI).
-import { h, focusable, clear, ICONS } from '../../platform/dom.js?v=2.5.3';
-import { t, pickLang } from '../../platform/i18n.js?v=2.5.3';
-import { focusFirst, setFocus } from '../../platform/input.js?v=2.5.3';
-import { getLevel } from '../../data/content-repo.js?v=2.5.3';
-import { course as progressOf, getMe, saveCourse, saveMe } from '../../data/progress-store.js?v=2.5.3';
-import { lessonState, levelComplete, nextLesson } from '../../learning/path.js?v=2.5.3';
-import { dueKeys } from '../../learning/srs.js?v=2.5.3';
-import { questProgress } from '../../learning/quests.js?v=2.5.3';
-import { setSfx, sfx } from '../../platform/audio.js?v=2.5.3';
-import { openDialog, toast, starsRow } from '../components.js?v=2.5.3';
-import { topPlayers, submitLeague } from '../../data/league.js?v=2.5.3';
-import { mascot } from '../mascot.js?v=2.5.3';
+import { h, focusable, clear, ICONS } from '../../platform/dom.js?v=2.5.4';
+import { t, pickLang } from '../../platform/i18n.js?v=2.5.4';
+import { focusFirst, setFocus } from '../../platform/input.js?v=2.5.4';
+import { getLevel } from '../../data/content-repo.js?v=2.5.4';
+import { course as progressOf, getMe, saveCourse, saveMe } from '../../data/progress-store.js?v=2.5.4';
+import { lessonState, levelComplete, nextLesson } from '../../learning/path.js?v=2.5.4';
+import { dueKeys } from '../../learning/srs.js?v=2.5.4';
+import { questProgress } from '../../learning/quests.js?v=2.5.4';
+import { setSfx, sfx } from '../../platform/audio.js?v=2.5.4';
+import { openDialog, toast, starsRow } from '../components.js?v=2.5.4';
+import { topPlayers, submitLeague } from '../../data/league.js?v=2.5.4';
+import { mascot } from '../mascot.js?v=2.5.4';
 
 const WIGGLE = [0, 56, 88, 56, 0, -56, -88, -56];
 const THEMES = ['food', 'travel', 'family', 'work', 'health', 'shopping'];
