@@ -22,10 +22,12 @@
     "fr": "demain",
     "es": "mañana",
     "ar": "غدا",
-    "de": "morgen"
+    "de": "morgen",
+    "zgh": "ⴰⵙⴽⴽⴰ"
    },
    "tr": {
-    "ar": "ghadan"
+    "ar": "ghadan",
+    "zgh": "askka"
    }
   },
   {
@@ -191,10 +193,12 @@
     "fr": "se retrouver",
     "es": "quedar",
     "ar": "يلتقي",
-    "de": "sich treffen"
+    "de": "sich treffen",
+    "zgh": "ⵎⵍⵉⵍ"
    },
    "tr": {
-    "ar": "yaltaqī"
+    "ar": "yaltaqī",
+    "zgh": "mlil"
    }
   },
   {
@@ -204,10 +208,12 @@
     "fr": "acheter",
     "es": "comprar",
     "ar": "يشتري",
-    "de": "kaufen"
+    "de": "kaufen",
+    "zgh": "ⵙⵖ"
    },
    "tr": {
-    "ar": "yashtarī"
+    "ar": "yashtarī",
+    "zgh": "sɣ"
    }
   },
   {
@@ -230,10 +236,12 @@
     "fr": "commencer",
     "es": "empezar",
     "ar": "يبدأ",
-    "de": "anfangen"
+    "de": "anfangen",
+    "zgh": "ⴱⴷⵓ"
    },
    "tr": {
-    "ar": "yabdaʾ"
+    "ar": "yabdaʾ",
+    "zgh": "bdu"
    }
   },
   {
@@ -269,10 +277,12 @@
     "fr": "vouloir",
     "es": "querer",
     "ar": "يريد",
-    "de": "wollen"
+    "de": "wollen",
+    "zgh": "ⴱⵖ"
    },
    "tr": {
-    "ar": "yurīd"
+    "ar": "yurīd",
+    "zgh": "bɣ"
    }
   },
   {
@@ -321,10 +331,12 @@
     "fr": "sortir",
     "es": "salir",
     "ar": "يخرج",
-    "de": "ausgehen"
+    "de": "ausgehen",
+    "zgh": "ⴼⴼⵖ"
    },
    "tr": {
-    "ar": "yakhruj"
+    "ar": "yakhruj",
+    "zgh": "ffɣ"
    }
   },
   {
@@ -817,10 +829,12 @@
     "fr": "À bientôt !",
     "es": "¡Hasta pronto!",
     "ar": "أراك قريبا!",
-    "de": "Bis bald!"
+    "de": "Bis bald!",
+    "zgh": "ⴰⵔ ⵜⵉⵎⵍⵉⵍⵉⵜ!"
    },
    "tr": {
-    "ar": "arāka qarīban!"
+    "ar": "arāka qarīban!",
+    "zgh": "ar timlilit!"
    }
   },
   {

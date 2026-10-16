@@ -17,18 +17,21 @@ for (const file of process.argv.slice(2)) {
     if (!it.id || ids.has(it.id)) fail(file, `${kind} id "${it.id}" missing or duplicated`);
     ids.add(it.id);
     for (const l of UI) if (!it.text?.[l]) fail(file, `${it.id} has no ${l} text`);
+    // Each language must be written in its own script (a shifted field once put Arabic into Spanish).
+    const ARABIC = /[\u0600-\u06FF]/, TIFINAGH = /[\u2D30-\u2D7F]/;
     for (const [l, t] of Object.entries(it.text || {})) {
+      if (l === 'ar' ? !ARABIC.test(t) : l === 'zgh' ? !TIFINAGH.test(t) : (ARABIC.test(t) || TIFINAGH.test(t))) fail(file, `${it.id}.${l} is in the wrong script: "${t}"`);
       if (typeof t !== 'string' || !t.trim()) fail(file, `${it.id}.${l} empty`);
       const key = `${kind}:${l}:${String(t).toLowerCase()}`;
       if ((l === 'es' || l === 'de' || kind === 'word') && texts[key]) fail(file, `${it.id} and ${texts[key]} share ${l} text "${t}"`);
       texts[key] = it.id;
     }
   }
-  if ((u.words || []).length < 12) fail(file, `only ${(u.words || []).length} words`);
-  if ((u.sentences || []).length < 10) fail(file, `only ${(u.sentences || []).length} sentences`);
+  if ((u.words || []).length < (u.only ? 6 : 12)) fail(file, `only ${(u.words || []).length} words`);
+  if (!u.only && (u.sentences || []).length < 10) fail(file, `only ${(u.sentences || []).length} sentences`);
   const sids = new Set((u.sentences || []).map((s) => s.id));
   const d = u.dialogue || [];
-  if (d.length < 3 || d.length > 6) fail(file, `dialogue has ${d.length} lines (need 3 to 6)`);
+  if (!u.only && (d.length < 3 || d.length > 6)) fail(file, `dialogue has ${d.length} lines (need 3 to 6)`);
   for (const id of d) if (!sids.has(id)) fail(file, `dialogue line ${id} is not a sentence id`);
   console.log(`${file}: ${(u.words || []).length} words, ${(u.sentences || []).length} sentences`);
 }

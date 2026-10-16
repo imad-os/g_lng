@@ -1,8 +1,8 @@
 // type_answer: see the meaning, type the word. Case, punctuation and accents are forgiven.
-import { h, focusable } from '../../platform/dom.js?v=2.2.0';
-import { t } from '../../platform/i18n.js?v=2.2.0';
-import { speakerButton } from '../components.js?v=2.2.0';
-import { gloss } from './common.js?v=2.2.0';
+import { h, focusable } from '../../platform/dom.js?v=2.3.0';
+import { t } from '../../platform/i18n.js?v=2.3.0';
+import { speakerButton } from '../components.js?v=2.3.0';
+import { gloss } from './common.js?v=2.3.0';
 
 export const normalize = (s) => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
 

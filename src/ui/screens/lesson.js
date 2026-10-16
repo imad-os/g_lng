@@ -1,22 +1,22 @@
 // The lesson player: one exercise at a time with a progress bar and counter, hearts, combo, Check / Continue
 // in the footer, and mistakes retried at the end.
-import { h, focusable, clear } from '../../platform/dom.js?v=2.2.0';
-import { t } from '../../platform/i18n.js?v=2.2.0';
-import { setFocus, focusFirst, focused } from '../../platform/input.js?v=2.2.0';
-import { say, sfx, canSpeak, preload, stopVoice } from '../../platform/audio.js?v=2.2.0';
-import { LessonRun, wordsOf, MAX_HEARTS } from '../../learning/lesson-engine.js?v=2.2.0';
-import { finishLesson } from '../../learning/session.js?v=2.2.0';
-import { getMe, saveMe } from "../../data/progress-store.js?v=2.2.0";
-import { openDialog } from '../components.js?v=2.2.0';
-import { mascot } from '../mascot.js?v=2.2.0';
-import pick from '../exercises/pick.js?v=2.2.0';
-import trueFalse from '../exercises/true-false.js?v=2.2.0';
-import fillGap from '../exercises/fill-gap.js?v=2.2.0';
-import wordBank from '../exercises/word-bank.js?v=2.2.0';
-import matchPairs from '../exercises/match-pairs.js?v=2.2.0';
-import orderDialogue from '../exercises/order-dialogue.js?v=2.2.0';
-import typeAnswer from '../exercises/type-answer.js?v=2.2.0';
-import speak from '../exercises/speak.js?v=2.2.0';
+import { h, focusable, clear, ICONS } from '../../platform/dom.js?v=2.3.0';
+import { t } from '../../platform/i18n.js?v=2.3.0';
+import { setFocus, focusFirst, focused } from '../../platform/input.js?v=2.3.0';
+import { say, sfx, canSpeak, preload, stopVoice } from '../../platform/audio.js?v=2.3.0';
+import { LessonRun, wordsOf, MAX_HEARTS } from '../../learning/lesson-engine.js?v=2.3.0';
+import { finishLesson } from '../../learning/session.js?v=2.3.0';
+import { getMe, saveMe } from "../../data/progress-store.js?v=2.3.0";
+import { openDialog, itemText } from '../components.js?v=2.3.0';
+import { mascot } from '../mascot.js?v=2.3.0';
+import pick from '../exercises/pick.js?v=2.3.0';
+import trueFalse from '../exercises/true-false.js?v=2.3.0';
+import fillGap from '../exercises/fill-gap.js?v=2.3.0';
+import wordBank from '../exercises/word-bank.js?v=2.3.0';
+import matchPairs from '../exercises/match-pairs.js?v=2.3.0';
+import orderDialogue from '../exercises/order-dialogue.js?v=2.3.0';
+import typeAnswer from '../exercises/type-answer.js?v=2.3.0';
+import speak from '../exercises/speak.js?v=2.3.0';
 
 const EXERCISES = {
   pick_translation: pick, pick_target: pick, listen_pick: pick,
@@ -48,7 +48,8 @@ export function lessonScreen(app, lesson) {
   const sayKey = (k, slow) => say(lesson.vocab[k], course.tts, slow);
   focusable(button, () => {
     if (button.classList.contains('disabled')) return;
-    if (phase === 'answer' && mounted && mounted.check) mounted.check();
+    if (phase === 'intro') showExercise();
+    else if (phase === 'answer' && mounted && mounted.check) mounted.check();
     else if (phase === 'feedback') next();
   });
 
@@ -65,6 +66,30 @@ export function lessonScreen(app, lesson) {
   }
 
   function setCoach(mood) { clear(coach); if (mood) coach.appendChild(mascot(mood, 72)); }
+
+  // New words are shown first, with their sound and meaning, before any question about them.
+  function showIntro() {
+    phase = 'intro';
+    clear(area); clear(status); setCoach(null);
+    footer.className = 'footer';
+    counter.textContent = `0/${run.total}`;
+    bar.style.transform = 'scaleX(0)';
+    prompt.textContent = t('newWords');
+    const list = h('div', { class: 'intro-list' });
+    for (const k of lesson.newWords) {
+      const v = lesson.vocab[k];
+      if (!v) continue;
+      list.appendChild(focusable(h('button', { class: 'intro-row' },
+        h('span', { class: 'intro-sound', html: ICONS.speaker }), itemText(v, course, 'big'), h('span', { class: 'intro-meaning', dir: 'auto' }, v.g[app.from] || v.g.en)),
+      () => sayKey(k, false)));
+    }
+    area.appendChild(list);
+    button.textContent = t('startLesson');
+    button.classList.remove('hidden', 'disabled');
+    if (explainBtn) explainBtn.classList.add('hidden');
+    setFocus(button);
+    timer = setTimeout(() => sayKey(lesson.newWords[0], false), 400);
+  }
 
   function showExercise() {
     const ex = run.current;
@@ -158,7 +183,7 @@ export function lessonScreen(app, lesson) {
       if (action === 'run' && mounted && mounted.autoplay && phase === 'answer') { mounted.autoplay(); return true; }
       return false;
     },
-    mounted: showExercise,
+    mounted: () => (lesson.newWords && lesson.newWords.length && !lesson.review ? showIntro() : showExercise()),
     destroy: () => { clearTimeout(timer); stopVoice(); },
   };
 }

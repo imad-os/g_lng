@@ -35,10 +35,12 @@
     "fr": "se lever",
     "es": "levantarse",
     "ar": "ينهض",
-    "de": "aufstehen"
+    "de": "aufstehen",
+    "zgh": "ⵏⴽⵔ"
    },
    "tr": {
-    "ar": "yanhaḍ"
+    "ar": "yanhaḍ",
+    "zgh": "nkr"
    }
   },
   {
@@ -152,10 +154,12 @@
     "fr": "travailler",
     "es": "trabajar",
     "ar": "يعمل",
-    "de": "arbeiten"
+    "de": "arbeiten",
+    "zgh": "ⵅⴷⵎ"
    },
    "tr": {
-    "ar": "yaʿmal"
+    "ar": "yaʿmal",
+    "zgh": "xdm"
    }
   },
   {
@@ -165,10 +169,12 @@
     "fr": "étudier",
     "es": "estudiar",
     "ar": "يدرس",
-    "de": "lernen"
+    "de": "lernen",
+    "zgh": "ⵍⵎⴷ"
    },
    "tr": {
-    "ar": "yadrus"
+    "ar": "yadrus",
+    "zgh": "lmd"
    }
   },
   {
@@ -282,10 +288,12 @@
     "fr": "toujours",
     "es": "siempre",
     "ar": "دائما",
-    "de": "immer"
+    "de": "immer",
+    "zgh": "ⴷⵉⵎⴰ"
    },
    "tr": {
-    "ar": "dāʾiman"
+    "ar": "dāʾiman",
+    "zgh": "dima"
    }
   },
   {
@@ -347,10 +355,12 @@
     "fr": "tous les jours",
     "es": "todos los días",
     "ar": "كل يوم",
-    "de": "jeden Tag"
+    "de": "jeden Tag",
+    "zgh": "ⴽⵓⵍⵍⵓ ⴰⵙⵙ"
    },
    "tr": {
-    "ar": "kull yawm"
+    "ar": "kull yawm",
+    "zgh": "kullu ass"
    }
   },
   {
@@ -360,10 +370,12 @@
     "fr": "tôt",
     "es": "temprano",
     "ar": "مبكرا",
-    "de": "früh"
+    "de": "früh",
+    "zgh": "ⵣⵉⴽ"
    },
    "tr": {
-    "ar": "mubakkiran"
+    "ar": "mubakkiran",
+    "zgh": "zik"
    }
   },
   {

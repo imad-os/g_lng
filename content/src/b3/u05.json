@@ -22,10 +22,12 @@
     "fr": "hier",
     "es": "ayer",
     "ar": "أمس",
-    "de": "gestern"
+    "de": "gestern",
+    "zgh": "ⵉⴹⵍⵍⵉ"
    },
    "tr": {
-    "ar": "ams"
+    "ar": "ams",
+    "zgh": "iḍlli"
    }
   },
   {
@@ -165,10 +167,12 @@
     "fr": "il est allé",
     "es": "fue",
     "ar": "ذهب",
-    "de": "ging"
+    "de": "ging",
+    "zgh": "ⵉⴷⴷⵓ"
    },
    "tr": {
-    "ar": "dhahaba"
+    "ar": "dhahaba",
+    "zgh": "iddu"
    }
   },
   {
@@ -204,10 +208,12 @@
     "fr": "il a vu",
     "es": "vio",
     "ar": "رأى",
-    "de": "sah"
+    "de": "sah",
+    "zgh": "ⵉⵥⵔⴰ"
    },
    "tr": {
-    "ar": "raʾā"
+    "ar": "raʾā",
+    "zgh": "iẓra"
    }
   },
   {
@@ -243,10 +249,12 @@
     "fr": "il a travaillé",
     "es": "trabajó",
     "ar": "عمل",
-    "de": "arbeitete"
+    "de": "arbeitete",
+    "zgh": "ⵉⵅⴷⵎ"
    },
    "tr": {
-    "ar": "ʿamila"
+    "ar": "ʿamila",
+    "zgh": "ixdm"
    }
   },
   {
@@ -282,10 +290,12 @@
     "fr": "il a dit",
     "es": "dijo",
     "ar": "قال",
-    "de": "sagte"
+    "de": "sagte",
+    "zgh": "ⵉⵏⵏⴰ"
    },
    "tr": {
-    "ar": "qāla"
+    "ar": "qāla",
+    "zgh": "inna"
    }
   },
   {
@@ -438,10 +448,12 @@
     "fr": "il est parti",
     "es": "salió",
     "ar": "غادر",
-    "de": "verließ"
+    "de": "verließ",
+    "zgh": "ⵉⴼⴼⵖ"
    },
    "tr": {
-    "ar": "ghādara"
+    "ar": "ghādara",
+    "zgh": "iffɣ"
    }
   },
   {
@@ -451,10 +463,12 @@
     "fr": "il a étudié",
     "es": "estudió",
     "ar": "درس",
-    "de": "lernte"
+    "de": "lernte",
+    "zgh": "ⵉⵍⵎⴷ"
    },
    "tr": {
-    "ar": "darasa"
+    "ar": "darasa",
+    "zgh": "ilmd"
    }
   },
   {
@@ -477,10 +491,12 @@
     "fr": "il a lu",
     "es": "leyó",
     "ar": "قرأ",
-    "de": "las"
+    "de": "las",
+    "zgh": "ⵉⵖⵔⴰ"
    },
    "tr": {
-    "ar": "qaraʾa"
+    "ar": "qaraʾa",
+    "zgh": "iɣra"
    }
   }
  ],
@@ -492,10 +508,12 @@
     "fr": "Hier, je suis allé au marché.",
     "es": "Ayer fui al mercado.",
     "ar": "ذهبت أمس إلى السوق.",
-    "de": "Gestern bin ich zum Markt gegangen."
+    "de": "Gestern bin ich zum Markt gegangen.",
+    "zgh": "ⵉⴹⵍⵍⵉ ⴷⴷⵉⵖ ⵙ ⵓⵙⵓⵇ"
    },
    "tr": {
-    "ar": "dhahabtu ams ilā as-sūq."
+    "ar": "dhahabtu ams ilā as-sūq.",
+    "zgh": "iḍlli ddiɣ s usuq"
    }
   },
   {

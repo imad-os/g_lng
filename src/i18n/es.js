@@ -79,4 +79,5 @@ export default {
   again: "Jugar otra vez",
   home: "Inicio",
   levelHint: {"b1": "Principiante total", "b2": "Principiante", "b3": "Principiante alto", "m1": "Intermedio bajo", "m2": "Intermedio", "m3": "Intermedio alto", "a1": "Avanzado", "a2": "Avanzado alto", "a3": "Casi nativo"},
+  newWords: "Palabras nuevas", startLesson: "Empezar",
 };

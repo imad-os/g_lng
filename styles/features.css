@@ -85,3 +85,11 @@
 .coach-row .mascot { transform: scale(0.85); }
 .bubble-tip { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; font-size: 21px; }
 .coach-row { align-items: flex-start; }
+
+.intro-list { width: 100%; display: flex; flex-direction: column; gap: 10px; }
+.intro-row { display: flex; align-items: center; gap: 22px; padding: 8px 22px; border-radius: var(--radius); border: 3px solid var(--line); border-bottom-width: 6px; background: var(--panel); cursor: pointer; text-align: start; }
+.intro-sound { width: 44px; height: 44px; color: var(--blue); flex: none; }
+.intro-sound svg { width: 44px; height: 44px; }
+.intro-row .item { flex: 1; }
+.intro-row .item.big .target { font-size: 36px; }
+.intro-meaning { font-size: 30px; color: var(--muted); }

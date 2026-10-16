@@ -35,10 +35,12 @@
     "fr": "quoi",
     "es": "qué",
     "ar": "ماذا",
-    "de": "was"
+    "de": "was",
+    "zgh": "ⵎⴰ"
    },
    "tr": {
-    "ar": "mādhā"
+    "ar": "mādhā",
+    "zgh": "ma"
    }
   },
   {
@@ -48,10 +50,12 @@
     "fr": "où",
     "es": "dónde",
     "ar": "أين",
-    "de": "wo"
+    "de": "wo",
+    "zgh": "ⵎⴰⵏⵉ"
    },
    "tr": {
-    "ar": "ayna"
+    "ar": "ayna",
+    "zgh": "mani"
    }
   },
   {
@@ -178,10 +182,12 @@
     "fr": "répondre",
     "es": "responder",
     "ar": "يجيب",
-    "de": "antworten"
+    "de": "antworten",
+    "zgh": "ⵔⴰⵔ"
    },
    "tr": {
-    "ar": "yujīb"
+    "ar": "yujīb",
+    "zgh": "rar"
    }
   },
   {
@@ -191,10 +197,12 @@
     "fr": "savoir",
     "es": "saber",
     "ar": "يعرف",
-    "de": "wissen"
+    "de": "wissen",
+    "zgh": "ⵙⵙⵏ"
    },
    "tr": {
-    "ar": "yaʿrif"
+    "ar": "yaʿrif",
+    "zgh": "ssn"
    }
   },
   {
@@ -204,10 +212,12 @@
     "fr": "comprendre",
     "es": "entender",
     "ar": "يفهم",
-    "de": "verstehen"
+    "de": "verstehen",
+    "zgh": "ⴼⵀⵎ"
    },
    "tr": {
-    "ar": "yafham"
+    "ar": "yafham",
+    "zgh": "fhm"
    }
   },
   {
@@ -217,10 +227,12 @@
     "fr": "parler",
     "es": "hablar",
     "ar": "يتكلم",
-    "de": "sprechen"
+    "de": "sprechen",
+    "zgh": "ⵙⴰⵡⵍ"
    },
    "tr": {
-    "ar": "yatakallam"
+    "ar": "yatakallam",
+    "zgh": "sawl"
    }
   },
   {
@@ -256,10 +268,12 @@
     "fr": "dire",
     "es": "decir",
     "ar": "يقول",
-    "de": "sagen"
+    "de": "sagen",
+    "zgh": "ⵏⵏⵉ"
    },
    "tr": {
-    "ar": "yaqūl"
+    "ar": "yaqūl",
+    "zgh": "nni"
    }
   },
   {
@@ -269,10 +283,12 @@
     "fr": "nom",
     "es": "nombre",
     "ar": "اسم",
-    "de": "der Name"
+    "de": "der Name",
+    "zgh": "ⵉⵙⴻⵎ"
    },
    "tr": {
-    "ar": "ism"
+    "ar": "ism",
+    "zgh": "isem"
    }
   },
   {
@@ -295,10 +311,12 @@
     "fr": "mot",
     "es": "palabra",
     "ar": "كلمة",
-    "de": "das Wort"
+    "de": "das Wort",
+    "zgh": "ⴰⵡⴰⵍ"
    },
    "tr": {
-    "ar": "kalima"
+    "ar": "kalima",
+    "zgh": "awal"
    }
   },
   {
@@ -308,10 +326,12 @@
     "fr": "langue",
     "es": "idioma",
     "ar": "لغة",
-    "de": "die Sprache"
+    "de": "die Sprache",
+    "zgh": "ⵜⵓⵜⵍⴰⵢⵜ"
    },
    "tr": {
-    "ar": "lugha"
+    "ar": "lugha",
+    "zgh": "tutlayt"
    }
   },
   {
@@ -334,10 +354,12 @@
     "fr": "encore",
     "es": "otra vez",
     "ar": "مرة أخرى",
-    "de": "noch einmal"
+    "de": "noch einmal",
+    "zgh": "ⴷⴰⵖ"
    },
    "tr": {
-    "ar": "marra ukhrā"
+    "ar": "marra ukhrā",
+    "zgh": "daɣ"
    }
   },
   {
@@ -425,10 +447,12 @@
     "fr": "professeur",
     "es": "profesor",
     "ar": "معلم",
-    "de": "der Lehrer"
+    "de": "der Lehrer",
+    "zgh": "ⴰⵙⵍⵎⴰⴷ"
    },
    "tr": {
-    "ar": "muʿallim"
+    "ar": "muʿallim",
+    "zgh": "aslmad"
    }
   },
   {
@@ -674,10 +698,12 @@
     "fr": "Je ne comprends pas ce mot.",
     "es": "No entiendo esta palabra.",
     "ar": "لا أفهم هذه الكلمة.",
-    "de": "Ich verstehe dieses Wort nicht."
+    "de": "Ich verstehe dieses Wort nicht.",
+    "zgh": "ⵓⵔ ⴼⵀⵎⵖ ⴰⵡⴰⵍ ⴰⴷ"
    },
    "tr": {
-    "ar": "lā afham hādhihi al-kalima."
+    "ar": "lā afham hādhihi al-kalima.",
+    "zgh": "ur fhmɣ awal ad"
    }
   },
   {

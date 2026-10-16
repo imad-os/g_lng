@@ -230,10 +230,12 @@
     "fr": "taxi",
     "es": "taxi",
     "ar": "سيارة أجرة",
-    "de": "das Taxi"
+    "de": "das Taxi",
+    "zgh": "ⵟⴰⴽⵙⵉ"
    },
    "tr": {
-    "ar": "sayyārat ujra"
+    "ar": "sayyārat ujra",
+    "zgh": "ṭaksi"
    }
   },
   {
@@ -373,10 +375,12 @@
     "fr": "entre",
     "es": "entre",
     "ar": "بين",
-    "de": "zwischen"
+    "de": "zwischen",
+    "zgh": "ⴳⴰⵔ"
    },
    "tr": {
-    "ar": "bayna"
+    "ar": "bayna",
+    "zgh": "gar"
    }
   },
   {
@@ -438,10 +442,12 @@
     "fr": "chemin",
     "es": "camino",
     "ar": "طريق",
-    "de": "der Weg"
+    "de": "der Weg",
+    "zgh": "ⵜⴰⵖⴰⵙⵜ"
    },
    "tr": {
-    "ar": "ṭarīq"
+    "ar": "ṭarīq",
+    "zgh": "taɣast"
    }
   },
   {
@@ -451,10 +457,12 @@
     "fr": "premier",
     "es": "primero",
     "ar": "الأول",
-    "de": "erste"
+    "de": "erste",
+    "zgh": "ⴰⵎⵣⵡⴰⵔⵓ"
    },
    "tr": {
-    "ar": "al-awwal"
+    "ar": "al-awwal",
+    "zgh": "amzwaru"
    }
   },
   {

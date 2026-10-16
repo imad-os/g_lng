@@ -22,10 +22,12 @@
     "fr": "tête",
     "es": "cabeza",
     "ar": "رأس",
-    "de": "der Kopf"
+    "de": "der Kopf",
+    "zgh": "ⵉⵖⴼ"
    },
    "tr": {
-    "ar": "raʾs"
+    "ar": "raʾs",
+    "zgh": "iɣf"
    }
   },
   {
@@ -48,10 +50,12 @@
     "fr": "œil",
     "es": "ojo",
     "ar": "عين",
-    "de": "das Auge"
+    "de": "das Auge",
+    "zgh": "ⵜⵉⵜⵜ"
    },
    "tr": {
-    "ar": "ʿayn"
+    "ar": "ʿayn",
+    "zgh": "titt"
    }
   },
   {
@@ -61,10 +65,12 @@
     "fr": "oreille",
     "es": "oreja",
     "ar": "أذن",
-    "de": "das Ohr"
+    "de": "das Ohr",
+    "zgh": "ⴰⵎⵥⵥⵓⵖ"
    },
    "tr": {
-    "ar": "udhun"
+    "ar": "udhun",
+    "zgh": "amẓẓuɣ"
    }
   },
   {
@@ -87,10 +93,12 @@
     "fr": "bouche",
     "es": "boca",
     "ar": "فم",
-    "de": "der Mund"
+    "de": "der Mund",
+    "zgh": "ⵉⵎⵉ"
    },
    "tr": {
-    "ar": "fam"
+    "ar": "fam",
+    "zgh": "imi"
    }
   },
   {
@@ -152,10 +160,12 @@
     "fr": "main",
     "es": "mano",
     "ar": "يد",
-    "de": "die Hand"
+    "de": "die Hand",
+    "zgh": "ⵜⴰⴼⵓⵙⵜ"
    },
    "tr": {
-    "ar": "yad"
+    "ar": "yad",
+    "zgh": "tafust"
    }
   },
   {
@@ -243,10 +253,12 @@
     "fr": "pied",
     "es": "pie",
     "ar": "قدم",
-    "de": "der Fuß"
+    "de": "der Fuß",
+    "zgh": "ⴰⴹⴰⵕ"
    },
    "tr": {
-    "ar": "qadam"
+    "ar": "qadam",
+    "zgh": "aḍaṛ"
    }
   },
   {
@@ -347,10 +359,12 @@
     "fr": "médecin",
     "es": "médico",
     "ar": "طبيب",
-    "de": "der Arzt"
+    "de": "der Arzt",
+    "zgh": "ⴰⵟⴱⵉⴱ"
    },
    "tr": {
-    "ar": "ṭabīb"
+    "ar": "ṭabīb",
+    "zgh": "aṭbib"
    }
   },
   {
@@ -438,10 +452,12 @@
     "fr": "eau",
     "es": "agua",
     "ar": "ماء",
-    "de": "das Wasser"
+    "de": "das Wasser",
+    "zgh": "ⴰⵎⴰⵏ"
    },
    "tr": {
-    "ar": "māʾ"
+    "ar": "māʾ",
+    "zgh": "aman"
    }
   },
   {

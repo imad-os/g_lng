@@ -1,0 +1,354 @@
+{
+  "id": "u00",
+  "level": "b1",
+  "order": 0,
+  "only": [
+    "zgh"
+  ],
+  "title": {
+    "en": "Tifinagh letters and sounds",
+    "fr": "Lettres et sons du tifinagh",
+    "es": "Letras y sonidos del tifinagh",
+    "ar": "حروف تيفيناغ وأصواتها"
+  },
+  "tip": {
+    "en": "Tifinagh is the script of Amazigh. It is written left to right. Learn each letter with its sound, then say it aloud.",
+    "fr": "Le tifinagh est l'écriture de l'amazigh. Il s'écrit de gauche à droite. Apprenez chaque lettre avec son son, puis dites-la à voix haute.",
+    "es": "El tifinagh es la escritura del amazigh. Se escribe de izquierda a derecha. Aprende cada letra con su sonido y dila en voz alta.",
+    "ar": "تيفيناغ هو خط الأمازيغية. يُكتب من اليسار إلى اليمين. تعلّم كل حرف مع صوته ثم انطقه بصوت عال."
+  },
+  "words": [
+    {
+      "id": "a",
+      "text": {
+        "en": "a",
+        "fr": "a",
+        "es": "a",
+        "ar": "a (فتحة)",
+        "zgh": "ⴰ"
+      }
+    },
+    {
+      "id": "b",
+      "text": {
+        "en": "b",
+        "fr": "b",
+        "es": "b",
+        "ar": "b (ب)",
+        "zgh": "ⴱ"
+      }
+    },
+    {
+      "id": "g",
+      "text": {
+        "en": "g",
+        "fr": "g",
+        "es": "g",
+        "ar": "g (ڭ)",
+        "zgh": "ⴳ"
+      }
+    },
+    {
+      "id": "gw",
+      "text": {
+        "en": "gʷ",
+        "fr": "gʷ",
+        "es": "gʷ",
+        "ar": "gʷ (ڭو)",
+        "zgh": "ⴳⵯ"
+      }
+    },
+    {
+      "id": "d",
+      "text": {
+        "en": "d",
+        "fr": "d",
+        "es": "d",
+        "ar": "d (د)",
+        "zgh": "ⴷ"
+      }
+    },
+    {
+      "id": "dd",
+      "text": {
+        "en": "ḍ",
+        "fr": "ḍ",
+        "es": "ḍ",
+        "ar": "ḍ (ض)",
+        "zgh": "ⴹ"
+      }
+    },
+    {
+      "id": "e",
+      "text": {
+        "en": "e",
+        "fr": "e",
+        "es": "e",
+        "ar": "e (شوا)",
+        "zgh": "ⴻ"
+      }
+    },
+    {
+      "id": "f",
+      "text": {
+        "en": "f",
+        "fr": "f",
+        "es": "f",
+        "ar": "f (ف)",
+        "zgh": "ⴼ"
+      }
+    },
+    {
+      "id": "k",
+      "text": {
+        "en": "k",
+        "fr": "k",
+        "es": "k",
+        "ar": "k (ك)",
+        "zgh": "ⴽ"
+      }
+    },
+    {
+      "id": "kw",
+      "text": {
+        "en": "kʷ",
+        "fr": "kʷ",
+        "es": "kʷ",
+        "ar": "kʷ (كو)",
+        "zgh": "ⴽⵯ"
+      }
+    },
+    {
+      "id": "h",
+      "text": {
+        "en": "h",
+        "fr": "h",
+        "es": "h",
+        "ar": "h (ه)",
+        "zgh": "ⵀ"
+      }
+    },
+    {
+      "id": "hh",
+      "text": {
+        "en": "ḥ",
+        "fr": "ḥ",
+        "es": "ḥ",
+        "ar": "ḥ (ح)",
+        "zgh": "ⵃ"
+      }
+    },
+    {
+      "id": "ain",
+      "text": {
+        "en": "ʿ",
+        "fr": "ʿ",
+        "es": "ʿ",
+        "ar": "ʿ (ع)",
+        "zgh": "ⵄ"
+      }
+    },
+    {
+      "id": "x",
+      "text": {
+        "en": "kh",
+        "fr": "kh",
+        "es": "kh",
+        "ar": "kh (خ)",
+        "zgh": "ⵅ"
+      }
+    },
+    {
+      "id": "q",
+      "text": {
+        "en": "q",
+        "fr": "q",
+        "es": "q",
+        "ar": "q (ق)",
+        "zgh": "ⵇ"
+      }
+    },
+    {
+      "id": "i",
+      "text": {
+        "en": "i",
+        "fr": "i",
+        "es": "i",
+        "ar": "i (كسرة)",
+        "zgh": "ⵉ"
+      }
+    },
+    {
+      "id": "j",
+      "text": {
+        "en": "zh",
+        "fr": "j",
+        "es": "zh",
+        "ar": "j (ج)",
+        "zgh": "ⵊ"
+      }
+    },
+    {
+      "id": "l",
+      "text": {
+        "en": "l",
+        "fr": "l",
+        "es": "l",
+        "ar": "l (ل)",
+        "zgh": "ⵍ"
+      }
+    },
+    {
+      "id": "m",
+      "text": {
+        "en": "m",
+        "fr": "m",
+        "es": "m",
+        "ar": "m (م)",
+        "zgh": "ⵎ"
+      }
+    },
+    {
+      "id": "n",
+      "text": {
+        "en": "n",
+        "fr": "n",
+        "es": "n",
+        "ar": "n (ن)",
+        "zgh": "ⵏ"
+      }
+    },
+    {
+      "id": "u",
+      "text": {
+        "en": "u",
+        "fr": "ou",
+        "es": "u",
+        "ar": "u (ضمة)",
+        "zgh": "ⵓ"
+      }
+    },
+    {
+      "id": "r",
+      "text": {
+        "en": "r",
+        "fr": "r",
+        "es": "r",
+        "ar": "r (ر)",
+        "zgh": "ⵔ"
+      }
+    },
+    {
+      "id": "rr",
+      "text": {
+        "en": "ṛ",
+        "fr": "ṛ",
+        "es": "ṛ",
+        "ar": "ṛ (ر مفخمة)",
+        "zgh": "ⵕ"
+      }
+    },
+    {
+      "id": "gh",
+      "text": {
+        "en": "gh",
+        "fr": "gh",
+        "es": "gh",
+        "ar": "gh (غ)",
+        "zgh": "ⵖ"
+      }
+    },
+    {
+      "id": "s",
+      "text": {
+        "en": "s",
+        "fr": "s",
+        "es": "s",
+        "ar": "s (س)",
+        "zgh": "ⵙ"
+      }
+    },
+    {
+      "id": "ss",
+      "text": {
+        "en": "ṣ",
+        "fr": "ṣ",
+        "es": "ṣ",
+        "ar": "ṣ (ص)",
+        "zgh": "ⵚ"
+      }
+    },
+    {
+      "id": "c",
+      "text": {
+        "en": "sh",
+        "fr": "ch",
+        "es": "ch",
+        "ar": "sh (ش)",
+        "zgh": "ⵛ"
+      }
+    },
+    {
+      "id": "t",
+      "text": {
+        "en": "t",
+        "fr": "t",
+        "es": "t",
+        "ar": "t (ت)",
+        "zgh": "ⵜ"
+      }
+    },
+    {
+      "id": "tt",
+      "text": {
+        "en": "ṭ",
+        "fr": "ṭ",
+        "es": "ṭ",
+        "ar": "ṭ (ط)",
+        "zgh": "ⵟ"
+      }
+    },
+    {
+      "id": "w",
+      "text": {
+        "en": "w",
+        "fr": "w",
+        "es": "w",
+        "ar": "w (و)",
+        "zgh": "ⵡ"
+      }
+    },
+    {
+      "id": "y",
+      "text": {
+        "en": "y",
+        "fr": "y",
+        "es": "y",
+        "ar": "y (ي)",
+        "zgh": "ⵢ"
+      }
+    },
+    {
+      "id": "z",
+      "text": {
+        "en": "z",
+        "fr": "z",
+        "es": "z",
+        "ar": "z (ز)",
+        "zgh": "ⵣ"
+      }
+    },
+    {
+      "id": "zz",
+      "text": {
+        "en": "ẓ",
+        "fr": "ẓ",
+        "es": "ẓ",
+        "ar": "ẓ (ظ)",
+        "zgh": "ⵥ"
+      }
+    }
+  ],
+  "sentences": [],
+  "dialogue": []
+}

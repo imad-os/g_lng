@@ -1,6 +1,13 @@
 {
-  "id": "u07", "level": "b1", "order": 7,
-  "title": { "en": "Animals", "fr": "Les animaux", "es": "Los animales", "ar": "الحيوانات" },
+  "id": "u07",
+  "level": "b1",
+  "order": 7,
+  "title": {
+    "en": "Animals",
+    "fr": "Les animaux",
+    "es": "Los animales",
+    "ar": "الحيوانات"
+  },
   "tip": {
     "en": "Say what you have with 'I have'. 'I have a dog' is a good first sentence to practise.",
     "fr": "Dites ce que vous avez avec « J'ai ». « J'ai un chien » est une bonne première phrase à répéter.",
@@ -8,32 +15,348 @@
     "ar": "قل ما عندك بقولك «عندي». «عندي كلب» جملة أولى جيدة للتدرب."
   },
   "words": [
-    { "id": "cat", "text": { "en": "cat", "fr": "chat", "es": "gato", "ar": "قطة", "de": "Katze", "zgh": "ⵎⵓⵛ" }, "tr": { "ar": "qiṭṭa", "zgh": "mucc" } },
-    { "id": "dog", "text": { "en": "dog", "fr": "chien", "es": "perro", "ar": "كلب", "de": "Hund", "zgh": "ⴰⵢⴷⵉ" }, "tr": { "ar": "kalb", "zgh": "aydi" } },
-    { "id": "bird", "text": { "en": "bird", "fr": "oiseau", "es": "pájaro", "ar": "طائر", "de": "Vogel" }, "tr": { "ar": "ṭāʾir" } },
-    { "id": "horse", "text": { "en": "horse", "fr": "cheval", "es": "caballo", "ar": "حصان", "de": "Pferd" }, "tr": { "ar": "ḥiṣān" } },
-    { "id": "cow", "text": { "en": "cow", "fr": "vache", "es": "vaca", "ar": "بقرة", "de": "Kuh", "zgh": "ⵜⴰⴼⵓⵏⴰⵙⵜ" }, "tr": { "ar": "baqara", "zgh": "tafunast" } },
-    { "id": "sheep", "text": { "en": "sheep", "fr": "mouton", "es": "oveja", "ar": "خروف", "de": "Schaf" }, "tr": { "ar": "kharūf" } },
-    { "id": "donkey", "text": { "en": "donkey", "fr": "âne", "es": "burro", "ar": "حمار", "de": "Esel", "zgh": "ⴰⵖⵢⵓⵍ" }, "tr": { "ar": "ḥimār", "zgh": "aghyul" } },
-    { "id": "camel", "text": { "en": "camel", "fr": "chameau", "es": "camello", "ar": "جمل", "de": "Kamel" }, "tr": { "ar": "jamal" } },
-    { "id": "lion", "text": { "en": "lion", "fr": "lion", "es": "león", "ar": "أسد", "de": "Löwe" }, "tr": { "ar": "asad" } },
-    { "id": "i_have", "text": { "en": "I have", "fr": "j'ai", "es": "tengo", "ar": "عندي", "de": "ich habe", "zgh": "ⵖⵓⵔⵉ" }, "tr": { "ar": "ʿindī", "zgh": "ghuri" } },
-    { "id": "do_you_have", "text": { "en": "do you have", "fr": "tu as", "es": "tienes", "ar": "هل عندك", "de": "hast du" }, "tr": { "ar": "hal ʿindak" } },
-    { "id": "and", "text": { "en": "and", "fr": "et", "es": "y", "ar": "و", "de": "und" }, "tr": { "ar": "wa" } }
+    {
+      "id": "cat",
+      "text": {
+        "en": "cat",
+        "fr": "chat",
+        "es": "gato",
+        "ar": "قطة",
+        "de": "Katze",
+        "zgh": "ⴰⵎⵓⵛ"
+      },
+      "tr": {
+        "ar": "qiṭṭa",
+        "zgh": "amuc"
+      }
+    },
+    {
+      "id": "dog",
+      "text": {
+        "en": "dog",
+        "fr": "chien",
+        "es": "perro",
+        "ar": "كلب",
+        "de": "Hund",
+        "zgh": "ⴰⵢⴷⵉ"
+      },
+      "tr": {
+        "ar": "kalb",
+        "zgh": "aydi"
+      }
+    },
+    {
+      "id": "bird",
+      "text": {
+        "en": "bird",
+        "fr": "oiseau",
+        "es": "pájaro",
+        "ar": "طائر",
+        "de": "Vogel"
+      },
+      "tr": {
+        "ar": "ṭāʾir"
+      }
+    },
+    {
+      "id": "horse",
+      "text": {
+        "en": "horse",
+        "fr": "cheval",
+        "es": "caballo",
+        "ar": "حصان",
+        "de": "Pferd"
+      },
+      "tr": {
+        "ar": "ḥiṣān"
+      }
+    },
+    {
+      "id": "cow",
+      "text": {
+        "en": "cow",
+        "fr": "vache",
+        "es": "vaca",
+        "ar": "بقرة",
+        "de": "Kuh",
+        "zgh": "ⵜⴰⴼⵓⵏⴰⵙⵜ"
+      },
+      "tr": {
+        "ar": "baqara",
+        "zgh": "tafunast"
+      }
+    },
+    {
+      "id": "sheep",
+      "text": {
+        "en": "sheep",
+        "fr": "mouton",
+        "es": "oveja",
+        "ar": "خروف",
+        "de": "Schaf"
+      },
+      "tr": {
+        "ar": "kharūf"
+      }
+    },
+    {
+      "id": "donkey",
+      "text": {
+        "en": "donkey",
+        "fr": "âne",
+        "es": "burro",
+        "ar": "حمار",
+        "de": "Esel",
+        "zgh": "ⴰⵖⵢⵓⵍ"
+      },
+      "tr": {
+        "ar": "ḥimār",
+        "zgh": "aɣyul"
+      }
+    },
+    {
+      "id": "camel",
+      "text": {
+        "en": "camel",
+        "fr": "chameau",
+        "es": "camello",
+        "ar": "جمل",
+        "de": "Kamel",
+        "zgh": "ⴰⵍⵖⵎ"
+      },
+      "tr": {
+        "ar": "jamal",
+        "zgh": "alɣm"
+      }
+    },
+    {
+      "id": "lion",
+      "text": {
+        "en": "lion",
+        "fr": "lion",
+        "es": "león",
+        "ar": "أسد",
+        "de": "Löwe"
+      },
+      "tr": {
+        "ar": "asad"
+      }
+    },
+    {
+      "id": "i_have",
+      "text": {
+        "en": "I have",
+        "fr": "j'ai",
+        "es": "tengo",
+        "ar": "عندي",
+        "de": "ich habe",
+        "zgh": "ⵖⵔⵉ"
+      },
+      "tr": {
+        "ar": "ʿindī",
+        "zgh": "ɣri"
+      }
+    },
+    {
+      "id": "do_you_have",
+      "text": {
+        "en": "do you have",
+        "fr": "tu as",
+        "es": "tienes",
+        "ar": "هل عندك",
+        "de": "hast du",
+        "zgh": "ⵖⵔⴽ"
+      },
+      "tr": {
+        "ar": "hal ʿindak",
+        "zgh": "ɣrk"
+      }
+    },
+    {
+      "id": "and",
+      "text": {
+        "en": "and",
+        "fr": "et",
+        "es": "y",
+        "ar": "و",
+        "de": "und",
+        "zgh": "ⴷ"
+      },
+      "tr": {
+        "ar": "wa",
+        "zgh": "d"
+      }
+    }
   ],
   "sentences": [
-    { "id": "s01", "text": { "en": "I have a cat.", "fr": "J'ai un chat.", "es": "Tengo un gato.", "ar": "عندي قطة.", "de": "Ich habe eine Katze." }, "tr": { "ar": "ʿindī qiṭṭa." } },
-    { "id": "s02", "text": { "en": "I have a dog.", "fr": "J'ai un chien.", "es": "Tengo un perro.", "ar": "عندي كلب.", "de": "Ich habe einen Hund." }, "tr": { "ar": "ʿindī kalb." } },
-    { "id": "s03", "text": { "en": "The dog is big.", "fr": "Le chien est grand.", "es": "El perro es grande.", "ar": "الكلب كبير.", "de": "Der Hund ist groß." }, "tr": { "ar": "al-kalb kabīr." } },
-    { "id": "s04", "text": { "en": "The cat is small.", "fr": "Le chat est petit.", "es": "El gato es pequeño.", "ar": "القطة صغيرة.", "de": "Die Katze ist klein." }, "tr": { "ar": "al-qiṭṭa ṣaghīra." } },
-    { "id": "s05", "text": { "en": "The horse is white.", "fr": "Le cheval est blanc.", "es": "El caballo es blanco.", "ar": "الحصان أبيض.", "de": "Das Pferd ist weiß." }, "tr": { "ar": "al-ḥiṣān abyaḍ." } },
-    { "id": "s06", "text": { "en": "The cow is black.", "fr": "La vache est noire.", "es": "La vaca es negra.", "ar": "البقرة سوداء.", "de": "Die Kuh ist schwarz." }, "tr": { "ar": "al-baqara sawdāʾ." } },
-    { "id": "s07", "text": { "en": "Two birds.", "fr": "Deux oiseaux.", "es": "Dos pájaros.", "ar": "طائران.", "de": "Zwei Vögel." }, "tr": { "ar": "ṭāʾirān." } },
-    { "id": "s08", "text": { "en": "Three sheep.", "fr": "Trois moutons.", "es": "Tres ovejas.", "ar": "ثلاثة خراف.", "de": "Drei Schafe." }, "tr": { "ar": "thalāthat kharāf." } },
-    { "id": "s09", "text": { "en": "The donkey and the camel.", "fr": "L'âne et le chameau.", "es": "El burro y el camello.", "ar": "الحمار والجمل.", "de": "Der Esel und das Kamel." }, "tr": { "ar": "al-ḥimār wa-l-jamal." } },
-    { "id": "s10", "text": { "en": "The lion is big.", "fr": "Le lion est grand.", "es": "El león es grande.", "ar": "الأسد كبير.", "de": "Der Löwe ist groß." }, "tr": { "ar": "al-asad kabīr." } },
-    { "id": "s11", "text": { "en": "Do you have a dog?", "fr": "Tu as un chien ?", "es": "¿Tienes un perro?", "ar": "هل عندك كلب؟", "de": "Hast du einen Hund?" }, "tr": { "ar": "hal ʿindaka kalb?" } },
-    { "id": "s12", "text": { "en": "Yes, I have a dog and a cat.", "fr": "Oui, j'ai un chien et un chat.", "es": "Sí, tengo un perro y un gato.", "ar": "نعم، عندي كلب وقطة.", "de": "Ja, ich habe einen Hund und eine Katze." }, "tr": { "ar": "naʿam, ʿindī kalb wa-qiṭṭa." } }
+    {
+      "id": "s01",
+      "text": {
+        "en": "I have a cat.",
+        "fr": "J'ai un chat.",
+        "es": "Tengo un gato.",
+        "ar": "عندي قطة.",
+        "de": "Ich habe eine Katze.",
+        "zgh": "ⵖⵔⵉ ⴰⵎⵓⵛ"
+      },
+      "tr": {
+        "ar": "ʿindī qiṭṭa.",
+        "zgh": "ɣri amuc"
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "I have a dog.",
+        "fr": "J'ai un chien.",
+        "es": "Tengo un perro.",
+        "ar": "عندي كلب.",
+        "de": "Ich habe einen Hund.",
+        "zgh": "ⵖⵔⵉ ⴰⵢⴷⵉ"
+      },
+      "tr": {
+        "ar": "ʿindī kalb.",
+        "zgh": "ɣri aydi"
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "The dog is big.",
+        "fr": "Le chien est grand.",
+        "es": "El perro es grande.",
+        "ar": "الكلب كبير.",
+        "de": "Der Hund ist groß.",
+        "zgh": "ⴰⵢⴷⵉ ⵉⵎⵇⵇⵓⵔ"
+      },
+      "tr": {
+        "ar": "al-kalb kabīr.",
+        "zgh": "aydi imqqur"
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "The cat is small.",
+        "fr": "Le chat est petit.",
+        "es": "El gato es pequeño.",
+        "ar": "القطة صغيرة.",
+        "de": "Die Katze ist klein."
+      },
+      "tr": {
+        "ar": "al-qiṭṭa ṣaghīra."
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "The horse is white.",
+        "fr": "Le cheval est blanc.",
+        "es": "El caballo es blanco.",
+        "ar": "الحصان أبيض.",
+        "de": "Das Pferd ist weiß."
+      },
+      "tr": {
+        "ar": "al-ḥiṣān abyaḍ."
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "The cow is black.",
+        "fr": "La vache est noire.",
+        "es": "La vaca es negra.",
+        "ar": "البقرة سوداء.",
+        "de": "Die Kuh ist schwarz."
+      },
+      "tr": {
+        "ar": "al-baqara sawdāʾ."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "Two birds.",
+        "fr": "Deux oiseaux.",
+        "es": "Dos pájaros.",
+        "ar": "طائران.",
+        "de": "Zwei Vögel."
+      },
+      "tr": {
+        "ar": "ṭāʾirān."
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "Three sheep.",
+        "fr": "Trois moutons.",
+        "es": "Tres ovejas.",
+        "ar": "ثلاثة خراف.",
+        "de": "Drei Schafe."
+      },
+      "tr": {
+        "ar": "thalāthat kharāf."
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "The donkey and the camel.",
+        "fr": "L'âne et le chameau.",
+        "es": "El burro y el camello.",
+        "ar": "الحمار والجمل.",
+        "de": "Der Esel und das Kamel."
+      },
+      "tr": {
+        "ar": "al-ḥimār wa-l-jamal."
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "The lion is big.",
+        "fr": "Le lion est grand.",
+        "es": "El león es grande.",
+        "ar": "الأسد كبير.",
+        "de": "Der Löwe ist groß."
+      },
+      "tr": {
+        "ar": "al-asad kabīr."
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "Do you have a dog?",
+        "fr": "Tu as un chien ?",
+        "es": "¿Tienes un perro?",
+        "ar": "هل عندك كلب؟",
+        "de": "Hast du einen Hund?",
+        "zgh": "ⵉⵙ ⵖⵔⴽ ⴰⵢⴷⵉ"
+      },
+      "tr": {
+        "ar": "hal ʿindaka kalb?",
+        "zgh": "is ɣrk aydi"
+      }
+    },
+    {
+      "id": "s12",
+      "text": {
+        "en": "Yes, I have a dog and a cat.",
+        "fr": "Oui, j'ai un chien et un chat.",
+        "es": "Sí, tengo un perro y un gato.",
+        "ar": "نعم، عندي كلب وقطة.",
+        "de": "Ja, ich habe einen Hund und eine Katze."
+      },
+      "tr": {
+        "ar": "naʿam, ʿindī kalb wa-qiṭṭa."
+      }
+    }
   ],
-  "dialogue": ["s11", "s02", "s03"]
+  "dialogue": [
+    "s11",
+    "s02",
+    "s03"
+  ]
 }

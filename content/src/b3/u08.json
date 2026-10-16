@@ -22,10 +22,12 @@
     "fr": "magasin",
     "es": "tienda",
     "ar": "متجر",
-    "de": "das Geschäft"
+    "de": "das Geschäft",
+    "zgh": "ⵜⴰⵀⴰⵏⵓⵜ"
    },
    "tr": {
-    "ar": "matjar"
+    "ar": "matjar",
+    "zgh": "tahanut"
    }
   },
   {
@@ -100,10 +102,12 @@
     "fr": "cher",
     "es": "caro",
     "ar": "غال",
-    "de": "teuer"
+    "de": "teuer",
+    "zgh": "ⵉⵖⵍⴰ"
    },
    "tr": {
-    "ar": "ghālin"
+    "ar": "ghālin",
+    "zgh": "iɣla"
    }
   },
   {
@@ -217,10 +221,12 @@
     "fr": "acheter",
     "es": "comprar",
     "ar": "يشتري",
-    "de": "kaufen"
+    "de": "kaufen",
+    "zgh": "ⵙⵖ"
    },
    "tr": {
-    "ar": "yashtarī"
+    "ar": "yashtarī",
+    "zgh": "sɣ"
    }
   },
   {
@@ -230,10 +236,12 @@
     "fr": "vendre",
     "es": "vender",
     "ar": "يبيع",
-    "de": "verkaufen"
+    "de": "verkaufen",
+    "zgh": "ⵣⵣⵏⵣ"
    },
    "tr": {
-    "ar": "yabīʿ"
+    "ar": "yabīʿ",
+    "zgh": "zznz"
    }
   },
   {
@@ -308,10 +316,12 @@
     "fr": "montrer",
     "es": "enseñar",
     "ar": "يري",
-    "de": "zeigen"
+    "de": "zeigen",
+    "zgh": "ⵙⴽⵏ"
    },
    "tr": {
-    "ar": "yurī"
+    "ar": "yurī",
+    "zgh": "skn"
    }
   },
   {
@@ -321,10 +331,12 @@
     "fr": "donner",
     "es": "dar",
     "ar": "يعطي",
-    "de": "geben"
+    "de": "geben",
+    "zgh": "ⴼⴽ"
    },
    "tr": {
-    "ar": "yuʿṭī"
+    "ar": "yuʿṭī",
+    "zgh": "fk"
    }
   },
   {
@@ -334,10 +346,12 @@
     "fr": "apporter",
     "es": "traer",
     "ar": "يحضر",
-    "de": "bringen"
+    "de": "bringen",
+    "zgh": "ⴰⵡⵉ"
    },
    "tr": {
-    "ar": "yuḥḍir"
+    "ar": "yuḥḍir",
+    "zgh": "awi"
    }
   },
   {
@@ -386,10 +400,12 @@
     "fr": "merci",
     "es": "gracias",
     "ar": "شكرا",
-    "de": "danke"
+    "de": "danke",
+    "zgh": "ⵜⴰⵏⵎⵎⵉⵔⵜ"
    },
    "tr": {
-    "ar": "shukran"
+    "ar": "shukran",
+    "zgh": "tanmmirt"
    }
   },
   {

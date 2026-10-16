@@ -15,86 +15,948 @@
     "ar": "العناوين قصيرة وحاسمة: «استقالة الوزير» بدل «استقال الوزير». تعلّم القراءة بين السطور واسأل من المستفيد."
   },
   "words": [
-    {"id":"headline","text":{"en":"titre","fr":"titular","es":"عنوان","ar":"ʿunwān"},"tr":{}},
-    {"id":"article","text":{"en":"article","fr":"artículo","es":"مقال","ar":"maqāl"},"tr":{}},
-    {"id":"journalist","text":{"en":"journaliste","fr":"periodista","es":"صحفي","ar":"ṣaḥafī"},"tr":{}},
-    {"id":"editor","text":{"en":"rédacteur en chef","fr":"director","es":"رئيس تحرير","ar":"raʾīs taḥrīr"},"tr":{}},
-    {"id":"newspaper","text":{"en":"journal","fr":"periódico","es":"جريدة","ar":"jarīda"},"tr":{}},
-    {"id":"broadcast","text":{"en":"émission","fr":"emisión","es":"بث","ar":"baththa"},"tr":{}},
-    {"id":"press","text":{"en":"presse","fr":"prensa","es":"صحافة","ar":"ṣaḥāfa"},"tr":{}},
-    {"id":"source","text":{"en":"source","fr":"fuente","es":"مصدر","ar":"maṣdar"},"tr":{}},
-    {"id":"report","text":{"en":"reportage","fr":"reportaje","es":"تقرير","ar":"taqrīr"},"tr":{}},
-    {"id":"interview","text":{"en":"entretien","fr":"entrevista","es":"حوار","ar":"ḥiwār"},"tr":{}},
-    {"id":"coverage","text":{"en":"couverture médiatique","fr":"cobertura","es":"تغطية","ar":"taghṭiya"},"tr":{}},
-    {"id":"viewer","text":{"en":"téléspectateur","fr":"espectador","es":"مشاهد","ar":"mushāhid"},"tr":{}},
-    {"id":"reader","text":{"en":"lecteur","fr":"lector","es":"قارئ","ar":"qāriʾ"},"tr":{}},
-    {"id":"social media","text":{"en":"réseaux sociaux","fr":"redes sociales","es":"وسائل التواصل الاجتماعي","ar":"wasāʾil at-tawāṣul al-ijtimāʿī"},"tr":{}},
-    {"id":"algorithm","text":{"en":"algorithme","fr":"algoritmo","es":"خوارزمية","ar":"khawārizmiyya"},"tr":{}},
-    {"id":"influencer","text":{"en":"influenceur","fr":"influencer","es":"مؤثر رقمي","ar":"muʾaththir raqmī"},"tr":{}},
-    {"id":"fake news","text":{"en":"infox","fr":"noticias falsas","es":"أخبار كاذبة","ar":"akhbār kādhiba"},"tr":{}},
-    {"id":"rumour","text":{"en":"rumeur","fr":"rumor","es":"إشاعة","ar":"ishāʿa"},"tr":{}},
-    {"id":"propaganda","text":{"en":"propagande","fr":"propaganda","es":"دعاية سياسية","ar":"diʿāya siyāsiyya"},"tr":{}},
-    {"id":"censorship","text":{"en":"censure","fr":"censura","es":"رقابة","ar":"riqāba"},"tr":{}},
-    {"id":"advertisement","text":{"en":"publicité","fr":"anuncio","es":"إعلان","ar":"iʿlān"},"tr":{}},
-    {"id":"campaign","text":{"en":"campagne","fr":"campaña","es":"حملة","ar":"ḥamla"},"tr":{}},
-    {"id":"slogan","text":{"en":"slogan","fr":"eslogan","es":"شعار دعائي","ar":"shiʿār diʿāʾī"},"tr":{}},
-    {"id":"brand","text":{"en":"marque","fr":"marca","es":"علامة تجارية","ar":"ʿalāma tijāriyya"},"tr":{}},
-    {"id":"consumer","text":{"en":"consommateur","fr":"consumidor","es":"مستهلك","ar":"mustahlik"},"tr":{}},
-    {"id":"sponsor","text":{"en":"sponsor","fr":"patrocinador","es":"راعٍ","ar":"rāʿin"},"tr":{}},
-    {"id":"target audience","text":{"en":"public cible","fr":"público objetivo","es":"الجمهور المستهدف","ar":"al-jumhūr al-mustahdaf"},"tr":{}},
-    {"id":"exaggeration","text":{"en":"exagération","fr":"exageración","es":"مبالغة","ar":"mubālagha"},"tr":{}},
-    {"id":"manipulation","text":{"en":"manipulation","fr":"manipulación","es":"تلاعب","ar":"talāʿub"},"tr":{}},
-    {"id":"sensationalism","text":{"en":"sensationnalisme","fr":"sensacionalismo","es":"إثارة","ar":"ithāra"},"tr":{}},
-    {"id":"objectivity","text":{"en":"objectivité","fr":"objetividad","es":"موضوعية","ar":"mawḍūʿiyya"},"tr":{}},
-    {"id":"impartiality","text":{"en":"impartialité","fr":"imparcialidad","es":"حياد","ar":"ḥiyād"},"tr":{}},
-    {"id":"credibility","text":{"en":"crédibilité","fr":"credibilidad","es":"مصداقية","ar":"miṣdāqiyya"},"tr":{}},
-    {"id":"transparency","text":{"en":"transparence","fr":"transparencia","es":"شفافية","ar":"shaffāfiyya"},"tr":{}},
-    {"id":"to inform","text":{"en":"informer","fr":"informar","es":"يُطلع","ar":"yuṭliʿ"},"tr":{}},
-    {"id":"to mislead","text":{"en":"induire en erreur","fr":"engañar","es":"يضلّل","ar":"yuḍallil"},"tr":{}},
-    {"id":"to verify","text":{"en":"vérifier","fr":"verificar","es":"يتحقق من","ar":"yataḥaqqaq min"},"tr":{}},
-    {"id":"to publish","text":{"en":"publier","fr":"publicar","es":"ينشر","ar":"yanshur"},"tr":{}},
-    {"id":"to spread","text":{"en":"propager","fr":"difundir","es":"ينتشر","ar":"yantashir"},"tr":{}},
-    {"id":"to promote","text":{"en":"promouvoir","fr":"promocionar","es":"يروّج لـ","ar":"yurawwij li"},"tr":{}},
-    {"id":"to persuade","text":{"en":"convaincre","fr":"convencer","es":"يقنع","ar":"yuqniʿ"},"tr":{}},
-    {"id":"to scroll","text":{"en":"faire défiler","fr":"desplazarse","es":"يتصفح","ar":"yatasaffaḥ"},"tr":{}},
-    {"id":"misleading","text":{"en":"trompeur","fr":"engañoso","es":"مضلل","ar":"muḍallil"},"tr":{}},
-    {"id":"reliable","text":{"en":"fiable","fr":"fiable","es":"موثوق","ar":"mawthūq"},"tr":{}},
-    {"id":"catchy","text":{"en":"accrocheur","fr":"pegadizo","es":"جذاب","ar":"jadhdhāb"},"tr":{}},
-    {"id":"viral","text":{"en":"viral","fr":"viral","es":"منتشر بسرعة","ar":"muntashir bi-surʿa"},"tr":{}},
-    {"id":"according to","text":{"en":"selon","fr":"según","es":"وفقا لـ","ar":"wifqan li"},"tr":{}},
-    {"id":"allegedly","text":{"en":"prétendument","fr":"presuntamente","es":"زعما","ar":"zaʿman"},"tr":{}}
+    {
+      "id": "headline",
+      "text": {
+        "en": "headline",
+        "fr": "titre",
+        "es": "titular",
+        "ar": "عنوان"
+      },
+      "tr": {
+        "ar": "ʿunwān"
+      }
+    },
+    {
+      "id": "article",
+      "text": {
+        "en": "article",
+        "fr": "article",
+        "es": "artículo",
+        "ar": "مقال"
+      },
+      "tr": {
+        "ar": "maqāl"
+      }
+    },
+    {
+      "id": "journalist",
+      "text": {
+        "en": "journalist",
+        "fr": "journaliste",
+        "es": "periodista",
+        "ar": "صحفي"
+      },
+      "tr": {
+        "ar": "ṣaḥafī"
+      }
+    },
+    {
+      "id": "editor",
+      "text": {
+        "en": "editor",
+        "fr": "rédacteur en chef",
+        "es": "redactor jefe",
+        "ar": "رئيس تحرير"
+      },
+      "tr": {
+        "ar": "raʾīs taḥrīr"
+      }
+    },
+    {
+      "id": "newspaper",
+      "text": {
+        "en": "newspaper",
+        "fr": "journal",
+        "es": "periódico",
+        "ar": "جريدة"
+      },
+      "tr": {
+        "ar": "jarīda"
+      }
+    },
+    {
+      "id": "broadcast",
+      "text": {
+        "en": "broadcast",
+        "fr": "émission",
+        "es": "emisión",
+        "ar": "بث"
+      },
+      "tr": {
+        "ar": "baththa"
+      }
+    },
+    {
+      "id": "press",
+      "text": {
+        "en": "press",
+        "fr": "presse",
+        "es": "prensa",
+        "ar": "صحافة"
+      },
+      "tr": {
+        "ar": "ṣaḥāfa"
+      }
+    },
+    {
+      "id": "source",
+      "text": {
+        "en": "source",
+        "fr": "source",
+        "es": "fuente",
+        "ar": "مصدر"
+      },
+      "tr": {
+        "ar": "maṣdar"
+      }
+    },
+    {
+      "id": "report",
+      "text": {
+        "en": "report",
+        "fr": "reportage",
+        "es": "reportaje",
+        "ar": "تقرير"
+      },
+      "tr": {
+        "ar": "taqrīr"
+      }
+    },
+    {
+      "id": "interview",
+      "text": {
+        "en": "interview",
+        "fr": "entretien",
+        "es": "entrevista",
+        "ar": "حوار"
+      },
+      "tr": {
+        "ar": "ḥiwār"
+      }
+    },
+    {
+      "id": "coverage",
+      "text": {
+        "en": "coverage",
+        "fr": "couverture médiatique",
+        "es": "cobertura",
+        "ar": "تغطية"
+      },
+      "tr": {
+        "ar": "taghṭiya"
+      }
+    },
+    {
+      "id": "viewer",
+      "text": {
+        "en": "viewer",
+        "fr": "téléspectateur",
+        "es": "espectador",
+        "ar": "مشاهد"
+      },
+      "tr": {
+        "ar": "mushāhid"
+      }
+    },
+    {
+      "id": "reader",
+      "text": {
+        "en": "reader",
+        "fr": "lecteur",
+        "es": "lector",
+        "ar": "قارئ"
+      },
+      "tr": {
+        "ar": "qāriʾ"
+      }
+    },
+    {
+      "id": "social media",
+      "text": {
+        "en": "social media",
+        "fr": "réseaux sociaux",
+        "es": "redes sociales",
+        "ar": "وسائل التواصل الاجتماعي"
+      },
+      "tr": {
+        "ar": "wasāʾil at-tawāṣul al-ijtimāʿī"
+      }
+    },
+    {
+      "id": "algorithm",
+      "text": {
+        "en": "algorithm",
+        "fr": "algorithme",
+        "es": "algoritmo",
+        "ar": "خوارزمية"
+      },
+      "tr": {
+        "ar": "khawārizmiyya"
+      }
+    },
+    {
+      "id": "influencer",
+      "text": {
+        "en": "influencer",
+        "fr": "influenceur",
+        "es": "influencer",
+        "ar": "مؤثر رقمي"
+      },
+      "tr": {
+        "ar": "muʾaththir raqmī"
+      }
+    },
+    {
+      "id": "fake news",
+      "text": {
+        "en": "fake news",
+        "fr": "infox",
+        "es": "noticias falsas",
+        "ar": "أخبار كاذبة"
+      },
+      "tr": {
+        "ar": "akhbār kādhiba"
+      }
+    },
+    {
+      "id": "rumour",
+      "text": {
+        "en": "rumour",
+        "fr": "rumeur",
+        "es": "rumor",
+        "ar": "إشاعة"
+      },
+      "tr": {
+        "ar": "ishāʿa"
+      }
+    },
+    {
+      "id": "propaganda",
+      "text": {
+        "en": "propaganda",
+        "fr": "propagande",
+        "es": "propaganda",
+        "ar": "دعاية سياسية"
+      },
+      "tr": {
+        "ar": "diʿāya siyāsiyya"
+      }
+    },
+    {
+      "id": "censorship",
+      "text": {
+        "en": "censorship",
+        "fr": "censure",
+        "es": "censura",
+        "ar": "رقابة"
+      },
+      "tr": {
+        "ar": "riqāba"
+      }
+    },
+    {
+      "id": "advertisement",
+      "text": {
+        "en": "advertisement",
+        "fr": "publicité",
+        "es": "anuncio",
+        "ar": "إعلان"
+      },
+      "tr": {
+        "ar": "iʿlān"
+      }
+    },
+    {
+      "id": "campaign",
+      "text": {
+        "en": "campaign",
+        "fr": "campagne",
+        "es": "campaña",
+        "ar": "حملة"
+      },
+      "tr": {
+        "ar": "ḥamla"
+      }
+    },
+    {
+      "id": "slogan",
+      "text": {
+        "en": "slogan",
+        "fr": "slogan",
+        "es": "eslogan",
+        "ar": "شعار دعائي"
+      },
+      "tr": {
+        "ar": "shiʿār diʿāʾī"
+      }
+    },
+    {
+      "id": "brand",
+      "text": {
+        "en": "brand",
+        "fr": "marque",
+        "es": "marca",
+        "ar": "علامة تجارية"
+      },
+      "tr": {
+        "ar": "ʿalāma tijāriyya"
+      }
+    },
+    {
+      "id": "consumer",
+      "text": {
+        "en": "consumer",
+        "fr": "consommateur",
+        "es": "consumidor",
+        "ar": "مستهلك"
+      },
+      "tr": {
+        "ar": "mustahlik"
+      }
+    },
+    {
+      "id": "sponsor",
+      "text": {
+        "en": "sponsor",
+        "fr": "sponsor",
+        "es": "patrocinador",
+        "ar": "راع"
+      },
+      "tr": {
+        "ar": "rāʿin"
+      }
+    },
+    {
+      "id": "target audience",
+      "text": {
+        "en": "target audience",
+        "fr": "public cible",
+        "es": "público objetivo",
+        "ar": "الجمهور المستهدف"
+      },
+      "tr": {
+        "ar": "al-jumhūr al-mustahdaf"
+      }
+    },
+    {
+      "id": "exaggeration",
+      "text": {
+        "en": "exaggeration",
+        "fr": "exagération",
+        "es": "exageración",
+        "ar": "مبالغة"
+      },
+      "tr": {
+        "ar": "mubālagha"
+      }
+    },
+    {
+      "id": "manipulation",
+      "text": {
+        "en": "manipulation",
+        "fr": "manipulation",
+        "es": "manipulación",
+        "ar": "تلاعب"
+      },
+      "tr": {
+        "ar": "talāʿub"
+      }
+    },
+    {
+      "id": "sensationalism",
+      "text": {
+        "en": "sensationalism",
+        "fr": "sensationnalisme",
+        "es": "sensacionalismo",
+        "ar": "إثارة"
+      },
+      "tr": {
+        "ar": "ithāra"
+      }
+    },
+    {
+      "id": "objectivity",
+      "text": {
+        "en": "objectivity",
+        "fr": "objectivité",
+        "es": "objetividad",
+        "ar": "موضوعية"
+      },
+      "tr": {
+        "ar": "mawḍūʿiyya"
+      }
+    },
+    {
+      "id": "impartiality",
+      "text": {
+        "en": "impartiality",
+        "fr": "impartialité",
+        "es": "imparcialidad",
+        "ar": "حياد"
+      },
+      "tr": {
+        "ar": "ḥiyād"
+      }
+    },
+    {
+      "id": "credibility",
+      "text": {
+        "en": "credibility",
+        "fr": "crédibilité",
+        "es": "credibilidad",
+        "ar": "مصداقية"
+      },
+      "tr": {
+        "ar": "miṣdāqiyya"
+      }
+    },
+    {
+      "id": "transparency",
+      "text": {
+        "en": "transparency",
+        "fr": "transparence",
+        "es": "transparencia",
+        "ar": "شفافية"
+      },
+      "tr": {
+        "ar": "shaffāfiyya"
+      }
+    },
+    {
+      "id": "to inform",
+      "text": {
+        "en": "to inform",
+        "fr": "informer",
+        "es": "informar",
+        "ar": "يطلع"
+      },
+      "tr": {
+        "ar": "yuṭliʿ"
+      }
+    },
+    {
+      "id": "to mislead",
+      "text": {
+        "en": "to mislead",
+        "fr": "induire en erreur",
+        "es": "engañar",
+        "ar": "يضلل"
+      },
+      "tr": {
+        "ar": "yuḍallil"
+      }
+    },
+    {
+      "id": "to verify",
+      "text": {
+        "en": "to verify",
+        "fr": "vérifier",
+        "es": "verificar",
+        "ar": "يتحقق من"
+      },
+      "tr": {
+        "ar": "yataḥaqqaq min"
+      }
+    },
+    {
+      "id": "to publish",
+      "text": {
+        "en": "to publish",
+        "fr": "publier",
+        "es": "publicar",
+        "ar": "ينشر"
+      },
+      "tr": {
+        "ar": "yanshur"
+      }
+    },
+    {
+      "id": "to spread",
+      "text": {
+        "en": "to spread",
+        "fr": "propager",
+        "es": "difundir",
+        "ar": "ينتشر"
+      },
+      "tr": {
+        "ar": "yantashir"
+      }
+    },
+    {
+      "id": "to promote",
+      "text": {
+        "en": "to promote",
+        "fr": "promouvoir",
+        "es": "promocionar",
+        "ar": "يروج لـ"
+      },
+      "tr": {
+        "ar": "yurawwij li"
+      }
+    },
+    {
+      "id": "to persuade",
+      "text": {
+        "en": "to persuade",
+        "fr": "convaincre",
+        "es": "convencer",
+        "ar": "يقنع"
+      },
+      "tr": {
+        "ar": "yuqniʿ"
+      }
+    },
+    {
+      "id": "to scroll",
+      "text": {
+        "en": "to scroll",
+        "fr": "faire défiler",
+        "es": "desplazarse",
+        "ar": "يتصفح"
+      },
+      "tr": {
+        "ar": "yatasaffaḥ"
+      }
+    },
+    {
+      "id": "misleading",
+      "text": {
+        "en": "misleading",
+        "fr": "trompeur",
+        "es": "engañoso",
+        "ar": "مضلل"
+      },
+      "tr": {
+        "ar": "muḍallil"
+      }
+    },
+    {
+      "id": "reliable",
+      "text": {
+        "en": "reliable",
+        "fr": "fiable",
+        "es": "fiable",
+        "ar": "موثوق"
+      },
+      "tr": {
+        "ar": "mawthūq"
+      }
+    },
+    {
+      "id": "catchy",
+      "text": {
+        "en": "catchy",
+        "fr": "accrocheur",
+        "es": "pegadizo",
+        "ar": "جذاب"
+      },
+      "tr": {
+        "ar": "jadhdhāb"
+      }
+    },
+    {
+      "id": "viral",
+      "text": {
+        "en": "viral",
+        "fr": "viral",
+        "es": "viral",
+        "ar": "منتشر بسرعة"
+      },
+      "tr": {
+        "ar": "muntashir bi-surʿa"
+      }
+    },
+    {
+      "id": "according to",
+      "text": {
+        "en": "according to",
+        "fr": "selon",
+        "es": "según",
+        "ar": "وفقا لـ"
+      },
+      "tr": {
+        "ar": "wifqan li"
+      }
+    },
+    {
+      "id": "allegedly",
+      "text": {
+        "en": "allegedly",
+        "fr": "prétendument",
+        "es": "presuntamente",
+        "ar": "زعما"
+      },
+      "tr": {
+        "ar": "zaʿman"
+      }
+    }
   ],
   "sentences": [
-    {"id":"s01","text":{"en":"The headline promised a scandal, but the article revealed nothing.","fr":"Le titre promettait un scandale, mais l'article ne révélait rien.","es":"El titular prometía un escándalo, pero el artículo no revelaba nada.","ar":"وعد العنوان بفضيحة، لكن المقال لم يكشف عن شيء."},"tr":{"ar":"waʿada al-ʿunwān bi-faḍīḥa, lākinna al-maqāl lam yakshif ʿan shayʾ."}},
-    {"id":"s02","text":{"en":"A good journalist always verifies the source before publishing.","fr":"Un bon journaliste vérifie toujours sa source avant de publier.","es":"Un buen periodista siempre verifica la fuente antes de publicar.","ar":"الصحفي الجيد يتحقق دائما من المصدر قبل أن ينشر."},"tr":{"ar":"aṣ-ṣaḥafī al-jayyid yataḥaqqaq dāʾiman min al-maṣdar qabla an yanshur."}},
-    {"id":"s03","text":{"en":"According to the report, the company allegedly misled its customers.","fr":"Selon le rapport, l'entreprise aurait trompé ses clients.","es":"Según el informe, la empresa habría engañado presuntamente a sus clientes.","ar":"وفقا للتقرير، ضلّلت الشركة زبائنها زعما."},"tr":{"ar":"wifqan lit-taqrīr, ḍallalat ash-sharika zabāʾinahā zaʿman."}},
-    {"id":"s04","text":{"en":"Fake news spreads faster than the corrections that follow it.","fr":"Les infox se propagent plus vite que les rectificatifs qui les suivent.","es":"Las noticias falsas se difunden más rápido que las rectificaciones que las siguen.","ar":"تنتشر الأخبار الكاذبة أسرع من التصحيحات التي تلحقها."},"tr":{"ar":"tantashir al-akhbār al-kādhiba asraʿ min at-taṣḥīḥāt allatī talḥaquhā."}},
-    {"id":"s05","text":{"en":"The algorithm shows us what we already believe.","fr":"L'algorithme nous montre ce que nous croyons déjà.","es":"El algoritmo nos muestra lo que ya creemos.","ar":"تعرض لنا الخوارزمية ما نؤمن به أصلا."},"tr":{"ar":"taʿriḍ lanā al-khawārizmiyya mā nuʾminu bihi aṣlan."}},
-    {"id":"s06","text":{"en":"Many people scroll through social media without reading a single article.","fr":"Beaucoup de gens font défiler les réseaux sociaux sans lire un seul article.","es":"Mucha gente se desplaza por las redes sociales sin leer ni un solo artículo.","ar":"يتصفح كثيرون وسائل التواصل الاجتماعي دون قراءة مقال واحد."},"tr":{"ar":"yatasaffaḥ kathīrūn wasāʾil at-tawāṣul al-ijtimāʿī dūna qirāʾat maqāl wāḥid."}},
-    {"id":"s07","text":{"en":"The influencer promoted the product without mentioning the sponsor.","fr":"L'influenceur a promu le produit sans mentionner le sponsor.","es":"El influencer promocionó el producto sin mencionar al patrocinador.","ar":"روّج المؤثر الرقمي للمنتج دون أن يذكر الراعي."},"tr":{"ar":"rawwaja al-muʾaththir ar-raqmī lil-muntaj dūna an yadhkura ar-rāʿī."}},
-    {"id":"s08","text":{"en":"The campaign targets young consumers with a catchy slogan.","fr":"La campagne vise les jeunes consommateurs avec un slogan accrocheur.","es":"La campaña se dirige a los consumidores jóvenes con un eslogan pegadizo.","ar":"تستهدف الحملة المستهلكين الشباب بشعار دعائي جذاب."},"tr":{"ar":"tastahdif al-ḥamla al-mustahlikīn ash-shabāb bi-shiʿār diʿāʾī jadhdhāb."}},
-    {"id":"s09","text":{"en":"Advertising persuades us to buy things we do not need.","fr":"La publicité nous persuade d'acheter ce dont nous n'avons pas besoin.","es":"La publicidad nos convence de comprar cosas que no necesitamos.","ar":"يقنعنا الإعلان بشراء أشياء لا نحتاج إليها."},"tr":{"ar":"yuqniʿunā al-iʿlān bi-shirāʾ ashyāʾ lā naḥtāju ilayhā."}},
-    {"id":"s10","text":{"en":"That advertisement is full of exaggeration and empty promises.","fr":"Cette publicité est pleine d'exagérations et de promesses creuses.","es":"Ese anuncio está lleno de exageraciones y promesas vacías.","ar":"هذا الإعلان مليء بالمبالغة والوعود الفارغة."},"tr":{"ar":"hādhā al-iʿlān mamlūʾ bil-mubālagha wa-l-wuʿūd al-fārigha."}},
-    {"id":"s11","text":{"en":"The brand has built its credibility over several decades.","fr":"La marque a bâti sa crédibilité en plusieurs décennies.","es":"La marca ha construido su credibilidad a lo largo de varias décadas.","ar":"بنت العلامة التجارية مصداقيتها على مدى عقود عدة."},"tr":{"ar":"banat al-ʿalāma at-tijāriyya miṣdāqiyyatahā ʿalā madā ʿuqūd ʿiddah."}},
-    {"id":"s12","text":{"en":"Total objectivity is perhaps impossible, but impartiality is a duty.","fr":"L'objectivité totale est peut-être impossible, mais l'impartialité est un devoir.","es":"La objetividad total quizá sea imposible, pero la imparcialidad es un deber.","ar":"ربما كانت الموضوعية التامة مستحيلة، لكن الحياد واجب."},"tr":{"ar":"rubbamā kānat al-mawḍūʿiyya at-tāmma mustaḥīla, lākinna al-ḥiyād wājib."}},
-    {"id":"s13","text":{"en":"Censorship silences the press and hides the truth from the public.","fr":"La censure musèle la presse et cache la vérité au public.","es":"La censura silencia a la prensa y oculta la verdad al público.","ar":"تُسكت الرقابة الصحافة وتُخفي الحقيقة عن الجمهور."},"tr":{"ar":"tuskit ar-riqāba aṣ-ṣaḥāfa wa-tukhfī al-ḥaqīqa ʿan al-jumhūr."}},
-    {"id":"s14","text":{"en":"The propaganda was designed to manipulate public opinion.","fr":"La propagande était conçue pour manipuler l'opinion publique.","es":"La propaganda estaba diseñada para manipular a la opinión pública.","ar":"صُممت الدعاية السياسية للتلاعب بالرأي العام."},"tr":{"ar":"ṣummimat ad-diʿāya as-siyāsiyya lil-talāʿub bi-r-raʾy al-ʿāmm."}},
-    {"id":"s15","text":{"en":"Sensationalism sells newspapers, but it damages trust.","fr":"Le sensationnalisme fait vendre des journaux, mais il ruine la confiance.","es":"El sensacionalismo vende periódicos, pero daña la confianza.","ar":"تبيع الإثارة الجرائد لكنها تضرّ بالثقة."},"tr":{"ar":"tabīʿ al-ithāra al-jarāʾid lākinnahā taḍurr bith-thiqa."}},
-    {"id":"s16","text":{"en":"The minister gave an interview in which he denied everything.","fr":"Le ministre a donné un entretien dans lequel il a tout nié.","es":"El ministro concedió una entrevista en la que lo negó todo.","ar":"أجرى الوزير حوارا نفى فيه كل شيء."},"tr":{"ar":"ajrā al-wazīr ḥiwāran nafā fīhi kulla shayʾ."}},
-    {"id":"s17","text":{"en":"Television coverage of the protest was strikingly one-sided.","fr":"La couverture télévisée de la manifestation était étonnamment partiale.","es":"La cobertura televisiva de la protesta fue sorprendentemente unilateral.","ar":"كانت التغطية التلفزيونية للاحتجاج منحازة إلى حد لافت."},"tr":{"ar":"kānat at-taghṭiya at-tilfiziyūniyya lil-iḥtijāj munḥāza ilā ḥaddin lāfit."}},
-    {"id":"s18","text":{"en":"The video went viral overnight, and nobody knows who made it.","fr":"La vidéo est devenue virale en une nuit, et personne ne sait qui l'a faite.","es":"El vídeo se hizo viral de la noche a la mañana y nadie sabe quién lo hizo.","ar":"انتشر الفيديو بسرعة خلال ليلة واحدة، ولا أحد يعرف من صنعه."},"tr":{"ar":"intashara al-fīdiyū bi-surʿa khilāla layla wāḥida, wa-lā aḥad yaʿrif man ṣanaʿahu."}},
-    {"id":"s19","text":{"en":"Is this website reliable, or is it just spreading rumours?","fr":"Ce site est-il fiable, ou ne fait-il que propager des rumeurs ?","es":"¿Es fiable este sitio web o solo difunde rumores?","ar":"هل هذا الموقع موثوق أم أنه ينشر الإشاعات فقط؟"},"tr":{"ar":"hal hādhā al-mawqiʿ mawthūq am innahu yanshur al-ishāʿāt faqaṭ?"}},
-    {"id":"s20","text":{"en":"You should check where the figures come from before sharing them.","fr":"Il faut vérifier d'où viennent les chiffres avant de les partager.","es":"Deberías comprobar de dónde salen las cifras antes de compartirlas.","ar":"ينبغي أن تتحقق من مصدر الأرقام قبل مشاركتها."},"tr":{"ar":"yanbaghī an tataḥaqqaq min maṣdar al-arqām qabla mushārakatihā."}},
-    {"id":"s21","text":{"en":"Transparency about funding is essential for any newspaper.","fr":"La transparence sur le financement est essentielle pour tout journal.","es":"La transparencia sobre la financiación es esencial para cualquier periódico.","ar":"الشفافية بشأن التمويل أمر أساسي لأي جريدة."},"tr":{"ar":"ash-shaffāfiyya bi-shaʾn at-tamwīl amr asāsī li-ayyi jarīda."}},
-    {"id":"s22","text":{"en":"The editor decided to publish the story despite the pressure.","fr":"Le rédacteur en chef a décidé de publier l'histoire malgré les pressions.","es":"El director decidió publicar la historia a pesar de las presiones.","ar":"قرر رئيس التحرير نشر القصة رغم الضغوط."},"tr":{"ar":"qarrara raʾīs at-taḥrīr nashr al-qiṣṣa raghma aḍ-ḍughūṭ."}},
-    {"id":"s23","text":{"en":"Readers are no longer willing to pay for what they can read for free.","fr":"Les lecteurs ne veulent plus payer pour ce qu'ils peuvent lire gratuitement.","es":"Los lectores ya no están dispuestos a pagar por lo que pueden leer gratis.","ar":"لم يعد القراء مستعدين للدفع مقابل ما يمكنهم قراءته مجانا."},"tr":{"ar":"lam yaʿud al-qurrāʾ mustaʿiddīn lid-dafʿ muqābil mā yumkinuhum qirāʾatuhu majjānan."}},
-    {"id":"s24","text":{"en":"The broadcast was meant to inform, not to entertain.","fr":"L'émission devait informer, pas divertir.","es":"La emisión pretendía informar, no entretener.","ar":"كان البث يهدف إلى الإطلاع لا إلى الترفيه."},"tr":{"ar":"kāna al-baththu yahdif ilā l-iṭlāʿ lā ilā t-tarfīh."}},
-    {"id":"s25","text":{"en":"That is a misleading headline: the study says the opposite.","fr":"C'est un titre trompeur : l'étude dit exactement l'inverse.","es":"Es un titular engañoso: el estudio dice justo lo contrario.","ar":"هذا عنوان مضلل: الدراسة تقول عكس ذلك تماما."},"tr":{"ar":"hādhā ʿunwān muḍallil: ad-dirāsa taqūl ʿaks dhālik tamāman."}},
-    {"id":"s26","text":{"en":"Did you see the headline about the strike?","fr":"As-tu vu le titre sur la grève ?","es":"¿Has visto el titular sobre la huelga?","ar":"هل رأيت العنوان عن الإضراب؟"},"tr":{"ar":"hal raʾayta al-ʿunwān ʿan al-iḍrāb?"}},
-    {"id":"s27","text":{"en":"I did, but I would not trust it before reading the full article.","fr":"Oui, mais je m'en méfierais avant d'avoir lu l'article en entier.","es":"Sí, pero no me fiaría antes de leer el artículo completo.","ar":"نعم، لكنني لن أثق به قبل قراءة المقال كاملا."},"tr":{"ar":"naʿam, lākinnanī lan athiqa bihi qabla qirāʾat al-maqāl kāmilan."}},
-    {"id":"s28","text":{"en":"Quite right: a headline is written to catch your eye, not to tell the whole story.","fr":"Tout à fait : un titre est écrit pour attirer l'œil, pas pour raconter toute l'histoire.","es":"Tienes razón: un titular se escribe para llamar la atención, no para contar toda la historia.","ar":"هذا صحيح: يُكتب العنوان ليلفت النظر لا ليروي القصة كاملة."},"tr":{"ar":"hādhā ṣaḥīḥ: yuktab al-ʿunwān li-yalfita an-naẓar lā li-yarwiya al-qiṣṣa kāmila."}},
-    {"id":"s29","text":{"en":"The sponsor withdrew from the campaign after the controversy.","fr":"Le sponsor s'est retiré de la campagne après la polémique.","es":"El patrocinador se retiró de la campaña tras la polémica.","ar":"انسحب الراعي من الحملة بعد الجدل."},"tr":{"ar":"insaḥaba ar-rāʿī min al-ḥamla baʿda al-jadal."}},
-    {"id":"s30","text":{"en":"Viewers deserve to know who is behind the message.","fr":"Les téléspectateurs méritent de savoir qui est derrière le message.","es":"Los espectadores merecen saber quién está detrás del mensaje.","ar":"يستحق المشاهدون أن يعرفوا من يقف وراء الرسالة."},"tr":{"ar":"yastaḥiqq al-mushāhidūn an yaʿrifū man yaqif warāʾ ar-risāla."}}
+    {
+      "id": "s01",
+      "text": {
+        "en": "The headline promised a scandal, but the article revealed nothing.",
+        "fr": "Le titre promettait un scandale, mais l'article ne révélait rien.",
+        "es": "El titular prometía un escándalo, pero el artículo no revelaba nada.",
+        "ar": "وعد العنوان بفضيحة، لكن المقال لم يكشف عن شيء."
+      },
+      "tr": {
+        "ar": "waʿada al-ʿunwān bi-faḍīḥa, lākinna al-maqāl lam yakshif ʿan shayʾ."
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "A good journalist always verifies the source before publishing.",
+        "fr": "Un bon journaliste vérifie toujours sa source avant de publier.",
+        "es": "Un buen periodista siempre verifica la fuente antes de publicar.",
+        "ar": "الصحفي الجيد يتحقق دائما من المصدر قبل أن ينشر."
+      },
+      "tr": {
+        "ar": "aṣ-ṣaḥafī al-jayyid yataḥaqqaq dāʾiman min al-maṣdar qabla an yanshur."
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "According to the report, the company allegedly misled its customers.",
+        "fr": "Selon le rapport, l'entreprise aurait trompé ses clients.",
+        "es": "Según el informe, la empresa habría engañado presuntamente a sus clientes.",
+        "ar": "وفقا للتقرير، ضلّلت الشركة زبائنها زعما."
+      },
+      "tr": {
+        "ar": "wifqan lit-taqrīr, ḍallalat ash-sharika zabāʾinahā zaʿman."
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "Fake news spreads faster than the corrections that follow it.",
+        "fr": "Les infox se propagent plus vite que les rectificatifs qui les suivent.",
+        "es": "Las noticias falsas se difunden más rápido que las rectificaciones que las siguen.",
+        "ar": "تنتشر الأخبار الكاذبة أسرع من التصحيحات التي تلحقها."
+      },
+      "tr": {
+        "ar": "tantashir al-akhbār al-kādhiba asraʿ min at-taṣḥīḥāt allatī talḥaquhā."
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "The algorithm shows us what we already believe.",
+        "fr": "L'algorithme nous montre ce que nous croyons déjà.",
+        "es": "El algoritmo nos muestra lo que ya creemos.",
+        "ar": "تعرض لنا الخوارزمية ما نؤمن به أصلا."
+      },
+      "tr": {
+        "ar": "taʿriḍ lanā al-khawārizmiyya mā nuʾminu bihi aṣlan."
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "Many people scroll through social media without reading a single article.",
+        "fr": "Beaucoup de gens font défiler les réseaux sociaux sans lire un seul article.",
+        "es": "Mucha gente se desplaza por las redes sociales sin leer ni un solo artículo.",
+        "ar": "يتصفح كثيرون وسائل التواصل الاجتماعي دون قراءة مقال واحد."
+      },
+      "tr": {
+        "ar": "yatasaffaḥ kathīrūn wasāʾil at-tawāṣul al-ijtimāʿī dūna qirāʾat maqāl wāḥid."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "The influencer promoted the product without mentioning the sponsor.",
+        "fr": "L'influenceur a promu le produit sans mentionner le sponsor.",
+        "es": "El influencer promocionó el producto sin mencionar al patrocinador.",
+        "ar": "روّج المؤثر الرقمي للمنتج دون أن يذكر الراعي."
+      },
+      "tr": {
+        "ar": "rawwaja al-muʾaththir ar-raqmī lil-muntaj dūna an yadhkura ar-rāʿī."
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "The campaign targets young consumers with a catchy slogan.",
+        "fr": "La campagne vise les jeunes consommateurs avec un slogan accrocheur.",
+        "es": "La campaña se dirige a los consumidores jóvenes con un eslogan pegadizo.",
+        "ar": "تستهدف الحملة المستهلكين الشباب بشعار دعائي جذاب."
+      },
+      "tr": {
+        "ar": "tastahdif al-ḥamla al-mustahlikīn ash-shabāb bi-shiʿār diʿāʾī jadhdhāb."
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "Advertising persuades us to buy things we do not need.",
+        "fr": "La publicité nous persuade d'acheter ce dont nous n'avons pas besoin.",
+        "es": "La publicidad nos convence de comprar cosas que no necesitamos.",
+        "ar": "يقنعنا الإعلان بشراء أشياء لا نحتاج إليها."
+      },
+      "tr": {
+        "ar": "yuqniʿunā al-iʿlān bi-shirāʾ ashyāʾ lā naḥtāju ilayhā."
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "That advertisement is full of exaggeration and empty promises.",
+        "fr": "Cette publicité est pleine d'exagérations et de promesses creuses.",
+        "es": "Ese anuncio está lleno de exageraciones y promesas vacías.",
+        "ar": "هذا الإعلان مليء بالمبالغة والوعود الفارغة."
+      },
+      "tr": {
+        "ar": "hādhā al-iʿlān mamlūʾ bil-mubālagha wa-l-wuʿūd al-fārigha."
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "The brand has built its credibility over several decades.",
+        "fr": "La marque a bâti sa crédibilité en plusieurs décennies.",
+        "es": "La marca ha construido su credibilidad a lo largo de varias décadas.",
+        "ar": "بنت العلامة التجارية مصداقيتها على مدى عقود عدة."
+      },
+      "tr": {
+        "ar": "banat al-ʿalāma at-tijāriyya miṣdāqiyyatahā ʿalā madā ʿuqūd ʿiddah."
+      }
+    },
+    {
+      "id": "s12",
+      "text": {
+        "en": "Total objectivity is perhaps impossible, but impartiality is a duty.",
+        "fr": "L'objectivité totale est peut-être impossible, mais l'impartialité est un devoir.",
+        "es": "La objetividad total quizá sea imposible, pero la imparcialidad es un deber.",
+        "ar": "ربما كانت الموضوعية التامة مستحيلة، لكن الحياد واجب."
+      },
+      "tr": {
+        "ar": "rubbamā kānat al-mawḍūʿiyya at-tāmma mustaḥīla, lākinna al-ḥiyād wājib."
+      }
+    },
+    {
+      "id": "s13",
+      "text": {
+        "en": "Censorship silences the press and hides the truth from the public.",
+        "fr": "La censure musèle la presse et cache la vérité au public.",
+        "es": "La censura silencia a la prensa y oculta la verdad al público.",
+        "ar": "تُسكت الرقابة الصحافة وتُخفي الحقيقة عن الجمهور."
+      },
+      "tr": {
+        "ar": "tuskit ar-riqāba aṣ-ṣaḥāfa wa-tukhfī al-ḥaqīqa ʿan al-jumhūr."
+      }
+    },
+    {
+      "id": "s14",
+      "text": {
+        "en": "The propaganda was designed to manipulate public opinion.",
+        "fr": "La propagande était conçue pour manipuler l'opinion publique.",
+        "es": "La propaganda estaba diseñada para manipular a la opinión pública.",
+        "ar": "صُممت الدعاية السياسية للتلاعب بالرأي العام."
+      },
+      "tr": {
+        "ar": "ṣummimat ad-diʿāya as-siyāsiyya lil-talāʿub bi-r-raʾy al-ʿāmm."
+      }
+    },
+    {
+      "id": "s15",
+      "text": {
+        "en": "Sensationalism sells newspapers, but it damages trust.",
+        "fr": "Le sensationnalisme fait vendre des journaux, mais il ruine la confiance.",
+        "es": "El sensacionalismo vende periódicos, pero daña la confianza.",
+        "ar": "تبيع الإثارة الجرائد لكنها تضرّ بالثقة."
+      },
+      "tr": {
+        "ar": "tabīʿ al-ithāra al-jarāʾid lākinnahā taḍurr bith-thiqa."
+      }
+    },
+    {
+      "id": "s16",
+      "text": {
+        "en": "The minister gave an interview in which he denied everything.",
+        "fr": "Le ministre a donné un entretien dans lequel il a tout nié.",
+        "es": "El ministro concedió una entrevista en la que lo negó todo.",
+        "ar": "أجرى الوزير حوارا نفى فيه كل شيء."
+      },
+      "tr": {
+        "ar": "ajrā al-wazīr ḥiwāran nafā fīhi kulla shayʾ."
+      }
+    },
+    {
+      "id": "s17",
+      "text": {
+        "en": "Television coverage of the protest was strikingly one-sided.",
+        "fr": "La couverture télévisée de la manifestation était étonnamment partiale.",
+        "es": "La cobertura televisiva de la protesta fue sorprendentemente unilateral.",
+        "ar": "كانت التغطية التلفزيونية للاحتجاج منحازة إلى حد لافت."
+      },
+      "tr": {
+        "ar": "kānat at-taghṭiya at-tilfiziyūniyya lil-iḥtijāj munḥāza ilā ḥaddin lāfit."
+      }
+    },
+    {
+      "id": "s18",
+      "text": {
+        "en": "The video went viral overnight, and nobody knows who made it.",
+        "fr": "La vidéo est devenue virale en une nuit, et personne ne sait qui l'a faite.",
+        "es": "El vídeo se hizo viral de la noche a la mañana y nadie sabe quién lo hizo.",
+        "ar": "انتشر الفيديو بسرعة خلال ليلة واحدة، ولا أحد يعرف من صنعه."
+      },
+      "tr": {
+        "ar": "intashara al-fīdiyū bi-surʿa khilāla layla wāḥida, wa-lā aḥad yaʿrif man ṣanaʿahu."
+      }
+    },
+    {
+      "id": "s19",
+      "text": {
+        "en": "Is this website reliable, or is it just spreading rumours?",
+        "fr": "Ce site est-il fiable, ou ne fait-il que propager des rumeurs ?",
+        "es": "¿Es fiable este sitio web o solo difunde rumores?",
+        "ar": "هل هذا الموقع موثوق أم أنه ينشر الإشاعات فقط؟"
+      },
+      "tr": {
+        "ar": "hal hādhā al-mawqiʿ mawthūq am innahu yanshur al-ishāʿāt faqaṭ?"
+      }
+    },
+    {
+      "id": "s20",
+      "text": {
+        "en": "You should check where the figures come from before sharing them.",
+        "fr": "Il faut vérifier d'où viennent les chiffres avant de les partager.",
+        "es": "Deberías comprobar de dónde salen las cifras antes de compartirlas.",
+        "ar": "ينبغي أن تتحقق من مصدر الأرقام قبل مشاركتها."
+      },
+      "tr": {
+        "ar": "yanbaghī an tataḥaqqaq min maṣdar al-arqām qabla mushārakatihā."
+      }
+    },
+    {
+      "id": "s21",
+      "text": {
+        "en": "Transparency about funding is essential for any newspaper.",
+        "fr": "La transparence sur le financement est essentielle pour tout journal.",
+        "es": "La transparencia sobre la financiación es esencial para cualquier periódico.",
+        "ar": "الشفافية بشأن التمويل أمر أساسي لأي جريدة."
+      },
+      "tr": {
+        "ar": "ash-shaffāfiyya bi-shaʾn at-tamwīl amr asāsī li-ayyi jarīda."
+      }
+    },
+    {
+      "id": "s22",
+      "text": {
+        "en": "The editor decided to publish the story despite the pressure.",
+        "fr": "Le rédacteur en chef a décidé de publier l'histoire malgré les pressions.",
+        "es": "El director decidió publicar la historia a pesar de las presiones.",
+        "ar": "قرر رئيس التحرير نشر القصة رغم الضغوط."
+      },
+      "tr": {
+        "ar": "qarrara raʾīs at-taḥrīr nashr al-qiṣṣa raghma aḍ-ḍughūṭ."
+      }
+    },
+    {
+      "id": "s23",
+      "text": {
+        "en": "Readers are no longer willing to pay for what they can read for free.",
+        "fr": "Les lecteurs ne veulent plus payer pour ce qu'ils peuvent lire gratuitement.",
+        "es": "Los lectores ya no están dispuestos a pagar por lo que pueden leer gratis.",
+        "ar": "لم يعد القراء مستعدين للدفع مقابل ما يمكنهم قراءته مجانا."
+      },
+      "tr": {
+        "ar": "lam yaʿud al-qurrāʾ mustaʿiddīn lid-dafʿ muqābil mā yumkinuhum qirāʾatuhu majjānan."
+      }
+    },
+    {
+      "id": "s24",
+      "text": {
+        "en": "The broadcast was meant to inform, not to entertain.",
+        "fr": "L'émission devait informer, pas divertir.",
+        "es": "La emisión pretendía informar, no entretener.",
+        "ar": "كان البث يهدف إلى الإطلاع لا إلى الترفيه."
+      },
+      "tr": {
+        "ar": "kāna al-baththu yahdif ilā l-iṭlāʿ lā ilā t-tarfīh."
+      }
+    },
+    {
+      "id": "s25",
+      "text": {
+        "en": "That is a misleading headline: the study says the opposite.",
+        "fr": "C'est un titre trompeur : l'étude dit exactement l'inverse.",
+        "es": "Es un titular engañoso: el estudio dice justo lo contrario.",
+        "ar": "هذا عنوان مضلل: الدراسة تقول عكس ذلك تماما."
+      },
+      "tr": {
+        "ar": "hādhā ʿunwān muḍallil: ad-dirāsa taqūl ʿaks dhālik tamāman."
+      }
+    },
+    {
+      "id": "s26",
+      "text": {
+        "en": "Did you see the headline about the strike?",
+        "fr": "As-tu vu le titre sur la grève ?",
+        "es": "¿Has visto el titular sobre la huelga?",
+        "ar": "هل رأيت العنوان عن الإضراب؟"
+      },
+      "tr": {
+        "ar": "hal raʾayta al-ʿunwān ʿan al-iḍrāb?"
+      }
+    },
+    {
+      "id": "s27",
+      "text": {
+        "en": "I did, but I would not trust it before reading the full article.",
+        "fr": "Oui, mais je m'en méfierais avant d'avoir lu l'article en entier.",
+        "es": "Sí, pero no me fiaría antes de leer el artículo completo.",
+        "ar": "نعم، لكنني لن أثق به قبل قراءة المقال كاملا."
+      },
+      "tr": {
+        "ar": "naʿam, lākinnanī lan athiqa bihi qabla qirāʾat al-maqāl kāmilan."
+      }
+    },
+    {
+      "id": "s28",
+      "text": {
+        "en": "Quite right: a headline is written to catch your eye, not to tell the whole story.",
+        "fr": "Tout à fait : un titre est écrit pour attirer l'œil, pas pour raconter toute l'histoire.",
+        "es": "Tienes razón: un titular se escribe para llamar la atención, no para contar toda la historia.",
+        "ar": "هذا صحيح: يُكتب العنوان ليلفت النظر لا ليروي القصة كاملة."
+      },
+      "tr": {
+        "ar": "hādhā ṣaḥīḥ: yuktab al-ʿunwān li-yalfita an-naẓar lā li-yarwiya al-qiṣṣa kāmila."
+      }
+    },
+    {
+      "id": "s29",
+      "text": {
+        "en": "The sponsor withdrew from the campaign after the controversy.",
+        "fr": "Le sponsor s'est retiré de la campagne après la polémique.",
+        "es": "El patrocinador se retiró de la campaña tras la polémica.",
+        "ar": "انسحب الراعي من الحملة بعد الجدل."
+      },
+      "tr": {
+        "ar": "insaḥaba ar-rāʿī min al-ḥamla baʿda al-jadal."
+      }
+    },
+    {
+      "id": "s30",
+      "text": {
+        "en": "Viewers deserve to know who is behind the message.",
+        "fr": "Les téléspectateurs méritent de savoir qui est derrière le message.",
+        "es": "Los espectadores merecen saber quién está detrás del mensaje.",
+        "ar": "يستحق المشاهدون أن يعرفوا من يقف وراء الرسالة."
+      },
+      "tr": {
+        "ar": "yastaḥiqq al-mushāhidūn an yaʿrifū man yaqif warāʾ ar-risāla."
+      }
+    }
   ],
-  "dialogue": ["s26","s27","s28"]
+  "dialogue": [
+    "s26",
+    "s27",
+    "s28"
+  ]
 }

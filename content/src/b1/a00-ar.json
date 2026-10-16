@@ -1,0 +1,276 @@
+{
+  "id": "u00",
+  "level": "b1",
+  "order": 0,
+  "only": [
+    "ar"
+  ],
+  "title": {
+    "en": "Arabic letters and sounds",
+    "fr": "Lettres et sons de l'arabe",
+    "es": "Letras y sonidos del árabe",
+    "ar": "الحروف العربية وأصواتها"
+  },
+  "tip": {
+    "en": "Arabic is written from right to left. Each letter has a name and a sound; learn them one by one and say each aloud.",
+    "fr": "L'arabe s'écrit de droite à gauche. Chaque lettre a un nom et un son : apprenez-les une à une et dites-les à voix haute.",
+    "es": "El árabe se escribe de derecha a izquierda. Cada letra tiene un nombre y un sonido: apréndelas una a una y dilas en voz alta.",
+    "ar": "تُكتب العربية من اليمين إلى اليسار. لكل حرف اسم وصوت؛ تعلّمها حرفا حرفا وانطقها بصوت عال."
+  },
+  "words": [
+    {
+      "id": "alif",
+      "text": {
+        "en": "a (alif)",
+        "fr": "a (alif)",
+        "es": "a (alif)",
+        "ar": "ا"
+      }
+    },
+    {
+      "id": "baa",
+      "text": {
+        "en": "b (bāʾ)",
+        "fr": "b (bāʾ)",
+        "es": "b (bāʾ)",
+        "ar": "ب"
+      }
+    },
+    {
+      "id": "taa",
+      "text": {
+        "en": "t (tāʾ)",
+        "fr": "t (tāʾ)",
+        "es": "t (tāʾ)",
+        "ar": "ت"
+      }
+    },
+    {
+      "id": "thaa",
+      "text": {
+        "en": "th (thāʾ)",
+        "fr": "th (thāʾ)",
+        "es": "z (thāʾ)",
+        "ar": "ث"
+      }
+    },
+    {
+      "id": "jiim",
+      "text": {
+        "en": "j (jīm)",
+        "fr": "dj (jīm)",
+        "es": "y (jīm)",
+        "ar": "ج"
+      }
+    },
+    {
+      "id": "haa",
+      "text": {
+        "en": "ḥ (ḥāʾ)",
+        "fr": "ḥ (ḥāʾ)",
+        "es": "ḥ (ḥāʾ)",
+        "ar": "ح"
+      }
+    },
+    {
+      "id": "khaa",
+      "text": {
+        "en": "kh (khāʾ)",
+        "fr": "kh (khāʾ)",
+        "es": "j (khāʾ)",
+        "ar": "خ"
+      }
+    },
+    {
+      "id": "daal",
+      "text": {
+        "en": "d (dāl)",
+        "fr": "d (dāl)",
+        "es": "d (dāl)",
+        "ar": "د"
+      }
+    },
+    {
+      "id": "dhaal",
+      "text": {
+        "en": "dh (dhāl)",
+        "fr": "dh (dhāl)",
+        "es": "dh (dhāl)",
+        "ar": "ذ"
+      }
+    },
+    {
+      "id": "raa",
+      "text": {
+        "en": "r (rāʾ)",
+        "fr": "r (rāʾ)",
+        "es": "r (rāʾ)",
+        "ar": "ر"
+      }
+    },
+    {
+      "id": "zay",
+      "text": {
+        "en": "z (zāy)",
+        "fr": "z (zāy)",
+        "es": "z (zāy)",
+        "ar": "ز"
+      }
+    },
+    {
+      "id": "siin",
+      "text": {
+        "en": "s (sīn)",
+        "fr": "s (sīn)",
+        "es": "s (sīn)",
+        "ar": "س"
+      }
+    },
+    {
+      "id": "shiin",
+      "text": {
+        "en": "sh (shīn)",
+        "fr": "ch (shīn)",
+        "es": "sh (shīn)",
+        "ar": "ش"
+      }
+    },
+    {
+      "id": "saad",
+      "text": {
+        "en": "ṣ (ṣād)",
+        "fr": "ṣ (ṣād)",
+        "es": "ṣ (ṣād)",
+        "ar": "ص"
+      }
+    },
+    {
+      "id": "daad",
+      "text": {
+        "en": "ḍ (ḍād)",
+        "fr": "ḍ (ḍād)",
+        "es": "ḍ (ḍād)",
+        "ar": "ض"
+      }
+    },
+    {
+      "id": "taa2",
+      "text": {
+        "en": "ṭ (ṭāʾ)",
+        "fr": "ṭ (ṭāʾ)",
+        "es": "ṭ (ṭāʾ)",
+        "ar": "ط"
+      }
+    },
+    {
+      "id": "zaa",
+      "text": {
+        "en": "ẓ (ẓāʾ)",
+        "fr": "ẓ (ẓāʾ)",
+        "es": "ẓ (ẓāʾ)",
+        "ar": "ظ"
+      }
+    },
+    {
+      "id": "ayn",
+      "text": {
+        "en": "ʿ (ʿayn)",
+        "fr": "ʿ (ʿayn)",
+        "es": "ʿ (ʿayn)",
+        "ar": "ع"
+      }
+    },
+    {
+      "id": "ghayn",
+      "text": {
+        "en": "gh (ghayn)",
+        "fr": "gh (ghayn)",
+        "es": "gh (ghayn)",
+        "ar": "غ"
+      }
+    },
+    {
+      "id": "faa",
+      "text": {
+        "en": "f (fāʾ)",
+        "fr": "f (fāʾ)",
+        "es": "f (fāʾ)",
+        "ar": "ف"
+      }
+    },
+    {
+      "id": "qaaf",
+      "text": {
+        "en": "q (qāf)",
+        "fr": "q (qāf)",
+        "es": "q (qāf)",
+        "ar": "ق"
+      }
+    },
+    {
+      "id": "kaaf",
+      "text": {
+        "en": "k (kāf)",
+        "fr": "k (kāf)",
+        "es": "k (kāf)",
+        "ar": "ك"
+      }
+    },
+    {
+      "id": "laam",
+      "text": {
+        "en": "l (lām)",
+        "fr": "l (lām)",
+        "es": "l (lām)",
+        "ar": "ل"
+      }
+    },
+    {
+      "id": "miim",
+      "text": {
+        "en": "m (mīm)",
+        "fr": "m (mīm)",
+        "es": "m (mīm)",
+        "ar": "م"
+      }
+    },
+    {
+      "id": "nuun",
+      "text": {
+        "en": "n (nūn)",
+        "fr": "n (nūn)",
+        "es": "n (nūn)",
+        "ar": "ن"
+      }
+    },
+    {
+      "id": "haa2",
+      "text": {
+        "en": "h (hāʾ)",
+        "fr": "h (hāʾ)",
+        "es": "h (hāʾ)",
+        "ar": "ه"
+      }
+    },
+    {
+      "id": "waaw",
+      "text": {
+        "en": "w / ū (wāw)",
+        "fr": "w / ū (wāw)",
+        "es": "w / ū (wāw)",
+        "ar": "و"
+      }
+    },
+    {
+      "id": "yaa",
+      "text": {
+        "en": "y / ī (yāʾ)",
+        "fr": "y / ī (yāʾ)",
+        "es": "y / ī (yāʾ)",
+        "ar": "ي"
+      }
+    }
+  ],
+  "sentences": [],
+  "dialogue": []
+}

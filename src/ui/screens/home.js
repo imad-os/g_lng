@@ -1,16 +1,15 @@
 // Home: left rail (coach, blitz, quests, review), the winding course path in the middle, right rail (league, AI).
-import { h, focusable, clear, ICONS } from '../../platform/dom.js?v=2.2.0';
-import { t, pickLang } from '../../platform/i18n.js?v=2.2.0';
-import { focusFirst, setFocus } from '../../platform/input.js?v=2.2.0';
-import { getLevel } from '../../data/content-repo.js?v=2.2.0';
-import { course as progressOf, getMe, saveCourse, saveMe } from '../../data/progress-store.js?v=2.2.0';
-import { lessonState, levelComplete, nextLesson } from '../../learning/path.js?v=2.2.0';
-import { dueKeys } from '../../learning/srs.js?v=2.2.0';
-import { questProgress } from '../../learning/quests.js?v=2.2.0';
-import { leagueBoard } from '../../learning/league.js?v=2.2.0';
-import { setSfx, sfx } from '../../platform/audio.js?v=2.2.0';
-import { openDialog, toast, starsRow } from '../components.js?v=2.2.0';
-import { mascot } from '../mascot.js?v=2.2.0';
+import { h, focusable, clear, ICONS } from '../../platform/dom.js?v=2.3.0';
+import { t, pickLang } from '../../platform/i18n.js?v=2.3.0';
+import { focusFirst, setFocus } from '../../platform/input.js?v=2.3.0';
+import { getLevel } from '../../data/content-repo.js?v=2.3.0';
+import { course as progressOf, getMe, saveCourse, saveMe } from '../../data/progress-store.js?v=2.3.0';
+import { lessonState, levelComplete, nextLesson } from '../../learning/path.js?v=2.3.0';
+import { dueKeys } from '../../learning/srs.js?v=2.3.0';
+import { questProgress } from '../../learning/quests.js?v=2.3.0';
+import { setSfx, sfx } from '../../platform/audio.js?v=2.3.0';
+import { openDialog, toast, starsRow } from '../components.js?v=2.3.0';
+import { mascot } from '../mascot.js?v=2.3.0';
 
 const WIGGLE = [0, 56, 88, 56, 0, -56, -88, -56];
 const THEMES = ['food', 'travel', 'family', 'work', 'health', 'shopping'];
@@ -56,13 +55,10 @@ export function homeScreen(app) {
   const left = h('aside', { class: 'rail left' }, coachCard, quests, reviewCard);
 
   // --- right rail --------------------------------------------------------
-  const board = leagueBoard(me);
-  const league = h('div', { class: 'rail-card' }, h('h3', null, '🏆 ', t('league')), h('div', { class: 'small muted' }, t('leagueRank', { n: board.rank })),
-    board.list.map((e) => h('div', { class: `league-row small${e.me ? ' me' : ''}` }, h('b', null, String(e.rank)), h('span', { class: 'grow' }, e.me ? t('you') : e.name), h('span', null, `${e.xp} XP`))));
   const aiCard = h('div', { class: 'rail-card' }, h('h3', null, '✨ ', t('aiTitle')),
     focusable(h('button', { class: 'btn blue wide-rail' }, t('aiLesson')), () => aiGate(askTheme)),
     focusable(h('button', { class: 'btn wide-rail' }, '📖 ', t('explainUnit')), () => aiGate(explainUnit)));
-  const right = h('aside', { class: 'rail right' }, league, aiCard);
+  const right = h('aside', { class: 'rail right' }, aiCard);
 
   function aiGate(fn) {
     if (ai && ai.ready()) { fn(); return; }

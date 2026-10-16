@@ -9,7 +9,8 @@ const meta = readJson(path.join(SRC, 'courses.json'));
 const levelById = Object.fromEntries(meta.levels.map((l) => [l.id, l]));
 // A unit only appears in a course when it has enough words in that language to make real lessons.
 const MIN_WORDS = 6;
-const hasUnit = (u, L) => u.words.filter((w) => w.text[L]).length >= MIN_WORDS;
+// A unit with `only: ["ar"]` (alphabet units) belongs to those courses alone.
+const hasUnit = (u, L) => (!u.only || u.only.includes(L)) && u.words.filter((w) => w.text[L]).length >= MIN_WORDS;
 
 // Units grouped by level: content/src/<level>/<unit>.json
 const unitsByLevel = {};
@@ -84,7 +85,7 @@ function buildUnit(L, level, unit) {
   // Short lessons, about 10 questions each: at most 5 new words per learn lesson, so a unit of
   // 48 words becomes 10 learn lessons, then a conversation and a review.
   const typeable = !['ar', 'zgh'].includes(L);      // typing a Latin-script answer; Arabic and Tifinagh need their own keyboards
-  const learnLessons = Math.max(3, Math.ceil(words.length / 5));
+  const learnLessons = Math.max(1, Math.ceil(words.length / 5));
   const wordGroups = chunk(words, learnLessons);
   const sentenceGroups = chunk(sentences, learnLessons);
   const lessons = [];
@@ -137,7 +138,11 @@ function buildUnit(L, level, unit) {
     for (const k of shuffle(words, rand).slice(0, 2)) add(pick('listen_pick', k, words));
     add({ type: 'match_pairs', items: shuffle(words, rand).slice(0, 5) });
     for (const s of shuffle(sentences, rand).slice(0, 2)) add(wordBank(s));
-    add(fillGap(shuffle(sentences, rand)[0]));
+    if (sentences.length) add(fillGap(shuffle(sentences, rand)[0]));
+    else {
+      for (const k of shuffle(words, rand).slice(0, 2)) add(pick('pick_translation', k, words));
+      for (const k of shuffle(words, rand).slice(0, 2)) add(trueFalse(k, words));
+    }
     if (typeable) add({ type: 'type_answer', item: shuffle(words, rand)[0] });
   });
 

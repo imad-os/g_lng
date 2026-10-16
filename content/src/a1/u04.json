@@ -15,85 +15,936 @@
     "ar": "للحديث عن القضايا الاجتماعية استعمل السبب والنتيجة: «تؤدي البطالة إلى اللامساواة» أو «نتيجة للإصلاح». حافظ على نبرة محايدة."
   },
   "words": [
-    {"id":"government","text":{"en":"gouvernement","fr":"gobierno","es":"حكومة","ar":"ḥukūma"},"tr":{}},
-    {"id":"parliament","text":{"en":"parlement","fr":"parlamento","es":"برلمان","ar":"barlamān"},"tr":{}},
-    {"id":"law","text":{"en":"loi","fr":"ley","es":"قانون","ar":"qānūn"},"tr":{}},
-    {"id":"court","text":{"en":"tribunal","fr":"tribunal","es":"محكمة","ar":"maḥkama"},"tr":{}},
-    {"id":"election","text":{"en":"élection","fr":"elecciones","es":"انتخابات","ar":"intikhābāt"},"tr":{}},
-    {"id":"vote","text":{"en":"vote","fr":"voto","es":"تصويت","ar":"taṣwīt"},"tr":{}},
-    {"id":"citizen","text":{"en":"citoyen","fr":"ciudadano","es":"مواطن","ar":"muwāṭin"},"tr":{}},
-    {"id":"democracy","text":{"en":"démocratie","fr":"democracia","es":"ديمقراطية","ar":"dīmuqrāṭiyya"},"tr":{}},
-    {"id":"rights","text":{"en":"droits","fr":"derechos","es":"حقوق","ar":"ḥuqūq"},"tr":{}},
-    {"id":"freedom","text":{"en":"liberté","fr":"libertad","es":"حرية","ar":"ḥurriyya"},"tr":{}},
-    {"id":"justice","text":{"en":"justice","fr":"justicia","es":"عدالة","ar":"ʿadāla"},"tr":{}},
-    {"id":"equality","text":{"en":"égalité","fr":"igualdad","es":"مساواة","ar":"musāwāt"},"tr":{}},
-    {"id":"inequality","text":{"en":"inégalité","fr":"desigualdad","es":"لامساواة","ar":"lā-musāwāt"},"tr":{}},
-    {"id":"poverty","text":{"en":"pauvreté","fr":"pobreza","es":"فقر","ar":"faqr"},"tr":{}},
-    {"id":"unemployment","text":{"en":"chômage","fr":"desempleo","es":"بطالة","ar":"baṭāla"},"tr":{}},
-    {"id":"welfare","text":{"en":"protection sociale","fr":"bienestar social","es":"رعاية اجتماعية","ar":"riʿāya ijtimāʿiyya"},"tr":{}},
-    {"id":"education","text":{"en":"éducation","fr":"educación","es":"تعليم","ar":"taʿlīm"},"tr":{}},
-    {"id":"healthcare","text":{"en":"santé publique","fr":"sanidad","es":"رعاية صحية","ar":"riʿāya ṣiḥḥiyya"},"tr":{}},
-    {"id":"housing","text":{"en":"logement","fr":"vivienda","es":"سكن","ar":"sakan"},"tr":{}},
-    {"id":"immigration","text":{"en":"immigration","fr":"inmigración","es":"هجرة","ar":"hijra"},"tr":{}},
-    {"id":"integration","text":{"en":"intégration","fr":"integración","es":"اندماج","ar":"indimāj"},"tr":{}},
-    {"id":"discrimination","text":{"en":"discrimination","fr":"discriminación","es":"تمييز","ar":"tamyīz"},"tr":{}},
-    {"id":"prejudice","text":{"en":"préjugé","fr":"prejuicio","es":"حكم مسبق","ar":"ḥukm musbaq"},"tr":{}},
-    {"id":"minority","text":{"en":"minorité","fr":"minoría","es":"أقلية","ar":"aqalliyya"},"tr":{}},
-    {"id":"community","text":{"en":"communauté","fr":"comunidad","es":"جالية","ar":"jāliya"},"tr":{}},
-    {"id":"solidarity","text":{"en":"solidarité","fr":"solidaridad","es":"تضامن","ar":"taḍāmun"},"tr":{}},
-    {"id":"volunteer","text":{"en":"bénévole","fr":"voluntario","es":"متطوع","ar":"mutaṭawwiʿ"},"tr":{}},
-    {"id":"charity","text":{"en":"association caritative","fr":"organización benéfica","es":"جمعية خيرية","ar":"jamʿiyya khayriyya"},"tr":{}},
-    {"id":"trade union","text":{"en":"syndicat","fr":"sindicato","es":"نقابة","ar":"niqāba"},"tr":{}},
-    {"id":"strike","text":{"en":"grève","fr":"huelga","es":"إضراب","ar":"iḍrāb"},"tr":{}},
-    {"id":"protest","text":{"en":"manifestation","fr":"protesta","es":"احتجاج","ar":"iḥtijāj"},"tr":{}},
-    {"id":"reform","text":{"en":"réforme","fr":"reforma","es":"إصلاح","ar":"iṣlāḥ"},"tr":{}},
-    {"id":"policy","text":{"en":"politique publique","fr":"política pública","es":"سياسة عامة","ar":"siyāsa ʿāmma"},"tr":{}},
-    {"id":"tax","text":{"en":"impôt","fr":"impuesto","es":"ضريبة","ar":"ḍarība"},"tr":{}},
-    {"id":"pension","text":{"en":"retraite","fr":"pensión","es":"معاش تقاعدي","ar":"maʿāsh taqāʿudī"},"tr":{}},
-    {"id":"generation","text":{"en":"génération","fr":"generación","es":"جيل","ar":"jīl"},"tr":{}},
-    {"id":"gap","text":{"en":"fossé","fr":"brecha","es":"فجوة","ar":"fajwa"},"tr":{}},
-    {"id":"urbanisation","text":{"en":"urbanisation","fr":"urbanización","es":"تمدّن","ar":"tamaddun"},"tr":{}},
-    {"id":"public service","text":{"en":"service public","fr":"servicio público","es":"خدمة عامة","ar":"khidma ʿāmma"},"tr":{}},
-    {"id":"to govern","text":{"en":"gouverner","fr":"gobernar","es":"يحكم","ar":"yaḥkum"},"tr":{}},
-    {"id":"to elect","text":{"en":"élire","fr":"elegir","es":"ينتخب","ar":"yantakhib"},"tr":{}},
-    {"id":"to protest","text":{"en":"manifester","fr":"protestar","es":"يحتج","ar":"yaḥtajj"},"tr":{}},
-    {"id":"to reform","text":{"en":"réformer","fr":"reformar","es":"يصلح","ar":"yuṣliḥ"},"tr":{}},
-    {"id":"to tackle","text":{"en":"s'attaquer à","fr":"abordar","es":"يتصدى لـ","ar":"yataṣaddā li"},"tr":{}},
-    {"id":"to integrate","text":{"en":"intégrer","fr":"integrar","es":"يدمج","ar":"yadmuj"},"tr":{}},
-    {"id":"fair","text":{"en":"équitable","fr":"equitativo","es":"منصف","ar":"munṣif"},"tr":{}},
-    {"id":"vulnerable","text":{"en":"vulnérable","fr":"vulnerable","es":"هشّ","ar":"hashsh"},"tr":{}},
-    {"id":"widespread","text":{"en":"répandu","fr":"extendido","es":"واسع الانتشار","ar":"wāsiʿ al-intishār"},"tr":{}}
+    {
+      "id": "government",
+      "text": {
+        "en": "government",
+        "fr": "gouvernement",
+        "es": "gobierno",
+        "ar": "حكومة"
+      },
+      "tr": {
+        "ar": "ḥukūma"
+      }
+    },
+    {
+      "id": "parliament",
+      "text": {
+        "en": "parliament",
+        "fr": "parlement",
+        "es": "parlamento",
+        "ar": "برلمان"
+      },
+      "tr": {
+        "ar": "barlamān"
+      }
+    },
+    {
+      "id": "law",
+      "text": {
+        "en": "law",
+        "fr": "loi",
+        "es": "ley",
+        "ar": "قانون"
+      },
+      "tr": {
+        "ar": "qānūn"
+      }
+    },
+    {
+      "id": "court",
+      "text": {
+        "en": "court",
+        "fr": "tribunal",
+        "es": "tribunal",
+        "ar": "محكمة"
+      },
+      "tr": {
+        "ar": "maḥkama"
+      }
+    },
+    {
+      "id": "election",
+      "text": {
+        "en": "election",
+        "fr": "élection",
+        "es": "elecciones",
+        "ar": "انتخابات"
+      },
+      "tr": {
+        "ar": "intikhābāt"
+      }
+    },
+    {
+      "id": "vote",
+      "text": {
+        "en": "vote",
+        "fr": "vote",
+        "es": "voto",
+        "ar": "تصويت"
+      },
+      "tr": {
+        "ar": "taṣwīt"
+      }
+    },
+    {
+      "id": "citizen",
+      "text": {
+        "en": "citizen",
+        "fr": "citoyen",
+        "es": "ciudadano",
+        "ar": "مواطن"
+      },
+      "tr": {
+        "ar": "muwāṭin"
+      }
+    },
+    {
+      "id": "democracy",
+      "text": {
+        "en": "democracy",
+        "fr": "démocratie",
+        "es": "democracia",
+        "ar": "ديمقراطية"
+      },
+      "tr": {
+        "ar": "dīmuqrāṭiyya"
+      }
+    },
+    {
+      "id": "rights",
+      "text": {
+        "en": "rights",
+        "fr": "droits",
+        "es": "derechos",
+        "ar": "حقوق"
+      },
+      "tr": {
+        "ar": "ḥuqūq"
+      }
+    },
+    {
+      "id": "freedom",
+      "text": {
+        "en": "freedom",
+        "fr": "liberté",
+        "es": "libertad",
+        "ar": "حرية"
+      },
+      "tr": {
+        "ar": "ḥurriyya"
+      }
+    },
+    {
+      "id": "justice",
+      "text": {
+        "en": "justice",
+        "fr": "justice",
+        "es": "justicia",
+        "ar": "عدالة"
+      },
+      "tr": {
+        "ar": "ʿadāla"
+      }
+    },
+    {
+      "id": "equality",
+      "text": {
+        "en": "equality",
+        "fr": "égalité",
+        "es": "igualdad",
+        "ar": "مساواة"
+      },
+      "tr": {
+        "ar": "musāwāt"
+      }
+    },
+    {
+      "id": "inequality",
+      "text": {
+        "en": "inequality",
+        "fr": "inégalité",
+        "es": "desigualdad",
+        "ar": "عدم المساواة"
+      },
+      "tr": {
+        "ar": "ʿadam al-musāwāt"
+      }
+    },
+    {
+      "id": "poverty",
+      "text": {
+        "en": "poverty",
+        "fr": "pauvreté",
+        "es": "pobreza",
+        "ar": "فقر"
+      },
+      "tr": {
+        "ar": "faqr"
+      }
+    },
+    {
+      "id": "unemployment",
+      "text": {
+        "en": "unemployment",
+        "fr": "chômage",
+        "es": "desempleo",
+        "ar": "بطالة"
+      },
+      "tr": {
+        "ar": "baṭāla"
+      }
+    },
+    {
+      "id": "welfare",
+      "text": {
+        "en": "welfare",
+        "fr": "protection sociale",
+        "es": "bienestar social",
+        "ar": "رعاية اجتماعية"
+      },
+      "tr": {
+        "ar": "riʿāya ijtimāʿiyya"
+      }
+    },
+    {
+      "id": "education",
+      "text": {
+        "en": "education",
+        "fr": "éducation",
+        "es": "educación",
+        "ar": "تعليم"
+      },
+      "tr": {
+        "ar": "taʿlīm"
+      }
+    },
+    {
+      "id": "healthcare",
+      "text": {
+        "en": "healthcare",
+        "fr": "santé publique",
+        "es": "sanidad",
+        "ar": "رعاية صحية"
+      },
+      "tr": {
+        "ar": "riʿāya ṣiḥḥiyya"
+      }
+    },
+    {
+      "id": "housing",
+      "text": {
+        "en": "housing",
+        "fr": "logement",
+        "es": "vivienda",
+        "ar": "سكن"
+      },
+      "tr": {
+        "ar": "sakan"
+      }
+    },
+    {
+      "id": "immigration",
+      "text": {
+        "en": "immigration",
+        "fr": "immigration",
+        "es": "inmigración",
+        "ar": "هجرة"
+      },
+      "tr": {
+        "ar": "hijra"
+      }
+    },
+    {
+      "id": "integration",
+      "text": {
+        "en": "integration",
+        "fr": "intégration",
+        "es": "integración",
+        "ar": "اندماج"
+      },
+      "tr": {
+        "ar": "indimāj"
+      }
+    },
+    {
+      "id": "discrimination",
+      "text": {
+        "en": "discrimination",
+        "fr": "discrimination",
+        "es": "discriminación",
+        "ar": "تمييز"
+      },
+      "tr": {
+        "ar": "tamyīz"
+      }
+    },
+    {
+      "id": "prejudice",
+      "text": {
+        "en": "prejudice",
+        "fr": "préjugé",
+        "es": "prejuicio",
+        "ar": "حكم مسبق"
+      },
+      "tr": {
+        "ar": "ḥukm musbaq"
+      }
+    },
+    {
+      "id": "minority",
+      "text": {
+        "en": "minority",
+        "fr": "minorité",
+        "es": "minoría",
+        "ar": "أقلية"
+      },
+      "tr": {
+        "ar": "aqalliyya"
+      }
+    },
+    {
+      "id": "community",
+      "text": {
+        "en": "community",
+        "fr": "communauté",
+        "es": "comunidad",
+        "ar": "مجتمع محلي"
+      },
+      "tr": {
+        "ar": "mujtamaʿ maḥallī"
+      }
+    },
+    {
+      "id": "solidarity",
+      "text": {
+        "en": "solidarity",
+        "fr": "solidarité",
+        "es": "solidaridad",
+        "ar": "تضامن"
+      },
+      "tr": {
+        "ar": "taḍāmun"
+      }
+    },
+    {
+      "id": "volunteer",
+      "text": {
+        "en": "volunteer",
+        "fr": "bénévole",
+        "es": "voluntario",
+        "ar": "متطوع"
+      },
+      "tr": {
+        "ar": "mutaṭawwiʿ"
+      }
+    },
+    {
+      "id": "charity",
+      "text": {
+        "en": "charity",
+        "fr": "association caritative",
+        "es": "organización benéfica",
+        "ar": "جمعية خيرية"
+      },
+      "tr": {
+        "ar": "jamʿiyya khayriyya"
+      }
+    },
+    {
+      "id": "trade union",
+      "text": {
+        "en": "trade union",
+        "fr": "syndicat",
+        "es": "sindicato",
+        "ar": "نقابة"
+      },
+      "tr": {
+        "ar": "niqāba"
+      }
+    },
+    {
+      "id": "strike",
+      "text": {
+        "en": "strike",
+        "fr": "grève",
+        "es": "huelga",
+        "ar": "إضراب"
+      },
+      "tr": {
+        "ar": "iḍrāb"
+      }
+    },
+    {
+      "id": "protest",
+      "text": {
+        "en": "protest",
+        "fr": "manifestation",
+        "es": "protesta",
+        "ar": "احتجاج"
+      },
+      "tr": {
+        "ar": "iḥtijāj"
+      }
+    },
+    {
+      "id": "reform",
+      "text": {
+        "en": "reform",
+        "fr": "réforme",
+        "es": "reforma",
+        "ar": "إصلاح"
+      },
+      "tr": {
+        "ar": "iṣlāḥ"
+      }
+    },
+    {
+      "id": "policy",
+      "text": {
+        "en": "policy",
+        "fr": "politique publique",
+        "es": "política pública",
+        "ar": "سياسة عامة"
+      },
+      "tr": {
+        "ar": "siyāsa ʿāmma"
+      }
+    },
+    {
+      "id": "tax",
+      "text": {
+        "en": "tax",
+        "fr": "impôt",
+        "es": "impuesto",
+        "ar": "ضريبة"
+      },
+      "tr": {
+        "ar": "ḍarība"
+      }
+    },
+    {
+      "id": "pension",
+      "text": {
+        "en": "pension",
+        "fr": "retraite",
+        "es": "pensión",
+        "ar": "معاش تقاعدي"
+      },
+      "tr": {
+        "ar": "maʿāsh taqāʿudī"
+      }
+    },
+    {
+      "id": "generation",
+      "text": {
+        "en": "generation",
+        "fr": "génération",
+        "es": "generación",
+        "ar": "جيل"
+      },
+      "tr": {
+        "ar": "jīl"
+      }
+    },
+    {
+      "id": "gap",
+      "text": {
+        "en": "gap",
+        "fr": "fossé",
+        "es": "brecha",
+        "ar": "فجوة"
+      },
+      "tr": {
+        "ar": "fajwa"
+      }
+    },
+    {
+      "id": "urbanisation",
+      "text": {
+        "en": "urbanisation",
+        "fr": "urbanisation",
+        "es": "urbanización",
+        "ar": "تمدن"
+      },
+      "tr": {
+        "ar": "tamaddun"
+      }
+    },
+    {
+      "id": "public service",
+      "text": {
+        "en": "public service",
+        "fr": "service public",
+        "es": "servicio público",
+        "ar": "خدمة عامة"
+      },
+      "tr": {
+        "ar": "khidma ʿāmma"
+      }
+    },
+    {
+      "id": "to govern",
+      "text": {
+        "en": "to govern",
+        "fr": "gouverner",
+        "es": "gobernar",
+        "ar": "يحكم"
+      },
+      "tr": {
+        "ar": "yaḥkum"
+      }
+    },
+    {
+      "id": "to elect",
+      "text": {
+        "en": "to elect",
+        "fr": "élire",
+        "es": "elegir",
+        "ar": "ينتخب"
+      },
+      "tr": {
+        "ar": "yantakhib"
+      }
+    },
+    {
+      "id": "to protest",
+      "text": {
+        "en": "to protest",
+        "fr": "manifester",
+        "es": "protestar",
+        "ar": "يحتج"
+      },
+      "tr": {
+        "ar": "yaḥtajj"
+      }
+    },
+    {
+      "id": "to reform",
+      "text": {
+        "en": "to reform",
+        "fr": "réformer",
+        "es": "reformar",
+        "ar": "يصلح"
+      },
+      "tr": {
+        "ar": "yuṣliḥ"
+      }
+    },
+    {
+      "id": "to tackle",
+      "text": {
+        "en": "to tackle",
+        "fr": "s'attaquer à",
+        "es": "abordar",
+        "ar": "يتصدى لـ"
+      },
+      "tr": {
+        "ar": "yataṣaddā li"
+      }
+    },
+    {
+      "id": "to integrate",
+      "text": {
+        "en": "to integrate",
+        "fr": "intégrer",
+        "es": "integrar",
+        "ar": "يدمج"
+      },
+      "tr": {
+        "ar": "yadmuj"
+      }
+    },
+    {
+      "id": "fair",
+      "text": {
+        "en": "fair",
+        "fr": "équitable",
+        "es": "equitativo",
+        "ar": "منصف"
+      },
+      "tr": {
+        "ar": "munṣif"
+      }
+    },
+    {
+      "id": "vulnerable",
+      "text": {
+        "en": "vulnerable",
+        "fr": "vulnérable",
+        "es": "vulnerable",
+        "ar": "هش"
+      },
+      "tr": {
+        "ar": "hashsh"
+      }
+    },
+    {
+      "id": "widespread",
+      "text": {
+        "en": "widespread",
+        "fr": "répandu",
+        "es": "extendido",
+        "ar": "واسع الانتشار"
+      },
+      "tr": {
+        "ar": "wāsiʿ al-intishār"
+      }
+    }
   ],
   "sentences": [
-    {"id":"s01","text":{"en":"Everyone should have equal access to education and healthcare.","fr":"Chacun devrait avoir un accès égal à l'éducation et à la santé.","es":"Todos deberían tener el mismo acceso a la educación y a la sanidad.","ar":"ينبغي أن يتمتع الجميع بفرص متساوية في التعليم والرعاية الصحية."},"tr":{"ar":"yanbaghī an yatamattaʿa al-jamīʿ bi-furaṣ mutasāwiya fī t-taʿlīm wa-r-riʿāya aṣ-ṣiḥḥiyya."}},
-    {"id":"s02","text":{"en":"The government has promised to tackle youth unemployment.","fr":"Le gouvernement a promis de s'attaquer au chômage des jeunes.","es":"El gobierno ha prometido abordar el desempleo juvenil.","ar":"وعدت الحكومة بالتصدي لبطالة الشباب."},"tr":{"ar":"waʿadat al-ḥukūma bit-taṣaddī li-baṭālat ash-shabāb."}},
-    {"id":"s03","text":{"en":"Parliament voted to reform the pension system.","fr":"Le parlement a voté la réforme du système de retraite.","es":"El parlamento votó a favor de reformar el sistema de pensiones.","ar":"صوّت البرلمان على إصلاح نظام المعاشات التقاعدية."},"tr":{"ar":"ṣawwata al-barlamān ʿalā iṣlāḥ niẓām al-maʿāshāt at-taqāʿudiyya."}},
-    {"id":"s04","text":{"en":"Thousands took to the streets to protest against the new tax.","fr":"Des milliers de personnes sont descendues dans la rue pour protester contre le nouvel impôt.","es":"Miles de personas salieron a la calle para protestar contra el nuevo impuesto.","ar":"خرج الآلاف إلى الشوارع احتجاجا على الضريبة الجديدة."},"tr":{"ar":"kharaja al-ālāf ilā sh-shawāriʿ iḥtijājan ʿalā aḍ-ḍarība al-jadīda."}},
-    {"id":"s05","text":{"en":"The trade union called a strike after talks broke down.","fr":"Le syndicat a appelé à la grève après l'échec des négociations.","es":"El sindicato convocó una huelga tras romperse las negociaciones.","ar":"دعت النقابة إلى الإضراب بعد فشل المفاوضات."},"tr":{"ar":"daʿat an-niqāba ilā l-iḍrāb baʿda fashal al-mufāwaḍāt."}},
-    {"id":"s06","text":{"en":"Democracy depends on citizens who are willing to vote.","fr":"La démocratie repose sur des citoyens prêts à voter.","es":"La democracia depende de ciudadanos dispuestos a votar.","ar":"تعتمد الديمقراطية على مواطنين مستعدين للتصويت."},"tr":{"ar":"taʿtamid ad-dīmuqrāṭiyya ʿalā muwāṭinīn mustaʿiddīn lit-taṣwīt."}},
-    {"id":"s07","text":{"en":"Turnout at the last election was the lowest in decades.","fr":"La participation aux dernières élections a été la plus faible depuis des décennies.","es":"La participación en las últimas elecciones fue la más baja en décadas.","ar":"كانت نسبة المشاركة في الانتخابات الأخيرة الأدنى منذ عقود."},"tr":{"ar":"kānat nisbat al-mushāraka fī l-intikhābāt al-akhīra al-adnā mundhu ʿuqūd."}},
-    {"id":"s08","text":{"en":"The court ruled that the law violated basic rights.","fr":"Le tribunal a jugé que la loi violait des droits fondamentaux.","es":"El tribunal dictaminó que la ley vulneraba derechos fundamentales.","ar":"قضت المحكمة بأن القانون ينتهك حقوقا أساسية."},"tr":{"ar":"qaḍat al-maḥkama bi-anna al-qānūn yantahik ḥuqūqan asāsiyya."}},
-    {"id":"s09","text":{"en":"Freedom without justice is an empty word.","fr":"La liberté sans justice n'est qu'un mot creux.","es":"La libertad sin justicia es una palabra vacía.","ar":"الحرية بلا عدالة كلمة فارغة."},"tr":{"ar":"al-ḥurriyya bilā ʿadāla kalima fārigha."}},
-    {"id":"s10","text":{"en":"The gap between rich and poor keeps growing.","fr":"Le fossé entre riches et pauvres ne cesse de se creuser.","es":"La brecha entre ricos y pobres no deja de crecer.","ar":"تتسع الفجوة بين الأغنياء والفقراء باستمرار."},"tr":{"ar":"tattasiʿ al-fajwa bayna al-aghniyāʾ wa-l-fuqarāʾ bi-stimrār."}},
-    {"id":"s11","text":{"en":"Poverty is widespread in the suburbs, where housing is scarce.","fr":"La pauvreté est répandue dans les banlieues, où le logement manque.","es":"La pobreza está muy extendida en las periferias, donde escasea la vivienda.","ar":"الفقر واسع الانتشار في الضواحي حيث يندر السكن."},"tr":{"ar":"al-faqr wāsiʿ al-intishār fī ḍ-ḍawāḥī ḥaythu yanduru as-sakan."}},
-    {"id":"s12","text":{"en":"Discrimination in hiring remains a serious problem.","fr":"La discrimination à l'embauche reste un problème grave.","es":"La discriminación en la contratación sigue siendo un problema grave.","ar":"لا يزال التمييز في التوظيف مشكلة خطيرة."},"tr":{"ar":"lā yazāl at-tamyīz fī t-tawẓīf mushkila khaṭīra."}},
-    {"id":"s13","text":{"en":"Prejudice against minorities often comes from ignorance.","fr":"Les préjugés contre les minorités viennent souvent de l'ignorance.","es":"Los prejuicios contra las minorías suelen nacer de la ignorancia.","ar":"غالبا ما ينشأ الحكم المسبق ضد الأقليات من الجهل."},"tr":{"ar":"ghāliban mā yanshaʾ al-ḥukm al-musbaq ḍidda al-aqalliyyāt min al-jahl."}},
-    {"id":"s14","text":{"en":"Integration is a two-way process that requires effort from everyone.","fr":"L'intégration est un processus à double sens qui exige des efforts de tous.","es":"La integración es un proceso de doble sentido que exige el esfuerzo de todos.","ar":"الاندماج عملية ذات اتجاهين تتطلب جهدا من الجميع."},"tr":{"ar":"al-indimāj ʿamaliyya dhāt ittijāhayn tataṭallab juhdan min al-jamīʿ."}},
-    {"id":"s15","text":{"en":"Immigration has reshaped the community over the past thirty years.","fr":"L'immigration a transformé la communauté au cours des trente dernières années.","es":"La inmigración ha transformado la comunidad en los últimos treinta años.","ar":"غيّرت الهجرة وجه الجالية خلال السنوات الثلاثين الماضية."},"tr":{"ar":"ghayyarat al-hijra wajh al-jāliya khilāla as-sanawāt ath-thalāthīn al-māḍiya."}},
-    {"id":"s16","text":{"en":"Volunteers from the local charity help vulnerable families.","fr":"Les bénévoles de l'association locale aident les familles vulnérables.","es":"Los voluntarios de la organización benéfica local ayudan a familias vulnerables.","ar":"يساعد متطوعو الجمعية الخيرية المحلية الأسر الهشّة."},"tr":{"ar":"yusāʿid mutaṭawwiʿū al-jamʿiyya al-khayriyya al-maḥalliyya al-usar al-hashsha."}},
-    {"id":"s17","text":{"en":"Solidarity between generations is the foundation of the welfare state.","fr":"La solidarité entre les générations est le fondement de l'État-providence.","es":"La solidaridad entre generaciones es el fundamento del estado del bienestar.","ar":"التضامن بين الأجيال أساس دولة الرعاية الاجتماعية."},"tr":{"ar":"at-taḍāmun bayna al-ajyāl asās dawlat ar-riʿāya al-ijtimāʿiyya."}},
-    {"id":"s18","text":{"en":"Rapid urbanisation puts enormous pressure on public services.","fr":"L'urbanisation rapide exerce une énorme pression sur les services publics.","es":"La urbanización acelerada ejerce una enorme presión sobre los servicios públicos.","ar":"يضع التمدّن السريع ضغطا هائلا على الخدمات العامة."},"tr":{"ar":"yaḍaʿ at-tamaddun as-sarīʿ ḍaghṭan hāʾilan ʿalā al-khadamāt al-ʿāmma."}},
-    {"id":"s19","text":{"en":"Critics say the policy is unfair to the poorest.","fr":"Les détracteurs jugent cette politique inéquitable envers les plus pauvres.","es":"Los críticos afirman que la política es injusta con los más pobres.","ar":"يرى المنتقدون أن هذه السياسة ليست منصفة بحق الأشدّ فقرا."},"tr":{"ar":"yarā al-muntaqidūn anna hādhihi as-siyāsa laysat munṣifa biḥaqqi al-ashadd faqran."}},
-    {"id":"s20","text":{"en":"A fair tax system should ask more from those who earn more.","fr":"Un système fiscal équitable devrait demander davantage à ceux qui gagnent plus.","es":"Un sistema fiscal equitativo debería exigir más a quienes ganan más.","ar":"ينبغي لنظام ضريبي منصف أن يطلب أكثر ممن يكسبون أكثر."},"tr":{"ar":"yanbaghī li-niẓām ḍarībī munṣif an yaṭluba akthar mimman yaksibūna akthar."}},
-    {"id":"s21","text":{"en":"Equality before the law is not yet a reality for everyone.","fr":"L'égalité devant la loi n'est pas encore une réalité pour tous.","es":"La igualdad ante la ley todavía no es una realidad para todos.","ar":"المساواة أمام القانون لم تتحقق بعد للجميع."},"tr":{"ar":"al-musāwāt amāma al-qānūn lam tataḥaqqaq baʿd lil-jamīʿ."}},
-    {"id":"s22","text":{"en":"The new government was elected on a promise of change.","fr":"Le nouveau gouvernement a été élu sur une promesse de changement.","es":"El nuevo gobierno fue elegido con la promesa de un cambio.","ar":"انتُخبت الحكومة الجديدة على وعد بالتغيير."},"tr":{"ar":"intukhibat al-ḥukūma al-jadīda ʿalā waʿd bit-taghyīr."}},
-    {"id":"s23","text":{"en":"It is hard to govern a country that is so deeply divided.","fr":"Il est difficile de gouverner un pays aussi profondément divisé.","es":"Es difícil gobernar un país tan profundamente dividido.","ar":"من الصعب أن تحكم بلدا منقسما إلى هذا الحد."},"tr":{"ar":"min aṣ-ṣaʿb an taḥkuma baladan munqasiman ilā hādhā l-ḥadd."}},
-    {"id":"s24","text":{"en":"Do you think the reform will really close the gap?","fr":"Pensez-vous que la réforme réduira vraiment le fossé ?","es":"¿Crees que la reforma reducirá de verdad la brecha?","ar":"هل تعتقد أن الإصلاح سيسدّ الفجوة فعلا؟"},"tr":{"ar":"hal taʿtaqid anna al-iṣlāḥ sayasudd al-fajwa fiʿlan?"}},
-    {"id":"s25","text":{"en":"Only if it is applied fairly, and that has rarely happened.","fr":"Seulement si elle est appliquée équitablement, et c'est rarement arrivé.","es":"Solo si se aplica con equidad, y eso rara vez ha ocurrido.","ar":"فقط إذا طُبّق بإنصاف، وهذا نادرا ما حدث."},"tr":{"ar":"faqaṭ idhā ṭubbiqa bi-inṣāf, wa-hādhā nādiran mā ḥadath."}},
-    {"id":"s26","text":{"en":"Then we have to keep up the pressure on our representatives.","fr":"Alors nous devons continuer à faire pression sur nos représentants.","es":"Entonces tenemos que seguir presionando a nuestros representantes.","ar":"إذن علينا أن نواصل الضغط على ممثلينا."},"tr":{"ar":"idhan ʿalaynā an nuwāṣila ad-ḍaghṭ ʿalā mumaththilīnā."}},
-    {"id":"s27","text":{"en":"Many young people feel excluded from public life.","fr":"Beaucoup de jeunes se sentent exclus de la vie publique.","es":"Muchos jóvenes se sienten excluidos de la vida pública.","ar":"يشعر كثير من الشباب بأنهم مستبعدون من الحياة العامة."},"tr":{"ar":"yashʿur kathīr min ash-shabāb bi-annahum mustabʿadūn min al-ḥayāh al-ʿāmma."}},
-    {"id":"s28","text":{"en":"The pension reform will affect an entire generation.","fr":"La réforme des retraites touchera toute une génération.","es":"La reforma de las pensiones afectará a toda una generación.","ar":"سيؤثر إصلاح المعاشات على جيل بأكمله."},"tr":{"ar":"sayuʾaththir iṣlāḥ al-maʿāshāt ʿalā jīl bi-akmalihi."}},
-    {"id":"s29","text":{"en":"Citizens have the right to protest peacefully.","fr":"Les citoyens ont le droit de manifester pacifiquement.","es":"Los ciudadanos tienen derecho a protestar pacíficamente.","ar":"يحق للمواطنين أن يحتجوا بشكل سلمي."},"tr":{"ar":"yaḥiqq lil-muwāṭinīn an yaḥtajjū bi-shakl silmī."}}
+    {
+      "id": "s01",
+      "text": {
+        "en": "Everyone should have equal access to education and healthcare.",
+        "fr": "Chacun devrait avoir un accès égal à l'éducation et à la santé.",
+        "es": "Todos deberían tener el mismo acceso a la educación y a la sanidad.",
+        "ar": "ينبغي أن يتمتع الجميع بفرص متساوية في التعليم والرعاية الصحية."
+      },
+      "tr": {
+        "ar": "yanbaghī an yatamattaʿa al-jamīʿ bi-furaṣ mutasāwiya fī t-taʿlīm wa-r-riʿāya aṣ-ṣiḥḥiyya."
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "The government has promised to tackle youth unemployment.",
+        "fr": "Le gouvernement a promis de s'attaquer au chômage des jeunes.",
+        "es": "El gobierno ha prometido abordar el desempleo juvenil.",
+        "ar": "وعدت الحكومة بالتصدي لبطالة الشباب."
+      },
+      "tr": {
+        "ar": "waʿadat al-ḥukūma bit-taṣaddī li-baṭālat ash-shabāb."
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "Parliament voted to reform the pension system.",
+        "fr": "Le parlement a voté la réforme du système de retraite.",
+        "es": "El parlamento votó a favor de reformar el sistema de pensiones.",
+        "ar": "صوّت البرلمان على إصلاح نظام المعاشات التقاعدية."
+      },
+      "tr": {
+        "ar": "ṣawwata al-barlamān ʿalā iṣlāḥ niẓām al-maʿāshāt at-taqāʿudiyya."
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "Thousands took to the streets to protest against the new tax.",
+        "fr": "Des milliers de personnes sont descendues dans la rue pour protester contre le nouvel impôt.",
+        "es": "Miles de personas salieron a la calle para protestar contra el nuevo impuesto.",
+        "ar": "خرج الآلاف إلى الشوارع احتجاجا على الضريبة الجديدة."
+      },
+      "tr": {
+        "ar": "kharaja al-ālāf ilā sh-shawāriʿ iḥtijājan ʿalā aḍ-ḍarība al-jadīda."
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "The trade union called a strike after talks broke down.",
+        "fr": "Le syndicat a appelé à la grève après l'échec des négociations.",
+        "es": "El sindicato convocó una huelga tras romperse las negociaciones.",
+        "ar": "دعت النقابة إلى الإضراب بعد فشل المفاوضات."
+      },
+      "tr": {
+        "ar": "daʿat an-niqāba ilā l-iḍrāb baʿda fashal al-mufāwaḍāt."
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "Democracy depends on citizens who are willing to vote.",
+        "fr": "La démocratie repose sur des citoyens prêts à voter.",
+        "es": "La democracia depende de ciudadanos dispuestos a votar.",
+        "ar": "تعتمد الديمقراطية على مواطنين مستعدين للتصويت."
+      },
+      "tr": {
+        "ar": "taʿtamid ad-dīmuqrāṭiyya ʿalā muwāṭinīn mustaʿiddīn lit-taṣwīt."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "Turnout at the last election was the lowest in decades.",
+        "fr": "La participation aux dernières élections a été la plus faible depuis des décennies.",
+        "es": "La participación en las últimas elecciones fue la más baja en décadas.",
+        "ar": "كانت نسبة المشاركة في الانتخابات الأخيرة الأدنى منذ عقود."
+      },
+      "tr": {
+        "ar": "kānat nisbat al-mushāraka fī l-intikhābāt al-akhīra al-adnā mundhu ʿuqūd."
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "The court ruled that the law violated basic rights.",
+        "fr": "Le tribunal a jugé que la loi violait des droits fondamentaux.",
+        "es": "El tribunal dictaminó que la ley vulneraba derechos fundamentales.",
+        "ar": "قضت المحكمة بأن القانون ينتهك حقوقا أساسية."
+      },
+      "tr": {
+        "ar": "qaḍat al-maḥkama bi-anna al-qānūn yantahik ḥuqūqan asāsiyya."
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "Freedom without justice is an empty word.",
+        "fr": "La liberté sans justice n'est qu'un mot creux.",
+        "es": "La libertad sin justicia es una palabra vacía.",
+        "ar": "الحرية بلا عدالة كلمة فارغة."
+      },
+      "tr": {
+        "ar": "al-ḥurriyya bilā ʿadāla kalima fārigha."
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "The gap between rich and poor keeps growing.",
+        "fr": "Le fossé entre riches et pauvres ne cesse de se creuser.",
+        "es": "La brecha entre ricos y pobres no deja de crecer.",
+        "ar": "تتسع الفجوة بين الأغنياء والفقراء باستمرار."
+      },
+      "tr": {
+        "ar": "tattasiʿ al-fajwa bayna al-aghniyāʾ wa-l-fuqarāʾ bi-stimrār."
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "Poverty is widespread in the suburbs, where housing is scarce.",
+        "fr": "La pauvreté est répandue dans les banlieues, où le logement manque.",
+        "es": "La pobreza está muy extendida en las periferias, donde escasea la vivienda.",
+        "ar": "الفقر واسع الانتشار في الضواحي حيث يندر السكن."
+      },
+      "tr": {
+        "ar": "al-faqr wāsiʿ al-intishār fī ḍ-ḍawāḥī ḥaythu yanduru as-sakan."
+      }
+    },
+    {
+      "id": "s12",
+      "text": {
+        "en": "Discrimination in hiring remains a serious problem.",
+        "fr": "La discrimination à l'embauche reste un problème grave.",
+        "es": "La discriminación en la contratación sigue siendo un problema grave.",
+        "ar": "لا يزال التمييز في التوظيف مشكلة خطيرة."
+      },
+      "tr": {
+        "ar": "lā yazāl at-tamyīz fī t-tawẓīf mushkila khaṭīra."
+      }
+    },
+    {
+      "id": "s13",
+      "text": {
+        "en": "Prejudice against minorities often comes from ignorance.",
+        "fr": "Les préjugés contre les minorités viennent souvent de l'ignorance.",
+        "es": "Los prejuicios contra las minorías suelen nacer de la ignorancia.",
+        "ar": "غالبا ما ينشأ الحكم المسبق ضد الأقليات من الجهل."
+      },
+      "tr": {
+        "ar": "ghāliban mā yanshaʾ al-ḥukm al-musbaq ḍidda al-aqalliyyāt min al-jahl."
+      }
+    },
+    {
+      "id": "s14",
+      "text": {
+        "en": "Integration is a two-way process that requires effort from everyone.",
+        "fr": "L'intégration est un processus à double sens qui exige des efforts de tous.",
+        "es": "La integración es un proceso de doble sentido que exige el esfuerzo de todos.",
+        "ar": "الاندماج عملية ذات اتجاهين تتطلب جهدا من الجميع."
+      },
+      "tr": {
+        "ar": "al-indimāj ʿamaliyya dhāt ittijāhayn tataṭallab juhdan min al-jamīʿ."
+      }
+    },
+    {
+      "id": "s15",
+      "text": {
+        "en": "Immigration has reshaped the community over the past thirty years.",
+        "fr": "L'immigration a transformé la communauté au cours des trente dernières années.",
+        "es": "La inmigración ha transformado la comunidad en los últimos treinta años.",
+        "ar": "غيّرت الهجرة وجه الجالية خلال السنوات الثلاثين الماضية."
+      },
+      "tr": {
+        "ar": "ghayyarat al-hijra wajh al-jāliya khilāla as-sanawāt ath-thalāthīn al-māḍiya."
+      }
+    },
+    {
+      "id": "s16",
+      "text": {
+        "en": "Volunteers from the local charity help vulnerable families.",
+        "fr": "Les bénévoles de l'association locale aident les familles vulnérables.",
+        "es": "Los voluntarios de la organización benéfica local ayudan a familias vulnerables.",
+        "ar": "يساعد متطوعو الجمعية الخيرية المحلية الأسر الهشّة."
+      },
+      "tr": {
+        "ar": "yusāʿid mutaṭawwiʿū al-jamʿiyya al-khayriyya al-maḥalliyya al-usar al-hashsha."
+      }
+    },
+    {
+      "id": "s17",
+      "text": {
+        "en": "Solidarity between generations is the foundation of the welfare state.",
+        "fr": "La solidarité entre les générations est le fondement de l'État-providence.",
+        "es": "La solidaridad entre generaciones es el fundamento del estado del bienestar.",
+        "ar": "التضامن بين الأجيال أساس دولة الرعاية الاجتماعية."
+      },
+      "tr": {
+        "ar": "at-taḍāmun bayna al-ajyāl asās dawlat ar-riʿāya al-ijtimāʿiyya."
+      }
+    },
+    {
+      "id": "s18",
+      "text": {
+        "en": "Rapid urbanisation puts enormous pressure on public services.",
+        "fr": "L'urbanisation rapide exerce une énorme pression sur les services publics.",
+        "es": "La urbanización acelerada ejerce una enorme presión sobre los servicios públicos.",
+        "ar": "يضع التمدّن السريع ضغطا هائلا على الخدمات العامة."
+      },
+      "tr": {
+        "ar": "yaḍaʿ at-tamaddun as-sarīʿ ḍaghṭan hāʾilan ʿalā al-khadamāt al-ʿāmma."
+      }
+    },
+    {
+      "id": "s19",
+      "text": {
+        "en": "Critics say the policy is unfair to the poorest.",
+        "fr": "Les détracteurs jugent cette politique inéquitable envers les plus pauvres.",
+        "es": "Los críticos afirman que la política es injusta con los más pobres.",
+        "ar": "يرى المنتقدون أن هذه السياسة ليست منصفة بحق الأشدّ فقرا."
+      },
+      "tr": {
+        "ar": "yarā al-muntaqidūn anna hādhihi as-siyāsa laysat munṣifa biḥaqqi al-ashadd faqran."
+      }
+    },
+    {
+      "id": "s20",
+      "text": {
+        "en": "A fair tax system should ask more from those who earn more.",
+        "fr": "Un système fiscal équitable devrait demander davantage à ceux qui gagnent plus.",
+        "es": "Un sistema fiscal equitativo debería exigir más a quienes ganan más.",
+        "ar": "ينبغي لنظام ضريبي منصف أن يطلب أكثر ممن يكسبون أكثر."
+      },
+      "tr": {
+        "ar": "yanbaghī li-niẓām ḍarībī munṣif an yaṭluba akthar mimman yaksibūna akthar."
+      }
+    },
+    {
+      "id": "s21",
+      "text": {
+        "en": "Equality before the law is not yet a reality for everyone.",
+        "fr": "L'égalité devant la loi n'est pas encore une réalité pour tous.",
+        "es": "La igualdad ante la ley todavía no es una realidad para todos.",
+        "ar": "المساواة أمام القانون لم تتحقق بعد للجميع."
+      },
+      "tr": {
+        "ar": "al-musāwāt amāma al-qānūn lam tataḥaqqaq baʿd lil-jamīʿ."
+      }
+    },
+    {
+      "id": "s22",
+      "text": {
+        "en": "The new government was elected on a promise of change.",
+        "fr": "Le nouveau gouvernement a été élu sur une promesse de changement.",
+        "es": "El nuevo gobierno fue elegido con la promesa de un cambio.",
+        "ar": "انتُخبت الحكومة الجديدة على وعد بالتغيير."
+      },
+      "tr": {
+        "ar": "intukhibat al-ḥukūma al-jadīda ʿalā waʿd bit-taghyīr."
+      }
+    },
+    {
+      "id": "s23",
+      "text": {
+        "en": "It is hard to govern a country that is so deeply divided.",
+        "fr": "Il est difficile de gouverner un pays aussi profondément divisé.",
+        "es": "Es difícil gobernar un país tan profundamente dividido.",
+        "ar": "من الصعب أن تحكم بلدا منقسما إلى هذا الحد."
+      },
+      "tr": {
+        "ar": "min aṣ-ṣaʿb an taḥkuma baladan munqasiman ilā hādhā l-ḥadd."
+      }
+    },
+    {
+      "id": "s24",
+      "text": {
+        "en": "Do you think the reform will really close the gap?",
+        "fr": "Pensez-vous que la réforme réduira vraiment le fossé ?",
+        "es": "¿Crees que la reforma reducirá de verdad la brecha?",
+        "ar": "هل تعتقد أن الإصلاح سيسدّ الفجوة فعلا؟"
+      },
+      "tr": {
+        "ar": "hal taʿtaqid anna al-iṣlāḥ sayasudd al-fajwa fiʿlan?"
+      }
+    },
+    {
+      "id": "s25",
+      "text": {
+        "en": "Only if it is applied fairly, and that has rarely happened.",
+        "fr": "Seulement si elle est appliquée équitablement, et c'est rarement arrivé.",
+        "es": "Solo si se aplica con equidad, y eso rara vez ha ocurrido.",
+        "ar": "فقط إذا طُبّق بإنصاف، وهذا نادرا ما حدث."
+      },
+      "tr": {
+        "ar": "faqaṭ idhā ṭubbiqa bi-inṣāf, wa-hādhā nādiran mā ḥadath."
+      }
+    },
+    {
+      "id": "s26",
+      "text": {
+        "en": "Then we have to keep up the pressure on our representatives.",
+        "fr": "Alors nous devons continuer à faire pression sur nos représentants.",
+        "es": "Entonces tenemos que seguir presionando a nuestros representantes.",
+        "ar": "إذن علينا أن نواصل الضغط على ممثلينا."
+      },
+      "tr": {
+        "ar": "idhan ʿalaynā an nuwāṣila ad-ḍaghṭ ʿalā mumaththilīnā."
+      }
+    },
+    {
+      "id": "s27",
+      "text": {
+        "en": "Many young people feel excluded from public life.",
+        "fr": "Beaucoup de jeunes se sentent exclus de la vie publique.",
+        "es": "Muchos jóvenes se sienten excluidos de la vida pública.",
+        "ar": "يشعر كثير من الشباب بأنهم مستبعدون من الحياة العامة."
+      },
+      "tr": {
+        "ar": "yashʿur kathīr min ash-shabāb bi-annahum mustabʿadūn min al-ḥayāh al-ʿāmma."
+      }
+    },
+    {
+      "id": "s28",
+      "text": {
+        "en": "The pension reform will affect an entire generation.",
+        "fr": "La réforme des retraites touchera toute une génération.",
+        "es": "La reforma de las pensiones afectará a toda una generación.",
+        "ar": "سيؤثر إصلاح المعاشات على جيل بأكمله."
+      },
+      "tr": {
+        "ar": "sayuʾaththir iṣlāḥ al-maʿāshāt ʿalā jīl bi-akmalihi."
+      }
+    },
+    {
+      "id": "s29",
+      "text": {
+        "en": "Citizens have the right to protest peacefully.",
+        "fr": "Les citoyens ont le droit de manifester pacifiquement.",
+        "es": "Los ciudadanos tienen derecho a protestar pacíficamente.",
+        "ar": "يحق للمواطنين أن يحتجوا بشكل سلمي."
+      },
+      "tr": {
+        "ar": "yaḥiqq lil-muwāṭinīn an yaḥtajjū bi-shakl silmī."
+      }
+    }
   ],
-  "dialogue": ["s24","s25","s26"]
+  "dialogue": [
+    "s24",
+    "s25",
+    "s26"
+  ]
 }

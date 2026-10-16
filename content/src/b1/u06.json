@@ -1,6 +1,13 @@
 {
-  "id": "u06", "level": "b1", "order": 6,
-  "title": { "en": "Days and time of day", "fr": "Les jours et les moments de la journée", "es": "Días y momentos del día", "ar": "أيام الأسبوع وأوقات اليوم" },
+  "id": "u06",
+  "level": "b1",
+  "order": 6,
+  "title": {
+    "en": "Days and time of day",
+    "fr": "Les jours et les moments de la journée",
+    "es": "Días y momentos del día",
+    "ar": "أيام الأسبوع وأوقات اليوم"
+  },
   "tip": {
     "en": "Say 'Today is Monday' and 'Tomorrow is Tuesday'. The days come in the same order in every language.",
     "fr": "Dites « Aujourd'hui, c'est lundi » et « Demain, c'est mardi ». Les jours se suivent dans le même ordre dans toutes les langues.",
@@ -8,31 +15,345 @@
     "ar": "قل «اليوم الاثنين» و«غدا الثلاثاء». تأتي الأيام بالترتيب نفسه في كل اللغات."
   },
   "words": [
-    { "id": "today", "text": { "en": "today", "fr": "aujourd'hui", "es": "hoy", "ar": "اليوم", "de": "heute" }, "tr": { "ar": "al-yawm" } },
-    { "id": "tomorrow", "text": { "en": "tomorrow", "fr": "demain", "es": "mañana", "ar": "غدا", "de": "morgen" }, "tr": { "ar": "ghadan" } },
-    { "id": "morning", "text": { "en": "morning", "fr": "matin", "es": "la mañana", "ar": "صباح", "de": "der Morgen" }, "tr": { "ar": "ṣabāḥ" } },
-    { "id": "evening", "text": { "en": "evening", "fr": "soir", "es": "la tarde", "ar": "مساء", "de": "der Abend" }, "tr": { "ar": "masāʾ" } },
-    { "id": "night", "text": { "en": "night", "fr": "nuit", "es": "la noche", "ar": "ليل", "de": "die Nacht", "zgh": "ⵉⴹ" }, "tr": { "ar": "layl", "zgh": "iḍ" } },
-    { "id": "monday", "text": { "en": "Monday", "fr": "lundi", "es": "lunes", "ar": "الاثنين", "de": "Montag" }, "tr": { "ar": "al-ithnayn" } },
-    { "id": "tuesday", "text": { "en": "Tuesday", "fr": "mardi", "es": "martes", "ar": "الثلاثاء", "de": "Dienstag" }, "tr": { "ar": "ath-thulāthāʾ" } },
-    { "id": "wednesday", "text": { "en": "Wednesday", "fr": "mercredi", "es": "miércoles", "ar": "الأربعاء", "de": "Mittwoch" }, "tr": { "ar": "al-arbiʿāʾ" } },
-    { "id": "thursday", "text": { "en": "Thursday", "fr": "jeudi", "es": "jueves", "ar": "الخميس", "de": "Donnerstag" }, "tr": { "ar": "al-khamīs" } },
-    { "id": "friday", "text": { "en": "Friday", "fr": "vendredi", "es": "viernes", "ar": "الجمعة", "de": "Freitag" }, "tr": { "ar": "al-jumuʿa" } },
-    { "id": "saturday", "text": { "en": "Saturday", "fr": "samedi", "es": "sábado", "ar": "السبت", "de": "Samstag" }, "tr": { "ar": "as-sabt" } },
-    { "id": "sunday", "text": { "en": "Sunday", "fr": "dimanche", "es": "domingo", "ar": "الأحد", "de": "Sonntag" }, "tr": { "ar": "al-aḥad" } }
+    {
+      "id": "today",
+      "text": {
+        "en": "today",
+        "fr": "aujourd'hui",
+        "es": "hoy",
+        "ar": "اليوم",
+        "de": "heute",
+        "zgh": "ⴰⵙⵙⴰ"
+      },
+      "tr": {
+        "ar": "al-yawm",
+        "zgh": "assa"
+      }
+    },
+    {
+      "id": "tomorrow",
+      "text": {
+        "en": "tomorrow",
+        "fr": "demain",
+        "es": "mañana",
+        "ar": "غدا",
+        "de": "morgen",
+        "zgh": "ⴰⵙⴽⴽⴰ"
+      },
+      "tr": {
+        "ar": "ghadan",
+        "zgh": "askka"
+      }
+    },
+    {
+      "id": "morning",
+      "text": {
+        "en": "morning",
+        "fr": "matin",
+        "es": "la mañana",
+        "ar": "صباح",
+        "de": "der Morgen"
+      },
+      "tr": {
+        "ar": "ṣabāḥ"
+      }
+    },
+    {
+      "id": "evening",
+      "text": {
+        "en": "evening",
+        "fr": "soir",
+        "es": "la tarde",
+        "ar": "مساء",
+        "de": "der Abend"
+      },
+      "tr": {
+        "ar": "masāʾ"
+      }
+    },
+    {
+      "id": "night",
+      "text": {
+        "en": "night",
+        "fr": "nuit",
+        "es": "la noche",
+        "ar": "ليل",
+        "de": "die Nacht",
+        "zgh": "ⵉⴹ"
+      },
+      "tr": {
+        "ar": "layl",
+        "zgh": "iḍ"
+      }
+    },
+    {
+      "id": "monday",
+      "text": {
+        "en": "Monday",
+        "fr": "lundi",
+        "es": "lunes",
+        "ar": "الاثنين",
+        "de": "Montag",
+        "zgh": "ⴰⵢⵏⴰⵙ"
+      },
+      "tr": {
+        "ar": "al-ithnayn",
+        "zgh": "aynas"
+      }
+    },
+    {
+      "id": "tuesday",
+      "text": {
+        "en": "Tuesday",
+        "fr": "mardi",
+        "es": "martes",
+        "ar": "الثلاثاء",
+        "de": "Dienstag",
+        "zgh": "ⴰⵙⵉⵏⴰⵙ"
+      },
+      "tr": {
+        "ar": "ath-thulāthāʾ",
+        "zgh": "asinas"
+      }
+    },
+    {
+      "id": "wednesday",
+      "text": {
+        "en": "Wednesday",
+        "fr": "mercredi",
+        "es": "miércoles",
+        "ar": "الأربعاء",
+        "de": "Mittwoch",
+        "zgh": "ⴰⴽⵕⴰⵙ"
+      },
+      "tr": {
+        "ar": "al-arbiʿāʾ",
+        "zgh": "akṛas"
+      }
+    },
+    {
+      "id": "thursday",
+      "text": {
+        "en": "Thursday",
+        "fr": "jeudi",
+        "es": "jueves",
+        "ar": "الخميس",
+        "de": "Donnerstag",
+        "zgh": "ⴰⴽⵡⴰⵙ"
+      },
+      "tr": {
+        "ar": "al-khamīs",
+        "zgh": "akwas"
+      }
+    },
+    {
+      "id": "friday",
+      "text": {
+        "en": "Friday",
+        "fr": "vendredi",
+        "es": "viernes",
+        "ar": "الجمعة",
+        "de": "Freitag",
+        "zgh": "ⴰⵙⵉⵎⵡⴰⵙ"
+      },
+      "tr": {
+        "ar": "al-jumuʿa",
+        "zgh": "asimwas"
+      }
+    },
+    {
+      "id": "saturday",
+      "text": {
+        "en": "Saturday",
+        "fr": "samedi",
+        "es": "sábado",
+        "ar": "السبت",
+        "de": "Samstag",
+        "zgh": "ⴰⵙⵉⴹⵢⴰⵙ"
+      },
+      "tr": {
+        "ar": "as-sabt",
+        "zgh": "asiḍyas"
+      }
+    },
+    {
+      "id": "sunday",
+      "text": {
+        "en": "Sunday",
+        "fr": "dimanche",
+        "es": "domingo",
+        "ar": "الأحد",
+        "de": "Sonntag",
+        "zgh": "ⴰⵙⴰⵎⴰⵙ"
+      },
+      "tr": {
+        "ar": "al-aḥad",
+        "zgh": "asamas"
+      }
+    }
   ],
   "sentences": [
-    { "id": "s01", "text": { "en": "Today is Monday.", "fr": "Aujourd'hui, c'est lundi.", "es": "Hoy es lunes.", "ar": "اليوم الاثنين.", "de": "Heute ist Montag." }, "tr": { "ar": "al-yawm al-ithnayn." } },
-    { "id": "s02", "text": { "en": "Tomorrow is Tuesday.", "fr": "Demain, c'est mardi.", "es": "Mañana es martes.", "ar": "غدا الثلاثاء.", "de": "Morgen ist Dienstag." }, "tr": { "ar": "ghadan ath-thulāthāʾ." } },
-    { "id": "s03", "text": { "en": "Saturday and Sunday.", "fr": "Samedi et dimanche.", "es": "Sábado y domingo.", "ar": "السبت والأحد.", "de": "Samstag und Sonntag." }, "tr": { "ar": "as-sabt wa-l-aḥad." } },
-    { "id": "s04", "text": { "en": "Is today Thursday?", "fr": "Est-ce que c'est jeudi aujourd'hui ?", "es": "¿Hoy es jueves?", "ar": "هل اليوم الخميس؟", "de": "Ist heute Donnerstag?" }, "tr": { "ar": "hal al-yawm al-khamīs?" } },
-    { "id": "s05", "text": { "en": "No, today is Wednesday.", "fr": "Non, aujourd'hui, c'est mercredi.", "es": "No, hoy es miércoles.", "ar": "لا، اليوم الأربعاء.", "de": "Nein, heute ist Mittwoch." }, "tr": { "ar": "lā, al-yawm al-arbiʿāʾ." } },
-    { "id": "s06", "text": { "en": "Monday morning.", "fr": "Lundi matin.", "es": "Lunes por la mañana.", "ar": "صباح الاثنين.", "de": "Montag früh." }, "tr": { "ar": "ṣabāḥ al-ithnayn." } },
-    { "id": "s07", "text": { "en": "Night and day.", "fr": "La nuit et le jour.", "es": "La noche y el día.", "ar": "الليل والنهار.", "de": "Nacht und Tag." }, "tr": { "ar": "al-layl wa-n-nahār." } },
-    { "id": "s08", "text": { "en": "See you tomorrow!", "fr": "À demain !", "es": "¡Hasta mañana!", "ar": "إلى اللقاء غدا!", "de": "Bis morgen!" }, "tr": { "ar": "ilā al-liqāʾ ghadan!" } },
-    { "id": "s09", "text": { "en": "Is tomorrow Friday?", "fr": "Est-ce que demain, c'est vendredi ?", "es": "¿Mañana es viernes?", "ar": "هل غدا الجمعة؟", "de": "Ist morgen Freitag?" }, "tr": { "ar": "hal ghadan al-jumuʿa?" } },
-    { "id": "s10", "text": { "en": "Yes, tomorrow is Friday.", "fr": "Oui, demain, c'est vendredi.", "es": "Sí, mañana es viernes.", "ar": "نعم، غدا الجمعة.", "de": "Ja, morgen ist Freitag." }, "tr": { "ar": "naʿam, ghadan al-jumuʿa." } },
-    { "id": "s11", "text": { "en": "Thank you, see you tomorrow.", "fr": "Merci, à demain.", "es": "Gracias, hasta mañana.", "ar": "شكرا، إلى اللقاء غدا.", "de": "Danke, bis morgen." }, "tr": { "ar": "shukran, ilā al-liqāʾ ghadan." } }
+    {
+      "id": "s01",
+      "text": {
+        "en": "Today is Monday.",
+        "fr": "Aujourd'hui, c'est lundi.",
+        "es": "Hoy es lunes.",
+        "ar": "اليوم الاثنين.",
+        "de": "Heute ist Montag.",
+        "zgh": "ⴰⵙⵙⴰ ⴷ ⴰⵢⵏⴰⵙ"
+      },
+      "tr": {
+        "ar": "al-yawm al-ithnayn.",
+        "zgh": "assa d aynas"
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "Tomorrow is Tuesday.",
+        "fr": "Demain, c'est mardi.",
+        "es": "Mañana es martes.",
+        "ar": "غدا الثلاثاء.",
+        "de": "Morgen ist Dienstag.",
+        "zgh": "ⴰⵙⴽⴽⴰ ⴷ ⴰⵙⵉⵏⴰⵙ"
+      },
+      "tr": {
+        "ar": "ghadan ath-thulāthāʾ.",
+        "zgh": "askka d asinas"
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "Saturday and Sunday.",
+        "fr": "Samedi et dimanche.",
+        "es": "Sábado y domingo.",
+        "ar": "السبت والأحد.",
+        "de": "Samstag und Sonntag.",
+        "zgh": "ⴰⵙⵉⴹⵢⴰⵙ ⴷ ⴰⵙⴰⵎⴰⵙ"
+      },
+      "tr": {
+        "ar": "as-sabt wa-l-aḥad.",
+        "zgh": "asiḍyas d asamas"
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "Is today Thursday?",
+        "fr": "Est-ce que c'est jeudi aujourd'hui ?",
+        "es": "¿Hoy es jueves?",
+        "ar": "هل اليوم الخميس؟",
+        "de": "Ist heute Donnerstag?",
+        "zgh": "ⵉⵙ ⴷ ⴰⴽⵡⴰⵙ ⴰⵙⵙⴰ"
+      },
+      "tr": {
+        "ar": "hal al-yawm al-khamīs?",
+        "zgh": "is d akwas assa"
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "No, today is Wednesday.",
+        "fr": "Non, aujourd'hui, c'est mercredi.",
+        "es": "No, hoy es miércoles.",
+        "ar": "لا، اليوم الأربعاء.",
+        "de": "Nein, heute ist Mittwoch.",
+        "zgh": "ⵓⵀⵓ ⴰⵙⵙⴰ ⴷ ⴰⴽⵕⴰⵙ"
+      },
+      "tr": {
+        "ar": "lā, al-yawm al-arbiʿāʾ.",
+        "zgh": "uhu assa d akṛas"
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "Monday morning.",
+        "fr": "Lundi matin.",
+        "es": "Lunes por la mañana.",
+        "ar": "صباح الاثنين.",
+        "de": "Montag früh."
+      },
+      "tr": {
+        "ar": "ṣabāḥ al-ithnayn."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "Night and day.",
+        "fr": "La nuit et le jour.",
+        "es": "La noche y el día.",
+        "ar": "الليل والنهار.",
+        "de": "Nacht und Tag."
+      },
+      "tr": {
+        "ar": "al-layl wa-n-nahār."
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "See you tomorrow!",
+        "fr": "À demain !",
+        "es": "¡Hasta mañana!",
+        "ar": "إلى اللقاء غدا!",
+        "de": "Bis morgen!"
+      },
+      "tr": {
+        "ar": "ilā al-liqāʾ ghadan!"
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "Is tomorrow Friday?",
+        "fr": "Est-ce que demain, c'est vendredi ?",
+        "es": "¿Mañana es viernes?",
+        "ar": "هل غدا الجمعة؟",
+        "de": "Ist morgen Freitag?",
+        "zgh": "ⵉⵙ ⴷ ⴰⵙⵉⵎⵡⴰⵙ ⴰⵙⴽⴽⴰ"
+      },
+      "tr": {
+        "ar": "hal ghadan al-jumuʿa?",
+        "zgh": "is d asimwas askka"
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "Yes, tomorrow is Friday.",
+        "fr": "Oui, demain, c'est vendredi.",
+        "es": "Sí, mañana es viernes.",
+        "ar": "نعم، غدا الجمعة.",
+        "de": "Ja, morgen ist Freitag.",
+        "zgh": "ⵉⵀ ⴰⵙⴽⴽⴰ ⴷ ⴰⵙⵉⵎⵡⴰⵙ"
+      },
+      "tr": {
+        "ar": "naʿam, ghadan al-jumuʿa.",
+        "zgh": "ih askka d asimwas"
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "Thank you, see you tomorrow.",
+        "fr": "Merci, à demain.",
+        "es": "Gracias, hasta mañana.",
+        "ar": "شكرا، إلى اللقاء غدا.",
+        "de": "Danke, bis morgen."
+      },
+      "tr": {
+        "ar": "shukran, ilā al-liqāʾ ghadan."
+      }
+    }
   ],
-  "dialogue": ["s09", "s10", "s11"]
+  "dialogue": [
+    "s09",
+    "s10",
+    "s11"
+  ]
 }

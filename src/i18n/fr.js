@@ -80,4 +80,5 @@ export default {
   again: "Rejouer",
   home: "Accueil",
   levelHint: {"b1": "Grand débutant", "b2": "Débutant", "b3": "Débutant avancé", "m1": "Intermédiaire bas", "m2": "Intermédiaire", "m3": "Intermédiaire haut", "a1": "Avancé", "a2": "Avancé supérieur", "a3": "Presque natif"},
+  newWords: "Nouveaux mots", startLesson: "Commencer",
 };

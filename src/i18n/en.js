@@ -79,4 +79,5 @@ export default {
   again: "Play again",
   home: "Home",
   levelHint: {"b1": "Absolute beginner", "b2": "Beginner", "b3": "Upper beginner", "m1": "Lower middle", "m2": "Middle", "m3": "Upper middle", "a1": "Advanced", "a2": "Upper advanced", "a3": "Near native"},
+  newWords: "New words", startLesson: "Start",
 };

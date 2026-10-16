@@ -22,10 +22,12 @@
     "fr": "maison",
     "es": "casa",
     "ar": "بيت",
-    "de": "das Haus"
+    "de": "das Haus",
+    "zgh": "ⵜⴰⴷⴷⴰⵔⵜ"
    },
    "tr": {
-    "ar": "bayt"
+    "ar": "bayt",
+    "zgh": "taddart"
    }
   },
   {
@@ -48,10 +50,12 @@
     "fr": "pièce",
     "es": "habitación",
     "ar": "غرفة",
-    "de": "das Zimmer"
+    "de": "das Zimmer",
+    "zgh": "ⵜⴰⵅⵅⴰⵎⵜ"
    },
    "tr": {
-    "ar": "ghurfa"
+    "ar": "ghurfa",
+    "zgh": "taxxamt"
    }
   },
   {
@@ -165,10 +169,12 @@
     "fr": "porte",
     "es": "puerta",
     "ar": "باب",
-    "de": "die Tür"
+    "de": "die Tür",
+    "zgh": "ⵜⴰⵡⵡⵓⵔⵜ"
    },
    "tr": {
-    "ar": "bāb"
+    "ar": "bāb",
+    "zgh": "tawwurt"
    }
   },
   {
@@ -321,10 +327,12 @@
     "fr": "miroir",
     "es": "espejo",
     "ar": "مرآة",
-    "de": "der Spiegel"
+    "de": "der Spiegel",
+    "zgh": "ⵜⴰⵎⵔⴰⵢⵜ"
    },
    "tr": {
-    "ar": "mirʾāh"
+    "ar": "mirʾāh",
+    "zgh": "tamrayt"
    }
   },
   {
@@ -386,10 +394,12 @@
     "fr": "sur",
     "es": "sobre",
     "ar": "على",
-    "de": "auf"
+    "de": "auf",
+    "zgh": "ⵖⴼ"
    },
    "tr": {
-    "ar": "ʿalā"
+    "ar": "ʿalā",
+    "zgh": "ɣf"
    }
   },
   {
@@ -399,10 +409,12 @@
     "fr": "sous",
     "es": "debajo de",
     "ar": "تحت",
-    "de": "unter"
+    "de": "unter",
+    "zgh": "ⴷⴷⴰⵡ"
    },
    "tr": {
-    "ar": "taḥta"
+    "ar": "taḥta",
+    "zgh": "ddaw"
    }
   },
   {
@@ -425,10 +437,12 @@
     "fr": "il y a",
     "es": "hay",
     "ar": "يوجد",
-    "de": "es gibt"
+    "de": "es gibt",
+    "zgh": "ⵉⵍⵍⴰ"
    },
    "tr": {
-    "ar": "yūjad"
+    "ar": "yūjad",
+    "zgh": "illa"
    }
   },
   {
