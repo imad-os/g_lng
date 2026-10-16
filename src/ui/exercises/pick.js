@@ -1,8 +1,8 @@
 // pick_translation (see the learned word, pick its meaning), pick_target (see the meaning, pick the word),
 // listen_pick (hear it, pick the word).
-import { h } from '../../platform/dom.js?v=2.5.1';
-import { itemText, speakerButton } from '../components.js?v=2.5.1';
-import { choiceGrid, gloss, shuffle } from './common.js?v=2.5.1';
+import { h } from '../../platform/dom.js?v=2.5.2';
+import { itemText, speakerButton } from '../components.js?v=2.5.2';
+import { choiceGrid, gloss, shuffle } from './common.js?v=2.5.2';
 
 export default function pick(ctx) {
   const { ex, vocab, from, course } = ctx;

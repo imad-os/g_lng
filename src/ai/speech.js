@@ -1,7 +1,8 @@
 // Optional external voices: text-to-speech from a provider, speech-to-text from the browser or a provider.
 // Every failure is quiet (false / '') so the caller can fall back to the device voice; keys are never logged.
-import { aiConfig, viaProxy } from './config.js?v=2.5.1';
-import { t } from '../platform/i18n.js?v=2.5.1';
+import { aiConfig, viaProxy } from './config.js?v=2.5.2';
+import { setAiStatus } from './status.js?v=2.5.2';
+import { t } from '../platform/i18n.js?v=2.5.2';
 
 const NO_EXTERNAL = new Set(['', 'zgh', 'tzm', 'ber']);   // Tamazight has no provider voice: device voice instead
 const baseLang = (code) => String(code || '').slice(0, 2).toLowerCase();
@@ -22,7 +23,7 @@ export function externalTtsEnabled() {
 }
 
 export function stopExternalSpeech() {
-  if (ttsCtl) { ttsCtl.stopped = true; ttsCtl.abort(); ttsCtl = null; }
+  if (ttsCtl) { ttsCtl.stopped = true; ttsCtl.abort(); ttsCtl = null; setAiStatus({ kind: 'voice', busy: false }); }
   if (audioEl) { audioEl.pause(); audioEl.removeAttribute('src'); audioEl = null; }
   if (audioUrl) { URL.revokeObjectURL(audioUrl); audioUrl = null; }
   if (finish) { const f = finish; finish = null; f(true); }   // stopped on purpose: no device-voice fallback
@@ -34,6 +35,9 @@ export async function externalSpeak(text, langCode) {
   const c = aiConfig().tts;
   const ctl = new AbortController();
   ttsCtl = ctl;
+  const label = { magpie: 'NVIDIA Magpie', openai: 'OpenAI TTS', riva: 'NVIDIA Riva' }[c.provider] || c.provider;
+  let loading = false;
+  const loaded = () => { if (loading && ttsCtl === ctl) { loading = false; setAiStatus({ kind: 'voice', busy: false, label: `${label}${c.voice ? ' · ' + c.voice : ''}` }); } };
   const timer = setTimeout(() => ctl.abort(), 20000);
   try {
     let res;
@@ -44,17 +48,20 @@ export async function externalSpeak(text, langCode) {
       form.append('text', text);
       form.append('language', loc.replace(/^(..)-(..)$/, (m, a, b) => `${a.toLowerCase()}-${b}`));
       form.append('voice', `Magpie-Multilingual.${loc}.${c.voice || 'Aria'}`);
+      loading = true; setAiStatus({ kind: 'voice', busy: true, label: `${label} · ${c.voice || 'Aria'}` });
       const r = viaProxy(trim(c.endpoint), { Authorization: `Bearer ${c.key}` });
       res = await fetch(r.url, { method: 'POST', signal: ctl.signal, headers: r.headers, body: form });
     } else {
     const body = c.provider === 'openai'
       ? { model: 'tts-1', input: text, voice: c.voice || 'alloy', response_format: 'mp3' }
       : { input: text, voice: c.voice || undefined, language_code: langCode, response_format: 'wav' };   // Riva-style, same route shape
+    loading = true; setAiStatus({ kind: 'voice', busy: true, label: `${label}${c.voice ? ` · ${c.voice}` : ''}` });
     const r = viaProxy(`${trim(c.endpoint)}/audio/speech`, { 'Content-Type': 'application/json', Authorization: `Bearer ${c.key}` });
     res = await fetch(r.url, { method: 'POST', signal: ctl.signal, headers: r.headers, body: JSON.stringify(body) });
     }
     if (!res.ok) return false;
     const blob = await res.blob();
+    loaded();
     if (ttsCtl !== ctl) return true;                    // another call or stop took over meanwhile
     if (!blob.size) return false;
     audioUrl = URL.createObjectURL(blob);
@@ -69,6 +76,7 @@ export async function externalSpeak(text, langCode) {
   } catch (e) {
     return !!ctl.stopped;                               // stopped on purpose is not a failure
   } finally {
+    loaded();
     clearTimeout(timer);
     if (ttsCtl === ctl) ttsCtl = null;
   }

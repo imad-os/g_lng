@@ -1,11 +1,11 @@
 // Admin: the optional AI settings (language model, voices, switches). Keys are typed here and saved
 // only through saveAiConfig (MyPC.save, this profile). Everything works with arrows + OK:
 // choices cycle on OK, text fields open a dialog, because a TV remote cannot type inline.
-import { h, focusable } from '../../platform/dom.js?v=2.5.1';
-import { t } from '../../platform/i18n.js?v=2.5.1';
-import { aiConfig, saveAiConfig, LLM_PRESETS, TTS_PRESETS, STT_PRESETS } from '../../ai/config.js?v=2.5.1';
-import { testConnection } from '../../ai/client.js?v=2.5.1';
-import { openDialog, toast } from '../components.js?v=2.5.1';
+import { h, focusable } from '../../platform/dom.js?v=2.5.2';
+import { t } from '../../platform/i18n.js?v=2.5.2';
+import { aiConfig, saveAiConfig, LLM_PRESETS, TTS_PRESETS, STT_PRESETS } from '../../ai/config.js?v=2.5.2';
+import { testConnection } from '../../ai/client.js?v=2.5.2';
+import { openDialog, toast } from '../components.js?v=2.5.2';
 
 const TEMPS = [0, 0.2, 0.4, 0.7, 1];
 const LLM_NAMES = { nvidia: 'NVIDIA NIM', gemini: 'Google Gemini', openai: 'OpenAI', offline: null };

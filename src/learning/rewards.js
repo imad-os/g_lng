@@ -1,5 +1,5 @@
 // XP, gems, stars, daily goal and streak.
-import { today } from './day.js?v=2.5.1';
+import { today } from './day.js?v=2.5.2';
 
 export function starsFor(accuracy) { return accuracy >= 0.9 ? 3 : accuracy >= 0.75 ? 2 : 1; }
 

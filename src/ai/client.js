@@ -1,7 +1,8 @@
 // Language model client: OpenAI-compatible chat (NVIDIA NIM, OpenAI) and Gemini generateContent.
 // Error messages come from t('ai.err*') and never contain the key.
-import { aiConfig, viaProxy } from './config.js?v=2.5.1';
-import { t } from '../platform/i18n.js?v=2.5.1';
+import { aiConfig, viaProxy } from './config.js?v=2.5.2';
+import { setAiStatus } from './status.js?v=2.5.2';
+import { t } from '../platform/i18n.js?v=2.5.2';
 
 const TIMEOUT_MS = 30000;
 
@@ -70,6 +71,11 @@ export async function chat({ system, user, messages, json = false, signal } = {}
   if (!String(cfg.llm.key || '').trim()) throw new Error(t('ai.errNoKey'));
   if (!cfg.llm.endpoint || !cfg.llm.model) throw new Error(t('ai.errNoEndpoint'));
   const req = build(cfg, { system, user, json, messages });
+  setAiStatus({ kind: 'llm', busy: true, label: `${cfg.llm.model}` });
+  try { return await run(cfg, req, signal); } finally { setAiStatus({ kind: 'llm', busy: false, label: `${cfg.llm.model}` }); }
+}
+
+async function run(cfg, req, signal) {
   let res = await send(req, signal);
   if (res.status === 429 || res.status >= 500) {          // one retry for busy servers
     await new Promise((r) => setTimeout(r, 1200));

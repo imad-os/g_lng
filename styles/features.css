@@ -111,3 +111,16 @@
 .chat .bubble.me { align-self: flex-end; background: var(--blue, #1cb0f6); color: #fff; }
 .chat-foot { display: flex; gap: 10px; align-items: center; }
 .chat-foot .grow { flex: 1; }
+
+/* Voice loader and AI badge */
+.speaker.wait svg { opacity: .25; }
+.speaker.wait { position: relative; }
+.speaker.wait::after { content: ''; position: absolute; inset: 0; margin: auto; width: 34px; height: 34px; border: 5px solid rgba(255, 255, 255, .35); border-top-color: #fff; border-radius: 50%; animation: spin .8s linear infinite; }
+.speaker.big.wait::after { width: 56px; height: 56px; border-width: 7px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.ai-badge { position: absolute; left: 16px; bottom: 12px; padding: 6px 14px; border-radius: 14px; background: rgba(20, 28, 48, .85); color: #dfe8ff; font-size: 18px; z-index: 50; pointer-events: none; }
+.ai-badge.busy::before { content: ''; display: inline-block; width: 14px; height: 14px; margin-right: 8px; vertical-align: -2px; border: 3px solid rgba(255, 255, 255, .35); border-top-color: #fff; border-radius: 50%; animation: spin .8s linear infinite; }
+
+/* The layer now always holds the AI badge: it must not block clicks on the screen below; dialogs still do. */
+.layer { pointer-events: none; }
+.layer > .dialog-back { pointer-events: auto; }
