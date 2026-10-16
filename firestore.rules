@@ -1,0 +1,11 @@
+rules_version = '2';
+// Dualingo: Firestore holds read-only course content. Anyone may read it; no client may write.
+// Content is written only by tools/seed-firestore.mjs with a service account (which bypasses these rules).
+// Learner progress is never stored here: it goes through MyPC.save.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /meta/{doc} { allow read: if true; allow write: if false; }
+    match /courses/{path=**} { allow read: if true; allow write: if false; }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

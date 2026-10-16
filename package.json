@@ -1,0 +1,13 @@
+{
+  "name": "dualinguage",
+  "private": true,
+  "type": "module",
+  "description": "Content tools for the Dualinguage My PC app. The app itself needs no build step.",
+  "scripts": {
+    "build:content": "node tools/build-content.mjs",
+    "validate": "node tools/validate.mjs",
+    "seed": "node tools/seed-firestore.mjs",
+    "check": "node tools/build-content.mjs && node tools/validate.mjs && node tools/test-firestore-format.mjs && node tools/check-app.mjs",
+    "bump": "node tools/bump-version.mjs"
+  }
+}

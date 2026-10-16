@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="56" fill="#58cc02"/>
+  <path d="M40 64a24 24 0 0 1 24-24h76a24 24 0 0 1 24 24v44a24 24 0 0 1-24 24H92l-30 26v-26h2a24 24 0 0 1-24-24z" fill="#fff"/>
+  <path d="M216 124a24 24 0 0 0-24-24h-20v12a32 32 0 0 1-32 32h-28v8a24 24 0 0 0 24 24h44l30 26v-26a24 24 0 0 0 6-16z" fill="#1cb0f6"/>
+  <text x="102" y="102" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#58cc02" text-anchor="middle">Aa</text>
+  <text x="168" y="174" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#fff" text-anchor="middle">ⴰ</text>
+</svg>

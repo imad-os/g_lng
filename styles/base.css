@@ -1,0 +1,46 @@
+/* Base: a fixed 1280x720 stage scaled to the window (src/platform/screen.js). Chrome 108: no CSS nesting. */
+@font-face {
+  font-family: 'Noto Sans Tifinagh';
+  src: url('../assets/fonts/NotoSansTifinagh-Regular.ttf?v=2.0.0') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  --bg: #0f1a2b;
+  --bg-2: #16243a;
+  --panel: #1d2f4a;
+  --panel-2: #263b5c;
+  --line: #34507a;
+  --text: #f4f7fb;
+  --muted: #a9b8cf;
+  --accent: #58cc02;
+  --accent-dark: #3f9a00;
+  --blue: #1cb0f6;
+  --gold: #ffc800;
+  --red: #ff5a5f;
+  --focus: #ffd93b;
+  --radius: 18px;
+  --font: 'Segoe UI', 'Samsung One', Roboto, 'Noto Sans', 'Noto Sans Arabic', Arial, 'Noto Sans Tifinagh', sans-serif;
+}
+
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+body { color: var(--text); font-family: var(--font); font-size: 26px; line-height: 1.3; }
+* { box-sizing: border-box; }
+button { font: inherit; color: inherit; }
+
+.stage {
+  position: absolute; left: 0; top: 0; width: 1280px; height: 720px;
+  transform-origin: 0 0; overflow: hidden; background: var(--bg);
+}
+.screen, .layer { position: absolute; inset: 0; }
+.layer:empty { display: none; }
+
+.hidden { display: none !important; }
+.muted { color: var(--muted); }
+.small { font-size: 22px; }
+.tfng { font-family: 'Noto Sans Tifinagh', var(--font); }
+
+/* Focus must be obvious from 3 m away. */
+[data-focus] { outline: none; transition: transform 0.12s ease-out; }
+[data-focus].focused { box-shadow: 0 0 0 5px var(--focus); transform: scale(1.04); z-index: 2; }
+.low [data-focus] { transition: none; }

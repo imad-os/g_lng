@@ -1,0 +1,86 @@
+// Learner progress, saved only through MyPC.save / MyPC.load (per My PC profile, 64 KB per app).
+// Keys:  me        settings, XP, streak, active course
+//        c:<lang>  level, finished lessons (id -> stars), course XP
+//        w:<lang>  spaced repetition per word: "unit|word" -> [box, dueDay, right, wrong, lastDay]
+//        k:<lang>  accuracy per exercise type: type -> [attempts, correct]
+//        x:<lang>  last mistakes: [exerciseId, day, picked]
+import { today } from '../learning/day.js?v=2.0.0';
+
+const LIMIT = 60 * 1024;         // stay under My PC's 64 KB
+const MAX_WORDS = 700;           // per course; the oldest mastered words go first when space runs out
+const MAX_MISTAKES = 40;
+
+let sdk = null;
+let me = null;
+const courses = new Map();
+
+export function openProgress(MyPC, uiLang) {
+  sdk = MyPC;
+  me = Object.assign({
+    v: 1, course: null, from: uiLang, goal: 20, speech: true,
+    xp: 0, streak: 0, streakDay: -1, day: -1, dayXp: 0, started: [],
+  }, sdk.load('me', {}) || {});
+  rollDay();
+  return me;
+}
+
+export function getMe() { return me; }
+
+export function saveMe() { sdk.save('me', me); }
+
+function rollDay() {
+  const d = today();
+  if (me.day !== d) { me.day = d; me.dayXp = 0; }
+  if (me.streakDay >= 0 && d - me.streakDay > 1) me.streak = 0;
+}
+
+export function course(lang) {
+  if (!courses.has(lang)) {
+    courses.set(lang, {
+      c: Object.assign({ level: 'b1', done: {}, xp: 0 }, sdk.load('c:' + lang, {}) || {}),
+      w: sdk.load('w:' + lang, {}) || {},
+      k: sdk.load('k:' + lang, {}) || {},
+      x: sdk.load('x:' + lang, []) || [],
+    });
+  }
+  return courses.get(lang);
+}
+
+export function saveCourse(lang) {
+  const p = course(lang);
+  if (!me.started.includes(lang)) me.started.push(lang);
+  if (p.x.length > MAX_MISTAKES) p.x.splice(0, p.x.length - MAX_MISTAKES);
+  trimWords(p.w, MAX_WORDS);
+  while (sizeOfAll() > LIMIT && Object.keys(p.w).length > 50) trimWords(p.w, Math.floor(Object.keys(p.w).length * 0.8));
+  sdk.save('c:' + lang, p.c);
+  sdk.save('w:' + lang, p.w);
+  sdk.save('k:' + lang, p.k);
+  sdk.save('x:' + lang, p.x);
+  saveMe();
+}
+
+export function resetCourse(lang) {
+  courses.set(lang, { c: { level: 'b1', done: {}, xp: 0 }, w: {}, k: {}, x: [] });
+  saveCourse(lang);
+}
+
+// Keep the words that matter most: due soon, weak, recently seen.
+function trimWords(w, max) {
+  const keys = Object.keys(w);
+  if (keys.length <= max) return;
+  const d = today();
+  keys.sort((a, b) => keep(w[b], d) - keep(w[a], d));
+  for (const k of keys.slice(max)) delete w[k];
+}
+const keep = (e, d) => (5 - e[0]) * 10 - Math.max(0, e[1] - d) - (d - e[4]) * 0.5;
+
+function sizeOfAll() {
+  let n = JSON.stringify(me).length;
+  for (const lang of me.started || []) {
+    const p = course(lang);
+    n += JSON.stringify(p.c).length + JSON.stringify(p.w).length + JSON.stringify(p.k).length + JSON.stringify(p.x).length;
+  }
+  return n;
+}
+
+export function progressBytes() { return sizeOfAll(); }

@@ -1,0 +1,38 @@
+{
+  "id": "u02", "level": "b1", "order": 2,
+  "title": { "en": "Family and home", "fr": "Famille et maison", "es": "Familia y casa", "ar": "العائلة والبيت" },
+  "tip": {
+    "en": "Many languages mark whether a noun is masculine or feminine. Learn each new word together with its little word in front of it.",
+    "fr": "Beaucoup de langues indiquent si un nom est masculin ou féminin. Apprenez chaque mot avec le petit mot placé devant.",
+    "es": "Muchos idiomas indican si un sustantivo es masculino o femenino. Aprende cada palabra junto con la palabrita que va delante.",
+    "ar": "كثير من اللغات تميز بين الاسم المذكر والمؤنث. احفظ كل كلمة جديدة مع الكلمة الصغيرة التي تسبقها."
+  },
+  "words": [
+    { "id": "mother", "text": { "en": "mother", "fr": "mère", "es": "madre", "ar": "أم", "de": "Mutter", "zgh": "ⵢⵉⵎⵎⴰ" }, "tr": { "ar": "umm", "zgh": "yimma" } },
+    { "id": "father", "text": { "en": "father", "fr": "père", "es": "padre", "ar": "أب", "de": "Vater", "zgh": "ⴱⴰⴱⴰ" }, "tr": { "ar": "ab", "zgh": "baba" } },
+    { "id": "brother", "text": { "en": "brother", "fr": "frère", "es": "hermano", "ar": "أخ", "de": "Bruder", "zgh": "ⴳⵎⴰ" }, "tr": { "ar": "akh", "zgh": "gma" } },
+    { "id": "sister", "text": { "en": "sister", "fr": "sœur", "es": "hermana", "ar": "أخت", "de": "Schwester", "zgh": "ⵓⵍⵜⵎⴰ" }, "tr": { "ar": "ukht", "zgh": "ultma" } },
+    { "id": "family", "text": { "en": "family", "fr": "famille", "es": "familia", "ar": "عائلة", "de": "Familie" }, "tr": { "ar": "ʿāʾila" } },
+    { "id": "house", "text": { "en": "house", "fr": "maison", "es": "casa", "ar": "بيت", "de": "Haus", "zgh": "ⵜⴰⴷⴷⴰⵔⵜ" }, "tr": { "ar": "bayt", "zgh": "taddart" } },
+    { "id": "water", "text": { "en": "water", "fr": "eau", "es": "agua", "ar": "ماء", "de": "Wasser", "zgh": "ⴰⵎⴰⵏ" }, "tr": { "ar": "māʾ", "zgh": "aman" } },
+    { "id": "bread", "text": { "en": "bread", "fr": "pain", "es": "pan", "ar": "خبز", "de": "Brot", "zgh": "ⴰⵖⵔⵓⵎ" }, "tr": { "ar": "khubz", "zgh": "aghrum" } },
+    { "id": "big", "text": { "en": "big", "fr": "grand", "es": "grande", "ar": "كبير", "de": "groß" }, "tr": { "ar": "kabīr" } },
+    { "id": "small", "text": { "en": "small", "fr": "petit", "es": "pequeño", "ar": "صغير", "de": "klein" }, "tr": { "ar": "ṣaghīr" } },
+    { "id": "and", "text": { "en": "and", "fr": "et", "es": "y", "ar": "و", "de": "und", "zgh": "ⴷ" }, "tr": { "ar": "wa", "zgh": "d" } },
+    { "id": "child", "text": { "en": "child", "fr": "enfant", "es": "hijo", "ar": "طفل", "de": "Kind", "zgh": "ⴰⵔⵔⴰⵡ" }, "tr": { "ar": "ṭifl", "zgh": "arraw" } }
+  ],
+  "sentences": [
+    { "id": "s01", "text": { "en": "This is my mother.", "fr": "C'est ma mère.", "es": "Esta es mi madre.", "ar": "هذه أمي.", "de": "Das ist meine Mutter." }, "tr": { "ar": "hādhihi ummī." } },
+    { "id": "s02", "text": { "en": "My father and my brother.", "fr": "Mon père et mon frère.", "es": "Mi padre y mi hermano.", "ar": "أبي وأخي.", "de": "Mein Vater und mein Bruder." }, "tr": { "ar": "abī wa-akhī." } },
+    { "id": "s03", "text": { "en": "I have a sister.", "fr": "J'ai une sœur.", "es": "Tengo una hermana.", "ar": "عندي أخت.", "de": "Ich habe eine Schwester." }, "tr": { "ar": "ʿindī ukht." } },
+    { "id": "s04", "text": { "en": "The house is big.", "fr": "La maison est grande.", "es": "La casa es grande.", "ar": "البيت كبير.", "de": "Das Haus ist groß." }, "tr": { "ar": "al-bayt kabīr." } },
+    { "id": "s05", "text": { "en": "The house is small.", "fr": "La maison est petite.", "es": "La casa es pequeña.", "ar": "البيت صغير.", "de": "Das Haus ist klein." }, "tr": { "ar": "al-bayt ṣaghīr." } },
+    { "id": "s06", "text": { "en": "Water, please.", "fr": "De l'eau, s'il vous plaît.", "es": "Agua, por favor.", "ar": "ماء من فضلك.", "de": "Wasser, bitte." }, "tr": { "ar": "māʾ min faḍlik." } },
+    { "id": "s07", "text": { "en": "Bread and water.", "fr": "Du pain et de l'eau.", "es": "Pan y agua.", "ar": "خبز وماء.", "de": "Brot und Wasser.", "zgh": "ⴰⵖⵔⵓⵎ ⴷ ⵡⴰⵎⴰⵏ." }, "tr": { "ar": "khubz wa-māʾ.", "zgh": "aghrum d waman." } },
+    { "id": "s08", "text": { "en": "My family is big.", "fr": "Ma famille est grande.", "es": "Mi familia es grande.", "ar": "عائلتي كبيرة.", "de": "Meine Familie ist groß." }, "tr": { "ar": "ʿāʾilatī kabīra." } },
+    { "id": "s09", "text": { "en": "Thank you, mom!", "fr": "Merci, maman !", "es": "¡Gracias, mamá!", "ar": "شكرا يا أمي!", "de": "Danke, Mama!", "zgh": "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴰ ⵢⵉⵎⵎⴰ!" }, "tr": { "ar": "shukran yā ummī!", "zgh": "tanmmirt a yimma!" } },
+    { "id": "s10", "text": { "en": "Hello, dad!", "fr": "Bonjour, papa !", "es": "¡Hola, papá!", "ar": "مرحبا يا أبي!", "de": "Hallo, Papa!", "zgh": "ⴰⵣⵓⵍ ⴰ ⴱⴰⴱⴰ!" }, "tr": { "ar": "marḥaban yā abī!", "zgh": "azul a baba!" } },
+    { "id": "s11", "text": { "en": "The child is small.", "fr": "L'enfant est petit.", "es": "El hijo es pequeño.", "ar": "الطفل صغير.", "de": "Das Kind ist klein." }, "tr": { "ar": "aṭ-ṭifl ṣaghīr." } }
+  ],
+  "dialogue": ["s10", "s06", "s09"]
+}

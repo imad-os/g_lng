@@ -1,0 +1,37 @@
+{
+  "id": "u01", "level": "b1", "order": 1,
+  "title": { "en": "Hello!", "fr": "Bonjour !", "es": "¡Hola!", "ar": "مرحبا!" },
+  "tip": {
+    "en": "Start every conversation with a greeting, then say your name. Short phrases are enough at first.",
+    "fr": "Commencez chaque conversation par une salutation, puis dites votre nom. Des phrases courtes suffisent au début.",
+    "es": "Empieza cada conversación con un saludo y luego di tu nombre. Al principio bastan frases cortas.",
+    "ar": "ابدأ كل محادثة بالتحية ثم قل اسمك. الجمل القصيرة تكفي في البداية."
+  },
+  "words": [
+    { "id": "hello", "text": { "en": "hello", "fr": "bonjour", "es": "hola", "ar": "مرحبا", "de": "hallo", "zgh": "ⴰⵣⵓⵍ" }, "tr": { "ar": "marḥaban", "zgh": "azul" } },
+    { "id": "how_are_you", "text": { "en": "how are you", "fr": "comment ça va", "es": "cómo estás", "ar": "كيف حالك", "de": "wie geht's", "zgh": "ⵎⴰⵏⵣⴰⴽⵉⵏ" }, "tr": { "ar": "kayfa ḥāluk", "zgh": "manzakin" } },
+    { "id": "thanks", "text": { "en": "thank you", "fr": "merci", "es": "gracias", "ar": "شكرا", "de": "danke", "zgh": "ⵜⴰⵏⵎⵎⵉⵔⵜ" }, "tr": { "ar": "shukran", "zgh": "tanmmirt" } },
+    { "id": "please", "text": { "en": "please", "fr": "s'il vous plaît", "es": "por favor", "ar": "من فضلك", "de": "bitte" }, "tr": { "ar": "min faḍlik" } },
+    { "id": "yes", "text": { "en": "yes", "fr": "oui", "es": "sí", "ar": "نعم", "de": "ja", "zgh": "ⵉⵀ" }, "tr": { "ar": "naʿam", "zgh": "ih" } },
+    { "id": "no", "text": { "en": "no", "fr": "non", "es": "no", "ar": "لا", "de": "nein", "zgh": "ⵓⵀⵓ" }, "tr": { "ar": "lā", "zgh": "uhu" } },
+    { "id": "goodbye", "text": { "en": "goodbye", "fr": "au revoir", "es": "adiós", "ar": "مع السلامة", "de": "tschüss", "zgh": "ⴰⵔ ⵜⵉⵎⵍⵉⵍⵉⵜ" }, "tr": { "ar": "maʿa as-salāma", "zgh": "ar timlilit" } },
+    { "id": "man", "text": { "en": "man", "fr": "homme", "es": "hombre", "ar": "رجل", "de": "Mann", "zgh": "ⴰⵔⴳⴰⵣ" }, "tr": { "ar": "rajul", "zgh": "argaz" } },
+    { "id": "woman", "text": { "en": "woman", "fr": "femme", "es": "mujer", "ar": "امرأة", "de": "Frau", "zgh": "ⵜⴰⵎⵖⴰⵔⵜ" }, "tr": { "ar": "imraʾa", "zgh": "tamghart" } },
+    { "id": "boy", "text": { "en": "boy", "fr": "garçon", "es": "niño", "ar": "ولد", "de": "Junge", "zgh": "ⴰⴼⵔⵓⵅ" }, "tr": { "ar": "walad", "zgh": "afrukh" } },
+    { "id": "girl", "text": { "en": "girl", "fr": "fille", "es": "niña", "ar": "بنت", "de": "Mädchen", "zgh": "ⵜⴰⴼⵔⵓⵅⵜ" }, "tr": { "ar": "bint", "zgh": "tafrukht" } },
+    { "id": "name", "text": { "en": "name", "fr": "nom", "es": "nombre", "ar": "اسم", "de": "Name", "zgh": "ⵉⵙⵎ" }, "tr": { "ar": "ism", "zgh": "isem" } }
+  ],
+  "sentences": [
+    { "id": "s01", "text": { "en": "Hello, how are you?", "fr": "Bonjour, comment ça va ?", "es": "Hola, ¿cómo estás?", "ar": "مرحبا، كيف حالك؟", "de": "Hallo, wie geht es dir?", "zgh": "ⴰⵣⵓⵍ, ⵎⴰⵏⵣⴰⴽⵉⵏ?" }, "tr": { "ar": "marḥaban, kayfa ḥāluk?", "zgh": "azul, manzakin?" } },
+    { "id": "s02", "text": { "en": "I am fine, thank you.", "fr": "Je vais bien, merci.", "es": "Estoy bien, gracias.", "ar": "أنا بخير، شكرا.", "de": "Mir geht es gut, danke.", "zgh": "ⵍⵀⵎⴷⵓⵍⵍⴰⵀ, ⵜⴰⵏⵎⵎⵉⵔⵜ." }, "tr": { "ar": "anā bikhayr, shukran.", "zgh": "lhamdullah, tanmmirt." } },
+    { "id": "s03", "text": { "en": "My name is Sara.", "fr": "Je m'appelle Sara.", "es": "Me llamo Sara.", "ar": "اسمي سارة.", "de": "Ich heiße Sara.", "zgh": "ⵉⵙⵎ ⵉⵏⵓ ⵙⴰⵔⴰ." }, "tr": { "ar": "ismī Sāra.", "zgh": "isem inu Sara." } },
+    { "id": "s04", "text": { "en": "I am a man.", "fr": "Je suis un homme.", "es": "Soy un hombre.", "ar": "أنا رجل.", "de": "Ich bin ein Mann.", "zgh": "ⵏⴽⴽ ⴷ ⴰⵔⴳⴰⵣ." }, "tr": { "ar": "anā rajul.", "zgh": "nekk d argaz." } },
+    { "id": "s05", "text": { "en": "You are a woman.", "fr": "Tu es une femme.", "es": "Eres una mujer.", "ar": "أنتِ امرأة.", "de": "Du bist eine Frau.", "zgh": "ⴽⵎⵎ ⴷ ⵜⴰⵎⵖⴰⵔⵜ." }, "tr": { "ar": "anti imraʾa.", "zgh": "kmm d tamghart." } },
+    { "id": "s06", "text": { "en": "Yes, please.", "fr": "Oui, s'il vous plaît.", "es": "Sí, por favor.", "ar": "نعم، من فضلك.", "de": "Ja, bitte." }, "tr": { "ar": "naʿam, min faḍlik." } },
+    { "id": "s07", "text": { "en": "No, thank you.", "fr": "Non, merci.", "es": "No, gracias.", "ar": "لا، شكرا.", "de": "Nein, danke.", "zgh": "ⵓⵀⵓ, ⵜⴰⵏⵎⵎⵉⵔⵜ." }, "tr": { "ar": "lā, shukran.", "zgh": "uhu, tanmmirt." } },
+    { "id": "s08", "text": { "en": "Goodbye, Sara!", "fr": "Au revoir, Sara !", "es": "¡Adiós, Sara!", "ar": "مع السلامة يا سارة!", "de": "Tschüss, Sara!", "zgh": "ⴰⵔ ⵜⵉⵎⵍⵉⵍⵉⵜ ⴰ ⵙⴰⵔⴰ!" }, "tr": { "ar": "maʿa as-salāma yā Sāra!", "zgh": "ar timlilit a Sara!" } },
+    { "id": "s09", "text": { "en": "I am a girl.", "fr": "Je suis une fille.", "es": "Soy una niña.", "ar": "أنا بنت.", "de": "Ich bin ein Mädchen.", "zgh": "ⵏⴽⴽ ⴷ ⵜⴰⴼⵔⵓⵅⵜ." }, "tr": { "ar": "anā bint.", "zgh": "nekk d tafrukht." } },
+    { "id": "s10", "text": { "en": "He is a boy.", "fr": "C'est un garçon.", "es": "Es un niño.", "ar": "هو ولد.", "de": "Er ist ein Junge.", "zgh": "ⵏⵜⵜⴰ ⴷ ⴰⴼⵔⵓⵅ." }, "tr": { "ar": "huwa walad.", "zgh": "ntta d afrukh." } }
+  ],
+  "dialogue": ["s01", "s02", "s03", "s08"]
+}

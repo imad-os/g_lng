@@ -1,0 +1,54 @@
+/* Shared building blocks: buttons, cards, chips, bars, dialogs. */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  min-height: 64px; padding: 0 32px; border: 0; border-radius: var(--radius);
+  background: var(--panel-2); border-bottom: 5px solid #13213a; font-weight: 700; cursor: pointer;
+}
+.btn.primary { background: var(--accent); border-bottom-color: var(--accent-dark); color: #fff; }
+.btn.blue { background: var(--blue); border-bottom-color: #1683b8; color: #fff; }
+.btn.danger { background: var(--red); border-bottom-color: #c23c40; color: #fff; }
+.btn:disabled, .btn.disabled { opacity: 0.45; }
+
+.card { background: var(--panel); border-radius: var(--radius); padding: 20px 24px; }
+
+.chip {
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; border-radius: 999px;
+  background: var(--panel); font-weight: 700; font-size: 22px;
+}
+
+.bar { height: 18px; border-radius: 9px; background: var(--panel-2); overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--accent); border-radius: 9px; transform-origin: 0 50%; }
+[dir="rtl"] .bar > i { transform-origin: 100% 50%; }
+
+.option {
+  display: flex; align-items: center; justify-content: center; flex-direction: column;
+  min-height: 84px; padding: 12px 20px; border-radius: var(--radius); background: var(--panel);
+  border: 3px solid var(--line); border-bottom-width: 6px; font-size: 30px; font-weight: 600; text-align: center; cursor: pointer;
+}
+.option .tr { font-size: 20px; color: var(--muted); font-weight: 400; }
+.option.right { border-color: var(--accent); background: #234a1a; }
+.option.wrong { border-color: var(--red); background: #4a1f25; }
+.option.done { opacity: 0.35; }
+.option.picked { border-color: var(--blue); background: #183e5a; }
+
+.tile {
+  display: inline-flex; align-items: center; min-height: 64px; padding: 6px 22px; border-radius: 14px;
+  background: var(--panel); border: 3px solid var(--line); border-bottom-width: 6px; font-size: 30px; cursor: pointer;
+}
+.tile.used { visibility: hidden; }
+
+.speaker {
+  width: 96px; height: 96px; border-radius: 24px; border: 0; background: var(--blue); color: #fff;
+  display: inline-flex; align-items: center; justify-content: center; cursor: pointer; flex: none;
+}
+.speaker svg { width: 52px; height: 52px; }
+.speaker.big { width: 160px; height: 160px; border-radius: 36px; }
+.speaker.big svg { width: 88px; height: 88px; }
+
+.dialog-back { position: absolute; inset: 0; background: rgba(5, 10, 20, 0.72); display: flex; align-items: center; justify-content: center; }
+.dialog { width: 760px; max-height: 620px; overflow: hidden; background: var(--bg-2); border-radius: 24px; padding: 36px 40px; border: 2px solid var(--line); }
+.dialog h2 { margin: 0 0 16px; font-size: 36px; }
+.dialog p { margin: 0 0 24px; color: var(--muted); }
+.dialog .row { display: flex; gap: 20px; justify-content: flex-end; }
+
+.toast { position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); padding: 14px 28px; border-radius: 14px; background: var(--panel-2); }
