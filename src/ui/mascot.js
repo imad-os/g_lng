@@ -1,5 +1,5 @@
 // Coach Ziryab, a small owl drawn in SVG. Moods change the eyes, brows and beak; CSS animates the cheer.
-import { h } from '../platform/dom.js?v=2.3.0';
+import { h } from '../platform/dom.js?v=2.4.0';
 
 const EYES = {
   happy: '<circle cx="42" cy="46" r="9" fill="#1b2a41"/><circle cx="78" cy="46" r="9" fill="#1b2a41"/><circle cx="45" cy="43" r="3" fill="#fff"/><circle cx="81" cy="43" r="3" fill="#fff"/>',

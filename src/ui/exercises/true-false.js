@@ -1,8 +1,8 @@
 // true_false: does this word or sentence mean what is shown?
-import { h } from '../../platform/dom.js?v=2.3.0';
-import { t } from '../../platform/i18n.js?v=2.3.0';
-import { itemText, speakerButton } from '../components.js?v=2.3.0';
-import { choiceGrid, gloss } from './common.js?v=2.3.0';
+import { h } from '../../platform/dom.js?v=2.4.0';
+import { t } from '../../platform/i18n.js?v=2.4.0';
+import { itemText, speakerButton } from '../components.js?v=2.4.0';
+import { choiceGrid, gloss } from './common.js?v=2.4.0';
 
 export default function trueFalse(ctx) {
   const { ex, vocab, from, course } = ctx;

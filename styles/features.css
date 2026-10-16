@@ -93,3 +93,11 @@
 .intro-row .item { flex: 1; }
 .intro-row .item.big .target { font-size: 36px; }
 .intro-meaning { font-size: 30px; color: var(--muted); }
+
+/* Weekly league card */
+.league-list { display: flex; flex-direction: column; gap: 4px; }
+.league-row { display: flex; gap: 8px; align-items: center; font-size: 18px; padding: 2px 6px; border-radius: 10px; }
+.league-row.me { background: rgba(255, 200, 0, .18); font-weight: 700; }
+.league-row .rk { width: 22px; opacity: .7; }
+.league-row .nm { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.league-row .xp { opacity: .85; }
