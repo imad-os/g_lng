@@ -1,7 +1,7 @@
 // A compact picture of the learner, built from saved progress. The adaptive review uses it today;
 // the optional AI extras (Phase 4) will send it with their prompts so answers fit the learner's level.
-import { course, getMe } from '../data/progress-store.js?v=2.5.5';
-import { weakKeys, learnedCount } from './srs.js?v=2.5.5';
+import { course, getMe } from '../data/progress-store.js?v=2.5.6';
+import { weakKeys, learnedCount } from './srs.js?v=2.5.6';
 
 export function learnerSummary(lang) {
   const me = getMe();

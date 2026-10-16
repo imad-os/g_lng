@@ -1,6 +1,6 @@
 // One screen at a time; dialogs open above it with their own focus scope.
-import { clear } from '../platform/dom.js?v=2.5.5';
-import { replaceScope } from '../platform/input.js?v=2.5.5';
+import { clear } from '../platform/dom.js?v=2.5.6';
+import { replaceScope } from '../platform/input.js?v=2.5.6';
 
 let screenEl = null;
 let current = null;
