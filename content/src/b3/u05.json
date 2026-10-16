@@ -1,0 +1,858 @@
+{
+ "id": "u05",
+ "level": "b3",
+ "order": 5,
+ "title": {
+  "en": "Yesterday",
+  "fr": "Hier",
+  "es": "Ayer",
+  "ar": "أمس"
+ },
+ "tip": {
+  "en": "To talk about the past, use past forms: 'I went, I ate, I saw'. Add time words such as yesterday, last week or two days ago.",
+  "fr": "Pour parler du passé, utilisez le passé : « je suis allé, j'ai mangé, j'ai vu ». Ajoutez hier, la semaine dernière ou il y a deux jours.",
+  "es": "Para hablar del pasado, usa el pretérito: «fui, comí, vi». Añade ayer, la semana pasada o hace dos días.",
+  "ar": "للحديث عن الماضي استعمل الفعل الماضي: «ذهبت، أكلت، رأيت». وأضف أمس أو الأسبوع الماضي أو منذ يومين."
+ },
+ "words": [
+  {
+   "id": "yesterday",
+   "text": {
+    "en": "yesterday",
+    "fr": "hier",
+    "es": "ayer",
+    "ar": "أمس",
+    "de": "gestern"
+   },
+   "tr": {
+    "ar": "ams"
+   }
+  },
+  {
+   "id": "last_night",
+   "text": {
+    "en": "last night",
+    "fr": "hier soir",
+    "es": "anoche",
+    "ar": "ليلة أمس",
+    "de": "gestern Abend"
+   },
+   "tr": {
+    "ar": "laylat ams"
+   }
+  },
+  {
+   "id": "this_morning",
+   "text": {
+    "en": "this morning",
+    "fr": "ce matin",
+    "es": "esta mañana",
+    "ar": "هذا الصباح",
+    "de": "heute Morgen"
+   },
+   "tr": {
+    "ar": "hādhā aṣ-ṣabāḥ"
+   }
+  },
+  {
+   "id": "last_week",
+   "text": {
+    "en": "last week",
+    "fr": "la semaine dernière",
+    "es": "la semana pasada",
+    "ar": "الأسبوع الماضي",
+    "de": "letzte Woche"
+   },
+   "tr": {
+    "ar": "al-usbūʿ al-māḍī"
+   }
+  },
+  {
+   "id": "last_month",
+   "text": {
+    "en": "last month",
+    "fr": "le mois dernier",
+    "es": "el mes pasado",
+    "ar": "الشهر الماضي",
+    "de": "letzten Monat"
+   },
+   "tr": {
+    "ar": "ash-shahr al-māḍī"
+   }
+  },
+  {
+   "id": "last_year",
+   "text": {
+    "en": "last year",
+    "fr": "l'année dernière",
+    "es": "el año pasado",
+    "ar": "العام الماضي",
+    "de": "letztes Jahr"
+   },
+   "tr": {
+    "ar": "al-ʿām al-māḍī"
+   }
+  },
+  {
+   "id": "ago",
+   "text": {
+    "en": "ago",
+    "fr": "il y a",
+    "es": "hace",
+    "ar": "منذ",
+    "de": "vor"
+   },
+   "tr": {
+    "ar": "mundhu"
+   }
+  },
+  {
+   "id": "already",
+   "text": {
+    "en": "already",
+    "fr": "déjà",
+    "es": "ya",
+    "ar": "بالفعل",
+    "de": "schon"
+   },
+   "tr": {
+    "ar": "bil-fiʿl"
+   }
+  },
+  {
+   "id": "weekend",
+   "text": {
+    "en": "weekend",
+    "fr": "week-end",
+    "es": "fin de semana",
+    "ar": "عطلة نهاية الأسبوع",
+    "de": "das Wochenende"
+   },
+   "tr": {
+    "ar": "ʿuṭlat nihāyat al-usbūʿ"
+   }
+  },
+  {
+   "id": "holiday",
+   "text": {
+    "en": "holiday",
+    "fr": "vacances",
+    "es": "vacaciones",
+    "ar": "عطلة",
+    "de": "der Urlaub"
+   },
+   "tr": {
+    "ar": "ʿuṭla"
+   }
+  },
+  {
+   "id": "trip",
+   "text": {
+    "en": "trip",
+    "fr": "voyage",
+    "es": "viaje",
+    "ar": "رحلة",
+    "de": "die Reise"
+   },
+   "tr": {
+    "ar": "riḥla"
+   }
+  },
+  {
+   "id": "went",
+   "text": {
+    "en": "went",
+    "fr": "il est allé",
+    "es": "fue",
+    "ar": "ذهب",
+    "de": "ging"
+   },
+   "tr": {
+    "ar": "dhahaba"
+   }
+  },
+  {
+   "id": "ate",
+   "text": {
+    "en": "ate",
+    "fr": "il a mangé",
+    "es": "comió",
+    "ar": "أكل",
+    "de": "aß"
+   },
+   "tr": {
+    "ar": "akala"
+   }
+  },
+  {
+   "id": "drank",
+   "text": {
+    "en": "drank",
+    "fr": "il a bu",
+    "es": "bebió",
+    "ar": "شرب",
+    "de": "trank"
+   },
+   "tr": {
+    "ar": "shariba"
+   }
+  },
+  {
+   "id": "saw",
+   "text": {
+    "en": "saw",
+    "fr": "il a vu",
+    "es": "vio",
+    "ar": "رأى",
+    "de": "sah"
+   },
+   "tr": {
+    "ar": "raʾā"
+   }
+  },
+  {
+   "id": "bought",
+   "text": {
+    "en": "bought",
+    "fr": "il a acheté",
+    "es": "compró",
+    "ar": "اشترى",
+    "de": "kaufte"
+   },
+   "tr": {
+    "ar": "ishtarā"
+   }
+  },
+  {
+   "id": "played",
+   "text": {
+    "en": "played",
+    "fr": "il a joué",
+    "es": "jugó",
+    "ar": "لعب",
+    "de": "spielte"
+   },
+   "tr": {
+    "ar": "laʿiba"
+   }
+  },
+  {
+   "id": "worked",
+   "text": {
+    "en": "worked",
+    "fr": "il a travaillé",
+    "es": "trabajó",
+    "ar": "عمل",
+    "de": "arbeitete"
+   },
+   "tr": {
+    "ar": "ʿamila"
+   }
+  },
+  {
+   "id": "slept",
+   "text": {
+    "en": "slept",
+    "fr": "il a dormi",
+    "es": "durmió",
+    "ar": "نام",
+    "de": "schlief"
+   },
+   "tr": {
+    "ar": "nāma"
+   }
+  },
+  {
+   "id": "came",
+   "text": {
+    "en": "came",
+    "fr": "il est venu",
+    "es": "vino",
+    "ar": "جاء",
+    "de": "kam"
+   },
+   "tr": {
+    "ar": "jāʾa"
+   }
+  },
+  {
+   "id": "said",
+   "text": {
+    "en": "said",
+    "fr": "il a dit",
+    "es": "dijo",
+    "ar": "قال",
+    "de": "sagte"
+   },
+   "tr": {
+    "ar": "qāla"
+   }
+  },
+  {
+   "id": "did",
+   "text": {
+    "en": "did",
+    "fr": "il a fait",
+    "es": "hizo",
+    "ar": "فعل",
+    "de": "machte"
+   },
+   "tr": {
+    "ar": "faʿala"
+   }
+  },
+  {
+   "id": "had",
+   "text": {
+    "en": "had",
+    "fr": "il a eu",
+    "es": "tuvo",
+    "ar": "كان لديه",
+    "de": "hatte"
+   },
+   "tr": {
+    "ar": "kāna ladayh"
+   }
+  },
+  {
+   "id": "was",
+   "text": {
+    "en": "was",
+    "fr": "il était",
+    "es": "estaba",
+    "ar": "كان",
+    "de": "war"
+   },
+   "tr": {
+    "ar": "kāna"
+   }
+  },
+  {
+   "id": "visited",
+   "text": {
+    "en": "visited",
+    "fr": "il a visité",
+    "es": "visitó",
+    "ar": "زار",
+    "de": "besuchte"
+   },
+   "tr": {
+    "ar": "zāra"
+   }
+  },
+  {
+   "id": "called",
+   "text": {
+    "en": "called",
+    "fr": "il a appelé",
+    "es": "llamó",
+    "ar": "اتصل",
+    "de": "rief an"
+   },
+   "tr": {
+    "ar": "ittaṣala"
+   }
+  },
+  {
+   "id": "watched",
+   "text": {
+    "en": "watched",
+    "fr": "il a regardé",
+    "es": "miró",
+    "ar": "شاهد",
+    "de": "schaute"
+   },
+   "tr": {
+    "ar": "shāhada"
+   }
+  },
+  {
+   "id": "cleaned",
+   "text": {
+    "en": "cleaned",
+    "fr": "il a nettoyé",
+    "es": "limpió",
+    "ar": "نظف",
+    "de": "putzte"
+   },
+   "tr": {
+    "ar": "naẓẓafa"
+   }
+  },
+  {
+   "id": "cooked",
+   "text": {
+    "en": "cooked",
+    "fr": "il a cuisiné",
+    "es": "cocinó",
+    "ar": "طبخ",
+    "de": "kochte"
+   },
+   "tr": {
+    "ar": "ṭabakha"
+   }
+  },
+  {
+   "id": "met",
+   "text": {
+    "en": "met",
+    "fr": "il a rencontré",
+    "es": "conoció",
+    "ar": "قابل",
+    "de": "traf"
+   },
+   "tr": {
+    "ar": "qābala"
+   }
+  },
+  {
+   "id": "finished",
+   "text": {
+    "en": "finished",
+    "fr": "il a fini",
+    "es": "terminó",
+    "ar": "أنهى",
+    "de": "beendete"
+   },
+   "tr": {
+    "ar": "anhā"
+   }
+  },
+  {
+   "id": "arrived",
+   "text": {
+    "en": "arrived",
+    "fr": "il est arrivé",
+    "es": "llegó",
+    "ar": "وصل",
+    "de": "kam an"
+   },
+   "tr": {
+    "ar": "waṣala"
+   }
+  },
+  {
+   "id": "left",
+   "text": {
+    "en": "left",
+    "fr": "il est parti",
+    "es": "salió",
+    "ar": "غادر",
+    "de": "verließ"
+   },
+   "tr": {
+    "ar": "ghādara"
+   }
+  },
+  {
+   "id": "studied",
+   "text": {
+    "en": "studied",
+    "fr": "il a étudié",
+    "es": "estudió",
+    "ar": "درس",
+    "de": "lernte"
+   },
+   "tr": {
+    "ar": "darasa"
+   }
+  },
+  {
+   "id": "wrote",
+   "text": {
+    "en": "wrote",
+    "fr": "il a écrit",
+    "es": "escribió",
+    "ar": "كتب",
+    "de": "schrieb"
+   },
+   "tr": {
+    "ar": "kataba"
+   }
+  },
+  {
+   "id": "read",
+   "text": {
+    "en": "read",
+    "fr": "il a lu",
+    "es": "leyó",
+    "ar": "قرأ",
+    "de": "las"
+   },
+   "tr": {
+    "ar": "qaraʾa"
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "text": {
+    "en": "Yesterday I went to the market.",
+    "fr": "Hier, je suis allé au marché.",
+    "es": "Ayer fui al mercado.",
+    "ar": "ذهبت أمس إلى السوق.",
+    "de": "Gestern bin ich zum Markt gegangen."
+   },
+   "tr": {
+    "ar": "dhahabtu ams ilā as-sūq."
+   }
+  },
+  {
+   "id": "s02",
+   "text": {
+    "en": "She ate fish last night.",
+    "fr": "Elle a mangé du poisson hier soir.",
+    "es": "Anoche ella comió pescado.",
+    "ar": "هي أكلت السمك ليلة أمس.",
+    "de": "Gestern Abend hat sie Fisch gegessen."
+   },
+   "tr": {
+    "ar": "hiya akalat as-samak laylat ams."
+   }
+  },
+  {
+   "id": "s03",
+   "text": {
+    "en": "We drank tea at my grandmother's house.",
+    "fr": "Nous avons bu du thé chez ma grand-mère.",
+    "es": "Bebimos té en casa de mi abuela.",
+    "ar": "شربنا الشاي في بيت جدتي.",
+    "de": "Wir haben bei meiner Großmutter Tee getrunken."
+   },
+   "tr": {
+    "ar": "sharibnā ash-shāy fī bayt jaddatī."
+   }
+  },
+  {
+   "id": "s04",
+   "text": {
+    "en": "I saw my friends this morning.",
+    "fr": "J'ai vu mes amis ce matin.",
+    "es": "Vi a mis amigos esta mañana.",
+    "ar": "رأيت أصدقائي هذا الصباح.",
+    "de": "Ich habe heute Morgen meine Freunde gesehen."
+   },
+   "tr": {
+    "ar": "raʾaytu aṣdiqāʾī hādhā aṣ-ṣabāḥ."
+   }
+  },
+  {
+   "id": "s05",
+   "text": {
+    "en": "He bought a new phone.",
+    "fr": "Il a acheté un nouveau téléphone.",
+    "es": "Compró un teléfono nuevo.",
+    "ar": "اشترى هاتفا جديدا.",
+    "de": "Er hat ein neues Handy gekauft."
+   },
+   "tr": {
+    "ar": "ishtarā hātifan jadīdan."
+   }
+  },
+  {
+   "id": "s06",
+   "text": {
+    "en": "The children played in the garden.",
+    "fr": "Les enfants ont joué dans le jardin.",
+    "es": "Los niños jugaron en el jardín.",
+    "ar": "لعب الأطفال في الحديقة.",
+    "de": "Die Kinder haben im Garten gespielt."
+   },
+   "tr": {
+    "ar": "laʿiba al-aṭfāl fī al-ḥadīqa."
+   }
+  },
+  {
+   "id": "s07",
+   "text": {
+    "en": "I worked all day.",
+    "fr": "J'ai travaillé toute la journée.",
+    "es": "Trabajé todo el día.",
+    "ar": "عملت طوال اليوم.",
+    "de": "Ich habe den ganzen Tag gearbeitet."
+   },
+   "tr": {
+    "ar": "ʿamiltu ṭiwāl al-yawm."
+   }
+  },
+  {
+   "id": "s08",
+   "text": {
+    "en": "My brother slept until ten.",
+    "fr": "Mon frère a dormi jusqu'à dix heures.",
+    "es": "Mi hermano durmió hasta las diez.",
+    "ar": "نام أخي حتى الساعة العاشرة.",
+    "de": "Mein Bruder hat bis zehn Uhr geschlafen."
+   },
+   "tr": {
+    "ar": "nāma akhī ḥattā as-sāʿa al-ʿāshira."
+   }
+  },
+  {
+   "id": "s09",
+   "text": {
+    "en": "My cousins came last week.",
+    "fr": "Mes cousins sont venus la semaine dernière.",
+    "es": "Mis primos vinieron la semana pasada.",
+    "ar": "جاء أبناء عمي الأسبوع الماضي.",
+    "de": "Meine Cousins sind letzte Woche gekommen."
+   },
+   "tr": {
+    "ar": "jāʾa abnāʾ ʿammī al-usbūʿ al-māḍī."
+   }
+  },
+  {
+   "id": "s10",
+   "text": {
+    "en": "She said goodbye and left.",
+    "fr": "Elle a dit au revoir et elle est partie.",
+    "es": "Dijo adiós y salió.",
+    "ar": "قالت وداعا وغادرت.",
+    "de": "Sie sagte auf Wiedersehen und ging."
+   },
+   "tr": {
+    "ar": "qālat wadāʿan wa-ghādarat."
+   }
+  },
+  {
+   "id": "s11",
+   "text": {
+    "en": "What did you do yesterday?",
+    "fr": "Qu'as-tu fait hier ?",
+    "es": "¿Qué hiciste ayer?",
+    "ar": "ماذا فعلت أمس؟",
+    "de": "Was hast du gestern gemacht?"
+   },
+   "tr": {
+    "ar": "mādhā faʿalta ams?"
+   }
+  },
+  {
+   "id": "s12",
+   "text": {
+    "en": "I visited my grandparents on the weekend.",
+    "fr": "J'ai rendu visite à mes grands-parents pendant le week-end.",
+    "es": "Visité a mis abuelos el fin de semana.",
+    "ar": "زرت جدي وجدتي في عطلة نهاية الأسبوع.",
+    "de": "Ich habe am Wochenende meine Großeltern besucht."
+   },
+   "tr": {
+    "ar": "zurtu jaddī wa-jaddatī fī ʿuṭlat nihāyat al-usbūʿ."
+   }
+  },
+  {
+   "id": "s13",
+   "text": {
+    "en": "We went on a trip last month.",
+    "fr": "Nous avons fait un voyage le mois dernier.",
+    "es": "Hicimos un viaje el mes pasado.",
+    "ar": "قمنا برحلة في الشهر الماضي.",
+    "de": "Wir haben letzten Monat eine Reise gemacht."
+   },
+   "tr": {
+    "ar": "qumnā bi-riḥla fī ash-shahr al-māḍī."
+   }
+  },
+  {
+   "id": "s14",
+   "text": {
+    "en": "I was at home last night.",
+    "fr": "J'étais à la maison hier soir.",
+    "es": "Estaba en casa anoche.",
+    "ar": "كنت في البيت ليلة أمس.",
+    "de": "Gestern Abend war ich zu Hause."
+   },
+   "tr": {
+    "ar": "kuntu fī al-bayt laylat ams."
+   }
+  },
+  {
+   "id": "s15",
+   "text": {
+    "en": "We watched a film on TV.",
+    "fr": "Nous avons regardé un film à la télé.",
+    "es": "Miramos una película en la tele.",
+    "ar": "شاهدنا فيلما على التلفاز.",
+    "de": "Wir haben einen Film im Fernsehen gesehen."
+   },
+   "tr": {
+    "ar": "shāhadnā filman ʿalā at-tilfāz."
+   }
+  },
+  {
+   "id": "s16",
+   "text": {
+    "en": "I cleaned the kitchen and cooked dinner.",
+    "fr": "J'ai nettoyé la cuisine et préparé le dîner.",
+    "es": "Limpié la cocina y cociné la cena.",
+    "ar": "نظفت المطبخ وطبخت العشاء.",
+    "de": "Ich habe die Küche geputzt und das Abendessen gekocht."
+   },
+   "tr": {
+    "ar": "naẓẓaftu al-maṭbakh wa-ṭabakhtu al-ʿashāʾ."
+   }
+  },
+  {
+   "id": "s17",
+   "text": {
+    "en": "I met my teacher at the station.",
+    "fr": "J'ai rencontré mon professeur à la gare.",
+    "es": "Me encontré con mi profesor en la estación.",
+    "ar": "قابلت معلمي في المحطة.",
+    "de": "Ich habe meinen Lehrer am Bahnhof getroffen."
+   },
+   "tr": {
+    "ar": "qābaltu muʿallimī fī al-maḥaṭṭa."
+   }
+  },
+  {
+   "id": "s18",
+   "text": {
+    "en": "I finished my homework at nine.",
+    "fr": "J'ai fini mes devoirs à neuf heures.",
+    "es": "Terminé mis deberes a las nueve.",
+    "ar": "أنهيت واجباتي في الساعة التاسعة.",
+    "de": "Ich habe meine Hausaufgaben um neun Uhr beendet."
+   },
+   "tr": {
+    "ar": "anhaytu wājibātī fī as-sāʿa at-tāsiʿa."
+   }
+  },
+  {
+   "id": "s19",
+   "text": {
+    "en": "The train arrived late.",
+    "fr": "Le train est arrivé en retard.",
+    "es": "El tren llegó tarde.",
+    "ar": "وصل القطار متأخرا.",
+    "de": "Der Zug ist verspätet angekommen."
+   },
+   "tr": {
+    "ar": "waṣala al-qiṭār mutaʾakhkhiran."
+   }
+  },
+  {
+   "id": "s20",
+   "text": {
+    "en": "They left the house early.",
+    "fr": "Ils sont sortis de la maison tôt.",
+    "es": "Salieron de casa temprano.",
+    "ar": "غادروا البيت مبكرا.",
+    "de": "Sie haben das Haus früh verlassen."
+   },
+   "tr": {
+    "ar": "ghādarū al-bayt mubakkiran."
+   }
+  },
+  {
+   "id": "s21",
+   "text": {
+    "en": "I studied for two hours.",
+    "fr": "J'ai étudié pendant deux heures.",
+    "es": "Estudié durante dos horas.",
+    "ar": "درست مدة ساعتين.",
+    "de": "Ich habe zwei Stunden lang gelernt."
+   },
+   "tr": {
+    "ar": "darastu muddat sāʿatayn."
+   }
+  },
+  {
+   "id": "s22",
+   "text": {
+    "en": "She wrote a long letter.",
+    "fr": "Elle a écrit une longue lettre.",
+    "es": "Ella escribió una carta larga.",
+    "ar": "هي كتبت رسالة طويلة.",
+    "de": "Sie hat einen langen Brief geschrieben."
+   },
+   "tr": {
+    "ar": "hiya katabat risāla ṭawīla."
+   }
+  },
+  {
+   "id": "s23",
+   "text": {
+    "en": "I read this book last year.",
+    "fr": "J'ai lu ce livre l'année dernière.",
+    "es": "Leí este libro el año pasado.",
+    "ar": "قرأت هذا الكتاب في العام الماضي.",
+    "de": "Ich habe dieses Buch letztes Jahr gelesen."
+   },
+   "tr": {
+    "ar": "qaraʾtu hādhā al-kitāb fī al-ʿām al-māḍī."
+   }
+  },
+  {
+   "id": "s24",
+   "text": {
+    "en": "We had a great holiday.",
+    "fr": "Nous avons passé de très bonnes vacances.",
+    "es": "Tuvimos unas vacaciones estupendas.",
+    "ar": "قضينا عطلة رائعة.",
+    "de": "Wir hatten einen tollen Urlaub."
+   },
+   "tr": {
+    "ar": "qaḍaynā ʿuṭla rāʾiʿa."
+   }
+  },
+  {
+   "id": "s25",
+   "text": {
+    "en": "I called him two days ago.",
+    "fr": "Je l'ai appelé il y a deux jours.",
+    "es": "Lo llamé hace dos días.",
+    "ar": "اتصلت به منذ يومين.",
+    "de": "Ich habe ihn vor zwei Tagen angerufen."
+   },
+   "tr": {
+    "ar": "ittaṣaltu bihi mundhu yawmayn."
+   }
+  },
+  {
+   "id": "s26",
+   "text": {
+    "en": "Did you already eat?",
+    "fr": "As-tu déjà mangé ?",
+    "es": "¿Ya comiste?",
+    "ar": "هل أكلت بالفعل؟",
+    "de": "Hast du schon gegessen?"
+   },
+   "tr": {
+    "ar": "hal akalta bil-fiʿl?"
+   }
+  },
+  {
+   "id": "s27",
+   "text": {
+    "en": "No, I did not eat.",
+    "fr": "Non, je n'ai pas mangé.",
+    "es": "No, no comí.",
+    "ar": "لا، لم آكل.",
+    "de": "Nein, ich habe nicht gegessen."
+   },
+   "tr": {
+    "ar": "lā, lam ākul."
+   }
+  },
+  {
+   "id": "s28",
+   "text": {
+    "en": "Where were you yesterday?",
+    "fr": "Où étais-tu hier ?",
+    "es": "¿Dónde estabas ayer?",
+    "ar": "أين كنت أمس؟",
+    "de": "Wo warst du gestern?"
+   },
+   "tr": {
+    "ar": "ayna kunta ams?"
+   }
+  }
+ ],
+ "dialogue": [
+  "s11",
+  "s01",
+  "s04"
+ ]
+}

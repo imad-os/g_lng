@@ -1,21 +1,21 @@
 // Entry point: My PC lifecycle, boot, and navigation between screens.
-import { readConfig } from './config.js?v=2.0.0';
-import { setUiLang, uiLang, t, UI_LANGS } from './platform/i18n.js?v=2.0.0';
-import { initScreen, destroyScreen } from './platform/screen.js?v=2.0.0';
-import { handleAction } from './platform/input.js?v=2.0.0';
-import { configureAudio, startAudio, pauseAudio, resumeAudio, destroyAudio, setVolume, stopVoice } from './platform/audio.js?v=2.0.0';
-import { openContent, getCourse, getLesson, getUnit, flushContentCache } from './data/content-repo.js?v=2.0.0';
-import { openProgress, getMe, saveMe } from './data/progress-store.js?v=2.0.0';
-import { buildReview } from './learning/review.js?v=2.0.0';
-import { initRouter, show, menuChosen } from './ui/router.js?v=2.0.0';
-import { initComponents, openDialog, toast } from './ui/components.js?v=2.0.0';
-import { h } from './platform/dom.js?v=2.0.0';
-import { coursesScreen } from './ui/screens/courses.js?v=2.0.0';
-import { homeScreen } from './ui/screens/home.js?v=2.0.0';
-import { lessonScreen } from './ui/screens/lesson.js?v=2.0.0';
-import { resultsScreen } from './ui/screens/results.js?v=2.0.0';
-import { statsScreen } from './ui/screens/stats.js?v=2.0.0';
-import { settingsScreen } from './ui/screens/settings.js?v=2.0.0';
+import { readConfig } from './config.js?v=2.1.0';
+import { setUiLang, uiLang, t, UI_LANGS } from './platform/i18n.js?v=2.1.0';
+import { initScreen, destroyScreen } from './platform/screen.js?v=2.1.0';
+import { handleAction } from './platform/input.js?v=2.1.0';
+import { configureAudio, startAudio, pauseAudio, resumeAudio, destroyAudio, setVolume, stopVoice } from './platform/audio.js?v=2.1.0';
+import { openContent, getCourse, getLesson, getUnit, flushContentCache } from './data/content-repo.js?v=2.1.0';
+import { openProgress, getMe, saveMe } from './data/progress-store.js?v=2.1.0';
+import { buildReview } from './learning/review.js?v=2.1.0';
+import { initRouter, show, menuChosen } from './ui/router.js?v=2.1.0';
+import { initComponents, openDialog, toast } from './ui/components.js?v=2.1.0';
+import { h } from './platform/dom.js?v=2.1.0';
+import { coursesScreen } from './ui/screens/courses.js?v=2.1.0';
+import { homeScreen } from './ui/screens/home.js?v=2.1.0';
+import { lessonScreen } from './ui/screens/lesson.js?v=2.1.0';
+import { resultsScreen } from './ui/screens/results.js?v=2.1.0';
+import { statsScreen } from './ui/screens/stats.js?v=2.1.0';
+import { settingsScreen } from './ui/screens/settings.js?v=2.1.0';
 
 const MyPC = window.MyPC;
 

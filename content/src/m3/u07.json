@@ -1,0 +1,927 @@
+{
+  "id": "u07",
+  "level": "m3",
+  "order": 7,
+  "title": {
+    "en": "Discussions",
+    "fr": "Discussions",
+    "es": "Debates y conversaciones",
+    "ar": "النقاشات"
+  },
+  "tip": {
+    "en": "Take your turn politely: \"Could I add something?\" Persuade with \"Don't you think that...?\" and \"The point is...\". Finish by summing up: \"To sum up...\" or \"So, we all agree that...\".",
+    "fr": "Pour prendre la parole poliment : « Puis-je ajouter quelque chose ? » Pour convaincre : « Ne pensez-vous pas que... ? » Pour conclure : « En résumé... » ou « Nous sommes donc tous d'accord pour dire que... ».",
+    "es": "Para tomar la palabra con educación: «¿Puedo añadir algo?». Para convencer: «¿No crees que...?». Para cerrar: «En resumen...» o «Entonces, todos estamos de acuerdo en que...».",
+    "ar": "لأخذ الكلمة بأدب قل: «هل يمكنني أن أضيف شيئا؟». وللإقناع: «ألا تعتقد أن...؟». وللختام: «خلاصة القول...» أو «إذن نتفق جميعا على أن...»."
+  },
+  "words": [
+    {
+      "id": "discussion",
+      "text": {
+        "en": "discussion",
+        "fr": "discussion",
+        "es": "debate",
+        "ar": "نقاش"
+      },
+      "tr": {
+        "ar": "niqāsh"
+      }
+    },
+    {
+      "id": "topic",
+      "text": {
+        "en": "topic",
+        "fr": "sujet",
+        "es": "tema",
+        "ar": "موضوع"
+      },
+      "tr": {
+        "ar": "mawḍūʿ"
+      }
+    },
+    {
+      "id": "point",
+      "text": {
+        "en": "point",
+        "fr": "point",
+        "es": "punto",
+        "ar": "نقطة"
+      },
+      "tr": {
+        "ar": "nuqṭa"
+      }
+    },
+    {
+      "id": "point_of_view",
+      "text": {
+        "en": "point of view",
+        "fr": "point de vue",
+        "es": "punto de vista",
+        "ar": "وجهة نظر"
+      },
+      "tr": {
+        "ar": "wijhat naẓar"
+      }
+    },
+    {
+      "id": "argument_noun",
+      "text": {
+        "en": "reason",
+        "fr": "raison",
+        "es": "razón",
+        "ar": "حجة"
+      },
+      "tr": {
+        "ar": "ḥujja"
+      }
+    },
+    {
+      "id": "evidence",
+      "text": {
+        "en": "evidence",
+        "fr": "preuve",
+        "es": "prueba",
+        "ar": "دليل"
+      },
+      "tr": {
+        "ar": "dalīl"
+      }
+    },
+    {
+      "id": "example",
+      "text": {
+        "en": "example",
+        "fr": "exemple",
+        "es": "ejemplo",
+        "ar": "مثال"
+      },
+      "tr": {
+        "ar": "mithāl"
+      }
+    },
+    {
+      "id": "suggestion",
+      "text": {
+        "en": "suggestion",
+        "fr": "suggestion",
+        "es": "sugerencia",
+        "ar": "اقتراح"
+      },
+      "tr": {
+        "ar": "iqtirāḥ"
+      }
+    },
+    {
+      "id": "agreement",
+      "text": {
+        "en": "agreement",
+        "fr": "accord",
+        "es": "acuerdo",
+        "ar": "اتفاق"
+      },
+      "tr": {
+        "ar": "ittifāq"
+      }
+    },
+    {
+      "id": "disagreement",
+      "text": {
+        "en": "disagreement",
+        "fr": "désaccord",
+        "es": "desacuerdo",
+        "ar": "اختلاف"
+      },
+      "tr": {
+        "ar": "ikhtilāf"
+      }
+    },
+    {
+      "id": "compromise",
+      "text": {
+        "en": "compromise",
+        "fr": "compromis",
+        "es": "compromiso",
+        "ar": "تسوية"
+      },
+      "tr": {
+        "ar": "taswiya"
+      }
+    },
+    {
+      "id": "summary",
+      "text": {
+        "en": "summary",
+        "fr": "résumé",
+        "es": "resumen",
+        "ar": "ملخص"
+      },
+      "tr": {
+        "ar": "mulakhkhaṣ"
+      }
+    },
+    {
+      "id": "conclusion",
+      "text": {
+        "en": "conclusion",
+        "fr": "conclusion",
+        "es": "conclusión",
+        "ar": "خلاصة"
+      },
+      "tr": {
+        "ar": "khulāṣa"
+      }
+    },
+    {
+      "id": "moderator",
+      "text": {
+        "en": "moderator",
+        "fr": "animateur",
+        "es": "moderador",
+        "ar": "مدير النقاش"
+      },
+      "tr": {
+        "ar": "mudīr an-niqāsh"
+      }
+    },
+    {
+      "id": "turn",
+      "text": {
+        "en": "turn",
+        "fr": "tour de parole",
+        "es": "turno",
+        "ar": "دور"
+      },
+      "tr": {
+        "ar": "dawr"
+      }
+    },
+    {
+      "id": "interrupt",
+      "text": {
+        "en": "to interrupt",
+        "fr": "interrompre",
+        "es": "interrumpir",
+        "ar": "قاطع"
+      },
+      "tr": {
+        "ar": "qāṭaʿa"
+      }
+    },
+    {
+      "id": "add",
+      "text": {
+        "en": "to add",
+        "fr": "ajouter",
+        "es": "añadir",
+        "ar": "أضاف"
+      },
+      "tr": {
+        "ar": "aḍāfa"
+      }
+    },
+    {
+      "id": "mention",
+      "text": {
+        "en": "to mention",
+        "fr": "mentionner",
+        "es": "mencionar",
+        "ar": "ذكر"
+      },
+      "tr": {
+        "ar": "dhakara"
+      }
+    },
+    {
+      "id": "persuade",
+      "text": {
+        "en": "to persuade",
+        "fr": "convaincre",
+        "es": "convencer",
+        "ar": "أقنع"
+      },
+      "tr": {
+        "ar": "aqnaʿa"
+      }
+    },
+    {
+      "id": "convince",
+      "text": {
+        "en": "to be convinced",
+        "fr": "être convaincu",
+        "es": "estar convencido",
+        "ar": "اقتنع"
+      },
+      "tr": {
+        "ar": "iqtanaʿa"
+      }
+    },
+    {
+      "id": "agree",
+      "text": {
+        "en": "to agree",
+        "fr": "être d'accord",
+        "es": "estar de acuerdo",
+        "ar": "وافق"
+      },
+      "tr": {
+        "ar": "wāfaqa"
+      }
+    },
+    {
+      "id": "disagree",
+      "text": {
+        "en": "to disagree",
+        "fr": "ne pas être d'accord",
+        "es": "discrepar",
+        "ar": "خالف"
+      },
+      "tr": {
+        "ar": "khālafa"
+      }
+    },
+    {
+      "id": "object",
+      "text": {
+        "en": "to object",
+        "fr": "objecter",
+        "es": "objetar",
+        "ar": "اعترض"
+      },
+      "tr": {
+        "ar": "iʿtaraḍa"
+      }
+    },
+    {
+      "id": "propose",
+      "text": {
+        "en": "to propose",
+        "fr": "proposer",
+        "es": "proponer",
+        "ar": "اقترح"
+      },
+      "tr": {
+        "ar": "iqtaraḥa"
+      }
+    },
+    {
+      "id": "emphasise",
+      "text": {
+        "en": "to emphasise",
+        "fr": "souligner",
+        "es": "subrayar",
+        "ar": "شدد على"
+      },
+      "tr": {
+        "ar": "shaddada ʿalā"
+      }
+    },
+    {
+      "id": "sum_up",
+      "text": {
+        "en": "to sum up",
+        "fr": "résumer",
+        "es": "resumir",
+        "ar": "لخص"
+      },
+      "tr": {
+        "ar": "lakhkhaṣa"
+      }
+    },
+    {
+      "id": "clarify",
+      "text": {
+        "en": "to clarify",
+        "fr": "préciser",
+        "es": "aclarar",
+        "ar": "وضح"
+      },
+      "tr": {
+        "ar": "waḍḍaḥa"
+      }
+    },
+    {
+      "id": "convincing",
+      "text": {
+        "en": "convincing",
+        "fr": "convaincant",
+        "es": "convincente",
+        "ar": "مقنع"
+      },
+      "tr": {
+        "ar": "muqniʿ"
+      }
+    },
+    {
+      "id": "valid",
+      "text": {
+        "en": "valid",
+        "fr": "valable",
+        "es": "válido",
+        "ar": "وجيه"
+      },
+      "tr": {
+        "ar": "wajīh"
+      }
+    },
+    {
+      "id": "weak",
+      "text": {
+        "en": "weak",
+        "fr": "faible",
+        "es": "débil",
+        "ar": "ضعيف"
+      },
+      "tr": {
+        "ar": "ḍaʿīf"
+      }
+    },
+    {
+      "id": "fair",
+      "text": {
+        "en": "fair",
+        "fr": "juste",
+        "es": "justo",
+        "ar": "منصف"
+      },
+      "tr": {
+        "ar": "munṣif"
+      }
+    },
+    {
+      "id": "on_the_one_hand",
+      "text": {
+        "en": "on the one hand",
+        "fr": "d'un côté",
+        "es": "por un lado",
+        "ar": "من جهة"
+      },
+      "tr": {
+        "ar": "min jiha"
+      }
+    },
+    {
+      "id": "on_the_other_hand",
+      "text": {
+        "en": "on the other hand",
+        "fr": "d'un autre côté",
+        "es": "por otro lado",
+        "ar": "من جهة أخرى"
+      },
+      "tr": {
+        "ar": "min jiha ukhrā"
+      }
+    },
+    {
+      "id": "however",
+      "text": {
+        "en": "however",
+        "fr": "cependant",
+        "es": "sin embargo",
+        "ar": "لكن"
+      },
+      "tr": {
+        "ar": "lākin"
+      }
+    },
+    {
+      "id": "in_fact",
+      "text": {
+        "en": "in fact",
+        "fr": "en fait",
+        "es": "de hecho",
+        "ar": "في الواقع"
+      },
+      "tr": {
+        "ar": "fī al-wāqiʿ"
+      }
+    },
+    {
+      "id": "for_example",
+      "text": {
+        "en": "for example",
+        "fr": "par exemple",
+        "es": "por ejemplo",
+        "ar": "على سبيل المثال"
+      },
+      "tr": {
+        "ar": "ʿalā sabīl al-mithāl"
+      }
+    },
+    {
+      "id": "in_my_opinion",
+      "text": {
+        "en": "in my opinion",
+        "fr": "à mon avis",
+        "es": "en mi opinión",
+        "ar": "في رأيي"
+      },
+      "tr": {
+        "ar": "fī raʾyī"
+      }
+    },
+    {
+      "id": "in_short",
+      "text": {
+        "en": "in short",
+        "fr": "en bref",
+        "es": "en pocas palabras",
+        "ar": "باختصار"
+      },
+      "tr": {
+        "ar": "bi-ikhtiṣār"
+      }
+    },
+    {
+      "id": "first_of_all",
+      "text": {
+        "en": "first of all",
+        "fr": "tout d'abord",
+        "es": "ante todo",
+        "ar": "قبل كل شيء"
+      },
+      "tr": {
+        "ar": "qabla kulli shayʾ"
+      }
+    },
+    {
+      "id": "that_is_why",
+      "text": {
+        "en": "that is why",
+        "fr": "c'est pourquoi",
+        "es": "por eso",
+        "ar": "لهذا السبب"
+      },
+      "tr": {
+        "ar": "li-hādhā as-sabab"
+      }
+    },
+    {
+      "id": "on_balance",
+      "text": {
+        "en": "on balance",
+        "fr": "tout bien considéré",
+        "es": "en conjunto",
+        "ar": "إجمالا"
+      },
+      "tr": {
+        "ar": "ijmālan"
+      }
+    },
+    {
+      "id": "exactly",
+      "text": {
+        "en": "exactly",
+        "fr": "exactement",
+        "es": "exactamente",
+        "ar": "بالضبط"
+      },
+      "tr": {
+        "ar": "bil-ḍabṭ"
+      }
+    },
+    {
+      "id": "not_exactly",
+      "text": {
+        "en": "not exactly",
+        "fr": "pas tout à fait",
+        "es": "no exactamente",
+        "ar": "ليس تماما"
+      },
+      "tr": {
+        "ar": "laysa tamāman"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": {
+        "en": "Could I add something before we move on to the next topic?",
+        "fr": "Puis-je ajouter quelque chose avant que nous passions au sujet suivant ?",
+        "es": "¿Puedo añadir algo antes de pasar al siguiente tema?",
+        "ar": "هل يمكنني أن أضيف شيئا قبل أن ننتقل إلى الموضوع التالي؟"
+      },
+      "tr": {
+        "ar": "hal yumkinunī an uḍīfa shayʾan qabla an nantaqila ilā al-mawḍūʿ at-tālī?"
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "Of course, but please let her finish first; it's her turn.",
+        "fr": "Bien sûr, mais laisse-la d'abord terminer ; c'est son tour.",
+        "es": "Por supuesto, pero deja que ella termine primero; es su turno.",
+        "ar": "بالطبع، لكن دعها تنهي كلامها أولا، فهذا دورها."
+      },
+      "tr": {
+        "ar": "bi-ṭ-ṭabʿ, lākin daʿhā tunhī kalāmahā awwalan, fa-hādhā dawruhā."
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "Sorry to interrupt, but I'm not sure I understood your point.",
+        "fr": "Désolée de vous interrompre, mais je ne suis pas sûre d'avoir compris votre point.",
+        "es": "Perdón por interrumpir, pero no estoy segura de haber entendido tu punto.",
+        "ar": "آسفة على المقاطعة، لكنني لست متأكدة أنني فهمت نقطتك."
+      },
+      "tr": {
+        "ar": "āsifa ʿalā al-muqāṭaʿa, lākinnanī lastu mutaʾakkida annanī fahimtu nuqṭatak."
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "What I meant was that homework should be optional, not abolished.",
+        "fr": "Ce que je voulais dire, c'est que les devoirs devraient être facultatifs, et non supprimés.",
+        "es": "Lo que quería decir es que los deberes deberían ser opcionales, no suprimirse.",
+        "ar": "ما قصدته أن الواجبات المنزلية يجب أن تكون اختيارية لا أن تلغى."
+      },
+      "tr": {
+        "ar": "mā qaṣadtuhu anna al-wājibāt al-manziliyya yajibu an takūna ikhtiyāriyya lā an tulghā."
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "In my opinion, your argument is convincing, but it leaves one question open.",
+        "fr": "À mon avis, votre argument est convaincant, mais il laisse une question ouverte.",
+        "es": "En mi opinión, tu razonamiento es convincente, pero deja una pregunta abierta.",
+        "ar": "في رأيي حجتك مقنعة، لكنها تترك سؤالا مفتوحا."
+      },
+      "tr": {
+        "ar": "fī raʾyī ḥujjatuka muqniʿa, lākinnahā tatruku suʾālan maftūḥan."
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "On the one hand, it would save money; on the other hand, it would cost jobs.",
+        "fr": "D'un côté, cela ferait économiser de l'argent ; de l'autre, cela coûterait des emplois.",
+        "es": "Por un lado, ahorraría dinero; por otro lado, costaría puestos de trabajo.",
+        "ar": "من جهة سيوفر ذلك المال، ومن جهة أخرى سيكلف وظائف."
+      },
+      "tr": {
+        "ar": "min jiha sa-yuwaffiru dhālika al-māl, wa-min jiha ukhrā sa-yukallifu waẓāʾif."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "Don't you think that a compromise would be fairer for everyone?",
+        "fr": "Ne pensez-vous pas qu'un compromis serait plus juste pour tout le monde ?",
+        "es": "¿No crees que un compromiso sería más justo para todos?",
+        "ar": "ألا تعتقد أن التسوية ستكون أكثر إنصافا للجميع؟"
+      },
+      "tr": {
+        "ar": "alā taʿtaqidu anna at-taswiya sa-takūnu akthara inṣāfan lil-jamīʿ?"
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "Not exactly. The point is that we've already tried that, and it didn't work.",
+        "fr": "Pas tout à fait. Le fait est que nous avons déjà essayé, et ça n'a pas marché.",
+        "es": "No exactamente. La cuestión es que ya lo hemos probado y no funcionó.",
+        "ar": "ليس تماما. المسألة أننا جربنا ذلك من قبل ولم ينجح."
+      },
+      "tr": {
+        "ar": "laysa tamāman. al-masʾala annanā jarrabnā dhālika min qabl wa-lam yanjaḥ."
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "Can you give us an example to clarify what you mean?",
+        "fr": "Peux-tu nous donner un exemple pour préciser ce que tu veux dire ?",
+        "es": "¿Puedes darnos un ejemplo para aclarar lo que quieres decir?",
+        "ar": "هل يمكنك أن تعطينا مثالا لتوضح ما تقصد؟"
+      },
+      "tr": {
+        "ar": "hal yumkinuka an tuʿṭiyanā mithālan li-tuwaḍḍiḥa mā taqṣid?"
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "For example, last year the library had to close two evenings a week.",
+        "fr": "Par exemple, l'an dernier, la bibliothèque a dû fermer deux soirs par semaine.",
+        "es": "Por ejemplo, el año pasado la biblioteca tuvo que cerrar dos tardes por semana.",
+        "ar": "على سبيل المثال اضطرت المكتبة العام الماضي إلى الإغلاق مساءين في الأسبوع."
+      },
+      "tr": {
+        "ar": "ʿalā sabīl al-mithāl iḍṭarrat al-maktaba al-ʿām al-māḍī ilā al-ighlāq masāʾayn fī al-usbūʿ."
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "That is a valid point, however it doesn't change my conclusion.",
+        "fr": "C'est un point valable, cependant il ne change pas ma conclusion.",
+        "es": "Es un punto válido, sin embargo no cambia mi conclusión.",
+        "ar": "هذه نقطة وجيهة، لكنها لا تغير خلاصتي."
+      },
+      "tr": {
+        "ar": "hādhihi nuqṭa wajīha, lākinnahā lā tughayyiru khulāṣatī."
+      }
+    },
+    {
+      "id": "s12",
+      "text": {
+        "en": "I'd like to emphasise that the evidence points in the opposite direction.",
+        "fr": "Je voudrais souligner que les preuves vont dans le sens contraire.",
+        "es": "Me gustaría subrayar que las pruebas apuntan en la dirección contraria.",
+        "ar": "أود أن أشدد على أن الأدلة تشير إلى الاتجاه المعاكس."
+      },
+      "tr": {
+        "ar": "awaddu an ushaddida ʿalā anna al-adilla tushīru ilā al-ittijāh al-muʿākis."
+      }
+    },
+    {
+      "id": "s13",
+      "text": {
+        "en": "I see your point of view, but I respectfully disagree.",
+        "fr": "Je comprends votre point de vue, mais je ne suis respectueusement pas d'accord.",
+        "es": "Entiendo tu punto de vista, pero respetuosamente discrepo.",
+        "ar": "أتفهم وجهة نظرك، لكنني أخالفك الرأي باحترام."
+      },
+      "tr": {
+        "ar": "atafahhamu wijhat naẓarik, lākinnanī ukhālifuka ar-raʾy bi-iḥtirām."
+      }
+    },
+    {
+      "id": "s14",
+      "text": {
+        "en": "First of all, let's agree on what the problem actually is.",
+        "fr": "Tout d'abord, mettons-nous d'accord sur ce qu'est réellement le problème.",
+        "es": "Ante todo, pongámonos de acuerdo en cuál es realmente el problema.",
+        "ar": "قبل كل شيء لنتفق على ما هي المشكلة فعلا."
+      },
+      "tr": {
+        "ar": "qabla kulli shayʾ li-nattafiq ʿalā mā hiya al-mushkila fiʿlan."
+      }
+    },
+    {
+      "id": "s15",
+      "text": {
+        "en": "He proposed that each person should have two minutes to speak.",
+        "fr": "Il a proposé que chaque personne dispose de deux minutes de parole.",
+        "es": "Propuso que cada persona tuviera dos minutos para hablar.",
+        "ar": "اقترح أن يحصل كل شخص على دقيقتين للكلام."
+      },
+      "tr": {
+        "ar": "iqtaraḥa an yaḥṣula kullu shakhṣ ʿalā daqīqatayn lil-kalām."
+      }
+    },
+    {
+      "id": "s16",
+      "text": {
+        "en": "The moderator asked us to stay on topic and not to repeat ourselves.",
+        "fr": "L'animateur nous a demandé de rester dans le sujet et de ne pas nous répéter.",
+        "es": "El moderador nos pidió que nos ciñéramos al tema y no nos repitiéramos.",
+        "ar": "طلب منا مدير النقاش أن نلتزم بالموضوع وألا نكرر أنفسنا."
+      },
+      "tr": {
+        "ar": "ṭalaba minnā mudīr an-niqāsh an naltazima bil-mawḍūʿ wa-allā nukarrira anfusanā."
+      }
+    },
+    {
+      "id": "s17",
+      "text": {
+        "en": "She objected that the survey was too small to prove anything.",
+        "fr": "Elle a objecté que le sondage était trop petit pour prouver quoi que ce soit.",
+        "es": "Objetó que la encuesta era demasiado pequeña para demostrar nada.",
+        "ar": "اعترضت بأن الاستطلاع أصغر من أن يثبت أي شيء."
+      },
+      "tr": {
+        "ar": "iʿtaraḍat bi-anna al-istiṭlāʿ aṣghar min an yuthbita ayya shayʾ."
+      }
+    },
+    {
+      "id": "s18",
+      "text": {
+        "en": "That is why I find the second suggestion more realistic.",
+        "fr": "C'est pourquoi je trouve la seconde suggestion plus réaliste.",
+        "es": "Por eso me parece más realista la segunda sugerencia.",
+        "ar": "لهذا السبب أرى الاقتراح الثاني أكثر واقعية."
+      },
+      "tr": {
+        "ar": "li-hādhā as-sabab arā al-iqtirāḥ ath-thānī akthara wāqiʿiyya."
+      }
+    },
+    {
+      "id": "s19",
+      "text": {
+        "en": "You have almost convinced me, but I'd like to think about it.",
+        "fr": "Vous m'avez presque convaincu, mais j'aimerais y réfléchir.",
+        "es": "Casi me has convencido, pero me gustaría pensarlo.",
+        "ar": "كدت تقنعني، لكنني أود أن أفكر في الأمر."
+      },
+      "tr": {
+        "ar": "kidta tuqniʿunī, lākinnanī awaddu an ufakkira fī al-amr."
+      }
+    },
+    {
+      "id": "s20",
+      "text": {
+        "en": "In fact, most of us already agree on the main idea.",
+        "fr": "En fait, la plupart d'entre nous sont déjà d'accord sur l'idée principale.",
+        "es": "De hecho, la mayoría ya estamos de acuerdo en la idea principal.",
+        "ar": "في الواقع نتفق معظمنا على الفكرة الرئيسية أصلا."
+      },
+      "tr": {
+        "ar": "fī al-wāqiʿ nattafiqu muʿẓamunā ʿalā al-fikra ar-raʾīsiyya aṣlan."
+      }
+    },
+    {
+      "id": "s21",
+      "text": {
+        "en": "Exactly. The disagreement is only about how fast we should go.",
+        "fr": "Exactement. Le désaccord porte seulement sur la vitesse à adopter.",
+        "es": "Exactamente. El desacuerdo es solo sobre la velocidad a la que debemos ir.",
+        "ar": "بالضبط. الخلاف فقط حول السرعة التي ينبغي أن نسير بها."
+      },
+      "tr": {
+        "ar": "bil-ḍabṭ. al-khilāf faqaṭ ḥawla as-surʿa allatī yanbaghī an nasīra bihā."
+      }
+    },
+    {
+      "id": "s22",
+      "text": {
+        "en": "Let me sum up: we agree on the goal, but we need more time to compare the options.",
+        "fr": "Résumons : nous sommes d'accord sur l'objectif, mais il nous faut plus de temps pour comparer les options.",
+        "es": "Resumo: estamos de acuerdo en el objetivo, pero necesitamos más tiempo para comparar las opciones.",
+        "ar": "دعوني ألخص: نتفق على الهدف لكننا نحتاج إلى وقت أكثر لمقارنة الخيارات."
+      },
+      "tr": {
+        "ar": "daʿūnī ulakhkhiṣ: nattafiqu ʿalā al-hadaf lākinnanā naḥtāju ilā waqt akthar li-muqāranat al-khiyārāt."
+      }
+    },
+    {
+      "id": "s23",
+      "text": {
+        "en": "To sum up, the evidence is weak, and the plan needs more work.",
+        "fr": "En résumé, les preuves sont faibles et le plan demande plus de travail.",
+        "es": "En resumen, las pruebas son débiles y el plan necesita más trabajo.",
+        "ar": "خلاصة القول إن الأدلة ضعيفة والخطة تحتاج إلى مزيد من العمل."
+      },
+      "tr": {
+        "ar": "khulāṣat al-qawl inna al-adilla ḍaʿīfa wa-l-khuṭṭa taḥtāju ilā mazīd min al-ʿamal."
+      }
+    },
+    {
+      "id": "s24",
+      "text": {
+        "en": "If you let me finish, I'll explain why I think we should wait.",
+        "fr": "Si vous me laissez finir, je vous expliquerai pourquoi je pense que nous devrions attendre.",
+        "es": "Si me dejas terminar, te explicaré por qué creo que deberíamos esperar.",
+        "ar": "إذا تركتني أنهي كلامي فسأشرح لماذا أعتقد أنه ينبغي أن ننتظر."
+      },
+      "tr": {
+        "ar": "idhā taraktanī unhī kalāmī fa-sa-ashraḥu li-mādhā aʿtaqidu annahu yanbaghī an nantaẓir."
+      }
+    },
+    {
+      "id": "s25",
+      "text": {
+        "en": "I mentioned it earlier, but I'm happy to repeat it.",
+        "fr": "Je l'ai mentionné tout à l'heure, mais je le répète volontiers.",
+        "es": "Lo mencioné antes, pero con gusto lo repito.",
+        "ar": "ذكرت ذلك سابقا، لكن يسعدني أن أكرره."
+      },
+      "tr": {
+        "ar": "dhakartu dhālika sābiqan, lākin yusʿidunī an ukarrirah."
+      }
+    },
+    {
+      "id": "s26",
+      "text": {
+        "en": "On balance, I think the benefits are greater than the risks.",
+        "fr": "Tout bien considéré, je pense que les avantages l'emportent sur les risques.",
+        "es": "En conjunto, creo que los beneficios superan los riesgos.",
+        "ar": "إجمالا أرى أن الفوائد أكبر من المخاطر."
+      },
+      "tr": {
+        "ar": "ijmālan arā anna al-fawāʾid akbar min al-makhāṭir."
+      }
+    },
+    {
+      "id": "s27",
+      "text": {
+        "en": "Nobody wins an argument by raising their voice.",
+        "fr": "Personne ne gagne une discussion en haussant la voix.",
+        "es": "Nadie gana una discusión levantando la voz.",
+        "ar": "لا أحد يكسب نقاشا برفع صوته."
+      },
+      "tr": {
+        "ar": "lā aḥada yaksabu niqāshan bi-rafʿ ṣawtih."
+      }
+    },
+    {
+      "id": "s28",
+      "text": {
+        "en": "Why don't we vote, and then everyone accepts the result?",
+        "fr": "Pourquoi ne pas voter, puis chacun accepte le résultat ?",
+        "es": "¿Por qué no votamos y luego todos aceptamos el resultado?",
+        "ar": "لماذا لا نصوت ثم يقبل الجميع النتيجة؟"
+      },
+      "tr": {
+        "ar": "li-mādhā lā nuṣawwit thumma yaqbalu al-jamīʿ an-natīja?"
+      }
+    },
+    {
+      "id": "s29",
+      "text": {
+        "en": "That sounds fair to me. Shall we start?",
+        "fr": "Ça me semble juste. On commence ?",
+        "es": "Me parece justo. ¿Empezamos?",
+        "ar": "يبدو لي ذلك منصفا. هل نبدأ؟"
+      },
+      "tr": {
+        "ar": "yabdū lī dhālika munṣifan. hal nabdaʾ?"
+      }
+    },
+    {
+      "id": "s30",
+      "text": {
+        "en": "She disagreed politely, which made the others listen more carefully.",
+        "fr": "Elle a exprimé son désaccord poliment, ce qui a incité les autres à l'écouter plus attentivement.",
+        "es": "Discrepó con educación, lo que hizo que los demás la escucharan con más atención.",
+        "ar": "خالفت الرأي بأدب، مما جعل الآخرين يصغون إليها أكثر."
+      },
+      "tr": {
+        "ar": "khālafat ar-raʾy bi-adab, mimmā jaʿala al-ākharīn yuṣghūna ilayhā akthar."
+      }
+    },
+    {
+      "id": "s31",
+      "text": {
+        "en": "I take your point, so let's look at the figures together.",
+        "fr": "Je comprends votre remarque, alors regardons les chiffres ensemble.",
+        "es": "Entiendo tu observación, así que veamos las cifras juntos.",
+        "ar": "فهمت وجهة نظرك، فلننظر في الأرقام معا."
+      },
+      "tr": {
+        "ar": "fahimtu wijhat naẓarak, fa-lanaẓur fī al-arqām maʿan."
+      }
+    },
+    {
+      "id": "s32",
+      "text": {
+        "en": "It would help if each of us summarised the other person's argument before replying.",
+        "fr": "Cela aiderait si chacun de nous résumait l'argument de l'autre avant de répondre.",
+        "es": "Ayudaría que cada uno resumiera el argumento del otro antes de responder.",
+        "ar": "سيفيد أن يلخص كل منا حجة الآخر قبل أن يرد."
+      },
+      "tr": {
+        "ar": "sa-yufīdu an yulakhkhiṣa kullun minnā ḥujjat al-ākhar qabla an yaruddā."
+      }
+    }
+  ],
+  "dialogue": [
+    "s07",
+    "s08",
+    "s09",
+    "s10"
+  ]
+}

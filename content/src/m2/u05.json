@@ -1,0 +1,866 @@
+{
+ "id": "u05",
+ "level": "m2",
+ "order": 5,
+ "title": {
+  "en": "Comparing",
+  "fr": "Comparer",
+  "es": "Comparar",
+  "ar": "المقارنة"
+ },
+ "tip": {
+  "en": "Add \"-er than\" or \"more ... than\" to compare, and \"the -est\" or \"the most ...\" for the top of a group.",
+  "fr": "Utilisez « plus ... que » pour comparer et « le plus ... » pour le sommet d'un groupe.",
+  "es": "Usa «más ... que» para comparar y «el más ...» para destacar lo máximo de un grupo.",
+  "ar": "استخدم «أكثر ... من» للمقارنة و«الأكثر ...» للدلالة على الأعلى في المجموعة."
+ },
+ "words": [
+  {
+   "id": "bigger",
+   "text": {
+    "en": "bigger",
+    "fr": "plus grand",
+    "es": "más grande",
+    "ar": "أكبر"
+   },
+   "tr": {
+    "ar": "akbar"
+   }
+  },
+  {
+   "id": "smaller",
+   "text": {
+    "en": "smaller",
+    "fr": "plus petit",
+    "es": "más pequeño",
+    "ar": "أصغر"
+   },
+   "tr": {
+    "ar": "aṣghar"
+   }
+  },
+  {
+   "id": "taller",
+   "text": {
+    "en": "taller",
+    "fr": "plus grand (en taille)",
+    "es": "más alto",
+    "ar": "أطول"
+   },
+   "tr": {
+    "ar": "aṭwal"
+   }
+  },
+  {
+   "id": "shorter",
+   "text": {
+    "en": "shorter",
+    "fr": "plus court",
+    "es": "más corto",
+    "ar": "أقصر"
+   },
+   "tr": {
+    "ar": "aqṣar"
+   }
+  },
+  {
+   "id": "faster",
+   "text": {
+    "en": "faster",
+    "fr": "plus rapide",
+    "es": "más rápido",
+    "ar": "أسرع"
+   },
+   "tr": {
+    "ar": "asraʿ"
+   }
+  },
+  {
+   "id": "slower",
+   "text": {
+    "en": "slower",
+    "fr": "plus lent",
+    "es": "más lento",
+    "ar": "أبطأ"
+   },
+   "tr": {
+    "ar": "abṭaʾ"
+   }
+  },
+  {
+   "id": "cheaper",
+   "text": {
+    "en": "cheaper",
+    "fr": "moins cher",
+    "es": "más barato",
+    "ar": "أرخص"
+   },
+   "tr": {
+    "ar": "arkhaṣ"
+   }
+  },
+  {
+   "id": "more_expensive",
+   "text": {
+    "en": "more expensive",
+    "fr": "plus cher",
+    "es": "más caro",
+    "ar": "أغلى"
+   },
+   "tr": {
+    "ar": "aghlā"
+   }
+  },
+  {
+   "id": "better",
+   "text": {
+    "en": "better",
+    "fr": "meilleur",
+    "es": "mejor",
+    "ar": "أفضل"
+   },
+   "tr": {
+    "ar": "afḍal"
+   }
+  },
+  {
+   "id": "worse",
+   "text": {
+    "en": "worse",
+    "fr": "pire",
+    "es": "peor",
+    "ar": "أسوأ"
+   },
+   "tr": {
+    "ar": "aswaʾ"
+   }
+  },
+  {
+   "id": "easier",
+   "text": {
+    "en": "easier",
+    "fr": "plus facile",
+    "es": "más fácil",
+    "ar": "أسهل"
+   },
+   "tr": {
+    "ar": "ashal"
+   }
+  },
+  {
+   "id": "harder",
+   "text": {
+    "en": "harder",
+    "fr": "plus difficile",
+    "es": "más difícil",
+    "ar": "أصعب"
+   },
+   "tr": {
+    "ar": "aṣʿab"
+   }
+  },
+  {
+   "id": "older",
+   "text": {
+    "en": "older",
+    "fr": "plus âgé",
+    "es": "mayor",
+    "ar": "أكبر سنا"
+   },
+   "tr": {
+    "ar": "akbar sinnan"
+   }
+  },
+  {
+   "id": "younger",
+   "text": {
+    "en": "younger",
+    "fr": "plus jeune",
+    "es": "más joven",
+    "ar": "أصغر سنا"
+   },
+   "tr": {
+    "ar": "aṣghar sinnan"
+   }
+  },
+  {
+   "id": "heavier",
+   "text": {
+    "en": "heavier",
+    "fr": "plus lourd",
+    "es": "más pesado",
+    "ar": "أثقل"
+   },
+   "tr": {
+    "ar": "athqal"
+   }
+  },
+  {
+   "id": "lighter",
+   "text": {
+    "en": "lighter",
+    "fr": "plus léger",
+    "es": "más ligero",
+    "ar": "أخف"
+   },
+   "tr": {
+    "ar": "akhaff"
+   }
+  },
+  {
+   "id": "stronger",
+   "text": {
+    "en": "stronger",
+    "fr": "plus fort",
+    "es": "más fuerte",
+    "ar": "أقوى"
+   },
+   "tr": {
+    "ar": "aqwā"
+   }
+  },
+  {
+   "id": "the_best",
+   "text": {
+    "en": "the best",
+    "fr": "le meilleur",
+    "es": "el mejor",
+    "ar": "الأفضل"
+   },
+   "tr": {
+    "ar": "al-afḍal"
+   }
+  },
+  {
+   "id": "the_worst",
+   "text": {
+    "en": "the worst",
+    "fr": "le pire",
+    "es": "el peor",
+    "ar": "الأسوأ"
+   },
+   "tr": {
+    "ar": "al-aswaʾ"
+   }
+  },
+  {
+   "id": "the_most",
+   "text": {
+    "en": "the most",
+    "fr": "le plus",
+    "es": "el más",
+    "ar": "الأكثر"
+   },
+   "tr": {
+    "ar": "al-akthar"
+   }
+  },
+  {
+   "id": "the_least",
+   "text": {
+    "en": "the least",
+    "fr": "le moins",
+    "es": "el menos",
+    "ar": "الأقل"
+   },
+   "tr": {
+    "ar": "al-aqall"
+   }
+  },
+  {
+   "id": "as_as",
+   "text": {
+    "en": "as ... as",
+    "fr": "aussi ... que",
+    "es": "tan ... como",
+    "ar": "مثل"
+   },
+   "tr": {
+    "ar": "mithl"
+   }
+  },
+  {
+   "id": "than",
+   "text": {
+    "en": "than",
+    "fr": "que",
+    "es": "que",
+    "ar": "من"
+   },
+   "tr": {
+    "ar": "min"
+   }
+  },
+  {
+   "id": "different",
+   "text": {
+    "en": "different",
+    "fr": "différent",
+    "es": "diferente",
+    "ar": "مختلف"
+   },
+   "tr": {
+    "ar": "mukhtalif"
+   }
+  },
+  {
+   "id": "similar",
+   "text": {
+    "en": "similar",
+    "fr": "semblable",
+    "es": "parecido",
+    "ar": "مشابه"
+   },
+   "tr": {
+    "ar": "mushābih"
+   }
+  },
+  {
+   "id": "the_same",
+   "text": {
+    "en": "the same",
+    "fr": "le même",
+    "es": "el mismo",
+    "ar": "نفسه"
+   },
+   "tr": {
+    "ar": "nafsuh"
+   }
+  },
+  {
+   "id": "both",
+   "text": {
+    "en": "both",
+    "fr": "les deux",
+    "es": "ambos",
+    "ar": "كلاهما"
+   },
+   "tr": {
+    "ar": "kilāhumā"
+   }
+  },
+  {
+   "id": "compare",
+   "text": {
+    "en": "compare",
+    "fr": "comparer",
+    "es": "comparar",
+    "ar": "يقارن"
+   },
+   "tr": {
+    "ar": "yuqārin"
+   }
+  },
+  {
+   "id": "difference",
+   "text": {
+    "en": "difference",
+    "fr": "différence",
+    "es": "diferencia",
+    "ar": "فرق"
+   },
+   "tr": {
+    "ar": "farq"
+   }
+  },
+  {
+   "id": "choice",
+   "text": {
+    "en": "choice",
+    "fr": "choix",
+    "es": "elección",
+    "ar": "اختيار"
+   },
+   "tr": {
+    "ar": "ikhtiyār"
+   }
+  },
+  {
+   "id": "quality",
+   "text": {
+    "en": "quality",
+    "fr": "qualité",
+    "es": "calidad",
+    "ar": "جودة"
+   },
+   "tr": {
+    "ar": "jawda"
+   }
+  },
+  {
+   "id": "price",
+   "text": {
+    "en": "price",
+    "fr": "prix",
+    "es": "precio",
+    "ar": "سعر"
+   },
+   "tr": {
+    "ar": "siʿr"
+   }
+  },
+  {
+   "id": "size",
+   "text": {
+    "en": "size",
+    "fr": "taille",
+    "es": "tamaño",
+    "ar": "حجم"
+   },
+   "tr": {
+    "ar": "ḥajm"
+   }
+  },
+  {
+   "id": "distance",
+   "text": {
+    "en": "distance",
+    "fr": "distance",
+    "es": "distancia",
+    "ar": "مسافة"
+   },
+   "tr": {
+    "ar": "masāfa"
+   }
+  },
+  {
+   "id": "speed",
+   "text": {
+    "en": "speed",
+    "fr": "vitesse",
+    "es": "velocidad",
+    "ar": "سرعة"
+   },
+   "tr": {
+    "ar": "surʿa"
+   }
+  },
+  {
+   "id": "comfortable",
+   "text": {
+    "en": "comfortable",
+    "fr": "confortable",
+    "es": "cómodo",
+    "ar": "مريح"
+   },
+   "tr": {
+    "ar": "murīḥ"
+   }
+  },
+  {
+   "id": "dangerous",
+   "text": {
+    "en": "dangerous",
+    "fr": "dangereux",
+    "es": "peligroso",
+    "ar": "خطير"
+   },
+   "tr": {
+    "ar": "khaṭīr"
+   }
+  },
+  {
+   "id": "popular",
+   "text": {
+    "en": "popular",
+    "fr": "populaire",
+    "es": "popular",
+    "ar": "شائع"
+   },
+   "tr": {
+    "ar": "shāʾiʿ"
+   }
+  },
+  {
+   "id": "much_more",
+   "text": {
+    "en": "much more",
+    "fr": "beaucoup plus",
+    "es": "mucho más",
+    "ar": "أكثر بكثير"
+   },
+   "tr": {
+    "ar": "akthar bi-kathīr"
+   }
+  },
+  {
+   "id": "a_little_less",
+   "text": {
+    "en": "a little less",
+    "fr": "un peu moins",
+    "es": "un poco menos",
+    "ar": "أقل بقليل"
+   },
+   "tr": {
+    "ar": "aqall bi-qalīl"
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "text": {
+    "en": "My new phone is faster than my old one.",
+    "fr": "Mon nouveau téléphone est plus rapide que l'ancien.",
+    "es": "Mi teléfono nuevo es más rápido que el viejo.",
+    "ar": "هاتفي الجديد أسرع من القديم."
+   },
+   "tr": {
+    "ar": "hātifī al-jadīd asraʿ min al-qadīm."
+   }
+  },
+  {
+   "id": "s02",
+   "text": {
+    "en": "This laptop is cheaper than that one, but it is heavier.",
+    "fr": "Cet ordinateur portable est moins cher que celui-là, mais il est plus lourd.",
+    "es": "Este portátil es más barato que aquel, pero es más pesado.",
+    "ar": "هذا الحاسوب المحمول أرخص من ذاك لكنه أثقل."
+   },
+   "tr": {
+    "ar": "hādhā al-ḥāsūb al-maḥmūl arkhaṣ min dhāk lākinnahu athqal."
+   }
+  },
+  {
+   "id": "s03",
+   "text": {
+    "en": "Which one is better, in your opinion?",
+    "fr": "Lequel est le meilleur, à ton avis ?",
+    "es": "¿Cuál es mejor, en tu opinión?",
+    "ar": "أيهما أفضل في رأيك؟"
+   },
+   "tr": {
+    "ar": "ayyuhumā afḍal fī raʾyik?"
+   }
+  },
+  {
+   "id": "s04",
+   "text": {
+    "en": "Both are good, but the second one is more comfortable.",
+    "fr": "Les deux sont bons, mais le deuxième est plus confortable.",
+    "es": "Los dos son buenos, pero el segundo es más cómodo.",
+    "ar": "كلاهما جيد لكن الثاني أكثر راحة."
+   },
+   "tr": {
+    "ar": "kilāhumā jayyid lākin ath-thānī akthar rāḥa."
+   }
+  },
+  {
+   "id": "s05",
+   "text": {
+    "en": "My brother is taller than me, but I am older.",
+    "fr": "Mon frère est plus grand que moi, mais je suis plus âgé.",
+    "es": "Mi hermano es más alto que yo, pero yo soy mayor.",
+    "ar": "أخي أطول مني لكنني أكبر منه سنا."
+   },
+   "tr": {
+    "ar": "akhī aṭwal minnī lākinnanī akbar minhu sinnan."
+   }
+  },
+  {
+   "id": "s06",
+   "text": {
+    "en": "Our flat is smaller than theirs, but it is quieter.",
+    "fr": "Notre appartement est plus petit que le leur, mais il est plus calme.",
+    "es": "Nuestro piso es más pequeño que el suyo, pero es más tranquilo.",
+    "ar": "شقتنا أصغر من شقتهم لكنها أهدأ."
+   },
+   "tr": {
+    "ar": "shaqqatunā aṣghar min shaqqatihim lākinnahā ahdaʾ."
+   }
+  },
+  {
+   "id": "s07",
+   "text": {
+    "en": "The train is slower than the plane, but much cheaper.",
+    "fr": "Le train est plus lent que l'avion, mais beaucoup moins cher.",
+    "es": "El tren es más lento que el avión, pero mucho más barato.",
+    "ar": "القطار أبطأ من الطائرة لكنه أرخص بكثير."
+   },
+   "tr": {
+    "ar": "al-qiṭār abṭaʾ min aṭ-ṭāʾira lākinnahu arkhaṣ bi-kathīr."
+   }
+  },
+  {
+   "id": "s08",
+   "text": {
+    "en": "Is it far? It is a little less than two kilometres.",
+    "fr": "C'est loin ? C'est un peu moins de deux kilomètres.",
+    "es": "¿Está lejos? Son un poco menos de dos kilómetros.",
+    "ar": "هل هو بعيد؟ المسافة أقل بقليل من كيلومترين."
+   },
+   "tr": {
+    "ar": "hal huwa baʿīd? al-masāfa aqall bi-qalīl min kīlūmitrayn."
+   }
+  },
+  {
+   "id": "s09",
+   "text": {
+    "en": "This exam was easier than the last one.",
+    "fr": "Cet examen était plus facile que le dernier.",
+    "es": "Este examen fue más fácil que el último.",
+    "ar": "كان هذا الامتحان أسهل من الأخير."
+   },
+   "tr": {
+    "ar": "kāna hādhā al-imtiḥān ashal min al-akhīr."
+   }
+  },
+  {
+   "id": "s10",
+   "text": {
+    "en": "English is harder for me than Spanish.",
+    "fr": "L'anglais est plus difficile pour moi que l'espagnol.",
+    "es": "El inglés es más difícil para mí que el español.",
+    "ar": "الإنجليزية أصعب بالنسبة لي من الإسبانية."
+   },
+   "tr": {
+    "ar": "al-inglīziyya aṣʿab bi-an-nisba lī min al-isbāniyya."
+   }
+  },
+  {
+   "id": "s11",
+   "text": {
+    "en": "She is as tall as her mother.",
+    "fr": "Elle est aussi grande que sa mère.",
+    "es": "Ella es tan alta como su madre.",
+    "ar": "هي طويلة مثل أمها."
+   },
+   "tr": {
+    "ar": "hiya ṭawīla mithl ummihā."
+   }
+  },
+  {
+   "id": "s12",
+   "text": {
+    "en": "The two cities are similar, but the weather is different.",
+    "fr": "Les deux villes se ressemblent, mais le climat est différent.",
+    "es": "Las dos ciudades se parecen, pero el clima es distinto.",
+    "ar": "المدينتان متشابهتان لكن الطقس مختلف."
+   },
+   "tr": {
+    "ar": "al-madīnatān mutashābihatān lākin aṭ-ṭaqs mukhtalif."
+   }
+  },
+  {
+   "id": "s13",
+   "text": {
+    "en": "What is the difference between these two models?",
+    "fr": "Quelle est la différence entre ces deux modèles ?",
+    "es": "¿Cuál es la diferencia entre estos dos modelos?",
+    "ar": "ما الفرق بين هذين النموذجين؟"
+   },
+   "tr": {
+    "ar": "mā al-farq bayna hādhayn an-namūdhajayn?"
+   }
+  },
+  {
+   "id": "s14",
+   "text": {
+    "en": "This is the best restaurant in the city.",
+    "fr": "C'est le meilleur restaurant de la ville.",
+    "es": "Este es el mejor restaurante de la ciudad.",
+    "ar": "هذا أفضل مطعم في المدينة."
+   },
+   "tr": {
+    "ar": "hādhā afḍal maṭʿam fī al-madīna."
+   }
+  },
+  {
+   "id": "s15",
+   "text": {
+    "en": "It is the most popular place, so it is always full.",
+    "fr": "C'est l'endroit le plus populaire, donc il est toujours plein.",
+    "es": "Es el sitio más popular, así que siempre está lleno.",
+    "ar": "إنه المكان الأكثر شعبية لذلك هو ممتلئ دائما."
+   },
+   "tr": {
+    "ar": "innahu al-makān al-akthar shaʿbiyya li-dhālika huwa mumtaliʾ dāʾiman."
+   }
+  },
+  {
+   "id": "s16",
+   "text": {
+    "en": "That was the worst film I have ever seen.",
+    "fr": "C'était le pire film que j'aie jamais vu.",
+    "es": "Esa fue la peor película que he visto nunca.",
+    "ar": "كان ذلك أسوأ فيلم شاهدته في حياتي."
+   },
+   "tr": {
+    "ar": "kāna dhālika aswaʾ film shāhadtuhu fī ḥayātī."
+   }
+  },
+  {
+   "id": "s17",
+   "text": {
+    "en": "Ali is the strongest player in our team.",
+    "fr": "Ali est le joueur le plus fort de notre équipe.",
+    "es": "Ali es el jugador más fuerte de nuestro equipo.",
+    "ar": "علي هو أقوى لاعب في فريقنا."
+   },
+   "tr": {
+    "ar": "ʿAlī huwa aqwā lāʿib fī farīqinā."
+   }
+  },
+  {
+   "id": "s18",
+   "text": {
+    "en": "The quality is the same, but the price is not.",
+    "fr": "La qualité est la même, mais pas le prix.",
+    "es": "La calidad es la misma, pero el precio no.",
+    "ar": "الجودة نفسها لكن السعر ليس نفسه."
+   },
+   "tr": {
+    "ar": "al-jawda nafsuhā lākin as-siʿr laysa nafsah."
+   }
+  },
+  {
+   "id": "s19",
+   "text": {
+    "en": "Prices here are much more expensive than in my village.",
+    "fr": "Les prix ici sont beaucoup plus élevés que dans mon village.",
+    "es": "Los precios aquí son mucho más caros que en mi pueblo.",
+    "ar": "الأسعار هنا أغلى بكثير منها في قريتي."
+   },
+   "tr": {
+    "ar": "al-asʿār hunā aghlā bi-kathīr minhā fī qaryatī."
+   }
+  },
+  {
+   "id": "s20",
+   "text": {
+    "en": "Driving at night is more dangerous than driving in the day.",
+    "fr": "Conduire la nuit est plus dangereux que conduire le jour.",
+    "es": "Conducir de noche es más peligroso que conducir de día.",
+    "ar": "القيادة ليلا أخطر من القيادة نهارا."
+   },
+   "tr": {
+    "ar": "al-qiyāda laylan akhṭar min al-qiyāda nahāran."
+   }
+  },
+  {
+   "id": "s21",
+   "text": {
+    "en": "Life in the city is faster than life in the countryside.",
+    "fr": "La vie en ville est plus rapide que la vie à la campagne.",
+    "es": "La vida en la ciudad es más rápida que en el campo.",
+    "ar": "الحياة في المدينة أسرع من الحياة في الريف."
+   },
+   "tr": {
+    "ar": "al-ḥayāt fī al-madīna asraʿ min al-ḥayāt fī ar-rīf."
+   }
+  },
+  {
+   "id": "s22",
+   "text": {
+    "en": "I sleep better now than I did last year.",
+    "fr": "Je dors mieux maintenant que l'an dernier.",
+    "es": "Ahora duermo mejor que el año pasado.",
+    "ar": "أنام الآن أفضل مما كنت أنام في العام الماضي."
+   },
+   "tr": {
+    "ar": "anām al-ān afḍal mimmā kuntu anām fī al-ʿām al-māḍī."
+   }
+  },
+  {
+   "id": "s23",
+   "text": {
+    "en": "She cooks worse than her brother, but she tries harder.",
+    "fr": "Elle cuisine moins bien que son frère, mais elle fait plus d'efforts.",
+    "es": "Ella cocina peor que su hermano, pero se esfuerza más.",
+    "ar": "هي تطبخ أسوأ من أخيها لكنها تبذل جهدا أكبر."
+   },
+   "tr": {
+    "ar": "hiya taṭbakh aswaʾ min akhīhā lākinnahā tabdhul juhdan akbar."
+   }
+  },
+  {
+   "id": "s24",
+   "text": {
+    "en": "This bag is lighter, and the other one is stronger.",
+    "fr": "Ce sac est plus léger, et l'autre est plus solide.",
+    "es": "Esta bolsa es más ligera y la otra es más resistente.",
+    "ar": "هذه الحقيبة أخف والأخرى أقوى."
+   },
+   "tr": {
+    "ar": "hādhihi al-ḥaqība akhaff wa-al-ukhrā aqwā."
+   }
+  },
+  {
+   "id": "s25",
+   "text": {
+    "en": "It is the cheapest option, but not the best choice.",
+    "fr": "C'est l'option la moins chère, mais pas le meilleur choix.",
+    "es": "Es la opción más barata, pero no la mejor elección.",
+    "ar": "إنه الخيار الأرخص لكنه ليس أفضل اختيار."
+   },
+   "tr": {
+    "ar": "innahu al-khiyār al-arkhaṣ lākinnahu laysa afḍal ikhtiyār."
+   }
+  },
+  {
+   "id": "s26",
+   "text": {
+    "en": "Which is the longest river in the world?",
+    "fr": "Quel est le fleuve le plus long du monde ?",
+    "es": "¿Cuál es el río más largo del mundo?",
+    "ar": "ما هو أطول نهر في العالم؟"
+   },
+   "tr": {
+    "ar": "mā huwa aṭwal nahr fī al-ʿālam?"
+   }
+  },
+  {
+   "id": "s27",
+   "text": {
+    "en": "Compared to last year, we have much more work.",
+    "fr": "Comparé à l'an dernier, nous avons beaucoup plus de travail.",
+    "es": "En comparación con el año pasado, tenemos mucho más trabajo.",
+    "ar": "مقارنة بالعام الماضي لدينا عمل أكثر بكثير."
+   },
+   "tr": {
+    "ar": "muqārana bi-al-ʿām al-māḍī ladaynā ʿamal akthar bi-kathīr."
+   }
+  },
+  {
+   "id": "s28",
+   "text": {
+    "en": "He drives faster than anyone I know.",
+    "fr": "Il conduit plus vite que n'importe qui de ma connaissance.",
+    "es": "Conduce más rápido que nadie que yo conozca.",
+    "ar": "هو يقود أسرع من أي شخص أعرفه."
+   },
+   "tr": {
+    "ar": "huwa yaqūd asraʿ min ayy shakhṣ aʿrifuh."
+   }
+  },
+  {
+   "id": "s29",
+   "text": {
+    "en": "Both of us prefer the same sort of music.",
+    "fr": "Nous préférons tous les deux le même genre de musique.",
+    "es": "Los dos preferimos el mismo tipo de música.",
+    "ar": "كلانا يفضل النوع نفسه من الموسيقى."
+   },
+   "tr": {
+    "ar": "kilānā yufaḍḍil an-nawʿ nafsahu min al-mūsīqā."
+   }
+  },
+  {
+   "id": "s30",
+   "text": {
+    "en": "This size is a little less comfortable than the larger one.",
+    "fr": "Cette taille est un peu moins confortable que la plus grande.",
+    "es": "Esta talla es un poco menos cómoda que la más grande.",
+    "ar": "هذا المقاس أقل راحة بقليل من المقاس الأكبر."
+   },
+   "tr": {
+    "ar": "hādhā al-maqās aqall rāḥa bi-qalīl min al-maqās al-akbar."
+   }
+  }
+ ],
+ "dialogue": [
+  "s02",
+  "s03",
+  "s04"
+ ]
+}

@@ -1,0 +1,928 @@
+{
+  "id": "u04",
+  "level": "m3",
+  "order": 4,
+  "title": {
+    "en": "Environment",
+    "fr": "Environnement",
+    "es": "Medio ambiente",
+    "ar": "البيئة"
+  },
+  "tip": {
+    "en": "Show cause with \"because\", \"because of\", \"since\" and \"as a result of\". Show effect with \"so\", \"therefore\", \"as a result\" and \"this leads to\". Note: \"because of\" is followed by a noun, \"because\" by a full clause.",
+    "fr": "Exprimez la cause avec « parce que », « à cause de », « puisque », et la conséquence avec « donc », « par conséquent », « cela entraîne ». Attention : « à cause de » est suivi d'un nom, « parce que » d'une proposition.",
+    "es": "Expresa la causa con «porque», «debido a», «ya que» y la consecuencia con «así que», «por lo tanto», «esto provoca». Ojo: «debido a» va seguido de un nombre; «porque», de una oración completa.",
+    "ar": "عبّر عن السبب بـ«لأن» و«بسبب» و«نظرا لـ» وعن النتيجة بـ«لذلك» و«ونتيجة لذلك» و«هذا يؤدي إلى». انتبه: «بسبب» يليها اسم، و«لأن» يليها جملة كاملة."
+  },
+  "words": [
+    {
+      "id": "environment",
+      "text": {
+        "en": "environment",
+        "fr": "environnement",
+        "es": "medio ambiente",
+        "ar": "بيئة"
+      },
+      "tr": {
+        "ar": "bīʾa"
+      }
+    },
+    {
+      "id": "climate",
+      "text": {
+        "en": "climate",
+        "fr": "climat",
+        "es": "clima",
+        "ar": "مناخ"
+      },
+      "tr": {
+        "ar": "manākh"
+      }
+    },
+    {
+      "id": "global_warming",
+      "text": {
+        "en": "global warming",
+        "fr": "réchauffement climatique",
+        "es": "calentamiento global",
+        "ar": "الاحترار العالمي"
+      },
+      "tr": {
+        "ar": "al-iḥtirār al-ʿālamī"
+      }
+    },
+    {
+      "id": "pollution",
+      "text": {
+        "en": "pollution",
+        "fr": "pollution",
+        "es": "contaminación",
+        "ar": "تلوث"
+      },
+      "tr": {
+        "ar": "talawwuth"
+      }
+    },
+    {
+      "id": "waste",
+      "text": {
+        "en": "waste",
+        "fr": "déchets",
+        "es": "residuos",
+        "ar": "نفايات"
+      },
+      "tr": {
+        "ar": "nifāyāt"
+      }
+    },
+    {
+      "id": "recycling",
+      "text": {
+        "en": "recycling",
+        "fr": "recyclage",
+        "es": "reciclaje",
+        "ar": "إعادة التدوير"
+      },
+      "tr": {
+        "ar": "iʿādat at-tadwīr"
+      }
+    },
+    {
+      "id": "energy",
+      "text": {
+        "en": "energy",
+        "fr": "énergie",
+        "es": "energía",
+        "ar": "طاقة"
+      },
+      "tr": {
+        "ar": "ṭāqa"
+      }
+    },
+    {
+      "id": "solar_panel",
+      "text": {
+        "en": "solar panel",
+        "fr": "panneau solaire",
+        "es": "panel solar",
+        "ar": "لوحة شمسية"
+      },
+      "tr": {
+        "ar": "lawḥa shamsiyya"
+      }
+    },
+    {
+      "id": "fossil_fuel",
+      "text": {
+        "en": "fossil fuel",
+        "fr": "combustible fossile",
+        "es": "combustible fósil",
+        "ar": "وقود أحفوري"
+      },
+      "tr": {
+        "ar": "wuqūd aḥfūrī"
+      }
+    },
+    {
+      "id": "emission",
+      "text": {
+        "en": "emission",
+        "fr": "émission",
+        "es": "emisión",
+        "ar": "انبعاث"
+      },
+      "tr": {
+        "ar": "inbiʿāth"
+      }
+    },
+    {
+      "id": "drought",
+      "text": {
+        "en": "drought",
+        "fr": "sécheresse",
+        "es": "sequía",
+        "ar": "جفاف"
+      },
+      "tr": {
+        "ar": "jafāf"
+      }
+    },
+    {
+      "id": "flood",
+      "text": {
+        "en": "flood",
+        "fr": "inondation",
+        "es": "inundación",
+        "ar": "فيضان"
+      },
+      "tr": {
+        "ar": "fayaḍān"
+      }
+    },
+    {
+      "id": "wildfire",
+      "text": {
+        "en": "wildfire",
+        "fr": "incendie de forêt",
+        "es": "incendio forestal",
+        "ar": "حريق غابات"
+      },
+      "tr": {
+        "ar": "ḥarīq ghābāt"
+      }
+    },
+    {
+      "id": "species",
+      "text": {
+        "en": "species",
+        "fr": "espèce",
+        "es": "especie",
+        "ar": "نوع"
+      },
+      "tr": {
+        "ar": "nawʿ"
+      }
+    },
+    {
+      "id": "habitat",
+      "text": {
+        "en": "habitat",
+        "fr": "habitat",
+        "es": "hábitat",
+        "ar": "موطن"
+      },
+      "tr": {
+        "ar": "mawṭin"
+      }
+    },
+    {
+      "id": "ocean",
+      "text": {
+        "en": "ocean",
+        "fr": "océan",
+        "es": "océano",
+        "ar": "محيط"
+      },
+      "tr": {
+        "ar": "muḥīṭ"
+      }
+    },
+    {
+      "id": "glacier",
+      "text": {
+        "en": "glacier",
+        "fr": "glacier",
+        "es": "glaciar",
+        "ar": "نهر جليدي"
+      },
+      "tr": {
+        "ar": "nahr jalīdī"
+      }
+    },
+    {
+      "id": "resource",
+      "text": {
+        "en": "resource",
+        "fr": "ressource",
+        "es": "recurso",
+        "ar": "مورد"
+      },
+      "tr": {
+        "ar": "mawrid"
+      }
+    },
+    {
+      "id": "plastic",
+      "text": {
+        "en": "plastic",
+        "fr": "plastique",
+        "es": "plástico",
+        "ar": "بلاستيك"
+      },
+      "tr": {
+        "ar": "blāstīk"
+      }
+    },
+    {
+      "id": "cause",
+      "text": {
+        "en": "cause",
+        "fr": "cause",
+        "es": "causa",
+        "ar": "سبب"
+      },
+      "tr": {
+        "ar": "sabab"
+      }
+    },
+    {
+      "id": "effect",
+      "text": {
+        "en": "effect",
+        "fr": "effet",
+        "es": "efecto",
+        "ar": "أثر"
+      },
+      "tr": {
+        "ar": "athar"
+      }
+    },
+    {
+      "id": "consequence",
+      "text": {
+        "en": "consequence",
+        "fr": "conséquence",
+        "es": "consecuencia",
+        "ar": "عاقبة"
+      },
+      "tr": {
+        "ar": "ʿāqiba"
+      }
+    },
+    {
+      "id": "because_of",
+      "text": {
+        "en": "because of",
+        "fr": "à cause de",
+        "es": "debido a",
+        "ar": "بسبب"
+      },
+      "tr": {
+        "ar": "bi-sabab"
+      }
+    },
+    {
+      "id": "as_a_result",
+      "text": {
+        "en": "as a result",
+        "fr": "par conséquent",
+        "es": "como resultado",
+        "ar": "ونتيجة لذلك"
+      },
+      "tr": {
+        "ar": "wa-natījatan li-dhālika"
+      }
+    },
+    {
+      "id": "therefore",
+      "text": {
+        "en": "therefore",
+        "fr": "donc",
+        "es": "por lo tanto",
+        "ar": "لذلك"
+      },
+      "tr": {
+        "ar": "li-dhālika"
+      }
+    },
+    {
+      "id": "due_to",
+      "text": {
+        "en": "due to",
+        "fr": "en raison de",
+        "es": "a causa de",
+        "ar": "نظرا لـ"
+      },
+      "tr": {
+        "ar": "naẓaran li"
+      }
+    },
+    {
+      "id": "lead_to",
+      "text": {
+        "en": "to lead to",
+        "fr": "entraîner",
+        "es": "provocar",
+        "ar": "أدى إلى"
+      },
+      "tr": {
+        "ar": "addā ilā"
+      }
+    },
+    {
+      "id": "cause_verb",
+      "text": {
+        "en": "to cause",
+        "fr": "causer",
+        "es": "causar",
+        "ar": "تسبب في"
+      },
+      "tr": {
+        "ar": "tasabbaba fī"
+      }
+    },
+    {
+      "id": "damage",
+      "text": {
+        "en": "to damage",
+        "fr": "endommager",
+        "es": "dañar",
+        "ar": "أضر بـ"
+      },
+      "tr": {
+        "ar": "aḍarra bi"
+      }
+    },
+    {
+      "id": "protect",
+      "text": {
+        "en": "to protect",
+        "fr": "protéger",
+        "es": "proteger",
+        "ar": "حمى"
+      },
+      "tr": {
+        "ar": "ḥamā"
+      }
+    },
+    {
+      "id": "reduce",
+      "text": {
+        "en": "to reduce",
+        "fr": "réduire",
+        "es": "reducir",
+        "ar": "قلل"
+      },
+      "tr": {
+        "ar": "qallala"
+      }
+    },
+    {
+      "id": "save",
+      "text": {
+        "en": "to save",
+        "fr": "économiser",
+        "es": "ahorrar",
+        "ar": "وفر"
+      },
+      "tr": {
+        "ar": "waffara"
+      }
+    },
+    {
+      "id": "recycle",
+      "text": {
+        "en": "to recycle",
+        "fr": "recycler",
+        "es": "reciclar",
+        "ar": "أعاد تدوير"
+      },
+      "tr": {
+        "ar": "aʿāda tadwīr"
+      }
+    },
+    {
+      "id": "pollute",
+      "text": {
+        "en": "to pollute",
+        "fr": "polluer",
+        "es": "contaminar",
+        "ar": "لوث"
+      },
+      "tr": {
+        "ar": "lawwatha"
+      }
+    },
+    {
+      "id": "melt",
+      "text": {
+        "en": "to melt",
+        "fr": "fondre",
+        "es": "derretirse",
+        "ar": "ذاب"
+      },
+      "tr": {
+        "ar": "dhāba"
+      }
+    },
+    {
+      "id": "rise",
+      "text": {
+        "en": "to rise",
+        "fr": "augmenter",
+        "es": "aumentar",
+        "ar": "ارتفع"
+      },
+      "tr": {
+        "ar": "irtafaʿa"
+      }
+    },
+    {
+      "id": "disappear_verb",
+      "text": {
+        "en": "to die out",
+        "fr": "disparaître",
+        "es": "extinguirse",
+        "ar": "انقرض"
+      },
+      "tr": {
+        "ar": "inqaraḍa"
+      }
+    },
+    {
+      "id": "sustainable",
+      "text": {
+        "en": "sustainable",
+        "fr": "durable",
+        "es": "sostenible",
+        "ar": "مستدام"
+      },
+      "tr": {
+        "ar": "mustadām"
+      }
+    },
+    {
+      "id": "renewable",
+      "text": {
+        "en": "renewable",
+        "fr": "renouvelable",
+        "es": "renovable",
+        "ar": "متجدد"
+      },
+      "tr": {
+        "ar": "mutajaddid"
+      }
+    },
+    {
+      "id": "harmful",
+      "text": {
+        "en": "harmful",
+        "fr": "nocif",
+        "es": "perjudicial",
+        "ar": "ضار"
+      },
+      "tr": {
+        "ar": "ḍārr"
+      }
+    },
+    {
+      "id": "endangered",
+      "text": {
+        "en": "endangered",
+        "fr": "menacé",
+        "es": "amenazado",
+        "ar": "مهدد"
+      },
+      "tr": {
+        "ar": "muhaddad"
+      }
+    },
+    {
+      "id": "urgent",
+      "text": {
+        "en": "urgent",
+        "fr": "urgent",
+        "es": "urgente",
+        "ar": "عاجل"
+      },
+      "tr": {
+        "ar": "ʿājil"
+      }
+    },
+    {
+      "id": "global",
+      "text": {
+        "en": "worldwide",
+        "fr": "mondial",
+        "es": "mundial",
+        "ar": "عالمي"
+      },
+      "tr": {
+        "ar": "ʿālamī"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": {
+        "en": "Because of global warming, the glaciers are melting faster every year.",
+        "fr": "À cause du réchauffement climatique, les glaciers fondent plus vite chaque année.",
+        "es": "Debido al calentamiento global, los glaciares se derriten más rápido cada año.",
+        "ar": "بسبب الاحترار العالمي تذوب الأنهار الجليدية أسرع كل عام."
+      },
+      "tr": {
+        "ar": "bi-sabab al-iḥtirār al-ʿālamī tadhūbu al-anhār al-jalīdiyya asraʿa kulla ʿām."
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "The sea level is rising, so many coastal towns could disappear.",
+        "fr": "Le niveau de la mer monte, donc de nombreuses villes côtières pourraient disparaître.",
+        "es": "El nivel del mar sube, así que muchas ciudades costeras podrían desaparecer.",
+        "ar": "يرتفع مستوى البحر، لذلك قد تختفي مدن ساحلية كثيرة."
+      },
+      "tr": {
+        "ar": "yartafiʿu mustawā al-baḥr, li-dhālika qad takhtafī mudun sāḥiliyya kathīra."
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "Burning fossil fuels causes emissions that warm the planet.",
+        "fr": "La combustion des combustibles fossiles produit des émissions qui réchauffent la planète.",
+        "es": "Quemar combustibles fósiles genera emisiones que calientan el planeta.",
+        "ar": "يتسبب حرق الوقود الأحفوري في انبعاثات تسخن الكوكب."
+      },
+      "tr": {
+        "ar": "yatasabbabu ḥarq al-wuqūd al-aḥfūrī fī inbiʿāthāt tusakhkhinu al-kawkab."
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "Since the drought lasted three years, many farmers lost their harvest.",
+        "fr": "Comme la sécheresse a duré trois ans, de nombreux agriculteurs ont perdu leur récolte.",
+        "es": "Como la sequía duró tres años, muchos agricultores perdieron la cosecha.",
+        "ar": "بما أن الجفاف استمر ثلاث سنوات، فقد خسر كثير من المزارعين محصولهم."
+      },
+      "tr": {
+        "ar": "bimā anna al-jafāf istamarra thalāth sanawāt, fa-qad khasira kathīr min al-muzāriʿīn maḥṣūlahum."
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "Plastic waste pollutes the ocean and harms the animals that live there.",
+        "fr": "Les déchets plastiques polluent l'océan et nuisent aux animaux qui y vivent.",
+        "es": "Los residuos de plástico contaminan el océano y perjudican a los animales que viven allí.",
+        "ar": "تلوث النفايات البلاستيكية المحيط وتضر بالحيوانات التي تعيش فيه."
+      },
+      "tr": {
+        "ar": "tulawwithu an-nifāyāt al-blāstīkiyya al-muḥīṭ wa-taḍurru bil-ḥayawānāt allatī taʿīshu fīh."
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "Due to heavy rain, the river flooded the village last week.",
+        "fr": "En raison de fortes pluies, la rivière a inondé le village la semaine dernière.",
+        "es": "A causa de las fuertes lluvias, el río inundó el pueblo la semana pasada.",
+        "ar": "نظرا للأمطار الغزيرة فاض النهر على القرية الأسبوع الماضي."
+      },
+      "tr": {
+        "ar": "naẓaran lil-amṭār al-ghazīra fāḍa an-nahr ʿalā al-qarya al-usbūʿ al-māḍī."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "As a result of the wildfires, thousands of animals lost their habitat.",
+        "fr": "À la suite des incendies, des milliers d'animaux ont perdu leur habitat.",
+        "es": "Como resultado de los incendios, miles de animales perdieron su hábitat.",
+        "ar": "ونتيجة للحرائق فقدت آلاف الحيوانات موطنها."
+      },
+      "tr": {
+        "ar": "wa-natījatan lil-ḥarāʾiq faqadat ālāf al-ḥayawānāt mawṭinahā."
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "If we don't reduce our waste, the situation will become even more urgent.",
+        "fr": "Si nous ne réduisons pas nos déchets, la situation deviendra encore plus urgente.",
+        "es": "Si no reducimos nuestros residuos, la situación será todavía más urgente.",
+        "ar": "إذا لم نقلل نفاياتنا فسيصبح الوضع أكثر إلحاحا."
+      },
+      "tr": {
+        "ar": "idhā lam nuqallil nifāyātinā fa-sa-yuṣbiḥu al-waḍʿ akthara ilḥāḥan."
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "My family recycles glass and paper because it saves resources.",
+        "fr": "Ma famille recycle le verre et le papier parce que cela économise des ressources.",
+        "es": "Mi familia recicla el vidrio y el papel porque así se ahorran recursos.",
+        "ar": "تعيد أسرتي تدوير الزجاج والورق لأنه يوفر الموارد."
+      },
+      "tr": {
+        "ar": "tuʿīdu usratī tadwīr az-zujāj wa-l-waraq li-annahu yuwaffiru al-mawārid."
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "We installed solar panels, and as a result our energy bill fell by half.",
+        "fr": "Nous avons installé des panneaux solaires et, par conséquent, notre facture d'énergie a diminué de moitié.",
+        "es": "Instalamos paneles solares y, como resultado, nuestra factura de energía bajó a la mitad.",
+        "ar": "ركبنا ألواحا شمسية، ونتيجة لذلك انخفضت فاتورة الطاقة إلى النصف."
+      },
+      "tr": {
+        "ar": "rakkabnā alwāḥan shamsiyya, wa-natījatan li-dhālika inkhafaḍat fātūrat aṭ-ṭāqa ilā an-niṣf."
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "Renewable energy is cleaner, therefore many countries are investing in it.",
+        "fr": "L'énergie renouvelable est plus propre, c'est pourquoi de nombreux pays y investissent.",
+        "es": "La energía renovable es más limpia; por lo tanto, muchos países invierten en ella.",
+        "ar": "الطاقة المتجددة أنظف، لذلك تستثمر فيها دول كثيرة."
+      },
+      "tr": {
+        "ar": "aṭ-ṭāqa al-mutajaddida anẓaf, li-dhālika tastathmiru fīhā duwal kathīra."
+      }
+    },
+    {
+      "id": "s12",
+      "text": {
+        "en": "The factory polluted the river, which led to the death of thousands of fish.",
+        "fr": "L'usine a pollué la rivière, ce qui a entraîné la mort de milliers de poissons.",
+        "es": "La fábrica contaminó el río, lo que provocó la muerte de miles de peces.",
+        "ar": "لوث المصنع النهر، مما أدى إلى موت آلاف الأسماك."
+      },
+      "tr": {
+        "ar": "lawwatha al-maṣnaʿ an-nahr, mimmā addā ilā mawt ālāf al-asmāk."
+      }
+    },
+    {
+      "id": "s13",
+      "text": {
+        "en": "Many species are endangered, and some will die out if we do nothing.",
+        "fr": "De nombreuses espèces sont menacées, et certaines disparaîtront si nous ne faisons rien.",
+        "es": "Muchas especies están amenazadas y algunas se extinguirán si no hacemos nada.",
+        "ar": "كثير من الأنواع مهددة، وبعضها سينقرض إن لم نفعل شيئا."
+      },
+      "tr": {
+        "ar": "kathīr min al-anwāʿ muhaddada, wa-baʿḍuhā sa-yanqariḍu in lam nafʿal shayʾan."
+      }
+    },
+    {
+      "id": "s14",
+      "text": {
+        "en": "What is the effect of plastic on our health?",
+        "fr": "Quel est l'effet du plastique sur notre santé ?",
+        "es": "¿Qué efecto tiene el plástico en nuestra salud?",
+        "ar": "ما أثر البلاستيك في صحتنا؟"
+      },
+      "tr": {
+        "ar": "mā athar al-blāstīk fī ṣiḥḥatinā?"
+      }
+    },
+    {
+      "id": "s15",
+      "text": {
+        "en": "Scientists say that it can be harmful, but they still need more evidence.",
+        "fr": "Les scientifiques disent qu'il peut être nocif, mais ils ont encore besoin de plus de preuves.",
+        "es": "Los científicos dicen que puede ser perjudicial, pero aún necesitan más pruebas.",
+        "ar": "يقول العلماء إنه قد يكون ضارا، لكنهم ما زالوا يحتاجون إلى مزيد من الأدلة."
+      },
+      "tr": {
+        "ar": "yaqūlu al-ʿulamāʾ innahu qad yakūnu ḍārran, lākinnahum mā zālū yaḥtājūna ilā mazīd min al-adilla."
+      }
+    },
+    {
+      "id": "s16",
+      "text": {
+        "en": "Because of the pollution, we cannot swim at this beach any more.",
+        "fr": "À cause de la pollution, on ne peut plus se baigner sur cette plage.",
+        "es": "Por la contaminación, ya no se puede nadar en esta playa.",
+        "ar": "بسبب التلوث لم يعد بإمكاننا السباحة في هذا الشاطئ."
+      },
+      "tr": {
+        "ar": "bi-sabab at-talawwuth lam yaʿud bi-imkānina as-sibāḥa fī hādhā ash-shāṭiʾ."
+      }
+    },
+    {
+      "id": "s17",
+      "text": {
+        "en": "The government wants to protect the forests, but the plan is not sustainable.",
+        "fr": "Le gouvernement veut protéger les forêts, mais le plan n'est pas durable.",
+        "es": "El gobierno quiere proteger los bosques, pero el plan no es sostenible.",
+        "ar": "تريد الحكومة حماية الغابات، لكن الخطة غير مستدامة."
+      },
+      "tr": {
+        "ar": "turīdu al-ḥukūma ḥimāyat al-ghābāt, lākin al-khuṭṭa ghayr mustadāma."
+      }
+    },
+    {
+      "id": "s18",
+      "text": {
+        "en": "Rising temperatures damage crops, which pushes food prices up.",
+        "fr": "La hausse des températures abîme les cultures, ce qui fait grimper les prix de la nourriture.",
+        "es": "El aumento de las temperaturas daña los cultivos, lo que hace subir los precios de los alimentos.",
+        "ar": "ارتفاع درجات الحرارة يضر بالمحاصيل، مما يرفع أسعار الغذاء."
+      },
+      "tr": {
+        "ar": "irtifāʿ darajāt al-ḥarāra yaḍurru bil-maḥāṣīl, mimmā yarfaʿu asʿār al-ghidhāʾ."
+      }
+    },
+    {
+      "id": "s19",
+      "text": {
+        "en": "I take the bus instead of the car to reduce my emissions.",
+        "fr": "Je prends le bus plutôt que la voiture pour réduire mes émissions.",
+        "es": "Voy en autobús en lugar de en coche para reducir mis emisiones.",
+        "ar": "أركب الحافلة بدل السيارة لأقلل من انبعاثاتي."
+      },
+      "tr": {
+        "ar": "arkabu al-ḥāfila badal as-sayyāra li-uqallila min inbiʿāthātī."
+      }
+    },
+    {
+      "id": "s20",
+      "text": {
+        "en": "It is a worldwide problem, so every country has to act.",
+        "fr": "C'est un problème mondial, donc chaque pays doit agir.",
+        "es": "Es un problema mundial, así que todos los países tienen que actuar.",
+        "ar": "إنها مشكلة عالمية، لذلك يجب أن تتحرك كل دولة."
+      },
+      "tr": {
+        "ar": "innahā mushkila ʿālamiyya, li-dhālika yajibu an tataḥarraka kullu dawla."
+      }
+    },
+    {
+      "id": "s21",
+      "text": {
+        "en": "The consequences of doing nothing would be much worse than the cost of acting now.",
+        "fr": "Les conséquences de l'inaction seraient bien pires que le coût d'une action immédiate.",
+        "es": "Las consecuencias de no hacer nada serían mucho peores que el coste de actuar ahora.",
+        "ar": "ستكون عواقب عدم فعل شيء أسوأ بكثير من تكلفة التحرك الآن."
+      },
+      "tr": {
+        "ar": "sa-takūnu ʿawāqib ʿadam fiʿl shayʾ aswaʾa bi-kathīr min taklifat at-taḥarruk al-āna."
+      }
+    },
+    {
+      "id": "s22",
+      "text": {
+        "en": "Do you think individuals can really make a difference?",
+        "fr": "Penses-tu que les individus peuvent vraiment changer les choses ?",
+        "es": "¿Crees que los individuos pueden marcar realmente la diferencia?",
+        "ar": "هل تعتقد أن الأفراد يستطيعون فعلا أن يحدثوا فرقا؟"
+      },
+      "tr": {
+        "ar": "hal taʿtaqid anna al-afrād yastaṭīʿūna fiʿlan an yuḥdithū farqan?"
+      }
+    },
+    {
+      "id": "s23",
+      "text": {
+        "en": "Yes, because small habits, repeated by millions of people, have a big effect.",
+        "fr": "Oui, parce que les petites habitudes, répétées par des millions de personnes, ont un grand effet.",
+        "es": "Sí, porque los pequeños hábitos, repetidos por millones de personas, tienen un gran efecto.",
+        "ar": "نعم، لأن العادات الصغيرة التي يكررها ملايين الناس لها أثر كبير."
+      },
+      "tr": {
+        "ar": "naʿam, li-anna al-ʿādāt aṣ-ṣaghīra allatī yukarriruhā malāyīn an-nās lahā athar kabīr."
+      }
+    },
+    {
+      "id": "s24",
+      "text": {
+        "en": "We have to save water, since the drought is getting worse.",
+        "fr": "Nous devons économiser l'eau, puisque la sécheresse s'aggrave.",
+        "es": "Tenemos que ahorrar agua, ya que la sequía empeora.",
+        "ar": "علينا أن نوفر الماء، فالجفاف يزداد سوءا."
+      },
+      "tr": {
+        "ar": "ʿalaynā an nuwaffira al-māʾ, fa-l-jafāf yazdādu sūʾan."
+      }
+    },
+    {
+      "id": "s25",
+      "text": {
+        "en": "Ten years ago the air in this city was cleaner; now the traffic is the main cause of the problem.",
+        "fr": "Il y a dix ans, l'air de cette ville était plus pur ; aujourd'hui, la circulation est la principale cause du problème.",
+        "es": "Hace diez años el aire de esta ciudad era más limpio; ahora el tráfico es la principal causa del problema.",
+        "ar": "قبل عشر سنوات كان هواء هذه المدينة أنظف، أما اليوم فالسير هو السبب الرئيسي للمشكلة."
+      },
+      "tr": {
+        "ar": "qabla ʿashr sanawāt kāna hawāʾ hādhihi al-madīna anẓaf, ammā al-yawm fa-s-sayr huwa as-sabab ar-raʾīsī lil-mushkila."
+      }
+    },
+    {
+      "id": "s26",
+      "text": {
+        "en": "If the ice keeps melting at this speed, the ocean will rise by almost a metre.",
+        "fr": "Si la glace continue de fondre à ce rythme, l'océan montera de presque un mètre.",
+        "es": "Si el hielo sigue derritiéndose a este ritmo, el océano subirá casi un metro.",
+        "ar": "إذا استمر الجليد في الذوبان بهذه السرعة فسيرتفع المحيط نحو متر."
+      },
+      "tr": {
+        "ar": "idhā istamarra al-jalīd fī adh-dhawabān bi-hādhihi as-surʿa fa-sa-yartafiʿu al-muḥīṭ naḥwa mitr."
+      }
+    },
+    {
+      "id": "s27",
+      "text": {
+        "en": "The town banned plastic bags, and the streets are noticeably cleaner as a result.",
+        "fr": "La ville a interdit les sacs en plastique, et les rues sont nettement plus propres en conséquence.",
+        "es": "La ciudad prohibió las bolsas de plástico y, como resultado, las calles están notablemente más limpias.",
+        "ar": "منعت المدينة الأكياس البلاستيكية، فأصبحت الشوارع أنظف بشكل ملحوظ."
+      },
+      "tr": {
+        "ar": "manaʿat al-madīna al-akyās al-blāstīkiyya, fa-aṣbaḥat ash-shawāriʿ anẓaf bi-shakl malḥūẓ."
+      }
+    },
+    {
+      "id": "s28",
+      "text": {
+        "en": "She told us that she would plant a tree for every flight she took.",
+        "fr": "Elle nous a dit qu'elle planterait un arbre pour chaque vol qu'elle prendrait.",
+        "es": "Nos dijo que plantaría un árbol por cada vuelo que tomara.",
+        "ar": "قالت لنا إنها ستزرع شجرة مقابل كل رحلة طيران تقوم بها."
+      },
+      "tr": {
+        "ar": "qālat lanā innahā sa-tazraʿu shajara muqābila kulli riḥlat ṭayarān taqūmu bihā."
+      }
+    },
+    {
+      "id": "s29",
+      "text": {
+        "en": "It is not only the factories: our daily habits also damage the planet.",
+        "fr": "Ce ne sont pas seulement les usines : nos habitudes quotidiennes abîment aussi la planète.",
+        "es": "No son solo las fábricas: nuestros hábitos diarios también dañan el planeta.",
+        "ar": "ليست المصانع وحدها، فعاداتنا اليومية تضر بالكوكب أيضا."
+      },
+      "tr": {
+        "ar": "laysat al-maṣāniʿ waḥdahā, fa-ʿādātunā al-yawmiyya taḍurru bil-kawkab aydan."
+      }
+    },
+    {
+      "id": "s30",
+      "text": {
+        "en": "Is it true that recycling really helps?",
+        "fr": "Est-ce vrai que le recyclage aide vraiment ?",
+        "es": "¿Es verdad que reciclar ayuda de verdad?",
+        "ar": "هل صحيح أن إعادة التدوير تفيد فعلا؟"
+      },
+      "tr": {
+        "ar": "hal ṣaḥīḥ anna iʿādat at-tadwīr tufīdu fiʿlan?"
+      }
+    },
+    {
+      "id": "s31",
+      "text": {
+        "en": "Yes, it reduces waste and saves energy, but we should also buy less.",
+        "fr": "Oui, elle réduit les déchets et économise de l'énergie, mais nous devrions aussi acheter moins.",
+        "es": "Sí, reduce los residuos y ahorra energía, pero también deberíamos comprar menos.",
+        "ar": "نعم، فهي تقلل النفايات وتوفر الطاقة، لكن علينا أن نشتري أقل أيضا."
+      },
+      "tr": {
+        "ar": "naʿam, fa-hiya tuqallilu an-nifāyāt wa-tuwaffiru aṭ-ṭāqa, lākin ʿalaynā an nashtariya aqalla aydan."
+      }
+    },
+    {
+      "id": "s32",
+      "text": {
+        "en": "I agree: producing less waste is better than recycling it.",
+        "fr": "Je suis d'accord : produire moins de déchets vaut mieux que les recycler.",
+        "es": "Estoy de acuerdo: producir menos residuos es mejor que reciclarlos.",
+        "ar": "أوافقك، فإنتاج نفايات أقل أفضل من إعادة تدويرها."
+      },
+      "tr": {
+        "ar": "uwāfiquk, fa-intāj nifāyāt aqall afḍal min iʿādat tadwīrihā."
+      }
+    }
+  ],
+  "dialogue": [
+    "s22",
+    "s23",
+    "s30",
+    "s31",
+    "s32"
+  ]
+}

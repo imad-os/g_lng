@@ -1,0 +1,987 @@
+{
+ "id": "u03",
+ "level": "a2",
+ "order": 3,
+ "words": [
+  {
+   "id": "research",
+   "text": {
+    "en": "research",
+    "fr": "recherche",
+    "es": "investigación",
+    "ar": "بحث"
+   },
+   "tr": {
+    "ar": "baḥth"
+   }
+  },
+  {
+   "id": "hypothesis",
+   "text": {
+    "en": "hypothesis",
+    "fr": "hypothèse",
+    "es": "hipótesis",
+    "ar": "فرضية"
+   },
+   "tr": {
+    "ar": "farḍiyya"
+   }
+  },
+  {
+   "id": "data",
+   "text": {
+    "en": "data",
+    "fr": "données",
+    "es": "datos",
+    "ar": "بيانات"
+   },
+   "tr": {
+    "ar": "bayānāt"
+   }
+  },
+  {
+   "id": "sample",
+   "text": {
+    "en": "sample",
+    "fr": "échantillon",
+    "es": "muestra",
+    "ar": "عينة"
+   },
+   "tr": {
+    "ar": "ʿayyina"
+   }
+  },
+  {
+   "id": "variable",
+   "text": {
+    "en": "variable",
+    "fr": "variable",
+    "es": "variable",
+    "ar": "متغير"
+   },
+   "tr": {
+    "ar": "mutaghayyir"
+   }
+  },
+  {
+   "id": "method",
+   "text": {
+    "en": "method",
+    "fr": "méthode",
+    "es": "método",
+    "ar": "منهج"
+   },
+   "tr": {
+    "ar": "manhaj"
+   }
+  },
+  {
+   "id": "result",
+   "text": {
+    "en": "result",
+    "fr": "résultat",
+    "es": "resultado",
+    "ar": "نتيجة"
+   },
+   "tr": {
+    "ar": "natīja"
+   }
+  },
+  {
+   "id": "finding",
+   "text": {
+    "en": "finding",
+    "fr": "constat",
+    "es": "hallazgo",
+    "ar": "اكتشاف"
+   },
+   "tr": {
+    "ar": "iktishāf"
+   }
+  },
+  {
+   "id": "evidence",
+   "text": {
+    "en": "evidence",
+    "fr": "preuve",
+    "es": "evidencia",
+    "ar": "دليل"
+   },
+   "tr": {
+    "ar": "dalīl"
+   }
+  },
+  {
+   "id": "analysis",
+   "text": {
+    "en": "analysis",
+    "fr": "analyse",
+    "es": "análisis",
+    "ar": "تحليل"
+   },
+   "tr": {
+    "ar": "taḥlīl"
+   }
+  },
+  {
+   "id": "survey",
+   "text": {
+    "en": "survey",
+    "fr": "enquête",
+    "es": "encuesta",
+    "ar": "استطلاع"
+   },
+   "tr": {
+    "ar": "istiṭlāʿ"
+   }
+  },
+  {
+   "id": "experiment",
+   "text": {
+    "en": "experiment",
+    "fr": "expérience",
+    "es": "experimento",
+    "ar": "تجربة"
+   },
+   "tr": {
+    "ar": "tajriba"
+   }
+  },
+  {
+   "id": "control_group",
+   "text": {
+    "en": "control group",
+    "fr": "groupe témoin",
+    "es": "grupo de control",
+    "ar": "مجموعة ضابطة"
+   },
+   "tr": {
+    "ar": "majmūʿa ḍābiṭa"
+   }
+  },
+  {
+   "id": "correlation",
+   "text": {
+    "en": "correlation",
+    "fr": "corrélation",
+    "es": "correlación",
+    "ar": "ارتباط"
+   },
+   "tr": {
+    "ar": "irtibāṭ"
+   }
+  },
+  {
+   "id": "causation",
+   "text": {
+    "en": "causation",
+    "fr": "causalité",
+    "es": "causalidad",
+    "ar": "سببية"
+   },
+   "tr": {
+    "ar": "sababiyya"
+   }
+  },
+  {
+   "id": "bias",
+   "text": {
+    "en": "bias",
+    "fr": "biais",
+    "es": "sesgo",
+    "ar": "تحيز"
+   },
+   "tr": {
+    "ar": "taḥayyuz"
+   }
+  },
+  {
+   "id": "margin_of_error",
+   "text": {
+    "en": "margin of error",
+    "fr": "marge d'erreur",
+    "es": "margen de error",
+    "ar": "هامش الخطأ"
+   },
+   "tr": {
+    "ar": "hāmish al-khaṭaʾ"
+   }
+  },
+  {
+   "id": "significant",
+   "text": {
+    "en": "significant",
+    "fr": "significatif",
+    "es": "significativo",
+    "ar": "ذو دلالة إحصائية"
+   },
+   "tr": {
+    "ar": "dhū dalāla iḥṣāʾiyya"
+   }
+  },
+  {
+   "id": "limitation",
+   "text": {
+    "en": "limitation",
+    "fr": "limite",
+    "es": "limitación",
+    "ar": "قيد"
+   },
+   "tr": {
+    "ar": "qayd"
+   }
+  },
+  {
+   "id": "literature_review",
+   "text": {
+    "en": "literature review",
+    "fr": "revue de la littérature",
+    "es": "revisión bibliográfica",
+    "ar": "مراجعة الأدبيات"
+   },
+   "tr": {
+    "ar": "murājaʿat al-adabiyyāt"
+   }
+  },
+  {
+   "id": "peer_review",
+   "text": {
+    "en": "peer review",
+    "fr": "évaluation par les pairs",
+    "es": "revisión por pares",
+    "ar": "تحكيم علمي"
+   },
+   "tr": {
+    "ar": "taḥkīm ʿilmī"
+   }
+  },
+  {
+   "id": "publication",
+   "text": {
+    "en": "publication",
+    "fr": "publication",
+    "es": "publicación",
+    "ar": "نشر"
+   },
+   "tr": {
+    "ar": "nashr"
+   }
+  },
+  {
+   "id": "hypothesize",
+   "text": {
+    "en": "to hypothesize",
+    "fr": "formuler une hypothèse",
+    "es": "formular una hipótesis",
+    "ar": "يفترض"
+   },
+   "tr": {
+    "ar": "yaftariḍ"
+   }
+  },
+  {
+   "id": "test",
+   "text": {
+    "en": "to test",
+    "fr": "tester",
+    "es": "contrastar",
+    "ar": "يختبر"
+   },
+   "tr": {
+    "ar": "yakhtabir"
+   }
+  },
+  {
+   "id": "measure",
+   "text": {
+    "en": "to measure",
+    "fr": "mesurer",
+    "es": "medir",
+    "ar": "يقيس"
+   },
+   "tr": {
+    "ar": "yaqīs"
+   }
+  },
+  {
+   "id": "observe",
+   "text": {
+    "en": "to observe",
+    "fr": "observer",
+    "es": "observar",
+    "ar": "يلاحظ"
+   },
+   "tr": {
+    "ar": "yulāḥiẓ"
+   }
+  },
+  {
+   "id": "confirm",
+   "text": {
+    "en": "to confirm",
+    "fr": "confirmer",
+    "es": "confirmar",
+    "ar": "يؤكد"
+   },
+   "tr": {
+    "ar": "yuʾakkid"
+   }
+  },
+  {
+   "id": "suggest",
+   "text": {
+    "en": "to suggest",
+    "fr": "suggérer",
+    "es": "sugerir",
+    "ar": "يوحي"
+   },
+   "tr": {
+    "ar": "yūḥī"
+   }
+  },
+  {
+   "id": "indicate",
+   "text": {
+    "en": "to indicate",
+    "fr": "indiquer",
+    "es": "indicar",
+    "ar": "يدل على"
+   },
+   "tr": {
+    "ar": "yadullu ʿalā"
+   }
+  },
+  {
+   "id": "challenge",
+   "text": {
+    "en": "to challenge",
+    "fr": "remettre en question",
+    "es": "cuestionar",
+    "ar": "يشكك في"
+   },
+   "tr": {
+    "ar": "yushakkik fī"
+   }
+  },
+  {
+   "id": "replicate",
+   "text": {
+    "en": "to replicate",
+    "fr": "reproduire",
+    "es": "replicar",
+    "ar": "يكرر"
+   },
+   "tr": {
+    "ar": "yukarrir"
+   }
+  },
+  {
+   "id": "reliable",
+   "text": {
+    "en": "reliable",
+    "fr": "fiable",
+    "es": "fiable",
+    "ar": "موثوق"
+   },
+   "tr": {
+    "ar": "mawthūq"
+   }
+  },
+  {
+   "id": "valid",
+   "text": {
+    "en": "valid",
+    "fr": "valide",
+    "es": "válido",
+    "ar": "صحيح"
+   },
+   "tr": {
+    "ar": "ṣaḥīḥ"
+   }
+  },
+  {
+   "id": "tentative",
+   "text": {
+    "en": "tentative",
+    "fr": "provisoire",
+    "es": "provisional",
+    "ar": "مبدئي"
+   },
+   "tr": {
+    "ar": "mabdaʾī"
+   }
+  },
+  {
+   "id": "preliminary",
+   "text": {
+    "en": "preliminary",
+    "fr": "préliminaire",
+    "es": "preliminar",
+    "ar": "أولي"
+   },
+   "tr": {
+    "ar": "awwalī"
+   }
+  },
+  {
+   "id": "robust",
+   "text": {
+    "en": "robust",
+    "fr": "robuste",
+    "es": "sólido",
+    "ar": "متين"
+   },
+   "tr": {
+    "ar": "matīn"
+   }
+  },
+  {
+   "id": "likely",
+   "text": {
+    "en": "likely",
+    "fr": "probable",
+    "es": "probable",
+    "ar": "مرجح"
+   },
+   "tr": {
+    "ar": "murajjaḥ"
+   }
+  },
+  {
+   "id": "apparently",
+   "text": {
+    "en": "apparently",
+    "fr": "apparemment",
+    "es": "aparentemente",
+    "ar": "على ما يبدو"
+   },
+   "tr": {
+    "ar": "ʿalā mā yabdū"
+   }
+  },
+  {
+   "id": "tend_to",
+   "text": {
+    "en": "to tend to",
+    "fr": "avoir tendance à",
+    "es": "tender a",
+    "ar": "يميل إلى"
+   },
+   "tr": {
+    "ar": "yamīlu ilā"
+   }
+  },
+  {
+   "id": "approximately",
+   "text": {
+    "en": "approximately",
+    "fr": "environ",
+    "es": "aproximadamente",
+    "ar": "تقريبا"
+   },
+   "tr": {
+    "ar": "taqrīban"
+   }
+  },
+  {
+   "id": "outlier",
+   "text": {
+    "en": "outlier",
+    "fr": "valeur aberrante",
+    "es": "valor atípico",
+    "ar": "قيمة شاذة"
+   },
+   "tr": {
+    "ar": "qīma shādhdha"
+   }
+  },
+  {
+   "id": "dataset",
+   "text": {
+    "en": "dataset",
+    "fr": "jeu de données",
+    "es": "conjunto de datos",
+    "ar": "مجموعة بيانات"
+   },
+   "tr": {
+    "ar": "majmūʿat bayānāt"
+   }
+  },
+  {
+   "id": "questionnaire",
+   "text": {
+    "en": "questionnaire",
+    "fr": "questionnaire",
+    "es": "cuestionario",
+    "ar": "استبيان"
+   },
+   "tr": {
+    "ar": "istibyān"
+   }
+  },
+  {
+   "id": "interview",
+   "text": {
+    "en": "interview",
+    "fr": "entretien",
+    "es": "entrevista",
+    "ar": "مقابلة"
+   },
+   "tr": {
+    "ar": "muqābala"
+   }
+  },
+  {
+   "id": "qualitative",
+   "text": {
+    "en": "qualitative",
+    "fr": "qualitatif",
+    "es": "cualitativo",
+    "ar": "نوعي"
+   },
+   "tr": {
+    "ar": "nawʿī"
+   }
+  },
+  {
+   "id": "quantitative",
+   "text": {
+    "en": "quantitative",
+    "fr": "quantitatif",
+    "es": "cuantitativo",
+    "ar": "كمي"
+   },
+   "tr": {
+    "ar": "kammī"
+   }
+  },
+  {
+   "id": "fieldwork",
+   "text": {
+    "en": "fieldwork",
+    "fr": "travail de terrain",
+    "es": "trabajo de campo",
+    "ar": "عمل ميداني"
+   },
+   "tr": {
+    "ar": "ʿamal maydānī"
+   }
+  },
+  {
+   "id": "researcher",
+   "text": {
+    "en": "researcher",
+    "fr": "chercheur",
+    "es": "investigador",
+    "ar": "باحث"
+   },
+   "tr": {
+    "ar": "bāḥith"
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "text": {
+    "en": "Our hypothesis is that sleep quality affects academic performance.",
+    "fr": "Notre hypothèse est que la qualité du sommeil influe sur les résultats scolaires.",
+    "es": "Nuestra hipótesis es que la calidad del sueño influye en el rendimiento académico.",
+    "ar": "فرضيتنا أن جودة النوم تؤثر في الأداء الدراسي."
+   },
+   "tr": {
+    "ar": "farḍiyyatunā anna jawdat an-nawm tuʾaththir fī al-adāʾ ad-dirāsī."
+   }
+  },
+  {
+   "id": "s02",
+   "text": {
+    "en": "The sample consisted of four hundred participants.",
+    "fr": "L'échantillon se composait de quatre cents participants.",
+    "es": "La muestra constaba de cuatrocientos participantes.",
+    "ar": "تكونت العينة من أربعمئة مشارك."
+   },
+   "tr": {
+    "ar": "takawwanat al-ʿayyina min arbaʿi miʾati mushārik."
+   }
+  },
+  {
+   "id": "s03",
+   "text": {
+    "en": "The data suggest that the effect is stronger in younger groups.",
+    "fr": "Les données suggèrent que l'effet est plus marqué chez les groupes plus jeunes.",
+    "es": "Los datos sugieren que el efecto es más fuerte en los grupos más jóvenes.",
+    "ar": "توحي البيانات بأن التأثير أقوى لدى الفئات الأصغر سنا."
+   },
+   "tr": {
+    "ar": "tūḥī al-bayānāt bi-anna at-taʾthīr aqwā ladā al-fiʾāt al-aṣghar sinnan."
+   }
+  },
+  {
+   "id": "s04",
+   "text": {
+    "en": "The results are statistically significant, but the margin of error is large.",
+    "fr": "Les résultats sont statistiquement significatifs, mais la marge d'erreur est importante.",
+    "es": "Los resultados son estadísticamente significativos, pero el margen de error es amplio.",
+    "ar": "النتائج ذات دلالة إحصائية لكن هامش الخطأ كبير."
+   },
+   "tr": {
+    "ar": "an-natāʾij dhāt dalāla iḥṣāʾiyya lākinna hāmish al-khaṭaʾ kabīr."
+   }
+  },
+  {
+   "id": "s05",
+   "text": {
+    "en": "A correlation does not necessarily imply causation.",
+    "fr": "Une corrélation n'implique pas nécessairement une causalité.",
+    "es": "Una correlación no implica necesariamente causalidad.",
+    "ar": "لا يعني الارتباط بالضرورة وجود سببية."
+   },
+   "tr": {
+    "ar": "lā yaʿnī al-irtibāṭ bi-ḍ-ḍarūra wujūd sababiyya."
+   }
+  },
+  {
+   "id": "s06",
+   "text": {
+    "en": "We compared the experimental group with the control group.",
+    "fr": "Nous avons comparé le groupe expérimental au groupe témoin.",
+    "es": "Comparamos el grupo experimental con el grupo de control.",
+    "ar": "قارنا المجموعة التجريبية بالمجموعة الضابطة."
+   },
+   "tr": {
+    "ar": "qārannā al-majmūʿa at-tajrībiyya bi-l-majmūʿa aḍ-ḍābiṭa."
+   }
+  },
+  {
+   "id": "s07",
+   "text": {
+    "en": "The method is reliable, but it may introduce a bias.",
+    "fr": "La méthode est fiable, mais elle peut introduire un biais.",
+    "es": "El método es fiable, pero puede introducir un sesgo.",
+    "ar": "المنهج موثوق لكنه قد يُدخل تحيزا."
+   },
+   "tr": {
+    "ar": "al-manhaj mawthūq lākinnahu qad yudkhil taḥayyuzan."
+   }
+  },
+  {
+   "id": "s08",
+   "text": {
+    "en": "Further fieldwork is needed to test this hypothesis.",
+    "fr": "Un travail de terrain supplémentaire est nécessaire pour tester cette hypothèse.",
+    "es": "Se necesita más trabajo de campo para contrastar esta hipótesis.",
+    "ar": "هناك حاجة إلى مزيد من العمل الميداني لاختبار هذه الفرضية."
+   },
+   "tr": {
+    "ar": "hunāka ḥāja ilā mazīd min al-ʿamal al-maydānī li-ikhtibār hādhihi al-farḍiyya."
+   }
+  },
+  {
+   "id": "s09",
+   "text": {
+    "en": "These findings are preliminary and should be treated with caution.",
+    "fr": "Ces constats sont préliminaires et doivent être considérés avec prudence.",
+    "es": "Estos hallazgos son preliminares y deben tomarse con cautela.",
+    "ar": "هذه الاكتشافات أولية ويجب التعامل معها بحذر."
+   },
+   "tr": {
+    "ar": "hādhihi al-iktishāfāt awwaliyya wa-yajib at-taʿāmul maʿahā bi-ḥadhar."
+   }
+  },
+  {
+   "id": "s10",
+   "text": {
+    "en": "Apparently, the outlier distorted the whole analysis.",
+    "fr": "Apparemment, la valeur aberrante a faussé toute l'analyse.",
+    "es": "Aparentemente, el valor atípico distorsionó todo el análisis.",
+    "ar": "على ما يبدو، شوهت القيمة الشاذة التحليل بأكمله."
+   },
+   "tr": {
+    "ar": "ʿalā mā yabdū, shawwahat al-qīma ash-shādhdha at-taḥlīl bi-akmalihi."
+   }
+  },
+  {
+   "id": "s11",
+   "text": {
+    "en": "The study could not be replicated by an independent team.",
+    "fr": "L'étude n'a pas pu être reproduite par une équipe indépendante.",
+    "es": "El estudio no pudo ser replicado por un equipo independiente.",
+    "ar": "لم يتمكن فريق مستقل من تكرار الدراسة."
+   },
+   "tr": {
+    "ar": "lam yatamakkan farīq mustaqill min takrār ad-dirāsa."
+   }
+  },
+  {
+   "id": "s12",
+   "text": {
+    "en": "The researcher measured the variable at three different moments.",
+    "fr": "Le chercheur a mesuré la variable à trois moments différents.",
+    "es": "El investigador midió la variable en tres momentos distintos.",
+    "ar": "قاس الباحث المتغير في ثلاث لحظات مختلفة."
+   },
+   "tr": {
+    "ar": "qāsa al-bāḥith al-mutaghayyir fī thalāthi laḥaẓāt mukhtalifa."
+   }
+  },
+  {
+   "id": "s13",
+   "text": {
+    "en": "The questionnaire was sent to approximately two thousand households.",
+    "fr": "Le questionnaire a été envoyé à environ deux mille foyers.",
+    "es": "El cuestionario se envió a aproximadamente dos mil hogares.",
+    "ar": "أرسل الاستبيان إلى نحو ألفي أسرة."
+   },
+   "tr": {
+    "ar": "ursila al-istibyān ilā naḥwi alfay usra."
+   }
+  },
+  {
+   "id": "s14",
+   "text": {
+    "en": "A qualitative approach would complement the quantitative data.",
+    "fr": "Une approche qualitative viendrait compléter les données quantitatives.",
+    "es": "Un enfoque cualitativo complementaría los datos cuantitativos.",
+    "ar": "من شأن منهج نوعي أن يكمل البيانات الكمية."
+   },
+   "tr": {
+    "ar": "min shaʾni manhaj nawʿī an yukammila al-bayānāt al-kammiyya."
+   }
+  },
+  {
+   "id": "s15",
+   "text": {
+    "en": "We conducted twenty interviews with local farmers.",
+    "fr": "Nous avons mené vingt entretiens avec des agriculteurs locaux.",
+    "es": "Realizamos veinte entrevistas con agricultores locales.",
+    "ar": "أجرينا عشرين مقابلة مع مزارعين محليين."
+   },
+   "tr": {
+    "ar": "ajraynā ʿishrīna muqābala maʿa muzāriʿīn maḥalliyyīn."
+   }
+  },
+  {
+   "id": "s16",
+   "text": {
+    "en": "The article is awaiting peer review before publication.",
+    "fr": "L'article attend l'évaluation par les pairs avant sa publication.",
+    "es": "El artículo espera la revisión por pares antes de su publicación.",
+    "ar": "المقال في انتظار التحكيم العلمي قبل نشره."
+   },
+   "tr": {
+    "ar": "al-maqāl fī intiẓār at-taḥkīm al-ʿilmī qabla nashrihi."
+   }
+  },
+  {
+   "id": "s17",
+   "text": {
+    "en": "This limitation does not invalidate our main conclusion.",
+    "fr": "Cette limite n'invalide pas notre conclusion principale.",
+    "es": "Esta limitación no invalida nuestra conclusión principal.",
+    "ar": "لا يبطل هذا القيد استنتاجنا الرئيسي."
+   },
+   "tr": {
+    "ar": "lā yubṭil hādhā al-qayd istintājanā ar-raʾīsī."
+   }
+  },
+  {
+   "id": "s18",
+   "text": {
+    "en": "The literature review reveals a significant gap in this field.",
+    "fr": "La revue de la littérature révèle une lacune importante dans ce domaine.",
+    "es": "La revisión bibliográfica revela una laguna importante en este campo.",
+    "ar": "تكشف مراجعة الأدبيات عن فجوة كبيرة في هذا المجال."
+   },
+   "tr": {
+    "ar": "takshif murājaʿat al-adabiyyāt ʿan fajwa kabīra fī hādhā al-majāl."
+   }
+  },
+  {
+   "id": "s19",
+   "text": {
+    "en": "The evidence is robust enough to confirm our initial assumption.",
+    "fr": "Les preuves sont assez solides pour confirmer notre hypothèse de départ.",
+    "es": "Las pruebas son lo bastante sólidas como para confirmar nuestra suposición inicial.",
+    "ar": "الأدلة متينة بما يكفي لتأكيد افتراضنا الأولي."
+   },
+   "tr": {
+    "ar": "al-adilla matīna bi-mā yakfī li-taʾkīd iftirāḍinā al-awwalī."
+   }
+  },
+  {
+   "id": "s20",
+   "text": {
+    "en": "Participants tend to underestimate the time they spend online.",
+    "fr": "Les participants ont tendance à sous-estimer le temps qu'ils passent en ligne.",
+    "es": "Los participantes tienden a subestimar el tiempo que pasan conectados.",
+    "ar": "يميل المشاركون إلى التقليل من تقدير الوقت الذي يقضونه على الإنترنت."
+   },
+   "tr": {
+    "ar": "yamīlu al-mushārikūn ilā at-taqlīl min taqdīr al-waqt alladhī yaqḍūnahu ʿalā al-intarnit."
+   }
+  },
+  {
+   "id": "s21",
+   "text": {
+    "en": "These figures may indicate a downward trend, but it is too early to say.",
+    "fr": "Ces chiffres pourraient indiquer une tendance à la baisse, mais il est trop tôt pour l'affirmer.",
+    "es": "Estas cifras podrían indicar una tendencia a la baja, pero es demasiado pronto para afirmarlo.",
+    "ar": "قد تدل هذه الأرقام على اتجاه تنازلي، لكن من السابق لأوانه الجزم بذلك."
+   },
+   "tr": {
+    "ar": "qad tadullu hādhihi al-arqām ʿalā ittijāh tanāzulī, lākin min as-sābiq li-awānihi al-jazm bi-dhālika."
+   }
+  },
+  {
+   "id": "s22",
+   "text": {
+    "en": "Several scholars have challenged the validity of this method.",
+    "fr": "Plusieurs chercheurs ont remis en question la validité de cette méthode.",
+    "es": "Varios especialistas han cuestionado la validez de este método.",
+    "ar": "شكك عدة علماء في صحة هذا المنهج."
+   },
+   "tr": {
+    "ar": "shakkaka ʿiddat ʿulamāʾ fī ṣiḥḥat hādhā al-manhaj."
+   }
+  },
+  {
+   "id": "s23",
+   "text": {
+    "en": "The experiment was designed to isolate a single variable.",
+    "fr": "L'expérience a été conçue pour isoler une seule variable.",
+    "es": "El experimento se diseñó para aislar una única variable.",
+    "ar": "صممت التجربة لعزل متغير واحد."
+   },
+   "tr": {
+    "ar": "ṣummimat at-tajriba li-ʿazl mutaghayyir wāḥid."
+   }
+  },
+  {
+   "id": "s24",
+   "text": {
+    "en": "The dataset is publicly available for anyone who wishes to check our results.",
+    "fr": "Le jeu de données est accessible au public pour quiconque souhaite vérifier nos résultats.",
+    "es": "El conjunto de datos es de acceso público para quien quiera comprobar nuestros resultados.",
+    "ar": "مجموعة البيانات متاحة للجميع لمن أراد التحقق من نتائجنا."
+   },
+   "tr": {
+    "ar": "majmūʿat al-bayānāt mutāḥa lil-jamīʿ li-man arāda at-taḥaqquq min natāʾijinā."
+   }
+  },
+  {
+   "id": "s25",
+   "text": {
+    "en": "It is likely that the trend will continue over the next decade.",
+    "fr": "Il est probable que cette tendance se poursuivra au cours de la prochaine décennie.",
+    "es": "Es probable que la tendencia continúe durante la próxima década.",
+    "ar": "من المرجح أن يستمر هذا الاتجاه خلال العقد القادم."
+   },
+   "tr": {
+    "ar": "min al-murajjaḥ an yastamirra hādhā al-ittijāh khilāla al-ʿaqd al-qādim."
+   }
+  },
+  {
+   "id": "s26",
+   "text": {
+    "en": "The analysis was carried out by two independent researchers.",
+    "fr": "L'analyse a été réalisée par deux chercheurs indépendants.",
+    "es": "El análisis lo realizaron dos investigadores independientes.",
+    "ar": "أجرى التحليل باحثان مستقلان."
+   },
+   "tr": {
+    "ar": "ajrā at-taḥlīl bāḥithān mustaqillān."
+   }
+  },
+  {
+   "id": "s27",
+   "text": {
+    "en": "Our conclusions remain tentative until more data become available.",
+    "fr": "Nos conclusions restent provisoires tant que nous ne disposons pas de plus de données.",
+    "es": "Nuestras conclusiones siguen siendo provisionales hasta que haya más datos.",
+    "ar": "تبقى استنتاجاتنا مبدئية إلى أن تتوفر بيانات أكثر."
+   },
+   "tr": {
+    "ar": "tabqā istintājātunā mabdaʾiyya ilā an tatawaffara bayānāt akthar."
+   }
+  },
+  {
+   "id": "s28",
+   "text": {
+    "en": "Is the survey representative of the whole population?",
+    "fr": "L'enquête est-elle représentative de l'ensemble de la population ?",
+    "es": "¿Es la encuesta representativa de toda la población?",
+    "ar": "هل الاستطلاع ممثل لجميع السكان؟"
+   },
+   "tr": {
+    "ar": "hal al-istiṭlāʿ mumaththil li-jamīʿ as-sukkān?"
+   }
+  },
+  {
+   "id": "s29",
+   "text": {
+    "en": "Not entirely; the sample is skewed towards urban respondents.",
+    "fr": "Pas tout à fait ; l'échantillon penche vers les répondants urbains.",
+    "es": "No del todo; la muestra se inclina hacia los encuestados urbanos.",
+    "ar": "ليس تماما، فالعينة تميل نحو المستجيبين من المدن."
+   },
+   "tr": {
+    "ar": "laysa tamāman, fa-l-ʿayyina tamīlu naḥwa al-mustajībīn min al-mudun."
+   }
+  },
+  {
+   "id": "s30",
+   "text": {
+    "en": "That would explain why the results are less reliable than expected.",
+    "fr": "Cela expliquerait pourquoi les résultats sont moins fiables que prévu.",
+    "es": "Eso explicaría por qué los resultados son menos fiables de lo esperado.",
+    "ar": "هذا يفسر سبب كون النتائج أقل موثوقية مما كان متوقعا."
+   },
+   "tr": {
+    "ar": "hādhā yufassir sabab kawn an-natāʾij aqall mawthūqiyya mimmā kāna mutawaqqaʿan."
+   }
+  },
+  {
+   "id": "s31",
+   "text": {
+    "en": "We should replicate the experiment with a larger sample.",
+    "fr": "Nous devrions reproduire l'expérience avec un échantillon plus large.",
+    "es": "Deberíamos replicar el experimento con una muestra más amplia.",
+    "ar": "ينبغي أن نكرر التجربة على عينة أكبر."
+   },
+   "tr": {
+    "ar": "yanbaghī an nukarrira at-tajriba ʿalā ʿayyina akbar."
+   }
+  },
+  {
+   "id": "s32",
+   "text": {
+    "en": "The researchers hypothesize that the gap will narrow over time.",
+    "fr": "Les chercheurs formulent l'hypothèse que l'écart se réduira avec le temps.",
+    "es": "Los investigadores plantean la hipótesis de que la brecha se reducirá con el tiempo.",
+    "ar": "يفترض الباحثون أن الفجوة ستضيق مع مرور الوقت."
+   },
+   "tr": {
+    "ar": "yaftariḍu al-bāḥithūn anna al-fajwa sa-taḍīqu maʿa murūr al-waqt."
+   }
+  }
+ ],
+ "dialogue": [
+  "s28",
+  "s29",
+  "s30",
+  "s31"
+ ],
+ "title": {
+  "en": "Research",
+  "fr": "La recherche",
+  "es": "La investigación",
+  "ar": "البحث العلمي"
+ },
+ "tip": {
+  "en": "Researchers hedge their claims: \"The data suggest that...\", \"This may indicate...\". Use cautious verbs and adverbs instead of absolute statements.",
+  "fr": "Les chercheurs nuancent leurs affirmations : « Les données suggèrent que... », « Cela pourrait indiquer... ». Privilégiez les verbes et adverbes prudents aux affirmations absolues.",
+  "es": "Los investigadores matizan sus afirmaciones: «Los datos sugieren que...», «Esto podría indicar...». Usa verbos y adverbios prudentes en lugar de afirmaciones absolutas.",
+  "ar": "يخفف الباحثون من حدة ادعاءاتهم: «توحي البيانات بأن...» و«قد يدل ذلك على...». استخدم أفعالا وظروفا حذرة بدل العبارات القطعية."
+ }
+}

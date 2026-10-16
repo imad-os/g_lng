@@ -7,6 +7,7 @@
     "build:content": "node tools/build-content.mjs",
     "validate": "node tools/validate.mjs",
     "seed": "node tools/seed-firestore.mjs",
+    "check:source": "node tools/check-source.mjs",
     "check": "node tools/build-content.mjs && node tools/validate.mjs && node tools/test-firestore-format.mjs && node tools/check-app.mjs",
     "bump": "node tools/bump-version.mjs"
   }

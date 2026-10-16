@@ -1,0 +1,939 @@
+{
+  "id": "u08",
+  "level": "m3",
+  "order": 8,
+  "title": {
+    "en": "Living abroad",
+    "fr": "Vivre à l'étranger",
+    "es": "Vivir en el extranjero",
+    "ar": "العيش في الخارج"
+  },
+  "tip": {
+    "en": "Talk about change with \"get used to\", \"settle in\" and \"adapt to\". For official matters, use polite requests: \"I'd like to apply for a residence permit\" or \"Could you tell me which documents I need?\"",
+    "fr": "Pour parler de l'adaptation, utilisez « s'habituer à », « s'installer », « s'adapter à ». Pour les démarches, restez poli : « Je voudrais faire une demande de titre de séjour » ou « Pourriez-vous me dire de quels documents j'ai besoin ? »",
+    "es": "Para hablar de la adaptación usa «acostumbrarse a», «instalarse», «adaptarse a». En los trámites sé cortés: «Quisiera solicitar un permiso de residencia» o «¿Podría decirme qué documentos necesito?».",
+    "ar": "للحديث عن التأقلم استخدم «اعتاد على» و«استقر» و«تكيف مع». وفي المعاملات الرسمية اطلب بأدب: «أود أن أتقدم بطلب إقامة» أو «هل يمكنك أن تخبرني بالأوراق التي أحتاج إليها؟»."
+  },
+  "words": [
+    {
+      "id": "expat",
+      "text": {
+        "en": "expatriate",
+        "fr": "expatrié",
+        "es": "expatriado",
+        "ar": "مغترب"
+      },
+      "tr": {
+        "ar": "mughtarib"
+      }
+    },
+    {
+      "id": "immigrant",
+      "text": {
+        "en": "immigrant",
+        "fr": "immigré",
+        "es": "inmigrante",
+        "ar": "مهاجر"
+      },
+      "tr": {
+        "ar": "muhājir"
+      }
+    },
+    {
+      "id": "citizen",
+      "text": {
+        "en": "citizen",
+        "fr": "citoyen",
+        "es": "ciudadano",
+        "ar": "مواطن"
+      },
+      "tr": {
+        "ar": "muwāṭin"
+      }
+    },
+    {
+      "id": "foreigner",
+      "text": {
+        "en": "foreigner",
+        "fr": "étranger",
+        "es": "extranjero",
+        "ar": "أجنبي"
+      },
+      "tr": {
+        "ar": "ajnabī"
+      }
+    },
+    {
+      "id": "newcomer",
+      "text": {
+        "en": "newcomer",
+        "fr": "nouvel arrivant",
+        "es": "recién llegado",
+        "ar": "وافد جديد"
+      },
+      "tr": {
+        "ar": "wāfid jadīd"
+      }
+    },
+    {
+      "id": "culture_shock",
+      "text": {
+        "en": "culture shock",
+        "fr": "choc culturel",
+        "es": "choque cultural",
+        "ar": "صدمة ثقافية"
+      },
+      "tr": {
+        "ar": "ṣadma thaqāfiyya"
+      }
+    },
+    {
+      "id": "homesickness",
+      "text": {
+        "en": "homesickness",
+        "fr": "mal du pays",
+        "es": "morriña",
+        "ar": "الحنين إلى الوطن"
+      },
+      "tr": {
+        "ar": "al-ḥanīn ilā al-waṭan"
+      }
+    },
+    {
+      "id": "neighbourhood",
+      "text": {
+        "en": "neighbourhood",
+        "fr": "quartier",
+        "es": "barrio",
+        "ar": "حي"
+      },
+      "tr": {
+        "ar": "ḥayy"
+      }
+    },
+    {
+      "id": "suburb",
+      "text": {
+        "en": "suburb",
+        "fr": "banlieue",
+        "es": "afueras",
+        "ar": "ضاحية"
+      },
+      "tr": {
+        "ar": "ḍāḥiya"
+      }
+    },
+    {
+      "id": "capital",
+      "text": {
+        "en": "capital",
+        "fr": "capitale",
+        "es": "capital",
+        "ar": "عاصمة"
+      },
+      "tr": {
+        "ar": "ʿāṣima"
+      }
+    },
+    {
+      "id": "public_transport",
+      "text": {
+        "en": "public transport",
+        "fr": "transports en commun",
+        "es": "transporte público",
+        "ar": "المواصلات العامة"
+      },
+      "tr": {
+        "ar": "al-muwāṣalāt al-ʿāmma"
+      }
+    },
+    {
+      "id": "cost_of_living",
+      "text": {
+        "en": "cost of living",
+        "fr": "coût de la vie",
+        "es": "coste de la vida",
+        "ar": "تكلفة المعيشة"
+      },
+      "tr": {
+        "ar": "taklifat al-maʿīsha"
+      }
+    },
+    {
+      "id": "rent",
+      "text": {
+        "en": "rent",
+        "fr": "loyer",
+        "es": "alquiler",
+        "ar": "إيجار"
+      },
+      "tr": {
+        "ar": "ījār"
+      }
+    },
+    {
+      "id": "landlord",
+      "text": {
+        "en": "landlord",
+        "fr": "propriétaire",
+        "es": "casero",
+        "ar": "مالك العقار"
+      },
+      "tr": {
+        "ar": "mālik al-ʿaqār"
+      }
+    },
+    {
+      "id": "contract",
+      "text": {
+        "en": "contract",
+        "fr": "contrat",
+        "es": "contrato",
+        "ar": "عقد"
+      },
+      "tr": {
+        "ar": "ʿaqd"
+      }
+    },
+    {
+      "id": "visa",
+      "text": {
+        "en": "visa",
+        "fr": "visa",
+        "es": "visado",
+        "ar": "تأشيرة"
+      },
+      "tr": {
+        "ar": "taʾshīra"
+      }
+    },
+    {
+      "id": "residence_permit",
+      "text": {
+        "en": "residence permit",
+        "fr": "titre de séjour",
+        "es": "permiso de residencia",
+        "ar": "تصريح إقامة"
+      },
+      "tr": {
+        "ar": "taṣrīḥ iqāma"
+      }
+    },
+    {
+      "id": "passport",
+      "text": {
+        "en": "passport",
+        "fr": "passeport",
+        "es": "pasaporte",
+        "ar": "جواز سفر"
+      },
+      "tr": {
+        "ar": "jawāz safar"
+      }
+    },
+    {
+      "id": "form",
+      "text": {
+        "en": "form",
+        "fr": "formulaire",
+        "es": "formulario",
+        "ar": "استمارة"
+      },
+      "tr": {
+        "ar": "istimāra"
+      }
+    },
+    {
+      "id": "document",
+      "text": {
+        "en": "document",
+        "fr": "document",
+        "es": "documento",
+        "ar": "وثيقة"
+      },
+      "tr": {
+        "ar": "wathīqa"
+      }
+    },
+    {
+      "id": "appointment",
+      "text": {
+        "en": "appointment",
+        "fr": "rendez-vous",
+        "es": "cita",
+        "ar": "موعد"
+      },
+      "tr": {
+        "ar": "mawʿid"
+      }
+    },
+    {
+      "id": "queue",
+      "text": {
+        "en": "queue",
+        "fr": "file d'attente",
+        "es": "cola",
+        "ar": "طابور"
+      },
+      "tr": {
+        "ar": "ṭābūr"
+      }
+    },
+    {
+      "id": "office",
+      "text": {
+        "en": "office",
+        "fr": "bureau",
+        "es": "oficina",
+        "ar": "مكتب"
+      },
+      "tr": {
+        "ar": "maktab"
+      }
+    },
+    {
+      "id": "fee",
+      "text": {
+        "en": "fee",
+        "fr": "frais",
+        "es": "tasa",
+        "ar": "رسوم"
+      },
+      "tr": {
+        "ar": "rusūm"
+      }
+    },
+    {
+      "id": "deadline",
+      "text": {
+        "en": "deadline",
+        "fr": "date limite",
+        "es": "plazo",
+        "ar": "مهلة"
+      },
+      "tr": {
+        "ar": "muhla"
+      }
+    },
+    {
+      "id": "translation",
+      "text": {
+        "en": "translation",
+        "fr": "traduction",
+        "es": "traducción",
+        "ar": "ترجمة"
+      },
+      "tr": {
+        "ar": "tarjama"
+      }
+    },
+    {
+      "id": "language_barrier",
+      "text": {
+        "en": "language barrier",
+        "fr": "barrière de la langue",
+        "es": "barrera del idioma",
+        "ar": "حاجز اللغة"
+      },
+      "tr": {
+        "ar": "ḥājiz al-lugha"
+      }
+    },
+    {
+      "id": "accent",
+      "text": {
+        "en": "accent",
+        "fr": "accent",
+        "es": "acento",
+        "ar": "لكنة"
+      },
+      "tr": {
+        "ar": "lukna"
+      }
+    },
+    {
+      "id": "settle_in",
+      "text": {
+        "en": "to settle in",
+        "fr": "s'installer",
+        "es": "instalarse",
+        "ar": "استقر"
+      },
+      "tr": {
+        "ar": "istaqarra"
+      }
+    },
+    {
+      "id": "adapt",
+      "text": {
+        "en": "to adapt",
+        "fr": "s'adapter",
+        "es": "adaptarse",
+        "ar": "تكيف"
+      },
+      "tr": {
+        "ar": "takayyafa"
+      }
+    },
+    {
+      "id": "get_used_to",
+      "text": {
+        "en": "to get used to",
+        "fr": "s'habituer à",
+        "es": "acostumbrarse a",
+        "ar": "اعتاد على"
+      },
+      "tr": {
+        "ar": "iʿtāda ʿalā"
+      }
+    },
+    {
+      "id": "apply_for",
+      "text": {
+        "en": "to apply for",
+        "fr": "faire une demande de",
+        "es": "solicitar",
+        "ar": "تقدم بطلب"
+      },
+      "tr": {
+        "ar": "taqaddama bi-ṭalab"
+      }
+    },
+    {
+      "id": "register",
+      "text": {
+        "en": "to register",
+        "fr": "s'inscrire",
+        "es": "empadronarse",
+        "ar": "سجل"
+      },
+      "tr": {
+        "ar": "sajjala"
+      }
+    },
+    {
+      "id": "renew",
+      "text": {
+        "en": "to renew",
+        "fr": "renouveler",
+        "es": "renovar",
+        "ar": "جدد"
+      },
+      "tr": {
+        "ar": "jaddada"
+      }
+    },
+    {
+      "id": "fill_in",
+      "text": {
+        "en": "to fill in",
+        "fr": "remplir",
+        "es": "rellenar",
+        "ar": "ملأ"
+      },
+      "tr": {
+        "ar": "malaʾa"
+      }
+    },
+    {
+      "id": "miss_verb",
+      "text": {
+        "en": "to miss someone",
+        "fr": "manquer",
+        "es": "echar de menos",
+        "ar": "اشتاق إلى"
+      },
+      "tr": {
+        "ar": "ishtāqa ilā"
+      }
+    },
+    {
+      "id": "integrate",
+      "text": {
+        "en": "to integrate",
+        "fr": "s'intégrer",
+        "es": "integrarse",
+        "ar": "اندمج"
+      },
+      "tr": {
+        "ar": "indamaja"
+      }
+    },
+    {
+      "id": "belong",
+      "text": {
+        "en": "to belong",
+        "fr": "se sentir à sa place",
+        "es": "sentirse parte",
+        "ar": "شعر بالانتماء"
+      },
+      "tr": {
+        "ar": "shaʿara bil-intimāʾ"
+      }
+    },
+    {
+      "id": "bureaucracy",
+      "text": {
+        "en": "bureaucracy",
+        "fr": "bureaucratie",
+        "es": "burocracia",
+        "ar": "بيروقراطية"
+      },
+      "tr": {
+        "ar": "bīrūqrāṭiyya"
+      }
+    },
+    {
+      "id": "complicated",
+      "text": {
+        "en": "complicated",
+        "fr": "compliqué",
+        "es": "complicado",
+        "ar": "معقد"
+      },
+      "tr": {
+        "ar": "muʿaqqad"
+      }
+    },
+    {
+      "id": "unfamiliar",
+      "text": {
+        "en": "unfamiliar",
+        "fr": "inconnu",
+        "es": "desconocido",
+        "ar": "غير مألوف"
+      },
+      "tr": {
+        "ar": "ghayr maʾlūf"
+      }
+    },
+    {
+      "id": "welcoming",
+      "text": {
+        "en": "welcoming",
+        "fr": "accueillant",
+        "es": "acogedor",
+        "ar": "مضياف"
+      },
+      "tr": {
+        "ar": "miḍyāf"
+      }
+    },
+    {
+      "id": "embassy",
+      "text": {
+        "en": "embassy",
+        "fr": "ambassade",
+        "es": "embajada",
+        "ar": "سفارة"
+      },
+      "tr": {
+        "ar": "sifāra"
+      }
+    },
+    {
+      "id": "certificate",
+      "text": {
+        "en": "certificate",
+        "fr": "certificat",
+        "es": "certificado",
+        "ar": "شهادة"
+      },
+      "tr": {
+        "ar": "shahāda"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": {
+        "en": "When I first arrived, everything felt unfamiliar: the language, the food, even the buses.",
+        "fr": "Quand je suis arrivée, tout me semblait inconnu : la langue, la nourriture, même les bus.",
+        "es": "Cuando llegué, todo me parecía desconocido: el idioma, la comida, incluso los autobuses.",
+        "ar": "عندما وصلت أول مرة بدا لي كل شيء غير مألوف: اللغة والطعام وحتى الحافلات."
+      },
+      "tr": {
+        "ar": "ʿindamā waṣaltu awwala marra badā lī kullu shayʾ ghayr maʾlūf: al-lugha wa-aṭ-ṭaʿām wa-ḥattā al-ḥāfilāt."
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "It took me about six months to get used to the climate and the pace of life.",
+        "fr": "Il m'a fallu environ six mois pour m'habituer au climat et au rythme de vie.",
+        "es": "Tardé unos seis meses en acostumbrarme al clima y al ritmo de vida.",
+        "ar": "احتجت إلى نحو ستة أشهر لأعتاد على المناخ وإيقاع الحياة."
+      },
+      "tr": {
+        "ar": "iḥtajtu ilā naḥwi sittat ashhur li-aʿtāda ʿalā al-manākh wa-īqāʿ al-ḥayāh."
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "Culture shock is normal; most expats go through it in the first year.",
+        "fr": "Le choc culturel est normal ; la plupart des expatriés le vivent la première année.",
+        "es": "El choque cultural es normal; la mayoría de los expatriados lo viven el primer año.",
+        "ar": "الصدمة الثقافية أمر طبيعي، ويمر بها معظم المغتربين في السنة الأولى."
+      },
+      "tr": {
+        "ar": "aṣ-ṣadma ath-thaqāfiyya amr ṭabīʿī, wa-yamurru bihā muʿẓam al-mughtaribīn fī as-sana al-ūlā."
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "I miss my family terribly, especially during the holidays.",
+        "fr": "Ma famille me manque terriblement, surtout pendant les fêtes.",
+        "es": "Echo muchísimo de menos a mi familia, sobre todo en las fiestas.",
+        "ar": "أشتاق إلى أسرتي كثيرا، خاصة في الأعياد."
+      },
+      "tr": {
+        "ar": "ashtāqu ilā usratī kathīran, khāṣṣatan fī al-aʿyād."
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "Rent in the capital is so high that most newcomers move to the suburbs.",
+        "fr": "Le loyer dans la capitale est si élevé que la plupart des nouveaux arrivants s'installent en banlieue.",
+        "es": "El alquiler en la capital es tan alto que la mayoría de los recién llegados se van a las afueras.",
+        "ar": "الإيجار في العاصمة مرتفع جدا لدرجة أن معظم الوافدين الجدد ينتقلون إلى الضواحي."
+      },
+      "tr": {
+        "ar": "al-ījār fī al-ʿāṣima murtafiʿ jiddan li-darajat anna muʿẓam al-wāfidīn al-judud yantaqilūna ilā aḍ-ḍawāḥī."
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "Before signing the contract, ask the landlord whether the bills are included.",
+        "fr": "Avant de signer le contrat, demande au propriétaire si les charges sont comprises.",
+        "es": "Antes de firmar el contrato, pregunta al casero si los gastos están incluidos.",
+        "ar": "قبل أن توقع العقد اسأل مالك العقار هل الفواتير مشمولة."
+      },
+      "tr": {
+        "ar": "qabla an tuwaqqiʿa al-ʿaqd isʾal mālik al-ʿaqār hal al-fawātīr mashmūla."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "I'd like to apply for a residence permit. Which documents do I need?",
+        "fr": "Je voudrais faire une demande de titre de séjour. De quels documents ai-je besoin ?",
+        "es": "Quisiera solicitar un permiso de residencia. ¿Qué documentos necesito?",
+        "ar": "أود أن أتقدم بطلب تصريح إقامة. ما الوثائق التي أحتاج إليها؟"
+      },
+      "tr": {
+        "ar": "awaddu an ataqaddama bi-ṭalab taṣrīḥ iqāma. mā al-wathāʾiq allatī aḥtāju ilayhā?"
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "You need your passport, a signed contract and proof of address.",
+        "fr": "Il vous faut votre passeport, un contrat signé et un justificatif de domicile.",
+        "es": "Necesita su pasaporte, un contrato firmado y un justificante de domicilio.",
+        "ar": "تحتاج إلى جواز سفرك وعقد موقع وإثبات عنوان."
+      },
+      "tr": {
+        "ar": "taḥtāju ilā jawāz safarika wa-ʿaqd muwaqqaʿ wa-ithbāt ʿunwān."
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "Do I have to translate the documents, or is a copy enough?",
+        "fr": "Dois-je faire traduire les documents, ou une copie suffit-elle ?",
+        "es": "¿Tengo que traducir los documentos o basta con una copia?",
+        "ar": "هل يجب أن أترجم الوثائق أم تكفي نسخة؟"
+      },
+      "tr": {
+        "ar": "hal yajibu an uttarjima al-wathāʾiq am takfī nuskha?"
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "They must be translated by a sworn translator, and the fee is thirty euros.",
+        "fr": "Ils doivent être traduits par un traducteur assermenté, et les frais s'élèvent à trente euros.",
+        "es": "Deben traducirlos por un traductor jurado, y la tasa es de treinta euros.",
+        "ar": "يجب أن يترجمها مترجم محلف، والرسوم ثلاثون يورو."
+      },
+      "tr": {
+        "ar": "yajibu an yutarjimahā mutarjim muḥallaf, wa-r-rusūm thalāthūn yūrū."
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "The queue at the office was so long that I had to come back the next day.",
+        "fr": "La file d'attente au bureau était si longue que j'ai dû revenir le lendemain.",
+        "es": "La cola de la oficina era tan larga que tuve que volver al día siguiente.",
+        "ar": "كان الطابور في المكتب طويلا جدا حتى اضطررت إلى العودة في اليوم التالي."
+      },
+      "tr": {
+        "ar": "kāna aṭ-ṭābūr fī al-maktab ṭawīlan jiddan ḥattā iḍṭarartu ilā al-ʿawda fī al-yawm at-tālī."
+      }
+    },
+    {
+      "id": "s12",
+      "text": {
+        "en": "Next time, make an appointment online so you don't waste half a day.",
+        "fr": "La prochaine fois, prends rendez-vous en ligne pour ne pas perdre une demi-journée.",
+        "es": "La próxima vez, pide cita por internet para no perder media jornada.",
+        "ar": "في المرة القادمة احجز موعدا عبر الإنترنت كي لا تضيع نصف يوم."
+      },
+      "tr": {
+        "ar": "fī al-marra al-qādima iḥjiz mawʿidan ʿabra al-intirnit kay lā tuḍayyiʿa niṣf yawm."
+      }
+    },
+    {
+      "id": "s13",
+      "text": {
+        "en": "The deadline to renew my visa is next Friday, and I still haven't filled in the form.",
+        "fr": "La date limite pour renouveler mon visa est vendredi prochain, et je n'ai pas encore rempli le formulaire.",
+        "es": "El plazo para renovar mi visado termina el viernes que viene y aún no he rellenado el formulario.",
+        "ar": "المهلة لتجديد تأشيرتي تنتهي يوم الجمعة المقبل ولم أملأ الاستمارة بعد."
+      },
+      "tr": {
+        "ar": "al-muhla li-tajdīd taʾshīratī tantahī yawm al-jumuʿa al-muqbil wa-lam amlaʾ al-istimāra baʿd."
+      }
+    },
+    {
+      "id": "s14",
+      "text": {
+        "en": "Bureaucracy here is complicated, but the staff are usually helpful.",
+        "fr": "La bureaucratie ici est compliquée, mais le personnel est en général serviable.",
+        "es": "La burocracia aquí es complicada, pero el personal suele ser amable.",
+        "ar": "البيروقراطية هنا معقدة، لكن الموظفين عادة متعاونون."
+      },
+      "tr": {
+        "ar": "al-bīrūqrāṭiyya hunā muʿaqqada, lākin al-muwaẓẓafīn ʿāda mutaʿāwinūn."
+      }
+    },
+    {
+      "id": "s15",
+      "text": {
+        "en": "If I had known how complicated it was, I would have started the paperwork earlier.",
+        "fr": "Si j'avais su que c'était si compliqué, j'aurais commencé les démarches plus tôt.",
+        "es": "Si hubiera sabido lo complicado que era, habría empezado los trámites antes.",
+        "ar": "لو علمت كم هو معقد لبدأت الإجراءات قبل ذلك."
+      },
+      "tr": {
+        "ar": "law ʿalimtu kam huwa muʿaqqad la-badaʾtu al-ijrāʾāt qabla dhālika."
+      }
+    },
+    {
+      "id": "s16",
+      "text": {
+        "en": "My accent embarrassed me at first, but people were patient.",
+        "fr": "Mon accent me gênait au début, mais les gens étaient patients.",
+        "es": "Al principio me daba vergüenza mi acento, pero la gente tuvo paciencia.",
+        "ar": "أحرجتني لكنتي في البداية، لكن الناس كانوا صبورين."
+      },
+      "tr": {
+        "ar": "aḥrajatnī luknatī fī al-bidāya, lākin an-nās kānū ṣābirīn."
+      }
+    },
+    {
+      "id": "s17",
+      "text": {
+        "en": "The language barrier is the hardest part; I can't explain what I really mean.",
+        "fr": "La barrière de la langue est le plus difficile ; je n'arrive pas à expliquer ce que je pense vraiment.",
+        "es": "La barrera del idioma es lo más difícil; no consigo explicar lo que realmente quiero decir.",
+        "ar": "حاجز اللغة هو أصعب شيء، فلا أستطيع أن أشرح ما أقصده حقا."
+      },
+      "tr": {
+        "ar": "ḥājiz al-lugha huwa aṣʿab shayʾ, fa-lā astaṭīʿu an ashraḥa mā aqṣiduhu ḥaqqan."
+      }
+    },
+    {
+      "id": "s18",
+      "text": {
+        "en": "Try to register at the local library; you will meet people and practise at the same time.",
+        "fr": "Essaie de t'inscrire à la bibliothèque locale : tu rencontreras des gens et tu t'entraîneras en même temps.",
+        "es": "Intenta apuntarte a la biblioteca del barrio: conocerás gente y practicarás al mismo tiempo.",
+        "ar": "حاول أن تسجل في المكتبة المحلية، فستتعرف على الناس وتتدرب في الوقت نفسه."
+      },
+      "tr": {
+        "ar": "ḥāwil an tusajjila fī al-maktaba al-maḥalliyya, fa-sa-tataʿarrafu ʿalā an-nās wa-tatadarrabu fī al-waqt nafsih."
+      }
+    },
+    {
+      "id": "s19",
+      "text": {
+        "en": "My neighbours were so welcoming that I felt at home after a few weeks.",
+        "fr": "Mes voisins étaient si accueillants que je me suis senti chez moi au bout de quelques semaines.",
+        "es": "Mis vecinos fueron tan acogedores que me sentí como en casa a las pocas semanas.",
+        "ar": "كان جيراني مضيافين إلى درجة أنني شعرت وكأنني في بيتي بعد أسابيع قليلة."
+      },
+      "tr": {
+        "ar": "kāna jīrānī miḍyāfīna ilā darajat annanī shaʿartu ka-annanī fī baytī baʿda asābīʿ qalīla."
+      }
+    },
+    {
+      "id": "s20",
+      "text": {
+        "en": "The cost of living is higher than I expected, so I use public transport.",
+        "fr": "Le coût de la vie est plus élevé que je ne le pensais, alors je prends les transports en commun.",
+        "es": "El coste de la vida es más alto de lo que esperaba, así que uso el transporte público.",
+        "ar": "تكلفة المعيشة أعلى مما توقعت، لذلك أستخدم المواصلات العامة."
+      },
+      "tr": {
+        "ar": "taklifat al-maʿīsha aʿlā mimmā tawaqqaʿtu, li-dhālika astakhdimu al-muwāṣalāt al-ʿāmma."
+      }
+    },
+    {
+      "id": "s21",
+      "text": {
+        "en": "She says she hasn't integrated yet, though she has lived here for three years.",
+        "fr": "Elle dit qu'elle ne s'est pas encore intégrée, alors qu'elle vit ici depuis trois ans.",
+        "es": "Dice que todavía no se ha integrado, aunque lleva tres años viviendo aquí.",
+        "ar": "تقول إنها لم تندمج بعد رغم أنها تعيش هنا منذ ثلاث سنوات."
+      },
+      "tr": {
+        "ar": "taqūlu innahā lam tandamij baʿd raghma annahā taʿīshu hunā mundhu thalāth sanawāt."
+      }
+    },
+    {
+      "id": "s22",
+      "text": {
+        "en": "Do you feel that you belong here now, or do you still feel like a foreigner?",
+        "fr": "Te sens-tu à ta place ici maintenant, ou te sens-tu encore étranger ?",
+        "es": "¿Ahora te sientes parte de este lugar o todavía te sientes extranjero?",
+        "ar": "هل تشعر الآن أنك تنتمي إلى هنا أم ما زلت تشعر أنك أجنبي؟"
+      },
+      "tr": {
+        "ar": "hal tashʿuru al-āna annaka tantamī ilā hunā am mā zilta tashʿuru annaka ajnabī?"
+      }
+    },
+    {
+      "id": "s23",
+      "text": {
+        "en": "A bit of both. I have a new home, but my heart is in two countries.",
+        "fr": "Un peu des deux. J'ai un nouveau foyer, mais mon cœur est dans deux pays.",
+        "es": "Un poco de ambas cosas. Tengo un hogar nuevo, pero mi corazón está en dos países.",
+        "ar": "قليلا من الاثنين. لدي بيت جديد لكن قلبي في بلدين."
+      },
+      "tr": {
+        "ar": "qalīlan min al-ithnayn. ladayya bayt jadīd lākin qalbī fī baladayn."
+      }
+    },
+    {
+      "id": "s24",
+      "text": {
+        "en": "Many immigrants say that learning the language helped them adapt faster.",
+        "fr": "Beaucoup d'immigrés disent qu'apprendre la langue les a aidés à s'adapter plus vite.",
+        "es": "Muchos inmigrantes dicen que aprender el idioma les ayudó a adaptarse más rápido.",
+        "ar": "يقول كثير من المهاجرين إن تعلم اللغة ساعدهم على التكيف بسرعة أكبر."
+      },
+      "tr": {
+        "ar": "yaqūlu kathīr min al-muhājirīn inna taʿallum al-lugha sāʿadahum ʿalā at-takayyuf bi-surʿa akbar."
+      }
+    },
+    {
+      "id": "s25",
+      "text": {
+        "en": "Once you become a citizen, you will be able to vote in the national elections.",
+        "fr": "Une fois que vous serez citoyen, vous pourrez voter aux élections nationales.",
+        "es": "Cuando seas ciudadano, podrás votar en las elecciones nacionales.",
+        "ar": "بعد أن تصبح مواطنا ستتمكن من التصويت في الانتخابات الوطنية."
+      },
+      "tr": {
+        "ar": "baʿda an tuṣbiḥa muwāṭinan sa-tatamakkanu min at-taṣwīt fī al-intikhābāt al-waṭaniyya."
+      }
+    },
+    {
+      "id": "s26",
+      "text": {
+        "en": "I settled in a quiet neighbourhood near the office, which made everything easier.",
+        "fr": "Je me suis installé dans un quartier calme près du bureau, ce qui a tout facilité.",
+        "es": "Me instalé en un barrio tranquilo cerca de la oficina, lo que facilitó todo.",
+        "ar": "استقررت في حي هادئ قرب المكتب، مما سهل كل شيء."
+      },
+      "tr": {
+        "ar": "istaqrartu fī ḥayy hādiʾ qurba al-maktab, mimmā sahhala kulla shayʾ."
+      }
+    },
+    {
+      "id": "s27",
+      "text": {
+        "en": "Could you tell me where to hand in this form?",
+        "fr": "Pourriez-vous m'indiquer où déposer ce formulaire ?",
+        "es": "¿Podría decirme dónde puedo entregar este formulario?",
+        "ar": "هل يمكنك أن تخبرني أين أسلم هذه الاستمارة؟"
+      },
+      "tr": {
+        "ar": "hal yumkinuka an tukhbiranī ayna usallima hādhihi al-istimāra?"
+      }
+    },
+    {
+      "id": "s28",
+      "text": {
+        "en": "Window number four, but you need to take a number first.",
+        "fr": "Au guichet numéro quatre, mais il faut d'abord prendre un ticket.",
+        "es": "En la ventanilla número cuatro, pero primero tiene que coger un número.",
+        "ar": "عند الشباك رقم أربعة، لكن عليك أن تأخذ رقما أولا."
+      },
+      "tr": {
+        "ar": "ʿinda ash-shubbāk raqm arbaʿa, lākin ʿalayka an taʾkhudha raqman awwalan."
+      }
+    },
+    {
+      "id": "s29",
+      "text": {
+        "en": "Living abroad has taught me that being a newcomer means asking for help.",
+        "fr": "Vivre à l'étranger m'a appris qu'être un nouvel arrivant, c'est savoir demander de l'aide.",
+        "es": "Vivir en el extranjero me ha enseñado que ser un recién llegado significa pedir ayuda.",
+        "ar": "علمني العيش في الخارج أن كون المرء وافدا جديدا يعني أن يطلب المساعدة."
+      },
+      "tr": {
+        "ar": "ʿallamanī al-ʿaysh fī al-khārij anna kawn al-marʾ wāfidan jadīdan yaʿnī an yaṭluba al-musāʿada."
+      }
+    },
+    {
+      "id": "s30",
+      "text": {
+        "en": "Even though it was hard, I would do it again if I had the chance.",
+        "fr": "Même si c'était difficile, je le referais si j'en avais l'occasion.",
+        "es": "Aunque fue difícil, lo volvería a hacer si tuviera la oportunidad.",
+        "ar": "مع أن الأمر كان صعبا، كنت سأفعله مرة أخرى لو أتيحت لي الفرصة."
+      },
+      "tr": {
+        "ar": "maʿa anna al-amr kāna ṣaʿban, kuntu sa-afʿaluhu marra ukhrā law utīḥat lī al-furṣa."
+      }
+    },
+    {
+      "id": "s31",
+      "text": {
+        "en": "The embassy sent me the certificate by post, so I didn't have to travel back.",
+        "fr": "L'ambassade m'a envoyé le certificat par courrier, donc je n'ai pas eu à retourner dans mon pays.",
+        "es": "La embajada me envió el certificado por correo, así que no tuve que viajar de vuelta.",
+        "ar": "أرسلت السفارة لي الشهادة بالبريد، فلم أضطر إلى السفر عائدا."
+      },
+      "tr": {
+        "ar": "arsalat as-sifāra lī ash-shahāda bil-barīd, fa-lam aḍṭarra ilā as-safar ʿāʾidan."
+      }
+    },
+    {
+      "id": "s32",
+      "text": {
+        "en": "Don't worry if you make a mistake on the form; they will tell you what to correct.",
+        "fr": "Ne t'inquiète pas si tu fais une erreur sur le formulaire ; on te dira ce qu'il faut corriger.",
+        "es": "No te preocupes si te equivocas en el formulario; te dirán qué debes corregir.",
+        "ar": "لا تقلق إذا أخطأت في الاستمارة، فسيخبرونك بما يجب تصحيحه."
+      },
+      "tr": {
+        "ar": "lā taqlaq idhā akhṭaʾta fī al-istimāra, fa-sa-yukhbirūnaka bimā yajibu taṣḥīḥuh."
+      }
+    }
+  ],
+  "dialogue": [
+    "s07",
+    "s08",
+    "s09",
+    "s10"
+  ]
+}

@@ -1,7 +1,7 @@
 // After a lesson: stars, XP, accuracy.
-import { h, focusable } from '../../platform/dom.js?v=2.0.0';
-import { t } from '../../platform/i18n.js?v=2.0.0';
-import { starsRow } from '../components.js?v=2.0.0';
+import { h, focusable } from '../../platform/dom.js?v=2.1.0';
+import { t } from '../../platform/i18n.js?v=2.1.0';
+import { starsRow } from '../components.js?v=2.1.0';
 
 export function resultsScreen(app, lesson, result) {
   const title = lesson.review ? t('reviewDone') : t('lessonDone');

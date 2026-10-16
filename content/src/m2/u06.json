@@ -1,0 +1,866 @@
+{
+ "id": "u06",
+ "level": "m2",
+ "order": 6,
+ "title": {
+  "en": "Technology",
+  "fr": "Technologie",
+  "es": "Tecnología",
+  "ar": "التكنولوجيا"
+ },
+ "tip": {
+  "en": "Give instructions with the imperative: \"Click here\", \"Turn it off and on again\", \"Don't forget to save\".",
+  "fr": "Donnez des instructions à l'impératif : « Cliquez ici », « Éteignez et rallumez », « N'oubliez pas d'enregistrer ».",
+  "es": "Da instrucciones con el imperativo: «Haz clic aquí», «Apágalo y vuelve a encenderlo», «No olvides guardar».",
+  "ar": "أعط التعليمات بصيغة الأمر: «انقر هنا»، «أطفئه ثم شغله من جديد»، «لا تنس الحفظ»."
+ },
+ "words": [
+  {
+   "id": "computer",
+   "text": {
+    "en": "computer",
+    "fr": "ordinateur",
+    "es": "ordenador",
+    "ar": "حاسوب"
+   },
+   "tr": {
+    "ar": "ḥāsūb"
+   }
+  },
+  {
+   "id": "laptop",
+   "text": {
+    "en": "laptop",
+    "fr": "ordinateur portable",
+    "es": "portátil",
+    "ar": "حاسوب محمول"
+   },
+   "tr": {
+    "ar": "ḥāsūb maḥmūl"
+   }
+  },
+  {
+   "id": "tablet",
+   "text": {
+    "en": "tablet",
+    "fr": "tablette",
+    "es": "tableta",
+    "ar": "لوح إلكتروني"
+   },
+   "tr": {
+    "ar": "lawḥ iliktrūnī"
+   }
+  },
+  {
+   "id": "smartphone",
+   "text": {
+    "en": "smartphone",
+    "fr": "smartphone",
+    "es": "teléfono inteligente",
+    "ar": "هاتف ذكي"
+   },
+   "tr": {
+    "ar": "hātif dhakī"
+   }
+  },
+  {
+   "id": "screen",
+   "text": {
+    "en": "screen",
+    "fr": "écran",
+    "es": "pantalla",
+    "ar": "شاشة"
+   },
+   "tr": {
+    "ar": "shāsha"
+   }
+  },
+  {
+   "id": "keyboard",
+   "text": {
+    "en": "keyboard",
+    "fr": "clavier",
+    "es": "teclado",
+    "ar": "لوحة المفاتيح"
+   },
+   "tr": {
+    "ar": "lawḥat al-mafātīḥ"
+   }
+  },
+  {
+   "id": "mouse",
+   "text": {
+    "en": "mouse",
+    "fr": "souris",
+    "es": "ratón",
+    "ar": "فأرة"
+   },
+   "tr": {
+    "ar": "faʾra"
+   }
+  },
+  {
+   "id": "printer",
+   "text": {
+    "en": "printer",
+    "fr": "imprimante",
+    "es": "impresora",
+    "ar": "طابعة"
+   },
+   "tr": {
+    "ar": "ṭābiʿa"
+   }
+  },
+  {
+   "id": "charger",
+   "text": {
+    "en": "charger",
+    "fr": "chargeur",
+    "es": "cargador",
+    "ar": "شاحن"
+   },
+   "tr": {
+    "ar": "shāḥin"
+   }
+  },
+  {
+   "id": "battery",
+   "text": {
+    "en": "battery",
+    "fr": "batterie",
+    "es": "batería",
+    "ar": "بطارية"
+   },
+   "tr": {
+    "ar": "baṭṭāriyya"
+   }
+  },
+  {
+   "id": "headphones",
+   "text": {
+    "en": "headphones",
+    "fr": "casque audio",
+    "es": "auriculares",
+    "ar": "سماعات"
+   },
+   "tr": {
+    "ar": "samāʿāt"
+   }
+  },
+  {
+   "id": "internet",
+   "text": {
+    "en": "internet",
+    "fr": "internet",
+    "es": "internet",
+    "ar": "إنترنت"
+   },
+   "tr": {
+    "ar": "intarnit"
+   }
+  },
+  {
+   "id": "wi_fi",
+   "text": {
+    "en": "Wi-Fi",
+    "fr": "Wi-Fi",
+    "es": "wifi",
+    "ar": "واي فاي"
+   },
+   "tr": {
+    "ar": "wāy fāy"
+   }
+  },
+  {
+   "id": "password",
+   "text": {
+    "en": "password",
+    "fr": "mot de passe",
+    "es": "contraseña",
+    "ar": "كلمة المرور"
+   },
+   "tr": {
+    "ar": "kalimat al-murūr"
+   }
+  },
+  {
+   "id": "website",
+   "text": {
+    "en": "website",
+    "fr": "site web",
+    "es": "sitio web",
+    "ar": "موقع إلكتروني"
+   },
+   "tr": {
+    "ar": "mawqiʿ iliktrūnī"
+   }
+  },
+  {
+   "id": "app",
+   "text": {
+    "en": "app",
+    "fr": "application",
+    "es": "aplicación",
+    "ar": "تطبيق"
+   },
+   "tr": {
+    "ar": "taṭbīq"
+   }
+  },
+  {
+   "id": "email",
+   "text": {
+    "en": "email",
+    "fr": "courriel",
+    "es": "correo electrónico",
+    "ar": "بريد إلكتروني"
+   },
+   "tr": {
+    "ar": "barīd iliktrūnī"
+   }
+  },
+  {
+   "id": "message",
+   "text": {
+    "en": "message",
+    "fr": "message",
+    "es": "mensaje",
+    "ar": "رسالة"
+   },
+   "tr": {
+    "ar": "risāla"
+   }
+  },
+  {
+   "id": "file",
+   "text": {
+    "en": "file",
+    "fr": "fichier",
+    "es": "archivo",
+    "ar": "ملف"
+   },
+   "tr": {
+    "ar": "milaff"
+   }
+  },
+  {
+   "id": "photo",
+   "text": {
+    "en": "photo",
+    "fr": "photo",
+    "es": "foto",
+    "ar": "صورة"
+   },
+   "tr": {
+    "ar": "ṣūra"
+   }
+  },
+  {
+   "id": "video_call",
+   "text": {
+    "en": "video call",
+    "fr": "appel vidéo",
+    "es": "videollamada",
+    "ar": "مكالمة فيديو"
+   },
+   "tr": {
+    "ar": "mukālamat fīdiyū"
+   }
+  },
+  {
+   "id": "link",
+   "text": {
+    "en": "link",
+    "fr": "lien",
+    "es": "enlace",
+    "ar": "رابط"
+   },
+   "tr": {
+    "ar": "rābiṭ"
+   }
+  },
+  {
+   "id": "account",
+   "text": {
+    "en": "account",
+    "fr": "compte",
+    "es": "cuenta",
+    "ar": "حساب"
+   },
+   "tr": {
+    "ar": "ḥisāb"
+   }
+  },
+  {
+   "id": "software",
+   "text": {
+    "en": "software",
+    "fr": "logiciel",
+    "es": "programa",
+    "ar": "برنامج"
+   },
+   "tr": {
+    "ar": "barnāmaj"
+   }
+  },
+  {
+   "id": "update",
+   "text": {
+    "en": "update",
+    "fr": "mise à jour",
+    "es": "actualización",
+    "ar": "تحديث"
+   },
+   "tr": {
+    "ar": "taḥdīth"
+   }
+  },
+  {
+   "id": "signal",
+   "text": {
+    "en": "signal",
+    "fr": "signal",
+    "es": "señal",
+    "ar": "إشارة"
+   },
+   "tr": {
+    "ar": "ishāra"
+   }
+  },
+  {
+   "id": "to_click",
+   "text": {
+    "en": "to click",
+    "fr": "cliquer",
+    "es": "hacer clic",
+    "ar": "ينقر"
+   },
+   "tr": {
+    "ar": "yanqur"
+   }
+  },
+  {
+   "id": "to_download",
+   "text": {
+    "en": "to download",
+    "fr": "télécharger",
+    "es": "descargar",
+    "ar": "ينزل"
+   },
+   "tr": {
+    "ar": "yunazzil"
+   }
+  },
+  {
+   "id": "to_install",
+   "text": {
+    "en": "to install",
+    "fr": "installer",
+    "es": "instalar",
+    "ar": "يثبت"
+   },
+   "tr": {
+    "ar": "yuthabbit"
+   }
+  },
+  {
+   "id": "to_save",
+   "text": {
+    "en": "to save",
+    "fr": "enregistrer",
+    "es": "guardar",
+    "ar": "يحفظ"
+   },
+   "tr": {
+    "ar": "yaḥfaẓ"
+   }
+  },
+  {
+   "id": "to_delete",
+   "text": {
+    "en": "to delete",
+    "fr": "supprimer",
+    "es": "borrar",
+    "ar": "يحذف"
+   },
+   "tr": {
+    "ar": "yaḥdhif"
+   }
+  },
+  {
+   "id": "to_send",
+   "text": {
+    "en": "to send",
+    "fr": "envoyer",
+    "es": "enviar",
+    "ar": "يرسل"
+   },
+   "tr": {
+    "ar": "yursil"
+   }
+  },
+  {
+   "id": "to_connect",
+   "text": {
+    "en": "to connect",
+    "fr": "connecter",
+    "es": "conectar",
+    "ar": "يوصل"
+   },
+   "tr": {
+    "ar": "yuwaṣṣil"
+   }
+  },
+  {
+   "id": "to_turn_on",
+   "text": {
+    "en": "to turn on",
+    "fr": "allumer",
+    "es": "encender",
+    "ar": "يشغل"
+   },
+   "tr": {
+    "ar": "yushaghghil"
+   }
+  },
+  {
+   "id": "to_turn_off",
+   "text": {
+    "en": "to turn off",
+    "fr": "éteindre",
+    "es": "apagar",
+    "ar": "يطفئ"
+   },
+   "tr": {
+    "ar": "yuṭfiʾ"
+   }
+  },
+  {
+   "id": "to_charge",
+   "text": {
+    "en": "to charge",
+    "fr": "recharger",
+    "es": "cargar",
+    "ar": "يشحن"
+   },
+   "tr": {
+    "ar": "yashḥan"
+   }
+  },
+  {
+   "id": "to_search",
+   "text": {
+    "en": "to search",
+    "fr": "chercher",
+    "es": "buscar",
+    "ar": "يبحث"
+   },
+   "tr": {
+    "ar": "yabḥath"
+   }
+  },
+  {
+   "id": "to_restart",
+   "text": {
+    "en": "to restart",
+    "fr": "redémarrer",
+    "es": "reiniciar",
+    "ar": "يعيد التشغيل"
+   },
+   "tr": {
+    "ar": "yuʿīd at-tashghīl"
+   }
+  },
+  {
+   "id": "slow",
+   "text": {
+    "en": "slow",
+    "fr": "lent",
+    "es": "lento",
+    "ar": "بطيء"
+   },
+   "tr": {
+    "ar": "baṭīʾ"
+   }
+  },
+  {
+   "id": "broken",
+   "text": {
+    "en": "broken",
+    "fr": "cassé",
+    "es": "estropeado",
+    "ar": "معطل"
+   },
+   "tr": {
+    "ar": "muʿaṭṭal"
+   }
+  },
+  {
+   "id": "online",
+   "text": {
+    "en": "online",
+    "fr": "en ligne",
+    "es": "en línea",
+    "ar": "متصل بالإنترنت"
+   },
+   "tr": {
+    "ar": "muttaṣil bi-al-intarnit"
+   }
+  },
+  {
+   "id": "technician",
+   "text": {
+    "en": "technician",
+    "fr": "technicien",
+    "es": "técnico",
+    "ar": "فني"
+   },
+   "tr": {
+    "ar": "fannī"
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "text": {
+    "en": "My computer is very slow today. What should I do?",
+    "fr": "Mon ordinateur est très lent aujourd'hui. Que dois-je faire ?",
+    "es": "Mi ordenador va muy lento hoy. ¿Qué debo hacer?",
+    "ar": "حاسوبي بطيء جدا اليوم. ماذا أفعل؟"
+   },
+   "tr": {
+    "ar": "ḥāsūbī baṭīʾ jiddan al-yawm. mādhā afʿal?"
+   }
+  },
+  {
+   "id": "s02",
+   "text": {
+    "en": "Turn it off, wait a minute, and turn it on again.",
+    "fr": "Éteignez-le, attendez une minute et rallumez-le.",
+    "es": "Apágalo, espera un minuto y vuelve a encenderlo.",
+    "ar": "أطفئه وانتظر دقيقة ثم شغله من جديد."
+   },
+   "tr": {
+    "ar": "aṭfiʾhu wa-intaẓir daqīqa thumma shaghghilhu min jadīd."
+   }
+  },
+  {
+   "id": "s03",
+   "text": {
+    "en": "I can't connect to the Wi-Fi. The signal is weak.",
+    "fr": "Je n'arrive pas à me connecter au Wi-Fi. Le signal est faible.",
+    "es": "No puedo conectarme al wifi. La señal es débil.",
+    "ar": "لا أستطيع الاتصال بالواي فاي. الإشارة ضعيفة."
+   },
+   "tr": {
+    "ar": "lā astaṭīʿ al-ittiṣāl bi-al-wāy fāy. al-ishāra ḍaʿīfa."
+   }
+  },
+  {
+   "id": "s04",
+   "text": {
+    "en": "What is the password for the Wi-Fi?",
+    "fr": "Quel est le mot de passe du Wi-Fi ?",
+    "es": "¿Cuál es la contraseña del wifi?",
+    "ar": "ما كلمة مرور الواي فاي؟"
+   },
+   "tr": {
+    "ar": "mā kalimat murūr al-wāy fāy?"
+   }
+  },
+  {
+   "id": "s05",
+   "text": {
+    "en": "Don't share your password with anyone.",
+    "fr": "Ne partagez votre mot de passe avec personne.",
+    "es": "No compartas tu contraseña con nadie.",
+    "ar": "لا تشارك كلمة مرورك مع أحد."
+   },
+   "tr": {
+    "ar": "lā tushārik kalimat murūrik maʿa aḥad."
+   }
+  },
+  {
+   "id": "s06",
+   "text": {
+    "en": "First, click on the link and download the app.",
+    "fr": "D'abord, cliquez sur le lien et téléchargez l'application.",
+    "es": "Primero, haz clic en el enlace y descarga la aplicación.",
+    "ar": "أولا انقر على الرابط ونزل التطبيق."
+   },
+   "tr": {
+    "ar": "awwalan unqur ʿalā ar-rābiṭ wa-nazzil at-taṭbīq."
+   }
+  },
+  {
+   "id": "s07",
+   "text": {
+    "en": "Then install it and create an account.",
+    "fr": "Ensuite, installez-la et créez un compte.",
+    "es": "Después instálala y crea una cuenta.",
+    "ar": "ثم ثبته وأنشئ حسابا."
+   },
+   "tr": {
+    "ar": "thumma thabbithu wa-anshiʾ ḥisāban."
+   }
+  },
+  {
+   "id": "s08",
+   "text": {
+    "en": "Don't forget to save the file before you close it.",
+    "fr": "N'oubliez pas d'enregistrer le fichier avant de le fermer.",
+    "es": "No olvides guardar el archivo antes de cerrarlo.",
+    "ar": "لا تنس حفظ الملف قبل إغلاقه."
+   },
+   "tr": {
+    "ar": "lā tansa ḥifẓ al-milaff qabla ighlāqih."
+   }
+  },
+  {
+   "id": "s09",
+   "text": {
+    "en": "I deleted the wrong photo by mistake.",
+    "fr": "J'ai supprimé la mauvaise photo par erreur.",
+    "es": "He borrado la foto equivocada sin querer.",
+    "ar": "حذفت الصورة الخاطئة عن طريق الخطأ."
+   },
+   "tr": {
+    "ar": "ḥadhaftu aṣ-ṣūra al-khāṭiʾa ʿan ṭarīq al-khaṭaʾ."
+   }
+  },
+  {
+   "id": "s10",
+   "text": {
+    "en": "I will send you the document by email.",
+    "fr": "Je vous enverrai le document par courriel.",
+    "es": "Le enviaré el documento por correo electrónico.",
+    "ar": "سأرسل لك الوثيقة بالبريد الإلكتروني."
+   },
+   "tr": {
+    "ar": "saʾursil laka al-wathīqa bi-al-barīd al-iliktrūnī."
+   }
+  },
+  {
+   "id": "s11",
+   "text": {
+    "en": "Did you get my message? I sent it an hour ago.",
+    "fr": "Tu as reçu mon message ? Je l'ai envoyé il y a une heure.",
+    "es": "¿Recibiste mi mensaje? Lo envié hace una hora.",
+    "ar": "هل وصلتك رسالتي؟ أرسلتها قبل ساعة."
+   },
+   "tr": {
+    "ar": "hal waṣalatka risālatī? arsaltuhā qabla sāʿa."
+   }
+  },
+  {
+   "id": "s12",
+   "text": {
+    "en": "My phone battery is almost empty. Do you have a charger?",
+    "fr": "La batterie de mon téléphone est presque vide. Avez-vous un chargeur ?",
+    "es": "A mi teléfono le queda poca batería. ¿Tienes un cargador?",
+    "ar": "بطارية هاتفي شبه فارغة. هل لديك شاحن؟"
+   },
+   "tr": {
+    "ar": "baṭṭāriyyat hātifī shibh fārigha. hal ladayka shāḥin?"
+   }
+  },
+  {
+   "id": "s13",
+   "text": {
+    "en": "The screen is broken, so I need a new one.",
+    "fr": "L'écran est cassé, donc il m'en faut un nouveau.",
+    "es": "La pantalla está rota, así que necesito una nueva.",
+    "ar": "الشاشة مكسورة لذلك أحتاج إلى واحدة جديدة."
+   },
+   "tr": {
+    "ar": "ash-shāsha maksūra li-dhālika aḥtāj ilā wāḥida jadīda."
+   }
+  },
+  {
+   "id": "s14",
+   "text": {
+    "en": "The printer doesn't work. Can you call the technician?",
+    "fr": "L'imprimante ne marche pas. Pouvez-vous appeler le technicien ?",
+    "es": "La impresora no funciona. ¿Puede llamar al técnico?",
+    "ar": "الطابعة لا تعمل. هل يمكنك أن تتصل بالفني؟"
+   },
+   "tr": {
+    "ar": "aṭ-ṭābiʿa lā taʿmal. hal yumkinuka an tattaṣil bi-al-fannī?"
+   }
+  },
+  {
+   "id": "s15",
+   "text": {
+    "en": "You need to update the software before you use it.",
+    "fr": "Il faut mettre à jour le logiciel avant de l'utiliser.",
+    "es": "Tienes que actualizar el programa antes de usarlo.",
+    "ar": "عليك أن تحدث البرنامج قبل استخدامه."
+   },
+   "tr": {
+    "ar": "ʿalayka an tuḥaddith al-barnāmaj qabla istikhdāmih."
+   }
+  },
+  {
+   "id": "s16",
+   "text": {
+    "en": "I use my smartphone more than my laptop.",
+    "fr": "J'utilise mon smartphone plus que mon ordinateur portable.",
+    "es": "Uso el teléfono más que el portátil.",
+    "ar": "أستخدم هاتفي الذكي أكثر من حاسوبي المحمول."
+   },
+   "tr": {
+    "ar": "astakhdim hātifī adh-dhakī akthar min ḥāsūbī al-maḥmūl."
+   }
+  },
+  {
+   "id": "s17",
+   "text": {
+    "en": "We have a video call with the team at nine.",
+    "fr": "Nous avons un appel vidéo avec l'équipe à neuf heures.",
+    "es": "Tenemos una videollamada con el equipo a las nueve.",
+    "ar": "لدينا مكالمة فيديو مع الفريق في التاسعة."
+   },
+   "tr": {
+    "ar": "ladaynā mukālamat fīdiyū maʿa al-farīq fī at-tāsiʿa."
+   }
+  },
+  {
+   "id": "s18",
+   "text": {
+    "en": "Can you hear me? I think my headphones are broken.",
+    "fr": "Tu m'entends ? Je crois que mon casque est cassé.",
+    "es": "¿Me oyes? Creo que mis auriculares están estropeados.",
+    "ar": "هل تسمعني؟ أظن أن سماعاتي معطلة."
+   },
+   "tr": {
+    "ar": "hal tasmaʿunī? aẓunn anna samāʿātī muʿaṭṭala."
+   }
+  },
+  {
+   "id": "s19",
+   "text": {
+    "en": "Search for the website and click on the first result.",
+    "fr": "Cherchez le site web et cliquez sur le premier résultat.",
+    "es": "Busca el sitio web y haz clic en el primer resultado.",
+    "ar": "ابحث عن الموقع وانقر على النتيجة الأولى."
+   },
+   "tr": {
+    "ar": "ibḥath ʿan al-mawqiʿ wa-unqur ʿalā an-natīja al-ūlā."
+   }
+  },
+  {
+   "id": "s20",
+   "text": {
+    "en": "I am online all day because of my work.",
+    "fr": "Je suis en ligne toute la journée à cause de mon travail.",
+    "es": "Estoy en línea todo el día por mi trabajo.",
+    "ar": "أنا متصل بالإنترنت طوال اليوم بسبب عملي."
+   },
+   "tr": {
+    "ar": "anā muttaṣil bi-al-intarnit ṭawāl al-yawm bi-sabab ʿamalī."
+   }
+  },
+  {
+   "id": "s21",
+   "text": {
+    "en": "Restart the computer if the program doesn't respond.",
+    "fr": "Redémarrez l'ordinateur si le programme ne répond pas.",
+    "es": "Reinicia el ordenador si el programa no responde.",
+    "ar": "أعد تشغيل الحاسوب إذا لم يستجب البرنامج."
+   },
+   "tr": {
+    "ar": "aʿid tashghīl al-ḥāsūb idhā lam yastajib al-barnāmaj."
+   }
+  },
+  {
+   "id": "s22",
+   "text": {
+    "en": "I can't find the file. Where did you save it?",
+    "fr": "Je ne trouve pas le fichier. Où l'as-tu enregistré ?",
+    "es": "No encuentro el archivo. ¿Dónde lo guardaste?",
+    "ar": "لا أجد الملف. أين حفظته؟"
+   },
+   "tr": {
+    "ar": "lā ajid al-milaff. ayna ḥafaẓtah?"
+   }
+  },
+  {
+   "id": "s23",
+   "text": {
+    "en": "Technology makes life easier, but it can also be a distraction.",
+    "fr": "La technologie facilite la vie, mais elle peut aussi distraire.",
+    "es": "La tecnología nos facilita la vida, pero también puede distraernos.",
+    "ar": "التكنولوجيا تسهل الحياة لكنها قد تكون أيضا مصدرا للتشتت."
+   },
+   "tr": {
+    "ar": "at-teknolojiyā tusahhil al-ḥayāt lākinnahā qad takūn aydan maṣdaran lil-tashattut."
+   }
+  },
+  {
+   "id": "s24",
+   "text": {
+    "en": "My grandfather is learning to send messages on his tablet.",
+    "fr": "Mon grand-père apprend à envoyer des messages sur sa tablette.",
+    "es": "Mi abuelo está aprendiendo a enviar mensajes con su tableta.",
+    "ar": "جدي يتعلم إرسال الرسائل على لوحه الإلكتروني."
+   },
+   "tr": {
+    "ar": "jaddī yataʿallam irsāl ar-rasāʾil ʿalā lawḥihi al-iliktrūnī."
+   }
+  },
+  {
+   "id": "s25",
+   "text": {
+    "en": "Which app do you use to learn languages?",
+    "fr": "Quelle application utilises-tu pour apprendre les langues ?",
+    "es": "¿Qué aplicación usas para aprender idiomas?",
+    "ar": "أي تطبيق تستخدم لتعلم اللغات؟"
+   },
+   "tr": {
+    "ar": "ayy taṭbīq tastakhdim li-taʿallum al-lughāt?"
+   }
+  },
+  {
+   "id": "s26",
+   "text": {
+    "en": "Please connect the keyboard and the mouse to the computer.",
+    "fr": "Veuillez brancher le clavier et la souris à l'ordinateur.",
+    "es": "Conecta el teclado y el ratón al ordenador, por favor.",
+    "ar": "من فضلك صل لوحة المفاتيح والفأرة بالحاسوب."
+   },
+   "tr": {
+    "ar": "min faḍlik ṣil lawḥat al-mafātīḥ wa-al-faʾra bi-al-ḥāsūb."
+   }
+  },
+  {
+   "id": "s27",
+   "text": {
+    "en": "Charge your phone tonight so that it is ready tomorrow.",
+    "fr": "Rechargez votre téléphone ce soir pour qu'il soit prêt demain.",
+    "es": "Carga el teléfono esta noche para que mañana esté listo.",
+    "ar": "اشحن هاتفك الليلة ليكون جاهزا غدا."
+   },
+   "tr": {
+    "ar": "ishḥan hātifak al-layla li-yakūn jāhizan ghadan."
+   }
+  },
+  {
+   "id": "s28",
+   "text": {
+    "en": "Thank you, the problem is solved. Everything works now.",
+    "fr": "Merci, le problème est résolu. Tout fonctionne maintenant.",
+    "es": "Gracias, el problema está resuelto. Ahora todo funciona.",
+    "ar": "شكرا، تم حل المشكلة. كل شيء يعمل الآن."
+   },
+   "tr": {
+    "ar": "shukran, tamma ḥall al-mushkila. kull shayʾ yaʿmal al-ān."
+   }
+  }
+ ],
+ "dialogue": [
+  "s01",
+  "s02",
+  "s28"
+ ]
+}

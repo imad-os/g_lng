@@ -1,0 +1,1011 @@
+{
+ "id": "u04",
+ "level": "a3",
+ "order": 4,
+ "title": {
+  "en": "Politics",
+  "fr": "La politique",
+  "es": "La política",
+  "ar": "السياسة"
+ },
+ "tip": {
+  "en": "Political language is built on contrast: the government and the opposition, the majority and the minority, a promise and its result. Learn the institutions first, then the verbs that describe what they do: approve, block, reform, resign.",
+  "fr": "Le langage politique repose sur le contraste : le gouvernement et l'opposition, la majorité et la minorité, une promesse et son résultat. Apprenez d'abord les institutions, puis les verbes qui décrivent leur action : adopter, bloquer, réformer, démissionner.",
+  "es": "El lenguaje político se basa en el contraste: el gobierno y la oposición, la mayoría y la minoría, una promesa y su resultado. Aprende primero las instituciones y luego los verbos que describen lo que hacen: aprobar, bloquear, reformar, dimitir.",
+  "ar": "تقوم لغة السياسة على التقابل: الحكومة والمعارضة، والأغلبية والأقلية، والوعد ونتيجته. تعلم المؤسسات أولا ثم الأفعال التي تصف عملها: أقر، عرقل، أصلح، استقال."
+ },
+ "words": [
+  {
+   "id": "government",
+   "text": {
+    "en": "government",
+    "fr": "gouvernement",
+    "es": "gobierno",
+    "ar": "حكومة"
+   },
+   "tr": {
+    "ar": "ḥukūma"
+   }
+  },
+  {
+   "id": "parliament",
+   "text": {
+    "en": "parliament",
+    "fr": "parlement",
+    "es": "parlamento",
+    "ar": "برلمان"
+   },
+   "tr": {
+    "ar": "barlamān"
+   }
+  },
+  {
+   "id": "president",
+   "text": {
+    "en": "president",
+    "fr": "président",
+    "es": "presidente",
+    "ar": "رئيس"
+   },
+   "tr": {
+    "ar": "raʾīs"
+   }
+  },
+  {
+   "id": "prime_minister",
+   "text": {
+    "en": "prime minister",
+    "fr": "Premier ministre",
+    "es": "primer ministro",
+    "ar": "رئيس الوزراء"
+   },
+   "tr": {
+    "ar": "raʾīs al-wuzarāʾ"
+   }
+  },
+  {
+   "id": "minister",
+   "text": {
+    "en": "minister",
+    "fr": "ministre",
+    "es": "ministro",
+    "ar": "وزير"
+   },
+   "tr": {
+    "ar": "wazīr"
+   }
+  },
+  {
+   "id": "election",
+   "text": {
+    "en": "election",
+    "fr": "élection",
+    "es": "elección",
+    "ar": "انتخابات"
+   },
+   "tr": {
+    "ar": "intikhābāt"
+   }
+  },
+  {
+   "id": "vote",
+   "text": {
+    "en": "vote",
+    "fr": "vote",
+    "es": "voto",
+    "ar": "صوت"
+   },
+   "tr": {
+    "ar": "ṣawt"
+   }
+  },
+  {
+   "id": "candidate",
+   "text": {
+    "en": "candidate",
+    "fr": "candidat",
+    "es": "candidato",
+    "ar": "مرشح"
+   },
+   "tr": {
+    "ar": "murashshaḥ"
+   }
+  },
+  {
+   "id": "campaign",
+   "text": {
+    "en": "campaign",
+    "fr": "campagne",
+    "es": "campaña",
+    "ar": "حملة"
+   },
+   "tr": {
+    "ar": "ḥamla"
+   }
+  },
+  {
+   "id": "party",
+   "text": {
+    "en": "party",
+    "fr": "parti",
+    "es": "partido",
+    "ar": "حزب"
+   },
+   "tr": {
+    "ar": "ḥizb"
+   }
+  },
+  {
+   "id": "coalition",
+   "text": {
+    "en": "coalition",
+    "fr": "coalition",
+    "es": "coalición",
+    "ar": "ائتلاف"
+   },
+   "tr": {
+    "ar": "iʾtilāf"
+   }
+  },
+  {
+   "id": "opposition",
+   "text": {
+    "en": "opposition",
+    "fr": "opposition",
+    "es": "oposición",
+    "ar": "معارضة"
+   },
+   "tr": {
+    "ar": "muʿāraḍa"
+   }
+  },
+  {
+   "id": "majority",
+   "text": {
+    "en": "majority",
+    "fr": "majorité",
+    "es": "mayoría",
+    "ar": "أغلبية"
+   },
+   "tr": {
+    "ar": "aghlabiyya"
+   }
+  },
+  {
+   "id": "constitution",
+   "text": {
+    "en": "constitution",
+    "fr": "constitution",
+    "es": "constitución",
+    "ar": "دستور"
+   },
+   "tr": {
+    "ar": "dustūr"
+   }
+  },
+  {
+   "id": "law",
+   "text": {
+    "en": "law",
+    "fr": "loi",
+    "es": "ley",
+    "ar": "قانون"
+   },
+   "tr": {
+    "ar": "qānūn"
+   }
+  },
+  {
+   "id": "bill",
+   "text": {
+    "en": "bill",
+    "fr": "projet de loi",
+    "es": "proyecto de ley",
+    "ar": "مشروع قانون"
+   },
+   "tr": {
+    "ar": "mashrūʿ qānūn"
+   }
+  },
+  {
+   "id": "reform",
+   "text": {
+    "en": "reform",
+    "fr": "réforme",
+    "es": "reforma",
+    "ar": "إصلاح"
+   },
+   "tr": {
+    "ar": "iṣlāḥ"
+   }
+  },
+  {
+   "id": "policy",
+   "text": {
+    "en": "policy",
+    "fr": "politique",
+    "es": "política",
+    "ar": "سياسة"
+   },
+   "tr": {
+    "ar": "siyāsa"
+   }
+  },
+  {
+   "id": "democracy",
+   "text": {
+    "en": "democracy",
+    "fr": "démocratie",
+    "es": "democracia",
+    "ar": "ديمقراطية"
+   },
+   "tr": {
+    "ar": "dīmuqrāṭiyya"
+   }
+  },
+  {
+   "id": "dictatorship",
+   "text": {
+    "en": "dictatorship",
+    "fr": "dictature",
+    "es": "dictadura",
+    "ar": "دكتاتورية"
+   },
+   "tr": {
+    "ar": "diktātūriyya"
+   }
+  },
+  {
+   "id": "sovereignty",
+   "text": {
+    "en": "sovereignty",
+    "fr": "souveraineté",
+    "es": "soberanía",
+    "ar": "سيادة"
+   },
+   "tr": {
+    "ar": "siyāda"
+   }
+  },
+  {
+   "id": "citizen",
+   "text": {
+    "en": "citizen",
+    "fr": "citoyen",
+    "es": "ciudadano",
+    "ar": "مواطن"
+   },
+   "tr": {
+    "ar": "muwāṭin"
+   }
+  },
+  {
+   "id": "rights",
+   "text": {
+    "en": "rights",
+    "fr": "droits",
+    "es": "derechos",
+    "ar": "حقوق"
+   },
+   "tr": {
+    "ar": "ḥuqūq"
+   }
+  },
+  {
+   "id": "freedom_of_speech",
+   "text": {
+    "en": "freedom of speech",
+    "fr": "liberté d'expression",
+    "es": "libertad de expresión",
+    "ar": "حرية التعبير"
+   },
+   "tr": {
+    "ar": "ḥurriyyat at-taʿbīr"
+   }
+  },
+  {
+   "id": "court",
+   "text": {
+    "en": "court",
+    "fr": "tribunal",
+    "es": "tribunal",
+    "ar": "محكمة"
+   },
+   "tr": {
+    "ar": "maḥkama"
+   }
+  },
+  {
+   "id": "judge",
+   "text": {
+    "en": "judge",
+    "fr": "juge",
+    "es": "juez",
+    "ar": "قاض"
+   },
+   "tr": {
+    "ar": "qāḍin"
+   }
+  },
+  {
+   "id": "corruption",
+   "text": {
+    "en": "corruption",
+    "fr": "corruption",
+    "es": "corrupción",
+    "ar": "فساد"
+   },
+   "tr": {
+    "ar": "fasād"
+   }
+  },
+  {
+   "id": "budget",
+   "text": {
+    "en": "budget",
+    "fr": "budget",
+    "es": "presupuesto",
+    "ar": "ميزانية"
+   },
+   "tr": {
+    "ar": "mīzāniyya"
+   }
+  },
+  {
+   "id": "tax",
+   "text": {
+    "en": "tax",
+    "fr": "impôt",
+    "es": "impuesto",
+    "ar": "ضريبة"
+   },
+   "tr": {
+    "ar": "ḍarība"
+   }
+  },
+  {
+   "id": "deficit",
+   "text": {
+    "en": "deficit",
+    "fr": "déficit",
+    "es": "déficit",
+    "ar": "عجز"
+   },
+   "tr": {
+    "ar": "ʿajz"
+   }
+  },
+  {
+   "id": "diplomacy",
+   "text": {
+    "en": "diplomacy",
+    "fr": "diplomatie",
+    "es": "diplomacia",
+    "ar": "دبلوماسية"
+   },
+   "tr": {
+    "ar": "dublūmāsiyya"
+   }
+  },
+  {
+   "id": "treaty",
+   "text": {
+    "en": "treaty",
+    "fr": "traité",
+    "es": "tratado",
+    "ar": "معاهدة"
+   },
+   "tr": {
+    "ar": "muʿāhada"
+   }
+  },
+  {
+   "id": "sanction",
+   "text": {
+    "en": "sanction",
+    "fr": "sanction",
+    "es": "sanción",
+    "ar": "عقوبات"
+   },
+   "tr": {
+    "ar": "ʿuqūbāt"
+   }
+  },
+  {
+   "id": "alliance",
+   "text": {
+    "en": "alliance",
+    "fr": "alliance",
+    "es": "alianza",
+    "ar": "تحالف"
+   },
+   "tr": {
+    "ar": "taḥāluf"
+   }
+  },
+  {
+   "id": "summit",
+   "text": {
+    "en": "summit",
+    "fr": "sommet",
+    "es": "cumbre",
+    "ar": "قمة"
+   },
+   "tr": {
+    "ar": "qimma"
+   }
+  },
+  {
+   "id": "protest",
+   "text": {
+    "en": "protest",
+    "fr": "manifestation",
+    "es": "manifestación",
+    "ar": "احتجاج"
+   },
+   "tr": {
+    "ar": "iḥtijāj"
+   }
+  },
+  {
+   "id": "strike",
+   "text": {
+    "en": "strike",
+    "fr": "grève",
+    "es": "huelga",
+    "ar": "إضراب"
+   },
+   "tr": {
+    "ar": "iḍrāb"
+   }
+  },
+  {
+   "id": "rhetoric",
+   "text": {
+    "en": "rhetoric",
+    "fr": "rhétorique",
+    "es": "retórica",
+    "ar": "خطابة"
+   },
+   "tr": {
+    "ar": "khaṭāba"
+   }
+  },
+  {
+   "id": "speech",
+   "text": {
+    "en": "speech",
+    "fr": "discours",
+    "es": "discurso",
+    "ar": "خطاب"
+   },
+   "tr": {
+    "ar": "khiṭāb"
+   }
+  },
+  {
+   "id": "slogan",
+   "text": {
+    "en": "slogan",
+    "fr": "slogan",
+    "es": "eslogan",
+    "ar": "شعار"
+   },
+   "tr": {
+    "ar": "shiʿār"
+   }
+  },
+  {
+   "id": "propaganda",
+   "text": {
+    "en": "propaganda",
+    "fr": "propagande",
+    "es": "propaganda",
+    "ar": "دعاية"
+   },
+   "tr": {
+    "ar": "diʿāya"
+   }
+  },
+  {
+   "id": "populism",
+   "text": {
+    "en": "populism",
+    "fr": "populisme",
+    "es": "populismo",
+    "ar": "شعبوية"
+   },
+   "tr": {
+    "ar": "shaʿbawiyya"
+   }
+  },
+  {
+   "id": "promise",
+   "text": {
+    "en": "promise",
+    "fr": "promesse",
+    "es": "promesa",
+    "ar": "وعد"
+   },
+   "tr": {
+    "ar": "waʿd"
+   }
+  },
+  {
+   "id": "debate",
+   "text": {
+    "en": "debate",
+    "fr": "débat",
+    "es": "debate",
+    "ar": "مناظرة"
+   },
+   "tr": {
+    "ar": "munāẓara"
+   }
+  },
+  {
+   "id": "spokesperson",
+   "text": {
+    "en": "spokesperson",
+    "fr": "porte-parole",
+    "es": "portavoz",
+    "ar": "متحدث رسمي"
+   },
+   "tr": {
+    "ar": "mutaḥaddith rasmī"
+   }
+  },
+  {
+   "id": "resign",
+   "text": {
+    "en": "resign",
+    "fr": "démissionner",
+    "es": "dimitir",
+    "ar": "استقال"
+   },
+   "tr": {
+    "ar": "istaqāla"
+   }
+  },
+  {
+   "id": "veto",
+   "text": {
+    "en": "veto",
+    "fr": "veto",
+    "es": "veto",
+    "ar": "حق النقض"
+   },
+   "tr": {
+    "ar": "ḥaqq an-naqḍ"
+   }
+  },
+  {
+   "id": "referendum",
+   "text": {
+    "en": "referendum",
+    "fr": "référendum",
+    "es": "referéndum",
+    "ar": "استفتاء"
+   },
+   "tr": {
+    "ar": "istiftāʾ"
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "text": {
+    "en": "The parliament approved the bill by a narrow majority.",
+    "fr": "Le parlement a adopté le projet de loi à une courte majorité.",
+    "es": "El parlamento aprobó el proyecto de ley por una mayoría ajustada.",
+    "ar": "أقر البرلمان مشروع القانون بأغلبية ضئيلة."
+   },
+   "tr": {
+    "ar": "aqarra al-barlamān mashrūʿ al-qānūn bi-aghlabiyya ḍaʾīla."
+   }
+  },
+  {
+   "id": "s02",
+   "text": {
+    "en": "The opposition accuses the government of ignoring the constitution.",
+    "fr": "L'opposition accuse le gouvernement de faire fi de la constitution.",
+    "es": "La oposición acusa al gobierno de ignorar la constitución.",
+    "ar": "تتهم المعارضة الحكومة بتجاهل الدستور."
+   },
+   "tr": {
+    "ar": "tattahimu al-muʿāraḍa al-ḥukūma bi-tajāhuli ad-dustūr."
+   }
+  },
+  {
+   "id": "s03",
+   "text": {
+    "en": "The prime minister announced a sweeping reform of the tax system.",
+    "fr": "Le Premier ministre a annoncé une réforme en profondeur du système fiscal.",
+    "es": "El primer ministro anunció una reforma profunda del sistema fiscal.",
+    "ar": "أعلن رئيس الوزراء إصلاحا جذريا للنظام الضريبي."
+   },
+   "tr": {
+    "ar": "aʿlana raʾīs al-wuzarāʾ iṣlāḥan jidhriyyan lil-niẓām aḍ-ḍarībī."
+   }
+  },
+  {
+   "id": "s04",
+   "text": {
+    "en": "Without a coalition, no party can govern alone.",
+    "fr": "Sans coalition, aucun parti ne peut gouverner seul.",
+    "es": "Sin una coalición, ningún partido puede gobernar solo.",
+    "ar": "من دون ائتلاف لا يستطيع أي حزب أن يحكم منفردا."
+   },
+   "tr": {
+    "ar": "min dūni iʾtilāf lā yastaṭīʿu ayyu ḥizb an yaḥkuma munfaridan."
+   }
+  },
+  {
+   "id": "s05",
+   "text": {
+    "en": "The candidate's campaign relied on a single promise: to fight corruption.",
+    "fr": "La campagne du candidat reposait sur une seule promesse : lutter contre la corruption.",
+    "es": "La campaña del candidato se basó en una sola promesa: combatir la corrupción.",
+    "ar": "قامت حملة المرشح على وعد واحد هو محاربة الفساد."
+   },
+   "tr": {
+    "ar": "qāmat ḥamlat al-murashshaḥ ʿalā waʿdin wāḥid huwa muḥārabat al-fasād."
+   }
+  },
+  {
+   "id": "s06",
+   "text": {
+    "en": "Turnout was low, and many citizens simply stayed at home on election day.",
+    "fr": "La participation a été faible : beaucoup de citoyens sont restés chez eux le jour de l'élection.",
+    "es": "La participación fue baja y muchos ciudadanos se quedaron en casa el día de las elecciones.",
+    "ar": "كانت نسبة المشاركة ضعيفة، وبقي كثير من المواطنين في بيوتهم يوم الانتخابات."
+   },
+   "tr": {
+    "ar": "kānat nisbat al-mushāraka ḍaʿīfa, wa-baqiya kathīr mina al-muwāṭinīn fī buyūtihim yawma al-intikhābāt."
+   }
+  },
+  {
+   "id": "s07",
+   "text": {
+    "en": "Every vote counts, even when it seems that nothing will change.",
+    "fr": "Chaque voix compte, même quand on a l'impression que rien ne changera.",
+    "es": "Cada voto cuenta, incluso cuando parece que nada va a cambiar.",
+    "ar": "كل صوت له وزنه، حتى حين يبدو أن شيئا لن يتغير."
+   },
+   "tr": {
+    "ar": "kullu ṣawtin lahu waznuhu, ḥattā ḥīna yabdū anna shayʾan lan yataghayyar."
+   }
+  },
+  {
+   "id": "s08",
+   "text": {
+    "en": "In a democracy, citizens' rights do not depend on the mood of the majority.",
+    "fr": "Dans une démocratie, les droits des citoyens ne dépendent pas de l'humeur de la majorité.",
+    "es": "En una democracia, los derechos de los ciudadanos no dependen del humor de la mayoría.",
+    "ar": "في الديمقراطية لا تتوقف حقوق المواطنين على مزاج الأغلبية."
+   },
+   "tr": {
+    "ar": "fī ad-dīmuqrāṭiyya lā tatawaqqafu ḥuqūq al-muwāṭinīn ʿalā mazāj al-aghlabiyya."
+   }
+  },
+  {
+   "id": "s09",
+   "text": {
+    "en": "A dictatorship silences protest and confiscates freedom of speech.",
+    "fr": "Une dictature fait taire la contestation et confisque la liberté d'expression.",
+    "es": "Una dictadura acalla la protesta y confisca la libertad de expresión.",
+    "ar": "تخنق الدكتاتورية الاحتجاج وتصادر حرية التعبير."
+   },
+   "tr": {
+    "ar": "tukhniqu ad-diktātūriyya al-iḥtijāj wa-tuṣādiru ḥurriyyat at-taʿbīr."
+   }
+  },
+  {
+   "id": "s10",
+   "text": {
+    "en": "The judge ruled that the law violated the constitution.",
+    "fr": "Le juge a estimé que la loi violait la constitution.",
+    "es": "El juez dictaminó que la ley violaba la constitución.",
+    "ar": "قضى القاضي بأن القانون ينتهك الدستور."
+   },
+   "tr": {
+    "ar": "qaḍā al-qāḍī bi-anna al-qānūn yantahiku ad-dustūr."
+   }
+  },
+  {
+   "id": "s11",
+   "text": {
+    "en": "The court is independent: neither the president nor the minister can overturn its ruling.",
+    "fr": "Le tribunal est indépendant : ni le président ni le ministre ne peuvent annuler sa décision.",
+    "es": "El tribunal es independiente: ni el presidente ni el ministro pueden anular su decisión.",
+    "ar": "المحكمة مستقلة، فلا الرئيس ولا الوزير يستطيع نقض حكمها."
+   },
+   "tr": {
+    "ar": "al-maḥkama mustaqilla, fa-lā ar-raʾīs wa-lā al-wazīr yastaṭīʿu naqḍa ḥukmihā."
+   }
+  },
+  {
+   "id": "s12",
+   "text": {
+    "en": "The budget shows a deficit that no one dares to mention.",
+    "fr": "Le budget affiche un déficit que personne n'ose mentionner.",
+    "es": "El presupuesto muestra un déficit que nadie se atreve a mencionar.",
+    "ar": "تظهر الميزانية عجزا لا يجرؤ أحد على ذكره."
+   },
+   "tr": {
+    "ar": "tuẓhiru al-mīzāniyya ʿajzan lā yajruʾu aḥad ʿalā dhikrihi."
+   }
+  },
+  {
+   "id": "s13",
+   "text": {
+    "en": "Raising taxes is never popular, even when it is necessary.",
+    "fr": "Augmenter les impôts n'est jamais populaire, même quand c'est nécessaire.",
+    "es": "Subir los impuestos nunca es popular, ni siquiera cuando es necesario.",
+    "ar": "رفع الضرائب ليس شعبيا أبدا، حتى حين يكون ضروريا."
+   },
+   "tr": {
+    "ar": "rafʿu aḍ-ḍarāʾib laysa shaʿbiyyan abadan, ḥattā ḥīna yakūnu ḍarūriyyan."
+   }
+  },
+  {
+   "id": "s14",
+   "text": {
+    "en": "Diplomacy is the art of disagreeing without breaking off the talks.",
+    "fr": "La diplomatie est l'art de ne pas être d'accord sans rompre le dialogue.",
+    "es": "La diplomacia es el arte de discrepar sin romper el diálogo.",
+    "ar": "الدبلوماسية فن الاختلاف دون قطع الحوار."
+   },
+   "tr": {
+    "ar": "ad-dublūmāsiyya fannu al-ikhtilāf dūna qaṭʿi al-ḥiwār."
+   }
+  },
+  {
+   "id": "s15",
+   "text": {
+    "en": "The two countries signed a treaty and sealed a long-awaited alliance.",
+    "fr": "Les deux pays ont signé un traité et scellé une alliance attendue de longue date.",
+    "es": "Los dos países firmaron un tratado y sellaron una alianza largamente esperada.",
+    "ar": "وقع البلدان معاهدة وأبرما تحالفا طال انتظاره."
+   },
+   "tr": {
+    "ar": "waqqaʿa al-baladān muʿāhadatan wa-abramā taḥālufan ṭāla intiẓāruhu."
+   }
+  },
+  {
+   "id": "s16",
+   "text": {
+    "en": "The summit ended without any concrete decision.",
+    "fr": "Le sommet s'est achevé sans aucune décision concrète.",
+    "es": "La cumbre terminó sin ninguna decisión concreta.",
+    "ar": "انتهت القمة من دون أي قرار ملموس."
+   },
+   "tr": {
+    "ar": "intahat al-qimma min dūni ayyi qarārin malmūs."
+   }
+  },
+  {
+   "id": "s17",
+   "text": {
+    "en": "Economic sanctions often hurt ordinary people more than the leaders.",
+    "fr": "Les sanctions économiques frappent souvent la population plus que les dirigeants.",
+    "es": "Las sanciones económicas suelen perjudicar más a la población que a los dirigentes.",
+    "ar": "كثيرا ما تضر العقوبات الاقتصادية عامة الناس أكثر من القادة."
+   },
+   "tr": {
+    "ar": "kathīran mā taḍurru al-ʿuqūbāt al-iqtiṣādiyya ʿāmmata an-nās akthara mina al-qāda."
+   }
+  },
+  {
+   "id": "s18",
+   "text": {
+    "en": "Thousands of people took to the streets to protest against the reform.",
+    "fr": "Des milliers de personnes sont descendues dans la rue pour protester contre la réforme.",
+    "es": "Miles de personas salieron a la calle para protestar contra la reforma.",
+    "ar": "خرج آلاف الأشخاص إلى الشوارع احتجاجا على الإصلاح."
+   },
+   "tr": {
+    "ar": "kharaja ālāf al-ashkhāṣ ilā ash-shawāriʿ iḥtijājan ʿalā al-iṣlāḥ."
+   }
+  },
+  {
+   "id": "s19",
+   "text": {
+    "en": "The strike paralysed the country for a week.",
+    "fr": "La grève a paralysé le pays pendant une semaine.",
+    "es": "La huelga paralizó el país durante una semana.",
+    "ar": "أصاب الإضراب البلاد بالشلل أسبوعا."
+   },
+   "tr": {
+    "ar": "aṣāba al-iḍrāb al-bilād bi-sh-shalal usbūʿan."
+   }
+  },
+  {
+   "id": "s20",
+   "text": {
+    "en": "His rhetoric is brilliant, but his speech says nothing concrete.",
+    "fr": "Sa rhétorique est brillante, mais son discours ne dit rien de concret.",
+    "es": "Su retórica es brillante, pero su discurso no dice nada concreto.",
+    "ar": "خطابته لامعة، لكن خطابه لا يقول شيئا ملموسا."
+   },
+   "tr": {
+    "ar": "khaṭābatuhu lāmiʿa, lākinna khiṭābahu lā yaqūlu shayʾan malmūsan."
+   }
+  },
+  {
+   "id": "s21",
+   "text": {
+    "en": "A good slogan sticks in the mind, even when the policy behind it is flimsy.",
+    "fr": "Un bon slogan se grave dans les esprits, même quand la politique qui le sous-tend est creuse.",
+    "es": "Un buen eslogan se queda en la cabeza, aunque la política que lo respalda sea endeble.",
+    "ar": "الشعار الجيد يعلق بالأذهان حتى لو كانت السياسة خلفه هشة."
+   },
+   "tr": {
+    "ar": "ash-shiʿār al-jayyid yaʿlaqu bi-l-adhhān ḥattā law kānat as-siyāsa khalfahu hashsha."
+   }
+  },
+  {
+   "id": "s22",
+   "text": {
+    "en": "Propaganda turns facts into weapons.",
+    "fr": "La propagande transforme les faits en armes.",
+    "es": "La propaganda convierte los hechos en armas.",
+    "ar": "تحول الدعاية الحقائق إلى أسلحة."
+   },
+   "tr": {
+    "ar": "tuḥawwilu ad-diʿāya al-ḥaqāʾiq ilā asliḥa."
+   }
+  },
+  {
+   "id": "s23",
+   "text": {
+    "en": "Populism offers simple answers to complicated questions.",
+    "fr": "Le populisme offre des réponses simples à des questions compliquées.",
+    "es": "El populismo ofrece respuestas simples a preguntas complicadas.",
+    "ar": "تقدم الشعبوية إجابات بسيطة عن أسئلة معقدة."
+   },
+   "tr": {
+    "ar": "tuqaddimu ash-shaʿbawiyya ijābāt basīṭa ʿan asʾila muʿaqqada."
+   }
+  },
+  {
+   "id": "s24",
+   "text": {
+    "en": "Campaign promises are cheap; keeping them is expensive.",
+    "fr": "Les promesses de campagne ne coûtent rien ; les tenir coûte cher.",
+    "es": "Las promesas de campaña son baratas; cumplirlas sale caro.",
+    "ar": "الوعود الانتخابية رخيصة، أما الوفاء بها فمكلف."
+   },
+   "tr": {
+    "ar": "al-wuʿūd al-intikhābiyya rakhīṣa, ammā al-wafāʾ bihā fa-mukallif."
+   }
+  },
+  {
+   "id": "s25",
+   "text": {
+    "en": "The televised debate between the two candidates drew millions of viewers.",
+    "fr": "Le débat télévisé entre les deux candidats a attiré des millions de téléspectateurs.",
+    "es": "El debate televisado entre los dos candidatos atrajo a millones de espectadores.",
+    "ar": "استقطبت المناظرة التلفزيونية بين المرشحين ملايين المشاهدين."
+   },
+   "tr": {
+    "ar": "istaqṭabat al-munāẓara at-tilifiziyūniyya bayna al-murashshaḥayn malāyīna al-mushāhidīn."
+   }
+  },
+  {
+   "id": "s26",
+   "text": {
+    "en": "The spokesperson refused to comment on the minister's resignation.",
+    "fr": "Le porte-parole a refusé de commenter la démission du ministre.",
+    "es": "El portavoz se negó a comentar la dimisión del ministro.",
+    "ar": "رفض المتحدث الرسمي التعليق على استقالة الوزير."
+   },
+   "tr": {
+    "ar": "rafaḍa al-mutaḥaddith ar-rasmī at-taʿlīq ʿalā istiqālat al-wazīr."
+   }
+  },
+  {
+   "id": "s27",
+   "text": {
+    "en": "After the scandal, the minister had no choice but to resign.",
+    "fr": "Après le scandale, le ministre n'a pas eu d'autre choix que de démissionner.",
+    "es": "Tras el escándalo, el ministro no tuvo más remedio que dimitir.",
+    "ar": "بعد الفضيحة لم يكن أمام الوزير إلا أن يستقيل."
+   },
+   "tr": {
+    "ar": "baʿda al-faḍīḥa lam yakun amāma al-wazīr illā an yastaqīla."
+   }
+  },
+  {
+   "id": "s28",
+   "text": {
+    "en": "The president used his veto to block the bill.",
+    "fr": "Le président a usé de son veto pour bloquer le projet de loi.",
+    "es": "El presidente usó su veto para bloquear el proyecto de ley.",
+    "ar": "استخدم الرئيس حق النقض لعرقلة مشروع القانون."
+   },
+   "tr": {
+    "ar": "istakhdama ar-raʾīs ḥaqqa an-naqḍ li-ʿarqalat mashrūʿ al-qānūn."
+   }
+  },
+  {
+   "id": "s29",
+   "text": {
+    "en": "The referendum will decide whether the country keeps its current constitution.",
+    "fr": "Le référendum décidera si le pays garde sa constitution actuelle.",
+    "es": "El referéndum decidirá si el país mantiene su actual constitución.",
+    "ar": "سيحسم الاستفتاء ما إذا كانت البلاد ستحتفظ بدستورها الحالي."
+   },
+   "tr": {
+    "ar": "sa-yaḥsimu al-istiftāʾ mā idhā kānat al-bilād sa-taḥtafiẓu bi-dustūrihā al-ḥālī."
+   }
+  },
+  {
+   "id": "s30",
+   "text": {
+    "en": "Sovereignty belongs to the people, not to the government.",
+    "fr": "La souveraineté appartient au peuple, non au gouvernement.",
+    "es": "La soberanía pertenece al pueblo, no al gobierno.",
+    "ar": "السيادة للشعب لا للحكومة."
+   },
+   "tr": {
+    "ar": "as-siyāda lil-shaʿb lā lil-ḥukūma."
+   }
+  },
+  {
+   "id": "s31",
+   "text": {
+    "en": "Corruption erodes citizens' trust, and no policy can restore it quickly.",
+    "fr": "La corruption ronge la confiance des citoyens, et aucune politique ne peut la rétablir vite.",
+    "es": "La corrupción erosiona la confianza de los ciudadanos, y ninguna política puede restablecerla deprisa.",
+    "ar": "يقوض الفساد ثقة المواطنين، ولا تستطيع أي سياسة أن تعيدها سريعا."
+   },
+   "tr": {
+    "ar": "yuqawwiḍu al-fasād thiqat al-muwāṭinīn, wa-lā tastaṭīʿu ayyu siyāsa an tuʿīdahā sarīʿan."
+   }
+  },
+  {
+   "id": "s32",
+   "text": {
+    "en": "Do you think the government will survive until the next election?",
+    "fr": "Crois-tu que le gouvernement survivra jusqu'aux prochaines élections ?",
+    "es": "¿Crees que el gobierno durará hasta las próximas elecciones?",
+    "ar": "هل تظن أن الحكومة ستصمد حتى الانتخابات القادمة؟"
+   },
+   "tr": {
+    "ar": "hal taẓunnu anna al-ḥukūma sa-taṣmudu ḥattā al-intikhābāt al-qādima?"
+   }
+  },
+  {
+   "id": "s33",
+   "text": {
+    "en": "Only if the majority holds together.",
+    "fr": "Seulement si la majorité reste unie.",
+    "es": "Solo si la mayoría se mantiene unida.",
+    "ar": "فقط إذا بقيت الأغلبية متماسكة."
+   },
+   "tr": {
+    "ar": "faqaṭ idhā baqiyat al-aghlabiyya mutamāsika."
+   }
+  },
+  {
+   "id": "s34",
+   "text": {
+    "en": "Then we will be voting again before the end of the year.",
+    "fr": "Alors nous voterons de nouveau avant la fin de l'année.",
+    "es": "Entonces volveremos a votar antes de que acabe el año.",
+    "ar": "إذن سنصوت مرة أخرى قبل نهاية العام."
+   },
+   "tr": {
+    "ar": "idhan sa-nuṣawwitu marratan ukhrā qabla nihāyat al-ʿām."
+   }
+  }
+ ],
+ "dialogue": [
+  "s32",
+  "s33",
+  "s34",
+  "s07"
+ ]
+}

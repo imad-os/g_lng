@@ -1,0 +1,986 @@
+{
+ "id": "u07",
+ "level": "a2",
+ "order": 7,
+ "words": [
+  {
+   "id": "essay",
+   "text": {
+    "en": "essay",
+    "fr": "essai",
+    "es": "ensayo",
+    "ar": "مقال"
+   },
+   "tr": {
+    "ar": "maqāl"
+   }
+  },
+  {
+   "id": "thesis",
+   "text": {
+    "en": "thesis",
+    "fr": "thèse",
+    "es": "tesis",
+    "ar": "أطروحة"
+   },
+   "tr": {
+    "ar": "uṭrūḥa"
+   }
+  },
+  {
+   "id": "dissertation",
+   "text": {
+    "en": "dissertation",
+    "fr": "mémoire",
+    "es": "trabajo de fin de máster",
+    "ar": "رسالة جامعية"
+   },
+   "tr": {
+    "ar": "risāla jāmiʿiyya"
+   }
+  },
+  {
+   "id": "lecture",
+   "text": {
+    "en": "lecture",
+    "fr": "cours magistral",
+    "es": "clase magistral",
+    "ar": "محاضرة"
+   },
+   "tr": {
+    "ar": "muḥāḍara"
+   }
+  },
+  {
+   "id": "seminar",
+   "text": {
+    "en": "seminar",
+    "fr": "séminaire",
+    "es": "seminario",
+    "ar": "حلقة دراسية"
+   },
+   "tr": {
+    "ar": "ḥalqa dirāsiyya"
+   }
+  },
+  {
+   "id": "supervisor",
+   "text": {
+    "en": "supervisor",
+    "fr": "directeur de thèse",
+    "es": "director de tesis",
+    "ar": "مشرف"
+   },
+   "tr": {
+    "ar": "mushrif"
+   }
+  },
+  {
+   "id": "scholarship",
+   "text": {
+    "en": "scholarship",
+    "fr": "bourse d'études",
+    "es": "beca",
+    "ar": "منحة دراسية"
+   },
+   "tr": {
+    "ar": "minḥa dirāsiyya"
+   }
+  },
+  {
+   "id": "citation",
+   "text": {
+    "en": "citation",
+    "fr": "référence bibliographique",
+    "es": "cita",
+    "ar": "اقتباس"
+   },
+   "tr": {
+    "ar": "iqtibās"
+   }
+  },
+  {
+   "id": "bibliography",
+   "text": {
+    "en": "bibliography",
+    "fr": "bibliographie",
+    "es": "bibliografía",
+    "ar": "قائمة المراجع"
+   },
+   "tr": {
+    "ar": "qāʾimat al-marājiʿ"
+   }
+  },
+  {
+   "id": "plagiarism",
+   "text": {
+    "en": "plagiarism",
+    "fr": "plagiat",
+    "es": "plagio",
+    "ar": "انتحال"
+   },
+   "tr": {
+    "ar": "intiḥāl"
+   }
+  },
+  {
+   "id": "argument",
+   "text": {
+    "en": "argument",
+    "fr": "argument",
+    "es": "argumento",
+    "ar": "حجة"
+   },
+   "tr": {
+    "ar": "ḥujja"
+   }
+  },
+  {
+   "id": "abstract",
+   "text": {
+    "en": "abstract",
+    "fr": "résumé",
+    "es": "resumen",
+    "ar": "مستخلص"
+   },
+   "tr": {
+    "ar": "mustakhlaṣ"
+   }
+  },
+  {
+   "id": "source",
+   "text": {
+    "en": "source",
+    "fr": "source",
+    "es": "fuente",
+    "ar": "مصدر"
+   },
+   "tr": {
+    "ar": "maṣdar"
+   }
+  },
+  {
+   "id": "footnote",
+   "text": {
+    "en": "footnote",
+    "fr": "note de bas de page",
+    "es": "nota al pie",
+    "ar": "حاشية"
+   },
+   "tr": {
+    "ar": "ḥāshiya"
+   }
+  },
+  {
+   "id": "journal",
+   "text": {
+    "en": "journal",
+    "fr": "revue scientifique",
+    "es": "revista científica",
+    "ar": "مجلة علمية"
+   },
+   "tr": {
+    "ar": "majalla ʿilmiyya"
+   }
+  },
+  {
+   "id": "conference",
+   "text": {
+    "en": "conference",
+    "fr": "colloque",
+    "es": "congreso",
+    "ar": "مؤتمر"
+   },
+   "tr": {
+    "ar": "muʾtamar"
+   }
+  },
+  {
+   "id": "discipline",
+   "text": {
+    "en": "discipline",
+    "fr": "discipline",
+    "es": "disciplina",
+    "ar": "تخصص"
+   },
+   "tr": {
+    "ar": "takhaṣṣuṣ"
+   }
+  },
+  {
+   "id": "faculty",
+   "text": {
+    "en": "faculty",
+    "fr": "faculté",
+    "es": "facultad",
+    "ar": "كلية"
+   },
+   "tr": {
+    "ar": "kulliyya"
+   }
+  },
+  {
+   "id": "tutor",
+   "text": {
+    "en": "tutor",
+    "fr": "tuteur",
+    "es": "tutor",
+    "ar": "مرشد أكاديمي"
+   },
+   "tr": {
+    "ar": "murshid akādīmī"
+   }
+  },
+  {
+   "id": "academic",
+   "text": {
+    "en": "academic",
+    "fr": "universitaire",
+    "es": "académico",
+    "ar": "أكاديمي"
+   },
+   "tr": {
+    "ar": "akādīmī"
+   }
+  },
+  {
+   "id": "degree",
+   "text": {
+    "en": "degree",
+    "fr": "diplôme",
+    "es": "título universitario",
+    "ar": "شهادة جامعية"
+   },
+   "tr": {
+    "ar": "shahāda jāmiʿiyya"
+   }
+  },
+  {
+   "id": "credit",
+   "text": {
+    "en": "credit",
+    "fr": "crédit",
+    "es": "crédito",
+    "ar": "ساعة معتمدة"
+   },
+   "tr": {
+    "ar": "sāʿa muʿtamada"
+   }
+  },
+  {
+   "id": "grade",
+   "text": {
+    "en": "grade",
+    "fr": "note",
+    "es": "calificación",
+    "ar": "درجة"
+   },
+   "tr": {
+    "ar": "daraja"
+   }
+  },
+  {
+   "id": "assessment",
+   "text": {
+    "en": "assessment",
+    "fr": "évaluation",
+    "es": "evaluación",
+    "ar": "تقييم"
+   },
+   "tr": {
+    "ar": "taqyīm"
+   }
+  },
+  {
+   "id": "curriculum",
+   "text": {
+    "en": "curriculum",
+    "fr": "programme d'études",
+    "es": "plan de estudios",
+    "ar": "منهج دراسي"
+   },
+   "tr": {
+    "ar": "manhaj dirāsī"
+   }
+  },
+  {
+   "id": "theory",
+   "text": {
+    "en": "theory",
+    "fr": "théorie",
+    "es": "teoría",
+    "ar": "نظرية"
+   },
+   "tr": {
+    "ar": "naẓariyya"
+   }
+  },
+  {
+   "id": "framework",
+   "text": {
+    "en": "framework",
+    "fr": "cadre théorique",
+    "es": "marco teórico",
+    "ar": "إطار نظري"
+   },
+   "tr": {
+    "ar": "iṭār naẓarī"
+   }
+  },
+  {
+   "id": "case_study",
+   "text": {
+    "en": "case study",
+    "fr": "étude de cas",
+    "es": "estudio de caso",
+    "ar": "دراسة حالة"
+   },
+   "tr": {
+    "ar": "dirāsat ḥāla"
+   }
+  },
+  {
+   "id": "research_proposal",
+   "text": {
+    "en": "research proposal",
+    "fr": "projet de recherche",
+    "es": "proyecto de investigación",
+    "ar": "مقترح بحثي"
+   },
+   "tr": {
+    "ar": "muqtaraḥ baḥthī"
+   }
+  },
+  {
+   "id": "lecturer",
+   "text": {
+    "en": "lecturer",
+    "fr": "maître de conférences",
+    "es": "profesor universitario",
+    "ar": "محاضر"
+   },
+   "tr": {
+    "ar": "muḥāḍir"
+   }
+  },
+  {
+   "id": "undergraduate",
+   "text": {
+    "en": "undergraduate",
+    "fr": "étudiant en licence",
+    "es": "estudiante de grado",
+    "ar": "طالب جامعي"
+   },
+   "tr": {
+    "ar": "ṭālib jāmiʿī"
+   }
+  },
+  {
+   "id": "postgraduate",
+   "text": {
+    "en": "postgraduate",
+    "fr": "étudiant de troisième cycle",
+    "es": "estudiante de posgrado",
+    "ar": "طالب دراسات عليا"
+   },
+   "tr": {
+    "ar": "ṭālib dirāsāt ʿulyā"
+   }
+  },
+  {
+   "id": "cite",
+   "text": {
+    "en": "to cite",
+    "fr": "citer",
+    "es": "citar",
+    "ar": "يستشهد بـ"
+   },
+   "tr": {
+    "ar": "yastashhid bi-"
+   }
+  },
+  {
+   "id": "quote",
+   "text": {
+    "en": "to quote",
+    "fr": "citer textuellement",
+    "es": "citar textualmente",
+    "ar": "يقتبس"
+   },
+   "tr": {
+    "ar": "yaqtabis"
+   }
+  },
+  {
+   "id": "paraphrase",
+   "text": {
+    "en": "to paraphrase",
+    "fr": "paraphraser",
+    "es": "parafrasear",
+    "ar": "يعيد صياغة"
+   },
+   "tr": {
+    "ar": "yuʿīd ṣiyāgha"
+   }
+  },
+  {
+   "id": "argue",
+   "text": {
+    "en": "to argue",
+    "fr": "soutenir que",
+    "es": "argumentar",
+    "ar": "يجادل"
+   },
+   "tr": {
+    "ar": "yujādil"
+   }
+  },
+  {
+   "id": "analyse",
+   "text": {
+    "en": "to analyse",
+    "fr": "analyser",
+    "es": "analizar",
+    "ar": "يحلل"
+   },
+   "tr": {
+    "ar": "yuḥallil"
+   }
+  },
+  {
+   "id": "evaluate",
+   "text": {
+    "en": "to evaluate",
+    "fr": "évaluer",
+    "es": "evaluar",
+    "ar": "يقيم"
+   },
+   "tr": {
+    "ar": "yuqayyim"
+   }
+  },
+  {
+   "id": "critique",
+   "text": {
+    "en": "to critique",
+    "fr": "examiner de façon critique",
+    "es": "analizar críticamente",
+    "ar": "ينتقد"
+   },
+   "tr": {
+    "ar": "yantaqid"
+   }
+  },
+  {
+   "id": "compare",
+   "text": {
+    "en": "to compare",
+    "fr": "comparer",
+    "es": "comparar",
+    "ar": "يقارن"
+   },
+   "tr": {
+    "ar": "yuqārin"
+   }
+  },
+  {
+   "id": "define",
+   "text": {
+    "en": "to define",
+    "fr": "définir",
+    "es": "definir",
+    "ar": "يعرف"
+   },
+   "tr": {
+    "ar": "yuʿarrif"
+   }
+  },
+  {
+   "id": "illustrate",
+   "text": {
+    "en": "to illustrate",
+    "fr": "illustrer",
+    "es": "ilustrar",
+    "ar": "يوضح بمثال"
+   },
+   "tr": {
+    "ar": "yuwaḍḍiḥ bi-mithāl"
+   }
+  },
+  {
+   "id": "submit",
+   "text": {
+    "en": "to submit",
+    "fr": "remettre",
+    "es": "entregar",
+    "ar": "يسلم"
+   },
+   "tr": {
+    "ar": "yusallim"
+   }
+  },
+  {
+   "id": "defend",
+   "text": {
+    "en": "to defend",
+    "fr": "soutenir",
+    "es": "defender",
+    "ar": "يدافع عن"
+   },
+   "tr": {
+    "ar": "yudāfiʿ ʿan"
+   }
+  },
+  {
+   "id": "enrol",
+   "text": {
+    "en": "to enrol",
+    "fr": "s'inscrire",
+    "es": "matricularse",
+    "ar": "يسجل"
+   },
+   "tr": {
+    "ar": "yusajjil"
+   }
+  },
+  {
+   "id": "graduate",
+   "text": {
+    "en": "to graduate",
+    "fr": "obtenir son diplôme",
+    "es": "graduarse",
+    "ar": "يتخرج"
+   },
+   "tr": {
+    "ar": "yatakharraj"
+   }
+  },
+  {
+   "id": "revise",
+   "text": {
+    "en": "to revise",
+    "fr": "réviser",
+    "es": "repasar",
+    "ar": "يراجع"
+   },
+   "tr": {
+    "ar": "yurājiʿ"
+   }
+  },
+  {
+   "id": "participate",
+   "text": {
+    "en": "to participate",
+    "fr": "participer",
+    "es": "participar",
+    "ar": "يشارك"
+   },
+   "tr": {
+    "ar": "yushārik"
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "text": {
+    "en": "I am writing my dissertation on migration and the labour market.",
+    "fr": "J'écris mon mémoire sur la migration et le marché du travail.",
+    "es": "Estoy escribiendo mi trabajo de fin de máster sobre migración y mercado laboral.",
+    "ar": "أكتب رسالتي الجامعية عن الهجرة وسوق العمل."
+   },
+   "tr": {
+    "ar": "aktubu risālatī al-jāmiʿiyya ʿan al-hijra wa-sūq al-ʿamal."
+   }
+  },
+  {
+   "id": "s02",
+   "text": {
+    "en": "My supervisor has asked me to revise the whole argument.",
+    "fr": "Mon directeur de thèse m'a demandé de réviser toute l'argumentation.",
+    "es": "Mi director de tesis me ha pedido que revise todo el argumento.",
+    "ar": "طلب مني مشرفي أن أراجع الحجة بأكملها."
+   },
+   "tr": {
+    "ar": "ṭalaba minnī mushrifī an urājiʿa al-ḥujja bi-akmalihā."
+   }
+  },
+  {
+   "id": "s03",
+   "text": {
+    "en": "Every source must be cited in the bibliography.",
+    "fr": "Chaque source doit être citée dans la bibliographie.",
+    "es": "Cada fuente debe citarse en la bibliografía.",
+    "ar": "يجب ذكر كل مصدر في قائمة المراجع."
+   },
+   "tr": {
+    "ar": "yajib dhikr kulli maṣdar fī qāʾimat al-marājiʿ."
+   }
+  },
+  {
+   "id": "s04",
+   "text": {
+    "en": "Plagiarism can lead to expulsion from the university.",
+    "fr": "Le plagiat peut entraîner l'exclusion de l'université.",
+    "es": "El plagio puede acarrear la expulsión de la universidad.",
+    "ar": "قد يؤدي الانتحال إلى الفصل من الجامعة."
+   },
+   "tr": {
+    "ar": "qad yuʾaddī al-intiḥāl ilā al-faṣl min al-jāmiʿa."
+   }
+  },
+  {
+   "id": "s05",
+   "text": {
+    "en": "You may quote the author directly, but paraphrase the rest in your own words.",
+    "fr": "Vous pouvez citer l'auteur textuellement, mais paraphrasez le reste avec vos propres mots.",
+    "es": "Puede citar textualmente al autor, pero parafrasee el resto con sus propias palabras.",
+    "ar": "يمكنك أن تقتبس من المؤلف مباشرة، لكن أعد صياغة الباقي بأسلوبك."
+   },
+   "tr": {
+    "ar": "yumkinuka an taqtabisa min al-muʾallif mubāsharatan, lākin aʿid ṣiyāghat al-bāqī bi-uslūbika."
+   }
+  },
+  {
+   "id": "s06",
+   "text": {
+    "en": "The abstract summarizes the thesis in two hundred words.",
+    "fr": "Le résumé présente la thèse en deux cents mots.",
+    "es": "El resumen expone la tesis en doscientas palabras.",
+    "ar": "يلخص المستخلص الأطروحة في مئتي كلمة."
+   },
+   "tr": {
+    "ar": "yulakhkhiṣ al-mustakhlaṣ al-uṭrūḥa fī miʾatay kalima."
+   }
+  },
+  {
+   "id": "s07",
+   "text": {
+    "en": "Her article was published in a leading scientific journal.",
+    "fr": "Son article a été publié dans une revue scientifique de référence.",
+    "es": "Su artículo se publicó en una revista científica de referencia.",
+    "ar": "نشر مقالها في مجلة علمية رائدة."
+   },
+   "tr": {
+    "ar": "nushira maqāluhā fī majalla ʿilmiyya rāʾida."
+   }
+  },
+  {
+   "id": "s08",
+   "text": {
+    "en": "This theory has been challenged by recent case studies.",
+    "fr": "Cette théorie a été remise en question par des études de cas récentes.",
+    "es": "Esta teoría ha sido cuestionada por estudios de caso recientes.",
+    "ar": "شككت دراسات حالة حديثة في هذه النظرية."
+   },
+   "tr": {
+    "ar": "shakkakat dirāsāt ḥāla ḥadītha fī hādhihi an-naẓariyya."
+   }
+  },
+  {
+   "id": "s09",
+   "text": {
+    "en": "The seminar will focus on the theoretical framework of the study.",
+    "fr": "Le séminaire portera sur le cadre théorique de l'étude.",
+    "es": "El seminario se centrará en el marco teórico del estudio.",
+    "ar": "ستركز الحلقة الدراسية على الإطار النظري للدراسة."
+   },
+   "tr": {
+    "ar": "sa-turakkizu al-ḥalqa ad-dirāsiyya ʿalā al-iṭār an-naẓarī lil-dirāsa."
+   }
+  },
+  {
+   "id": "s10",
+   "text": {
+    "en": "Attendance at the lecture is not compulsory, but it is advisable.",
+    "fr": "La présence au cours magistral n'est pas obligatoire, mais elle est conseillée.",
+    "es": "La asistencia a la clase magistral no es obligatoria, pero es aconsejable.",
+    "ar": "الحضور إلى المحاضرة غير إلزامي لكنه مستحسن."
+   },
+   "tr": {
+    "ar": "al-ḥuḍūr ilā al-muḥāḍara ghayr ilzāmī lākinnahu mustaḥsan."
+   }
+  },
+  {
+   "id": "s11",
+   "text": {
+    "en": "She received a scholarship to study abroad.",
+    "fr": "Elle a obtenu une bourse d'études pour étudier à l'étranger.",
+    "es": "Recibió una beca para estudiar en el extranjero.",
+    "ar": "حصلت على منحة دراسية للدراسة في الخارج."
+   },
+   "tr": {
+    "ar": "ḥaṣalat ʿalā minḥa dirāsiyya lil-dirāsa fī al-khārij."
+   }
+  },
+  {
+   "id": "s12",
+   "text": {
+    "en": "Undergraduates must submit the essay by noon on Friday.",
+    "fr": "Les étudiants de licence doivent remettre l'essai avant midi vendredi.",
+    "es": "Los estudiantes de grado deben entregar el ensayo antes del mediodía del viernes.",
+    "ar": "على طلاب المرحلة الجامعية الأولى تسليم المقال قبل ظهر الجمعة."
+   },
+   "tr": {
+    "ar": "ʿalā ṭullāb al-marḥala al-jāmiʿiyya al-ūlā taslīm al-maqāl qabla ẓuhr al-jumuʿa."
+   }
+  },
+  {
+   "id": "s13",
+   "text": {
+    "en": "The assessment counts for forty percent of the final grade.",
+    "fr": "L'évaluation compte pour quarante pour cent de la note finale.",
+    "es": "La evaluación representa el cuarenta por ciento de la calificación final.",
+    "ar": "يشكل التقييم أربعين بالمئة من الدرجة النهائية."
+   },
+   "tr": {
+    "ar": "yushakkil at-taqyīm arbaʿīna bi-l-miʾa min ad-daraja an-nihāʾiyya."
+   }
+  },
+  {
+   "id": "s14",
+   "text": {
+    "en": "Each course carries six credits.",
+    "fr": "Chaque cours vaut six crédits.",
+    "es": "Cada asignatura vale seis créditos.",
+    "ar": "تعادل كل مادة ست ساعات معتمدة."
+   },
+   "tr": {
+    "ar": "taʿādil kullu māddā sitta sāʿāt muʿtamada."
+   }
+  },
+  {
+   "id": "s15",
+   "text": {
+    "en": "To graduate, students must complete the whole curriculum.",
+    "fr": "Pour obtenir leur diplôme, les étudiants doivent achever l'ensemble du programme d'études.",
+    "es": "Para graduarse, los estudiantes deben completar todo el plan de estudios.",
+    "ar": "للتخرج، يجب على الطلاب إتمام المنهج الدراسي كاملا."
+   },
+   "tr": {
+    "ar": "lil-takharruj, yajib ʿalā aṭ-ṭullāb itmām al-manhaj ad-dirāsī kāmilan."
+   }
+  },
+  {
+   "id": "s16",
+   "text": {
+    "en": "He defended his thesis in front of a panel of three academics.",
+    "fr": "Il a soutenu sa thèse devant un jury de trois universitaires.",
+    "es": "Defendió su tesis ante un tribunal de tres académicos.",
+    "ar": "دافع عن أطروحته أمام لجنة من ثلاثة أكاديميين."
+   },
+   "tr": {
+    "ar": "dāfaʿa ʿan uṭrūḥatihi amāma lajna min thalāthat akādīmiyyīn."
+   }
+  },
+  {
+   "id": "s17",
+   "text": {
+    "en": "The lecturer asked us to compare two competing theories.",
+    "fr": "Le maître de conférences nous a demandé de comparer deux théories concurrentes.",
+    "es": "El profesor nos pidió que comparáramos dos teorías opuestas.",
+    "ar": "طلب منا المحاضر المقارنة بين نظريتين متنافستين."
+   },
+   "tr": {
+    "ar": "ṭalaba minnā al-muḥāḍir al-muqārana bayna naẓariyyatayn mutanāfisatayn."
+   }
+  },
+  {
+   "id": "s18",
+   "text": {
+    "en": "In your essay, you should define the key terms before you analyse them.",
+    "fr": "Dans votre essai, vous devez définir les termes clés avant de les analyser.",
+    "es": "En su ensayo, debe definir los términos clave antes de analizarlos.",
+    "ar": "في مقالك، عليك أن تعرف المصطلحات الأساسية قبل أن تحللها."
+   },
+   "tr": {
+    "ar": "fī maqālika, ʿalayka an tuʿarrifa al-muṣṭalaḥāt al-asāsiyya qabla an tuḥallilahā."
+   }
+  },
+  {
+   "id": "s19",
+   "text": {
+    "en": "Use a concrete example to illustrate your point.",
+    "fr": "Utilisez un exemple concret pour illustrer votre propos.",
+    "es": "Utilice un ejemplo concreto para ilustrar su idea.",
+    "ar": "استخدم مثالا ملموسا لتوضيح فكرتك."
+   },
+   "tr": {
+    "ar": "istakhdim mithālan malmūsan li-tawḍīḥ fikratika."
+   }
+  },
+  {
+   "id": "s20",
+   "text": {
+    "en": "The author argues that education reduces inequality, but the evidence is mixed.",
+    "fr": "L'auteur soutient que l'éducation réduit les inégalités, mais les preuves sont mitigées.",
+    "es": "El autor argumenta que la educación reduce la desigualdad, pero las pruebas son contradictorias.",
+    "ar": "يجادل المؤلف بأن التعليم يقلل من عدم المساواة، لكن الأدلة متباينة."
+   },
+   "tr": {
+    "ar": "yujādil al-muʾallif bi-anna at-taʿlīm yuqallil min ʿadam al-musāwāh, lākin al-adilla mutabāyina."
+   }
+  },
+  {
+   "id": "s21",
+   "text": {
+    "en": "A good footnote gives the reader the exact source.",
+    "fr": "Une bonne note de bas de page indique au lecteur la source exacte.",
+    "es": "Una buena nota al pie le da al lector la fuente exacta.",
+    "ar": "تعطي الحاشية الجيدة القارئ المصدر بدقة."
+   },
+   "tr": {
+    "ar": "tuʿṭī al-ḥāshiya al-jayyida al-qāriʾ al-maṣdar bi-diqqa."
+   }
+  },
+  {
+   "id": "s22",
+   "text": {
+    "en": "Several scholars will participate in the conference next month.",
+    "fr": "Plusieurs universitaires participeront au colloque le mois prochain.",
+    "es": "Varios académicos participarán en el congreso el mes que viene.",
+    "ar": "سيشارك عدة أكاديميين في المؤتمر الشهر القادم."
+   },
+   "tr": {
+    "ar": "sa-yushārik ʿiddat akādīmiyyīn fī al-muʾtamar ash-shahr al-qādim."
+   }
+  },
+  {
+   "id": "s23",
+   "text": {
+    "en": "I would like to enrol on a postgraduate course in linguistics.",
+    "fr": "Je voudrais m'inscrire à un cursus de troisième cycle en linguistique.",
+    "es": "Quisiera matricularme en un curso de posgrado en lingüística.",
+    "ar": "أود التسجيل في برنامج دراسات عليا في اللسانيات."
+   },
+   "tr": {
+    "ar": "awaddu at-tasjīl fī barnāmaj dirāsāt ʿulyā fī al-lisāniyyāt."
+   }
+  },
+  {
+   "id": "s24",
+   "text": {
+    "en": "Which discipline does your faculty specialize in?",
+    "fr": "Dans quelle discipline votre faculté est-elle spécialisée ?",
+    "es": "¿En qué disciplina se especializa su facultad?",
+    "ar": "في أي تخصص تتخصص كليتكم؟"
+   },
+   "tr": {
+    "ar": "fī ayyi takhaṣṣuṣ tatakhaṣṣaṣu kulliyyatukum?"
+   }
+  },
+  {
+   "id": "s25",
+   "text": {
+    "en": "My tutor helped me to evaluate my own research proposal.",
+    "fr": "Mon tuteur m'a aidé à évaluer mon propre projet de recherche.",
+    "es": "Mi tutor me ayudó a evaluar mi propio proyecto de investigación.",
+    "ar": "ساعدني مرشدي الأكاديمي على تقييم مقترحي البحثي بنفسي."
+   },
+   "tr": {
+    "ar": "sāʿadanī murshidī al-akādīmī ʿalā taqyīm muqtaraḥī al-baḥthī bi-nafsī."
+   }
+  },
+  {
+   "id": "s26",
+   "text": {
+    "en": "The article critiques the dominant view in the field.",
+    "fr": "L'article examine de façon critique le point de vue dominant dans ce domaine.",
+    "es": "El artículo analiza críticamente la visión dominante en este campo.",
+    "ar": "ينتقد المقال الرأي السائد في هذا المجال."
+   },
+   "tr": {
+    "ar": "yantaqid al-maqāl ar-raʾy as-sāʾid fī hādhā al-majāl."
+   }
+  },
+  {
+   "id": "s27",
+   "text": {
+    "en": "Do you have a degree in economics?",
+    "fr": "Avez-vous un diplôme en économie ?",
+    "es": "¿Tiene usted un título universitario en economía?",
+    "ar": "هل لديك شهادة جامعية في الاقتصاد؟"
+   },
+   "tr": {
+    "ar": "hal ladayka shahāda jāmiʿiyya fī al-iqtiṣād?"
+   }
+  },
+  {
+   "id": "s28",
+   "text": {
+    "en": "Yes, I graduated last June with a very good grade.",
+    "fr": "Oui, j'ai obtenu mon diplôme en juin dernier avec une très bonne note.",
+    "es": "Sí, me gradué el pasado junio con una muy buena calificación.",
+    "ar": "نعم، تخرجت في يونيو الماضي بدرجة جيدة جدا."
+   },
+   "tr": {
+    "ar": "naʿam, takharrajtu fī yūnyū al-māḍī bi-daraja jayyida jiddan."
+   }
+  },
+  {
+   "id": "s29",
+   "text": {
+    "en": "Please do not rely on a single source for your whole argument.",
+    "fr": "Ne vous appuyez pas sur une seule source pour toute votre argumentation.",
+    "es": "No se base en una sola fuente para todo su argumento.",
+    "ar": "لا تعتمد على مصدر واحد في حجتك كلها."
+   },
+   "tr": {
+    "ar": "lā taʿtamid ʿalā maṣdar wāḥid fī ḥujjatika kullihā."
+   }
+  },
+  {
+   "id": "s30",
+   "text": {
+    "en": "A citation must include the author, the year and the page number.",
+    "fr": "Une référence bibliographique doit comporter l'auteur, l'année et le numéro de page.",
+    "es": "Una cita debe incluir el autor, el año y el número de página.",
+    "ar": "يجب أن يتضمن الاقتباس اسم المؤلف والسنة ورقم الصفحة."
+   },
+   "tr": {
+    "ar": "yajib an yataḍammana al-iqtibās ism al-muʾallif wa-s-sana wa-raqm aṣ-ṣafḥa."
+   }
+  },
+  {
+   "id": "s31",
+   "text": {
+    "en": "The assessment criteria are published at the start of the course.",
+    "fr": "Les critères d'évaluation sont publiés au début du cours.",
+    "es": "Los criterios de evaluación se publican al comienzo del curso.",
+    "ar": "تنشر معايير التقييم في بداية المقرر."
+   },
+   "tr": {
+    "ar": "tunshar maʿāyīr at-taqyīm fī bidāyat al-muqarrar."
+   }
+  },
+  {
+   "id": "s32",
+   "text": {
+    "en": "Then you could apply for a scholarship to continue as a postgraduate.",
+    "fr": "Alors vous pourriez demander une bourse pour poursuivre en troisième cycle.",
+    "es": "Entonces podría solicitar una beca para continuar en el posgrado.",
+    "ar": "إذن يمكنك التقدم لمنحة دراسية لمتابعة الدراسات العليا."
+   },
+   "tr": {
+    "ar": "idhan yumkinuka at-taqaddum li-minḥa dirāsiyya li-mutābaʿat ad-dirāsāt al-ʿulyā."
+   }
+  }
+ ],
+ "dialogue": [
+  "s27",
+  "s28",
+  "s32"
+ ],
+ "title": {
+  "en": "Academia",
+  "fr": "Le monde universitaire",
+  "es": "El mundo académico",
+  "ar": "الحياة الجامعية"
+ },
+ "tip": {
+  "en": "Academic writing builds an argument and supports it with sources. Use linking phrases such as \"According to...\", \"This view is challenged by...\", and always cite what you quote or paraphrase.",
+  "fr": "L'écrit universitaire construit une argumentation appuyée sur des sources. Employez des formules comme « Selon... » ou « Cette vision est remise en cause par... », et citez toujours ce que vous reprenez ou paraphrasez.",
+  "es": "La escritura académica construye un argumento apoyado en fuentes. Usa fórmulas como «Según...» o «Esta visión es cuestionada por...», y cita siempre lo que reproduces o parafraseas.",
+  "ar": "تبني الكتابة الأكاديمية حجة وتدعمها بالمصادر. استخدم عبارات ربط مثل «بحسب...» و«يعترض على هذا الرأي...»، وانسب دائما ما تقتبسه أو تعيد صياغته."
+ }
+}

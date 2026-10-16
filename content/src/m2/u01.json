@@ -1,0 +1,915 @@
+{
+ "id": "u01",
+ "level": "m2",
+ "order": 1,
+ "title": {
+  "en": "Work and jobs",
+  "fr": "Travail et métiers",
+  "es": "Trabajo y profesiones",
+  "ar": "العمل والمهن"
+ },
+ "tip": {
+  "en": "Use \"I work as...\" to say your job, and \"I am responsible for...\" to describe your duties.",
+  "fr": "Utilisez « Je travaille comme... » pour dire votre métier et « Je suis responsable de... » pour décrire vos tâches.",
+  "es": "Usa «Trabajo de...» para decir tu profesión y «Soy responsable de...» para describir tus funciones.",
+  "ar": "استخدم «أعمل ك...» لتقول مهنتك و«أنا مسؤول عن...» لتصف مهامك."
+ },
+ "words": [
+  {
+   "id": "job",
+   "text": {
+    "en": "job",
+    "fr": "emploi",
+    "es": "empleo",
+    "ar": "وظيفة"
+   },
+   "tr": {
+    "ar": "waẓīfa"
+   }
+  },
+  {
+   "id": "work",
+   "text": {
+    "en": "work",
+    "fr": "travail",
+    "es": "trabajo",
+    "ar": "عمل"
+   },
+   "tr": {
+    "ar": "ʿamal"
+   }
+  },
+  {
+   "id": "colleague",
+   "text": {
+    "en": "colleague",
+    "fr": "collègue",
+    "es": "colega",
+    "ar": "زميل"
+   },
+   "tr": {
+    "ar": "zamīl"
+   }
+  },
+  {
+   "id": "boss",
+   "text": {
+    "en": "boss",
+    "fr": "patron",
+    "es": "jefe",
+    "ar": "رئيس"
+   },
+   "tr": {
+    "ar": "raʾīs"
+   }
+  },
+  {
+   "id": "manager",
+   "text": {
+    "en": "manager",
+    "fr": "responsable",
+    "es": "gerente",
+    "ar": "مدير"
+   },
+   "tr": {
+    "ar": "mudīr"
+   }
+  },
+  {
+   "id": "employee",
+   "text": {
+    "en": "employee",
+    "fr": "employé",
+    "es": "empleado",
+    "ar": "موظف"
+   },
+   "tr": {
+    "ar": "muwaẓẓaf"
+   }
+  },
+  {
+   "id": "company",
+   "text": {
+    "en": "company",
+    "fr": "entreprise",
+    "es": "empresa",
+    "ar": "شركة"
+   },
+   "tr": {
+    "ar": "sharika"
+   }
+  },
+  {
+   "id": "office",
+   "text": {
+    "en": "office",
+    "fr": "bureau",
+    "es": "oficina",
+    "ar": "مكتب"
+   },
+   "tr": {
+    "ar": "maktab"
+   }
+  },
+  {
+   "id": "meeting",
+   "text": {
+    "en": "meeting",
+    "fr": "réunion",
+    "es": "reunión",
+    "ar": "اجتماع"
+   },
+   "tr": {
+    "ar": "ijtimāʿ"
+   }
+  },
+  {
+   "id": "salary",
+   "text": {
+    "en": "salary",
+    "fr": "salaire",
+    "es": "salario",
+    "ar": "راتب"
+   },
+   "tr": {
+    "ar": "rātib"
+   }
+  },
+  {
+   "id": "contract",
+   "text": {
+    "en": "contract",
+    "fr": "contrat",
+    "es": "contrato",
+    "ar": "عقد"
+   },
+   "tr": {
+    "ar": "ʿaqd"
+   }
+  },
+  {
+   "id": "schedule",
+   "text": {
+    "en": "schedule",
+    "fr": "horaire",
+    "es": "horario",
+    "ar": "جدول"
+   },
+   "tr": {
+    "ar": "jadwal"
+   }
+  },
+  {
+   "id": "deadline",
+   "text": {
+    "en": "deadline",
+    "fr": "date limite",
+    "es": "fecha límite",
+    "ar": "موعد نهائي"
+   },
+   "tr": {
+    "ar": "mawʿid nihāʾī"
+   }
+  },
+  {
+   "id": "task",
+   "text": {
+    "en": "task",
+    "fr": "tâche",
+    "es": "tarea",
+    "ar": "مهمة"
+   },
+   "tr": {
+    "ar": "muhimma"
+   }
+  },
+  {
+   "id": "project",
+   "text": {
+    "en": "project",
+    "fr": "projet",
+    "es": "proyecto",
+    "ar": "مشروع"
+   },
+   "tr": {
+    "ar": "mashrūʿ"
+   }
+  },
+  {
+   "id": "team",
+   "text": {
+    "en": "team",
+    "fr": "équipe",
+    "es": "equipo",
+    "ar": "فريق"
+   },
+   "tr": {
+    "ar": "farīq"
+   }
+  },
+  {
+   "id": "customer",
+   "text": {
+    "en": "customer",
+    "fr": "client",
+    "es": "cliente",
+    "ar": "زبون"
+   },
+   "tr": {
+    "ar": "zabūn"
+   }
+  },
+  {
+   "id": "engineer",
+   "text": {
+    "en": "engineer",
+    "fr": "ingénieur",
+    "es": "ingeniero",
+    "ar": "مهندس"
+   },
+   "tr": {
+    "ar": "muhandis"
+   }
+  },
+  {
+   "id": "teacher",
+   "text": {
+    "en": "teacher",
+    "fr": "enseignant",
+    "es": "profesor",
+    "ar": "معلم"
+   },
+   "tr": {
+    "ar": "muʿallim"
+   }
+  },
+  {
+   "id": "nurse",
+   "text": {
+    "en": "nurse",
+    "fr": "infirmière",
+    "es": "enfermera",
+    "ar": "ممرضة"
+   },
+   "tr": {
+    "ar": "mumarriḍa"
+   }
+  },
+  {
+   "id": "accountant",
+   "text": {
+    "en": "accountant",
+    "fr": "comptable",
+    "es": "contable",
+    "ar": "محاسب"
+   },
+   "tr": {
+    "ar": "muḥāsib"
+   }
+  },
+  {
+   "id": "lawyer",
+   "text": {
+    "en": "lawyer",
+    "fr": "avocat",
+    "es": "abogado",
+    "ar": "محام"
+   },
+   "tr": {
+    "ar": "muḥāmin"
+   }
+  },
+  {
+   "id": "mechanic",
+   "text": {
+    "en": "mechanic",
+    "fr": "mécanicien",
+    "es": "mecánico",
+    "ar": "ميكانيكي"
+   },
+   "tr": {
+    "ar": "mīkānīkī"
+   }
+  },
+  {
+   "id": "cook",
+   "text": {
+    "en": "cook",
+    "fr": "cuisinier",
+    "es": "cocinero",
+    "ar": "طباخ"
+   },
+   "tr": {
+    "ar": "ṭabbākh"
+   }
+  },
+  {
+   "id": "driver",
+   "text": {
+    "en": "driver",
+    "fr": "chauffeur",
+    "es": "conductor",
+    "ar": "سائق"
+   },
+   "tr": {
+    "ar": "sāʾiq"
+   }
+  },
+  {
+   "id": "salesperson",
+   "text": {
+    "en": "salesperson",
+    "fr": "vendeur",
+    "es": "vendedor",
+    "ar": "بائع"
+   },
+   "tr": {
+    "ar": "bāʾiʿ"
+   }
+  },
+  {
+   "id": "farmer",
+   "text": {
+    "en": "farmer",
+    "fr": "agriculteur",
+    "es": "agricultor",
+    "ar": "فلاح"
+   },
+   "tr": {
+    "ar": "fallāḥ"
+   }
+  },
+  {
+   "id": "electrician",
+   "text": {
+    "en": "electrician",
+    "fr": "électricien",
+    "es": "electricista",
+    "ar": "كهربائي"
+   },
+   "tr": {
+    "ar": "kahrabāʾī"
+   }
+  },
+  {
+   "id": "builder",
+   "text": {
+    "en": "builder",
+    "fr": "maçon",
+    "es": "albañil",
+    "ar": "بناء"
+   },
+   "tr": {
+    "ar": "bannāʾ"
+   }
+  },
+  {
+   "id": "factory",
+   "text": {
+    "en": "factory",
+    "fr": "usine",
+    "es": "fábrica",
+    "ar": "مصنع"
+   },
+   "tr": {
+    "ar": "maṣnaʿ"
+   }
+  },
+  {
+   "id": "workplace",
+   "text": {
+    "en": "workplace",
+    "fr": "lieu de travail",
+    "es": "lugar de trabajo",
+    "ar": "مكان العمل"
+   },
+   "tr": {
+    "ar": "makān al-ʿamal"
+   }
+  },
+  {
+   "id": "duty",
+   "text": {
+    "en": "duty",
+    "fr": "responsabilité",
+    "es": "responsabilidad",
+    "ar": "مسؤولية"
+   },
+   "tr": {
+    "ar": "masʾūliyya"
+   }
+  },
+  {
+   "id": "shift",
+   "text": {
+    "en": "shift",
+    "fr": "poste de travail",
+    "es": "turno",
+    "ar": "نوبة عمل"
+   },
+   "tr": {
+    "ar": "nawbat ʿamal"
+   }
+  },
+  {
+   "id": "to_hire",
+   "text": {
+    "en": "to hire",
+    "fr": "embaucher",
+    "es": "contratar",
+    "ar": "يوظف"
+   },
+   "tr": {
+    "ar": "yuwaẓẓif"
+   }
+  },
+  {
+   "id": "to_earn",
+   "text": {
+    "en": "to earn",
+    "fr": "gagner",
+    "es": "ganar",
+    "ar": "يكسب"
+   },
+   "tr": {
+    "ar": "yaksib"
+   }
+  },
+  {
+   "id": "to_manage",
+   "text": {
+    "en": "to manage",
+    "fr": "diriger",
+    "es": "dirigir",
+    "ar": "يدير"
+   },
+   "tr": {
+    "ar": "yudīr"
+   }
+  },
+  {
+   "id": "to_resign",
+   "text": {
+    "en": "to resign",
+    "fr": "démissionner",
+    "es": "dimitir",
+    "ar": "يستقيل"
+   },
+   "tr": {
+    "ar": "yastaqīl"
+   }
+  },
+  {
+   "id": "to_retire",
+   "text": {
+    "en": "to retire",
+    "fr": "prendre sa retraite",
+    "es": "jubilarse",
+    "ar": "يتقاعد"
+   },
+   "tr": {
+    "ar": "yataqāʿad"
+   }
+  },
+  {
+   "id": "full_time",
+   "text": {
+    "en": "full-time",
+    "fr": "à temps plein",
+    "es": "a tiempo completo",
+    "ar": "بدوام كامل"
+   },
+   "tr": {
+    "ar": "bidawām kāmil"
+   }
+  },
+  {
+   "id": "part_time",
+   "text": {
+    "en": "part-time",
+    "fr": "à temps partiel",
+    "es": "a tiempo parcial",
+    "ar": "بدوام جزئي"
+   },
+   "tr": {
+    "ar": "bidawām juzʾī"
+   }
+  },
+  {
+   "id": "overtime",
+   "text": {
+    "en": "overtime",
+    "fr": "heures supplémentaires",
+    "es": "horas extra",
+    "ar": "ساعات إضافية"
+   },
+   "tr": {
+    "ar": "sāʿāt iḍāfiyya"
+   }
+  },
+  {
+   "id": "day_off",
+   "text": {
+    "en": "day off",
+    "fr": "jour de congé",
+    "es": "día libre",
+    "ar": "يوم عطلة"
+   },
+   "tr": {
+    "ar": "yawm ʿuṭla"
+   }
+  },
+  {
+   "id": "unemployed",
+   "text": {
+    "en": "unemployed",
+    "fr": "au chômage",
+    "es": "desempleado",
+    "ar": "عاطل عن العمل"
+   },
+   "tr": {
+    "ar": "ʿāṭil ʿan al-ʿamal"
+   }
+  },
+  {
+   "id": "busy",
+   "text": {
+    "en": "busy",
+    "fr": "occupé",
+    "es": "ocupado",
+    "ar": "مشغول"
+   },
+   "tr": {
+    "ar": "mashghūl"
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "text": {
+    "en": "What do you do for a living?",
+    "fr": "Que faites-vous dans la vie ?",
+    "es": "¿A qué te dedicas?",
+    "ar": "ماذا تعمل؟"
+   },
+   "tr": {
+    "ar": "mādhā taʿmal?"
+   }
+  },
+  {
+   "id": "s02",
+   "text": {
+    "en": "I work as an accountant in a big company.",
+    "fr": "Je travaille comme comptable dans une grande entreprise.",
+    "es": "Trabajo de contable en una empresa grande.",
+    "ar": "أعمل محاسبا في شركة كبيرة."
+   },
+   "tr": {
+    "ar": "aʿmal muḥāsiban fī sharika kabīra."
+   }
+  },
+  {
+   "id": "s03",
+   "text": {
+    "en": "My sister is a nurse and works night shifts.",
+    "fr": "Ma sœur est infirmière et travaille de nuit.",
+    "es": "Mi hermana es enfermera y hace turnos de noche.",
+    "ar": "أختي ممرضة وتعمل في نوبات الليل."
+   },
+   "tr": {
+    "ar": "ukhtī mumarriḍa wa-taʿmal fī nawbāt al-layl."
+   }
+  },
+  {
+   "id": "s04",
+   "text": {
+    "en": "My brother is an electrician and works for himself.",
+    "fr": "Mon frère est électricien et travaille à son compte.",
+    "es": "Mi hermano es electricista y trabaja por su cuenta.",
+    "ar": "أخي كهربائي ويعمل لحسابه الخاص."
+   },
+   "tr": {
+    "ar": "akhī kahrabāʾī wa-yaʿmal li-ḥisābihi al-khāṣṣ."
+   }
+  },
+  {
+   "id": "s05",
+   "text": {
+    "en": "My boss is strict, but he is fair with the whole team.",
+    "fr": "Mon patron est strict, mais il est juste avec toute l'équipe.",
+    "es": "Mi jefe es estricto, pero es justo con todo el equipo.",
+    "ar": "رئيسي صارم لكنه عادل مع الفريق كله."
+   },
+   "tr": {
+    "ar": "raʾīsī ṣārim lākinnahu ʿādil maʿa al-farīq kullih."
+   }
+  },
+  {
+   "id": "s06",
+   "text": {
+    "en": "I have a good relationship with my colleagues.",
+    "fr": "J'ai de bonnes relations avec mes collègues.",
+    "es": "Tengo buena relación con mis colegas.",
+    "ar": "لدي علاقة جيدة مع زملائي."
+   },
+   "tr": {
+    "ar": "ladayya ʿalāqa jayyida maʿa zumalāʾī."
+   }
+  },
+  {
+   "id": "s07",
+   "text": {
+    "en": "The company wants to hire two new employees.",
+    "fr": "L'entreprise veut embaucher deux nouveaux employés.",
+    "es": "La empresa quiere contratar a dos empleados nuevos.",
+    "ar": "تريد الشركة أن توظف موظفين جديدين."
+   },
+   "tr": {
+    "ar": "turīd ash-sharika an tuwaẓẓif muwaẓẓafayn jadīdayn."
+   }
+  },
+  {
+   "id": "s08",
+   "text": {
+    "en": "What time does your shift start?",
+    "fr": "À quelle heure commence ton poste ?",
+    "es": "¿A qué hora empieza tu turno?",
+    "ar": "متى تبدأ نوبة عملك؟"
+   },
+   "tr": {
+    "ar": "matā tabdaʾ nawbat ʿamalik?"
+   }
+  },
+  {
+   "id": "s09",
+   "text": {
+    "en": "I start at eight and finish at five.",
+    "fr": "Je commence à huit heures et je finis à dix-sept heures.",
+    "es": "Empiezo a las ocho y termino a las cinco.",
+    "ar": "أبدأ في الثامنة وأنتهي في الخامسة."
+   },
+   "tr": {
+    "ar": "abdaʾ fī ath-thāmina wa-antahī fī al-khāmisa."
+   }
+  },
+  {
+   "id": "s10",
+   "text": {
+    "en": "We have a meeting with the manager at ten.",
+    "fr": "Nous avons une réunion avec le responsable à dix heures.",
+    "es": "Tenemos una reunión con el gerente a las diez.",
+    "ar": "لدينا اجتماع مع المدير في العاشرة."
+   },
+   "tr": {
+    "ar": "ladaynā ijtimāʿ maʿa al-mudīr fī al-ʿāshira."
+   }
+  },
+  {
+   "id": "s11",
+   "text": {
+    "en": "My main duty is to answer customers.",
+    "fr": "Ma principale responsabilité est de répondre aux clients.",
+    "es": "Mi responsabilidad principal es atender a los clientes.",
+    "ar": "مسؤوليتي الرئيسية هي الرد على الزبائن."
+   },
+   "tr": {
+    "ar": "masʾūliyyatī ar-raʾīsiyya hiya ar-radd ʿalā az-zabāʾin."
+   }
+  },
+  {
+   "id": "s12",
+   "text": {
+    "en": "I am responsible for a small team of five people.",
+    "fr": "Je suis responsable d'une petite équipe de cinq personnes.",
+    "es": "Soy responsable de un equipo pequeño de cinco personas.",
+    "ar": "أنا مسؤول عن فريق صغير من خمسة أشخاص."
+   },
+   "tr": {
+    "ar": "anā masʾūl ʿan farīq ṣaghīr min khamsat ashkhāṣ."
+   }
+  },
+  {
+   "id": "s13",
+   "text": {
+    "en": "The deadline for this project is on Friday.",
+    "fr": "La date limite de ce projet est vendredi.",
+    "es": "La fecha límite de este proyecto es el viernes.",
+    "ar": "الموعد النهائي لهذا المشروع يوم الجمعة."
+   },
+   "tr": {
+    "ar": "al-mawʿid an-nihāʾī li-hādhā al-mashrūʿ yawm al-jumʿa."
+   }
+  },
+  {
+   "id": "s14",
+   "text": {
+    "en": "I have too many tasks and not enough time.",
+    "fr": "J'ai trop de tâches et pas assez de temps.",
+    "es": "Tengo demasiadas tareas y poco tiempo.",
+    "ar": "لدي مهام كثيرة جدا ووقت قليل."
+   },
+   "tr": {
+    "ar": "ladayya mahāmm kathīra jiddan wa-waqt qalīl."
+   }
+  },
+  {
+   "id": "s15",
+   "text": {
+    "en": "Sorry, I am busy. Can we talk after the meeting?",
+    "fr": "Désolé, je suis occupé. On peut parler après la réunion ?",
+    "es": "Lo siento, estoy ocupado. ¿Podemos hablar después de la reunión?",
+    "ar": "آسف، أنا مشغول. هل نتحدث بعد الاجتماع؟"
+   },
+   "tr": {
+    "ar": "āsif, anā mashghūl. hal natakallam baʿda al-ijtimāʿ?"
+   }
+  },
+  {
+   "id": "s16",
+   "text": {
+    "en": "He works full-time, but she prefers part-time.",
+    "fr": "Il travaille à temps plein, mais elle préfère le temps partiel.",
+    "es": "Él trabaja a tiempo completo, pero ella prefiere tiempo parcial.",
+    "ar": "هو يعمل بدوام كامل، لكنها تفضل الدوام الجزئي."
+   },
+   "tr": {
+    "ar": "huwa yaʿmal bidawām kāmil, lākinnahā tufaḍḍil ad-dawām al-juzʾī."
+   }
+  },
+  {
+   "id": "s17",
+   "text": {
+    "en": "Last month I did a lot of overtime.",
+    "fr": "Le mois dernier, j'ai fait beaucoup d'heures supplémentaires.",
+    "es": "El mes pasado hice muchas horas extra.",
+    "ar": "في الشهر الماضي عملت ساعات إضافية كثيرة."
+   },
+   "tr": {
+    "ar": "fī ash-shahr al-māḍī ʿamiltu sāʿāt iḍāfiyya kathīra."
+   }
+  },
+  {
+   "id": "s18",
+   "text": {
+    "en": "My salary is not high, but the contract is stable.",
+    "fr": "Mon salaire n'est pas élevé, mais le contrat est stable.",
+    "es": "Mi salario no es alto, pero el contrato es estable.",
+    "ar": "راتبي ليس مرتفعا لكن العقد مستقر."
+   },
+   "tr": {
+    "ar": "rātibī laysa murtafiʿan lākinna al-ʿaqd mustaqirr."
+   }
+  },
+  {
+   "id": "s19",
+   "text": {
+    "en": "He earns more now than in his old job.",
+    "fr": "Il gagne plus maintenant que dans son ancien emploi.",
+    "es": "Ahora gana más que en su antiguo empleo.",
+    "ar": "هو يكسب الآن أكثر مما كان يكسب في وظيفته القديمة."
+   },
+   "tr": {
+    "ar": "huwa yaksib al-ān akthar mimmā kāna yaksib fī waẓīfatihi al-qadīma."
+   }
+  },
+  {
+   "id": "s20",
+   "text": {
+    "en": "I have been out of work for three months.",
+    "fr": "Je suis au chômage depuis trois mois.",
+    "es": "Llevo tres meses desempleado.",
+    "ar": "أنا عاطل عن العمل منذ ثلاثة أشهر."
+   },
+   "tr": {
+    "ar": "anā ʿāṭil ʿan al-ʿamal mundhu thalāthat ashhur."
+   }
+  },
+  {
+   "id": "s21",
+   "text": {
+    "en": "My father retired last year after forty years in the factory.",
+    "fr": "Mon père a pris sa retraite l'an dernier après quarante ans à l'usine.",
+    "es": "Mi padre se jubiló el año pasado después de cuarenta años en la fábrica.",
+    "ar": "تقاعد أبي العام الماضي بعد أربعين سنة في المصنع."
+   },
+   "tr": {
+    "ar": "taqāʿada abī al-ʿām al-māḍī baʿda arbaʿīna sana fī al-maṣnaʿ."
+   }
+  },
+  {
+   "id": "s22",
+   "text": {
+    "en": "She resigned because she wanted a new challenge.",
+    "fr": "Elle a démissionné parce qu'elle voulait un nouveau défi.",
+    "es": "Dimitió porque quería un nuevo reto.",
+    "ar": "استقالت لأنها أرادت تحديا جديدا."
+   },
+   "tr": {
+    "ar": "istaqālat li-annahā arādat taḥaddiyan jadīdan."
+   }
+  },
+  {
+   "id": "s23",
+   "text": {
+    "en": "Do you prefer working in a team or alone?",
+    "fr": "Préfères-tu travailler en équipe ou seul ?",
+    "es": "¿Prefieres trabajar en equipo o solo?",
+    "ar": "هل تفضل العمل ضمن فريق أم وحدك؟"
+   },
+   "tr": {
+    "ar": "hal tufaḍḍil al-ʿamal ḍimn farīq am waḥdak?"
+   }
+  },
+  {
+   "id": "s24",
+   "text": {
+    "en": "Our office is in the city centre, near the station.",
+    "fr": "Notre bureau est au centre-ville, près de la gare.",
+    "es": "Nuestra oficina está en el centro, cerca de la estación.",
+    "ar": "مكتبنا في وسط المدينة قرب المحطة."
+   },
+   "tr": {
+    "ar": "maktabunā fī wasaṭ al-madīna qurb al-maḥaṭṭa."
+   }
+  },
+  {
+   "id": "s25",
+   "text": {
+    "en": "A good driver must be careful and patient.",
+    "fr": "Un bon chauffeur doit être prudent et patient.",
+    "es": "Un buen conductor tiene que ser prudente y paciente.",
+    "ar": "السائق الجيد يجب أن يكون حذرا وصبورا."
+   },
+   "tr": {
+    "ar": "as-sāʾiq al-jayyid yajib an yakūn ḥadhiran wa-ṣabūran."
+   }
+  },
+  {
+   "id": "s26",
+   "text": {
+    "en": "The farmer starts work before sunrise.",
+    "fr": "L'agriculteur commence à travailler avant le lever du soleil.",
+    "es": "El agricultor empieza a trabajar antes de que salga el sol.",
+    "ar": "يبدأ الفلاح العمل قبل شروق الشمس."
+   },
+   "tr": {
+    "ar": "yabdaʾ al-fallāḥ al-ʿamal qabla shurūq ash-shams."
+   }
+  },
+  {
+   "id": "s27",
+   "text": {
+    "en": "The mechanic says he can fix my car today.",
+    "fr": "Le mécanicien dit qu'il peut réparer ma voiture aujourd'hui.",
+    "es": "El mecánico dice que puede arreglar mi coche hoy.",
+    "ar": "يقول الميكانيكي إنه يستطيع إصلاح سيارتي اليوم."
+   },
+   "tr": {
+    "ar": "yaqūl al-mīkānīkī innahu yastaṭīʿ iṣlāḥ sayyāratī al-yawm."
+   }
+  },
+  {
+   "id": "s28",
+   "text": {
+    "en": "Tomorrow is my day off, so I will rest.",
+    "fr": "Demain, c'est mon jour de congé, donc je vais me reposer.",
+    "es": "Mañana es mi día libre, así que voy a descansar.",
+    "ar": "غدا يوم عطلتي لذلك سأرتاح."
+   },
+   "tr": {
+    "ar": "ghadan yawm ʿuṭlatī li-dhālika sa-artāḥ."
+   }
+  },
+  {
+   "id": "s29",
+   "text": {
+    "en": "The builders finish the project next month.",
+    "fr": "Les maçons terminent le chantier le mois prochain.",
+    "es": "Los albañiles terminan la obra el mes que viene.",
+    "ar": "ينتهي البناؤون من المشروع في الشهر القادم."
+   },
+   "tr": {
+    "ar": "yantahī al-bannāʾūn min al-mashrūʿ fī ash-shahr al-qādim."
+   }
+  },
+  {
+   "id": "s30",
+   "text": {
+    "en": "I like my job because I learn something new every day.",
+    "fr": "J'aime mon travail parce que j'apprends quelque chose de nouveau chaque jour.",
+    "es": "Me gusta mi trabajo porque aprendo algo nuevo cada día.",
+    "ar": "أحب عملي لأنني أتعلم شيئا جديدا كل يوم."
+   },
+   "tr": {
+    "ar": "uḥibb ʿamalī li-annanī ataʿallam shayʾan jadīdan kull yawm."
+   }
+  }
+ ],
+ "dialogue": [
+  "s01",
+  "s02",
+  "s07",
+  "s08"
+ ]
+}

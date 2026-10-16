@@ -1,0 +1,986 @@
+{
+ "id": "u06",
+ "level": "a3",
+ "order": 6,
+ "title": {
+  "en": "Long reading",
+  "fr": "La lecture longue",
+  "es": "La lectura extensa",
+  "ar": "القراءة المطولة"
+ },
+ "tip": {
+  "en": "With a long text, read twice: first for the main idea, then for the details. Pay attention to what is implied, not only to what is stated, and always ask who is speaking and why.",
+  "fr": "Avec un texte long, lisez deux fois : d'abord pour l'idée principale, ensuite pour les détails. Soyez attentif à ce qui est sous-entendu autant qu'à ce qui est dit, et demandez-vous toujours qui parle et pourquoi.",
+  "es": "Con un texto largo, lee dos veces: primero para captar la idea principal y después para los detalles. Presta atención a lo implícito y no solo a lo dicho, y pregúntate siempre quién habla y por qué.",
+  "ar": "عند قراءة نص طويل اقرأه مرتين: الأولى لتلتقط الفكرة الرئيسية والثانية للتفاصيل. انتبه إلى ما هو ضمني لا إلى ما هو مصرح به فقط، واسأل دائما: من يتكلم ولماذا؟"
+ },
+ "words": [
+  {
+   "id": "passage",
+   "text": {
+    "en": "passage",
+    "fr": "passage",
+    "es": "pasaje",
+    "ar": "مقطع نصي"
+   },
+   "tr": {
+    "ar": "maqṭaʿ naṣṣī"
+   }
+  },
+  {
+   "id": "paragraph",
+   "text": {
+    "en": "paragraph",
+    "fr": "paragraphe",
+    "es": "párrafo",
+    "ar": "فقرة"
+   },
+   "tr": {
+    "ar": "faqra"
+   }
+  },
+  {
+   "id": "text",
+   "text": {
+    "en": "text",
+    "fr": "texte",
+    "es": "texto",
+    "ar": "نص"
+   },
+   "tr": {
+    "ar": "naṣṣ"
+   }
+  },
+  {
+   "id": "title",
+   "text": {
+    "en": "title",
+    "fr": "titre",
+    "es": "título",
+    "ar": "عنوان"
+   },
+   "tr": {
+    "ar": "ʿunwān"
+   }
+  },
+  {
+   "id": "heading",
+   "text": {
+    "en": "heading",
+    "fr": "intertitre",
+    "es": "subtítulo",
+    "ar": "عنوان فرعي"
+   },
+   "tr": {
+    "ar": "ʿunwān farʿī"
+   }
+  },
+  {
+   "id": "thesis",
+   "text": {
+    "en": "thesis",
+    "fr": "thèse",
+    "es": "tesis",
+    "ar": "أطروحة"
+   },
+   "tr": {
+    "ar": "uṭrūḥa"
+   }
+  },
+  {
+   "id": "main_idea",
+   "text": {
+    "en": "main idea",
+    "fr": "idée principale",
+    "es": "idea principal",
+    "ar": "الفكرة الرئيسية"
+   },
+   "tr": {
+    "ar": "al-fikra ar-raʾīsiyya"
+   }
+  },
+  {
+   "id": "detail",
+   "text": {
+    "en": "detail",
+    "fr": "détail",
+    "es": "detalle",
+    "ar": "تفصيل"
+   },
+   "tr": {
+    "ar": "tafṣīl"
+   }
+  },
+  {
+   "id": "summary",
+   "text": {
+    "en": "summary",
+    "fr": "résumé",
+    "es": "resumen",
+    "ar": "ملخص"
+   },
+   "tr": {
+    "ar": "mulakhkhaṣ"
+   }
+  },
+  {
+   "id": "skim",
+   "text": {
+    "en": "skim",
+    "fr": "parcourir",
+    "es": "hojear",
+    "ar": "تصفح"
+   },
+   "tr": {
+    "ar": "taṣaffaḥa"
+   }
+  },
+  {
+   "id": "reread",
+   "text": {
+    "en": "reread",
+    "fr": "relire",
+    "es": "releer",
+    "ar": "أعاد القراءة"
+   },
+   "tr": {
+    "ar": "aʿāda al-qirāʾa"
+   }
+  },
+  {
+   "id": "annotate",
+   "text": {
+    "en": "annotate",
+    "fr": "annoter",
+    "es": "anotar",
+    "ar": "دون ملاحظات"
+   },
+   "tr": {
+    "ar": "dawwana mulāḥaẓāt"
+   }
+  },
+  {
+   "id": "infer",
+   "text": {
+    "en": "infer",
+    "fr": "déduire",
+    "es": "deducir",
+    "ar": "استنتج"
+   },
+   "tr": {
+    "ar": "istantaja"
+   }
+  },
+  {
+   "id": "imply",
+   "text": {
+    "en": "imply",
+    "fr": "sous-entendre",
+    "es": "dar a entender",
+    "ar": "لمح"
+   },
+   "tr": {
+    "ar": "lammaḥa"
+   }
+  },
+  {
+   "id": "hint",
+   "text": {
+    "en": "hint",
+    "fr": "indice",
+    "es": "pista",
+    "ar": "تلميح"
+   },
+   "tr": {
+    "ar": "talmīḥ"
+   }
+  },
+  {
+   "id": "context",
+   "text": {
+    "en": "context",
+    "fr": "contexte",
+    "es": "contexto",
+    "ar": "سياق"
+   },
+   "tr": {
+    "ar": "siyāq"
+   }
+  },
+  {
+   "id": "background",
+   "text": {
+    "en": "background",
+    "fr": "parcours",
+    "es": "trasfondo",
+    "ar": "خلفية"
+   },
+   "tr": {
+    "ar": "khalfiyya"
+   }
+  },
+  {
+   "id": "implicit",
+   "text": {
+    "en": "implicit",
+    "fr": "implicite",
+    "es": "implícito",
+    "ar": "ضمني"
+   },
+   "tr": {
+    "ar": "ḍimnī"
+   }
+  },
+  {
+   "id": "explicit",
+   "text": {
+    "en": "explicit",
+    "fr": "explicite",
+    "es": "explícito",
+    "ar": "صريح"
+   },
+   "tr": {
+    "ar": "ṣarīḥ"
+   }
+  },
+  {
+   "id": "purpose",
+   "text": {
+    "en": "author's purpose",
+    "fr": "intention de l'auteur",
+    "es": "intención del autor",
+    "ar": "قصد المؤلف"
+   },
+   "tr": {
+    "ar": "qaṣd al-muʾallif"
+   }
+  },
+  {
+   "id": "bias",
+   "text": {
+    "en": "bias",
+    "fr": "parti pris",
+    "es": "sesgo",
+    "ar": "انحياز"
+   },
+   "tr": {
+    "ar": "inḥiyāz"
+   }
+  },
+  {
+   "id": "source",
+   "text": {
+    "en": "source",
+    "fr": "source",
+    "es": "fuente",
+    "ar": "مصدر"
+   },
+   "tr": {
+    "ar": "maṣdar"
+   }
+  },
+  {
+   "id": "reliable",
+   "text": {
+    "en": "reliable",
+    "fr": "fiable",
+    "es": "fiable",
+    "ar": "موثوق"
+   },
+   "tr": {
+    "ar": "mawthūq"
+   }
+  },
+  {
+   "id": "claim",
+   "text": {
+    "en": "claim",
+    "fr": "affirmation",
+    "es": "afirmación",
+    "ar": "دعوى"
+   },
+   "tr": {
+    "ar": "daʿwā"
+   }
+  },
+  {
+   "id": "evidence",
+   "text": {
+    "en": "evidence",
+    "fr": "preuve",
+    "es": "prueba",
+    "ar": "دليل"
+   },
+   "tr": {
+    "ar": "dalīl"
+   }
+  },
+  {
+   "id": "example",
+   "text": {
+    "en": "example",
+    "fr": "exemple",
+    "es": "ejemplo",
+    "ar": "مثال"
+   },
+   "tr": {
+    "ar": "mithāl"
+   }
+  },
+  {
+   "id": "contrast",
+   "text": {
+    "en": "contrast",
+    "fr": "contraste",
+    "es": "contraste",
+    "ar": "تباين"
+   },
+   "tr": {
+    "ar": "tabāyun"
+   }
+  },
+  {
+   "id": "comparison",
+   "text": {
+    "en": "comparison",
+    "fr": "comparaison",
+    "es": "comparación",
+    "ar": "مقارنة"
+   },
+   "tr": {
+    "ar": "muqārana"
+   }
+  },
+  {
+   "id": "cause",
+   "text": {
+    "en": "cause",
+    "fr": "cause",
+    "es": "causa",
+    "ar": "سبب"
+   },
+   "tr": {
+    "ar": "sabab"
+   }
+  },
+  {
+   "id": "effect",
+   "text": {
+    "en": "effect",
+    "fr": "effet",
+    "es": "efecto",
+    "ar": "أثر"
+   },
+   "tr": {
+    "ar": "athar"
+   }
+  },
+  {
+   "id": "consequence",
+   "text": {
+    "en": "consequence",
+    "fr": "conséquence",
+    "es": "consecuencia",
+    "ar": "عاقبة"
+   },
+   "tr": {
+    "ar": "ʿāqiba"
+   }
+  },
+  {
+   "id": "sequence",
+   "text": {
+    "en": "sequence",
+    "fr": "enchaînement",
+    "es": "secuencia",
+    "ar": "تسلسل"
+   },
+   "tr": {
+    "ar": "tasalsul"
+   }
+  },
+  {
+   "id": "chronology",
+   "text": {
+    "en": "chronology",
+    "fr": "chronologie",
+    "es": "cronología",
+    "ar": "تسلسل زمني"
+   },
+   "tr": {
+    "ar": "tasalsul zamanī"
+   }
+  },
+  {
+   "id": "transition",
+   "text": {
+    "en": "transition",
+    "fr": "transition",
+    "es": "transición",
+    "ar": "انتقال"
+   },
+   "tr": {
+    "ar": "intiqāl"
+   }
+  },
+  {
+   "id": "repetition",
+   "text": {
+    "en": "repetition",
+    "fr": "répétition",
+    "es": "repetición",
+    "ar": "تكرار"
+   },
+   "tr": {
+    "ar": "takrār"
+   }
+  },
+  {
+   "id": "emphasis",
+   "text": {
+    "en": "emphasis",
+    "fr": "insistance",
+    "es": "énfasis",
+    "ar": "تشديد"
+   },
+   "tr": {
+    "ar": "tashdīd"
+   }
+  },
+  {
+   "id": "unfamiliar_word",
+   "text": {
+    "en": "unfamiliar word",
+    "fr": "mot inconnu",
+    "es": "palabra desconocida",
+    "ar": "كلمة غريبة"
+   },
+   "tr": {
+    "ar": "kalima gharība"
+   }
+  },
+  {
+   "id": "ambiguity",
+   "text": {
+    "en": "ambiguity",
+    "fr": "ambiguïté",
+    "es": "ambigüedad",
+    "ar": "غموض"
+   },
+   "tr": {
+    "ar": "ghumūḍ"
+   }
+  },
+  {
+   "id": "perspective",
+   "text": {
+    "en": "perspective",
+    "fr": "point de vue",
+    "es": "punto de vista",
+    "ar": "وجهة نظر"
+   },
+   "tr": {
+    "ar": "wijhat naẓar"
+   }
+  },
+  {
+   "id": "argue",
+   "text": {
+    "en": "argue",
+    "fr": "soutenir",
+    "es": "sostener",
+    "ar": "جادل"
+   },
+   "tr": {
+    "ar": "jādala"
+   }
+  },
+  {
+   "id": "conclude",
+   "text": {
+    "en": "conclude",
+    "fr": "conclure",
+    "es": "concluir",
+    "ar": "خلص"
+   },
+   "tr": {
+    "ar": "khalaṣa"
+   }
+  },
+  {
+   "id": "interpret",
+   "text": {
+    "en": "interpret",
+    "fr": "interpréter",
+    "es": "interpretar",
+    "ar": "فسر"
+   },
+   "tr": {
+    "ar": "fassara"
+   }
+  },
+  {
+   "id": "reading",
+   "text": {
+    "en": "reading",
+    "fr": "lecture",
+    "es": "lectura",
+    "ar": "قراءة"
+   },
+   "tr": {
+    "ar": "qirāʾa"
+   }
+  },
+  {
+   "id": "concentration",
+   "text": {
+    "en": "concentration",
+    "fr": "concentration",
+    "es": "concentración",
+    "ar": "تركيز"
+   },
+   "tr": {
+    "ar": "tarkīz"
+   }
+  },
+  {
+   "id": "critical",
+   "text": {
+    "en": "critical",
+    "fr": "critique",
+    "es": "crítico",
+    "ar": "نقدي"
+   },
+   "tr": {
+    "ar": "naqdī"
+   }
+  },
+  {
+   "id": "footnote",
+   "text": {
+    "en": "footnote",
+    "fr": "note de bas de page",
+    "es": "nota a pie de página",
+    "ar": "هامش"
+   },
+   "tr": {
+    "ar": "hāmish"
+   }
+  },
+  {
+   "id": "quote",
+   "text": {
+    "en": "quote",
+    "fr": "citer",
+    "es": "citar",
+    "ar": "استشهد"
+   },
+   "tr": {
+    "ar": "istashhada"
+   }
+  },
+  {
+   "id": "reference",
+   "text": {
+    "en": "reference",
+    "fr": "référence",
+    "es": "referencia",
+    "ar": "مرجع"
+   },
+   "tr": {
+    "ar": "marjiʿ"
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "text": {
+    "en": "Before reading in depth, skim the title and the headings to grasp the structure.",
+    "fr": "Avant de lire en profondeur, parcourez le titre et les intertitres pour saisir la structure.",
+    "es": "Antes de leer a fondo, hojea el título y los subtítulos para captar la estructura.",
+    "ar": "قبل القراءة المتأنية تصفح العنوان والعناوين الفرعية لتفهم البنية."
+   },
+   "tr": {
+    "ar": "qabla al-qirāʾa al-mutaʾanniya taṣaffaḥ al-ʿunwān wa-l-ʿanāwīn al-farʿiyya li-tafhama al-bunya."
+   }
+  },
+  {
+   "id": "s02",
+   "text": {
+    "en": "The thesis appears in the first paragraph, but the main idea only becomes clear at the end.",
+    "fr": "La thèse apparaît dans le premier paragraphe, mais l'idée principale ne se dégage qu'à la fin.",
+    "es": "La tesis aparece en el primer párrafo, pero la idea principal solo se aclara al final.",
+    "ar": "تظهر الأطروحة في الفقرة الأولى، لكن الفكرة الرئيسية لا تتضح إلا في النهاية."
+   },
+   "tr": {
+    "ar": "taẓharu al-uṭrūḥa fī al-faqra al-ūlā, lākinna al-fikra ar-raʾīsiyya lā tattaḍiḥu illā fī an-nihāya."
+   }
+  },
+  {
+   "id": "s03",
+   "text": {
+    "en": "A good reader infers what the author leaves unsaid.",
+    "fr": "Un bon lecteur déduit ce que l'auteur laisse non dit.",
+    "es": "Un buen lector deduce lo que el autor calla.",
+    "ar": "القارئ الجيد يستنتج ما سكت عنه المؤلف."
+   },
+   "tr": {
+    "ar": "al-qāriʾ al-jayyid yastantiju mā sakata ʿanhu al-muʾallif."
+   }
+  },
+  {
+   "id": "s04",
+   "text": {
+    "en": "She never says she is angry; she merely implies it with a cold remark.",
+    "fr": "Elle ne dit jamais qu'elle est en colère ; elle le sous-entend d'une remarque glaciale.",
+    "es": "Nunca dice que está enfadada; solo lo da a entender con un comentario gélido.",
+    "ar": "لا تقول إنها غاضبة، بل تلمح إلى ذلك بملاحظة باردة."
+   },
+   "tr": {
+    "ar": "lā taqūlu innahā ghāḍiba, bal tulammiḥu ilā dhālika bi-mulāḥaẓatin bārida."
+   }
+  },
+  {
+   "id": "s05",
+   "text": {
+    "en": "One small detail in the second paragraph is a hint of what will happen.",
+    "fr": "Un petit détail du deuxième paragraphe est un indice de ce qui va se passer.",
+    "es": "Un pequeño detalle del segundo párrafo es una pista de lo que va a ocurrir.",
+    "ar": "تفصيل صغير في الفقرة الثانية تلميح إلى ما سيحدث."
+   },
+   "tr": {
+    "ar": "tafṣīl ṣaghīr fī al-faqra ath-thāniya talmīḥ ilā mā sa-yaḥduth."
+   }
+  },
+  {
+   "id": "s06",
+   "text": {
+    "en": "Without the historical context, the passage is hard to understand.",
+    "fr": "Sans le contexte historique, ce passage est difficile à comprendre.",
+    "es": "Sin el contexto histórico, el pasaje es difícil de entender.",
+    "ar": "من دون السياق التاريخي يصعب فهم هذا المقطع."
+   },
+   "tr": {
+    "ar": "min dūni as-siyāq at-tārīkhī yaṣʿubu fahmu hādhā al-maqṭaʿ."
+   }
+  },
+  {
+   "id": "s07",
+   "text": {
+    "en": "Knowing the author's background changes how we read the text.",
+    "fr": "Connaître le parcours de l'auteur change la manière de lire le texte.",
+    "es": "Conocer el trasfondo del autor cambia la forma de leer el texto.",
+    "ar": "معرفة خلفية المؤلف تغير طريقة قراءة النص."
+   },
+   "tr": {
+    "ar": "maʿrifat khalfiyyat al-muʾallif tughayyiru ṭarīqata qirāʾat an-naṣṣ."
+   }
+  },
+  {
+   "id": "s08",
+   "text": {
+    "en": "The criticism is explicit in the first lines and implicit in the rest.",
+    "fr": "La critique est explicite dans les premières lignes et implicite dans le reste.",
+    "es": "La crítica es explícita en las primeras líneas e implícita en el resto.",
+    "ar": "النقد صريح في الأسطر الأولى وضمني في الباقي."
+   },
+   "tr": {
+    "ar": "an-naqd ṣarīḥ fī al-asṭur al-ūlā wa-ḍimnī fī al-bāqī."
+   }
+  },
+  {
+   "id": "s09",
+   "text": {
+    "en": "What is the author's purpose: to inform, to convince or to provoke?",
+    "fr": "Quelle est l'intention de l'auteur : informer, convaincre ou provoquer ?",
+    "es": "¿Cuál es la intención del autor: informar, convencer o provocar?",
+    "ar": "ما قصد المؤلف: أن يخبر أم أن يقنع أم أن يستفز؟"
+   },
+   "tr": {
+    "ar": "mā qaṣdu al-muʾallif: an yukhbira am an yuqniʿa am an yastafizza?"
+   }
+  },
+  {
+   "id": "s10",
+   "text": {
+    "en": "The article shows a clear bias: it only quotes one side.",
+    "fr": "L'article affiche un parti pris évident : il ne cite qu'un seul camp.",
+    "es": "El artículo muestra un sesgo evidente: solo cita a una de las partes.",
+    "ar": "يظهر في المقال انحياز واضح، إذ لا يستشهد إلا بطرف واحد."
+   },
+   "tr": {
+    "ar": "yaẓharu fī al-maqāl inḥiyāz wāḍiḥ, idh lā yastashhidu illā bi-ṭarafin wāḥid."
+   }
+  },
+  {
+   "id": "s11",
+   "text": {
+    "en": "Check the source before you trust a claim: is it reliable?",
+    "fr": "Vérifiez la source avant de croire une affirmation : est-elle fiable ?",
+    "es": "Comprueba la fuente antes de creer una afirmación: ¿es fiable?",
+    "ar": "تحقق من المصدر قبل أن تصدق دعوى ما: هل هو موثوق؟"
+   },
+   "tr": {
+    "ar": "taḥaqqaq mina al-maṣdar qabla an tuṣaddiqa daʿwā mā: hal huwa mawthūq?"
+   }
+  },
+  {
+   "id": "s12",
+   "text": {
+    "en": "A claim without evidence deserves a critical reading, not applause.",
+    "fr": "Une affirmation sans preuve mérite une lecture critique, pas des applaudissements.",
+    "es": "Una afirmación sin pruebas merece una lectura crítica, no aplausos.",
+    "ar": "الدعوى التي بلا دليل تستحق قراءة نقدية لا تصفيقا."
+   },
+   "tr": {
+    "ar": "ad-daʿwā allatī bi-lā dalīl tastaḥiqqu qirāʾatan naqdiyya lā taṣfīqan."
+   }
+  },
+  {
+   "id": "s13",
+   "text": {
+    "en": "The author illustrates each idea with a striking example.",
+    "fr": "L'auteur illustre chaque idée par un exemple frappant.",
+    "es": "El autor ilustra cada idea con un ejemplo llamativo.",
+    "ar": "يوضح المؤلف كل فكرة بمثال لافت."
+   },
+   "tr": {
+    "ar": "yuwaḍḍiḥu al-muʾallif kulla fikra bi-mithālin lāfit."
+   }
+  },
+  {
+   "id": "s14",
+   "text": {
+    "en": "The contrast between the two cities runs through the whole text.",
+    "fr": "Le contraste entre les deux villes parcourt tout le texte.",
+    "es": "El contraste entre las dos ciudades recorre todo el texto.",
+    "ar": "التباين بين المدينتين يسري في النص كله."
+   },
+   "tr": {
+    "ar": "at-tabāyun bayna al-madīnatayn yasrī fī an-naṣṣ kullihi."
+   }
+  },
+  {
+   "id": "s15",
+   "text": {
+    "en": "The comparison between past and present is the backbone of the argument.",
+    "fr": "La comparaison entre le passé et le présent est l'ossature de l'argumentation.",
+    "es": "La comparación entre el pasado y el presente es la columna vertebral del argumento.",
+    "ar": "المقارنة بين الماضي والحاضر عماد هذه الحجة."
+   },
+   "tr": {
+    "ar": "al-muqārana bayna al-māḍī wa-l-ḥāḍir ʿimādu hādhihi al-ḥujja."
+   }
+  },
+  {
+   "id": "s16",
+   "text": {
+    "en": "The text explains the cause of the crisis, then its effect, then its consequences.",
+    "fr": "Le texte explique la cause de la crise, puis son effet, puis ses conséquences.",
+    "es": "El texto explica la causa de la crisis, luego su efecto y después sus consecuencias.",
+    "ar": "يشرح النص سبب الأزمة ثم أثرها ثم عواقبها."
+   },
+   "tr": {
+    "ar": "yashraḥu an-naṣṣ sabab al-azma thumma atharahā thumma ʿawāqibahā."
+   }
+  },
+  {
+   "id": "s17",
+   "text": {
+    "en": "Follow the sequence of events carefully: the chronology is not always linear.",
+    "fr": "Suivez attentivement l'enchaînement des événements : la chronologie n'est pas toujours linéaire.",
+    "es": "Sigue con atención la secuencia de los hechos: la cronología no siempre es lineal.",
+    "ar": "تتبع تسلسل الأحداث بعناية، فالتسلسل الزمني ليس دائما خطيا."
+   },
+   "tr": {
+    "ar": "tatabbaʿ tasalsul al-aḥdāth bi-ʿināya, fa-at-tasalsul az-zamanī laysa dāʾiman khaṭṭiyan."
+   }
+  },
+  {
+   "id": "s18",
+   "text": {
+    "en": "The transition between the two parts is so smooth that you barely notice it.",
+    "fr": "La transition entre les deux parties est si fluide qu'on la remarque à peine.",
+    "es": "La transición entre las dos partes es tan fluida que casi no se nota.",
+    "ar": "الانتقال بين الجزأين سلس إلى حد أنك لا تكاد تلحظه."
+   },
+   "tr": {
+    "ar": "al-intiqāl bayna al-juzʾayn salis ilā ḥaddin annaka lā takādu talḥaẓuhu."
+   }
+  },
+  {
+   "id": "s19",
+   "text": {
+    "en": "The repetition of the same word is not a flaw: it adds emphasis.",
+    "fr": "La répétition du même mot n'est pas un défaut : elle donne de l'insistance.",
+    "es": "La repetición de la misma palabra no es un defecto: aporta énfasis.",
+    "ar": "تكرار الكلمة نفسها ليس عيبا، بل يمنح تشديدا."
+   },
+   "tr": {
+    "ar": "takrār al-kalima nafsihā laysa ʿaybān, bal yamnaḥu tashdīdan."
+   }
+  },
+  {
+   "id": "s20",
+   "text": {
+    "en": "When you meet an unfamiliar word, reread the sentence before reaching for the dictionary.",
+    "fr": "Face à un mot inconnu, relisez la phrase avant de chercher dans le dictionnaire.",
+    "es": "Ante una palabra desconocida, relee la frase antes de acudir al diccionario.",
+    "ar": "حين تصادف كلمة غريبة أعد قراءة الجملة قبل أن تلجأ إلى المعجم."
+   },
+   "tr": {
+    "ar": "ḥīna tuṣādifu kalimatan gharība aʿid qirāʾata al-jumla qabla an taljaʾa ilā al-muʿjam."
+   }
+  },
+  {
+   "id": "s21",
+   "text": {
+    "en": "The ambiguity of the ending is deliberate.",
+    "fr": "L'ambiguïté de la fin est délibérée.",
+    "es": "La ambigüedad del final es deliberada.",
+    "ar": "غموض النهاية متعمد."
+   },
+   "tr": {
+    "ar": "ghumūḍ an-nihāya mutaʿammad."
+   }
+  },
+  {
+   "id": "s22",
+   "text": {
+    "en": "The same facts read differently depending on the narrator's perspective.",
+    "fr": "Les mêmes faits se lisent différemment selon le point de vue du narrateur.",
+    "es": "Los mismos hechos se leen de otro modo según el punto de vista del narrador.",
+    "ar": "تقرأ الوقائع نفسها قراءة مختلفة بحسب وجهة نظر الراوي."
+   },
+   "tr": {
+    "ar": "tuqraʾu al-waqāʾiʿ nafsuhā qirāʾatan mukhtalifa bi-ḥasabi wijhati naẓari ar-rāwī."
+   }
+  },
+  {
+   "id": "s23",
+   "text": {
+    "en": "The writer argues that reading slowly is a form of resistance.",
+    "fr": "L'auteur soutient que lire lentement est une forme de résistance.",
+    "es": "El autor sostiene que leer despacio es una forma de resistencia.",
+    "ar": "يجادل الكاتب بأن القراءة البطيئة شكل من أشكال المقاومة."
+   },
+   "tr": {
+    "ar": "yujādilu al-kātib bi-anna al-qirāʾa al-baṭīʾa shaklun min ashkāl al-muqāwama."
+   }
+  },
+  {
+   "id": "s24",
+   "text": {
+    "en": "From these details, we can conclude that the narrator is lying.",
+    "fr": "De ces détails, on peut conclure que le narrateur ment.",
+    "es": "A partir de estos detalles, podemos concluir que el narrador miente.",
+    "ar": "من هذه التفاصيل نخلص إلى أن الراوي يكذب."
+   },
+   "tr": {
+    "ar": "min hādhihi at-tafāṣīl nakhluṣu ilā anna ar-rāwī yakdhib."
+   }
+  },
+  {
+   "id": "s25",
+   "text": {
+    "en": "There are many ways to interpret this passage, and none is entirely wrong.",
+    "fr": "Ce passage peut s'interpréter de bien des façons, et aucune n'est tout à fait fausse.",
+    "es": "Este pasaje admite muchas interpretaciones y ninguna es del todo errónea.",
+    "ar": "يمكن تفسير هذا المقطع بطرق كثيرة، وليس أي منها خاطئا تماما."
+   },
+   "tr": {
+    "ar": "yumkinu tafsīru hādhā al-maqṭaʿ bi-ṭuruqin kathīra, wa-laysa ayyun minhā khāṭiʾan tamāman."
+   }
+  },
+  {
+   "id": "s26",
+   "text": {
+    "en": "Reading a long text demands concentration: put your phone away.",
+    "fr": "Lire un long texte exige de la concentration : range ton téléphone.",
+    "es": "Leer un texto largo exige concentración: guarda el móvil.",
+    "ar": "قراءة نص طويل تتطلب تركيزا، فابعد هاتفك."
+   },
+   "tr": {
+    "ar": "qirāʾatu naṣṣin ṭawīl tataṭallabu tarkīzan, fa-ibʿid hātifaka."
+   }
+  },
+  {
+   "id": "s27",
+   "text": {
+    "en": "A footnote often hides the most interesting reference.",
+    "fr": "Une note de bas de page cache souvent la référence la plus intéressante.",
+    "es": "Una nota a pie de página suele esconder la referencia más interesante.",
+    "ar": "كثيرا ما يخفي الهامش المرجع الأكثر إثارة للاهتمام."
+   },
+   "tr": {
+    "ar": "kathīran mā yukhfī al-hāmish al-marjiʿ al-akthar ithāratan lil-ihtimām."
+   }
+  },
+  {
+   "id": "s28",
+   "text": {
+    "en": "I will annotate the key sentences, then write a summary of two lines.",
+    "fr": "J'annoterai les phrases clés, puis j'écrirai un résumé de deux lignes.",
+    "es": "Anotaré las frases clave y luego escribiré un resumen de dos líneas.",
+    "ar": "سأدون ملاحظات على الجمل الرئيسية ثم أكتب ملخصا من سطرين."
+   },
+   "tr": {
+    "ar": "sa-udawwinu mulāḥaẓāt ʿalā al-jumal ar-raʾīsiyya thumma aktubu mulakhkhaṣan min saṭrayn."
+   }
+  },
+  {
+   "id": "s29",
+   "text": {
+    "en": "Quote only the sentences that really support your thesis.",
+    "fr": "Ne citez que les phrases qui soutiennent vraiment votre thèse.",
+    "es": "Cita solo las frases que realmente respalden tu tesis.",
+    "ar": "استشهد فقط بالجمل التي تدعم أطروحتك فعلا."
+   },
+   "tr": {
+    "ar": "istashhid faqaṭ bi-l-jumal allatī tadʿamu uṭrūḥataka fiʿlan."
+   }
+  },
+  {
+   "id": "s30",
+   "text": {
+    "en": "Did you finish the whole article?",
+    "fr": "As-tu fini tout l'article ?",
+    "es": "¿Has terminado todo el artículo?",
+    "ar": "هل أنهيت المقال كله؟"
+   },
+   "tr": {
+    "ar": "hal anhayta al-maqāl kullahu?"
+   }
+  },
+  {
+   "id": "s31",
+   "text": {
+    "en": "Yes, I read it twice, and the second reading showed me what I had missed.",
+    "fr": "Oui, je l'ai lu deux fois, et la seconde lecture m'a montré ce qui m'avait échappé.",
+    "es": "Sí, lo leí dos veces, y la segunda lectura me mostró lo que se me había escapado.",
+    "ar": "نعم، قرأته مرتين، وأظهرت لي القراءة الثانية ما فاتني."
+   },
+   "tr": {
+    "ar": "naʿam, qaraʾtuhu marratayn, wa-aẓharat lī al-qirāʾa ath-thāniya mā fātanī."
+   }
+  },
+  {
+   "id": "s32",
+   "text": {
+    "en": "That is exactly why a long text rewards those who read it more than once.",
+    "fr": "C'est précisément pourquoi un long texte récompense ceux qui le lisent plus d'une fois.",
+    "es": "Precisamente por eso un texto largo recompensa a quien lo lee más de una vez.",
+    "ar": "لهذا تحديدا يكافئ النص الطويل من يقرؤه أكثر من مرة."
+   },
+   "tr": {
+    "ar": "li-hādhā taḥdīdan yukāfiʾu an-naṣṣ aṭ-ṭawīl man yaqraʾuhu akthara min marra."
+   }
+  }
+ ],
+ "dialogue": [
+  "s30",
+  "s31",
+  "s32"
+ ]
+}

@@ -1,0 +1,845 @@
+{
+  "id": "u06",
+  "level": "m1",
+  "order": 6,
+  "title": {
+    "en": "Describing places",
+    "fr": "Décrire des lieux",
+    "es": "Describir lugares",
+    "ar": "وصف الأماكن"
+  },
+  "tip": {
+    "en": "Describe a place with 'There is...' and 'It is...'. Adjectives help: 'a quiet village', 'a crowded, noisy city'. Compare places with 'bigger than', 'more beautiful than' and 'the most...'.",
+    "fr": "Décrivez un lieu avec « Il y a... » et « C'est... ». Les adjectifs aident : « un village tranquille », « une ville bruyante et bondée ». Comparez avec « plus grand que », « plus beau que » et « le plus... ».",
+    "es": "Describe un lugar con «Hay...» y «Es...». Los adjetivos ayudan: «un pueblo tranquilo», «una ciudad ruidosa y llena de gente». Compara con «más grande que», «más bonito que» y «el más...».",
+    "ar": "صف المكان بعبارات مثل «يوجد...» و«إنه...». تساعدك الصفات: «قرية هادئة» و«مدينة مزدحمة وصاخبة». قارن بـ«أكبر من» و«أجمل من» و«الأكثر...»."
+  },
+  "words": [
+    {
+      "id": "city",
+      "text": {
+        "en": "city",
+        "fr": "ville",
+        "es": "ciudad",
+        "ar": "مدينة"
+      },
+      "tr": {
+        "ar": "madīna"
+      }
+    },
+    {
+      "id": "village",
+      "text": {
+        "en": "village",
+        "fr": "village",
+        "es": "pueblo",
+        "ar": "قرية"
+      },
+      "tr": {
+        "ar": "qarya"
+      }
+    },
+    {
+      "id": "countryside",
+      "text": {
+        "en": "countryside",
+        "fr": "campagne",
+        "es": "campo",
+        "ar": "ريف"
+      },
+      "tr": {
+        "ar": "rīf"
+      }
+    },
+    {
+      "id": "capital",
+      "text": {
+        "en": "capital",
+        "fr": "capitale",
+        "es": "capital",
+        "ar": "عاصمة"
+      },
+      "tr": {
+        "ar": "ʿāṣima"
+      }
+    },
+    {
+      "id": "centre",
+      "text": {
+        "en": "city centre",
+        "fr": "centre-ville",
+        "es": "centro",
+        "ar": "وسط المدينة"
+      },
+      "tr": {
+        "ar": "wasaṭ al-madīna"
+      }
+    },
+    {
+      "id": "suburb",
+      "text": {
+        "en": "suburb",
+        "fr": "banlieue",
+        "es": "afueras",
+        "ar": "ضاحية"
+      },
+      "tr": {
+        "ar": "ḍāḥiya"
+      }
+    },
+    {
+      "id": "neighbourhood",
+      "text": {
+        "en": "neighbourhood",
+        "fr": "quartier",
+        "es": "barrio",
+        "ar": "حي"
+      },
+      "tr": {
+        "ar": "ḥayy"
+      }
+    },
+    {
+      "id": "square",
+      "text": {
+        "en": "square",
+        "fr": "place",
+        "es": "plaza",
+        "ar": "ساحة"
+      },
+      "tr": {
+        "ar": "sāḥa"
+      }
+    },
+    {
+      "id": "street",
+      "text": {
+        "en": "street",
+        "fr": "rue",
+        "es": "calle",
+        "ar": "شارع"
+      },
+      "tr": {
+        "ar": "shāriʿ"
+      }
+    },
+    {
+      "id": "bridge",
+      "text": {
+        "en": "bridge",
+        "fr": "pont",
+        "es": "puente",
+        "ar": "جسر"
+      },
+      "tr": {
+        "ar": "jisr"
+      }
+    },
+    {
+      "id": "market",
+      "text": {
+        "en": "market",
+        "fr": "marché",
+        "es": "mercado",
+        "ar": "سوق"
+      },
+      "tr": {
+        "ar": "sūq"
+      }
+    },
+    {
+      "id": "old_town",
+      "text": {
+        "en": "old town",
+        "fr": "vieille ville",
+        "es": "casco antiguo",
+        "ar": "المدينة القديمة"
+      },
+      "tr": {
+        "ar": "al-madīna al-qadīma"
+      }
+    },
+    {
+      "id": "monument",
+      "text": {
+        "en": "monument",
+        "fr": "monument",
+        "es": "monumento",
+        "ar": "معلم أثري"
+      },
+      "tr": {
+        "ar": "miʿlam athari"
+      }
+    },
+    {
+      "id": "castle",
+      "text": {
+        "en": "castle",
+        "fr": "château",
+        "es": "castillo",
+        "ar": "قلعة"
+      },
+      "tr": {
+        "ar": "qalʿa"
+      }
+    },
+    {
+      "id": "museum",
+      "text": {
+        "en": "museum",
+        "fr": "musée",
+        "es": "museo",
+        "ar": "متحف"
+      },
+      "tr": {
+        "ar": "matḥaf"
+      }
+    },
+    {
+      "id": "mountain",
+      "text": {
+        "en": "mountain",
+        "fr": "montagne",
+        "es": "montaña",
+        "ar": "جبل"
+      },
+      "tr": {
+        "ar": "jabal"
+      }
+    },
+    {
+      "id": "valley",
+      "text": {
+        "en": "valley",
+        "fr": "vallée",
+        "es": "valle",
+        "ar": "وادي"
+      },
+      "tr": {
+        "ar": "wādī"
+      }
+    },
+    {
+      "id": "forest",
+      "text": {
+        "en": "forest",
+        "fr": "forêt",
+        "es": "bosque",
+        "ar": "غابة"
+      },
+      "tr": {
+        "ar": "ghāba"
+      }
+    },
+    {
+      "id": "river",
+      "text": {
+        "en": "river",
+        "fr": "rivière",
+        "es": "río",
+        "ar": "نهر"
+      },
+      "tr": {
+        "ar": "nahr"
+      }
+    },
+    {
+      "id": "lake",
+      "text": {
+        "en": "lake",
+        "fr": "lac",
+        "es": "lago",
+        "ar": "بحيرة"
+      },
+      "tr": {
+        "ar": "buḥayra"
+      }
+    },
+    {
+      "id": "beach",
+      "text": {
+        "en": "beach",
+        "fr": "plage",
+        "es": "playa",
+        "ar": "شاطئ"
+      },
+      "tr": {
+        "ar": "shāṭiʾ"
+      }
+    },
+    {
+      "id": "desert",
+      "text": {
+        "en": "desert",
+        "fr": "désert",
+        "es": "desierto",
+        "ar": "صحراء"
+      },
+      "tr": {
+        "ar": "ṣaḥrāʾ"
+      }
+    },
+    {
+      "id": "island",
+      "text": {
+        "en": "island",
+        "fr": "île",
+        "es": "isla",
+        "ar": "جزيرة"
+      },
+      "tr": {
+        "ar": "jazīra"
+      }
+    },
+    {
+      "id": "coast",
+      "text": {
+        "en": "coast",
+        "fr": "côte",
+        "es": "costa",
+        "ar": "ساحل"
+      },
+      "tr": {
+        "ar": "sāḥil"
+      }
+    },
+    {
+      "id": "view",
+      "text": {
+        "en": "view",
+        "fr": "vue",
+        "es": "vista",
+        "ar": "منظر"
+      },
+      "tr": {
+        "ar": "manẓar"
+      }
+    },
+    {
+      "id": "beautiful",
+      "text": {
+        "en": "beautiful",
+        "fr": "beau",
+        "es": "bonito",
+        "ar": "جميل"
+      },
+      "tr": {
+        "ar": "jamīl"
+      }
+    },
+    {
+      "id": "quiet",
+      "text": {
+        "en": "quiet",
+        "fr": "tranquille",
+        "es": "tranquilo",
+        "ar": "هادئ"
+      },
+      "tr": {
+        "ar": "hādiʾ"
+      }
+    },
+    {
+      "id": "crowded",
+      "text": {
+        "en": "crowded",
+        "fr": "bondé",
+        "es": "abarrotado",
+        "ar": "مزدحم"
+      },
+      "tr": {
+        "ar": "muzdaḥim"
+      }
+    },
+    {
+      "id": "noisy_place",
+      "text": {
+        "en": "noisy",
+        "fr": "bruyant",
+        "es": "ruidoso",
+        "ar": "صاخب"
+      },
+      "tr": {
+        "ar": "ṣākhib"
+      }
+    },
+    {
+      "id": "clean",
+      "text": {
+        "en": "clean",
+        "fr": "propre",
+        "es": "limpio",
+        "ar": "نظيف"
+      },
+      "tr": {
+        "ar": "naẓīf"
+      }
+    },
+    {
+      "id": "modern",
+      "text": {
+        "en": "modern",
+        "fr": "moderne",
+        "es": "moderno",
+        "ar": "عصري"
+      },
+      "tr": {
+        "ar": "ʿaṣrī"
+      }
+    },
+    {
+      "id": "ancient",
+      "text": {
+        "en": "ancient",
+        "fr": "ancien",
+        "es": "antiguo",
+        "ar": "قديم"
+      },
+      "tr": {
+        "ar": "qadīm"
+      }
+    },
+    {
+      "id": "historic",
+      "text": {
+        "en": "historic",
+        "fr": "historique",
+        "es": "histórico",
+        "ar": "تاريخي"
+      },
+      "tr": {
+        "ar": "tārīkhī"
+      }
+    },
+    {
+      "id": "peaceful",
+      "text": {
+        "en": "peaceful",
+        "fr": "paisible",
+        "es": "apacible",
+        "ar": "مسالم"
+      },
+      "tr": {
+        "ar": "musālim"
+      }
+    },
+    {
+      "id": "huge",
+      "text": {
+        "en": "huge",
+        "fr": "immense",
+        "es": "enorme",
+        "ar": "ضخم"
+      },
+      "tr": {
+        "ar": "ḍakhm"
+      }
+    },
+    {
+      "id": "tiny",
+      "text": {
+        "en": "tiny",
+        "fr": "minuscule",
+        "es": "diminuto",
+        "ar": "صغير جدا"
+      },
+      "tr": {
+        "ar": "ṣaghīr jiddan"
+      }
+    },
+    {
+      "id": "famous",
+      "text": {
+        "en": "famous",
+        "fr": "célèbre",
+        "es": "famoso",
+        "ar": "مشهور"
+      },
+      "tr": {
+        "ar": "mashhūr"
+      }
+    },
+    {
+      "id": "popular",
+      "text": {
+        "en": "popular",
+        "fr": "populaire",
+        "es": "popular",
+        "ar": "شعبي"
+      },
+      "tr": {
+        "ar": "shaʿbī"
+      }
+    },
+    {
+      "id": "polluted",
+      "text": {
+        "en": "polluted",
+        "fr": "pollué",
+        "es": "contaminado",
+        "ar": "ملوث"
+      },
+      "tr": {
+        "ar": "mulawwath"
+      }
+    },
+    {
+      "id": "surrounded",
+      "text": {
+        "en": "surrounded by",
+        "fr": "entouré de",
+        "es": "rodeado de",
+        "ar": "محاط بـ"
+      },
+      "tr": {
+        "ar": "muḥāṭ bi"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": {
+        "en": "Where are you from, and what is your town like?",
+        "fr": "D'où viens-tu, et comment est ta ville ?",
+        "es": "¿De dónde eres y cómo es tu ciudad?",
+        "ar": "من أين أنت وكيف هي مدينتك؟"
+      },
+      "tr": {
+        "ar": "min ayna anta wa kayfa hiya madīnatuk?"
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "I come from a small village surrounded by mountains.",
+        "fr": "Je viens d'un petit village entouré de montagnes.",
+        "es": "Vengo de un pueblo pequeño rodeado de montañas.",
+        "ar": "أنا من قرية صغيرة تحيط بها الجبال."
+      },
+      "tr": {
+        "ar": "anā min qarya ṣaghīra tuḥīṭu bihā al-jibāl."
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "It is very quiet and peaceful, but there is not much to do.",
+        "fr": "C'est très calme et paisible, mais il n'y a pas grand-chose à faire.",
+        "es": "Es muy tranquilo y apacible, pero no hay mucho que hacer.",
+        "ar": "إنها هادئة ومسالمة جدا لكن لا يوجد الكثير مما يمكن فعله."
+      },
+      "tr": {
+        "ar": "innahā hādiʾa wa musālima jiddan lākin lā yūjadu al-kathīr mimmā yumkinu fiʿluh."
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "The capital is huge, and the centre is always crowded.",
+        "fr": "La capitale est immense, et le centre-ville est toujours bondé.",
+        "es": "La capital es enorme y el centro siempre está abarrotado.",
+        "ar": "العاصمة ضخمة ووسطها مزدحم دائما."
+      },
+      "tr": {
+        "ar": "al-ʿāṣima ḍakhma wa wasaṭuhā muzdaḥim dāʾiman."
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "I prefer living in the suburbs because they are cleaner and less noisy.",
+        "fr": "Je préfère habiter en banlieue parce que c'est plus propre et moins bruyant.",
+        "es": "Prefiero vivir en las afueras porque están más limpias y hay menos ruido.",
+        "ar": "أفضل السكن في الضواحي لأنها أنظف وأقل صخبا."
+      },
+      "tr": {
+        "ar": "ufaḍḍilu as-sakan fī aḍ-ḍawāḥī li-annahā anẓaf wa aqall ṣakhaban."
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "My neighbourhood has a little market and a square with a fountain.",
+        "fr": "Mon quartier a un petit marché et une place avec une fontaine.",
+        "es": "Mi barrio tiene un mercadillo y una plaza con una fuente.",
+        "ar": "في حيي سوق صغير وساحة فيها نافورة."
+      },
+      "tr": {
+        "ar": "fī ḥayyī sūq ṣaghīr wa sāḥa fīhā nāfūra."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "In the old town, the streets are narrow and full of life.",
+        "fr": "Dans la vieille ville, les rues sont étroites et pleines de vie.",
+        "es": "En el casco antiguo las calles son estrechas y están llenas de vida.",
+        "ar": "في المدينة القديمة الشوارع ضيقة وملأى بالحياة."
+      },
+      "tr": {
+        "ar": "fī al-madīna al-qadīma ash-shawāriʿ ḍayyiqa wa mamlūʾa bil-ḥayāh."
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "There is an ancient castle on top of the hill.",
+        "fr": "Il y a un château ancien au sommet de la colline.",
+        "es": "Hay un castillo antiguo en lo alto de la colina.",
+        "ar": "توجد قلعة قديمة على قمة التل."
+      },
+      "tr": {
+        "ar": "tūjad qalʿa qadīma ʿalā qimmat at-tall."
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "From there, you have a wonderful view over the whole valley.",
+        "fr": "De là, on a une vue magnifique sur toute la vallée.",
+        "es": "Desde allí hay una vista maravillosa de todo el valle.",
+        "ar": "من هناك ترى منظرا رائعا على الوادي كله."
+      },
+      "tr": {
+        "ar": "min hunāka tarā manẓaran rāʾiʿan ʿalā al-wādī kullih."
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "The museum is more interesting than I expected.",
+        "fr": "Le musée est plus intéressant que je ne le pensais.",
+        "es": "El museo es más interesante de lo que esperaba.",
+        "ar": "المتحف أكثر إثارة للاهتمام مما توقعت."
+      },
+      "tr": {
+        "ar": "al-matḥaf akthar ithāratan lil-ihtimām mimmā tawaqqaʿt."
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "This monument is the most famous in the country.",
+        "fr": "Ce monument est le plus célèbre du pays.",
+        "es": "Este monumento es el más famoso del país.",
+        "ar": "هذا المعلم هو الأشهر في البلد."
+      },
+      "tr": {
+        "ar": "hādhā al-miʿlam huwa al-ashhar fī al-balad."
+      }
+    },
+    {
+      "id": "s12",
+      "text": {
+        "en": "A river crosses the city, and there is an old bridge over it.",
+        "fr": "Une rivière traverse la ville, et il y a un vieux pont dessus.",
+        "es": "Un río atraviesa la ciudad y hay un puente antiguo sobre él.",
+        "ar": "يعبر نهر المدينة ويوجد فوقه جسر قديم."
+      },
+      "tr": {
+        "ar": "yaʿbuʾru nahr al-madīna wa yūjad fawqahu jisr qadīm."
+      }
+    },
+    {
+      "id": "s13",
+      "text": {
+        "en": "The lake is so clear that you can see the bottom.",
+        "fr": "Le lac est si clair qu'on en voit le fond.",
+        "es": "El lago es tan transparente que se ve el fondo.",
+        "ar": "البحيرة صافية لدرجة أنك ترى قاعها."
+      },
+      "tr": {
+        "ar": "al-buḥayra ṣāfiya li-darajat annaka tarā qāʿahā."
+      }
+    },
+    {
+      "id": "s14",
+      "text": {
+        "en": "We spent a weekend in a cabin in the forest.",
+        "fr": "Nous avons passé un week-end dans une cabane en forêt.",
+        "es": "Pasamos un fin de semana en una cabaña en el bosque.",
+        "ar": "قضينا عطلة نهاية الأسبوع في كوخ داخل الغابة."
+      },
+      "tr": {
+        "ar": "qaḍaynā ʿuṭlat nihāyat al-usbūʿ fī kūkh dākhil al-ghāba."
+      }
+    },
+    {
+      "id": "s15",
+      "text": {
+        "en": "Last summer we visited a tiny island with no cars.",
+        "fr": "L'été dernier, nous avons visité une toute petite île sans voitures.",
+        "es": "El verano pasado visitamos una isla diminuta sin coches.",
+        "ar": "في الصيف الماضي زرنا جزيرة صغيرة جدا لا توجد فيها سيارات."
+      },
+      "tr": {
+        "ar": "fī aṣ-ṣayf al-māḍī zurnā jazīra ṣaghīra jiddan lā tūjad fīhā sayyārāt."
+      }
+    },
+    {
+      "id": "s16",
+      "text": {
+        "en": "The beach was clean, but it was very crowded in August.",
+        "fr": "La plage était propre, mais elle était bondée en août.",
+        "es": "La playa estaba limpia, pero en agosto había muchísima gente.",
+        "ar": "كان الشاطئ نظيفا لكنه كان مزدحما جدا في أغسطس."
+      },
+      "tr": {
+        "ar": "kāna ash-shāṭiʾ naẓīfan lākinnahu kāna muzdaḥiman jiddan fī ghusṭus."
+      }
+    },
+    {
+      "id": "s17",
+      "text": {
+        "en": "The desert is hot during the day and freezing at night.",
+        "fr": "Le désert est chaud le jour et glacial la nuit.",
+        "es": "El desierto es caluroso de día y helado de noche.",
+        "ar": "الصحراء حارة في النهار وباردة جدا في الليل."
+      },
+      "tr": {
+        "ar": "aṣ-ṣaḥrāʾ ḥārra fī an-nahār wa bārida jiddan fī al-layl."
+      }
+    },
+    {
+      "id": "s18",
+      "text": {
+        "en": "The coast is famous for its beautiful cliffs.",
+        "fr": "La côte est célèbre pour ses belles falaises.",
+        "es": "La costa es famosa por sus bonitos acantilados.",
+        "ar": "الساحل مشهور بجروفه الجميلة."
+      },
+      "tr": {
+        "ar": "as-sāḥil mashhūr bi-jurūfih al-jamīla."
+      }
+    },
+    {
+      "id": "s19",
+      "text": {
+        "en": "Is it far from here to the old town?",
+        "fr": "Est-ce loin d'ici jusqu'à la vieille ville ?",
+        "es": "¿Está lejos de aquí el casco antiguo?",
+        "ar": "هل المدينة القديمة بعيدة من هنا؟"
+      },
+      "tr": {
+        "ar": "hal al-madīna al-qadīma baʿīda min hunā?"
+      }
+    },
+    {
+      "id": "s20",
+      "text": {
+        "en": "No, it takes ten minutes on foot along the river.",
+        "fr": "Non, c'est à dix minutes à pied le long de la rivière.",
+        "es": "No, se tarda diez minutos andando por la orilla del río.",
+        "ar": "لا، تحتاج إلى عشر دقائق مشيا على طول النهر."
+      },
+      "tr": {
+        "ar": "lā, taḥtāju ilā ʿashr daqāʾiq mashyan ʿalā ṭūl an-nahr."
+      }
+    },
+    {
+      "id": "s21",
+      "text": {
+        "en": "The city has changed a lot; it is more modern than before.",
+        "fr": "La ville a beaucoup changé ; elle est plus moderne qu'avant.",
+        "es": "La ciudad ha cambiado mucho; es más moderna que antes.",
+        "ar": "تغيرت المدينة كثيرا وأصبحت أكثر عصرية من قبل."
+      },
+      "tr": {
+        "ar": "taghayyarat al-madīna kathīran wa aṣbaḥat akthar ʿaṣriyyatan min qabl."
+      }
+    },
+    {
+      "id": "s22",
+      "text": {
+        "en": "Unfortunately, the air is polluted because of the traffic.",
+        "fr": "Malheureusement, l'air est pollué à cause de la circulation.",
+        "es": "Por desgracia, el aire está contaminado por el tráfico.",
+        "ar": "للأسف الهواء ملوث بسبب حركة المرور."
+      },
+      "tr": {
+        "ar": "lil-asaf al-hawāʾ mulawwath bi-sabab ḥarakat al-murūr."
+      }
+    },
+    {
+      "id": "s23",
+      "text": {
+        "en": "I love the cafés in this square; they are very popular with students.",
+        "fr": "J'adore les cafés de cette place ; ils sont très populaires auprès des étudiants.",
+        "es": "Me encantan los cafés de esta plaza; son muy populares entre los estudiantes.",
+        "ar": "أحب المقاهي في هذه الساحة فهي شعبية جدا بين الطلاب."
+      },
+      "tr": {
+        "ar": "uḥibbu al-maqāhī fī hādhihi as-sāḥa fa-hiya shaʿbiyya jiddan bayna aṭ-ṭullāb."
+      }
+    },
+    {
+      "id": "s24",
+      "text": {
+        "en": "Which do you prefer, the sea or the mountains?",
+        "fr": "Qu'est-ce que tu préfères, la mer ou la montagne ?",
+        "es": "¿Qué prefieres, el mar o la montaña?",
+        "ar": "ماذا تفضل، البحر أم الجبال؟"
+      },
+      "tr": {
+        "ar": "mādhā tufaḍḍil, al-baḥr am al-jibāl?"
+      }
+    },
+    {
+      "id": "s25",
+      "text": {
+        "en": "I prefer the sea, because the water makes me feel calm.",
+        "fr": "Je préfère la mer, parce que l'eau me calme.",
+        "es": "Prefiero el mar, porque el agua me tranquiliza.",
+        "ar": "أفضل البحر لأن الماء يمنحني الهدوء."
+      },
+      "tr": {
+        "ar": "ufaḍḍilu al-baḥr li-anna al-māʾ yamnaḥunī al-hudūʾ."
+      }
+    },
+    {
+      "id": "s26",
+      "text": {
+        "en": "Is it a safe area to walk around at night?",
+        "fr": "Est-ce un quartier sûr pour se promener la nuit ?",
+        "es": "¿Es una zona segura para pasear por la noche?",
+        "ar": "هل هذه منطقة آمنة للتجول ليلا؟"
+      },
+      "tr": {
+        "ar": "hal hādhihi minṭaqa āmina lit-tajawwul laylan?"
+      }
+    },
+    {
+      "id": "s27",
+      "text": {
+        "en": "Yes, it is a historic area and very well lit.",
+        "fr": "Oui, c'est un quartier historique et très bien éclairé.",
+        "es": "Sí, es una zona histórica y está muy bien iluminada.",
+        "ar": "نعم، إنها منطقة تاريخية ومضاءة جيدا."
+      },
+      "tr": {
+        "ar": "naʿam, innahā minṭaqa tārīkhiyya wa muḍāʾa jayyidan."
+      }
+    },
+    {
+      "id": "s28",
+      "text": {
+        "en": "If you ever come to my country, I will show you my favourite places.",
+        "fr": "Si tu viens un jour dans mon pays, je te montrerai mes endroits préférés.",
+        "es": "Si alguna vez vienes a mi país, te enseñaré mis lugares favoritos.",
+        "ar": "إذا جئت يوما إلى بلدي فسأريك أماكني المفضلة."
+      },
+      "tr": {
+        "ar": "idhā jiʾta yawman ilā baladī fa-sa-urīka amākinī al-mufaḍḍala."
+      }
+    }
+  ],
+  "dialogue": [
+    "s01",
+    "s02",
+    "s03",
+    "s24",
+    "s25",
+    "s28"
+  ]
+}

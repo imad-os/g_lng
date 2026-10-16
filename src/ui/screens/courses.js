@@ -1,6 +1,6 @@
 // Pick the language to learn.
-import { h, focusable } from '../../platform/dom.js?v=2.0.0';
-import { t, pickLang } from '../../platform/i18n.js?v=2.0.0';
+import { h, focusable } from '../../platform/dom.js?v=2.1.0';
+import { t, pickLang } from '../../platform/i18n.js?v=2.1.0';
 
 export function coursesScreen(app) {
   const grid = h('div', { class: 'course-grid' });

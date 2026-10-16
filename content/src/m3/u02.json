@@ -1,0 +1,941 @@
+{
+  "id": "u02",
+  "level": "m3",
+  "order": 2,
+  "title": {
+    "en": "Stories",
+    "fr": "Histoires",
+    "es": "Historias",
+    "ar": "القصص"
+  },
+  "tip": {
+    "en": "Use the past simple for the main events and the past continuous for the background: \"I was walking home when it started to rain.\" Link the events with first, then, after that, finally.",
+    "fr": "Pour raconter, utilisez le passé composé pour les événements et l'imparfait pour le décor : « Je rentrais à pied quand il s'est mis à pleuvoir. » Enchaînez avec d'abord, puis, ensuite, enfin.",
+    "es": "Para contar, usa el pretérito indefinido para los hechos y el imperfecto para el fondo: «Volvía a casa andando cuando empezó a llover». Enlaza con primero, luego, después, por fin.",
+    "ar": "لرواية قصة استخدم الماضي للأحداث الرئيسية والماضي المستمر للخلفية: «كنت أمشي إلى البيت عندما بدأ المطر». واربط الأحداث بكلمات مثل أولا ثم بعد ذلك وأخيرا."
+  },
+  "words": [
+    {
+      "id": "story",
+      "text": {
+        "en": "story",
+        "fr": "histoire",
+        "es": "historia",
+        "ar": "قصة"
+      },
+      "tr": {
+        "ar": "qiṣṣa"
+      }
+    },
+    {
+      "id": "tale",
+      "text": {
+        "en": "tale",
+        "fr": "conte",
+        "es": "cuento",
+        "ar": "حكاية"
+      },
+      "tr": {
+        "ar": "ḥikāya"
+      }
+    },
+    {
+      "id": "plot",
+      "text": {
+        "en": "plot",
+        "fr": "intrigue",
+        "es": "argumento",
+        "ar": "حبكة"
+      },
+      "tr": {
+        "ar": "ḥabka"
+      }
+    },
+    {
+      "id": "character",
+      "text": {
+        "en": "character",
+        "fr": "personnage",
+        "es": "personaje",
+        "ar": "شخصية"
+      },
+      "tr": {
+        "ar": "shakhṣiyya"
+      }
+    },
+    {
+      "id": "narrator",
+      "text": {
+        "en": "narrator",
+        "fr": "narrateur",
+        "es": "narrador",
+        "ar": "الراوي"
+      },
+      "tr": {
+        "ar": "ar-rāwī"
+      }
+    },
+    {
+      "id": "beginning",
+      "text": {
+        "en": "beginning",
+        "fr": "début",
+        "es": "principio",
+        "ar": "بداية"
+      },
+      "tr": {
+        "ar": "bidāya"
+      }
+    },
+    {
+      "id": "ending",
+      "text": {
+        "en": "ending",
+        "fr": "fin",
+        "es": "final",
+        "ar": "نهاية"
+      },
+      "tr": {
+        "ar": "nihāya"
+      }
+    },
+    {
+      "id": "twist",
+      "text": {
+        "en": "twist",
+        "fr": "rebondissement",
+        "es": "giro inesperado",
+        "ar": "مفاجأة"
+      },
+      "tr": {
+        "ar": "mufājaʾa"
+      }
+    },
+    {
+      "id": "adventure",
+      "text": {
+        "en": "adventure",
+        "fr": "aventure",
+        "es": "aventura",
+        "ar": "مغامرة"
+      },
+      "tr": {
+        "ar": "mughāmara"
+      }
+    },
+    {
+      "id": "memory",
+      "text": {
+        "en": "memory",
+        "fr": "souvenir",
+        "es": "recuerdo",
+        "ar": "ذكرى"
+      },
+      "tr": {
+        "ar": "dhikrā"
+      }
+    },
+    {
+      "id": "dream",
+      "text": {
+        "en": "dream",
+        "fr": "rêve",
+        "es": "sueño",
+        "ar": "حلم"
+      },
+      "tr": {
+        "ar": "ḥulm"
+      }
+    },
+    {
+      "id": "journey",
+      "text": {
+        "en": "journey",
+        "fr": "voyage",
+        "es": "viaje",
+        "ar": "رحلة"
+      },
+      "tr": {
+        "ar": "riḥla"
+      }
+    },
+    {
+      "id": "village",
+      "text": {
+        "en": "village",
+        "fr": "village",
+        "es": "pueblo",
+        "ar": "قرية"
+      },
+      "tr": {
+        "ar": "qarya"
+      }
+    },
+    {
+      "id": "forest",
+      "text": {
+        "en": "forest",
+        "fr": "forêt",
+        "es": "bosque",
+        "ar": "غابة"
+      },
+      "tr": {
+        "ar": "ghāba"
+      }
+    },
+    {
+      "id": "castle",
+      "text": {
+        "en": "castle",
+        "fr": "château",
+        "es": "castillo",
+        "ar": "قلعة"
+      },
+      "tr": {
+        "ar": "qalʿa"
+      }
+    },
+    {
+      "id": "treasure",
+      "text": {
+        "en": "treasure",
+        "fr": "trésor",
+        "es": "tesoro",
+        "ar": "كنز"
+      },
+      "tr": {
+        "ar": "kanz"
+      }
+    },
+    {
+      "id": "stranger",
+      "text": {
+        "en": "stranger",
+        "fr": "inconnu",
+        "es": "desconocido",
+        "ar": "غريب"
+      },
+      "tr": {
+        "ar": "gharīb"
+      }
+    },
+    {
+      "id": "thief",
+      "text": {
+        "en": "thief",
+        "fr": "voleur",
+        "es": "ladrón",
+        "ar": "لص"
+      },
+      "tr": {
+        "ar": "liṣṣ"
+      }
+    },
+    {
+      "id": "hero",
+      "text": {
+        "en": "hero",
+        "fr": "héros",
+        "es": "héroe",
+        "ar": "بطل"
+      },
+      "tr": {
+        "ar": "baṭal"
+      }
+    },
+    {
+      "id": "first",
+      "text": {
+        "en": "first",
+        "fr": "d'abord",
+        "es": "primero",
+        "ar": "أولا"
+      },
+      "tr": {
+        "ar": "awwalan"
+      }
+    },
+    {
+      "id": "then",
+      "text": {
+        "en": "then",
+        "fr": "puis",
+        "es": "luego",
+        "ar": "ثم"
+      },
+      "tr": {
+        "ar": "thumma"
+      }
+    },
+    {
+      "id": "meanwhile",
+      "text": {
+        "en": "meanwhile",
+        "fr": "pendant ce temps",
+        "es": "mientras tanto",
+        "ar": "في هذه الأثناء"
+      },
+      "tr": {
+        "ar": "fī hādhihi al-athnāʾ"
+      }
+    },
+    {
+      "id": "suddenly",
+      "text": {
+        "en": "suddenly",
+        "fr": "soudain",
+        "es": "de repente",
+        "ar": "فجأة"
+      },
+      "tr": {
+        "ar": "fajʾatan"
+      }
+    },
+    {
+      "id": "after_that",
+      "text": {
+        "en": "after that",
+        "fr": "ensuite",
+        "es": "después",
+        "ar": "بعد ذلك"
+      },
+      "tr": {
+        "ar": "baʿda dhālika"
+      }
+    },
+    {
+      "id": "finally",
+      "text": {
+        "en": "finally",
+        "fr": "enfin",
+        "es": "por fin",
+        "ar": "أخيرا"
+      },
+      "tr": {
+        "ar": "akhīran"
+      }
+    },
+    {
+      "id": "at_last",
+      "text": {
+        "en": "at last",
+        "fr": "à la fin",
+        "es": "al final",
+        "ar": "في النهاية"
+      },
+      "tr": {
+        "ar": "fī an-nihāya"
+      }
+    },
+    {
+      "id": "once_upon_a_time",
+      "text": {
+        "en": "once upon a time",
+        "fr": "il était une fois",
+        "es": "érase una vez",
+        "ar": "كان يا ما كان"
+      },
+      "tr": {
+        "ar": "kāna yā mā kān"
+      }
+    },
+    {
+      "id": "happen",
+      "text": {
+        "en": "to happen",
+        "fr": "arriver",
+        "es": "ocurrir",
+        "ar": "حدث"
+      },
+      "tr": {
+        "ar": "ḥadatha"
+      }
+    },
+    {
+      "id": "realise",
+      "text": {
+        "en": "to realise",
+        "fr": "se rendre compte",
+        "es": "darse cuenta",
+        "ar": "أدرك"
+      },
+      "tr": {
+        "ar": "adraka"
+      }
+    },
+    {
+      "id": "notice",
+      "text": {
+        "en": "to notice",
+        "fr": "remarquer",
+        "es": "notar",
+        "ar": "لاحظ"
+      },
+      "tr": {
+        "ar": "lāḥaẓa"
+      }
+    },
+    {
+      "id": "escape",
+      "text": {
+        "en": "to escape",
+        "fr": "s'échapper",
+        "es": "escapar",
+        "ar": "هرب"
+      },
+      "tr": {
+        "ar": "haraba"
+      }
+    },
+    {
+      "id": "hide",
+      "text": {
+        "en": "to hide",
+        "fr": "se cacher",
+        "es": "esconderse",
+        "ar": "اختبأ"
+      },
+      "tr": {
+        "ar": "ikhtabaʾa"
+      }
+    },
+    {
+      "id": "follow",
+      "text": {
+        "en": "to follow",
+        "fr": "suivre",
+        "es": "seguir",
+        "ar": "تبع"
+      },
+      "tr": {
+        "ar": "tabiʿa"
+      }
+    },
+    {
+      "id": "disappear",
+      "text": {
+        "en": "to disappear",
+        "fr": "disparaître",
+        "es": "desaparecer",
+        "ar": "اختفى"
+      },
+      "tr": {
+        "ar": "ikhtafā"
+      }
+    },
+    {
+      "id": "tell",
+      "text": {
+        "en": "to tell a story",
+        "fr": "raconter",
+        "es": "contar",
+        "ar": "روى"
+      },
+      "tr": {
+        "ar": "rawā"
+      }
+    },
+    {
+      "id": "lose",
+      "text": {
+        "en": "to lose",
+        "fr": "perdre",
+        "es": "perder",
+        "ar": "فقد"
+      },
+      "tr": {
+        "ar": "faqada"
+      }
+    },
+    {
+      "id": "remember",
+      "text": {
+        "en": "to remember",
+        "fr": "se souvenir",
+        "es": "recordar",
+        "ar": "تذكر"
+      },
+      "tr": {
+        "ar": "tadhakkara"
+      }
+    },
+    {
+      "id": "shout",
+      "text": {
+        "en": "to shout",
+        "fr": "crier",
+        "es": "gritar",
+        "ar": "صرخ"
+      },
+      "tr": {
+        "ar": "ṣarakha"
+      }
+    },
+    {
+      "id": "whisper",
+      "text": {
+        "en": "to whisper",
+        "fr": "chuchoter",
+        "es": "susurrar",
+        "ar": "همس"
+      },
+      "tr": {
+        "ar": "hamasa"
+      }
+    },
+    {
+      "id": "surprised",
+      "text": {
+        "en": "surprised",
+        "fr": "surpris",
+        "es": "sorprendido",
+        "ar": "متفاجئ"
+      },
+      "tr": {
+        "ar": "mutafājiʾ"
+      }
+    },
+    {
+      "id": "terrified",
+      "text": {
+        "en": "terrified",
+        "fr": "terrifié",
+        "es": "aterrorizado",
+        "ar": "مذعور"
+      },
+      "tr": {
+        "ar": "mudhʿūr"
+      }
+    },
+    {
+      "id": "the_next_day",
+      "text": {
+        "en": "the next day",
+        "fr": "le lendemain",
+        "es": "al día siguiente",
+        "ar": "في اليوم التالي"
+      },
+      "tr": {
+        "ar": "fī al-yawm at-tālī"
+      }
+    },
+    {
+      "id": "years_ago",
+      "text": {
+        "en": "years ago",
+        "fr": "il y a des années",
+        "es": "hace años",
+        "ar": "منذ سنوات"
+      },
+      "tr": {
+        "ar": "mundhu sanawāt"
+      }
+    },
+    {
+      "id": "by_the_time",
+      "text": {
+        "en": "by the time",
+        "fr": "le temps que",
+        "es": "para cuando",
+        "ar": "بحلول الوقت الذي"
+      },
+      "tr": {
+        "ar": "biḥulūl al-waqt alladhī"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": {
+        "en": "Once upon a time, a poor thief lived in a village at the edge of the forest.",
+        "fr": "Il était une fois un pauvre voleur qui vivait dans un village à l'orée de la forêt.",
+        "es": "Érase una vez un pobre ladrón que vivía en un pueblo al borde del bosque.",
+        "ar": "كان يا ما كان لص فقير يعيش في قرية على أطراف الغابة."
+      },
+      "tr": {
+        "ar": "kāna yā mā kān liṣṣ faqīr yaʿīshu fī qarya ʿalā aṭrāf al-ghāba."
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "One night, while everyone was sleeping, he noticed a light in the old castle.",
+        "fr": "Une nuit, pendant que tout le monde dormait, il a remarqué une lumière dans le vieux château.",
+        "es": "Una noche, mientras todos dormían, notó una luz en el viejo castillo.",
+        "ar": "في إحدى الليالي، بينما كان الجميع نائمين، لاحظ ضوءا في القلعة القديمة."
+      },
+      "tr": {
+        "ar": "fī iḥdā al-layālī, baynamā kāna al-jamīʿ nāʾimīn, lāḥaẓa ḍawʾan fī al-qalʿa al-qadīma."
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "First he followed the light, then he hid behind a tree.",
+        "fr": "D'abord il a suivi la lumière, puis il s'est caché derrière un arbre.",
+        "es": "Primero siguió la luz y luego se escondió detrás de un árbol.",
+        "ar": "تبع الضوء أولا، ثم اختبأ خلف شجرة."
+      },
+      "tr": {
+        "ar": "tabiʿa aḍ-ḍawʾa awwalan, thumma ikhtabaʾa khalfa shajara."
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "Suddenly a stranger came out of the castle carrying a heavy box.",
+        "fr": "Soudain, un inconnu est sorti du château en portant une lourde caisse.",
+        "es": "De repente, un desconocido salió del castillo con una caja pesada.",
+        "ar": "فجأة خرج غريب من القلعة يحمل صندوقا ثقيلا."
+      },
+      "tr": {
+        "ar": "fajʾatan kharaja gharīb min al-qalʿa yaḥmilu ṣundūqan thaqīlan."
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "The thief realised that the box was full of treasure.",
+        "fr": "Le voleur s'est rendu compte que la caisse était pleine de trésors.",
+        "es": "El ladrón se dio cuenta de que la caja estaba llena de tesoros.",
+        "ar": "أدرك اللص أن الصندوق مليء بالكنوز."
+      },
+      "tr": {
+        "ar": "adraka al-liṣṣ anna aṣ-ṣundūq malīʾ bil-kunūz."
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "Meanwhile, the stranger was whispering to someone in the dark.",
+        "fr": "Pendant ce temps, l'inconnu chuchotait à quelqu'un dans l'obscurité.",
+        "es": "Mientras tanto, el desconocido susurraba algo a alguien en la oscuridad.",
+        "ar": "في هذه الأثناء كان الغريب يهمس لشخص ما في الظلام."
+      },
+      "tr": {
+        "ar": "fī hādhihi al-athnāʾ kāna al-gharīb yahmisu li-shakhṣin mā fī aẓ-ẓalām."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "When the thief tried to escape, he stepped on a branch and everyone heard it.",
+        "fr": "Quand le voleur a essayé de s'enfuir, il a marché sur une branche et tout le monde l'a entendu.",
+        "es": "Cuando el ladrón intentó escapar, pisó una rama y todos lo oyeron.",
+        "ar": "حين حاول اللص أن يهرب، داس على غصن وسمعه الجميع."
+      },
+      "tr": {
+        "ar": "ḥīna ḥāwala al-liṣṣ an yahrub, dāsa ʿalā ghuṣn wa-samiʿahu al-jamīʿ."
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "He was terrified, but he did not shout.",
+        "fr": "Il était terrifié, mais il n'a pas crié.",
+        "es": "Estaba aterrorizado, pero no gritó.",
+        "ar": "كان مذعورا لكنه لم يصرخ."
+      },
+      "tr": {
+        "ar": "kāna mudhʿūran lākinnahu lam yaṣrukh."
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "After that, the stranger disappeared into the forest and the box fell to the ground.",
+        "fr": "Après cela, l'inconnu a disparu dans la forêt et la caisse est tombée par terre.",
+        "es": "Después, el desconocido desapareció en el bosque y la caja cayó al suelo.",
+        "ar": "بعد ذلك اختفى الغريب في الغابة وسقط الصندوق على الأرض."
+      },
+      "tr": {
+        "ar": "baʿda dhālika ikhtafā al-gharīb fī al-ghāba wa-saqaṭa aṣ-ṣundūq ʿalā al-arḍ."
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "The next day, the whole village was talking about what had happened.",
+        "fr": "Le lendemain, tout le village parlait de ce qui s'était passé.",
+        "es": "Al día siguiente, todo el pueblo hablaba de lo que había ocurrido.",
+        "ar": "في اليوم التالي كانت القرية كلها تتحدث عما حدث."
+      },
+      "tr": {
+        "ar": "fī al-yawm at-tālī kānat al-qarya kulluhā tatakallamu ʿammā ḥadatha."
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "By the time the thief got home, he had already lost the key to his door.",
+        "fr": "Le temps que le voleur rentre chez lui, il avait déjà perdu la clé de sa porte.",
+        "es": "Para cuando el ladrón llegó a casa, ya había perdido la llave de su puerta.",
+        "ar": "بحلول الوقت الذي وصل فيه اللص إلى بيته، كان قد فقد مفتاح بابه."
+      },
+      "tr": {
+        "ar": "biḥulūl al-waqt alladhī waṣala fīhi al-liṣṣ ilā baytih, kāna qad faqada miftāḥ bābih."
+      }
+    },
+    {
+      "id": "s12",
+      "text": {
+        "en": "At last he decided to tell the truth to the oldest man in the village.",
+        "fr": "À la fin, il a décidé de dire la vérité au plus vieil homme du village.",
+        "es": "Al final decidió contarle la verdad al hombre más anciano del pueblo.",
+        "ar": "في النهاية قرر أن يقول الحقيقة لأكبر رجل سنا في القرية."
+      },
+      "tr": {
+        "ar": "fī an-nihāya qarrara an yaqūla al-ḥaqīqa li-akbar rajul sinnan fī al-qarya."
+      }
+    },
+    {
+      "id": "s13",
+      "text": {
+        "en": "Years ago, my grandmother used to tell us this tale every winter.",
+        "fr": "Il y a des années, ma grand-mère nous racontait ce conte chaque hiver.",
+        "es": "Hace años, mi abuela nos contaba este cuento todos los inviernos.",
+        "ar": "منذ سنوات كانت جدتي ترويها لنا هذه الحكاية كل شتاء."
+      },
+      "tr": {
+        "ar": "mundhu sanawāt kānat jaddatī tarwī lanā hādhihi al-ḥikāya kulla shitāʾ."
+      }
+    },
+    {
+      "id": "s14",
+      "text": {
+        "en": "I remember that I was surprised by the ending.",
+        "fr": "Je me souviens d'avoir été surpris par la fin.",
+        "es": "Recuerdo que me sorprendió el final.",
+        "ar": "أتذكر أنني تفاجأت بالنهاية."
+      },
+      "tr": {
+        "ar": "atadhakkaru annanī tafājaʾtu bin-nihāya."
+      }
+    },
+    {
+      "id": "s15",
+      "text": {
+        "en": "The best part of the plot is the twist near the end.",
+        "fr": "Le meilleur moment de l'intrigue, c'est le rebondissement vers la fin.",
+        "es": "Lo mejor del argumento es el giro inesperado cerca del final.",
+        "ar": "أجمل ما في الحبكة هو المفاجأة قرب النهاية."
+      },
+      "tr": {
+        "ar": "ajmalu mā fī al-ḥabka huwa al-mufājaʾa qurba an-nihāya."
+      }
+    },
+    {
+      "id": "s16",
+      "text": {
+        "en": "The narrator never says who the real hero is.",
+        "fr": "Le narrateur ne dit jamais qui est le véritable héros.",
+        "es": "El narrador nunca dice quién es el verdadero héroe.",
+        "ar": "لا يقول الراوي أبدا من هو البطل الحقيقي."
+      },
+      "tr": {
+        "ar": "lā yaqūlu ar-rāwī abadan man huwa al-baṭal al-ḥaqīqī."
+      }
+    },
+    {
+      "id": "s17",
+      "text": {
+        "en": "Last summer I had a strange dream: I was walking alone through a forest I had never seen.",
+        "fr": "L'été dernier, j'ai fait un rêve étrange : je marchais seul dans une forêt que je n'avais jamais vue.",
+        "es": "El verano pasado tuve un sueño extraño: caminaba solo por un bosque que nunca había visto.",
+        "ar": "في الصيف الماضي رأيت حلما غريبا: كنت أمشي وحدي في غابة لم أرها من قبل."
+      },
+      "tr": {
+        "ar": "fī aṣ-ṣayf al-māḍī raʾaytu ḥulman gharīban: kuntu amshī waḥdī fī ghāba lam arahā min qabl."
+      }
+    },
+    {
+      "id": "s18",
+      "text": {
+        "en": "Did you hear what happened to Karim on his journey?",
+        "fr": "Tu as entendu ce qui est arrivé à Karim pendant son voyage ?",
+        "es": "¿Has oído lo que le pasó a Karim durante su viaje?",
+        "ar": "هل سمعت ما حدث لكريم أثناء رحلته؟"
+      },
+      "tr": {
+        "ar": "hal samiʿta mā ḥadatha li-Karīm athnāʾa riḥlatih?"
+      }
+    },
+    {
+      "id": "s19",
+      "text": {
+        "en": "No, tell me from the beginning, and don't leave anything out.",
+        "fr": "Non, raconte-moi depuis le début, sans rien oublier.",
+        "es": "No, cuéntamelo desde el principio, sin dejarte nada.",
+        "ar": "لا، احك لي من البداية ولا تترك شيئا."
+      },
+      "tr": {
+        "ar": "lā, iḥki lī min al-bidāya wa-lā tatruk shayʾan."
+      }
+    },
+    {
+      "id": "s20",
+      "text": {
+        "en": "Well, he had just arrived in a small village when he lost his passport.",
+        "fr": "Eh bien, il venait d'arriver dans un petit village quand il a perdu son passeport.",
+        "es": "Pues acababa de llegar a un pueblo pequeño cuando perdió el pasaporte.",
+        "ar": "حسنا، كان قد وصل للتو إلى قرية صغيرة عندما فقد جواز سفره."
+      },
+      "tr": {
+        "ar": "ḥasanan, kāna qad waṣala lil-tawwi ilā qarya ṣaghīra ʿindamā faqada jawāz safarih."
+      }
+    },
+    {
+      "id": "s21",
+      "text": {
+        "en": "He searched everywhere, and in the end a child found it near the castle.",
+        "fr": "Il a cherché partout et, à la fin, un enfant l'a trouvé près du château.",
+        "es": "Lo buscó por todas partes y al final un niño lo encontró cerca del castillo.",
+        "ar": "بحث عنه في كل مكان، وفي الآخر وجده طفل قرب القلعة."
+      },
+      "tr": {
+        "ar": "baḥatha ʿanhu fī kulli makān, wa-fī al-ākhir wajadahu ṭifl qurba al-qalʿa."
+      }
+    },
+    {
+      "id": "s22",
+      "text": {
+        "en": "What a relief! And did he tell anyone about it afterwards?",
+        "fr": "Quel soulagement ! Et il en a parlé à quelqu'un par la suite ?",
+        "es": "¡Qué alivio! ¿Y se lo contó a alguien después?",
+        "ar": "يا لها من راحة! وهل أخبر أحدا بذلك بعد ذلك؟"
+      },
+      "tr": {
+        "ar": "yā lahā min rāḥa! wa-hal akhbara aḥadan bi-dhālika baʿda dhālika?"
+      }
+    },
+    {
+      "id": "s23",
+      "text": {
+        "en": "Only his sister, because he did not want people to laugh at him.",
+        "fr": "Seulement sa sœur, parce qu'il ne voulait pas que les gens se moquent de lui.",
+        "es": "Solo a su hermana, porque no quería que la gente se riera de él.",
+        "ar": "أخته فقط، لأنه لم يرد أن يسخر الناس منه."
+      },
+      "tr": {
+        "ar": "ukhtahu faqaṭ, li-annahu lam yurid an yaskhara an-nās minhu."
+      }
+    },
+    {
+      "id": "s24",
+      "text": {
+        "en": "When I was a child, I dreamed of finding a treasure and becoming a hero.",
+        "fr": "Quand j'étais enfant, je rêvais de trouver un trésor et de devenir un héros.",
+        "es": "Cuando era niño, soñaba con encontrar un tesoro y convertirme en un héroe.",
+        "ar": "عندما كنت طفلا كنت أحلم بالعثور على كنز وبأن أصبح بطلا."
+      },
+      "tr": {
+        "ar": "ʿindamā kuntu ṭiflan kuntu aḥlumu bil-ʿuthūr ʿalā kanz wa-bi-an uṣbiḥa baṭalan."
+      }
+    },
+    {
+      "id": "s25",
+      "text": {
+        "en": "That adventure changed him, although nobody noticed it at the time.",
+        "fr": "Cette aventure l'a changé, même si personne ne l'a remarqué à l'époque.",
+        "es": "Aquella aventura lo cambió, aunque nadie se dio cuenta entonces.",
+        "ar": "غيرته تلك المغامرة، مع أن أحدا لم يلاحظ ذلك وقتها."
+      },
+      "tr": {
+        "ar": "ghayyarathuu tilka al-mughāmara, maʿa anna aḥadan lam yulāḥiẓ dhālika waqtahā."
+      }
+    },
+    {
+      "id": "s26",
+      "text": {
+        "en": "She had been waiting for an hour when the stranger finally appeared.",
+        "fr": "Elle attendait depuis une heure quand l'inconnu est enfin apparu.",
+        "es": "Llevaba una hora esperando cuando por fin apareció el desconocido.",
+        "ar": "كانت تنتظر منذ ساعة عندما ظهر الغريب أخيرا."
+      },
+      "tr": {
+        "ar": "kānat tantaẓiru mundhu sāʿa ʿindamā ẓahara al-gharīb akhīran."
+      }
+    },
+    {
+      "id": "s27",
+      "text": {
+        "en": "I'll never forget the day he told me how it all happened.",
+        "fr": "Je n'oublierai jamais le jour où il m'a raconté comment tout s'était passé.",
+        "es": "Nunca olvidaré el día en que me contó cómo había ocurrido todo.",
+        "ar": "لن أنسى أبدا اليوم الذي حكى لي فيه كيف جرى كل شيء."
+      },
+      "tr": {
+        "ar": "lan ansā abadan al-yawm alladhī ḥakā lī fīhi kayfa jarā kullu shayʾ."
+      }
+    },
+    {
+      "id": "s28",
+      "text": {
+        "en": "If the narrator hadn't lied, we would have understood the ending much earlier.",
+        "fr": "Si le narrateur n'avait pas menti, nous aurions compris la fin bien plus tôt.",
+        "es": "Si el narrador no hubiera mentido, habríamos entendido el final mucho antes.",
+        "ar": "لو لم يكذب الراوي لفهمنا النهاية قبل ذلك بكثير."
+      },
+      "tr": {
+        "ar": "law lam yakdhib ar-rāwī la-fahimnā an-nihāya qabla dhālika bi-kathīr."
+      }
+    },
+    {
+      "id": "s29",
+      "text": {
+        "en": "Every time I remember that journey, I feel as if I were still there.",
+        "fr": "Chaque fois que je repense à ce voyage, j'ai l'impression d'y être encore.",
+        "es": "Cada vez que recuerdo aquel viaje, siento como si todavía estuviera allí.",
+        "ar": "كلما تذكرت تلك الرحلة شعرت كأنني ما زلت هناك."
+      },
+      "tr": {
+        "ar": "kullamā tadhakkartu tilka ar-riḥla shaʿartu ka-annanī mā zaltu hunāk."
+      }
+    },
+    {
+      "id": "s30",
+      "text": {
+        "en": "While we were crossing the forest, it began to snow and we lost the path.",
+        "fr": "Pendant que nous traversions la forêt, il s'est mis à neiger et nous avons perdu le chemin.",
+        "es": "Mientras cruzábamos el bosque, empezó a nevar y perdimos el camino.",
+        "ar": "بينما كنا نعبر الغابة بدأ الثلج يتساقط وضاع منا الطريق."
+      },
+      "tr": {
+        "ar": "baynamā kunnā naʿburu al-ghāba badaʾa ath-thalj yatasāqaṭu wa-ḍāʿa minnā aṭ-ṭarīq."
+      }
+    },
+    {
+      "id": "s31",
+      "text": {
+        "en": "The story ends well: the hero finds his family and the whole village celebrates.",
+        "fr": "L'histoire finit bien : le héros retrouve sa famille et tout le village fait la fête.",
+        "es": "La historia termina bien: el héroe encuentra a su familia y todo el pueblo lo celebra.",
+        "ar": "تنتهي القصة نهاية سعيدة: يجد البطل عائلته وتحتفل القرية كلها."
+      },
+      "tr": {
+        "ar": "tantahī al-qiṣṣa nihāyatan saʿīda: yajidu al-baṭal ʿāʾilatahu wa-taḥtafilu al-qarya kulluhā."
+      }
+    },
+    {
+      "id": "s32",
+      "text": {
+        "en": "I could not tell whether he was joking or telling the truth.",
+        "fr": "Je ne savais pas s'il plaisantait ou s'il disait la vérité.",
+        "es": "No sabía si bromeaba o si decía la verdad.",
+        "ar": "لم أعرف هل كان يمزح أم يقول الحقيقة."
+      },
+      "tr": {
+        "ar": "lam aʿrif hal kāna yamzaḥu am yaqūlu al-ḥaqīqa."
+      }
+    }
+  ],
+  "dialogue": [
+    "s18",
+    "s19",
+    "s20",
+    "s21",
+    "s22",
+    "s23"
+  ]
+}

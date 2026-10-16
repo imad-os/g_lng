@@ -1,17 +1,17 @@
 // The lesson player: one exercise at a time, Check / Continue in the footer, mistakes retried at the end.
-import { h, focusable, clear } from '../../platform/dom.js?v=2.0.0';
-import { t } from '../../platform/i18n.js?v=2.0.0';
-import { setFocus, focusFirst } from '../../platform/input.js?v=2.0.0';
-import { say, sfx, canSpeak, preload, stopVoice } from '../../platform/audio.js?v=2.0.0';
-import { LessonRun, wordsOf } from '../../learning/lesson-engine.js?v=2.0.0';
-import { finishLesson } from '../../learning/session.js?v=2.0.0';
-import { openDialog } from '../components.js?v=2.0.0';
-import pick from '../exercises/pick.js?v=2.0.0';
-import trueFalse from '../exercises/true-false.js?v=2.0.0';
-import fillGap from '../exercises/fill-gap.js?v=2.0.0';
-import wordBank from '../exercises/word-bank.js?v=2.0.0';
-import matchPairs from '../exercises/match-pairs.js?v=2.0.0';
-import orderDialogue from '../exercises/order-dialogue.js?v=2.0.0';
+import { h, focusable, clear } from '../../platform/dom.js?v=2.1.0';
+import { t } from '../../platform/i18n.js?v=2.1.0';
+import { setFocus, focusFirst } from '../../platform/input.js?v=2.1.0';
+import { say, sfx, canSpeak, preload, stopVoice } from '../../platform/audio.js?v=2.1.0';
+import { LessonRun, wordsOf } from '../../learning/lesson-engine.js?v=2.1.0';
+import { finishLesson } from '../../learning/session.js?v=2.1.0';
+import { openDialog } from '../components.js?v=2.1.0';
+import pick from '../exercises/pick.js?v=2.1.0';
+import trueFalse from '../exercises/true-false.js?v=2.1.0';
+import fillGap from '../exercises/fill-gap.js?v=2.1.0';
+import wordBank from '../exercises/word-bank.js?v=2.1.0';
+import matchPairs from '../exercises/match-pairs.js?v=2.1.0';
+import orderDialogue from '../exercises/order-dialogue.js?v=2.1.0';
 
 const EXERCISES = {
   pick_translation: pick, pick_target: pick, listen_pick: pick,

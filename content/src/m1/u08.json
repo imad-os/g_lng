@@ -1,0 +1,821 @@
+{
+  "id": "u08",
+  "level": "m1",
+  "order": 8,
+  "title": {
+    "en": "Celebrations",
+    "fr": "Fêtes et célébrations",
+    "es": "Celebraciones",
+    "ar": "الاحتفالات"
+  },
+  "tip": {
+    "en": "Wishes are short and warm: 'Happy birthday!', 'Congratulations!', 'Best wishes!'. To invite, say 'Would you like to come to...?' and answer with 'I'd love to' or 'I'm sorry, I can't make it'.",
+    "fr": "Les vœux sont courts et chaleureux : « Joyeux anniversaire ! », « Félicitations ! », « Meilleurs vœux ! ». Pour inviter, dites « Aimeriez-vous venir à... ? » et répondez « Avec plaisir » ou « Désolé, je ne pourrai pas venir ».",
+    "es": "Los deseos son breves y cálidos: «¡Feliz cumpleaños!», «¡Enhorabuena!», «¡Mis mejores deseos!». Para invitar, di «¿Te gustaría venir a...?» y responde «Me encantaría» o «Lo siento, no podré ir».",
+    "ar": "التهاني قصيرة ودافئة: «عيد ميلاد سعيد!» و«مبروك!» و«أطيب التمنيات!». للدعوة قل «هل تود الحضور إلى...؟» وأجب «بكل سرور» أو «آسف، لن أستطيع الحضور»."
+  },
+  "words": [
+    {
+      "id": "celebration",
+      "text": {
+        "en": "celebration",
+        "fr": "fête",
+        "es": "celebración",
+        "ar": "احتفال"
+      },
+      "tr": {
+        "ar": "iḥtifāl"
+      }
+    },
+    {
+      "id": "festival",
+      "text": {
+        "en": "festival",
+        "fr": "festival",
+        "es": "festival",
+        "ar": "مهرجان"
+      },
+      "tr": {
+        "ar": "mahrajān"
+      }
+    },
+    {
+      "id": "holiday_public",
+      "text": {
+        "en": "public holiday",
+        "fr": "jour férié",
+        "es": "día festivo",
+        "ar": "عطلة رسمية"
+      },
+      "tr": {
+        "ar": "ʿuṭla rasmiyya"
+      }
+    },
+    {
+      "id": "birthday",
+      "text": {
+        "en": "birthday",
+        "fr": "anniversaire",
+        "es": "cumpleaños",
+        "ar": "عيد ميلاد"
+      },
+      "tr": {
+        "ar": "ʿīd mīlād"
+      }
+    },
+    {
+      "id": "wedding",
+      "text": {
+        "en": "wedding",
+        "fr": "mariage",
+        "es": "boda",
+        "ar": "زفاف"
+      },
+      "tr": {
+        "ar": "zifāf"
+      }
+    },
+    {
+      "id": "anniversary",
+      "text": {
+        "en": "anniversary",
+        "fr": "anniversaire de mariage",
+        "es": "aniversario",
+        "ar": "ذكرى سنوية"
+      },
+      "tr": {
+        "ar": "dhikrā sanawiyya"
+      }
+    },
+    {
+      "id": "graduation",
+      "text": {
+        "en": "graduation",
+        "fr": "remise de diplômes",
+        "es": "graduación",
+        "ar": "حفل تخرج"
+      },
+      "tr": {
+        "ar": "ḥaflat takharruj"
+      }
+    },
+    {
+      "id": "new_year",
+      "text": {
+        "en": "New Year",
+        "fr": "Nouvel An",
+        "es": "Año Nuevo",
+        "ar": "رأس السنة"
+      },
+      "tr": {
+        "ar": "raʾs as-sana"
+      }
+    },
+    {
+      "id": "eid",
+      "text": {
+        "en": "Eid",
+        "fr": "Aïd",
+        "es": "Eid",
+        "ar": "العيد"
+      },
+      "tr": {
+        "ar": "al-ʿīd"
+      }
+    },
+    {
+      "id": "christmas",
+      "text": {
+        "en": "Christmas",
+        "fr": "Noël",
+        "es": "Navidad",
+        "ar": "عيد الميلاد المجيد"
+      },
+      "tr": {
+        "ar": "ʿīd al-mīlād al-majīd"
+      }
+    },
+    {
+      "id": "ramadan",
+      "text": {
+        "en": "Ramadan",
+        "fr": "ramadan",
+        "es": "Ramadán",
+        "ar": "رمضان"
+      },
+      "tr": {
+        "ar": "ramaḍān"
+      }
+    },
+    {
+      "id": "party",
+      "text": {
+        "en": "party",
+        "fr": "fête entre amis",
+        "es": "fiesta",
+        "ar": "حفلة"
+      },
+      "tr": {
+        "ar": "ḥafla"
+      }
+    },
+    {
+      "id": "invitation",
+      "text": {
+        "en": "invitation",
+        "fr": "invitation",
+        "es": "invitación",
+        "ar": "دعوة"
+      },
+      "tr": {
+        "ar": "daʿwa"
+      }
+    },
+    {
+      "id": "guest",
+      "text": {
+        "en": "guest",
+        "fr": "invité",
+        "es": "invitado",
+        "ar": "ضيف"
+      },
+      "tr": {
+        "ar": "ḍayf"
+      }
+    },
+    {
+      "id": "host",
+      "text": {
+        "en": "host",
+        "fr": "hôte",
+        "es": "anfitrión",
+        "ar": "مضيف"
+      },
+      "tr": {
+        "ar": "muḍīf"
+      }
+    },
+    {
+      "id": "gift",
+      "text": {
+        "en": "gift",
+        "fr": "cadeau",
+        "es": "regalo",
+        "ar": "هدية"
+      },
+      "tr": {
+        "ar": "hadiyya"
+      }
+    },
+    {
+      "id": "cake",
+      "text": {
+        "en": "cake",
+        "fr": "gâteau",
+        "es": "tarta",
+        "ar": "كعكة"
+      },
+      "tr": {
+        "ar": "kaʿka"
+      }
+    },
+    {
+      "id": "candle",
+      "text": {
+        "en": "candle",
+        "fr": "bougie",
+        "es": "vela",
+        "ar": "شمعة"
+      },
+      "tr": {
+        "ar": "shamʿa"
+      }
+    },
+    {
+      "id": "balloon",
+      "text": {
+        "en": "balloon",
+        "fr": "ballon",
+        "es": "globo",
+        "ar": "بالون"
+      },
+      "tr": {
+        "ar": "bālūn"
+      }
+    },
+    {
+      "id": "decoration",
+      "text": {
+        "en": "decoration",
+        "fr": "décoration",
+        "es": "decoración",
+        "ar": "زينة"
+      },
+      "tr": {
+        "ar": "zīna"
+      }
+    },
+    {
+      "id": "fireworks",
+      "text": {
+        "en": "fireworks",
+        "fr": "feux d'artifice",
+        "es": "fuegos artificiales",
+        "ar": "ألعاب نارية"
+      },
+      "tr": {
+        "ar": "alʿāb nāriyya"
+      }
+    },
+    {
+      "id": "music",
+      "text": {
+        "en": "music",
+        "fr": "musique",
+        "es": "música",
+        "ar": "موسيقى"
+      },
+      "tr": {
+        "ar": "mūsīqā"
+      }
+    },
+    {
+      "id": "dance",
+      "text": {
+        "en": "to dance",
+        "fr": "danser",
+        "es": "bailar",
+        "ar": "يرقص"
+      },
+      "tr": {
+        "ar": "yarquṣ"
+      }
+    },
+    {
+      "id": "sing",
+      "text": {
+        "en": "to sing",
+        "fr": "chanter",
+        "es": "cantar",
+        "ar": "يغني"
+      },
+      "tr": {
+        "ar": "yughannī"
+      }
+    },
+    {
+      "id": "toast",
+      "text": {
+        "en": "toast",
+        "fr": "toast",
+        "es": "brindis",
+        "ar": "نخب"
+      },
+      "tr": {
+        "ar": "nakhb"
+      }
+    },
+    {
+      "id": "congratulations",
+      "text": {
+        "en": "congratulations",
+        "fr": "félicitations",
+        "es": "enhorabuena",
+        "ar": "مبروك"
+      },
+      "tr": {
+        "ar": "mabrūk"
+      }
+    },
+    {
+      "id": "best_wishes",
+      "text": {
+        "en": "best wishes",
+        "fr": "meilleurs vœux",
+        "es": "mejores deseos",
+        "ar": "أطيب التمنيات"
+      },
+      "tr": {
+        "ar": "aṭyab at-tamanniyāt"
+      }
+    },
+    {
+      "id": "happy_birthday",
+      "text": {
+        "en": "happy birthday",
+        "fr": "joyeux anniversaire",
+        "es": "feliz cumpleaños",
+        "ar": "عيد ميلاد سعيد"
+      },
+      "tr": {
+        "ar": "ʿīd mīlād saʿīd"
+      }
+    },
+    {
+      "id": "good_luck",
+      "text": {
+        "en": "good luck",
+        "fr": "bonne chance",
+        "es": "buena suerte",
+        "ar": "حظا سعيدا"
+      },
+      "tr": {
+        "ar": "ḥaẓẓan saʿīdan"
+      }
+    },
+    {
+      "id": "cheers",
+      "text": {
+        "en": "cheers",
+        "fr": "à votre santé",
+        "es": "salud",
+        "ar": "في صحتكم"
+      },
+      "tr": {
+        "ar": "fī ṣiḥḥatikum"
+      }
+    },
+    {
+      "id": "celebrate",
+      "text": {
+        "en": "to celebrate",
+        "fr": "fêter",
+        "es": "celebrar",
+        "ar": "يحتفل"
+      },
+      "tr": {
+        "ar": "yaḥtafil"
+      }
+    },
+    {
+      "id": "wish",
+      "text": {
+        "en": "to wish",
+        "fr": "souhaiter",
+        "es": "desear",
+        "ar": "يتمنى"
+      },
+      "tr": {
+        "ar": "yatamannā"
+      }
+    },
+    {
+      "id": "thank_for",
+      "text": {
+        "en": "to thank",
+        "fr": "remercier",
+        "es": "agradecer",
+        "ar": "يشكر"
+      },
+      "tr": {
+        "ar": "yashkur"
+      }
+    },
+    {
+      "id": "accept",
+      "text": {
+        "en": "to accept",
+        "fr": "accepter",
+        "es": "aceptar",
+        "ar": "يقبل"
+      },
+      "tr": {
+        "ar": "yaqbal"
+      }
+    },
+    {
+      "id": "decline",
+      "text": {
+        "en": "to decline",
+        "fr": "décliner",
+        "es": "rechazar",
+        "ar": "يعتذر عن"
+      },
+      "tr": {
+        "ar": "yaʿtadhiru ʿan"
+      }
+    },
+    {
+      "id": "gather",
+      "text": {
+        "en": "to gather",
+        "fr": "se réunir",
+        "es": "reunirse",
+        "ar": "يجتمع"
+      },
+      "tr": {
+        "ar": "yajtamiʿ"
+      }
+    },
+    {
+      "id": "tradition",
+      "text": {
+        "en": "tradition",
+        "fr": "tradition",
+        "es": "tradición",
+        "ar": "تقليد"
+      },
+      "tr": {
+        "ar": "taqlīd"
+      }
+    },
+    {
+      "id": "special",
+      "text": {
+        "en": "special",
+        "fr": "spécial",
+        "es": "especial",
+        "ar": "مميز"
+      },
+      "tr": {
+        "ar": "mumayyaz"
+      }
+    },
+    {
+      "id": "joyful",
+      "text": {
+        "en": "joyful",
+        "fr": "joyeux",
+        "es": "alegre",
+        "ar": "مبتهج"
+      },
+      "tr": {
+        "ar": "mubtahij"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": {
+        "en": "Are you free next Saturday? I am having a party for my birthday.",
+        "fr": "Es-tu libre samedi prochain ? Je fais une fête pour mon anniversaire.",
+        "es": "¿Estás libre el próximo sábado? Voy a hacer una fiesta por mi cumpleaños.",
+        "ar": "هل أنت فارغ يوم السبت القادم؟ سأقيم حفلة بمناسبة عيد ميلادي."
+      },
+      "tr": {
+        "ar": "hal anta fārigh yawm as-sabt al-qādim? sa-uqīmu ḥafla bi-munāsabat ʿīd mīlādī."
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "Would you like to come? Everybody is invited.",
+        "fr": "Aimerais-tu venir ? Tout le monde est invité.",
+        "es": "¿Te gustaría venir? Están invitados todos.",
+        "ar": "هل تود الحضور؟ الجميع مدعوون."
+      },
+      "tr": {
+        "ar": "hal tawaddu al-ḥuḍūr? al-jamīʿ madʿūwūn."
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "I would love to, thank you for the invitation.",
+        "fr": "Avec plaisir, merci pour l'invitation.",
+        "es": "Me encantaría, gracias por la invitación.",
+        "ar": "بكل سرور، شكرا على الدعوة."
+      },
+      "tr": {
+        "ar": "bi-kulli surūr, shukran ʿalā ad-daʿwa."
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "I am sorry, I cannot make it, but I wish you a lovely day.",
+        "fr": "Je suis désolé, je ne pourrai pas venir, mais je te souhaite une belle journée.",
+        "es": "Lo siento, no podré ir, pero te deseo un día maravilloso.",
+        "ar": "آسف، لن أستطيع الحضور لكنني أتمنى لك يوما رائعا."
+      },
+      "tr": {
+        "ar": "āsif, lan astaṭīʿa al-ḥuḍūr lākinnanī atamannā laka yawman rāʾiʿan."
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "Happy birthday! How old are you today?",
+        "fr": "Joyeux anniversaire ! Tu as quel âge aujourd'hui ?",
+        "es": "¡Feliz cumpleaños! ¿Cuántos años cumples hoy?",
+        "ar": "عيد ميلاد سعيد! كم عمرك اليوم؟"
+      },
+      "tr": {
+        "ar": "ʿīd mīlād saʿīd! kam ʿumruka al-yawm?"
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "I am thirty today, and I feel great!",
+        "fr": "J'ai trente ans aujourd'hui, et je me sens très bien !",
+        "es": "Hoy cumplo treinta y me siento fenomenal.",
+        "ar": "أبلغ الثلاثين اليوم وأشعر بأنني بخير."
+      },
+      "tr": {
+        "ar": "ablughu ath-thalāthīn al-yawm wa ashʿuru annanī bi-khayr."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "Blow out the candles and make a wish!",
+        "fr": "Souffle les bougies et fais un vœu !",
+        "es": "¡Sopla las velas y pide un deseo!",
+        "ar": "أطفئ الشموع وتمنَّ أمنية!"
+      },
+      "tr": {
+        "ar": "aṭfiʾ ash-shumūʿ wa tamannā umniyya!"
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "We bought you a small gift; we hope you like it.",
+        "fr": "Nous t'avons acheté un petit cadeau ; nous espérons qu'il te plaira.",
+        "es": "Te hemos comprado un pequeño regalo; esperamos que te guste.",
+        "ar": "اشترينا لك هدية صغيرة ونأمل أن تعجبك."
+      },
+      "tr": {
+        "ar": "ishtaraynā laka hadiyya ṣaghīra wa naʾmulu an tuʿjibak."
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "Thank you so much, you did not have to!",
+        "fr": "Merci beaucoup, il ne fallait pas !",
+        "es": "¡Muchas gracias, no tenían por qué!",
+        "ar": "شكرا جزيلا، لم يكن هذا ضروريا!"
+      },
+      "tr": {
+        "ar": "shukran jazīlan, lam yakun hādhā ḍarūriyyan!"
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "Congratulations on your graduation! You worked so hard.",
+        "fr": "Félicitations pour ton diplôme ! Tu as tant travaillé.",
+        "es": "¡Enhorabuena por tu graduación! Has trabajado muchísimo.",
+        "ar": "مبروك التخرج! لقد اجتهدت كثيرا."
+      },
+      "tr": {
+        "ar": "mabrūk at-takharruj! laqad ijtahadta kathīran."
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "We are very proud of you, and we wish you the best of luck.",
+        "fr": "Nous sommes très fiers de toi et nous te souhaitons bonne chance.",
+        "es": "Estamos muy orgullosos de ti y te deseamos mucha suerte.",
+        "ar": "نحن فخورون بك جدا ونتمنى لك حظا سعيدا."
+      },
+      "tr": {
+        "ar": "naḥnu fakhūrūn bika jiddan wa natamannā laka ḥaẓẓan saʿīdan."
+      }
+    },
+    {
+      "id": "s12",
+      "text": {
+        "en": "My cousin got married last month; the wedding lasted three days.",
+        "fr": "Mon cousin s'est marié le mois dernier ; le mariage a duré trois jours.",
+        "es": "Mi primo se casó el mes pasado; la boda duró tres días.",
+        "ar": "تزوج ابن عمي الشهر الماضي واستمر الزفاف ثلاثة أيام."
+      },
+      "tr": {
+        "ar": "tazawwaja ibn ʿammī ash-shahr al-māḍī wa istamarra az-zifāf thalāthat ayyām."
+      }
+    },
+    {
+      "id": "s13",
+      "text": {
+        "en": "There was music, dancing and a huge cake.",
+        "fr": "Il y avait de la musique, de la danse et un énorme gâteau.",
+        "es": "Había música, baile y una tarta enorme.",
+        "ar": "كانت هناك موسيقى ورقص وكعكة ضخمة."
+      },
+      "tr": {
+        "ar": "kānat hunāka mūsīqā wa raqṣ wa kaʿka ḍakhma."
+      }
+    },
+    {
+      "id": "s14",
+      "text": {
+        "en": "The groom's father gave a short and emotional toast.",
+        "fr": "Le père du marié a porté un toast court et ému.",
+        "es": "El padre del novio hizo un brindis breve y emotivo.",
+        "ar": "ألقى والد العريس نخبا قصيرا ومؤثرا."
+      },
+      "tr": {
+        "ar": "alqā wālid al-ʿarīs nakhban qaṣīran wa muʾaththiran."
+      }
+    },
+    {
+      "id": "s15",
+      "text": {
+        "en": "Cheers! To your health and your happiness!",
+        "fr": "À votre santé ! À votre bonheur !",
+        "es": "¡Salud! ¡Por vuestra salud y vuestra felicidad!",
+        "ar": "في صحتكم! لصحتكم وسعادتكم!"
+      },
+      "tr": {
+        "ar": "fī ṣiḥḥatikum! li-ṣiḥḥatikum wa saʿādatikum!"
+      }
+    },
+    {
+      "id": "s16",
+      "text": {
+        "en": "Eid Mubarak! May this day bring joy to your family.",
+        "fr": "Aïd Moubarak ! Que cette journée apporte de la joie à votre famille.",
+        "es": "¡Eid Mubarak! Que este día traiga alegría a su familia.",
+        "ar": "عيد مبارك! أتمنى أن يجلب هذا اليوم الفرح لعائلتك."
+      },
+      "tr": {
+        "ar": "ʿīd mubārak! atamannā an yajliba hādhā al-yawm al-faraḥ li-ʿāʾilatik."
+      }
+    },
+    {
+      "id": "s17",
+      "text": {
+        "en": "During Ramadan, families gather every evening to break the fast together.",
+        "fr": "Pendant le ramadan, les familles se réunissent chaque soir pour rompre le jeûne ensemble.",
+        "es": "Durante el Ramadán, las familias se reúnen cada noche para romper el ayuno juntas.",
+        "ar": "في رمضان تجتمع العائلات كل مساء لتفطر معا."
+      },
+      "tr": {
+        "ar": "fī ramaḍān tajtamiʿu al-ʿāʾilāt kulla masāʾ li-tufṭira maʿan."
+      }
+    },
+    {
+      "id": "s18",
+      "text": {
+        "en": "At Christmas we decorate the tree and open the presents together.",
+        "fr": "À Noël, nous décorons le sapin et ouvrons les cadeaux ensemble.",
+        "es": "En Navidad decoramos el árbol y abrimos los regalos todos juntos.",
+        "ar": "في عيد الميلاد نزين الشجرة ونفتح الهدايا معا."
+      },
+      "tr": {
+        "ar": "fī ʿīd al-mīlād nuzayyinu ash-shajara wa naftaḥu al-hadāyā maʿan."
+      }
+    },
+    {
+      "id": "s19",
+      "text": {
+        "en": "On New Year's Eve, we watched the fireworks from the roof.",
+        "fr": "Le soir du Nouvel An, nous avons regardé les feux d'artifice depuis le toit.",
+        "es": "En Nochevieja vimos los fuegos artificiales desde la azotea.",
+        "ar": "في ليلة رأس السنة شاهدنا الألعاب النارية من السطح."
+      },
+      "tr": {
+        "ar": "fī laylat raʾs as-sana shāhadnā al-alʿāb an-nāriyya min as-saṭḥ."
+      }
+    },
+    {
+      "id": "s20",
+      "text": {
+        "en": "Happy New Year! I hope this year brings you everything you wish for.",
+        "fr": "Bonne année ! J'espère que cette année t'apportera tout ce que tu souhaites.",
+        "es": "¡Feliz Año Nuevo! Espero que este año te traiga todo lo que deseas.",
+        "ar": "سنة سعيدة! آمل أن تجلب لك هذه السنة كل ما تتمناه."
+      },
+      "tr": {
+        "ar": "sana saʿīda! āmulu an tajliba laka hādhihi as-sana kulla mā tatamannāh."
+      }
+    },
+    {
+      "id": "s21",
+      "text": {
+        "en": "Every village in the region has its own festival and its own traditions.",
+        "fr": "Chaque village de la région a sa propre fête et ses propres traditions.",
+        "es": "Cada pueblo de la región tiene su propio festival y sus propias tradiciones.",
+        "ar": "لكل قرية في المنطقة مهرجانها وتقاليدها الخاصة."
+      },
+      "tr": {
+        "ar": "li-kulli qarya fī al-minṭaqa mahrajānuhā wa taqālīduhā al-khāṣṣa."
+      }
+    },
+    {
+      "id": "s22",
+      "text": {
+        "en": "The streets were full of decorations and everyone was singing.",
+        "fr": "Les rues étaient pleines de décorations et tout le monde chantait.",
+        "es": "Las calles estaban llenas de decoraciones y todo el mundo cantaba.",
+        "ar": "كانت الشوارع مليئة بالزينة وكان الجميع يغنون."
+      },
+      "tr": {
+        "ar": "kānat ash-shawāriʿ mamlūʾa bi-z-zīna wa kāna al-jamīʿ yughannūn."
+      }
+    },
+    {
+      "id": "s23",
+      "text": {
+        "en": "Thank you for hosting us; the evening was really special.",
+        "fr": "Merci de nous avoir reçus ; la soirée était vraiment spéciale.",
+        "es": "Gracias por recibirnos; la velada fue realmente especial.",
+        "ar": "شكرا على استضافتنا، كانت الأمسية مميزة حقا."
+      },
+      "tr": {
+        "ar": "shukran ʿalā istiḍāfatinā, kānat al-amsiyya mumayyaza ḥaqqan."
+      }
+    },
+    {
+      "id": "s24",
+      "text": {
+        "en": "It was a pleasure to have you here. Please come again soon.",
+        "fr": "Ce fut un plaisir de vous avoir chez nous. Revenez bientôt.",
+        "es": "Ha sido un placer teneros aquí. Volved pronto.",
+        "ar": "كان من دواعي سروري أن تكونوا هنا. عودوا قريبا من فضلكم."
+      },
+      "tr": {
+        "ar": "kāna min dawāʿī surūrī an takūnū hunā. ʿūdū qarīban min faḍlikum."
+      }
+    },
+    {
+      "id": "s25",
+      "text": {
+        "en": "Which celebration do you like most in your country?",
+        "fr": "Quelle fête préfères-tu dans ton pays ?",
+        "es": "¿Qué celebración te gusta más en tu país?",
+        "ar": "أي احتفال تحبه أكثر في بلدك؟"
+      },
+      "tr": {
+        "ar": "ayyu iḥtifāl tuḥibbuhu akthar fī baladik?"
+      }
+    },
+    {
+      "id": "s26",
+      "text": {
+        "en": "I love the one in summer, when the whole town dances in the square.",
+        "fr": "J'aime celle de l'été, quand toute la ville danse sur la place.",
+        "es": "Me encanta la del verano, cuando todo el pueblo baila en la plaza.",
+        "ar": "أحب احتفال الصيف حين ترقص المدينة كلها في الساحة."
+      },
+      "tr": {
+        "ar": "uḥibbu iḥtifāl aṣ-ṣayf ḥīna tarquṣu al-madīna kulluhā fī as-sāḥa."
+      }
+    },
+    {
+      "id": "s27",
+      "text": {
+        "en": "Please send my best wishes to your parents.",
+        "fr": "Transmets mes meilleurs vœux à tes parents, s'il te plaît.",
+        "es": "Por favor, envía mis mejores deseos a tus padres.",
+        "ar": "أرجو أن تبلغ والديك أطيب تمنياتي."
+      },
+      "tr": {
+        "ar": "arjū an tuballigha wālidayka aṭyab tamanniyātī."
+      }
+    }
+  ],
+  "dialogue": [
+    "s01",
+    "s02",
+    "s03",
+    "s05",
+    "s06",
+    "s07"
+  ]
+}

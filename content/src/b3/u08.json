@@ -1,0 +1,860 @@
+{
+ "id": "u08",
+ "level": "b3",
+ "order": 8,
+ "title": {
+  "en": "Shopping and requests",
+  "fr": "Les achats et les demandes",
+  "es": "Compras y peticiones",
+  "ar": "التسوق والطلبات"
+ },
+ "tip": {
+  "en": "Be polite: 'Can I...?' asks permission, 'Could you...?' asks for help, and 'I would like...' says what you want. Add 'please' and 'thank you'.",
+  "fr": "Soyez poli : « Puis-je... ? » demande la permission, « Pourriez-vous... ? » demande de l'aide, et « Je voudrais... » dit ce que vous désirez. Ajoutez « s'il vous plaît » et « merci ».",
+  "es": "Sé amable: «¿Puedo...?» pide permiso, «¿Podría...?» pide ayuda y «Quisiera...» dice lo que quieres. Añade «por favor» y «gracias».",
+  "ar": "كن مؤدبا: «هل يمكنني...؟» لطلب الإذن، و«هل يمكنك...؟» لطلب المساعدة، و«أود...» لقول ما تريد. وأضف «من فضلك» و«شكرا»."
+ },
+ "words": [
+  {
+   "id": "shop",
+   "text": {
+    "en": "shop",
+    "fr": "magasin",
+    "es": "tienda",
+    "ar": "متجر",
+    "de": "das Geschäft"
+   },
+   "tr": {
+    "ar": "matjar"
+   }
+  },
+  {
+   "id": "supermarket",
+   "text": {
+    "en": "supermarket",
+    "fr": "supermarché",
+    "es": "supermercado",
+    "ar": "سوبرماركت",
+    "de": "der Supermarkt"
+   },
+   "tr": {
+    "ar": "sūbirmārkit"
+   }
+  },
+  {
+   "id": "cashier",
+   "text": {
+    "en": "cashier",
+    "fr": "caissier",
+    "es": "cajero",
+    "ar": "أمين الصندوق",
+    "de": "der Kassierer"
+   },
+   "tr": {
+    "ar": "amīn aṣ-ṣundūq"
+   }
+  },
+  {
+   "id": "seller",
+   "text": {
+    "en": "seller",
+    "fr": "vendeur",
+    "es": "vendedor",
+    "ar": "بائع",
+    "de": "der Verkäufer"
+   },
+   "tr": {
+    "ar": "bāʾiʿ"
+   }
+  },
+  {
+   "id": "price",
+   "text": {
+    "en": "price",
+    "fr": "prix",
+    "es": "precio",
+    "ar": "سعر",
+    "de": "der Preis"
+   },
+   "tr": {
+    "ar": "siʿr"
+   }
+  },
+  {
+   "id": "cheap",
+   "text": {
+    "en": "cheap",
+    "fr": "bon marché",
+    "es": "barato",
+    "ar": "رخيص",
+    "de": "billig"
+   },
+   "tr": {
+    "ar": "rakhīṣ"
+   }
+  },
+  {
+   "id": "expensive",
+   "text": {
+    "en": "expensive",
+    "fr": "cher",
+    "es": "caro",
+    "ar": "غال",
+    "de": "teuer"
+   },
+   "tr": {
+    "ar": "ghālin"
+   }
+  },
+  {
+   "id": "discount",
+   "text": {
+    "en": "discount",
+    "fr": "réduction",
+    "es": "descuento",
+    "ar": "خصم",
+    "de": "der Rabatt"
+   },
+   "tr": {
+    "ar": "khaṣm"
+   }
+  },
+  {
+   "id": "receipt",
+   "text": {
+    "en": "receipt",
+    "fr": "reçu",
+    "es": "recibo",
+    "ar": "إيصال",
+    "de": "der Beleg"
+   },
+   "tr": {
+    "ar": "īṣāl"
+   }
+  },
+  {
+   "id": "bag",
+   "text": {
+    "en": "bag",
+    "fr": "sac",
+    "es": "bolsa",
+    "ar": "كيس",
+    "de": "die Tüte"
+   },
+   "tr": {
+    "ar": "kīs"
+   }
+  },
+  {
+   "id": "wallet",
+   "text": {
+    "en": "wallet",
+    "fr": "portefeuille",
+    "es": "cartera",
+    "ar": "محفظة",
+    "de": "die Geldbörse"
+   },
+   "tr": {
+    "ar": "miḥfaẓa"
+   }
+  },
+  {
+   "id": "trousers",
+   "text": {
+    "en": "trousers",
+    "fr": "pantalon",
+    "es": "pantalón",
+    "ar": "بنطال",
+    "de": "die Hose"
+   },
+   "tr": {
+    "ar": "banṭāl"
+   }
+  },
+  {
+   "id": "size",
+   "text": {
+    "en": "size",
+    "fr": "taille",
+    "es": "talla",
+    "ar": "مقاس",
+    "de": "die Größe"
+   },
+   "tr": {
+    "ar": "maqās"
+   }
+  },
+  {
+   "id": "try_on",
+   "text": {
+    "en": "to try on",
+    "fr": "essayer",
+    "es": "probarse",
+    "ar": "يجرب",
+    "de": "anprobieren"
+   },
+   "tr": {
+    "ar": "yujarrib"
+   }
+  },
+  {
+   "id": "pay",
+   "text": {
+    "en": "to pay",
+    "fr": "payer",
+    "es": "pagar",
+    "ar": "يدفع",
+    "de": "bezahlen"
+   },
+   "tr": {
+    "ar": "yadfaʿ"
+   }
+  },
+  {
+   "id": "buy",
+   "text": {
+    "en": "to buy",
+    "fr": "acheter",
+    "es": "comprar",
+    "ar": "يشتري",
+    "de": "kaufen"
+   },
+   "tr": {
+    "ar": "yashtarī"
+   }
+  },
+  {
+   "id": "sell",
+   "text": {
+    "en": "to sell",
+    "fr": "vendre",
+    "es": "vender",
+    "ar": "يبيع",
+    "de": "verkaufen"
+   },
+   "tr": {
+    "ar": "yabīʿ"
+   }
+  },
+  {
+   "id": "cost",
+   "text": {
+    "en": "to cost",
+    "fr": "coûter",
+    "es": "costar",
+    "ar": "يكلف",
+    "de": "kosten"
+   },
+   "tr": {
+    "ar": "yukallif"
+   }
+  },
+  {
+   "id": "look_for",
+   "text": {
+    "en": "to look for",
+    "fr": "chercher",
+    "es": "buscar",
+    "ar": "يبحث عن",
+    "de": "suchen"
+   },
+   "tr": {
+    "ar": "yabḥath ʿan"
+   }
+  },
+  {
+   "id": "cash",
+   "text": {
+    "en": "cash",
+    "fr": "espèces",
+    "es": "efectivo",
+    "ar": "نقدا",
+    "de": "bar"
+   },
+   "tr": {
+    "ar": "naqdan"
+   }
+  },
+  {
+   "id": "card",
+   "text": {
+    "en": "card",
+    "fr": "carte",
+    "es": "tarjeta",
+    "ar": "بطاقة",
+    "de": "die Karte"
+   },
+   "tr": {
+    "ar": "biṭāqa"
+   }
+  },
+  {
+   "id": "change",
+   "text": {
+    "en": "change",
+    "fr": "monnaie",
+    "es": "cambio",
+    "ar": "الباقي",
+    "de": "das Wechselgeld"
+   },
+   "tr": {
+    "ar": "al-bāqī"
+   }
+  },
+  {
+   "id": "show",
+   "text": {
+    "en": "to show",
+    "fr": "montrer",
+    "es": "enseñar",
+    "ar": "يري",
+    "de": "zeigen"
+   },
+   "tr": {
+    "ar": "yurī"
+   }
+  },
+  {
+   "id": "give",
+   "text": {
+    "en": "to give",
+    "fr": "donner",
+    "es": "dar",
+    "ar": "يعطي",
+    "de": "geben"
+   },
+   "tr": {
+    "ar": "yuʿṭī"
+   }
+  },
+  {
+   "id": "bring",
+   "text": {
+    "en": "to bring",
+    "fr": "apporter",
+    "es": "traer",
+    "ar": "يحضر",
+    "de": "bringen"
+   },
+   "tr": {
+    "ar": "yuḥḍir"
+   }
+  },
+  {
+   "id": "open",
+   "text": {
+    "en": "to open",
+    "fr": "ouvrir",
+    "es": "abrir",
+    "ar": "يفتح",
+    "de": "öffnen"
+   },
+   "tr": {
+    "ar": "yaftaḥ"
+   }
+  },
+  {
+   "id": "close",
+   "text": {
+    "en": "to close",
+    "fr": "fermer",
+    "es": "cerrar",
+    "ar": "يغلق",
+    "de": "schließen"
+   },
+   "tr": {
+    "ar": "yughliq"
+   }
+  },
+  {
+   "id": "please",
+   "text": {
+    "en": "please",
+    "fr": "s'il vous plaît",
+    "es": "por favor",
+    "ar": "من فضلك",
+    "de": "bitte"
+   },
+   "tr": {
+    "ar": "min faḍlik"
+   }
+  },
+  {
+   "id": "thank_you",
+   "text": {
+    "en": "thank you",
+    "fr": "merci",
+    "es": "gracias",
+    "ar": "شكرا",
+    "de": "danke"
+   },
+   "tr": {
+    "ar": "shukran"
+   }
+  },
+  {
+   "id": "could_you",
+   "text": {
+    "en": "could you",
+    "fr": "pourriez-vous",
+    "es": "podría",
+    "ar": "هل يمكنك أن",
+    "de": "könnten Sie"
+   },
+   "tr": {
+    "ar": "hal yumkinuka an"
+   }
+  },
+  {
+   "id": "can_i",
+   "text": {
+    "en": "can I",
+    "fr": "puis-je",
+    "es": "puedo",
+    "ar": "هل يمكنني",
+    "de": "darf ich"
+   },
+   "tr": {
+    "ar": "hal yumkinunī"
+   }
+  },
+  {
+   "id": "would_like",
+   "text": {
+    "en": "I would like",
+    "fr": "je voudrais",
+    "es": "quisiera",
+    "ar": "أود",
+    "de": "ich möchte"
+   },
+   "tr": {
+    "ar": "awadd"
+   }
+  },
+  {
+   "id": "another",
+   "text": {
+    "en": "another",
+    "fr": "un autre",
+    "es": "otro",
+    "ar": "آخر",
+    "de": "ein anderer"
+   },
+   "tr": {
+    "ar": "ākhar"
+   }
+  },
+  {
+   "id": "bigger",
+   "text": {
+    "en": "bigger",
+    "fr": "plus grand",
+    "es": "más grande",
+    "ar": "أكبر",
+    "de": "größer"
+   },
+   "tr": {
+    "ar": "akbar"
+   }
+  },
+  {
+   "id": "smaller",
+   "text": {
+    "en": "smaller",
+    "fr": "plus petit",
+    "es": "más pequeño",
+    "ar": "أصغر",
+    "de": "kleiner"
+   },
+   "tr": {
+    "ar": "aṣghar"
+   }
+  },
+  {
+   "id": "how_much",
+   "text": {
+    "en": "how much is it",
+    "fr": "combien ça coûte",
+    "es": "cuánto cuesta",
+    "ar": "بكم هذا",
+    "de": "wie viel kostet das"
+   },
+   "tr": {
+    "ar": "bikam hādhā"
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "text": {
+    "en": "Excuse me, can I ask you something?",
+    "fr": "Excusez-moi, puis-je vous demander quelque chose ?",
+    "es": "Perdone, ¿puedo preguntarle algo?",
+    "ar": "عذرا، هل يمكنني أن أسألك شيئا؟",
+    "de": "Entschuldigung, darf ich Sie etwas fragen?"
+   },
+   "tr": {
+    "ar": "ʿudhran, hal yumkinunī an asʾalaka shayʾan?"
+   }
+  },
+  {
+   "id": "s02",
+   "text": {
+    "en": "I would like to buy these trousers.",
+    "fr": "Je voudrais acheter ce pantalon.",
+    "es": "Quisiera comprar este pantalón.",
+    "ar": "أود أن أشتري هذا البنطال.",
+    "de": "Ich möchte diese Hose kaufen."
+   },
+   "tr": {
+    "ar": "awadd an ashtarī hādhā al-banṭāl."
+   }
+  },
+  {
+   "id": "s03",
+   "text": {
+    "en": "How much does it cost?",
+    "fr": "Combien ça coûte ?",
+    "es": "¿Cuánto cuesta?",
+    "ar": "بكم هذا؟",
+    "de": "Wie viel kostet das?"
+   },
+   "tr": {
+    "ar": "bikam hādhā?"
+   }
+  },
+  {
+   "id": "s04",
+   "text": {
+    "en": "It is very expensive for me.",
+    "fr": "C'est très cher pour moi.",
+    "es": "Es muy caro para mí.",
+    "ar": "إنه غال جدا بالنسبة لي.",
+    "de": "Das ist mir zu teuer."
+   },
+   "tr": {
+    "ar": "innahu ghālin jiddan bin-nisba lī."
+   }
+  },
+  {
+   "id": "s05",
+   "text": {
+    "en": "Is there a discount?",
+    "fr": "Y a-t-il une réduction ?",
+    "es": "¿Hay algún descuento?",
+    "ar": "هل يوجد خصم؟",
+    "de": "Gibt es einen Rabatt?"
+   },
+   "tr": {
+    "ar": "hal yūjad khaṣm?"
+   }
+  },
+  {
+   "id": "s06",
+   "text": {
+    "en": "Could you show me another one, please?",
+    "fr": "Pourriez-vous m'en montrer un autre, s'il vous plaît ?",
+    "es": "¿Podría enseñarme otro, por favor?",
+    "ar": "هل يمكنك أن تريني واحدا آخر من فضلك؟",
+    "de": "Könnten Sie mir bitte einen anderen zeigen?"
+   },
+   "tr": {
+    "ar": "hal yumkinuka an turiyanī wāḥidan ākhar min faḍlik?"
+   }
+  },
+  {
+   "id": "s07",
+   "text": {
+    "en": "Can I try it on?",
+    "fr": "Puis-je l'essayer ?",
+    "es": "¿Puedo probármelo?",
+    "ar": "هل يمكنني أن أجربه؟",
+    "de": "Darf ich es anprobieren?"
+   },
+   "tr": {
+    "ar": "hal yumkinunī an ujarribah?"
+   }
+  },
+  {
+   "id": "s08",
+   "text": {
+    "en": "Do you have a bigger size?",
+    "fr": "Avez-vous une taille plus grande ?",
+    "es": "¿Tiene una talla más grande?",
+    "ar": "هل لديك مقاس أكبر؟",
+    "de": "Haben Sie das eine Nummer größer?"
+   },
+   "tr": {
+    "ar": "hal ladayka maqās akbar?"
+   }
+  },
+  {
+   "id": "s09",
+   "text": {
+    "en": "This one is too big. I need a smaller size.",
+    "fr": "Celui-ci est trop grand. Il me faut une taille plus petite.",
+    "es": "Este es demasiado grande. Necesito una talla más pequeña.",
+    "ar": "هذا كبير جدا. أحتاج إلى مقاس أصغر.",
+    "de": "Dieser ist zu groß. Ich brauche eine kleinere Größe."
+   },
+   "tr": {
+    "ar": "hādhā kabīr jiddan. aḥtāj ilā maqās aṣghar."
+   }
+  },
+  {
+   "id": "s10",
+   "text": {
+    "en": "Could you give me a bag, please?",
+    "fr": "Pourriez-vous me donner un sac, s'il vous plaît ?",
+    "es": "¿Podría darme una bolsa, por favor?",
+    "ar": "هل يمكنك أن تعطيني كيسا من فضلك؟",
+    "de": "Könnten Sie mir bitte eine Tüte geben?"
+   },
+   "tr": {
+    "ar": "hal yumkinuka an tuʿṭiyanī kīsan min faḍlik?"
+   }
+  },
+  {
+   "id": "s11",
+   "text": {
+    "en": "Can I pay by card?",
+    "fr": "Puis-je payer par carte ?",
+    "es": "¿Puedo pagar con tarjeta?",
+    "ar": "هل يمكنني الدفع بالبطاقة؟",
+    "de": "Kann ich mit Karte bezahlen?"
+   },
+   "tr": {
+    "ar": "hal yumkinunī ad-dafʿ bil-biṭāqa?"
+   }
+  },
+  {
+   "id": "s12",
+   "text": {
+    "en": "Sorry, we only take cash.",
+    "fr": "Désolé, nous n'acceptons que les espèces.",
+    "es": "Lo siento, solo aceptamos efectivo.",
+    "ar": "آسف، نقبل الدفع نقدا فقط.",
+    "de": "Tut mir leid, wir nehmen nur Bargeld."
+   },
+   "tr": {
+    "ar": "āsif, naqbal ad-dafʿ naqdan faqaṭ."
+   }
+  },
+  {
+   "id": "s13",
+   "text": {
+    "en": "Here is your change.",
+    "fr": "Voici votre monnaie.",
+    "es": "Aquí tiene su cambio.",
+    "ar": "تفضل، هذا هو الباقي.",
+    "de": "Hier ist Ihr Wechselgeld."
+   },
+   "tr": {
+    "ar": "tafaḍḍal, hādhā huwa al-bāqī."
+   }
+  },
+  {
+   "id": "s14",
+   "text": {
+    "en": "Could you give me the receipt, please?",
+    "fr": "Pourriez-vous me donner le reçu, s'il vous plaît ?",
+    "es": "¿Podría darme el recibo, por favor?",
+    "ar": "هل يمكنك أن تعطيني الإيصال من فضلك؟",
+    "de": "Könnten Sie mir bitte den Beleg geben?"
+   },
+   "tr": {
+    "ar": "hal yumkinuka an tuʿṭiyanī al-īṣāl min faḍlik?"
+   }
+  },
+  {
+   "id": "s15",
+   "text": {
+    "en": "The seller opens the shop at nine.",
+    "fr": "Le vendeur ouvre le magasin à neuf heures.",
+    "es": "El vendedor abre la tienda a las nueve.",
+    "ar": "يفتح البائع المتجر في الساعة التاسعة.",
+    "de": "Der Verkäufer öffnet das Geschäft um neun Uhr."
+   },
+   "tr": {
+    "ar": "yaftaḥ al-bāʾiʿ al-matjar fī as-sāʿa at-tāsiʿa."
+   }
+  },
+  {
+   "id": "s16",
+   "text": {
+    "en": "The shop closes at seven in the evening.",
+    "fr": "Le magasin ferme à sept heures du soir.",
+    "es": "La tienda cierra a las siete de la tarde.",
+    "ar": "يغلق المتجر في الساعة السابعة مساء.",
+    "de": "Das Geschäft schließt um sieben Uhr abends."
+   },
+   "tr": {
+    "ar": "yughliq al-matjar fī as-sāʿa as-sābiʿa masāʾan."
+   }
+  },
+  {
+   "id": "s17",
+   "text": {
+    "en": "Could you bring it to my house?",
+    "fr": "Pourriez-vous me le livrer chez moi ?",
+    "es": "¿Podría traerlo a mi casa?",
+    "ar": "هل يمكنك أن تحضره إلى بيتي؟",
+    "de": "Könnten Sie es zu mir nach Hause bringen?"
+   },
+   "tr": {
+    "ar": "hal yumkinuka an tuḥḍirahu ilā baytī?"
+   }
+  },
+  {
+   "id": "s18",
+   "text": {
+    "en": "Is there a supermarket near here?",
+    "fr": "Y a-t-il un supermarché près d'ici ?",
+    "es": "¿Hay un supermercado cerca de aquí?",
+    "ar": "هل يوجد سوبرماركت قريب من هنا؟",
+    "de": "Gibt es hier in der Nähe einen Supermarkt?"
+   },
+   "tr": {
+    "ar": "hal yūjad sūbirmārkit qarīb min hunā?"
+   }
+  },
+  {
+   "id": "s19",
+   "text": {
+    "en": "The cashier is very nice.",
+    "fr": "La caissière est très gentille.",
+    "es": "La cajera es muy amable.",
+    "ar": "أمينة الصندوق لطيفة جدا.",
+    "de": "Die Kassiererin ist sehr nett."
+   },
+   "tr": {
+    "ar": "amīnat aṣ-ṣundūq laṭīfa jiddan."
+   }
+  },
+  {
+   "id": "s20",
+   "text": {
+    "en": "My wallet is in the bag.",
+    "fr": "Mon portefeuille est dans le sac.",
+    "es": "Mi cartera está en la bolsa.",
+    "ar": "محفظتي في الكيس.",
+    "de": "Meine Geldbörse ist in der Tüte."
+   },
+   "tr": {
+    "ar": "miḥfaẓatī fī al-kīs."
+   }
+  },
+  {
+   "id": "s21",
+   "text": {
+    "en": "They sell good bread here.",
+    "fr": "Ils vendent du bon pain ici.",
+    "es": "Aquí venden buen pan.",
+    "ar": "يبيعون هنا خبزا جيدا.",
+    "de": "Hier verkauft man gutes Brot."
+   },
+   "tr": {
+    "ar": "yabīʿūna hunā khubzan jayyidan."
+   }
+  },
+  {
+   "id": "s22",
+   "text": {
+    "en": "Thank you, you are very kind.",
+    "fr": "Merci, vous êtes très aimable.",
+    "es": "Gracias, es usted muy amable.",
+    "ar": "شكرا، أنت لطيف جدا.",
+    "de": "Danke, Sie sind sehr freundlich."
+   },
+   "tr": {
+    "ar": "shukran, anta laṭīf jiddan."
+   }
+  },
+  {
+   "id": "s23",
+   "text": {
+    "en": "Can I help you?",
+    "fr": "Puis-je vous aider ?",
+    "es": "¿Puedo ayudarle?",
+    "ar": "هل يمكنني مساعدتك؟",
+    "de": "Kann ich Ihnen helfen?"
+   },
+   "tr": {
+    "ar": "hal yumkinunī musāʿadatuk?"
+   }
+  },
+  {
+   "id": "s24",
+   "text": {
+    "en": "I am just looking, thank you.",
+    "fr": "Je regarde seulement, merci.",
+    "es": "Solo estoy mirando, gracias.",
+    "ar": "أنا أتفرج فقط، شكرا.",
+    "de": "Ich schaue nur, danke."
+   },
+   "tr": {
+    "ar": "anā atafarraj faqaṭ, shukran."
+   }
+  },
+  {
+   "id": "s25",
+   "text": {
+    "en": "Could you open the door, please? My hands are full.",
+    "fr": "Pourriez-vous ouvrir la porte, s'il vous plaît ? J'ai les mains pleines.",
+    "es": "¿Podría abrir la puerta, por favor? Tengo las manos ocupadas.",
+    "ar": "هل يمكنك أن تفتح الباب من فضلك؟ يداي مشغولتان.",
+    "de": "Könnten Sie bitte die Tür öffnen? Ich habe die Hände voll."
+   },
+   "tr": {
+    "ar": "hal yumkinuka an taftaḥa al-bāb min faḍlik? yadāya mashghūlatān."
+   }
+  },
+  {
+   "id": "s26",
+   "text": {
+    "en": "I am looking for a cheap gift.",
+    "fr": "Je cherche un cadeau bon marché.",
+    "es": "Busco un regalo barato.",
+    "ar": "أبحث عن هدية رخيصة.",
+    "de": "Ich suche ein günstiges Geschenk."
+   },
+   "tr": {
+    "ar": "abḥath ʿan hadiyya rakhīṣa."
+   }
+  },
+  {
+   "id": "s27",
+   "text": {
+    "en": "I would like two of these, please.",
+    "fr": "Je voudrais deux de ceux-ci, s'il vous plaît.",
+    "es": "Quisiera dos de estos, por favor.",
+    "ar": "أود اثنتين من هذه، من فضلك.",
+    "de": "Ich möchte bitte zwei davon."
+   },
+   "tr": {
+    "ar": "awadd ithnatayn min hādhihi, min faḍlik."
+   }
+  },
+  {
+   "id": "s28",
+   "text": {
+    "en": "Thank you, have a nice day!",
+    "fr": "Merci, bonne journée !",
+    "es": "¡Gracias, que tenga un buen día!",
+    "ar": "شكرا، أتمنى لك يوما سعيدا!",
+    "de": "Danke, einen schönen Tag noch!"
+   },
+   "tr": {
+    "ar": "shukran, atamannā laka yawman saʿīdan!"
+   }
+  }
+ ],
+ "dialogue": [
+  "s23",
+  "s02",
+  "s03",
+  "s11",
+  "s28"
+ ]
+}

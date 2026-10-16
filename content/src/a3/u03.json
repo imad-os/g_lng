@@ -1,0 +1,999 @@
+{
+ "id": "u03",
+ "level": "a3",
+ "order": 3,
+ "title": {
+  "en": "Literature",
+  "fr": "La littérature",
+  "es": "La literatura",
+  "ar": "الأدب"
+ },
+ "tip": {
+  "en": "To talk about a text, separate what it says from how it says it: the plot and theme on one side, the style, imagery and tone on the other. Then give your own interpretation.",
+  "fr": "Pour parler d'un texte, distinguez ce qu'il dit de la manière dont il le dit : l'intrigue et le thème d'un côté, le style, les images et le ton de l'autre. Proposez ensuite votre interprétation.",
+  "es": "Para hablar de un texto, separa lo que dice de cómo lo dice: la trama y el tema por un lado, el estilo, las imágenes y el tono por otro. Después ofrece tu propia interpretación.",
+  "ar": "للحديث عن نص ما، افصل بين ما يقوله وطريقة قوله: الحبكة والفكرة المحورية من جهة، والأسلوب والصور والنبرة من جهة أخرى. ثم قدم تأويلك الخاص."
+ },
+ "words": [
+  {
+   "id": "novel",
+   "text": {
+    "en": "novel",
+    "fr": "roman",
+    "es": "novela",
+    "ar": "رواية"
+   },
+   "tr": {
+    "ar": "riwāya"
+   }
+  },
+  {
+   "id": "short_story",
+   "text": {
+    "en": "short story",
+    "fr": "nouvelle",
+    "es": "cuento",
+    "ar": "قصة قصيرة"
+   },
+   "tr": {
+    "ar": "qiṣṣa qaṣīra"
+   }
+  },
+  {
+   "id": "poem",
+   "text": {
+    "en": "poem",
+    "fr": "poème",
+    "es": "poema",
+    "ar": "قصيدة"
+   },
+   "tr": {
+    "ar": "qaṣīda"
+   }
+  },
+  {
+   "id": "verse",
+   "text": {
+    "en": "verse",
+    "fr": "vers",
+    "es": "verso",
+    "ar": "بيت شعري"
+   },
+   "tr": {
+    "ar": "bayt shiʿrī"
+   }
+  },
+  {
+   "id": "stanza",
+   "text": {
+    "en": "stanza",
+    "fr": "strophe",
+    "es": "estrofa",
+    "ar": "مقطع"
+   },
+   "tr": {
+    "ar": "maqṭaʿ"
+   }
+  },
+  {
+   "id": "rhyme",
+   "text": {
+    "en": "rhyme",
+    "fr": "rime",
+    "es": "rima",
+    "ar": "قافية"
+   },
+   "tr": {
+    "ar": "qāfiya"
+   }
+  },
+  {
+   "id": "rhythm",
+   "text": {
+    "en": "rhythm",
+    "fr": "rythme",
+    "es": "ritmo",
+    "ar": "إيقاع"
+   },
+   "tr": {
+    "ar": "īqāʿ"
+   }
+  },
+  {
+   "id": "author",
+   "text": {
+    "en": "author",
+    "fr": "auteur",
+    "es": "autor",
+    "ar": "مؤلف"
+   },
+   "tr": {
+    "ar": "muʾallif"
+   }
+  },
+  {
+   "id": "poet",
+   "text": {
+    "en": "poet",
+    "fr": "poète",
+    "es": "poeta",
+    "ar": "شاعر"
+   },
+   "tr": {
+    "ar": "shāʿir"
+   }
+  },
+  {
+   "id": "narrator",
+   "text": {
+    "en": "narrator",
+    "fr": "narrateur",
+    "es": "narrador",
+    "ar": "راو"
+   },
+   "tr": {
+    "ar": "rāwin"
+   }
+  },
+  {
+   "id": "protagonist",
+   "text": {
+    "en": "protagonist",
+    "fr": "protagoniste",
+    "es": "protagonista",
+    "ar": "بطل"
+   },
+   "tr": {
+    "ar": "baṭal"
+   }
+  },
+  {
+   "id": "character",
+   "text": {
+    "en": "character",
+    "fr": "personnage",
+    "es": "personaje",
+    "ar": "شخصية"
+   },
+   "tr": {
+    "ar": "shakhṣiyya"
+   }
+  },
+  {
+   "id": "plot",
+   "text": {
+    "en": "plot",
+    "fr": "intrigue",
+    "es": "trama",
+    "ar": "حبكة"
+   },
+   "tr": {
+    "ar": "ḥabka"
+   }
+  },
+  {
+   "id": "setting",
+   "text": {
+    "en": "setting",
+    "fr": "cadre",
+    "es": "ambientación",
+    "ar": "فضاء الأحداث"
+   },
+   "tr": {
+    "ar": "faḍāʾ al-aḥdāth"
+   }
+  },
+  {
+   "id": "theme",
+   "text": {
+    "en": "theme",
+    "fr": "thème",
+    "es": "tema",
+    "ar": "فكرة محورية"
+   },
+   "tr": {
+    "ar": "fikra miḥwariyya"
+   }
+  },
+  {
+   "id": "symbol",
+   "text": {
+    "en": "symbol",
+    "fr": "symbole",
+    "es": "símbolo",
+    "ar": "رمز"
+   },
+   "tr": {
+    "ar": "ramz"
+   }
+  },
+  {
+   "id": "imagery",
+   "text": {
+    "en": "imagery",
+    "fr": "images poétiques",
+    "es": "imaginería poética",
+    "ar": "صور شعرية"
+   },
+   "tr": {
+    "ar": "ṣuwar shiʿriyya"
+   }
+  },
+  {
+   "id": "style",
+   "text": {
+    "en": "style",
+    "fr": "style",
+    "es": "estilo",
+    "ar": "أسلوب"
+   },
+   "tr": {
+    "ar": "uslūb"
+   }
+  },
+  {
+   "id": "prose",
+   "text": {
+    "en": "prose",
+    "fr": "prose",
+    "es": "prosa",
+    "ar": "نثر"
+   },
+   "tr": {
+    "ar": "nathr"
+   }
+  },
+  {
+   "id": "chapter",
+   "text": {
+    "en": "chapter",
+    "fr": "chapitre",
+    "es": "capítulo",
+    "ar": "فصل"
+   },
+   "tr": {
+    "ar": "faṣl"
+   }
+  },
+  {
+   "id": "extract",
+   "text": {
+    "en": "extract",
+    "fr": "extrait",
+    "es": "fragmento",
+    "ar": "مقتطف"
+   },
+   "tr": {
+    "ar": "muqtaṭaf"
+   }
+  },
+  {
+   "id": "quotation",
+   "text": {
+    "en": "quotation",
+    "fr": "citation",
+    "es": "cita",
+    "ar": "اقتباس"
+   },
+   "tr": {
+    "ar": "iqtibās"
+   }
+  },
+  {
+   "id": "interpretation",
+   "text": {
+    "en": "interpretation",
+    "fr": "interprétation",
+    "es": "interpretación",
+    "ar": "تأويل"
+   },
+   "tr": {
+    "ar": "taʾwīl"
+   }
+  },
+  {
+   "id": "reader",
+   "text": {
+    "en": "reader",
+    "fr": "lecteur",
+    "es": "lector",
+    "ar": "قارئ"
+   },
+   "tr": {
+    "ar": "qāriʾ"
+   }
+  },
+  {
+   "id": "critic",
+   "text": {
+    "en": "critic",
+    "fr": "critique",
+    "es": "crítico",
+    "ar": "ناقد"
+   },
+   "tr": {
+    "ar": "nāqid"
+   }
+  },
+  {
+   "id": "masterpiece",
+   "text": {
+    "en": "masterpiece",
+    "fr": "chef-d'œuvre",
+    "es": "obra maestra",
+    "ar": "تحفة أدبية"
+   },
+   "tr": {
+    "ar": "tuḥfa adabiyya"
+   }
+  },
+  {
+   "id": "classic",
+   "text": {
+    "en": "classic",
+    "fr": "classique",
+    "es": "clásico",
+    "ar": "عمل خالد"
+   },
+   "tr": {
+    "ar": "ʿamal khālid"
+   }
+  },
+  {
+   "id": "manuscript",
+   "text": {
+    "en": "manuscript",
+    "fr": "manuscrit",
+    "es": "manuscrito",
+    "ar": "مخطوطة"
+   },
+   "tr": {
+    "ar": "makhṭūṭa"
+   }
+  },
+  {
+   "id": "publish",
+   "text": {
+    "en": "publish",
+    "fr": "publier",
+    "es": "publicar",
+    "ar": "نشر"
+   },
+   "tr": {
+    "ar": "nashara"
+   }
+  },
+  {
+   "id": "translate",
+   "text": {
+    "en": "translate",
+    "fr": "traduire",
+    "es": "traducir",
+    "ar": "ترجم"
+   },
+   "tr": {
+    "ar": "tarjama"
+   }
+  },
+  {
+   "id": "allegory",
+   "text": {
+    "en": "allegory",
+    "fr": "allégorie",
+    "es": "alegoría",
+    "ar": "قصة رمزية"
+   },
+   "tr": {
+    "ar": "qiṣṣa ramziyya"
+   }
+  },
+  {
+   "id": "epic",
+   "text": {
+    "en": "epic",
+    "fr": "épopée",
+    "es": "epopeya",
+    "ar": "ملحمة"
+   },
+   "tr": {
+    "ar": "malḥama"
+   }
+  },
+  {
+   "id": "tragedy",
+   "text": {
+    "en": "tragedy",
+    "fr": "tragédie",
+    "es": "tragedia",
+    "ar": "مأساة"
+   },
+   "tr": {
+    "ar": "maʾsāt"
+   }
+  },
+  {
+   "id": "play",
+   "text": {
+    "en": "play",
+    "fr": "pièce de théâtre",
+    "es": "obra de teatro",
+    "ar": "مسرحية"
+   },
+   "tr": {
+    "ar": "masraḥiyya"
+   }
+  },
+  {
+   "id": "dialogue",
+   "text": {
+    "en": "dialogue",
+    "fr": "dialogue",
+    "es": "diálogo",
+    "ar": "حوار"
+   },
+   "tr": {
+    "ar": "ḥiwār"
+   }
+  },
+  {
+   "id": "monologue",
+   "text": {
+    "en": "monologue",
+    "fr": "monologue",
+    "es": "monólogo",
+    "ar": "مناجاة"
+   },
+   "tr": {
+    "ar": "munājāt"
+   }
+  },
+  {
+   "id": "figure_of_speech",
+   "text": {
+    "en": "figure of speech",
+    "fr": "figure de style",
+    "es": "figura retórica",
+    "ar": "صورة بلاغية"
+   },
+   "tr": {
+    "ar": "ṣūra balāghiyya"
+   }
+  },
+  {
+   "id": "narrative",
+   "text": {
+    "en": "narrative",
+    "fr": "récit",
+    "es": "relato",
+    "ar": "سرد"
+   },
+   "tr": {
+    "ar": "sard"
+   }
+  },
+  {
+   "id": "flashback",
+   "text": {
+    "en": "flashback",
+    "fr": "retour en arrière",
+    "es": "escena retrospectiva",
+    "ar": "استرجاع فني"
+   },
+   "tr": {
+    "ar": "istirjāʿ fannī"
+   }
+  },
+  {
+   "id": "ending",
+   "text": {
+    "en": "ending",
+    "fr": "dénouement",
+    "es": "desenlace",
+    "ar": "نهاية"
+   },
+   "tr": {
+    "ar": "nihāya"
+   }
+  },
+  {
+   "id": "suspense",
+   "text": {
+    "en": "suspense",
+    "fr": "suspense",
+    "es": "suspense",
+    "ar": "تشويق"
+   },
+   "tr": {
+    "ar": "tashwīq"
+   }
+  },
+  {
+   "id": "inspire",
+   "text": {
+    "en": "inspire",
+    "fr": "inspirer",
+    "es": "inspirar",
+    "ar": "ألهم"
+   },
+   "tr": {
+    "ar": "alhama"
+   }
+  },
+  {
+   "id": "imagination",
+   "text": {
+    "en": "imagination",
+    "fr": "imagination",
+    "es": "imaginación",
+    "ar": "خيال"
+   },
+   "tr": {
+    "ar": "khayāl"
+   }
+  },
+  {
+   "id": "genre",
+   "text": {
+    "en": "genre",
+    "fr": "genre",
+    "es": "género",
+    "ar": "جنس أدبي"
+   },
+   "tr": {
+    "ar": "jins adabī"
+   }
+  },
+  {
+   "id": "fiction",
+   "text": {
+    "en": "fiction",
+    "fr": "fiction",
+    "es": "ficción",
+    "ar": "عمل قصصي"
+   },
+   "tr": {
+    "ar": "ʿamal qaṣaṣī"
+   }
+  },
+  {
+   "id": "lyrical",
+   "text": {
+    "en": "lyrical",
+    "fr": "lyrique",
+    "es": "lírico",
+    "ar": "غنائي"
+   },
+   "tr": {
+    "ar": "ghināʾī"
+   }
+  },
+  {
+   "id": "memoir",
+   "text": {
+    "en": "memoir",
+    "fr": "mémoires",
+    "es": "memorias",
+    "ar": "مذكرات"
+   },
+   "tr": {
+    "ar": "mudhakkirāt"
+   }
+  },
+  {
+   "id": "plot_twist",
+   "text": {
+    "en": "plot twist",
+    "fr": "coup de théâtre",
+    "es": "giro argumental",
+    "ar": "انعطافة مفاجئة"
+   },
+   "tr": {
+    "ar": "inʿiṭāfa mufājiʾa"
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "text": {
+    "en": "The novel opens with a seemingly harmless scene that sets the whole plot in motion.",
+    "fr": "Le roman s'ouvre sur une scène en apparence anodine qui met toute l'intrigue en branle.",
+    "es": "La novela se abre con una escena aparentemente inocua que pone en marcha toda la trama.",
+    "ar": "تبدأ الرواية بمشهد يبدو بريئا لكنه يحرك الحبكة كلها."
+   },
+   "tr": {
+    "ar": "tabdaʾu ar-riwāya bi-mashhadin yabdū barīʾan lākinnahu yuḥarriku al-ḥabka kullahā."
+   }
+  },
+  {
+   "id": "s02",
+   "text": {
+    "en": "The narrator is unreliable, so we have to read between the lines.",
+    "fr": "Le narrateur n'est pas fiable : il faut lire entre les lignes.",
+    "es": "El narrador no es fiable, así que hay que leer entre líneas.",
+    "ar": "الراوي غير موثوق، فعلينا أن نقرأ بين السطور."
+   },
+   "tr": {
+    "ar": "ar-rāwī ghayr mawthūq, fa-ʿalaynā an naqraʾa bayna as-suṭūr."
+   }
+  },
+  {
+   "id": "s03",
+   "text": {
+    "en": "The protagonist is a flawed character, and that is precisely what makes him human.",
+    "fr": "Le protagoniste est un personnage imparfait, et c'est justement ce qui le rend humain.",
+    "es": "El protagonista es un personaje con defectos, y eso es justo lo que lo hace humano.",
+    "ar": "البطل شخصية ذات عيوب، وهذا بالضبط ما يجعله إنسانا."
+   },
+   "tr": {
+    "ar": "al-baṭal shakhṣiyya dhāt ʿuyūb, wa-hādhā bi-ḍ-ḍabṭ mā yajʿaluhu insānan."
+   }
+  },
+  {
+   "id": "s04",
+   "text": {
+    "en": "The poet compresses a lifetime of grief into a single stanza.",
+    "fr": "Le poète condense toute une vie de chagrin en une seule strophe.",
+    "es": "El poeta condensa toda una vida de pena en una sola estrofa.",
+    "ar": "يكثف الشاعر عمرا من الحزن في مقطع واحد."
+   },
+   "tr": {
+    "ar": "yukaththifu ash-shāʿir ʿumran mina al-ḥuzn fī maqṭaʿin wāḥid."
+   }
+  },
+  {
+   "id": "s05",
+   "text": {
+    "en": "The rhyme and the rhythm of these verses make them easy to memorise.",
+    "fr": "La rime et le rythme de ces vers les rendent faciles à mémoriser.",
+    "es": "La rima y el ritmo de estos versos los hacen fáciles de memorizar.",
+    "ar": "تجعل القافية والإيقاع هذه الأبيات سهلة الحفظ."
+   },
+   "tr": {
+    "ar": "tajʿalu al-qāfiya wa-l-īqāʿ hādhihi al-abyāt sahlat al-ḥifẓ."
+   }
+  },
+  {
+   "id": "s06",
+   "text": {
+    "en": "Her prose is sober, almost austere, yet every sentence is carefully weighed.",
+    "fr": "Sa prose est sobre, presque austère, mais chaque phrase est soigneusement pesée.",
+    "es": "Su prosa es sobria, casi austera, pero cada frase está cuidadosamente medida.",
+    "ar": "نثرها رصين، يكاد يكون صارما، لكن كل جملة فيه موزونة بعناية."
+   },
+   "tr": {
+    "ar": "nathruhā raṣīn, yakādu yakūnu ṣārimān, lākinna kulla jumlatin fīhi mawzūna bi-ʿināya."
+   }
+  },
+  {
+   "id": "s07",
+   "text": {
+    "en": "The author's style is recognisable from the very first paragraph.",
+    "fr": "Le style de l'auteur se reconnaît dès le premier paragraphe.",
+    "es": "El estilo del autor se reconoce desde el primer párrafo.",
+    "ar": "يعرف أسلوب المؤلف منذ الفقرة الأولى."
+   },
+   "tr": {
+    "ar": "yuʿrafu uslūb al-muʾallif mundhu al-faqra al-ūlā."
+   }
+  },
+  {
+   "id": "s08",
+   "text": {
+    "en": "In this extract, the setting reflects the protagonist's loneliness.",
+    "fr": "Dans cet extrait, le cadre reflète la solitude du protagoniste.",
+    "es": "En este fragmento, la ambientación refleja la soledad del protagonista.",
+    "ar": "في هذا المقتطف يعكس فضاء الأحداث وحدة البطل."
+   },
+   "tr": {
+    "ar": "fī hādhā al-muqtaṭaf yaʿkisu faḍāʾ al-aḥdāth waḥdat al-baṭal."
+   }
+  },
+  {
+   "id": "s09",
+   "text": {
+    "en": "The central theme is the conflict between duty and desire.",
+    "fr": "Le thème central est le conflit entre le devoir et le désir.",
+    "es": "El tema central es el conflicto entre el deber y el deseo.",
+    "ar": "الفكرة المحورية هي الصراع بين الواجب والرغبة."
+   },
+   "tr": {
+    "ar": "al-fikra al-miḥwariyya hiya aṣ-ṣirāʿ bayna al-wājib wa-r-raghba."
+   }
+  },
+  {
+   "id": "s10",
+   "text": {
+    "en": "The sea is a recurring symbol of freedom and danger.",
+    "fr": "La mer est un symbole récurrent de liberté et de danger.",
+    "es": "El mar es un símbolo recurrente de libertad y peligro.",
+    "ar": "البحر رمز متكرر للحرية والخطر."
+   },
+   "tr": {
+    "ar": "al-baḥr ramz mutakarrir lil-ḥurriyya wa-l-khaṭar."
+   }
+  },
+  {
+   "id": "s11",
+   "text": {
+    "en": "The poem's imagery draws on the desert, the wind and the night.",
+    "fr": "Les images poétiques du poème puisent dans le désert, le vent et la nuit.",
+    "es": "Las imágenes poéticas del poema se nutren del desierto, el viento y la noche.",
+    "ar": "تستمد الصور الشعرية في القصيدة مادتها من الصحراء والريح والليل."
+   },
+   "tr": {
+    "ar": "tastamiddu aṣ-ṣuwar ash-shiʿriyya fī al-qaṣīda māddatahā mina aṣ-ṣaḥrāʾ wa-r-rīḥ wa-l-layl."
+   }
+  },
+  {
+   "id": "s12",
+   "text": {
+    "en": "Every chapter ends on a note of suspense.",
+    "fr": "Chaque chapitre se termine sur une note de suspense.",
+    "es": "Cada capítulo termina con una nota de suspense.",
+    "ar": "ينتهي كل فصل بنبرة من التشويق."
+   },
+   "tr": {
+    "ar": "yantahī kullu faṣl bi-nabratin mina at-tashwīq."
+   }
+  },
+  {
+   "id": "s13",
+   "text": {
+    "en": "The plot twist in the last act took the audience by surprise.",
+    "fr": "Le coup de théâtre du dernier acte a pris le public de court.",
+    "es": "El giro argumental del último acto sorprendió al público.",
+    "ar": "فاجأت الانعطافة المفاجئة في الفصل الأخير الجمهور."
+   },
+   "tr": {
+    "ar": "fājaʾat al-inʿiṭāfa al-mufājiʾa fī al-faṣl al-akhīr al-jumhūr."
+   }
+  },
+  {
+   "id": "s14",
+   "text": {
+    "en": "The play is a tragedy in which the hero's pride causes his downfall.",
+    "fr": "La pièce est une tragédie où l'orgueil du héros provoque sa chute.",
+    "es": "La obra de teatro es una tragedia en la que el orgullo del héroe provoca su caída.",
+    "ar": "المسرحية مأساة يؤدي كبرياء بطلها إلى سقوطه."
+   },
+   "tr": {
+    "ar": "al-masraḥiyya maʾsāt yuʾaddī kibriyāʾ baṭalihā ilā suqūṭihi."
+   }
+  },
+  {
+   "id": "s15",
+   "text": {
+    "en": "The monologue reveals what the dialogue conceals.",
+    "fr": "Le monologue révèle ce que le dialogue dissimule.",
+    "es": "El monólogo revela lo que el diálogo oculta.",
+    "ar": "تكشف المناجاة ما يخفيه الحوار."
+   },
+   "tr": {
+    "ar": "takshifu al-munājāt mā yukhfīhi al-ḥiwār."
+   }
+  },
+  {
+   "id": "s16",
+   "text": {
+    "en": "The memoir is written in a lyrical tone, almost like a long poem.",
+    "fr": "Les mémoires sont écrits sur un ton lyrique, presque comme un long poème.",
+    "es": "Las memorias están escritas en un tono lírico, casi como un largo poema.",
+    "ar": "كتبت المذكرات بنبرة غنائية، تكاد تكون قصيدة طويلة."
+   },
+   "tr": {
+    "ar": "kutibat al-mudhakkirāt bi-nabra ghināʾiyya, takādu takūnu qaṣīdatan ṭawīla."
+   }
+  },
+  {
+   "id": "s17",
+   "text": {
+    "en": "This epic recounts the founding of a people through the voice of a single hero.",
+    "fr": "Cette épopée raconte la fondation d'un peuple par la voix d'un seul héros.",
+    "es": "Esta epopeya narra la fundación de un pueblo a través de la voz de un solo héroe.",
+    "ar": "تروي هذه الملحمة تأسيس شعب على لسان بطل واحد."
+   },
+   "tr": {
+    "ar": "tarwī hādhihi al-malḥama taʾsīsa shaʿbin ʿalā lisāni baṭalin wāḥid."
+   }
+  },
+  {
+   "id": "s18",
+   "text": {
+    "en": "The allegory is transparent: the king stands for tyranny.",
+    "fr": "L'allégorie est transparente : le roi représente la tyrannie.",
+    "es": "La alegoría es transparente: el rey representa la tiranía.",
+    "ar": "القصة الرمزية شفافة، فالملك يمثل الطغيان."
+   },
+   "tr": {
+    "ar": "al-qiṣṣa ar-ramziyya shaffāfa, fa-l-malik yumaththilu aṭ-ṭughyān."
+   }
+  },
+  {
+   "id": "s19",
+   "text": {
+    "en": "The critic called the book a masterpiece, but readers were divided.",
+    "fr": "Le critique a qualifié le livre de chef-d'œuvre, mais les lecteurs étaient partagés.",
+    "es": "El crítico calificó el libro de obra maestra, pero los lectores estaban divididos.",
+    "ar": "وصف الناقد الكتاب بأنه تحفة أدبية لكن القراء انقسموا."
+   },
+   "tr": {
+    "ar": "waṣafa an-nāqid al-kitāb bi-annahu tuḥfa adabiyya lākinna al-qurrāʾ inqasamū."
+   }
+  },
+  {
+   "id": "s20",
+   "text": {
+    "en": "A classic is a book that people keep rereading and interpreting differently each time.",
+    "fr": "Un classique est un livre que l'on relit sans cesse, en l'interprétant chaque fois autrement.",
+    "es": "Un clásico es un libro que se relee sin cesar, interpretándolo cada vez de otro modo.",
+    "ar": "العمل الخالد كتاب يعيد القراء قراءته ويؤولونه في كل مرة تأويلا مختلفا."
+   },
+   "tr": {
+    "ar": "al-ʿamal al-khālid kitāb yuʿīdu al-qurrāʾ qirāʾatahu wa-yuʾawwilūnahu fī kulli marra taʾwīlan mukhtalifan."
+   }
+  },
+  {
+   "id": "s21",
+   "text": {
+    "en": "The manuscript was discovered after the author's death and published ten years later.",
+    "fr": "Le manuscrit a été découvert après la mort de l'auteur et publié dix ans plus tard.",
+    "es": "El manuscrito fue descubierto tras la muerte del autor y publicado diez años después.",
+    "ar": "اكتشفت المخطوطة بعد وفاة المؤلف ونشرت بعد عشر سنوات."
+   },
+   "tr": {
+    "ar": "uktushifat al-makhṭūṭa baʿda wafāt al-muʾallif wa-nushirat baʿda ʿashri sanawāt."
+   }
+  },
+  {
+   "id": "s22",
+   "text": {
+    "en": "Translating a poem means translating its music as well as its words.",
+    "fr": "Traduire un poème, c'est traduire sa musique autant que ses mots.",
+    "es": "Traducir un poema es traducir su música además de sus palabras.",
+    "ar": "ترجمة القصيدة تعني ترجمة موسيقاها كما تعني ترجمة كلماتها."
+   },
+   "tr": {
+    "ar": "tarjamat al-qaṣīda taʿnī tarjamat mūsīqāhā kamā taʿnī tarjamat kalimātihā."
+   }
+  },
+  {
+   "id": "s23",
+   "text": {
+    "en": "The short story is a genre that demands precision: not a word is wasted.",
+    "fr": "La nouvelle est un genre qui exige de la précision : aucun mot n'est gaspillé.",
+    "es": "El cuento es un género que exige precisión: no sobra ni una palabra.",
+    "ar": "القصة القصيرة جنس أدبي يتطلب الدقة، فلا كلمة فيه زائدة."
+   },
+   "tr": {
+    "ar": "al-qiṣṣa al-qaṣīra jins adabī yataṭallabu ad-diqqa, fa-lā kalima fīhi zāʾida."
+   }
+  },
+  {
+   "id": "s24",
+   "text": {
+    "en": "She uses flashbacks to tell the story of her childhood.",
+    "fr": "Elle recourt à des retours en arrière pour raconter son enfance.",
+    "es": "Recurre a escenas retrospectivas para contar su infancia.",
+    "ar": "تلجأ إلى الاسترجاع الفني لتروي طفولتها."
+   },
+   "tr": {
+    "ar": "taljaʾu ilā al-istirjāʿ al-fannī li-tarwiya ṭufūlatahā."
+   }
+  },
+  {
+   "id": "s25",
+   "text": {
+    "en": "A figure of speech can say in one image what a page of prose cannot.",
+    "fr": "Une figure de style peut dire en une image ce qu'une page de prose ne peut pas dire.",
+    "es": "Una figura retórica puede decir en una imagen lo que una página de prosa no logra.",
+    "ar": "تستطيع الصورة البلاغية أن تقول في لمحة ما تعجز عنه صفحة من النثر."
+   },
+   "tr": {
+    "ar": "tastaṭīʿu aṣ-ṣūra al-balāghiyya an taqūla fī lamḥa mā taʿjizu ʿanhu ṣafḥa mina an-nathr."
+   }
+  },
+  {
+   "id": "s26",
+   "text": {
+    "en": "The ending leaves the reader free to imagine what happens next.",
+    "fr": "Le dénouement laisse le lecteur libre d'imaginer la suite.",
+    "es": "El desenlace deja al lector libre de imaginar lo que sucede después.",
+    "ar": "تترك النهاية القارئ حرا في أن يتخيل ما يلي."
+   },
+   "tr": {
+    "ar": "tatruku an-nihāya al-qāriʾ ḥurran fī an yatakhayyala mā yalī."
+   }
+  },
+  {
+   "id": "s27",
+   "text": {
+    "en": "Imagination is what turns a simple fiction into a world we want to live in.",
+    "fr": "L'imagination transforme une simple fiction en un monde où l'on voudrait vivre.",
+    "es": "La imaginación convierte una simple ficción en un mundo donde nos gustaría vivir.",
+    "ar": "الخيال هو ما يحول عملا قصصيا بسيطا إلى عالم نود أن نعيش فيه."
+   },
+   "tr": {
+    "ar": "al-khayāl huwa mā yuḥawwilu ʿamalan qaṣaṣiyyan basīṭan ilā ʿālam nawaddu an naʿīsha fīh."
+   }
+  },
+  {
+   "id": "s28",
+   "text": {
+    "en": "A piece of news she read years earlier inspired her last novel.",
+    "fr": "Un fait divers qu'elle avait lu des années plus tôt a inspiré son dernier roman.",
+    "es": "Una noticia que había leído años antes inspiró su última novela.",
+    "ar": "ألهمها خبر قرأته قبل سنوات روايتها الأخيرة."
+   },
+   "tr": {
+    "ar": "alhamahā khabar qaraʾathu qabla sanawāt riwāyatahā al-akhīra."
+   }
+  },
+  {
+   "id": "s29",
+   "text": {
+    "en": "Have you read the extract I sent you?",
+    "fr": "As-tu lu l'extrait que je t'ai envoyé ?",
+    "es": "¿Has leído el fragmento que te envié?",
+    "ar": "هل قرأت المقتطف الذي أرسلته إليك؟"
+   },
+   "tr": {
+    "ar": "hal qaraʾta al-muqtaṭaf alladhī arsaltuhu ilayk?"
+   }
+  },
+  {
+   "id": "s30",
+   "text": {
+    "en": "Yes, but my interpretation differs from yours.",
+    "fr": "Oui, mais mon interprétation diffère de la tienne.",
+    "es": "Sí, pero mi interpretación difiere de la tuya.",
+    "ar": "نعم، لكن تأويلي يختلف عن تأويلك."
+   },
+   "tr": {
+    "ar": "naʿam, lākinna taʾwīlī yakhtalifu ʿan taʾwīlik."
+   }
+  },
+  {
+   "id": "s31",
+   "text": {
+    "en": "Then let us compare the two readings and see which one the text supports.",
+    "fr": "Alors comparons les deux lectures et voyons laquelle le texte soutient.",
+    "es": "Entonces comparemos las dos lecturas y veamos cuál respalda el texto.",
+    "ar": "إذن لنقارن بين القراءتين ولنر أيهما يؤيده النص."
+   },
+   "tr": {
+    "ar": "idhan li-nuqārina bayna al-qirāʾatayn wa-li-narā ayyuhumā yuʾayyiduhu an-naṣṣ."
+   }
+  },
+  {
+   "id": "s32",
+   "text": {
+    "en": "The reader, not the author, has the last word.",
+    "fr": "C'est le lecteur, et non l'auteur, qui a le dernier mot.",
+    "es": "Es el lector, y no el autor, quien tiene la última palabra.",
+    "ar": "القارئ لا المؤلف هو صاحب الكلمة الأخيرة."
+   },
+   "tr": {
+    "ar": "al-qāriʾ lā al-muʾallif huwa ṣāḥib al-kalima al-akhīra."
+   }
+  },
+  {
+   "id": "s33",
+   "text": {
+    "en": "She closed her essay with a quotation from the epic.",
+    "fr": "Elle a clos son essai par une citation de l'épopée.",
+    "es": "Cerró su ensayo con una cita de la epopeya.",
+    "ar": "ختمت مقالها باقتباس من الملحمة."
+   },
+   "tr": {
+    "ar": "khatamat maqālahā bi-iqtibāsin mina al-malḥama."
+   }
+  }
+ ],
+ "dialogue": [
+  "s29",
+  "s30",
+  "s31",
+  "s32"
+ ]
+}

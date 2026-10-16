@@ -1,0 +1,927 @@
+{
+  "id": "u05",
+  "level": "m3",
+  "order": 5,
+  "title": {
+    "en": "Culture and traditions",
+    "fr": "Culture et traditions",
+    "es": "Cultura y tradiciones",
+    "ar": "الثقافة والتقاليد"
+  },
+  "tip": {
+    "en": "Use \"used to + verb\" for past habits that no longer happen: \"We used to visit my grandparents every Friday.\" For something you are familiar with, say \"I'm used to + noun or -ing\": \"I'm used to eating late.\"",
+    "fr": "Pour une habitude passée, utilisez l'imparfait : « Nous rendions visite à mes grands-parents tous les vendredis ». En anglais, on dit « used to + verbe » ; ne le confondez pas avec « be used to » (être habitué à).",
+    "es": "Para hablar de costumbres del pasado usa el imperfecto: «Visitábamos a mis abuelos todos los viernes». En inglés se dice «used to + verbo»; no lo confundas con «be used to» (estar acostumbrado a).",
+    "ar": "للحديث عن عادات الماضي التي انتهت استخدم «كان» مع المضارع: «كنا نزور جدي وجدتي كل جمعة». وفي الإنجليزية تقال «used to + فعل»، ولا تخلطها مع «be used to» أي معتاد على."
+  },
+  "words": [
+    {
+      "id": "culture",
+      "text": {
+        "en": "culture",
+        "fr": "culture",
+        "es": "cultura",
+        "ar": "ثقافة"
+      },
+      "tr": {
+        "ar": "thaqāfa"
+      }
+    },
+    {
+      "id": "tradition",
+      "text": {
+        "en": "tradition",
+        "fr": "tradition",
+        "es": "tradición",
+        "ar": "تقليد"
+      },
+      "tr": {
+        "ar": "taqlīd"
+      }
+    },
+    {
+      "id": "custom",
+      "text": {
+        "en": "custom",
+        "fr": "coutume",
+        "es": "costumbre",
+        "ar": "عادة"
+      },
+      "tr": {
+        "ar": "ʿāda"
+      }
+    },
+    {
+      "id": "festival",
+      "text": {
+        "en": "festival",
+        "fr": "fête",
+        "es": "fiesta",
+        "ar": "مهرجان"
+      },
+      "tr": {
+        "ar": "mahrajān"
+      }
+    },
+    {
+      "id": "celebration",
+      "text": {
+        "en": "celebration",
+        "fr": "célébration",
+        "es": "celebración",
+        "ar": "احتفال"
+      },
+      "tr": {
+        "ar": "iḥtifāl"
+      }
+    },
+    {
+      "id": "ceremony",
+      "text": {
+        "en": "ceremony",
+        "fr": "cérémonie",
+        "es": "ceremonia",
+        "ar": "مراسم"
+      },
+      "tr": {
+        "ar": "marāsim"
+      }
+    },
+    {
+      "id": "wedding",
+      "text": {
+        "en": "wedding",
+        "fr": "mariage",
+        "es": "boda",
+        "ar": "زفاف"
+      },
+      "tr": {
+        "ar": "zifāf"
+      }
+    },
+    {
+      "id": "holiday",
+      "text": {
+        "en": "holiday",
+        "fr": "jour férié",
+        "es": "día festivo",
+        "ar": "عطلة رسمية"
+      },
+      "tr": {
+        "ar": "ʿuṭla rasmiyya"
+      }
+    },
+    {
+      "id": "ancestor",
+      "text": {
+        "en": "ancestor",
+        "fr": "ancêtre",
+        "es": "antepasado",
+        "ar": "جد أعلى"
+      },
+      "tr": {
+        "ar": "jadd aʿlā"
+      }
+    },
+    {
+      "id": "elder",
+      "text": {
+        "en": "elder",
+        "fr": "aîné",
+        "es": "anciano",
+        "ar": "كبير السن"
+      },
+      "tr": {
+        "ar": "kabīr as-sinn"
+      }
+    },
+    {
+      "id": "generation",
+      "text": {
+        "en": "generation",
+        "fr": "génération",
+        "es": "generación",
+        "ar": "جيل"
+      },
+      "tr": {
+        "ar": "jīl"
+      }
+    },
+    {
+      "id": "heritage",
+      "text": {
+        "en": "heritage",
+        "fr": "patrimoine",
+        "es": "patrimonio",
+        "ar": "تراث"
+      },
+      "tr": {
+        "ar": "turāth"
+      }
+    },
+    {
+      "id": "folklore",
+      "text": {
+        "en": "folklore",
+        "fr": "folklore",
+        "es": "folclore",
+        "ar": "فلكلور"
+      },
+      "tr": {
+        "ar": "folklūr"
+      }
+    },
+    {
+      "id": "costume",
+      "text": {
+        "en": "traditional dress",
+        "fr": "costume traditionnel",
+        "es": "traje típico",
+        "ar": "زي تقليدي"
+      },
+      "tr": {
+        "ar": "zayy taqlīdī"
+      }
+    },
+    {
+      "id": "dish",
+      "text": {
+        "en": "dish",
+        "fr": "plat",
+        "es": "plato",
+        "ar": "طبق"
+      },
+      "tr": {
+        "ar": "ṭabaq"
+      }
+    },
+    {
+      "id": "recipe",
+      "text": {
+        "en": "recipe",
+        "fr": "recette",
+        "es": "receta",
+        "ar": "وصفة"
+      },
+      "tr": {
+        "ar": "waṣfa"
+      }
+    },
+    {
+      "id": "feast",
+      "text": {
+        "en": "feast",
+        "fr": "festin",
+        "es": "banquete",
+        "ar": "مأدبة"
+      },
+      "tr": {
+        "ar": "maʾduba"
+      }
+    },
+    {
+      "id": "gift",
+      "text": {
+        "en": "gift",
+        "fr": "cadeau",
+        "es": "regalo",
+        "ar": "هدية"
+      },
+      "tr": {
+        "ar": "hadiyya"
+      }
+    },
+    {
+      "id": "guest",
+      "text": {
+        "en": "guest",
+        "fr": "invité",
+        "es": "invitado",
+        "ar": "ضيف"
+      },
+      "tr": {
+        "ar": "ḍayf"
+      }
+    },
+    {
+      "id": "hospitality",
+      "text": {
+        "en": "hospitality",
+        "fr": "hospitalité",
+        "es": "hospitalidad",
+        "ar": "كرم الضيافة"
+      },
+      "tr": {
+        "ar": "karam aḍ-ḍiyāfa"
+      }
+    },
+    {
+      "id": "belief",
+      "text": {
+        "en": "belief",
+        "fr": "croyance",
+        "es": "creencia",
+        "ar": "معتقد"
+      },
+      "tr": {
+        "ar": "muʿtaqad"
+      }
+    },
+    {
+      "id": "superstition",
+      "text": {
+        "en": "superstition",
+        "fr": "superstition",
+        "es": "superstición",
+        "ar": "خرافة"
+      },
+      "tr": {
+        "ar": "khurāfa"
+      }
+    },
+    {
+      "id": "religion",
+      "text": {
+        "en": "religion",
+        "fr": "religion",
+        "es": "religión",
+        "ar": "دين"
+      },
+      "tr": {
+        "ar": "dīn"
+      }
+    },
+    {
+      "id": "prayer",
+      "text": {
+        "en": "prayer",
+        "fr": "prière",
+        "es": "oración",
+        "ar": "صلاة"
+      },
+      "tr": {
+        "ar": "ṣalāh"
+      }
+    },
+    {
+      "id": "music_dance",
+      "text": {
+        "en": "folk dance",
+        "fr": "danse folklorique",
+        "es": "baile popular",
+        "ar": "رقصة شعبية"
+      },
+      "tr": {
+        "ar": "raqṣa shaʿbiyya"
+      }
+    },
+    {
+      "id": "craft",
+      "text": {
+        "en": "craft",
+        "fr": "artisanat",
+        "es": "artesanía",
+        "ar": "حرفة يدوية"
+      },
+      "tr": {
+        "ar": "ḥirfa yadawiyya"
+      }
+    },
+    {
+      "id": "proverb",
+      "text": {
+        "en": "proverb",
+        "fr": "proverbe",
+        "es": "refrán",
+        "ar": "مثل شعبي"
+      },
+      "tr": {
+        "ar": "mathal shaʿbī"
+      }
+    },
+    {
+      "id": "legend",
+      "text": {
+        "en": "legend",
+        "fr": "légende",
+        "es": "leyenda",
+        "ar": "أسطورة"
+      },
+      "tr": {
+        "ar": "usṭūra"
+      }
+    },
+    {
+      "id": "celebrate",
+      "text": {
+        "en": "to celebrate",
+        "fr": "célébrer",
+        "es": "celebrar",
+        "ar": "احتفل"
+      },
+      "tr": {
+        "ar": "iḥtafala"
+      }
+    },
+    {
+      "id": "preserve",
+      "text": {
+        "en": "to preserve",
+        "fr": "préserver",
+        "es": "conservar",
+        "ar": "حافظ على"
+      },
+      "tr": {
+        "ar": "ḥāfaẓa ʿalā"
+      }
+    },
+    {
+      "id": "pass_down",
+      "text": {
+        "en": "to pass down",
+        "fr": "transmettre",
+        "es": "transmitir",
+        "ar": "نقل"
+      },
+      "tr": {
+        "ar": "naqala"
+      }
+    },
+    {
+      "id": "gather",
+      "text": {
+        "en": "to gather",
+        "fr": "se réunir",
+        "es": "reunirse",
+        "ar": "اجتمع"
+      },
+      "tr": {
+        "ar": "ijtamaʿa"
+      }
+    },
+    {
+      "id": "invite",
+      "text": {
+        "en": "to invite",
+        "fr": "inviter",
+        "es": "invitar",
+        "ar": "دعا"
+      },
+      "tr": {
+        "ar": "daʿā"
+      }
+    },
+    {
+      "id": "follow_custom",
+      "text": {
+        "en": "to observe",
+        "fr": "respecter",
+        "es": "respetar",
+        "ar": "التزم بـ"
+      },
+      "tr": {
+        "ar": "iltazama bi"
+      }
+    },
+    {
+      "id": "give_up",
+      "text": {
+        "en": "to give up",
+        "fr": "abandonner",
+        "es": "abandonar",
+        "ar": "تخلى عن"
+      },
+      "tr": {
+        "ar": "takhallā ʿan"
+      }
+    },
+    {
+      "id": "used_to",
+      "text": {
+        "en": "used to",
+        "fr": "avoir l'habitude de",
+        "es": "solía",
+        "ar": "اعتاد"
+      },
+      "tr": {
+        "ar": "iʿtāda"
+      }
+    },
+    {
+      "id": "nowadays",
+      "text": {
+        "en": "nowadays",
+        "fr": "de nos jours",
+        "es": "hoy en día",
+        "ar": "في أيامنا هذه"
+      },
+      "tr": {
+        "ar": "fī ayyāminā hādhihi"
+      }
+    },
+    {
+      "id": "in_the_past",
+      "text": {
+        "en": "in the past",
+        "fr": "autrefois",
+        "es": "antiguamente",
+        "ar": "في الماضي"
+      },
+      "tr": {
+        "ar": "fī al-māḍī"
+      }
+    },
+    {
+      "id": "traditional",
+      "text": {
+        "en": "traditional",
+        "fr": "traditionnel",
+        "es": "tradicional",
+        "ar": "تقليدي"
+      },
+      "tr": {
+        "ar": "taqlīdī"
+      }
+    },
+    {
+      "id": "modern",
+      "text": {
+        "en": "modern",
+        "fr": "moderne",
+        "es": "moderno",
+        "ar": "حديث"
+      },
+      "tr": {
+        "ar": "ḥadīth"
+      }
+    },
+    {
+      "id": "local",
+      "text": {
+        "en": "local",
+        "fr": "local",
+        "es": "local",
+        "ar": "محلي"
+      },
+      "tr": {
+        "ar": "maḥallī"
+      }
+    },
+    {
+      "id": "unique",
+      "text": {
+        "en": "unique",
+        "fr": "unique",
+        "es": "único",
+        "ar": "فريد"
+      },
+      "tr": {
+        "ar": "farīd"
+      }
+    },
+    {
+      "id": "generous",
+      "text": {
+        "en": "generous",
+        "fr": "généreux",
+        "es": "generoso",
+        "ar": "كريم"
+      },
+      "tr": {
+        "ar": "karīm"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": {
+        "en": "In the past, the whole village used to gather for the harvest festival.",
+        "fr": "Autrefois, tout le village se réunissait pour la fête des récoltes.",
+        "es": "Antiguamente, todo el pueblo se reunía para la fiesta de la cosecha.",
+        "ar": "في الماضي كانت القرية كلها تجتمع في مهرجان الحصاد."
+      },
+      "tr": {
+        "ar": "fī al-māḍī kānat al-qarya kulluhā tajtamiʿu fī mahrajān al-ḥaṣād."
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "My grandmother used to cook the same dish for every celebration.",
+        "fr": "Ma grand-mère préparait le même plat à chaque célébration.",
+        "es": "Mi abuela solía cocinar el mismo plato en cada celebración.",
+        "ar": "كانت جدتي تطبخ الطبق نفسه في كل احتفال."
+      },
+      "tr": {
+        "ar": "kānat jaddatī taṭbukhu aṭ-ṭabaq nafsahu fī kulli iḥtifāl."
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "She passed the recipe down to my mother, who passed it down to me.",
+        "fr": "Elle a transmis la recette à ma mère, qui me l'a transmise à son tour.",
+        "es": "Ella transmitió la receta a mi madre, que me la transmitió a mí.",
+        "ar": "نقلت الوصفة إلى أمي، وهي نقلتها إلي."
+      },
+      "tr": {
+        "ar": "naqalat al-waṣfa ilā ummī, wa-hiya naqalathā ilayya."
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "Nowadays many young people no longer wear the traditional dress, except at weddings.",
+        "fr": "De nos jours, beaucoup de jeunes ne portent plus le costume traditionnel, sauf pour les mariages.",
+        "es": "Hoy en día muchos jóvenes ya no llevan el traje típico, salvo en las bodas.",
+        "ar": "في أيامنا هذه لم يعد كثير من الشباب يرتدون الزي التقليدي إلا في الأعراس."
+      },
+      "tr": {
+        "ar": "fī ayyāminā hādhihi lam yaʿud kathīr min ash-shabāb yartadūna az-zayy at-taqlīdī illā fī al-aʿrās."
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "Hospitality is so important here that a guest always receives the best seat.",
+        "fr": "L'hospitalité est si importante ici qu'un invité reçoit toujours la meilleure place.",
+        "es": "La hospitalidad es tan importante aquí que el invitado siempre recibe el mejor sitio.",
+        "ar": "كرم الضيافة مهم هنا لدرجة أن الضيف ينال دائما أفضل مكان."
+      },
+      "tr": {
+        "ar": "karam aḍ-ḍiyāfa muhimm hunā li-darajat anna aḍ-ḍayf yanālu dāʾiman afḍal makān."
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "When I first moved abroad, I wasn't used to eating dinner so early.",
+        "fr": "Quand je suis parti vivre à l'étranger, je n'étais pas habitué à dîner si tôt.",
+        "es": "Cuando me mudé al extranjero, no estaba acostumbrado a cenar tan temprano.",
+        "ar": "عندما سافرت أول مرة إلى الخارج لم أكن معتادا على تناول العشاء مبكرا."
+      },
+      "tr": {
+        "ar": "ʿindamā sāfartu awwala marra ilā al-khārij lam akun muʿtādan ʿalā tanāwul al-ʿashāʾ mubakkiran."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "Some customs have disappeared, but others have been carefully preserved.",
+        "fr": "Certaines coutumes ont disparu, mais d'autres ont été soigneusement préservées.",
+        "es": "Algunas costumbres han desaparecido, pero otras se han conservado con cuidado.",
+        "ar": "اندثرت بعض العادات، لكن أخرى حفظت بعناية."
+      },
+      "tr": {
+        "ar": "indatharat baʿḍ al-ʿādāt, lākin ukhrā ḥufiẓat bi-ʿināya."
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "We used to light candles on that night, but now we only share a meal.",
+        "fr": "Nous allumions des bougies cette nuit-là, mais maintenant nous partageons seulement un repas.",
+        "es": "Solíamos encender velas esa noche, pero ahora solo compartimos una comida.",
+        "ar": "كنا نشعل الشموع في تلك الليلة، أما الآن فنكتفي بتناول وجبة معا."
+      },
+      "tr": {
+        "ar": "kunnā nushʿilu ash-shumūʿ fī tilka al-layla, ammā al-āna fa-naktafī bitanāwul wajba maʿan."
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "My uncle says that the old proverbs contain more wisdom than any book.",
+        "fr": "Mon oncle dit que les vieux proverbes contiennent plus de sagesse que n'importe quel livre.",
+        "es": "Mi tío dice que los refranes antiguos encierran más sabiduría que cualquier libro.",
+        "ar": "يقول عمي إن الأمثال القديمة تحمل حكمة أكثر من أي كتاب."
+      },
+      "tr": {
+        "ar": "yaqūlu ʿammī inna al-amthāl al-qadīma taḥmilu ḥikma akthara min ayyi kitāb."
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "Do people here still believe in that superstition?",
+        "fr": "Les gens d'ici croient-ils encore à cette superstition ?",
+        "es": "¿La gente de aquí todavía cree en esa superstición?",
+        "ar": "هل ما زال الناس هنا يؤمنون بتلك الخرافة؟"
+      },
+      "tr": {
+        "ar": "hal mā zāla an-nās hunā yuʾminūna bi-tilka al-khurāfa?"
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "The elders tell the legend every year so that children never forget it.",
+        "fr": "Les anciens racontent la légende chaque année pour que les enfants ne l'oublient jamais.",
+        "es": "Los ancianos cuentan la leyenda cada año para que los niños no la olviden nunca.",
+        "ar": "يروي كبار السن الأسطورة كل عام كي لا ينساها الأطفال أبدا."
+      },
+      "tr": {
+        "ar": "yarwī kibār as-sinn al-usṭūra kulla ʿām likay lā yansāhā al-aṭfāl abadan."
+      }
+    },
+    {
+      "id": "s12",
+      "text": {
+        "en": "The festival is unique because it mixes local music with modern dance.",
+        "fr": "Le festival est unique parce qu'il mêle la musique locale à la danse moderne.",
+        "es": "El festival es único porque mezcla la música local con el baile moderno.",
+        "ar": "المهرجان فريد لأنه يمزج الموسيقى المحلية بالرقص الحديث."
+      },
+      "tr": {
+        "ar": "al-mahrajān farīd li-annahu yamzuju al-mūsīqā al-maḥalliyya bir-raqṣ al-ḥadīth."
+      }
+    },
+    {
+      "id": "s13",
+      "text": {
+        "en": "I didn't use to like folk dances, but now I find them beautiful.",
+        "fr": "Je n'aimais pas les danses folkloriques, mais maintenant je les trouve belles.",
+        "es": "Antes no me gustaban los bailes populares, pero ahora me parecen preciosos.",
+        "ar": "لم أكن أحب الرقصات الشعبية، لكنني الآن أجدها جميلة."
+      },
+      "tr": {
+        "ar": "lam akun uḥibbu ar-raqṣāt ash-shaʿbiyya, lākinnanī al-āna ajiduhā jamīla."
+      }
+    },
+    {
+      "id": "s14",
+      "text": {
+        "en": "Each generation gives the tradition a slightly different meaning.",
+        "fr": "Chaque génération donne à la tradition un sens un peu différent.",
+        "es": "Cada generación da a la tradición un significado algo distinto.",
+        "ar": "يمنح كل جيل التقليد معنى مختلفا قليلا."
+      },
+      "tr": {
+        "ar": "yamnaḥu kullu jīl at-taqlīd maʿnan mukhtalifan qalīlan."
+      }
+    },
+    {
+      "id": "s15",
+      "text": {
+        "en": "If you are invited to a wedding, you should bring a small gift.",
+        "fr": "Si on vous invite à un mariage, vous devriez apporter un petit cadeau.",
+        "es": "Si te invitan a una boda, deberías llevar un pequeño regalo.",
+        "ar": "إذا دعيت إلى زفاف فعليك أن تحمل هدية صغيرة."
+      },
+      "tr": {
+        "ar": "idhā duʿīta ilā zifāf fa-ʿalayka an taḥmila hadiyya ṣaghīra."
+      }
+    },
+    {
+      "id": "s16",
+      "text": {
+        "en": "She asked me whether we observed the same customs in my country.",
+        "fr": "Elle m'a demandé si nous respections les mêmes coutumes dans mon pays.",
+        "es": "Me preguntó si respetábamos las mismas costumbres en mi país.",
+        "ar": "سألتني هل نلتزم بالعادات نفسها في بلدي."
+      },
+      "tr": {
+        "ar": "saʾalatnī hal naltazimu bil-ʿādāt nafsihā fī baladī."
+      }
+    },
+    {
+      "id": "s17",
+      "text": {
+        "en": "Many families have given up the old crafts because they are no longer profitable.",
+        "fr": "Beaucoup de familles ont abandonné les anciens métiers d'artisanat parce qu'ils ne sont plus rentables.",
+        "es": "Muchas familias han abandonado los antiguos oficios artesanales porque ya no son rentables.",
+        "ar": "تخلت أسر كثيرة عن الحرف اليدوية القديمة لأنها لم تعد مربحة."
+      },
+      "tr": {
+        "ar": "takhallat usar kathīra ʿan al-ḥiraf al-yadawiyya al-qadīma li-annahā lam taʿud murbiḥa."
+      }
+    },
+    {
+      "id": "s18",
+      "text": {
+        "en": "Which tradition do you miss the most?",
+        "fr": "Quelle tradition te manque le plus ?",
+        "es": "¿Qué tradición echas más de menos?",
+        "ar": "أي تقليد تشتاق إليه أكثر؟"
+      },
+      "tr": {
+        "ar": "ayyu taqlīd tashtāqu ilayhi akthar?"
+      }
+    },
+    {
+      "id": "s19",
+      "text": {
+        "en": "I miss the long meals when all the family used to sit together.",
+        "fr": "Les longs repas où toute la famille s'asseyait ensemble me manquent.",
+        "es": "Echo de menos las comidas largas en las que toda la familia solía sentarse junta.",
+        "ar": "أشتاق إلى الوجبات الطويلة حين كانت الأسرة كلها تجلس معا."
+      },
+      "tr": {
+        "ar": "ashtāqu ilā al-wajabāt aṭ-ṭawīla ḥīna kānat al-usra kulluhā tajlisu maʿan."
+      }
+    },
+    {
+      "id": "s20",
+      "text": {
+        "en": "We could organise one next month if everyone is free.",
+        "fr": "On pourrait en organiser un le mois prochain si tout le monde est libre.",
+        "es": "Podríamos organizar una el mes que viene si todos están libres.",
+        "ar": "يمكننا أن ننظم واحدة الشهر المقبل إذا كان الجميع متفرغين."
+      },
+      "tr": {
+        "ar": "yumkinunā an nunaẓẓima wāḥida ash-shahr al-muqbil idhā kāna al-jamīʿ mutafarrighīn."
+      }
+    },
+    {
+      "id": "s21",
+      "text": {
+        "en": "That would be wonderful. I'll make the dish my grandmother used to make.",
+        "fr": "Ce serait merveilleux. Je préparerai le plat que faisait ma grand-mère.",
+        "es": "Sería maravilloso. Prepararé el plato que solía hacer mi abuela.",
+        "ar": "سيكون ذلك رائعا. سأعد الطبق الذي كانت جدتي تعده."
+      },
+      "tr": {
+        "ar": "sa-yakūnu dhālika rāʾiʿan. sa-uʿiddu aṭ-ṭabaq alladhī kānat jaddatī tuʿiddūh."
+      }
+    },
+    {
+      "id": "s22",
+      "text": {
+        "en": "Tourists are curious about our heritage, which helps the local economy.",
+        "fr": "Les touristes sont curieux de notre patrimoine, ce qui aide l'économie locale.",
+        "es": "Los turistas sienten curiosidad por nuestro patrimonio, lo que ayuda a la economía local.",
+        "ar": "السياح فضوليون تجاه تراثنا، وهذا يساعد الاقتصاد المحلي."
+      },
+      "tr": {
+        "ar": "as-suyyāḥ fuḍūliyyūn tijāha turāthinā, wa-hādhā yusāʿidu al-iqtiṣād al-maḥallī."
+      }
+    },
+    {
+      "id": "s23",
+      "text": {
+        "en": "A generous host would never let a guest leave without a gift.",
+        "fr": "Un hôte généreux ne laisserait jamais un invité partir sans cadeau.",
+        "es": "Un anfitrión generoso nunca dejaría que un invitado se marchara sin un regalo.",
+        "ar": "المضيف الكريم لا يترك ضيفه يغادر دون هدية أبدا."
+      },
+      "tr": {
+        "ar": "al-muḍīf al-karīm lā yatruku ḍayfahu yughādiru dūna hadiyya abadan."
+      }
+    },
+    {
+      "id": "s24",
+      "text": {
+        "en": "Religion and tradition are often linked, but they are not the same thing.",
+        "fr": "La religion et la tradition sont souvent liées, mais ce n'est pas la même chose.",
+        "es": "La religión y la tradición suelen ir unidas, pero no son lo mismo.",
+        "ar": "كثيرا ما يرتبط الدين بالتقاليد، لكنهما ليسا الشيء نفسه."
+      },
+      "tr": {
+        "ar": "kathīran mā yartabiṭu ad-dīn bit-taqālīd, lākinnahumā laysā ash-shayʾ nafsah."
+      }
+    },
+    {
+      "id": "s25",
+      "text": {
+        "en": "Before the ceremony, the elders used to say a short prayer.",
+        "fr": "Avant la cérémonie, les anciens récitaient une courte prière.",
+        "es": "Antes de la ceremonia, los ancianos solían decir una breve oración.",
+        "ar": "قبل المراسم كان كبار السن يؤدون صلاة قصيرة."
+      },
+      "tr": {
+        "ar": "qabla al-marāsim kāna kibār as-sinn yuʾaddūna ṣalātan qaṣīra."
+      }
+    },
+    {
+      "id": "s26",
+      "text": {
+        "en": "My grandfather said that he had never seen a holiday celebrated like this.",
+        "fr": "Mon grand-père disait qu'il n'avait jamais vu une fête célébrée ainsi.",
+        "es": "Mi abuelo decía que nunca había visto celebrar un día festivo así.",
+        "ar": "كان جدي يقول إنه لم ير عطلة يحتفل بها بهذه الطريقة من قبل."
+      },
+      "tr": {
+        "ar": "kāna jaddī yaqūlu innahu lam yara ʿuṭlatan yuḥtafalu bihā bi-hādhihi aṭ-ṭarīqa min qabl."
+      }
+    },
+    {
+      "id": "s27",
+      "text": {
+        "en": "If we stop telling these stories, our ancestors' memory will fade.",
+        "fr": "Si nous cessons de raconter ces histoires, la mémoire de nos ancêtres s'effacera.",
+        "es": "Si dejamos de contar estas historias, la memoria de nuestros antepasados se desvanecerá.",
+        "ar": "إذا توقفنا عن رواية هذه القصص فستتلاشى ذاكرة أجدادنا."
+      },
+      "tr": {
+        "ar": "idhā tawaqqafnā ʿan riwāyat hādhihi al-qiṣaṣ fa-sa-tatalāshā dhākirat ajdādinā."
+      }
+    },
+    {
+      "id": "s28",
+      "text": {
+        "en": "A tradition survives only when young people want to keep it alive.",
+        "fr": "Une tradition ne survit que si les jeunes veulent la garder vivante.",
+        "es": "Una tradición solo sobrevive cuando los jóvenes quieren mantenerla viva.",
+        "ar": "لا يبقى التقليد حيا إلا إذا أراد الشباب أن يحافظوا عليه."
+      },
+      "tr": {
+        "ar": "lā yabqā at-taqlīd ḥayyan illā idhā arāda ash-shabāb an yuḥāfiẓū ʿalayh."
+      }
+    },
+    {
+      "id": "s29",
+      "text": {
+        "en": "Not every custom deserves to be preserved, but many are worth the effort.",
+        "fr": "Toutes les coutumes ne méritent pas d'être préservées, mais beaucoup en valent la peine.",
+        "es": "No todas las costumbres merecen conservarse, pero muchas valen la pena.",
+        "ar": "ليست كل عادة جديرة بالحفاظ عليها، لكن كثيرا منها يستحق العناء."
+      },
+      "tr": {
+        "ar": "laysat kullu ʿāda jadīra bil-ḥifāẓ ʿalayhā, lākin kathīran minhā yastaḥiqqu al-ʿanāʾ."
+      }
+    },
+    {
+      "id": "s30",
+      "text": {
+        "en": "Where I grew up, nobody used to lock their doors, because neighbours looked after each other.",
+        "fr": "Là où j'ai grandi, personne ne fermait sa porte à clé, parce que les voisins veillaient les uns sur les autres.",
+        "es": "Donde yo crecí, nadie cerraba la puerta con llave, porque los vecinos se cuidaban entre sí.",
+        "ar": "في المكان الذي نشأت فيه لم يكن أحد يقفل بابه بالمفتاح، لأن الجيران كانوا يرعون بعضهم."
+      },
+      "tr": {
+        "ar": "fī al-makān alladhī nashaʾtu fīhi lam yakun aḥad yuqfilu bābahu bil-miftāḥ, li-anna al-jīrān kānū yarʿawna baʿḍahum."
+      }
+    },
+    {
+      "id": "s31",
+      "text": {
+        "en": "He felt proud when he wore his grandfather's village costume for the first time.",
+        "fr": "Il s'est senti fier quand il a porté pour la première fois le costume du village de son grand-père.",
+        "es": "Se sintió orgulloso cuando se puso por primera vez el traje del pueblo de su abuelo.",
+        "ar": "شعر بالفخر عندما ارتدى للمرة الأولى زي قرية جده."
+      },
+      "tr": {
+        "ar": "shaʿara bil-fakhr ʿindamā irtadā lil-marra al-ūlā zayy qaryat jaddih."
+      }
+    },
+    {
+      "id": "s32",
+      "text": {
+        "en": "Although times have changed, we still celebrate the holiday in exactly the same way.",
+        "fr": "Même si les temps ont changé, nous fêtons toujours ce jour férié exactement de la même manière.",
+        "es": "Aunque los tiempos han cambiado, seguimos celebrando el día festivo exactamente igual.",
+        "ar": "مع أن الأزمنة تغيرت، ما زلنا نحتفل بالعطلة بالطريقة نفسها تماما."
+      },
+      "tr": {
+        "ar": "maʿa anna al-azmina taghayyarat, mā zilnā naḥtafilu bil-ʿuṭla bi-ṭ-ṭarīqa nafsihā tamāman."
+      }
+    }
+  ],
+  "dialogue": [
+    "s18",
+    "s19",
+    "s20",
+    "s21"
+  ]
+}

@@ -81,8 +81,10 @@ function buildUnit(L, level, unit) {
   const sentences = unit.sentences.filter((s) => s.text[L]).map((s) => entry('s', s));
   const dialogue = (unit.dialogue || []).filter((id) => vocab[`s.${id}`]).map((id) => `s.${id}`);
 
-  const wordGroups = chunk(words, 4);
-  const sentenceGroups = chunk(sentences, 4);
+  // 4 learn lessons for a small unit; big units get more lessons of at most 6 new words each.
+  const learnLessons = Math.max(4, Math.ceil(words.length / 6));
+  const wordGroups = chunk(words, learnLessons);
+  const sentenceGroups = chunk(sentences, learnLessons);
   const lessons = [];
   const makeLesson = (type, order, title, newWords, build) => {
     const id = `${unitId}-l${order}`;
@@ -96,17 +98,17 @@ function buildUnit(L, level, unit) {
     lessons.push({ id, unit: unitId, level: level.id, order, type, title, newWords, vocab: lessonVocab, ex });
   };
 
-  // Lessons 1-4: new words, then sentences that use them.
+  // Learn lessons: new words, then sentences that use them.
   wordGroups.forEach((group, i) => {
     const known = wordGroups.slice(0, i).flat();
     const title = {};
     for (const g of UI_LANGS) title[g] = group.map((k) => vocab[k].g[g]).filter(Boolean).join(g === 'ar' ? '، ' : ', ');
     makeLesson('learn', i + 1, title, group, (add) => {
       for (const k of group) add(pick('pick_translation', k, words));
-      for (const k of group) add(pick('listen_pick', k, words));
+      for (const k of group.length > 4 ? shuffle(group, rand).slice(0, 3) : group) add(pick('listen_pick', k, words));
       if (group.length + known.length >= 3) add({ type: 'match_pairs', items: shuffle([...group, ...shuffle(known, rand)].slice(0, 5), rand) });
-      for (const k of group) add(pick('pick_target', k, words));
-      for (const s of sentenceGroups[i] || []) add(wordBank(s));
+      for (const k of group.length > 4 ? shuffle(group, rand).slice(0, 3) : group) add(pick('pick_target', k, words));
+      for (const s of (sentenceGroups[i] || []).slice(0, 3)) add(wordBank(s));
       const s0 = (sentenceGroups[i] || [])[0];
       if (s0) add(fillGap(s0));
       add(trueFalse(group[Math.floor(rand() * group.length)], words));

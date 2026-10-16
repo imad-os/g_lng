@@ -1,0 +1,963 @@
+{
+  "id": "u01",
+  "level": "m3",
+  "order": 1,
+  "title": {
+    "en": "News and media",
+    "fr": "Actualités et médias",
+    "es": "Noticias y medios",
+    "ar": "الأخبار والإعلام"
+  },
+  "tip": {
+    "en": "In English, reported speech steps back in time: \"I am tired\" becomes \"She said she was tired\". Try the same with \"told\" and \"asked\".",
+    "fr": "En anglais comme en français, le discours rapporté recule dans le temps : « Je suis fatigué » devient « Elle a dit qu'elle était fatiguée ». Les titres de presse, eux, restent courts et vont à l'essentiel.",
+    "es": "En el estilo indirecto el verbo suele retroceder en el tiempo: «Estoy cansada» pasa a «Dijo que estaba cansada». Los titulares, en cambio, son breves y van al grano.",
+    "ar": "في الكلام المنقول يتغير زمن الفعل غالبا: «أنا متعبة» تصبح «قالت إنها متعبة». أما العناوين الصحفية فتكون قصيرة وتدخل في الموضوع مباشرة."
+  },
+  "words": [
+    {
+      "id": "news",
+      "text": {
+        "en": "the news",
+        "fr": "les actualités",
+        "es": "las noticias",
+        "ar": "الأخبار"
+      },
+      "tr": {
+        "ar": "al-akhbār"
+      }
+    },
+    {
+      "id": "headline",
+      "text": {
+        "en": "headline",
+        "fr": "gros titre",
+        "es": "titular",
+        "ar": "عنوان رئيسي"
+      },
+      "tr": {
+        "ar": "ʿunwān raʾīsī"
+      }
+    },
+    {
+      "id": "newspaper",
+      "text": {
+        "en": "newspaper",
+        "fr": "journal",
+        "es": "periódico",
+        "ar": "صحيفة"
+      },
+      "tr": {
+        "ar": "ṣaḥīfa"
+      }
+    },
+    {
+      "id": "journalist",
+      "text": {
+        "en": "journalist",
+        "fr": "journaliste",
+        "es": "periodista",
+        "ar": "صحفي"
+      },
+      "tr": {
+        "ar": "ṣaḥafī"
+      }
+    },
+    {
+      "id": "reporter",
+      "text": {
+        "en": "reporter",
+        "fr": "reporter",
+        "es": "reportero",
+        "ar": "مراسل"
+      },
+      "tr": {
+        "ar": "murāsil"
+      }
+    },
+    {
+      "id": "article",
+      "text": {
+        "en": "article",
+        "fr": "article",
+        "es": "artículo",
+        "ar": "مقال"
+      },
+      "tr": {
+        "ar": "maqāl"
+      }
+    },
+    {
+      "id": "interview",
+      "text": {
+        "en": "interview",
+        "fr": "interview",
+        "es": "entrevista",
+        "ar": "مقابلة"
+      },
+      "tr": {
+        "ar": "muqābala"
+      }
+    },
+    {
+      "id": "broadcast",
+      "text": {
+        "en": "broadcast",
+        "fr": "émission",
+        "es": "emisión",
+        "ar": "بث"
+      },
+      "tr": {
+        "ar": "bathth"
+      }
+    },
+    {
+      "id": "channel",
+      "text": {
+        "en": "TV channel",
+        "fr": "chaîne",
+        "es": "canal",
+        "ar": "قناة"
+      },
+      "tr": {
+        "ar": "qanāh"
+      }
+    },
+    {
+      "id": "source",
+      "text": {
+        "en": "source",
+        "fr": "source",
+        "es": "fuente",
+        "ar": "مصدر"
+      },
+      "tr": {
+        "ar": "maṣdar"
+      }
+    },
+    {
+      "id": "rumour",
+      "text": {
+        "en": "rumour",
+        "fr": "rumeur",
+        "es": "rumor",
+        "ar": "إشاعة"
+      },
+      "tr": {
+        "ar": "ishāʿa"
+      }
+    },
+    {
+      "id": "fact",
+      "text": {
+        "en": "fact",
+        "fr": "fait",
+        "es": "hecho",
+        "ar": "حقيقة"
+      },
+      "tr": {
+        "ar": "ḥaqīqa"
+      }
+    },
+    {
+      "id": "opinion",
+      "text": {
+        "en": "opinion",
+        "fr": "opinion",
+        "es": "opinión",
+        "ar": "رأي"
+      },
+      "tr": {
+        "ar": "raʾy"
+      }
+    },
+    {
+      "id": "report",
+      "text": {
+        "en": "report",
+        "fr": "rapport",
+        "es": "informe",
+        "ar": "تقرير"
+      },
+      "tr": {
+        "ar": "taqrīr"
+      }
+    },
+    {
+      "id": "announce",
+      "text": {
+        "en": "to announce",
+        "fr": "annoncer",
+        "es": "anunciar",
+        "ar": "أعلن"
+      },
+      "tr": {
+        "ar": "aʿlana"
+      }
+    },
+    {
+      "id": "claim",
+      "text": {
+        "en": "to claim",
+        "fr": "affirmer",
+        "es": "afirmar",
+        "ar": "زعم"
+      },
+      "tr": {
+        "ar": "zaʿama"
+      }
+    },
+    {
+      "id": "deny",
+      "text": {
+        "en": "to deny",
+        "fr": "démentir",
+        "es": "desmentir",
+        "ar": "نفى"
+      },
+      "tr": {
+        "ar": "nafā"
+      }
+    },
+    {
+      "id": "confirm",
+      "text": {
+        "en": "to confirm",
+        "fr": "confirmer",
+        "es": "confirmar",
+        "ar": "أكد"
+      },
+      "tr": {
+        "ar": "akkada"
+      }
+    },
+    {
+      "id": "reveal",
+      "text": {
+        "en": "to reveal",
+        "fr": "révéler",
+        "es": "revelar",
+        "ar": "كشف"
+      },
+      "tr": {
+        "ar": "kashafa"
+      }
+    },
+    {
+      "id": "warn",
+      "text": {
+        "en": "to warn",
+        "fr": "avertir",
+        "es": "advertir",
+        "ar": "حذر"
+      },
+      "tr": {
+        "ar": "ḥadhdhara"
+      }
+    },
+    {
+      "id": "breaking_news",
+      "text": {
+        "en": "breaking news",
+        "fr": "dernière minute",
+        "es": "última hora",
+        "ar": "خبر عاجل"
+      },
+      "tr": {
+        "ar": "khabar ʿājil"
+      }
+    },
+    {
+      "id": "live",
+      "text": {
+        "en": "live",
+        "fr": "en direct",
+        "es": "en directo",
+        "ar": "مباشر"
+      },
+      "tr": {
+        "ar": "mubāshir"
+      }
+    },
+    {
+      "id": "update",
+      "text": {
+        "en": "update",
+        "fr": "mise à jour",
+        "es": "actualización",
+        "ar": "تحديث"
+      },
+      "tr": {
+        "ar": "taḥdīth"
+      }
+    },
+    {
+      "id": "press_conference",
+      "text": {
+        "en": "press conference",
+        "fr": "conférence de presse",
+        "es": "rueda de prensa",
+        "ar": "مؤتمر صحفي"
+      },
+      "tr": {
+        "ar": "muʾtamar ṣaḥafī"
+      }
+    },
+    {
+      "id": "statement",
+      "text": {
+        "en": "statement",
+        "fr": "déclaration",
+        "es": "declaración",
+        "ar": "بيان"
+      },
+      "tr": {
+        "ar": "bayān"
+      }
+    },
+    {
+      "id": "spokesperson",
+      "text": {
+        "en": "spokesperson",
+        "fr": "porte-parole",
+        "es": "portavoz",
+        "ar": "متحدث رسمي"
+      },
+      "tr": {
+        "ar": "mutaḥaddith rasmī"
+      }
+    },
+    {
+      "id": "witness",
+      "text": {
+        "en": "witness",
+        "fr": "témoin",
+        "es": "testigo",
+        "ar": "شاهد عيان"
+      },
+      "tr": {
+        "ar": "shāhid ʿayān"
+      }
+    },
+    {
+      "id": "eyewitness_account",
+      "text": {
+        "en": "account",
+        "fr": "témoignage",
+        "es": "testimonio",
+        "ar": "شهادة"
+      },
+      "tr": {
+        "ar": "shahāda"
+      }
+    },
+    {
+      "id": "poll",
+      "text": {
+        "en": "poll",
+        "fr": "sondage",
+        "es": "encuesta",
+        "ar": "استطلاع"
+      },
+      "tr": {
+        "ar": "istiṭlāʿ"
+      }
+    },
+    {
+      "id": "survey_result",
+      "text": {
+        "en": "result",
+        "fr": "résultat",
+        "es": "resultado",
+        "ar": "نتيجة"
+      },
+      "tr": {
+        "ar": "natīja"
+      }
+    },
+    {
+      "id": "election",
+      "text": {
+        "en": "election",
+        "fr": "élection",
+        "es": "elecciones",
+        "ar": "انتخابات"
+      },
+      "tr": {
+        "ar": "intikhābāt"
+      }
+    },
+    {
+      "id": "government",
+      "text": {
+        "en": "government",
+        "fr": "gouvernement",
+        "es": "gobierno",
+        "ar": "حكومة"
+      },
+      "tr": {
+        "ar": "ḥukūma"
+      }
+    },
+    {
+      "id": "accident",
+      "text": {
+        "en": "accident",
+        "fr": "accident",
+        "es": "accidente",
+        "ar": "حادث"
+      },
+      "tr": {
+        "ar": "ḥādith"
+      }
+    },
+    {
+      "id": "storm",
+      "text": {
+        "en": "storm",
+        "fr": "tempête",
+        "es": "tormenta",
+        "ar": "عاصفة"
+      },
+      "tr": {
+        "ar": "ʿāṣifa"
+      }
+    },
+    {
+      "id": "fake_news",
+      "text": {
+        "en": "fake news",
+        "fr": "infox",
+        "es": "noticia falsa",
+        "ar": "خبر كاذب"
+      },
+      "tr": {
+        "ar": "khabar kādhib"
+      }
+    },
+    {
+      "id": "reliable",
+      "text": {
+        "en": "reliable",
+        "fr": "fiable",
+        "es": "fiable",
+        "ar": "موثوق"
+      },
+      "tr": {
+        "ar": "mawthūq"
+      }
+    },
+    {
+      "id": "misleading",
+      "text": {
+        "en": "misleading",
+        "fr": "trompeur",
+        "es": "engañoso",
+        "ar": "مضلل"
+      },
+      "tr": {
+        "ar": "muḍallil"
+      }
+    },
+    {
+      "id": "according_to",
+      "text": {
+        "en": "according to",
+        "fr": "selon",
+        "es": "según",
+        "ar": "وفقا لـ"
+      },
+      "tr": {
+        "ar": "wifqan li"
+      }
+    },
+    {
+      "id": "apparently",
+      "text": {
+        "en": "apparently",
+        "fr": "apparemment",
+        "es": "al parecer",
+        "ar": "على ما يبدو"
+      },
+      "tr": {
+        "ar": "ʿalā mā yabdū"
+      }
+    },
+    {
+      "id": "recently",
+      "text": {
+        "en": "recently",
+        "fr": "récemment",
+        "es": "recientemente",
+        "ar": "مؤخرا"
+      },
+      "tr": {
+        "ar": "muʾakhkharan"
+      }
+    },
+    {
+      "id": "subscribe",
+      "text": {
+        "en": "to subscribe",
+        "fr": "s'abonner",
+        "es": "suscribirse",
+        "ar": "اشترك"
+      },
+      "tr": {
+        "ar": "ishtaraka"
+      }
+    },
+    {
+      "id": "publish",
+      "text": {
+        "en": "to publish",
+        "fr": "publier",
+        "es": "publicar",
+        "ar": "نشر"
+      },
+      "tr": {
+        "ar": "nashara"
+      }
+    },
+    {
+      "id": "censorship",
+      "text": {
+        "en": "censorship",
+        "fr": "censure",
+        "es": "censura",
+        "ar": "رقابة"
+      },
+      "tr": {
+        "ar": "raqāba"
+      }
+    },
+    {
+      "id": "editor",
+      "text": {
+        "en": "editor",
+        "fr": "rédacteur en chef",
+        "es": "redactor jefe",
+        "ar": "رئيس التحرير"
+      },
+      "tr": {
+        "ar": "raʾīs at-taḥrīr"
+      }
+    },
+    {
+      "id": "audience",
+      "text": {
+        "en": "audience",
+        "fr": "public",
+        "es": "audiencia",
+        "ar": "جمهور"
+      },
+      "tr": {
+        "ar": "jumhūr"
+      }
+    },
+    {
+      "id": "influence",
+      "text": {
+        "en": "to influence",
+        "fr": "influencer",
+        "es": "influir en",
+        "ar": "أثر في"
+      },
+      "tr": {
+        "ar": "athara fī"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": {
+        "en": "The newspaper announced that the government would publish a new report on Monday.",
+        "fr": "Le journal a annoncé que le gouvernement publierait lundi un nouveau rapport.",
+        "es": "El periódico anunció que el gobierno publicaría un nuevo informe el lunes.",
+        "ar": "أعلنت الصحيفة أن الحكومة ستنشر تقريرا جديدا يوم الاثنين."
+      },
+      "tr": {
+        "ar": "aʿlanat aṣ-ṣaḥīfa anna al-ḥukūma sa-tanshuru taqrīran jadīdan yawm al-ithnayn."
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "The spokesperson said that the statement had been misunderstood.",
+        "fr": "Le porte-parole a dit que la déclaration avait été mal comprise.",
+        "es": "El portavoz dijo que la declaración se había malinterpretado.",
+        "ar": "قال المتحدث الرسمي إن البيان أسيء فهمه."
+      },
+      "tr": {
+        "ar": "qāla al-mutaḥaddith ar-rasmī inna al-bayān usīʾa fahmuh."
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "The journalist asked the minister whether the rumour was true.",
+        "fr": "La journaliste a demandé à la ministre si la rumeur était vraie.",
+        "es": "La periodista preguntó a la ministra si el rumor era cierto.",
+        "ar": "سألت الصحفية الوزيرة هل الإشاعة صحيحة."
+      },
+      "tr": {
+        "ar": "saʾalat aṣ-ṣaḥafiyya al-wazīra hal al-ishāʿa ṣaḥīḥa."
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "According to the poll, most people no longer trust the headlines.",
+        "fr": "Selon le sondage, la plupart des gens ne font plus confiance aux gros titres.",
+        "es": "Según la encuesta, la mayoría de la gente ya no se fía de los titulares.",
+        "ar": "وفقا للاستطلاع، لم يعد معظم الناس يثقون بالعناوين الرئيسية."
+      },
+      "tr": {
+        "ar": "wifqan lil-istiṭlāʿ, lam yaʿud muʿẓam an-nās yathiqūn bil-ʿanāwīn ar-raʾīsiyya."
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "She told us that she had read the article twice before she shared it.",
+        "fr": "Elle nous a dit qu'elle avait lu l'article deux fois avant de le partager.",
+        "es": "Nos dijo que había leído el artículo dos veces antes de compartirlo.",
+        "ar": "قالت لنا إنها قرأت المقال مرتين قبل أن تشاركه."
+      },
+      "tr": {
+        "ar": "qālat lanā innahā qaraʾat al-maqāl marratayn qabla an tushārikahu."
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "Breaking news: a storm is moving toward the coast and the channel is broadcasting live.",
+        "fr": "Dernière minute : une tempête se dirige vers la côte et la chaîne diffuse en direct.",
+        "es": "Última hora: una tormenta se dirige hacia la costa y el canal emite en directo.",
+        "ar": "خبر عاجل: عاصفة تتجه نحو الساحل والقناة تبث مباشرة."
+      },
+      "tr": {
+        "ar": "khabar ʿājil: ʿāṣifa tattajihu naḥwa as-sāḥil wa-l-qanāh tabuthth mubāshara."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "The reporter claimed that she had seen the accident, but no witness confirmed it.",
+        "fr": "La reporter a affirmé avoir vu l'accident, mais aucun témoin ne l'a confirmé.",
+        "es": "La reportera afirmó que había visto el accidente, pero ningún testigo lo confirmó.",
+        "ar": "زعمت المراسلة أنها رأت الحادث، لكن لم يؤكد ذلك أي شاهد عيان."
+      },
+      "tr": {
+        "ar": "zaʿamat al-murāsila annahā raʾat al-ḥādith, lākin lam yuʾakkid dhālika ayyu shāhid ʿayān."
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "The government denied everything and said it would answer at the press conference.",
+        "fr": "Le gouvernement a tout démenti et a dit qu'il répondrait lors de la conférence de presse.",
+        "es": "El gobierno lo desmintió todo y dijo que respondería en la rueda de prensa.",
+        "ar": "نفت الحكومة كل شيء وقالت إنها سترد في المؤتمر الصحفي."
+      },
+      "tr": {
+        "ar": "nafat al-ḥukūma kulla shayʾ wa-qālat innahā sa-taruddu fī al-muʾtamar aṣ-ṣaḥafī."
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "I was told that the election results would be announced tonight.",
+        "fr": "On m'a dit que les résultats des élections seraient annoncés ce soir.",
+        "es": "Me dijeron que los resultados de las elecciones se anunciarían esta noche.",
+        "ar": "قيل لي إن نتائج الانتخابات ستعلن هذه الليلة."
+      },
+      "tr": {
+        "ar": "qīla lī inna natāʾij al-intikhābāt sa-tuʿlan hādhihi al-layla."
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "Apparently, the editor refused to publish the interview.",
+        "fr": "Apparemment, le rédacteur en chef a refusé de publier l'interview.",
+        "es": "Al parecer, el redactor jefe se negó a publicar la entrevista.",
+        "ar": "على ما يبدو رفض رئيس التحرير نشر المقابلة."
+      },
+      "tr": {
+        "ar": "ʿalā mā yabdū rafaḍa raʾīs at-taḥrīr nashr al-muqābala."
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "My father always asks where a piece of news comes from before he believes it.",
+        "fr": "Mon père demande toujours d'où vient une information avant de la croire.",
+        "es": "Mi padre siempre pregunta de dónde viene una noticia antes de creérsela.",
+        "ar": "يسأل أبي دائما من أين جاء الخبر قبل أن يصدقه."
+      },
+      "tr": {
+        "ar": "yasʾalu abī dāʾiman min ayna jāʾa al-khabar qabla an yuṣaddiqahu."
+      }
+    },
+    {
+      "id": "s12",
+      "text": {
+        "en": "A reliable source warned that the situation could get worse.",
+        "fr": "Une source fiable a averti que la situation pourrait empirer.",
+        "es": "Una fuente fiable advirtió de que la situación podría empeorar.",
+        "ar": "حذر مصدر موثوق من أن الوضع قد يزداد سوءا."
+      },
+      "tr": {
+        "ar": "ḥadhdhara maṣdar mawthūq min anna al-waḍʿ qad yazdād sūʾan."
+      }
+    },
+    {
+      "id": "s13",
+      "text": {
+        "en": "The headline was misleading: the article says something quite different.",
+        "fr": "Le titre était trompeur : l'article dit tout autre chose.",
+        "es": "El titular era engañoso: el artículo dice algo muy distinto.",
+        "ar": "كان العنوان مضللا: فالمقال يقول شيئا مختلفا تماما."
+      },
+      "tr": {
+        "ar": "kāna al-ʿunwān muḍallilan: fa-l-maqāl yaqūlu shayʾan mukhtalifan tamāman."
+      }
+    },
+    {
+      "id": "s14",
+      "text": {
+        "en": "She said she had subscribed to the paper because she wanted facts, not opinions.",
+        "fr": "Elle a dit qu'elle s'était abonnée au journal parce qu'elle voulait des faits, pas des opinions.",
+        "es": "Dijo que se había suscrito al periódico porque quería hechos, no opiniones.",
+        "ar": "قالت إنها اشتركت في الصحيفة لأنها تريد حقائق لا آراء."
+      },
+      "tr": {
+        "ar": "qālat innahā ishtarakat fī aṣ-ṣaḥīfa li-annahā turīdu ḥaqāʾiq lā ārāʾ."
+      }
+    },
+    {
+      "id": "s15",
+      "text": {
+        "en": "Fake news spreads faster than any correction.",
+        "fr": "Les infox se répandent plus vite que n'importe quel démenti.",
+        "es": "Las noticias falsas se propagan más rápido que cualquier rectificación.",
+        "ar": "تنتشر الأخبار الكاذبة أسرع من أي تصحيح."
+      },
+      "tr": {
+        "ar": "tantashiru al-akhbār al-kādhiba asraʿa min ayyi taṣḥīḥ."
+      }
+    },
+    {
+      "id": "s16",
+      "text": {
+        "en": "Recently, the channel has been updating the story every hour.",
+        "fr": "Récemment, la chaîne met l'information à jour toutes les heures.",
+        "es": "Últimamente el canal actualiza la noticia cada hora.",
+        "ar": "مؤخرا تقوم القناة بتحديث الخبر كل ساعة."
+      },
+      "tr": {
+        "ar": "muʾakhkharan taqūmu al-qanāh bi-taḥdīth al-khabar kulla sāʿa."
+      }
+    },
+    {
+      "id": "s17",
+      "text": {
+        "en": "He explained that he could not reveal his source without censorship being a risk.",
+        "fr": "Il a expliqué qu'il ne pouvait pas révéler sa source sans risquer la censure.",
+        "es": "Explicó que no podía revelar su fuente sin arriesgarse a la censura.",
+        "ar": "أوضح أنه لا يستطيع كشف مصدره دون أن يخاطر بالرقابة."
+      },
+      "tr": {
+        "ar": "awḍaḥa annahu lā yastaṭīʿu kashfa maṣdarihi dūna an yukhāṭira bir-raqāba."
+      }
+    },
+    {
+      "id": "s18",
+      "text": {
+        "en": "The witness told the reporter that she had heard a loud noise just before the storm.",
+        "fr": "La témoin a raconté à la reporter qu'elle avait entendu un grand bruit juste avant la tempête.",
+        "es": "La testigo le contó a la reportera que había oído un gran ruido justo antes de la tormenta.",
+        "ar": "قالت الشاهدة للمراسلة إنها سمعت صوتا عاليا قبل العاصفة مباشرة."
+      },
+      "tr": {
+        "ar": "qālat ash-shāhida lil-murāsila innahā samiʿat ṣawtan ʿāliyan qabla al-ʿāṣifa mubāsharatan."
+      }
+    },
+    {
+      "id": "s19",
+      "text": {
+        "en": "Do you think the media can influence the way we vote?",
+        "fr": "Pensez-vous que les médias peuvent influencer notre façon de voter ?",
+        "es": "¿Crees que los medios pueden influir en cómo votamos?",
+        "ar": "هل تعتقد أن الإعلام يستطيع أن يؤثر في طريقة تصويتنا؟"
+      },
+      "tr": {
+        "ar": "hal taʿtaqid anna al-iʿlām yastaṭīʿu an yuʾaththira fī ṭarīqat taṣwītinā?"
+      }
+    },
+    {
+      "id": "s20",
+      "text": {
+        "en": "The audience was told that the interview would start in five minutes.",
+        "fr": "On a dit au public que l'interview commencerait dans cinq minutes.",
+        "es": "Se informó a la audiencia de que la entrevista empezaría en cinco minutos.",
+        "ar": "قيل للجمهور إن المقابلة ستبدأ بعد خمس دقائق."
+      },
+      "tr": {
+        "ar": "qīla lil-jumhūr inna al-muqābala sa-tabdaʾu baʿda khams daqāʾiq."
+      }
+    },
+    {
+      "id": "s21",
+      "text": {
+        "en": "The report confirms what the eyewitness account had already suggested.",
+        "fr": "Le rapport confirme ce que le témoignage laissait déjà entendre.",
+        "es": "El informe confirma lo que el testimonio ya sugería.",
+        "ar": "يؤكد التقرير ما كانت الشهادة تشير إليه أصلا."
+      },
+      "tr": {
+        "ar": "yuʾakkidu at-taqrīr mā kānat ash-shahāda tushīru ilayhi aṣlan."
+      }
+    },
+    {
+      "id": "s22",
+      "text": {
+        "en": "If you read only the headlines, you will miss most of the story.",
+        "fr": "Si tu ne lis que les gros titres, tu passeras à côté de l'essentiel de l'histoire.",
+        "es": "Si solo lees los titulares, te perderás la mayor parte de la historia.",
+        "ar": "إذا قرأت العناوين الرئيسية فقط، فستفوتك معظم القصة."
+      },
+      "tr": {
+        "ar": "idhā qaraʾta al-ʿanāwīn ar-raʾīsiyya faqaṭ, fa-sa-tafūtuka muʿẓam al-qiṣṣa."
+      }
+    },
+    {
+      "id": "s23",
+      "text": {
+        "en": "They asked me whether I would give an interview about the accident.",
+        "fr": "Ils m'ont demandé si je voulais bien donner une interview sur l'accident.",
+        "es": "Me preguntaron si daría una entrevista sobre el accidente.",
+        "ar": "سألوني هل سأجري مقابلة حول الحادث."
+      },
+      "tr": {
+        "ar": "saʾalūnī hal sa-ujrī muqābalatan ḥawla al-ḥādith."
+      }
+    },
+    {
+      "id": "s24",
+      "text": {
+        "en": "The minister announced that the new law would come into force next month.",
+        "fr": "Le ministre a annoncé que la nouvelle loi entrerait en vigueur le mois prochain.",
+        "es": "El ministro anunció que la nueva ley entraría en vigor el mes que viene.",
+        "ar": "أعلن الوزير أن القانون الجديد سيدخل حيز التنفيذ الشهر المقبل."
+      },
+      "tr": {
+        "ar": "aʿlana al-wazīr anna al-qānūn al-jadīd sa-yadkhulu ḥayyiz at-tanfīdh ash-shahr al-muqbil."
+      }
+    },
+    {
+      "id": "s25",
+      "text": {
+        "en": "Before sharing a story, check the date, the source and the facts.",
+        "fr": "Avant de partager une information, vérifie la date, la source et les faits.",
+        "es": "Antes de compartir una noticia, comprueba la fecha, la fuente y los hechos.",
+        "ar": "قبل أن تشارك خبرا، تحقق من تاريخه ومصدره ووقائعه."
+      },
+      "tr": {
+        "ar": "qabla an tushārika khabaran, taḥaqqaq min tārīkhihi wa-maṣdarihi wa-waqāʾiʿihi."
+      }
+    },
+    {
+      "id": "s26",
+      "text": {
+        "en": "Several newspapers published the same headline, so it must be true.",
+        "fr": "Plusieurs journaux ont publié le même titre, donc ce doit être vrai.",
+        "es": "Varios periódicos publicaron el mismo titular, así que debe de ser verdad.",
+        "ar": "نشرت عدة صحف العنوان نفسه، لذا لا بد أنه صحيح."
+      },
+      "tr": {
+        "ar": "nasharat ʿiddat ṣuḥuf al-ʿunwān nafsahu, li-dhā lā budda annahu ṣaḥīḥ."
+      }
+    },
+    {
+      "id": "s27",
+      "text": {
+        "en": "Not necessarily: they may all have used the same source.",
+        "fr": "Pas forcément : elles ont peut-être toutes utilisé la même source.",
+        "es": "No necesariamente: puede que todos hayan usado la misma fuente.",
+        "ar": "ليس بالضرورة، فربما استخدمتها كلها المصدر نفسه."
+      },
+      "tr": {
+        "ar": "laysa bi-ḍ-ḍarūra, fa-rubbamā istakhdamat kulluhā al-maṣdar nafsahu."
+      }
+    },
+    {
+      "id": "s28",
+      "text": {
+        "en": "He said that the update would be online by the evening.",
+        "fr": "Il a dit que la mise à jour serait en ligne dans la soirée.",
+        "es": "Dijo que la actualización estaría en línea por la tarde.",
+        "ar": "قال إن التحديث سيكون متاحا على الإنترنت مساء."
+      },
+      "tr": {
+        "ar": "qāla inna at-taḥdīth sa-yakūnu mutāḥan ʿalā al-intirnit masāʾan."
+      }
+    },
+    {
+      "id": "s29",
+      "text": {
+        "en": "I would rather hear both opinions than trust a single channel.",
+        "fr": "Je préfère entendre les deux opinions plutôt que de me fier à une seule chaîne.",
+        "es": "Prefiero oír las dos opiniones antes que fiarme de un solo canal.",
+        "ar": "أفضل أن أسمع الرأيين على أن أثق بقناة واحدة."
+      },
+      "tr": {
+        "ar": "ufaḍḍilu an asmaʿa ar-raʾyayn ʿalā an athiqa bi-qanātin wāḥida."
+      }
+    },
+    {
+      "id": "s30",
+      "text": {
+        "en": "The spokesperson warned journalists not to publish the names.",
+        "fr": "Le porte-parole a prié les journalistes de ne pas publier les noms.",
+        "es": "El portavoz advirtió a los periodistas de que no publicaran los nombres.",
+        "ar": "حذر المتحدث الرسمي الصحفيين من نشر الأسماء."
+      },
+      "tr": {
+        "ar": "ḥadhdhara al-mutaḥaddith ar-rasmī aṣ-ṣaḥafiyyīn min nashr al-asmāʾ."
+      }
+    },
+    {
+      "id": "s31",
+      "text": {
+        "en": "Why did the channel stop the live broadcast?",
+        "fr": "Pourquoi la chaîne a-t-elle interrompu l'émission en direct ?",
+        "es": "¿Por qué interrumpió el canal la emisión en directo?",
+        "ar": "لماذا قطعت القناة البث المباشر؟"
+      },
+      "tr": {
+        "ar": "li-mādhā qaṭaʿat al-qanāh al-bathth al-mubāshir?"
+      }
+    },
+    {
+      "id": "s32",
+      "text": {
+        "en": "Because the source withdrew his statement.",
+        "fr": "Parce que la source est revenue sur sa déclaration.",
+        "es": "Porque la fuente retiró su declaración.",
+        "ar": "لأن المصدر تراجع عن تصريحه."
+      },
+      "tr": {
+        "ar": "li-anna al-maṣdar tarājaʿa ʿan taṣrīḥihi."
+      }
+    }
+  ],
+  "dialogue": [
+    "s26",
+    "s27",
+    "s25",
+    "s29"
+  ]
+}

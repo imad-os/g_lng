@@ -1,0 +1,988 @@
+{
+ "id": "u01",
+ "level": "a2",
+ "order": 1,
+ "words": [
+  {
+   "id": "agenda",
+   "text": {
+    "en": "agenda",
+    "fr": "ordre du jour",
+    "es": "orden del día",
+    "ar": "جدول الأعمال"
+   },
+   "tr": {
+    "ar": "jadwal al-aʿmāl"
+   }
+  },
+  {
+   "id": "minutes",
+   "text": {
+    "en": "minutes",
+    "fr": "procès-verbal",
+    "es": "acta",
+    "ar": "محضر الاجتماع"
+   },
+   "tr": {
+    "ar": "maḥḍar al-ijtimāʿ"
+   }
+  },
+  {
+   "id": "proposal",
+   "text": {
+    "en": "proposal",
+    "fr": "proposition",
+    "es": "propuesta",
+    "ar": "اقتراح"
+   },
+   "tr": {
+    "ar": "iqtirāḥ"
+   }
+  },
+  {
+   "id": "meeting",
+   "text": {
+    "en": "meeting",
+    "fr": "réunion",
+    "es": "reunión",
+    "ar": "اجتماع"
+   },
+   "tr": {
+    "ar": "ijtimāʿ"
+   }
+  },
+  {
+   "id": "chair",
+   "text": {
+    "en": "chair",
+    "fr": "président de séance",
+    "es": "presidente de mesa",
+    "ar": "رئيس الجلسة"
+   },
+   "tr": {
+    "ar": "raʾīs al-jalsa"
+   }
+  },
+  {
+   "id": "attendee",
+   "text": {
+    "en": "attendee",
+    "fr": "participant",
+    "es": "asistente",
+    "ar": "حاضر"
+   },
+   "tr": {
+    "ar": "ḥāḍir"
+   }
+  },
+  {
+   "id": "item",
+   "text": {
+    "en": "item",
+    "fr": "point",
+    "es": "punto",
+    "ar": "بند"
+   },
+   "tr": {
+    "ar": "band"
+   }
+  },
+  {
+   "id": "deadline",
+   "text": {
+    "en": "deadline",
+    "fr": "échéance",
+    "es": "plazo",
+    "ar": "موعد نهائي"
+   },
+   "tr": {
+    "ar": "mawʿid nihāʾī"
+   }
+  },
+  {
+   "id": "budget",
+   "text": {
+    "en": "budget",
+    "fr": "budget",
+    "es": "presupuesto",
+    "ar": "ميزانية"
+   },
+   "tr": {
+    "ar": "mīzāniyya"
+   }
+  },
+  {
+   "id": "stakeholder",
+   "text": {
+    "en": "stakeholder",
+    "fr": "partie prenante",
+    "es": "parte interesada",
+    "ar": "طرف معني"
+   },
+   "tr": {
+    "ar": "ṭaraf maʿnī"
+   }
+  },
+  {
+   "id": "action_point",
+   "text": {
+    "en": "action point",
+    "fr": "point d'action",
+    "es": "punto de acción",
+    "ar": "إجراء مطلوب"
+   },
+   "tr": {
+    "ar": "ijrāʾ maṭlūb"
+   }
+  },
+  {
+   "id": "follow_up",
+   "text": {
+    "en": "follow-up",
+    "fr": "suivi",
+    "es": "seguimiento",
+    "ar": "متابعة"
+   },
+   "tr": {
+    "ar": "mutābaʿa"
+   }
+  },
+  {
+   "id": "quorum",
+   "text": {
+    "en": "quorum",
+    "fr": "quorum",
+    "es": "quórum",
+    "ar": "نصاب قانوني"
+   },
+   "tr": {
+    "ar": "niṣāb qānūnī"
+   }
+  },
+  {
+   "id": "objective",
+   "text": {
+    "en": "objective",
+    "fr": "objectif",
+    "es": "objetivo",
+    "ar": "هدف"
+   },
+   "tr": {
+    "ar": "hadaf"
+   }
+  },
+  {
+   "id": "priority",
+   "text": {
+    "en": "priority",
+    "fr": "priorité",
+    "es": "prioridad",
+    "ar": "أولوية"
+   },
+   "tr": {
+    "ar": "awlawiyya"
+   }
+  },
+  {
+   "id": "schedule",
+   "text": {
+    "en": "schedule",
+    "fr": "calendrier",
+    "es": "calendario",
+    "ar": "جدول زمني"
+   },
+   "tr": {
+    "ar": "jadwal zamanī"
+   }
+  },
+  {
+   "id": "update",
+   "text": {
+    "en": "update",
+    "fr": "mise à jour",
+    "es": "actualización",
+    "ar": "تحديث"
+   },
+   "tr": {
+    "ar": "taḥdīth"
+   }
+  },
+  {
+   "id": "presentation",
+   "text": {
+    "en": "presentation",
+    "fr": "présentation",
+    "es": "presentación",
+    "ar": "عرض تقديمي"
+   },
+   "tr": {
+    "ar": "ʿarḍ taqdīmī"
+   }
+  },
+  {
+   "id": "consensus",
+   "text": {
+    "en": "consensus",
+    "fr": "consensus",
+    "es": "consenso",
+    "ar": "إجماع"
+   },
+   "tr": {
+    "ar": "ijmāʿ"
+   }
+  },
+  {
+   "id": "decision",
+   "text": {
+    "en": "decision",
+    "fr": "décision",
+    "es": "decisión",
+    "ar": "قرار"
+   },
+   "tr": {
+    "ar": "qarār"
+   }
+  },
+  {
+   "id": "vote",
+   "text": {
+    "en": "vote",
+    "fr": "vote",
+    "es": "votación",
+    "ar": "تصويت"
+   },
+   "tr": {
+    "ar": "taṣwīt"
+   }
+  },
+  {
+   "id": "outcome",
+   "text": {
+    "en": "outcome",
+    "fr": "résultat",
+    "es": "resultado",
+    "ar": "نتيجة"
+   },
+   "tr": {
+    "ar": "natīja"
+   }
+  },
+  {
+   "id": "milestone",
+   "text": {
+    "en": "milestone",
+    "fr": "jalon",
+    "es": "hito",
+    "ar": "مرحلة رئيسية"
+   },
+   "tr": {
+    "ar": "marḥala raʾīsiyya"
+   }
+  },
+  {
+   "id": "feedback",
+   "text": {
+    "en": "feedback",
+    "fr": "retour d'information",
+    "es": "retroalimentación",
+    "ar": "ملاحظات"
+   },
+   "tr": {
+    "ar": "mulāḥaẓāt"
+   }
+  },
+  {
+   "id": "concern",
+   "text": {
+    "en": "concern",
+    "fr": "préoccupation",
+    "es": "inquietud",
+    "ar": "قلق"
+   },
+   "tr": {
+    "ar": "qalaq"
+   }
+  },
+  {
+   "id": "adjourn",
+   "text": {
+    "en": "to adjourn",
+    "fr": "lever la séance",
+    "es": "levantar la sesión",
+    "ar": "رفع الجلسة"
+   },
+   "tr": {
+    "ar": "rafʿ al-jalsa"
+   }
+  },
+  {
+   "id": "approve",
+   "text": {
+    "en": "to approve",
+    "fr": "approuver",
+    "es": "aprobar",
+    "ar": "يوافق على"
+   },
+   "tr": {
+    "ar": "yuwāfiq ʿalā"
+   }
+  },
+  {
+   "id": "postpone",
+   "text": {
+    "en": "to postpone",
+    "fr": "reporter",
+    "es": "aplazar",
+    "ar": "يؤجل"
+   },
+   "tr": {
+    "ar": "yuʾajjil"
+   }
+  },
+  {
+   "id": "attend",
+   "text": {
+    "en": "to attend",
+    "fr": "assister à",
+    "es": "asistir a",
+    "ar": "يحضر"
+   },
+   "tr": {
+    "ar": "yaḥḍur"
+   }
+  },
+  {
+   "id": "circulate",
+   "text": {
+    "en": "to circulate",
+    "fr": "diffuser",
+    "es": "distribuir",
+    "ar": "يعمم"
+   },
+   "tr": {
+    "ar": "yuʿammim"
+   }
+  },
+  {
+   "id": "propose",
+   "text": {
+    "en": "to propose",
+    "fr": "proposer",
+    "es": "proponer",
+    "ar": "يقترح"
+   },
+   "tr": {
+    "ar": "yaqtarih"
+   }
+  },
+  {
+   "id": "schedule_verb",
+   "text": {
+    "en": "to schedule",
+    "fr": "programmer",
+    "es": "programar",
+    "ar": "يحدد موعدا"
+   },
+   "tr": {
+    "ar": "yuḥaddid mawʿidan"
+   }
+  },
+  {
+   "id": "summarize",
+   "text": {
+    "en": "to summarize",
+    "fr": "résumer",
+    "es": "resumir",
+    "ar": "يلخص"
+   },
+   "tr": {
+    "ar": "yulakhkhiṣ"
+   }
+  },
+  {
+   "id": "clarify",
+   "text": {
+    "en": "to clarify",
+    "fr": "clarifier",
+    "es": "aclarar",
+    "ar": "يوضح"
+   },
+   "tr": {
+    "ar": "yūḍiḥ"
+   }
+  },
+  {
+   "id": "delegate",
+   "text": {
+    "en": "to delegate",
+    "fr": "déléguer",
+    "es": "delegar",
+    "ar": "يفوض"
+   },
+   "tr": {
+    "ar": "yufawwiḍ"
+   }
+  },
+  {
+   "id": "raise_a_point",
+   "text": {
+    "en": "to raise a point",
+    "fr": "soulever un point",
+    "es": "plantear un punto",
+    "ar": "يثير نقطة"
+   },
+   "tr": {
+    "ar": "yuthīr nuqṭa"
+   }
+  },
+  {
+   "id": "any_other_business",
+   "text": {
+    "en": "any other business",
+    "fr": "questions diverses",
+    "es": "asuntos varios",
+    "ar": "أمور أخرى"
+   },
+   "tr": {
+    "ar": "umūr ukhrā"
+   }
+  },
+  {
+   "id": "on_behalf_of",
+   "text": {
+    "en": "on behalf of",
+    "fr": "au nom de",
+    "es": "en nombre de",
+    "ar": "نيابة عن"
+   },
+   "tr": {
+    "ar": "niyābatan ʿan"
+   }
+  },
+  {
+   "id": "in_favour",
+   "text": {
+    "en": "in favour",
+    "fr": "pour",
+    "es": "a favor",
+    "ar": "مؤيد"
+   },
+   "tr": {
+    "ar": "muʾayyid"
+   }
+  },
+  {
+   "id": "against",
+   "text": {
+    "en": "against",
+    "fr": "contre",
+    "es": "en contra",
+    "ar": "معارض"
+   },
+   "tr": {
+    "ar": "muʿāriḍ"
+   }
+  },
+  {
+   "id": "abstention",
+   "text": {
+    "en": "abstention",
+    "fr": "abstention",
+    "es": "abstención",
+    "ar": "امتناع عن التصويت"
+   },
+   "tr": {
+    "ar": "imtināʿ ʿan at-taṣwīt"
+   }
+  },
+  {
+   "id": "board",
+   "text": {
+    "en": "board",
+    "fr": "conseil d'administration",
+    "es": "consejo de administración",
+    "ar": "مجلس الإدارة"
+   },
+   "tr": {
+    "ar": "majlis al-idāra"
+   }
+  },
+  {
+   "id": "quarterly",
+   "text": {
+    "en": "quarterly",
+    "fr": "trimestriel",
+    "es": "trimestral",
+    "ar": "ربع سنوي"
+   },
+   "tr": {
+    "ar": "rubʿ sanawī"
+   }
+  },
+  {
+   "id": "remote",
+   "text": {
+    "en": "remote",
+    "fr": "à distance",
+    "es": "a distancia",
+    "ar": "عن بعد"
+   },
+   "tr": {
+    "ar": "ʿan buʿd"
+   }
+  },
+  {
+   "id": "punctual",
+   "text": {
+    "en": "punctual",
+    "fr": "ponctuel",
+    "es": "puntual",
+    "ar": "دقيق في المواعيد"
+   },
+   "tr": {
+    "ar": "daqīq fī al-mawāʿīd"
+   }
+  },
+  {
+   "id": "confidential",
+   "text": {
+    "en": "confidential",
+    "fr": "confidentiel",
+    "es": "confidencial",
+    "ar": "سري"
+   },
+   "tr": {
+    "ar": "sirrī"
+   }
+  },
+  {
+   "id": "attachment",
+   "text": {
+    "en": "attachment",
+    "fr": "pièce jointe",
+    "es": "archivo adjunto",
+    "ar": "مرفق"
+   },
+   "tr": {
+    "ar": "murfaq"
+   }
+  },
+  {
+   "id": "deliverable",
+   "text": {
+    "en": "deliverable",
+    "fr": "livrable",
+    "es": "entregable",
+    "ar": "مخرج"
+   },
+   "tr": {
+    "ar": "mukhraj"
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "text": {
+    "en": "Let's start with the first item on the agenda.",
+    "fr": "Commençons par le premier point de l'ordre du jour.",
+    "es": "Empecemos por el primer punto del orden del día.",
+    "ar": "لنبدأ بالبند الأول من جدول الأعمال."
+   },
+   "tr": {
+    "ar": "li-nabdaʾ bi-l-band al-awwal min jadwal al-aʿmāl."
+   }
+  },
+  {
+   "id": "s02",
+   "text": {
+    "en": "The chair asked every attendee to be punctual.",
+    "fr": "Le président de séance a demandé à chaque participant d'être ponctuel.",
+    "es": "El presidente de mesa pidió a cada asistente que fuera puntual.",
+    "ar": "طلب رئيس الجلسة من كل حاضر أن يكون دقيقا في المواعيد."
+   },
+   "tr": {
+    "ar": "ṭalaba raʾīs al-jalsa min kulli ḥāḍir an yakūna daqīqan fī al-mawāʿīd."
+   }
+  },
+  {
+   "id": "s03",
+   "text": {
+    "en": "Could you circulate the minutes before Friday?",
+    "fr": "Pourriez-vous diffuser le procès-verbal avant vendredi ?",
+    "es": "¿Podría distribuir el acta antes del viernes?",
+    "ar": "هل يمكنك تعميم محضر الاجتماع قبل يوم الجمعة؟"
+   },
+   "tr": {
+    "ar": "hal yumkinuka taʿmīm maḥḍar al-ijtimāʿ qabla yawm al-jumuʿa?"
+   }
+  },
+  {
+   "id": "s04",
+   "text": {
+    "en": "I would like to propose a change to the schedule.",
+    "fr": "Je voudrais proposer une modification du calendrier.",
+    "es": "Querría proponer un cambio en el calendario.",
+    "ar": "أود أن أقترح تعديلا على الجدول الزمني."
+   },
+   "tr": {
+    "ar": "awaddu an aqtarih taʿdīlan ʿalā al-jadwal az-zamanī."
+   }
+  },
+  {
+   "id": "s05",
+   "text": {
+    "en": "We need to approve the budget before the deadline.",
+    "fr": "Nous devons approuver le budget avant l'échéance.",
+    "es": "Tenemos que aprobar el presupuesto antes del plazo.",
+    "ar": "علينا الموافقة على الميزانية قبل الموعد النهائي."
+   },
+   "tr": {
+    "ar": "ʿalaynā al-muwāfaqa ʿalā al-mīzāniyya qabla al-mawʿid an-nihāʾī."
+   }
+  },
+  {
+   "id": "s06",
+   "text": {
+    "en": "Several stakeholders have expressed concern about the proposal.",
+    "fr": "Plusieurs parties prenantes ont exprimé des préoccupations au sujet de la proposition.",
+    "es": "Varias partes interesadas han expresado inquietud sobre la propuesta.",
+    "ar": "أعرب عدة أطراف معنية عن قلقهم بشأن الاقتراح."
+   },
+   "tr": {
+    "ar": "aʿraba ʿiddat aṭrāf maʿniyya ʿan qalaqihim bi-shaʾni al-iqtirāḥ."
+   }
+  },
+  {
+   "id": "s07",
+   "text": {
+    "en": "Let's postpone this decision until the next quarterly meeting.",
+    "fr": "Reportons cette décision à la prochaine réunion trimestrielle.",
+    "es": "Aplacemos esta decisión hasta la próxima reunión trimestral.",
+    "ar": "لنؤجل هذا القرار إلى الاجتماع الربع سنوي القادم."
+   },
+   "tr": {
+    "ar": "li-nuʾajjil hādhā al-qarār ilā al-ijtimāʿ ar-rubʿ sanawī al-qādim."
+   }
+  },
+  {
+   "id": "s08",
+   "text": {
+    "en": "Does anyone have any other business to raise?",
+    "fr": "Quelqu'un a-t-il des questions diverses à soulever ?",
+    "es": "¿Alguien tiene algún asunto varios que plantear?",
+    "ar": "هل لدى أحد أمور أخرى يود طرحها؟"
+   },
+   "tr": {
+    "ar": "hal ladā aḥad umūr ukhrā yawaddu ṭarḥahā?"
+   }
+  },
+  {
+   "id": "s09",
+   "text": {
+    "en": "The vote ended with ten in favour, two against and one abstention.",
+    "fr": "Le vote s'est terminé avec dix voix pour, deux contre et une abstention.",
+    "es": "La votación terminó con diez votos a favor, dos en contra y una abstención.",
+    "ar": "انتهى التصويت بعشرة أصوات مؤيدة وصوتين معارضين وامتناع واحد عن التصويت."
+   },
+   "tr": {
+    "ar": "intahā at-taṣwīt bi-ʿashrati aṣwāt muʾayyida wa-ṣawtayn muʿāriḍayn wa-imtināʿ wāḥid ʿan at-taṣwīt."
+   }
+  },
+  {
+   "id": "s10",
+   "text": {
+    "en": "We have reached a consensus on the main objective.",
+    "fr": "Nous sommes parvenus à un consensus sur l'objectif principal.",
+    "es": "Hemos llegado a un consenso sobre el objetivo principal.",
+    "ar": "توصلنا إلى إجماع بشأن الهدف الرئيسي."
+   },
+   "tr": {
+    "ar": "tawaṣṣalnā ilā ijmāʿ bi-shaʾni al-hadaf ar-raʾīsī."
+   }
+  },
+  {
+   "id": "s11",
+   "text": {
+    "en": "Could you summarize the outcome of the presentation?",
+    "fr": "Pourriez-vous résumer le résultat de la présentation ?",
+    "es": "¿Podría resumir el resultado de la presentación?",
+    "ar": "هل يمكنك تلخيص نتيجة العرض التقديمي؟"
+   },
+   "tr": {
+    "ar": "hal yumkinuka talkhīṣ natījat al-ʿarḍ at-taqdīmī?"
+   }
+  },
+  {
+   "id": "s12",
+   "text": {
+    "en": "I am speaking on behalf of the board.",
+    "fr": "Je m'exprime au nom du conseil d'administration.",
+    "es": "Hablo en nombre del consejo de administración.",
+    "ar": "أتحدث نيابة عن مجلس الإدارة."
+   },
+   "tr": {
+    "ar": "ataḥaddath niyābatan ʿan majlis al-idāra."
+   }
+  },
+  {
+   "id": "s13",
+   "text": {
+    "en": "Let me clarify what I mean by priority.",
+    "fr": "Permettez-moi de clarifier ce que j'entends par priorité.",
+    "es": "Permítanme aclarar lo que entiendo por prioridad.",
+    "ar": "اسمحوا لي أن أوضح ما أقصده بالأولوية."
+   },
+   "tr": {
+    "ar": "ismaḥū lī an uwaḍḍiḥa mā aqṣiduhu bi-l-awlawiyya."
+   }
+  },
+  {
+   "id": "s14",
+   "text": {
+    "en": "The quorum was not reached, so we had to adjourn the meeting.",
+    "fr": "Le quorum n'a pas été atteint ; nous avons donc dû lever la séance.",
+    "es": "No se alcanzó el quórum, así que tuvimos que levantar la sesión.",
+    "ar": "لم يكتمل النصاب القانوني فاضطررنا إلى رفع الجلسة."
+   },
+   "tr": {
+    "ar": "lam yaktamil an-niṣāb al-qānūnī fa-iḍṭararnā ilā rafʿ al-jalsa."
+   }
+  },
+  {
+   "id": "s15",
+   "text": {
+    "en": "Please send me your feedback in an attachment.",
+    "fr": "Veuillez m'envoyer vos commentaires dans une pièce jointe.",
+    "es": "Envíeme sus comentarios en un archivo adjunto, por favor.",
+    "ar": "يرجى إرسال ملاحظاتكم إلي في مرفق."
+   },
+   "tr": {
+    "ar": "yurjā irsāl mulāḥaẓātikum ilayya fī murfaq."
+   }
+  },
+  {
+   "id": "s16",
+   "text": {
+    "en": "This document is confidential and must not leave the room.",
+    "fr": "Ce document est confidentiel et ne doit pas quitter la salle.",
+    "es": "Este documento es confidencial y no debe salir de la sala.",
+    "ar": "هذه الوثيقة سرية ويجب ألا تغادر القاعة."
+   },
+   "tr": {
+    "ar": "hādhihi al-wathīqa sirriyya wa-yajib allā tughādira al-qāʿa."
+   }
+  },
+  {
+   "id": "s17",
+   "text": {
+    "en": "Who will take charge of this action point?",
+    "fr": "Qui se chargera de ce point d'action ?",
+    "es": "¿Quién se encargará de este punto de acción?",
+    "ar": "من سيتولى هذا الإجراء المطلوب؟"
+   },
+   "tr": {
+    "ar": "man sa-yatawallā hādhā al-ijrāʾ al-maṭlūb?"
+   }
+  },
+  {
+   "id": "s18",
+   "text": {
+    "en": "We delegated the follow-up to the project team.",
+    "fr": "Nous avons délégué le suivi à l'équipe du projet.",
+    "es": "Hemos delegado el seguimiento en el equipo del proyecto.",
+    "ar": "فوضنا المتابعة إلى فريق المشروع."
+   },
+   "tr": {
+    "ar": "fawwaḍnā al-mutābaʿa ilā farīq al-mashrūʿ."
+   }
+  },
+  {
+   "id": "s19",
+   "text": {
+    "en": "Our next milestone is the launch in March.",
+    "fr": "Notre prochain jalon est le lancement en mars.",
+    "es": "Nuestro próximo hito es el lanzamiento en marzo.",
+    "ar": "مرحلتنا الرئيسية القادمة هي الإطلاق في مارس."
+   },
+   "tr": {
+    "ar": "marḥalatunā ar-raʾīsiyya al-qādima hiya al-iṭlāq fī Māris."
+   }
+  },
+  {
+   "id": "s20",
+   "text": {
+    "en": "Since the meeting is remote, please mute your microphones.",
+    "fr": "Comme la réunion se tient à distance, veuillez couper vos micros.",
+    "es": "Como la reunión es a distancia, silencien sus micrófonos, por favor.",
+    "ar": "بما أن الاجتماع عن بعد، يرجى كتم الميكروفونات."
+   },
+   "tr": {
+    "ar": "bi-mā anna al-ijtimāʿ ʿan buʿd, yurjā katm al-mīkrūfūnāt."
+   }
+  },
+  {
+   "id": "s21",
+   "text": {
+    "en": "I will schedule a follow-up meeting for next week.",
+    "fr": "Je programmerai une réunion de suivi pour la semaine prochaine.",
+    "es": "Programaré una reunión de seguimiento para la semana que viene.",
+    "ar": "سأحدد موعدا لاجتماع متابعة الأسبوع القادم."
+   },
+   "tr": {
+    "ar": "sa-uḥaddidu mawʿidan li-ijtimāʿ mutābaʿa al-usbūʿ al-qādim."
+   }
+  },
+  {
+   "id": "s22",
+   "text": {
+    "en": "The budget update was shorter than expected.",
+    "fr": "La mise à jour budgétaire a été plus courte que prévu.",
+    "es": "La actualización del presupuesto fue más breve de lo previsto.",
+    "ar": "كان تحديث الميزانية أقصر مما كان متوقعا."
+   },
+   "tr": {
+    "ar": "kāna taḥdīth al-mīzāniyya aqṣara mimmā kāna mutawaqqaʿan."
+   }
+  },
+  {
+   "id": "s23",
+   "text": {
+    "en": "I would like to raise a point about the timetable.",
+    "fr": "Je voudrais soulever un point au sujet de l'emploi du temps.",
+    "es": "Quisiera plantear un punto sobre el horario.",
+    "ar": "أود أن أثير نقطة بخصوص الجدول الزمني."
+   },
+   "tr": {
+    "ar": "awaddu an uthīra nuqṭatan bi-khuṣūṣ al-jadwal az-zamanī."
+   }
+  },
+  {
+   "id": "s24",
+   "text": {
+    "en": "Thank you all for attending at such short notice.",
+    "fr": "Merci à tous d'avoir assisté à la réunion malgré un préavis si court.",
+    "es": "Gracias a todos por asistir con tan poco aviso.",
+    "ar": "أشكركم جميعا على الحضور رغم ضيق الوقت."
+   },
+   "tr": {
+    "ar": "ashkurukum jamīʿan ʿalā al-ḥuḍūr raghma ḍīq al-waqt."
+   }
+  },
+  {
+   "id": "s25",
+   "text": {
+    "en": "The deliverable for this phase must be ready by the end of the month.",
+    "fr": "Le livrable de cette phase doit être prêt d'ici la fin du mois.",
+    "es": "El entregable de esta fase debe estar listo a finales de mes.",
+    "ar": "يجب أن يكون المخرج الخاص بهذه المرحلة جاهزا بنهاية الشهر."
+   },
+   "tr": {
+    "ar": "yajib an yakūna al-mukhraj al-khāṣṣ bi-hādhihi al-marḥala jāhizan bi-nihāyat ash-shahr."
+   }
+  },
+  {
+   "id": "s26",
+   "text": {
+    "en": "Before we vote, does anyone wish to add a concern?",
+    "fr": "Avant de voter, quelqu'un souhaite-t-il ajouter une préoccupation ?",
+    "es": "Antes de votar, ¿alguien desea añadir una inquietud?",
+    "ar": "قبل أن نصوت، هل يرغب أحد في إضافة مخاوف؟"
+   },
+   "tr": {
+    "ar": "qabla an nuṣawwit, hal yarghab aḥad fī iḍāfat makhāwif?"
+   }
+  },
+  {
+   "id": "s27",
+   "text": {
+    "en": "The minutes will record every decision taken today.",
+    "fr": "Le procès-verbal consignera chaque décision prise aujourd'hui.",
+    "es": "El acta recogerá todas las decisiones tomadas hoy.",
+    "ar": "سيسجل المحضر كل قرار اتخذ اليوم."
+   },
+   "tr": {
+    "ar": "sa-yusajjil al-maḥḍar kulla qarār uttukhidha al-yawm."
+   }
+  },
+  {
+   "id": "s28",
+   "text": {
+    "en": "I propose that we move on to the next item.",
+    "fr": "Je propose que nous passions au point suivant.",
+    "es": "Propongo que pasemos al siguiente punto.",
+    "ar": "أقترح أن ننتقل إلى البند التالي."
+   },
+   "tr": {
+    "ar": "aqtarih an nantaqila ilā al-band at-tālī."
+   }
+  },
+  {
+   "id": "s29",
+   "text": {
+    "en": "Apologies for the delay; the previous meeting ran over.",
+    "fr": "Désolé pour le retard ; la réunion précédente a débordé.",
+    "es": "Disculpen el retraso; la reunión anterior se alargó.",
+    "ar": "أعتذر عن التأخير، فقد طال الاجتماع السابق."
+   },
+   "tr": {
+    "ar": "aʿtadhir ʿan at-taʾkhīr, fa-qad ṭāla al-ijtimāʿ as-sābiq."
+   }
+  },
+  {
+   "id": "s30",
+   "text": {
+    "en": "The chair will approve the final agenda tomorrow morning.",
+    "fr": "Le président de séance approuvera l'ordre du jour définitif demain matin.",
+    "es": "El presidente de mesa aprobará el orden del día definitivo mañana por la mañana.",
+    "ar": "سيوافق رئيس الجلسة على جدول الأعمال النهائي صباح الغد."
+   },
+   "tr": {
+    "ar": "sa-yuwāfiq raʾīs al-jalsa ʿalā jadwal al-aʿmāl an-nihāʾī ṣabāḥ al-ghad."
+   }
+  },
+  {
+   "id": "s31",
+   "text": {
+    "en": "Our priority this quarter is to reduce costs.",
+    "fr": "Notre priorité ce trimestre est de réduire les coûts.",
+    "es": "Nuestra prioridad este trimestre es reducir los costes.",
+    "ar": "أولويتنا في هذا الربع هي خفض التكاليف."
+   },
+   "tr": {
+    "ar": "awlawiyyatunā fī hādhā ar-rubʿ hiya khafḍ at-takālīf."
+   }
+  },
+  {
+   "id": "s32",
+   "text": {
+    "en": "If there are no further questions, I declare the meeting adjourned.",
+    "fr": "S'il n'y a pas d'autres questions, je déclare la séance levée.",
+    "es": "Si no hay más preguntas, doy por levantada la sesión.",
+    "ar": "إن لم تكن هناك أسئلة أخرى، فإنني أعلن رفع الجلسة."
+   },
+   "tr": {
+    "ar": "in lam takun hunāka asʾila ukhrā, fa-innanī uʿlinu rafʿ al-jalsa."
+   }
+  }
+ ],
+ "dialogue": [
+  "s08",
+  "s23",
+  "s21",
+  "s03",
+  "s32"
+ ],
+ "title": {
+  "en": "Business meetings",
+  "fr": "Les réunions d'affaires",
+  "es": "Reuniones de negocios",
+  "ar": "اجتماعات العمل"
+ },
+ "tip": {
+  "en": "Meetings follow a clear order: agenda, discussion, decision, minutes. Use polite formulas such as \"Could you summarize...?\" and \"I would like to propose...\".",
+  "fr": "Une réunion suit un ordre précis : ordre du jour, discussion, décision, procès-verbal. Utilisez des formules polies comme « Pourriez-vous résumer... ? » et « Je voudrais proposer... ».",
+  "es": "Una reunión sigue un orden claro: orden del día, debate, decisión y acta. Usa fórmulas corteses como «¿Podría resumir...?» y «Querría proponer...».",
+  "ar": "يسير الاجتماع وفق ترتيب واضح: جدول أعمال ثم نقاش ثم قرار ثم محضر. استخدم صيغا مهذبة مثل «هل يمكنك تلخيص...؟» و«أود أن أقترح...»."
+ }
+}

@@ -1,11 +1,11 @@
 // Home: the course path. Levels across the top, units and their lessons below, next lesson focused.
-import { h, focusable, clear, ICONS } from '../../platform/dom.js?v=2.0.0';
-import { t, pickLang } from '../../platform/i18n.js?v=2.0.0';
-import { focusFirst, setFocus } from '../../platform/input.js?v=2.0.0';
-import { getLevel } from '../../data/content-repo.js?v=2.0.0';
-import { course as progressOf, getMe, saveCourse } from '../../data/progress-store.js?v=2.0.0';
-import { lessonState, levelComplete, nextLesson } from '../../learning/path.js?v=2.0.0';
-import { openDialog, toast, starsRow } from '../components.js?v=2.0.0';
+import { h, focusable, clear, ICONS } from '../../platform/dom.js?v=2.1.0';
+import { t, pickLang } from '../../platform/i18n.js?v=2.1.0';
+import { focusFirst, setFocus } from '../../platform/input.js?v=2.1.0';
+import { getLevel } from '../../data/content-repo.js?v=2.1.0';
+import { course as progressOf, getMe, saveCourse } from '../../data/progress-store.js?v=2.1.0';
+import { lessonState, levelComplete, nextLesson } from '../../learning/path.js?v=2.1.0';
+import { openDialog, toast, starsRow } from '../components.js?v=2.1.0';
 
 export function homeScreen(app) {
   const me = getMe();

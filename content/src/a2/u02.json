@@ -1,0 +1,988 @@
+{
+ "id": "u02",
+ "level": "a2",
+ "order": 2,
+ "words": [
+  {
+   "id": "negotiation",
+   "text": {
+    "en": "negotiation",
+    "fr": "négociation",
+    "es": "negociación",
+    "ar": "مفاوضات"
+   },
+   "tr": {
+    "ar": "mufāwaḍāt"
+   }
+  },
+  {
+   "id": "offer",
+   "text": {
+    "en": "offer",
+    "fr": "offre",
+    "es": "oferta",
+    "ar": "عرض"
+   },
+   "tr": {
+    "ar": "ʿarḍ"
+   }
+  },
+  {
+   "id": "counteroffer",
+   "text": {
+    "en": "counteroffer",
+    "fr": "contre-offre",
+    "es": "contraoferta",
+    "ar": "عرض مضاد"
+   },
+   "tr": {
+    "ar": "ʿarḍ muḍādd"
+   }
+  },
+  {
+   "id": "concession",
+   "text": {
+    "en": "concession",
+    "fr": "concession",
+    "es": "concesión",
+    "ar": "تنازل"
+   },
+   "tr": {
+    "ar": "tanāzul"
+   }
+  },
+  {
+   "id": "compromise",
+   "text": {
+    "en": "compromise",
+    "fr": "compromis",
+    "es": "compromiso",
+    "ar": "حل وسط"
+   },
+   "tr": {
+    "ar": "ḥall wasaṭ"
+   }
+  },
+  {
+   "id": "contract",
+   "text": {
+    "en": "contract",
+    "fr": "contrat",
+    "es": "contrato",
+    "ar": "عقد"
+   },
+   "tr": {
+    "ar": "ʿaqd"
+   }
+  },
+  {
+   "id": "clause",
+   "text": {
+    "en": "clause",
+    "fr": "clause",
+    "es": "cláusula",
+    "ar": "بند"
+   },
+   "tr": {
+    "ar": "band"
+   }
+  },
+  {
+   "id": "terms",
+   "text": {
+    "en": "terms",
+    "fr": "conditions",
+    "es": "condiciones",
+    "ar": "شروط"
+   },
+   "tr": {
+    "ar": "shurūṭ"
+   }
+  },
+  {
+   "id": "price",
+   "text": {
+    "en": "price",
+    "fr": "prix",
+    "es": "precio",
+    "ar": "سعر"
+   },
+   "tr": {
+    "ar": "siʿr"
+   }
+  },
+  {
+   "id": "discount",
+   "text": {
+    "en": "discount",
+    "fr": "remise",
+    "es": "descuento",
+    "ar": "خصم"
+   },
+   "tr": {
+    "ar": "khaṣm"
+   }
+  },
+  {
+   "id": "margin",
+   "text": {
+    "en": "margin",
+    "fr": "marge",
+    "es": "margen",
+    "ar": "هامش الربح"
+   },
+   "tr": {
+    "ar": "hāmish ar-ribḥ"
+   }
+  },
+  {
+   "id": "deal",
+   "text": {
+    "en": "deal",
+    "fr": "marché",
+    "es": "trato",
+    "ar": "صفقة"
+   },
+   "tr": {
+    "ar": "ṣafqa"
+   }
+  },
+  {
+   "id": "party",
+   "text": {
+    "en": "party",
+    "fr": "partie",
+    "es": "parte",
+    "ar": "طرف"
+   },
+   "tr": {
+    "ar": "ṭaraf"
+   }
+  },
+  {
+   "id": "agreement",
+   "text": {
+    "en": "agreement",
+    "fr": "accord",
+    "es": "acuerdo",
+    "ar": "اتفاق"
+   },
+   "tr": {
+    "ar": "ittifāq"
+   }
+  },
+  {
+   "id": "leverage",
+   "text": {
+    "en": "leverage",
+    "fr": "levier",
+    "es": "poder de negociación",
+    "ar": "ورقة ضغط"
+   },
+   "tr": {
+    "ar": "waraqat ḍaghṭ"
+   }
+  },
+  {
+   "id": "bottom_line",
+   "text": {
+    "en": "bottom line",
+    "fr": "seuil minimal",
+    "es": "límite mínimo",
+    "ar": "الحد الأدنى"
+   },
+   "tr": {
+    "ar": "al-ḥadd al-adnā"
+   }
+  },
+  {
+   "id": "bargain",
+   "text": {
+    "en": "to bargain",
+    "fr": "marchander",
+    "es": "regatear",
+    "ar": "يساوم"
+   },
+   "tr": {
+    "ar": "yusāwim"
+   }
+  },
+  {
+   "id": "concede",
+   "text": {
+    "en": "to concede",
+    "fr": "concéder",
+    "es": "conceder",
+    "ar": "يتنازل"
+   },
+   "tr": {
+    "ar": "yatanāzal"
+   }
+  },
+  {
+   "id": "counter",
+   "text": {
+    "en": "to counter",
+    "fr": "contre-proposer",
+    "es": "contraofertar",
+    "ar": "يرد بعرض مضاد"
+   },
+   "tr": {
+    "ar": "yaruddu bi-ʿarḍ muḍādd"
+   }
+  },
+  {
+   "id": "reject",
+   "text": {
+    "en": "to reject",
+    "fr": "rejeter",
+    "es": "rechazar",
+    "ar": "يرفض"
+   },
+   "tr": {
+    "ar": "yarfuḍ"
+   }
+  },
+  {
+   "id": "accept",
+   "text": {
+    "en": "to accept",
+    "fr": "accepter",
+    "es": "aceptar",
+    "ar": "يقبل"
+   },
+   "tr": {
+    "ar": "yaqbal"
+   }
+  },
+  {
+   "id": "sign",
+   "text": {
+    "en": "to sign",
+    "fr": "signer",
+    "es": "firmar",
+    "ar": "يوقع"
+   },
+   "tr": {
+    "ar": "yuwaqqiʿ"
+   }
+  },
+  {
+   "id": "renew",
+   "text": {
+    "en": "to renew",
+    "fr": "renouveler",
+    "es": "renovar",
+    "ar": "يجدد"
+   },
+   "tr": {
+    "ar": "yujaddid"
+   }
+  },
+  {
+   "id": "terminate",
+   "text": {
+    "en": "to terminate",
+    "fr": "résilier",
+    "es": "rescindir",
+    "ar": "يفسخ"
+   },
+   "tr": {
+    "ar": "yafsakh"
+   }
+  },
+  {
+   "id": "settle",
+   "text": {
+    "en": "to settle",
+    "fr": "régler",
+    "es": "zanjar",
+    "ar": "يسوي"
+   },
+   "tr": {
+    "ar": "yusawwī"
+   }
+  },
+  {
+   "id": "withdraw",
+   "text": {
+    "en": "to withdraw",
+    "fr": "se retirer",
+    "es": "retirarse",
+    "ar": "ينسحب"
+   },
+   "tr": {
+    "ar": "yansaḥib"
+   }
+  },
+  {
+   "id": "flexible",
+   "text": {
+    "en": "flexible",
+    "fr": "flexible",
+    "es": "flexible",
+    "ar": "مرن"
+   },
+   "tr": {
+    "ar": "murin"
+   }
+  },
+  {
+   "id": "firm",
+   "text": {
+    "en": "firm",
+    "fr": "ferme",
+    "es": "firme",
+    "ar": "حازم"
+   },
+   "tr": {
+    "ar": "ḥāzim"
+   }
+  },
+  {
+   "id": "binding",
+   "text": {
+    "en": "binding",
+    "fr": "contraignant",
+    "es": "vinculante",
+    "ar": "ملزم"
+   },
+   "tr": {
+    "ar": "mulzim"
+   }
+  },
+  {
+   "id": "mutual",
+   "text": {
+    "en": "mutual",
+    "fr": "mutuel",
+    "es": "mutuo",
+    "ar": "متبادل"
+   },
+   "tr": {
+    "ar": "mutabādal"
+   }
+  },
+  {
+   "id": "fair",
+   "text": {
+    "en": "fair",
+    "fr": "équitable",
+    "es": "equitativo",
+    "ar": "عادل"
+   },
+   "tr": {
+    "ar": "ʿādil"
+   }
+  },
+  {
+   "id": "deadlock",
+   "text": {
+    "en": "deadlock",
+    "fr": "impasse",
+    "es": "punto muerto",
+    "ar": "طريق مسدود"
+   },
+   "tr": {
+    "ar": "ṭarīq masdūd"
+   }
+  },
+  {
+   "id": "win_win",
+   "text": {
+    "en": "win-win",
+    "fr": "gagnant-gagnant",
+    "es": "beneficioso para ambos",
+    "ar": "مربح للطرفين"
+   },
+   "tr": {
+    "ar": "murbiḥ lil-ṭarafayn"
+   }
+  },
+  {
+   "id": "warranty",
+   "text": {
+    "en": "warranty",
+    "fr": "garantie",
+    "es": "garantía",
+    "ar": "ضمان"
+   },
+   "tr": {
+    "ar": "ḍamān"
+   }
+  },
+  {
+   "id": "penalty",
+   "text": {
+    "en": "penalty",
+    "fr": "pénalité",
+    "es": "penalización",
+    "ar": "غرامة"
+   },
+   "tr": {
+    "ar": "gharāma"
+   }
+  },
+  {
+   "id": "delivery",
+   "text": {
+    "en": "delivery",
+    "fr": "livraison",
+    "es": "entrega",
+    "ar": "تسليم"
+   },
+   "tr": {
+    "ar": "taslīm"
+   }
+  },
+  {
+   "id": "payment",
+   "text": {
+    "en": "payment",
+    "fr": "paiement",
+    "es": "pago",
+    "ar": "دفع"
+   },
+   "tr": {
+    "ar": "dafʿ"
+   }
+  },
+  {
+   "id": "invoice",
+   "text": {
+    "en": "invoice",
+    "fr": "facture",
+    "es": "factura",
+    "ar": "فاتورة"
+   },
+   "tr": {
+    "ar": "fātūra"
+   }
+  },
+  {
+   "id": "supplier",
+   "text": {
+    "en": "supplier",
+    "fr": "fournisseur",
+    "es": "proveedor",
+    "ar": "مورد"
+   },
+   "tr": {
+    "ar": "mawrid"
+   }
+  },
+  {
+   "id": "client",
+   "text": {
+    "en": "client",
+    "fr": "client",
+    "es": "cliente",
+    "ar": "عميل"
+   },
+   "tr": {
+    "ar": "ʿamīl"
+   }
+  },
+  {
+   "id": "expiry_date",
+   "text": {
+    "en": "expiry date",
+    "fr": "date d'expiration",
+    "es": "fecha de vencimiento",
+    "ar": "تاريخ الانتهاء"
+   },
+   "tr": {
+    "ar": "tārīkh al-intihāʾ"
+   }
+  },
+  {
+   "id": "exclusivity",
+   "text": {
+    "en": "exclusivity",
+    "fr": "exclusivité",
+    "es": "exclusividad",
+    "ar": "حصرية"
+   },
+   "tr": {
+    "ar": "ḥaṣriyya"
+   }
+  },
+  {
+   "id": "confidentiality",
+   "text": {
+    "en": "confidentiality",
+    "fr": "confidentialité",
+    "es": "confidencialidad",
+    "ar": "السرية"
+   },
+   "tr": {
+    "ar": "as-sirriyya"
+   }
+  },
+  {
+   "id": "liability",
+   "text": {
+    "en": "liability",
+    "fr": "responsabilité",
+    "es": "responsabilidad",
+    "ar": "مسؤولية"
+   },
+   "tr": {
+    "ar": "masʾūliyya"
+   }
+  },
+  {
+   "id": "amendment",
+   "text": {
+    "en": "amendment",
+    "fr": "avenant",
+    "es": "enmienda",
+    "ar": "تعديل"
+   },
+   "tr": {
+    "ar": "taʿdīl"
+   }
+  },
+  {
+   "id": "draft",
+   "text": {
+    "en": "draft",
+    "fr": "projet",
+    "es": "borrador",
+    "ar": "مسودة"
+   },
+   "tr": {
+    "ar": "musawwada"
+   }
+  },
+  {
+   "id": "in_exchange_for",
+   "text": {
+    "en": "in exchange for",
+    "fr": "en échange de",
+    "es": "a cambio de",
+    "ar": "مقابل"
+   },
+   "tr": {
+    "ar": "muqābil"
+   }
+  },
+  {
+   "id": "non_negotiable",
+   "text": {
+    "en": "non-negotiable",
+    "fr": "non négociable",
+    "es": "innegociable",
+    "ar": "غير قابل للتفاوض"
+   },
+   "tr": {
+    "ar": "ghayr qābil lil-tafāwuḍ"
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "text": {
+    "en": "We are open to a compromise, provided that the terms are fair.",
+    "fr": "Nous sommes ouverts à un compromis, à condition que les conditions soient équitables.",
+    "es": "Estamos abiertos a un compromiso, siempre que las condiciones sean equitativas.",
+    "ar": "نحن منفتحون على حل وسط شريطة أن تكون الشروط عادلة."
+   },
+   "tr": {
+    "ar": "naḥnu munfatiḥūn ʿalā ḥall wasaṭ sharīṭata an takūna ash-shurūṭ ʿādila."
+   }
+  },
+  {
+   "id": "s02",
+   "text": {
+    "en": "Unfortunately, we cannot accept your first offer.",
+    "fr": "Malheureusement, nous ne pouvons pas accepter votre première offre.",
+    "es": "Lamentablemente, no podemos aceptar su primera oferta.",
+    "ar": "للأسف لا يمكننا قبول عرضكم الأول."
+   },
+   "tr": {
+    "ar": "lil-asaf lā yumkinunā qabūl ʿarḍikum al-awwal."
+   }
+  },
+  {
+   "id": "s03",
+   "text": {
+    "en": "Would you be prepared to make a concession on the price?",
+    "fr": "Seriez-vous disposé à faire une concession sur le prix ?",
+    "es": "¿Estaría dispuesto a hacer una concesión en el precio?",
+    "ar": "هل أنتم مستعدون لتقديم تنازل بشأن السعر؟"
+   },
+   "tr": {
+    "ar": "hal antum mustaʿiddūn li-taqdīm tanāzul bi-shaʾni as-siʿr?"
+   }
+  },
+  {
+   "id": "s04",
+   "text": {
+    "en": "We could offer a five percent discount in exchange for a longer contract.",
+    "fr": "Nous pourrions offrir une remise de cinq pour cent en échange d'un contrat plus long.",
+    "es": "Podríamos ofrecer un descuento del cinco por ciento a cambio de un contrato más largo.",
+    "ar": "يمكننا تقديم خصم بنسبة خمسة بالمئة مقابل عقد أطول مدة."
+   },
+   "tr": {
+    "ar": "yumkinunā taqdīm khaṣm bi-nisbat khamsa bi-l-miʾa muqābil ʿaqd aṭwal mudda."
+   }
+  },
+  {
+   "id": "s05",
+   "text": {
+    "en": "That figure is below our bottom line.",
+    "fr": "Ce chiffre est en dessous de notre seuil minimal.",
+    "es": "Esa cifra está por debajo de nuestro límite mínimo.",
+    "ar": "هذا الرقم أقل من حدنا الأدنى."
+   },
+   "tr": {
+    "ar": "hādhā ar-raqm aqall min ḥaddinā al-adnā."
+   }
+  },
+  {
+   "id": "s06",
+   "text": {
+    "en": "Our margin is already very thin, so we cannot go any lower.",
+    "fr": "Notre marge est déjà très mince ; nous ne pouvons donc pas descendre davantage.",
+    "es": "Nuestro margen ya es muy estrecho, así que no podemos bajar más.",
+    "ar": "هامش ربحنا ضيق أصلا، لذلك لا يمكننا الخفض أكثر."
+   },
+   "tr": {
+    "ar": "hāmish ribḥinā ḍayyiq aṣlan, li-dhālika lā yumkinunā al-khafḍ akthar."
+   }
+  },
+  {
+   "id": "s07",
+   "text": {
+    "en": "Both parties must sign the agreement before the end of the month.",
+    "fr": "Les deux parties doivent signer l'accord avant la fin du mois.",
+    "es": "Ambas partes deben firmar el acuerdo antes de que acabe el mes.",
+    "ar": "يجب أن يوقع الطرفان الاتفاق قبل نهاية الشهر."
+   },
+   "tr": {
+    "ar": "yajib an yuwaqqiʿa aṭ-ṭarafān al-ittifāq qabla nihāyat ash-shahr."
+   }
+  },
+  {
+   "id": "s08",
+   "text": {
+    "en": "This clause is non-negotiable.",
+    "fr": "Cette clause n'est pas négociable.",
+    "es": "Esta cláusula es innegociable.",
+    "ar": "هذا البند غير قابل للتفاوض."
+   },
+   "tr": {
+    "ar": "hādhā al-band ghayr qābil lil-tafāwuḍ."
+   }
+  },
+  {
+   "id": "s09",
+   "text": {
+    "en": "We are willing to be flexible on the delivery date.",
+    "fr": "Nous sommes prêts à être flexibles sur la date de livraison.",
+    "es": "Estamos dispuestos a ser flexibles con la fecha de entrega.",
+    "ar": "نحن مستعدون للمرونة بشأن موعد التسليم."
+   },
+   "tr": {
+    "ar": "naḥnu mustaʿiddūn lil-murūna bi-shaʾni mawʿid at-taslīm."
+   }
+  },
+  {
+   "id": "s10",
+   "text": {
+    "en": "If you insist on exclusivity, the price will have to rise.",
+    "fr": "Si vous insistez sur l'exclusivité, le prix devra augmenter.",
+    "es": "Si insisten en la exclusividad, el precio tendrá que subir.",
+    "ar": "إذا أصررتم على الحصرية، فسيتعين رفع السعر."
+   },
+   "tr": {
+    "ar": "idhā aṣrartum ʿalā al-ḥaṣriyya, fa-sa-yataʿayyan rafʿ as-siʿr."
+   }
+  },
+  {
+   "id": "s11",
+   "text": {
+    "en": "The supplier threatened to withdraw from the negotiation.",
+    "fr": "Le fournisseur a menacé de se retirer de la négociation.",
+    "es": "El proveedor amenazó con retirarse de la negociación.",
+    "ar": "هدد المورد بالانسحاب من المفاوضات."
+   },
+   "tr": {
+    "ar": "haddada al-mawrid bi-l-insiḥāb min al-mufāwaḍāt."
+   }
+  },
+  {
+   "id": "s12",
+   "text": {
+    "en": "We have reached a deadlock, and neither side wants to concede.",
+    "fr": "Nous sommes dans une impasse, et aucune des deux parties ne veut céder.",
+    "es": "Hemos llegado a un punto muerto y ninguna de las partes quiere ceder.",
+    "ar": "وصلنا إلى طريق مسدود ولا يريد أي من الطرفين التنازل."
+   },
+   "tr": {
+    "ar": "waṣalnā ilā ṭarīq masdūd wa-lā yurīdu ayyun min aṭ-ṭarafayn at-tanāzul."
+   }
+  },
+  {
+   "id": "s13",
+   "text": {
+    "en": "Let me make a counteroffer that works for both of us.",
+    "fr": "Permettez-moi de faire une contre-offre qui convienne à nous deux.",
+    "es": "Permítame hacer una contraoferta que nos convenga a ambos.",
+    "ar": "اسمح لي بتقديم عرض مضاد يناسب كلينا."
+   },
+   "tr": {
+    "ar": "ismaḥ lī bi-taqdīm ʿarḍ muḍādd yunāsibu kilaynā."
+   }
+  },
+  {
+   "id": "s14",
+   "text": {
+    "en": "A win-win solution is still possible.",
+    "fr": "Une solution gagnant-gagnant reste possible.",
+    "es": "Todavía es posible una solución beneficiosa para ambos.",
+    "ar": "لا يزال التوصل إلى حل مربح للطرفين ممكنا."
+   },
+   "tr": {
+    "ar": "lā yazāl at-tawaṣṣul ilā ḥall murbiḥ lil-ṭarafayn mumkinan."
+   }
+  },
+  {
+   "id": "s15",
+   "text": {
+    "en": "The contract becomes binding as soon as both signatures are in place.",
+    "fr": "Le contrat devient contraignant dès que les deux signatures sont apposées.",
+    "es": "El contrato pasa a ser vinculante en cuanto estén las dos firmas.",
+    "ar": "يصبح العقد ملزما بمجرد وضع التوقيعين."
+   },
+   "tr": {
+    "ar": "yuṣbiḥ al-ʿaqd mulziman bi-mujarrad waḍʿ at-tawqīʿayn."
+   }
+  },
+  {
+   "id": "s16",
+   "text": {
+    "en": "Please send us the revised draft with the amendments.",
+    "fr": "Veuillez nous envoyer le projet révisé avec les modifications.",
+    "es": "Envíennos el borrador revisado con las enmiendas, por favor.",
+    "ar": "يرجى إرسال المسودة المنقحة مع التعديلات إلينا."
+   },
+   "tr": {
+    "ar": "yurjā irsāl al-musawwada al-munaqqaḥa maʿa at-taʿdīlāt ilaynā."
+   }
+  },
+  {
+   "id": "s17",
+   "text": {
+    "en": "The penalty applies if payment is more than thirty days late.",
+    "fr": "La pénalité s'applique si le paiement a plus de trente jours de retard.",
+    "es": "La penalización se aplica si el pago se retrasa más de treinta días.",
+    "ar": "تطبق الغرامة إذا تأخر الدفع أكثر من ثلاثين يوما."
+   },
+   "tr": {
+    "ar": "tuṭabbaq al-gharāma idhā taʾakhkhara ad-dafʿ akthara min thalāthīna yawman."
+   }
+  },
+  {
+   "id": "s18",
+   "text": {
+    "en": "We will not renew the contract unless the terms improve.",
+    "fr": "Nous ne renouvellerons pas le contrat à moins que les conditions ne s'améliorent.",
+    "es": "No renovaremos el contrato a menos que mejoren las condiciones.",
+    "ar": "لن نجدد العقد ما لم تتحسن الشروط."
+   },
+   "tr": {
+    "ar": "lan nujaddida al-ʿaqd mā lam tataḥassan ash-shurūṭ."
+   }
+  },
+  {
+   "id": "s19",
+   "text": {
+    "en": "Either party may terminate the agreement with three months' notice.",
+    "fr": "Chaque partie peut résilier l'accord moyennant un préavis de trois mois.",
+    "es": "Cualquiera de las partes puede rescindir el acuerdo con un preaviso de tres meses.",
+    "ar": "يجوز لأي من الطرفين فسخ الاتفاق بإشعار مدته ثلاثة أشهر."
+   },
+   "tr": {
+    "ar": "yajūzu li-ayyin min aṭ-ṭarafayn faskh al-ittifāq bi-ishʿār muddatuhu thalāthat ashhur."
+   }
+  },
+  {
+   "id": "s20",
+   "text": {
+    "en": "The warranty covers defects for two years from the date of delivery.",
+    "fr": "La garantie couvre les défauts pendant deux ans à compter de la livraison.",
+    "es": "La garantía cubre los defectos durante dos años desde la entrega.",
+    "ar": "يغطي الضمان العيوب لمدة سنتين من تاريخ التسليم."
+   },
+   "tr": {
+    "ar": "yughaṭṭī aḍ-ḍamān al-ʿuyūb li-muddat sanatayn min tārīkh at-taslīm."
+   }
+  },
+  {
+   "id": "s21",
+   "text": {
+    "en": "We cannot accept unlimited liability under any circumstances.",
+    "fr": "Nous ne pouvons en aucun cas accepter une responsabilité illimitée.",
+    "es": "No podemos aceptar una responsabilidad ilimitada bajo ninguna circunstancia.",
+    "ar": "لا يمكننا قبول مسؤولية غير محدودة تحت أي ظرف."
+   },
+   "tr": {
+    "ar": "lā yumkinunā qabūl masʾūliyya ghayr maḥdūda taḥta ayyi ẓarf."
+   }
+  },
+  {
+   "id": "s22",
+   "text": {
+    "en": "The client rejected the proposal but left the door open.",
+    "fr": "Le client a rejeté la proposition tout en laissant la porte ouverte.",
+    "es": "El cliente rechazó la propuesta, pero dejó la puerta abierta.",
+    "ar": "رفض العميل الاقتراح لكنه أبقى الباب مفتوحا."
+   },
+   "tr": {
+    "ar": "rafaḍa al-ʿamīl al-iqtirāḥ lākinnahu abqā al-bāb maftūḥan."
+   }
+  },
+  {
+   "id": "s23",
+   "text": {
+    "en": "Could you send the invoice before the expiry date?",
+    "fr": "Pourriez-vous envoyer la facture avant la date d'expiration ?",
+    "es": "¿Podría enviar la factura antes de la fecha de vencimiento?",
+    "ar": "هل يمكنك إرسال الفاتورة قبل تاريخ الانتهاء؟"
+   },
+   "tr": {
+    "ar": "hal yumkinuka irsāl al-fātūra qabla tārīkh al-intihāʾ?"
+   }
+  },
+  {
+   "id": "s24",
+   "text": {
+    "en": "Confidentiality remains in force even after the contract ends.",
+    "fr": "La confidentialité reste en vigueur même après la fin du contrat.",
+    "es": "La confidencialidad sigue vigente incluso después de que termine el contrato.",
+    "ar": "تظل السرية سارية حتى بعد انتهاء العقد."
+   },
+   "tr": {
+    "ar": "taẓallu as-sirriyya sāriya ḥattā baʿda intihāʾ al-ʿaqd."
+   }
+  },
+  {
+   "id": "s25",
+   "text": {
+    "en": "We prefer to settle this dispute without going to court.",
+    "fr": "Nous préférons régler ce différend sans aller devant les tribunaux.",
+    "es": "Preferimos zanjar esta disputa sin acudir a los tribunales.",
+    "ar": "نفضل تسوية هذا النزاع دون اللجوء إلى القضاء."
+   },
+   "tr": {
+    "ar": "nufaḍḍil taswiyat hādhā an-nizāʿ dūna al-lujūʾ ilā al-qaḍāʾ."
+   }
+  },
+  {
+   "id": "s26",
+   "text": {
+    "en": "They have more leverage than we do, so we must bargain carefully.",
+    "fr": "Ils ont plus de poids que nous ; nous devons donc marchander avec prudence.",
+    "es": "Ellos tienen más poder de negociación que nosotros, así que debemos regatear con cuidado.",
+    "ar": "لديهم ورقة ضغط أقوى منا، لذلك يجب أن نساوم بحذر."
+   },
+   "tr": {
+    "ar": "ladayhim waraqat ḍaghṭ aqwā minnā, li-dhālika yajib an nusāwima bi-ḥadhar."
+   }
+  },
+  {
+   "id": "s27",
+   "text": {
+    "en": "I suggest we take a short break and come back with fresh proposals.",
+    "fr": "Je suggère de faire une courte pause et de revenir avec de nouvelles propositions.",
+    "es": "Sugiero que hagamos una breve pausa y volvamos con nuevas propuestas.",
+    "ar": "أقترح أن نأخذ استراحة قصيرة ونعود بمقترحات جديدة."
+   },
+   "tr": {
+    "ar": "aqtarih an naʾkhudha istirāḥa qaṣīra wa-naʿūda bi-muqtaraḥāt jadīda."
+   }
+  },
+  {
+   "id": "s28",
+   "text": {
+    "en": "Our position on the price is firm, but the payment terms are open.",
+    "fr": "Notre position sur le prix est ferme, mais les modalités de paiement restent ouvertes.",
+    "es": "Nuestra postura sobre el precio es firme, pero las condiciones de pago están abiertas.",
+    "ar": "موقفنا من السعر حازم، لكن شروط الدفع مفتوحة."
+   },
+   "tr": {
+    "ar": "mawqifunā min as-siʿr ḥāzim, lākinna shurūṭ ad-dafʿ maftūḥa."
+   }
+  },
+  {
+   "id": "s29",
+   "text": {
+    "en": "Mutual trust is more valuable than a few extra points of margin.",
+    "fr": "La confiance mutuelle vaut davantage que quelques points de marge supplémentaires.",
+    "es": "La confianza mutua vale más que unos cuantos puntos de margen adicionales.",
+    "ar": "الثقة المتبادلة أثمن من بضع نقاط إضافية في هامش الربح."
+   },
+   "tr": {
+    "ar": "ath-thiqa al-mutabādala athman min biḍʿ nuqāṭ iḍāfiyya fī hāmish ar-ribḥ."
+   }
+  },
+  {
+   "id": "s30",
+   "text": {
+    "en": "Shall we sign the deal today, then?",
+    "fr": "Alors, signons-nous l'affaire aujourd'hui ?",
+    "es": "Entonces, ¿firmamos el trato hoy?",
+    "ar": "إذن، هل نوقع الصفقة اليوم؟"
+   },
+   "tr": {
+    "ar": "idhan, hal nuwaqqiʿ aṣ-ṣafqa al-yawm?"
+   }
+  },
+  {
+   "id": "s31",
+   "text": {
+    "en": "Yes, as long as the final version includes our last amendment.",
+    "fr": "Oui, tant que la version finale inclut notre dernier avenant.",
+    "es": "Sí, siempre que la versión final incluya nuestra última enmienda.",
+    "ar": "نعم، ما دامت النسخة النهائية تتضمن آخر تعديل لنا."
+   },
+   "tr": {
+    "ar": "naʿam, mā dāmat an-nusakha an-nihāʾiyya tataḍammanu ākhira taʿdīl lanā."
+   }
+  },
+  {
+   "id": "s32",
+   "text": {
+    "en": "Please note that the delivery date depends on the payment terms.",
+    "fr": "Veuillez noter que la date de livraison dépend des modalités de paiement.",
+    "es": "Tenga en cuenta que la fecha de entrega depende de las condiciones de pago.",
+    "ar": "يرجى العلم أن موعد التسليم يعتمد على شروط الدفع."
+   },
+   "tr": {
+    "ar": "yurjā al-ʿilm anna mawʿid at-taslīm yaʿtamidu ʿalā shurūṭ ad-dafʿ."
+   }
+  }
+ ],
+ "dialogue": [
+  "s02",
+  "s03",
+  "s04",
+  "s30",
+  "s31"
+ ],
+ "title": {
+  "en": "Negotiation",
+  "fr": "La négociation",
+  "es": "La negociación",
+  "ar": "التفاوض"
+ },
+ "tip": {
+  "en": "In a negotiation, soften refusals and signal concessions: \"We could consider..., provided that...\". Conditional forms keep the tone polite but firm.",
+  "fr": "Dans une négociation, adoucissez vos refus et annoncez vos concessions : « Nous pourrions envisager..., à condition que... ». Le conditionnel garde un ton poli mais ferme.",
+  "es": "En una negociación, suaviza los rechazos y anuncia las concesiones: «Podríamos considerar..., siempre que...». El condicional mantiene un tono cortés pero firme.",
+  "ar": "في التفاوض، خفف صيغة الرفض وأعلن عن تنازلاتك: «يمكننا النظر في...، شريطة أن...». يحافظ أسلوب الشرط على نبرة مهذبة وحازمة."
+ }
+}

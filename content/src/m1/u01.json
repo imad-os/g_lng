@@ -1,0 +1,869 @@
+{
+  "id": "u01",
+  "level": "m1",
+  "order": 1,
+  "title": {
+    "en": "Airport and travel",
+    "fr": "À l'aéroport et en voyage",
+    "es": "Aeropuerto y viajes",
+    "ar": "المطار والسفر"
+  },
+  "tip": {
+    "en": "Use 'I would like...' to ask for things politely: 'I would like a window seat.' Announcements are short and formal, so listen for the flight number and the gate.",
+    "fr": "Utilisez « Je voudrais... » pour demander poliment : « Je voudrais une place côté fenêtre. » Les annonces sont courtes et formelles : écoutez bien le numéro du vol et la porte.",
+    "es": "Usa «Quisiera...» para pedir con educación: «Quisiera un asiento de ventanilla». Los avisos son breves y formales: fíjate en el número del vuelo y en la puerta.",
+    "ar": "استخدم «أود...» للطلب بأدب: «أود مقعدا بجانب النافذة». الإعلانات قصيرة ورسمية، فانتبه إلى رقم الرحلة والبوابة."
+  },
+  "words": [
+    {
+      "id": "airport",
+      "text": {
+        "en": "airport",
+        "fr": "aéroport",
+        "es": "aeropuerto",
+        "ar": "مطار"
+      },
+      "tr": {
+        "ar": "maṭār"
+      }
+    },
+    {
+      "id": "flight",
+      "text": {
+        "en": "flight",
+        "fr": "vol",
+        "es": "vuelo",
+        "ar": "رحلة جوية"
+      },
+      "tr": {
+        "ar": "riḥla jawwiyya"
+      }
+    },
+    {
+      "id": "ticket",
+      "text": {
+        "en": "ticket",
+        "fr": "billet",
+        "es": "billete",
+        "ar": "تذكرة"
+      },
+      "tr": {
+        "ar": "tadhkira"
+      }
+    },
+    {
+      "id": "passport",
+      "text": {
+        "en": "passport",
+        "fr": "passeport",
+        "es": "pasaporte",
+        "ar": "جواز سفر"
+      },
+      "tr": {
+        "ar": "jawāz safar"
+      }
+    },
+    {
+      "id": "boarding_pass",
+      "text": {
+        "en": "boarding pass",
+        "fr": "carte d'embarquement",
+        "es": "tarjeta de embarque",
+        "ar": "بطاقة صعود الطائرة"
+      },
+      "tr": {
+        "ar": "biṭāqat ṣuʿūd aṭ-ṭāʾira"
+      }
+    },
+    {
+      "id": "luggage",
+      "text": {
+        "en": "luggage",
+        "fr": "bagages",
+        "es": "equipaje",
+        "ar": "أمتعة"
+      },
+      "tr": {
+        "ar": "amtiʿa"
+      }
+    },
+    {
+      "id": "suitcase",
+      "text": {
+        "en": "suitcase",
+        "fr": "valise",
+        "es": "maleta",
+        "ar": "حقيبة سفر"
+      },
+      "tr": {
+        "ar": "ḥaqībat safar"
+      }
+    },
+    {
+      "id": "hand_luggage",
+      "text": {
+        "en": "hand luggage",
+        "fr": "bagage à main",
+        "es": "equipaje de mano",
+        "ar": "حقيبة يد"
+      },
+      "tr": {
+        "ar": "ḥaqībat yad"
+      }
+    },
+    {
+      "id": "gate",
+      "text": {
+        "en": "gate",
+        "fr": "porte d'embarquement",
+        "es": "puerta de embarque",
+        "ar": "بوابة"
+      },
+      "tr": {
+        "ar": "bawwāba"
+      }
+    },
+    {
+      "id": "departure",
+      "text": {
+        "en": "departure",
+        "fr": "départ",
+        "es": "salida",
+        "ar": "إقلاع"
+      },
+      "tr": {
+        "ar": "iqlāʿ"
+      }
+    },
+    {
+      "id": "arrival",
+      "text": {
+        "en": "arrival",
+        "fr": "arrivée",
+        "es": "llegada",
+        "ar": "وصول"
+      },
+      "tr": {
+        "ar": "wuṣūl"
+      }
+    },
+    {
+      "id": "delay",
+      "text": {
+        "en": "delay",
+        "fr": "retard",
+        "es": "retraso",
+        "ar": "تأخير"
+      },
+      "tr": {
+        "ar": "taʾkhīr"
+      }
+    },
+    {
+      "id": "passenger",
+      "text": {
+        "en": "passenger",
+        "fr": "passager",
+        "es": "pasajero",
+        "ar": "راكب"
+      },
+      "tr": {
+        "ar": "rākib"
+      }
+    },
+    {
+      "id": "customs",
+      "text": {
+        "en": "customs",
+        "fr": "douane",
+        "es": "aduana",
+        "ar": "جمارك"
+      },
+      "tr": {
+        "ar": "jamārik"
+      }
+    },
+    {
+      "id": "security_check",
+      "text": {
+        "en": "security check",
+        "fr": "contrôle de sécurité",
+        "es": "control de seguridad",
+        "ar": "تفتيش أمني"
+      },
+      "tr": {
+        "ar": "taftīsh amnī"
+      }
+    },
+    {
+      "id": "check_in",
+      "text": {
+        "en": "check-in",
+        "fr": "enregistrement",
+        "es": "facturación",
+        "ar": "تسجيل الوصول"
+      },
+      "tr": {
+        "ar": "tasjīl al-wuṣūl"
+      }
+    },
+    {
+      "id": "seat",
+      "text": {
+        "en": "seat",
+        "fr": "place",
+        "es": "asiento",
+        "ar": "مقعد"
+      },
+      "tr": {
+        "ar": "maqʿad"
+      }
+    },
+    {
+      "id": "aisle",
+      "text": {
+        "en": "aisle",
+        "fr": "couloir",
+        "es": "pasillo",
+        "ar": "ممر"
+      },
+      "tr": {
+        "ar": "mamarr"
+      }
+    },
+    {
+      "id": "terminal",
+      "text": {
+        "en": "terminal",
+        "fr": "terminal",
+        "es": "terminal",
+        "ar": "صالة السفر"
+      },
+      "tr": {
+        "ar": "ṣālat as-safar"
+      }
+    },
+    {
+      "id": "announcement",
+      "text": {
+        "en": "announcement",
+        "fr": "annonce",
+        "es": "anuncio",
+        "ar": "إعلان"
+      },
+      "tr": {
+        "ar": "iʿlān"
+      }
+    },
+    {
+      "id": "board",
+      "text": {
+        "en": "to board",
+        "fr": "embarquer",
+        "es": "embarcar",
+        "ar": "يصعد إلى الطائرة"
+      },
+      "tr": {
+        "ar": "yaṣʿadu ilā aṭ-ṭāʾira"
+      }
+    },
+    {
+      "id": "land",
+      "text": {
+        "en": "to land",
+        "fr": "atterrir",
+        "es": "aterrizar",
+        "ar": "يهبط"
+      },
+      "tr": {
+        "ar": "yahbiṭ"
+      }
+    },
+    {
+      "id": "take_off",
+      "text": {
+        "en": "to take off",
+        "fr": "décoller",
+        "es": "despegar",
+        "ar": "يقلع"
+      },
+      "tr": {
+        "ar": "yuqliʿ"
+      }
+    },
+    {
+      "id": "miss",
+      "text": {
+        "en": "to miss",
+        "fr": "rater",
+        "es": "perder",
+        "ar": "يفوّت"
+      },
+      "tr": {
+        "ar": "yufawwit"
+      }
+    },
+    {
+      "id": "cancelled",
+      "text": {
+        "en": "cancelled",
+        "fr": "annulé",
+        "es": "cancelado",
+        "ar": "ملغى"
+      },
+      "tr": {
+        "ar": "mulghā"
+      }
+    },
+    {
+      "id": "direct_flight",
+      "text": {
+        "en": "direct flight",
+        "fr": "vol direct",
+        "es": "vuelo directo",
+        "ar": "رحلة مباشرة"
+      },
+      "tr": {
+        "ar": "riḥla mubāshira"
+      }
+    },
+    {
+      "id": "stopover",
+      "text": {
+        "en": "stopover",
+        "fr": "escale",
+        "es": "escala",
+        "ar": "توقف عابر"
+      },
+      "tr": {
+        "ar": "tawaqquf ʿābir"
+      }
+    },
+    {
+      "id": "one_way",
+      "text": {
+        "en": "one-way",
+        "fr": "aller simple",
+        "es": "solo ida",
+        "ar": "ذهاب فقط"
+      },
+      "tr": {
+        "ar": "dhahāb faqaṭ"
+      }
+    },
+    {
+      "id": "return_ticket",
+      "text": {
+        "en": "return ticket",
+        "fr": "aller-retour",
+        "es": "ida y vuelta",
+        "ar": "ذهاب وإياب"
+      },
+      "tr": {
+        "ar": "dhahāb wa iyāb"
+      }
+    },
+    {
+      "id": "visa",
+      "text": {
+        "en": "visa",
+        "fr": "visa",
+        "es": "visado",
+        "ar": "تأشيرة"
+      },
+      "tr": {
+        "ar": "taʾshīra"
+      }
+    },
+    {
+      "id": "baggage_claim",
+      "text": {
+        "en": "baggage claim",
+        "fr": "retrait des bagages",
+        "es": "recogida de equipaje",
+        "ar": "استلام الأمتعة"
+      },
+      "tr": {
+        "ar": "istilām al-amtiʿa"
+      }
+    },
+    {
+      "id": "lost_luggage",
+      "text": {
+        "en": "lost luggage",
+        "fr": "bagage perdu",
+        "es": "equipaje perdido",
+        "ar": "أمتعة مفقودة"
+      },
+      "tr": {
+        "ar": "amtiʿa mafqūda"
+      }
+    },
+    {
+      "id": "pilot",
+      "text": {
+        "en": "pilot",
+        "fr": "pilote",
+        "es": "piloto",
+        "ar": "طيار"
+      },
+      "tr": {
+        "ar": "ṭayyār"
+      }
+    },
+    {
+      "id": "taxi",
+      "text": {
+        "en": "taxi",
+        "fr": "taxi",
+        "es": "taxi",
+        "ar": "سيارة أجرة"
+      },
+      "tr": {
+        "ar": "sayyārat ujra"
+      }
+    },
+    {
+      "id": "train_station",
+      "text": {
+        "en": "train station",
+        "fr": "gare",
+        "es": "estación de tren",
+        "ar": "محطة القطار"
+      },
+      "tr": {
+        "ar": "maḥaṭṭat al-qiṭār"
+      }
+    },
+    {
+      "id": "timetable",
+      "text": {
+        "en": "timetable",
+        "fr": "horaire",
+        "es": "horario",
+        "ar": "جدول المواعيد"
+      },
+      "tr": {
+        "ar": "jadwal al-mawāʿīd"
+      }
+    },
+    {
+      "id": "platform",
+      "text": {
+        "en": "platform",
+        "fr": "quai",
+        "es": "andén",
+        "ar": "رصيف"
+      },
+      "tr": {
+        "ar": "raṣīf"
+      }
+    },
+    {
+      "id": "journey",
+      "text": {
+        "en": "journey",
+        "fr": "voyage",
+        "es": "viaje",
+        "ar": "رحلة"
+      },
+      "tr": {
+        "ar": "riḥla"
+      }
+    },
+    {
+      "id": "overweight",
+      "text": {
+        "en": "overweight",
+        "fr": "trop lourd",
+        "es": "con exceso de peso",
+        "ar": "زائد الوزن"
+      },
+      "tr": {
+        "ar": "zāʾid al-wazn"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": {
+        "en": "Excuse me, where is the check-in desk for flight 214?",
+        "fr": "Excusez-moi, où est le comptoir d'enregistrement du vol 214 ?",
+        "es": "Disculpe, ¿dónde está el mostrador de facturación del vuelo 214?",
+        "ar": "عفوا، أين مكتب تسجيل الوصول للرحلة 214؟"
+      },
+      "tr": {
+        "ar": "ʿafwan, ayna maktab tasjīl al-wuṣūl lil-riḥla 214?"
+      }
+    },
+    {
+      "id": "s02",
+      "text": {
+        "en": "Here is my passport and my ticket.",
+        "fr": "Voici mon passeport et mon billet.",
+        "es": "Aquí tiene mi pasaporte y mi billete.",
+        "ar": "تفضل جواز سفري وتذكرتي."
+      },
+      "tr": {
+        "ar": "tafaḍḍal jawāz safarī wa tadhkiratī."
+      }
+    },
+    {
+      "id": "s03",
+      "text": {
+        "en": "I would like a window seat, please.",
+        "fr": "Je voudrais une place côté fenêtre, s'il vous plaît.",
+        "es": "Quisiera un asiento de ventanilla, por favor.",
+        "ar": "أود مقعدا بجانب النافذة من فضلك."
+      },
+      "tr": {
+        "ar": "awaddu maqʿadan bi-jānib an-nāfidha min faḍlik."
+      }
+    },
+    {
+      "id": "s04",
+      "text": {
+        "en": "Do you prefer a window seat or an aisle seat?",
+        "fr": "Vous préférez une place côté fenêtre ou côté couloir ?",
+        "es": "¿Prefiere asiento de ventanilla o de pasillo?",
+        "ar": "هل تفضل مقعدا بجانب النافذة أم بجانب الممر؟"
+      },
+      "tr": {
+        "ar": "hal tufaḍḍil maqʿadan bi-jānib an-nāfidha am bi-jānib al-mamarr?"
+      }
+    },
+    {
+      "id": "s05",
+      "text": {
+        "en": "I have only one suitcase and a small hand luggage.",
+        "fr": "Je n'ai qu'une valise et un petit bagage à main.",
+        "es": "Solo llevo una maleta y un equipaje de mano pequeño.",
+        "ar": "ليس معي سوى حقيبة سفر واحدة وحقيبة يد صغيرة."
+      },
+      "tr": {
+        "ar": "laysa maʿī siwā ḥaqībat safar wāḥida wa ḥaqībat yad ṣaghīra."
+      }
+    },
+    {
+      "id": "s06",
+      "text": {
+        "en": "I am sorry, but your suitcase is overweight.",
+        "fr": "Je suis désolé, mais votre valise est trop lourde.",
+        "es": "Lo siento, pero su maleta tiene exceso de peso.",
+        "ar": "أنا آسف، لكن حقيبتك زائدة الوزن."
+      },
+      "tr": {
+        "ar": "anā āsif, lākin ḥaqībatuka zāʾidat al-wazn."
+      }
+    },
+    {
+      "id": "s07",
+      "text": {
+        "en": "You will have to pay an extra fee for it.",
+        "fr": "Vous devrez payer un supplément pour cela.",
+        "es": "Tendrá que pagar un suplemento por ella.",
+        "ar": "سيكون عليك دفع رسوم إضافية مقابلها."
+      },
+      "tr": {
+        "ar": "sayakūnu ʿalayka dafʿ rusūm iḍāfiyya muqābilahā."
+      }
+    },
+    {
+      "id": "s08",
+      "text": {
+        "en": "What time does the flight take off?",
+        "fr": "À quelle heure l'avion décolle-t-il ?",
+        "es": "¿A qué hora despega el avión?",
+        "ar": "في أي ساعة تقلع الطائرة؟"
+      },
+      "tr": {
+        "ar": "fī ayyi sāʿa tuqliʿu aṭ-ṭāʾira?"
+      }
+    },
+    {
+      "id": "s09",
+      "text": {
+        "en": "Boarding starts at gate 12 in twenty minutes.",
+        "fr": "L'embarquement commence à la porte 12 dans vingt minutes.",
+        "es": "El embarque comienza en la puerta 12 dentro de veinte minutos.",
+        "ar": "يبدأ الصعود إلى الطائرة عند البوابة 12 بعد عشرين دقيقة."
+      },
+      "tr": {
+        "ar": "yabdaʾu aṣ-ṣuʿūd ilā aṭ-ṭāʾira ʿinda al-bawwāba 12 baʿda ʿishrīna daqīqa."
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "Attention, please: passengers for Madrid should go to gate 12.",
+        "fr": "Votre attention, s'il vous plaît : les passagers pour Madrid sont priés de se rendre à la porte 12.",
+        "es": "Atención, por favor: los pasajeros con destino a Madrid deben dirigirse a la puerta 12.",
+        "ar": "انتباه من فضلكم: على المسافرين إلى مدريد التوجه إلى البوابة 12."
+      },
+      "tr": {
+        "ar": "intibāh min faḍlikum: ʿalā al-musāfirīn ilā Madrīd at-tawajjuh ilā al-bawwāba 12."
+      }
+    },
+    {
+      "id": "s11",
+      "text": {
+        "en": "The flight is delayed by about an hour.",
+        "fr": "Le vol a environ une heure de retard.",
+        "es": "El vuelo lleva aproximadamente una hora de retraso.",
+        "ar": "الرحلة متأخرة نحو ساعة."
+      },
+      "tr": {
+        "ar": "ar-riḥla mutaʾakhkhira naḥwa sāʿa."
+      }
+    },
+    {
+      "id": "s12",
+      "text": {
+        "en": "I am afraid your flight has been cancelled.",
+        "fr": "Je crains que votre vol n'ait été annulé.",
+        "es": "Me temo que su vuelo ha sido cancelado.",
+        "ar": "أخشى أن رحلتك قد أُلغيت."
+      },
+      "tr": {
+        "ar": "akhshā anna riḥlataka qad ulghiyat."
+      }
+    },
+    {
+      "id": "s13",
+      "text": {
+        "en": "Because of the delay, I missed my connection.",
+        "fr": "À cause du retard, j'ai raté ma correspondance.",
+        "es": "Por culpa del retraso, perdí mi conexión.",
+        "ar": "بسبب التأخير فاتني الاتصال بالرحلة التالية."
+      },
+      "tr": {
+        "ar": "bi-sabab at-taʾkhīr fātanī al-ittiṣāl bir-riḥla at-tāliya."
+      }
+    },
+    {
+      "id": "s14",
+      "text": {
+        "en": "Is there a direct flight, or do I have to stop over?",
+        "fr": "¿Hay un vuelo directo o hay que hacer escala?",
+        "es": "¿Hay un vuelo directo o tengo que hacer escala?",
+        "ar": "هل توجد رحلة مباشرة أم يجب أن أتوقف في مطار آخر؟"
+      },
+      "tr": {
+        "ar": "hal tūjad riḥla mubāshira am yajibu an atawaqqaf fī maṭār ākhar?"
+      }
+    },
+    {
+      "id": "s15",
+      "text": {
+        "en": "Would you like a one-way or a return ticket?",
+        "fr": "Souhaitez-vous un aller simple ou un aller-retour ?",
+        "es": "¿Desea un billete de solo ida o de ida y vuelta?",
+        "ar": "هل تريد تذكرة ذهاب فقط أم ذهاب وإياب؟"
+      },
+      "tr": {
+        "ar": "hal turīdu tadhkirat dhahāb faqaṭ am dhahāb wa iyāb?"
+      }
+    },
+    {
+      "id": "s16",
+      "text": {
+        "en": "Please put your bag and your coat in the tray.",
+        "fr": "Veuillez mettre votre sac et votre manteau dans le bac.",
+        "es": "Por favor, ponga su bolso y su abrigo en la bandeja.",
+        "ar": "من فضلك ضع حقيبتك ومعطفك في الصندوق."
+      },
+      "tr": {
+        "ar": "min faḍlik ḍaʿ ḥaqībataka wa miʿṭafaka fī aṣ-ṣundūq."
+      }
+    },
+    {
+      "id": "s17",
+      "text": {
+        "en": "Do you have anything to declare at customs?",
+        "fr": "Avez-vous quelque chose à déclarer à la douane ?",
+        "es": "¿Tiene algo que declarar en la aduana?",
+        "ar": "هل لديك شيء تصرح به في الجمارك؟"
+      },
+      "tr": {
+        "ar": "hal ladayka shayʾ tuṣarriḥu bihi fī al-jamārik?"
+      }
+    },
+    {
+      "id": "s18",
+      "text": {
+        "en": "I am here on holiday for two weeks.",
+        "fr": "Je suis ici en vacances pour deux semaines.",
+        "es": "Estoy aquí de vacaciones durante dos semanas.",
+        "ar": "أنا هنا في عطلة لمدة أسبوعين."
+      },
+      "tr": {
+        "ar": "anā hunā fī ʿuṭla li-muddat usbūʿayn."
+      }
+    },
+    {
+      "id": "s19",
+      "text": {
+        "en": "My plane landed late, so I was the last at the baggage claim.",
+        "fr": "Mon avion a atterri tard, donc j'étais le dernier au retrait des bagages.",
+        "es": "Mi avión aterrizó tarde, así que fui el último en la recogida de equipaje.",
+        "ar": "هبطت طائرتي متأخرة، لذلك كنت آخر من وصل إلى استلام الأمتعة."
+      },
+      "tr": {
+        "ar": "habaṭat ṭāʾiratī mutaʾakhkhira, li-dhālika kuntu ākhira man waṣala ilā istilām al-amtiʿa."
+      }
+    },
+    {
+      "id": "s20",
+      "text": {
+        "en": "My suitcase did not arrive; I want to report lost luggage.",
+        "fr": "Ma valise n'est pas arrivée ; je veux déclarer un bagage perdu.",
+        "es": "Mi maleta no ha llegado; quiero denunciar una pérdida de equipaje.",
+        "ar": "لم تصل حقيبتي، وأريد الإبلاغ عن أمتعة مفقودة."
+      },
+      "tr": {
+        "ar": "lam taṣil ḥaqībatī, wa urīdu al-iblāgh ʿan amtiʿa mafqūda."
+      }
+    },
+    {
+      "id": "s21",
+      "text": {
+        "en": "Could you tell me where I can change some money?",
+        "fr": "Pourriez-vous me dire où je peux changer de l'argent ?",
+        "es": "¿Podría decirme dónde puedo cambiar dinero?",
+        "ar": "هل يمكنك أن تخبرني أين أستطيع صرف بعض المال؟"
+      },
+      "tr": {
+        "ar": "hal yumkinuka an tukhbiranī ayna astaṭīʿu ṣarf baʿḍ al-māl?"
+      }
+    },
+    {
+      "id": "s22",
+      "text": {
+        "en": "You need a visa to enter this country.",
+        "fr": "Il faut un visa pour entrer dans ce pays.",
+        "es": "Se necesita un visado para entrar en este país.",
+        "ar": "تحتاج إلى تأشيرة لدخول هذا البلد."
+      },
+      "tr": {
+        "ar": "taḥtāju ilā taʾshīra li-dukhūl hādhā al-balad."
+      }
+    },
+    {
+      "id": "s23",
+      "text": {
+        "en": "How long does the journey from the airport to the city take?",
+        "fr": "Combien de temps dure le trajet entre l'aéroport et la ville ?",
+        "es": "¿Cuánto dura el viaje del aeropuerto a la ciudad?",
+        "ar": "كم تستغرق الرحلة من المطار إلى المدينة؟"
+      },
+      "tr": {
+        "ar": "kam tastaghriqu ar-riḥla min al-maṭār ilā al-madīna?"
+      }
+    },
+    {
+      "id": "s24",
+      "text": {
+        "en": "It is faster to take a taxi than the bus.",
+        "fr": "C'est plus rapide de prendre un taxi que le bus.",
+        "es": "Es más rápido coger un taxi que el autobús.",
+        "ar": "الذهاب بسيارة أجرة أسرع من الحافلة."
+      },
+      "tr": {
+        "ar": "adh-dhahāb bi-sayyārat ujra asraʿu min al-ḥāfila."
+      }
+    },
+    {
+      "id": "s25",
+      "text": {
+        "en": "The next train leaves from platform 3.",
+        "fr": "Le prochain train part du quai 3.",
+        "es": "El próximo tren sale del andén 3.",
+        "ar": "يغادر القطار التالي من الرصيف 3."
+      },
+      "tr": {
+        "ar": "yughādiru al-qiṭār at-tālī min ar-raṣīf 3."
+      }
+    },
+    {
+      "id": "s26",
+      "text": {
+        "en": "Let me check the timetable on my phone.",
+        "fr": "Laissez-moi vérifier l'horaire sur mon téléphone.",
+        "es": "Déjeme consultar el horario en mi teléfono.",
+        "ar": "دعني أتحقق من جدول المواعيد على هاتفي."
+      },
+      "tr": {
+        "ar": "daʿnī ataḥaqqaq min jadwal al-mawāʿīd ʿalā hātifī."
+      }
+    },
+    {
+      "id": "s27",
+      "text": {
+        "en": "I had to run because the gate was closing.",
+        "fr": "J'ai dû courir parce que la porte allait fermer.",
+        "es": "Tuve que correr porque la puerta estaba a punto de cerrarse.",
+        "ar": "اضطررت إلى الركض لأن البوابة كانت على وشك الإغلاق."
+      },
+      "tr": {
+        "ar": "iḍṭarartu ilā ar-rakḍ li-anna al-bawwāba kānat ʿalā washak al-ighlāq."
+      }
+    },
+    {
+      "id": "s28",
+      "text": {
+        "en": "Fortunately, I reached my seat just before take-off.",
+        "fr": "Heureusement, j'ai atteint ma place juste avant le décollage.",
+        "es": "Por suerte, llegué a mi asiento justo antes del despegue.",
+        "ar": "لحسن الحظ وصلت إلى مقعدي قبل الإقلاع مباشرة."
+      },
+      "tr": {
+        "ar": "li-ḥusn al-ḥaẓẓ waṣaltu ilā maqʿadī qabl al-iqlāʿ mubāsharatan."
+      }
+    },
+    {
+      "id": "s29",
+      "text": {
+        "en": "The pilot said that we would land in forty minutes.",
+        "fr": "Le pilote a dit que nous atterririons dans quarante minutes.",
+        "es": "El piloto dijo que aterrizaríamos en cuarenta minutos.",
+        "ar": "قال الطيار إننا سنهبط بعد أربعين دقيقة."
+      },
+      "tr": {
+        "ar": "qāla aṭ-ṭayyār innanā sanahbiṭu baʿda arbaʿīna daqīqa."
+      }
+    },
+    {
+      "id": "s30",
+      "text": {
+        "en": "Welcome to Lisbon! Did you have a good flight?",
+        "fr": "Bienvenue à Lisbonne ! Vous avez fait bon voyage ?",
+        "es": "¡Bienvenido a Lisboa! ¿Ha tenido buen vuelo?",
+        "ar": "مرحبا بك في لشبونة! هل كانت رحلتك جيدة؟"
+      },
+      "tr": {
+        "ar": "marḥaban bika fī Lishbūna! hal kānat riḥlatuka jayyida?"
+      }
+    },
+    {
+      "id": "s31",
+      "text": {
+        "en": "Yes, it was long, but very comfortable.",
+        "fr": "Oui, il était long, mais très confortable.",
+        "es": "Sí, fue largo, pero muy cómodo.",
+        "ar": "نعم، كانت طويلة لكنها مريحة جدا."
+      },
+      "tr": {
+        "ar": "naʿam, kānat ṭawīla lākinnahā murīḥa jiddan."
+      }
+    }
+  ],
+  "dialogue": [
+    "s02",
+    "s04",
+    "s03",
+    "s06",
+    "s07",
+    "s08"
+  ]
+}
