@@ -52,7 +52,7 @@ Until Firestore is seeded, the app reads the same content from `content/build` o
 | Key | Default | Meaning |
 | --- | --- | --- |
 | `contentSource` | `"auto"` | `auto` tries Firestore then the static copy; `firestore` or `static` force one |
-| `audioBase` | `""` | address of pre-generated voice clips (Phase 3); empty uses the device voice |
+| `audioBase` | `"audio"` | folder of pre-generated voice clips (`audio/<lang>/<hash>.mp3`, made by `python3 tools/gen-audio.py`); a missing clip falls back to the device voice |
 | `speech` | `true` | allow the device voice |
 | `ai` | `false` | AI extras (Phase 4) |
 

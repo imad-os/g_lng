@@ -1,7 +1,7 @@
 // Global weekly league over Firestore REST. Each player writes only their own document league/w<week>/players/<id>
 // ({name, xp}); anyone can read the top list. Scores are not verified (there is no login), the rules only cap the growth.
-import { firebaseConfig } from './firebase-config.js?v=2.4.0';
-import { decodeFields } from './firestore.js?v=2.4.0';
+import { firebaseConfig } from './firebase-config.js?v=2.5.0';
+import { decodeFields } from './firestore.js?v=2.5.0';
 
 const root = `https://firestore.googleapis.com/v1/projects/${encodeURIComponent(firebaseConfig.projectId)}/databases/(default)/documents/`;
 const key = '?key=' + encodeURIComponent(firebaseConfig.apiKey);
@@ -14,7 +14,8 @@ export function ensureIdentity(me, profileName) {
     (self.crypto || window.crypto).getRandomValues(a);
     me.uid = Array.from(a, (b) => b.toString(36).padStart(2, '0')).join('').slice(0, 20);
   }
-  if (!me.name) me.name = cleanName(profileName) || `Learner ${me.uid.slice(0, 4)}`;
+  // The name is always the MyPC profile name (it follows renames there); no own name editing.
+  me.name = cleanName(profileName) || `Learner ${me.uid.slice(0, 4)}`;
 }
 
 export const cleanName = (s) => String(s || '').replace(/[\u0000-\u001f<>]/g, '').trim().slice(0, 20);

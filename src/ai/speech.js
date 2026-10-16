@@ -1,7 +1,7 @@
 // Optional external voices: text-to-speech from a provider, speech-to-text from the browser or a provider.
 // Every failure is quiet (false / '') so the caller can fall back to the device voice; keys are never logged.
-import { aiConfig } from './config.js?v=2.4.0';
-import { t } from '../platform/i18n.js?v=2.4.0';
+import { aiConfig } from './config.js?v=2.5.0';
+import { t } from '../platform/i18n.js?v=2.5.0';
 
 const NO_EXTERNAL = new Set(['', 'zgh', 'tzm', 'ber']);   // Tamazight has no provider voice: device voice instead
 const baseLang = (code) => String(code || '').slice(0, 2).toLowerCase();

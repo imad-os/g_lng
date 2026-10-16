@@ -1,11 +1,12 @@
 // Language model client: OpenAI-compatible chat (NVIDIA NIM, OpenAI) and Gemini generateContent.
 // Error messages come from t('ai.err*') and never contain the key.
-import { aiConfig } from './config.js?v=2.4.0';
-import { t } from '../platform/i18n.js?v=2.4.0';
+import { aiConfig } from './config.js?v=2.5.0';
+import { t } from '../platform/i18n.js?v=2.5.0';
 
 const TIMEOUT_MS = 30000;
 
-function build(cfg, { system, user, json }) {
+function build(cfg, { system, user, json, messages }) {
+  const turns = messages && messages.length ? messages : [{ role: 'user', content: user }];
   const { provider, model, temperature, key } = cfg.llm;
   const base = String(cfg.llm.endpoint || '').replace(/\/+$/, '');
   const temp = Number.isFinite(+temperature) ? +temperature : 0.4;
@@ -15,7 +16,7 @@ function build(cfg, { system, user, json }) {
       headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
       body: {
         systemInstruction: { parts: [{ text: system || '' }] },
-        contents: [{ role: 'user', parts: [{ text: user }] }],
+        contents: turns.map((m) => ({ role: m.role === 'assistant' ? 'model' : 'user', parts: [{ text: m.content }] })),
         generationConfig: { temperature: temp, ...(json ? { responseMimeType: 'application/json' } : {}) },
       },
     };
@@ -25,7 +26,7 @@ function build(cfg, { system, user, json }) {
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
     body: {
       model, temperature: temp, max_tokens: 1500,
-      messages: [...(system ? [{ role: 'system', content: system }] : []), { role: 'user', content: user }],
+      messages: [...(system ? [{ role: 'system', content: system }] : []), ...turns],
       ...(json && provider === 'openai' ? { response_format: { type: 'json_object' } } : {}),
     },
   };
@@ -61,12 +62,13 @@ async function send(req, outer) {
   }
 }
 
-export async function chat({ system, user, json = false, signal } = {}) {
+// `messages` (optional) is the conversation so far: [{role: 'user' | 'assistant', content}]; otherwise `user` is the only turn.
+export async function chat({ system, user, messages, json = false, signal } = {}) {
   const cfg = aiConfig();
   if (cfg.llm.provider === 'offline') throw new Error(t('ai.errOffline'));
   if (!String(cfg.llm.key || '').trim()) throw new Error(t('ai.errNoKey'));
   if (!cfg.llm.endpoint || !cfg.llm.model) throw new Error(t('ai.errNoEndpoint'));
-  const req = build(cfg, { system, user, json });
+  const req = build(cfg, { system, user, json, messages });
   let res = await send(req, signal);
   if (res.status === 429 || res.status >= 500) {          // one retry for busy servers
     await new Promise((r) => setTimeout(r, 1200));

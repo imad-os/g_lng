@@ -1,17 +1,17 @@
 // 60-second Blitz: as many quick questions as you can, +2 XP per right answer, from words you already met.
-import { h, focusable, clear } from '../../platform/dom.js?v=2.4.0';
-import { t } from '../../platform/i18n.js?v=2.4.0';
-import { focusFirst, setFocus } from '../../platform/input.js?v=2.4.0';
-import { say, sfx, stopVoice } from '../../platform/audio.js?v=2.4.0';
-import { getLexicon, getLevel } from '../../data/content-repo.js?v=2.4.0';
-import { course as progressOf, getMe, saveCourse } from '../../data/progress-store.js?v=2.4.0';
-import { record } from '../../learning/srs.js?v=2.4.0';
-import { submitLeague } from '../../data/league.js?v=2.4.0';
-import { addXp } from '../../learning/rewards.js?v=2.4.0';
-import { settleQuests } from '../../learning/quests.js?v=2.4.0';
-import { mascot } from '../mascot.js?v=2.4.0';
-import pick from '../exercises/pick.js?v=2.4.0';
-import { shuffle } from '../exercises/common.js?v=2.4.0';
+import { h, focusable, clear } from '../../platform/dom.js?v=2.5.0';
+import { t } from '../../platform/i18n.js?v=2.5.0';
+import { focusFirst, setFocus } from '../../platform/input.js?v=2.5.0';
+import { say, sfx, stopVoice } from '../../platform/audio.js?v=2.5.0';
+import { getLexicon, getLevel } from '../../data/content-repo.js?v=2.5.0';
+import { course as progressOf, getMe, saveCourse } from '../../data/progress-store.js?v=2.5.0';
+import { record } from '../../learning/srs.js?v=2.5.0';
+import { submitLeague } from '../../data/league.js?v=2.5.0';
+import { addXp } from '../../learning/rewards.js?v=2.5.0';
+import { settleQuests } from '../../learning/quests.js?v=2.5.0';
+import { mascot } from '../mascot.js?v=2.5.0';
+import pick from '../exercises/pick.js?v=2.5.0';
+import { shuffle } from '../exercises/common.js?v=2.5.0';
 
 const SECONDS = 60;
 

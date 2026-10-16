@@ -1,16 +1,16 @@
 // Home: left rail (coach, blitz, quests, review), the winding course path in the middle, right rail (league, AI).
-import { h, focusable, clear, ICONS } from '../../platform/dom.js?v=2.4.0';
-import { t, pickLang } from '../../platform/i18n.js?v=2.4.0';
-import { focusFirst, setFocus } from '../../platform/input.js?v=2.4.0';
-import { getLevel } from '../../data/content-repo.js?v=2.4.0';
-import { course as progressOf, getMe, saveCourse, saveMe } from '../../data/progress-store.js?v=2.4.0';
-import { lessonState, levelComplete, nextLesson } from '../../learning/path.js?v=2.4.0';
-import { dueKeys } from '../../learning/srs.js?v=2.4.0';
-import { questProgress } from '../../learning/quests.js?v=2.4.0';
-import { setSfx, sfx } from '../../platform/audio.js?v=2.4.0';
-import { openDialog, toast, starsRow } from '../components.js?v=2.4.0';
-import { topPlayers, submitLeague, cleanName } from '../../data/league.js?v=2.4.0';
-import { mascot } from '../mascot.js?v=2.4.0';
+import { h, focusable, clear, ICONS } from '../../platform/dom.js?v=2.5.0';
+import { t, pickLang } from '../../platform/i18n.js?v=2.5.0';
+import { focusFirst, setFocus } from '../../platform/input.js?v=2.5.0';
+import { getLevel } from '../../data/content-repo.js?v=2.5.0';
+import { course as progressOf, getMe, saveCourse, saveMe } from '../../data/progress-store.js?v=2.5.0';
+import { lessonState, levelComplete, nextLesson } from '../../learning/path.js?v=2.5.0';
+import { dueKeys } from '../../learning/srs.js?v=2.5.0';
+import { questProgress } from '../../learning/quests.js?v=2.5.0';
+import { setSfx, sfx } from '../../platform/audio.js?v=2.5.0';
+import { openDialog, toast, starsRow } from '../components.js?v=2.5.0';
+import { topPlayers, submitLeague } from '../../data/league.js?v=2.5.0';
+import { mascot } from '../mascot.js?v=2.5.0';
 
 const WIGGLE = [0, 56, 88, 56, 0, -56, -88, -56];
 const THEMES = ['food', 'travel', 'family', 'work', 'health', 'shopping'];
@@ -58,11 +58,11 @@ export function homeScreen(app) {
   // --- right rail --------------------------------------------------------
   const aiCard = h('div', { class: 'rail-card' }, h('h3', null, '✨ ', t('aiTitle')),
     focusable(h('button', { class: 'btn blue wide-rail' }, t('aiLesson')), () => aiGate(askTheme)),
+    focusable(h('button', { class: 'btn wide-rail' }, '💬 ', t('chatTitle')), () => aiGate(() => app.go.chat())),
     focusable(h('button', { class: 'btn wide-rail' }, '📖 ', t('explainUnit')), () => aiGate(explainUnit)));
   const leagueList = h('div', { class: 'league-list' }, h('div', { class: 'small muted' }, '…'));
-  const renameBtn = focusable(h('button', { class: 'btn small-btn wide-rail' }, t('leagueRename')), renameDialog);
   const leagueCard = h('div', { class: 'rail-card league-card' }, h('h3', null, '🏆 ', t('league')), leagueList,
-    h('div', { class: 'small muted' }, t('leagueResets')), renameBtn);
+    h('div', { class: 'small muted' }, t('leagueResets')));
   const right = h('aside', { class: 'rail right' }, leagueCard, aiCard);
 
   async function loadLeague() {
@@ -77,17 +77,6 @@ export function homeScreen(app) {
     } catch (e) { clear(leagueList); leagueList.appendChild(h('div', { class: 'small muted' }, t('leagueOffline'))); }
   }
   loadLeague();
-
-  function renameDialog() {
-    const input = h('input', { class: 'type-input', type: 'text', maxlength: '20', autocomplete: 'off', value: me.name, placeholder: t('leagueNameHint') });
-    input.onkeydown = (e) => { e.stopPropagation(); if (e.key === 'Enter') { e.preventDefault(); input.blur(); } };
-    const field = focusable(h('div', { class: 'type-field' }, input), () => input.focus());
-    openDialog({ title: t('leagueRename'), body: field, buttons: [{ label: t('cancel') }, { label: t('leagueSave'), kind: 'primary', onSelect: () => {
-      const n = cleanName(input.value);
-      if (n) { me.name = n; saveMe(); loadLeague(); }
-    } }] });
-    setFocus(field);
-  }
 
   function aiGate(fn) {
     if (ai && ai.ready()) { fn(); return; }

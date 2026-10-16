@@ -1,6 +1,7 @@
 // Builds the Firestore documents from content/src into content/build.
 // Each file in content/build is one Firestore document at the same path (courses/fr/lessons/b1-u01-l1.json).
 //   node tools/build-content.mjs
+import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { SRC, BUILD, UI_LANGS, readJson, writeJson, tokenize, rng, shuffle, hash } from './lib/common.mjs';
@@ -71,7 +72,7 @@ function buildUnit(L, level, unit) {
   const entry = (kind, src) => {
     const key = `${kind}.${src.id}`;
     if (!vocab[key]) {
-      const v = { k: kind, t: src.text[L], g: {}, a: `${L}/${unitId}/${kind}-${src.id}` };
+      const v = { k: kind, t: src.text[L], g: {}, a: `${L}/${createHash('sha1').update(src.text[L]).digest('hex').slice(0, 12)}` };
       if (src.tr && src.tr[L]) v.tr = src.tr[L];
       for (const g of UI_LANGS) if (src.text[g]) v.g[g] = src.text[g];
       vocab[key] = v;

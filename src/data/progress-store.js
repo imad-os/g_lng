@@ -4,7 +4,7 @@
 //        w:<lang>  spaced repetition per word: "unit|word" -> [box, dueDay, right, wrong, lastDay]
 //        k:<lang>  accuracy per exercise type: type -> [attempts, correct]
 //        x:<lang>  last mistakes: [exerciseId, day, picked]
-import { today } from '../learning/day.js?v=2.4.0';
+import { today } from '../learning/day.js?v=2.5.0';
 
 const LIMIT = 60 * 1024;         // stay under My PC's 64 KB
 const MAX_WORDS = 700;           // per course; the oldest mastered words go first when space runs out

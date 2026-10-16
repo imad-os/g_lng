@@ -1,8 +1,8 @@
 // What the model is asked to do: explain an exercise or a unit, or invent a small custom lesson.
 // The model is never trusted: its JSON is parsed and checked strictly before a lesson is built from it.
-import { chat } from './client.js?v=2.4.0';
-import { t, pickLang } from '../platform/i18n.js?v=2.4.0';
-import { tokenize } from '../learning/text.js?v=2.4.0';
+import { chat } from './client.js?v=2.5.0';
+import { t, pickLang } from '../platform/i18n.js?v=2.5.0';
+import { tokenize } from '../learning/text.js?v=2.5.0';
 
 const UI_NAMES = { en: 'English', fr: 'French', es: 'Spanish', ar: 'Arabic' };
 const MAX_LEN = 90;
@@ -127,4 +127,22 @@ export async function customLesson({ course, from, theme, count = LESSON_SIZE, s
   });
   const words = validateWords(parseModelJson(reply), { from, course, count: wanted });
   return buildLesson(words, { from, theme: subject });
+}
+
+// ---- Chat practice ---------------------------------------------------------------------------
+
+export function chatSystem({ course, from, level }) {
+  return `You are a friendly conversation partner helping a ${UI_NAMES[from] || 'English'} speaker practise ${courseName(course)} at level ${level || 'B1'} `
+    + `(B = beginner, M = middle, A = advanced; the digit is the step inside it). Keep every turn short (1 to 2 sentences) and use only vocabulary of that level. `
+    + 'Ask one simple question at a time and keep the talk going. '
+    + 'If the learner makes a mistake, start your reply with one line "Fix: <corrected sentence>" and nothing more on that line, then continue the talk. '
+    + `If the learner writes in ${UI_NAMES[from] || 'English'}, gently answer in the target language. `
+    + (needsTr(course) ? 'After the target-language sentence add the Latin transliteration in square brackets. ' : '')
+    + `Reply after a blank line with a short translation in ${UI_NAMES[from] || 'English'} in round brackets. Plain text only, no markdown.`;
+}
+
+// history: [{role:'user'|'assistant', content}] (the first turn is the model's opening when history is empty).
+export async function chatTurn({ course, from, level, history, signal }) {
+  const messages = history.length ? history : [{ role: 'user', content: 'Start the conversation with a greeting and one easy question.' }];
+  return chat({ system: chatSystem({ course, from, level }), messages, signal });
 }

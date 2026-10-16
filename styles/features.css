@@ -101,3 +101,13 @@
 .league-row .rk { width: 22px; opacity: .7; }
 .league-row .nm { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .league-row .xp { opacity: .85; }
+
+/* Chat practice */
+.chat { display: flex; flex-direction: column; height: 100%; padding: 14px 40px; gap: 10px; }
+.chat-head { display: flex; align-items: center; gap: 16px; }
+.chat-log { flex: 1; overflow: hidden; display: flex; flex-direction: column; gap: 10px; justify-content: flex-end; }
+.chat .bubble { max-width: 78%; padding: 10px 16px; border-radius: 18px; font-size: 24px; white-space: pre-wrap; }
+.chat .bubble.bot { align-self: flex-start; background: var(--bg-2); }
+.chat .bubble.me { align-self: flex-end; background: var(--blue, #1cb0f6); color: #fff; }
+.chat-foot { display: flex; gap: 10px; align-items: center; }
+.chat-foot .grow { flex: 1; }
