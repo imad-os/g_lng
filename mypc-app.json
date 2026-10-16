@@ -1,0 +1,11 @@
+{
+  "mypc": 1,
+  "id": "Dualinguage",
+  "name": "Dualinguage",
+  "description": "Live heart-rate telemetry dashboard.",
+  "type": "app",
+  "entry": "index.html",
+  "icon": "icon.svg",
+  "version": "1.0.10",
+  "config": {}
+}
