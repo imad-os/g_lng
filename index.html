@@ -1,0 +1,2995 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>PolyglotTV — Arcade Language Adventure</title>
+  <link rel="icon" href="https://placehold.co/256x256/58cc02/ffffff?text=P" type="image/png" />
+  <!-- MANDATORY: Load My PC SDK before application code -->
+  <script src="https://imad-os.github.io/g/sdk/mypc-sdk.js"></script>
+  <style>
+    :root {
+      --bg-void: #0b1219;
+      --bg-main: #111b24;
+      --bg-card: #182634;
+      --bg-elevated: #213447;
+      --bg-hover: #294057;
+      --border-subtle: #2e4760;
+      --border-lip: #0d161f;
+      --text-white: #ffffff;
+      --text-soft: #b0c4d8;
+      --text-muted: #6e8ba6;
+
+      /* Duolingo-inspired Arcade Palette */
+      --duo-green: #58cc02;
+      --duo-green-dark: #46a302;
+      --duo-green-glow: rgba(88, 204, 2, 0.25);
+      --duo-blue: #1cb0f6;
+      --duo-blue-dark: #1899d6;
+      --duo-gold: #ffc800;
+      --duo-gold-dark: #cd9b00;
+      --duo-orange: #ff9600;
+      --duo-orange-dark: #cc7800;
+      --duo-red: #ff4b4b;
+      --duo-red-dark: #ea2b2b;
+      --duo-purple: #ce82ff;
+      --duo-purple-dark: #a552db;
+      --focus-ring: #ffc800;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: var(--bg-void);
+      color: var(--text-white);
+      font-family: "Nunito", "Segoe UI", system-ui, -apple-system, "Noto Sans Arabic", "Noto Sans Tifinagh", sans-serif;
+      overflow: hidden;
+    }
+
+    @keyframes floatBob {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+
+    @keyframes pulseScale {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.06); }
+    }
+
+    @keyframes shakeError {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-10px); }
+      40%, 80% { transform: translateX(10px); }
+    }
+
+    @keyframes popUpXp {
+      0% { opacity: 1; transform: translateY(0) scale(0.8); }
+      100% { opacity: 0; transform: translateY(-48px) scale(1.25); }
+    }
+
+    .focusable {
+      transition: transform 0.12s ease, border-color 0.12s ease, background-color 0.12s ease;
+      position: relative;
+    }
+
+    .focusable:focus,
+    .focusable.gp-focus {
+      outline: 4px solid var(--focus-ring) !important;
+      outline-offset: 3px;
+      transform: translateY(-2px);
+      z-index: 20;
+    }
+
+    .focusable:active {
+      transform: translateY(3px) !important;
+    }
+
+    html[dir="rtl"] .topbar,
+    html[dir="rtl"] .workspace-shell,
+    html[dir="rtl"] .lesson-top,
+    html[dir="rtl"] .coach-row,
+    html[dir="rtl"] .lesson-bottom-dock,
+    html[dir="rtl"] .hud-bar {
+      direction: rtl;
+    }
+
+    .app-frame {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      max-width: 1920px;
+      margin: 0 auto;
+      background: var(--bg-main);
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 28px;
+      background: var(--bg-card);
+      border-bottom: 4px solid var(--border-subtle);
+      gap: 14px;
+      z-index: 30;
+    }
+
+    .brand-cluster {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+    }
+
+    .mascot-mini {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: var(--duo-green);
+      border-bottom: 4px solid var(--duo-green-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand-name {
+      font-size: 1.65rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--duo-green);
+      text-shadow: 0 2px 0 var(--border-lip);
+    }
+
+    .brand-tag {
+      font-size: 0.75rem;
+      font-weight: 800;
+      background: var(--duo-blue);
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-top: 2px;
+    }
+
+    .course-switcher-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .pill-btn {
+      background: var(--bg-elevated);
+      color: var(--text-white);
+      border: 2px solid var(--border-subtle);
+      border-bottom: 5px solid var(--border-lip);
+      border-radius: 16px;
+      padding: 8px 15px;
+      font-size: 0.92rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pill-btn:hover {
+      background: var(--bg-hover);
+    }
+
+    .pill-btn .sub {
+      color: var(--text-soft);
+      font-weight: 700;
+      font-size: 0.82rem;
+    }
+
+    .pill-btn .val {
+      color: var(--duo-gold);
+      font-weight: 900;
+    }
+
+    .gamification-cluster {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .stat-chip {
+      background: var(--bg-elevated);
+      border: 2px solid var(--border-subtle);
+      border-bottom: 4px solid var(--border-lip);
+      border-radius: 16px;
+      padding: 7px 14px;
+      font-weight: 900;
+      font-size: 1.02rem;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .stat-chip.flame { color: var(--duo-orange); }
+    .stat-chip.gems { color: var(--duo-blue); }
+    .stat-chip.xp { color: var(--duo-gold); }
+    .stat-chip.hearts { color: var(--duo-red); }
+
+    .btn-3d {
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 13px 24px;
+      border-radius: 16px;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #ffffff;
+    }
+
+    .btn-green {
+      background: var(--duo-green);
+      border-bottom: 5px solid var(--duo-green-dark);
+    }
+
+    .btn-blue {
+      background: var(--duo-blue);
+      border-bottom: 5px solid var(--duo-blue-dark);
+    }
+
+    .btn-gold {
+      background: var(--duo-gold);
+      color: #111b24;
+      border-bottom: 5px solid var(--duo-gold-dark);
+    }
+
+    .btn-purple {
+      background: var(--duo-purple);
+      border-bottom: 5px solid var(--duo-purple-dark);
+    }
+
+    .btn-red {
+      background: var(--duo-red);
+      border-bottom: 5px solid var(--duo-red-dark);
+    }
+
+    .btn-slate {
+      background: var(--bg-elevated);
+      color: var(--text-white);
+      border: 2px solid var(--border-subtle);
+      border-bottom: 5px solid var(--border-lip);
+    }
+
+    .main-stage {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .screen {
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    .screen.active {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .workspace-shell {
+      display: grid;
+      grid-template-columns: 340px 1fr 370px;
+      gap: 24px;
+      height: 100%;
+      padding: 20px 28px;
+      overflow: hidden;
+    }
+
+    @media (max-width: 1280px) {
+      .workspace-shell {
+        grid-template-columns: 1fr 340px;
+      }
+      .left-rail {
+        display: none;
+      }
+    }
+
+    .mobile-bottom-nav {
+      display: none;
+      background: var(--bg-card);
+      border-top: 3px solid var(--border-subtle);
+      padding: 6px 10px env(safe-area-inset-bottom, 6px) 10px;
+      justify-content: space-around;
+      align-items: center;
+      gap: 6px;
+      z-index: 40;
+      flex-shrink: 0;
+    }
+
+    .mob-nav-btn {
+      flex: 1;
+      min-height: 52px;
+      background: transparent;
+      border: 2px solid transparent;
+      border-radius: 14px;
+      color: var(--text-soft);
+      font-family: inherit;
+      font-size: 0.76rem;
+      font-weight: 900;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      cursor: pointer;
+    }
+
+    .mob-nav-btn .mob-icon {
+      font-size: 1.25rem;
+      line-height: 1;
+    }
+
+    .mob-nav-btn.active {
+      background: rgba(88, 204, 2, 0.16);
+      border-color: var(--duo-green);
+      color: var(--text-white);
+    }
+
+    body.is-mobile .app-frame,
+    @media (max-width: 820px) {
+      .app-frame {
+        height: 100dvh;
+      }
+    }
+
+    body.is-mobile .topbar,
+    @media (max-width: 820px) {
+      .topbar {
+        flex-wrap: wrap;
+        padding: 8px 12px;
+        gap: 8px;
+      }
+
+      .brand-cluster {
+        gap: 8px;
+      }
+
+      .mascot-mini {
+        width: 38px;
+        height: 38px;
+        border-radius: 12px;
+      }
+
+      .brand-name {
+        font-size: 1.25rem;
+      }
+
+      .brand-tag {
+        font-size: 0.65rem;
+        padding: 2px 6px;
+      }
+
+      .gamification-cluster {
+        order: 2;
+        margin-inline-start: auto;
+        gap: 6px;
+      }
+
+      .stat-chip {
+        padding: 5px 9px;
+        font-size: 0.84rem;
+        border-radius: 12px;
+      }
+
+      #btn-admin {
+        display: none;
+      }
+
+      .course-switcher-bar {
+        order: 3;
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 2px;
+        gap: 6px;
+        scrollbar-width: none;
+      }
+
+      .course-switcher-bar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .pill-btn {
+        padding: 6px 10px;
+        font-size: 0.78rem;
+        border-radius: 12px;
+        flex-shrink: 0;
+      }
+
+      .workspace-shell {
+        grid-template-columns: 1fr;
+        padding: 12px 14px;
+        gap: 14px;
+      }
+
+      .left-rail,
+      .center-map-column,
+      .right-rail {
+        display: none;
+        height: 100%;
+        overflow-y: auto;
+      }
+
+      .workspace-shell[data-mobile-tab="path"] .center-map-column {
+        display: flex;
+      }
+
+      .workspace-shell[data-mobile-tab="quests"] .left-rail {
+        display: flex;
+      }
+
+      .workspace-shell[data-mobile-tab="league"] .right-rail {
+        display: flex;
+      }
+
+      .unit-header-banner {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 14px 16px;
+        border-radius: 18px;
+        gap: 10px;
+      }
+
+      .unit-banner-text h2 {
+        font-size: 1.2rem;
+      }
+
+      .unit-banner-text p {
+        font-size: 0.84rem;
+      }
+
+      .path-step-wrapper:nth-child(4n+2) { transform: translateX(34px); }
+      .path-step-wrapper:nth-child(4n+4) { transform: translateX(-34px); }
+
+      .orb-node {
+        width: 82px;
+        height: 76px;
+        font-size: 1.75rem;
+      }
+
+      .orb-node.boss {
+        width: 94px;
+        height: 86px;
+      }
+
+      .lesson-arena {
+        padding: 10px 14px;
+        gap: 10px;
+      }
+
+      .exercise-center-stage {
+        overflow-y: auto;
+        justify-content: flex-start;
+        padding: 4px 0;
+        gap: 12px;
+      }
+
+      .ex-headline {
+        font-size: 1.25rem;
+      }
+
+      .coach-row {
+        padding: 12px 14px;
+        gap: 12px;
+        border-radius: 18px;
+      }
+
+      #lesson-mascot-slot svg {
+        width: 44px;
+        height: 44px;
+      }
+
+      .audio-trigger {
+        width: 46px;
+        height: 46px;
+        font-size: 1.2rem;
+      }
+
+      .audio-trigger.slow {
+        width: 42px;
+        height: 46px;
+      }
+
+      .prompt-main-text {
+        font-size: 1.15rem;
+      }
+
+      .mc-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .mc-card {
+        padding: 14px 16px;
+        font-size: 1.05rem;
+        min-height: 52px;
+      }
+
+      .pairs-columns {
+        gap: 10px;
+      }
+
+      .tile-chip {
+        padding: 9px 14px;
+        font-size: 1.05rem;
+      }
+
+      .lesson-bottom-dock {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px 14px;
+        gap: 10px;
+        border-radius: 18px;
+      }
+
+      .lesson-bottom-dock > div:last-child {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+      }
+
+      #btn-check-main {
+        flex: 1;
+      }
+
+      .victory-card {
+        padding: 22px 16px;
+        margin: 12px;
+        width: calc(100% - 24px);
+      }
+
+      .victory-stats-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .admin-studio {
+        padding: 14px;
+      }
+
+      .admin-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .hud-bar {
+        display: none;
+      }
+
+      .mobile-bottom-nav {
+        display: flex;
+      }
+
+      body.in-lesson .mobile-bottom-nav {
+        display: none;
+      }
+    }
+
+    .left-rail, .right-rail {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      overflow-y: auto;
+      padding-bottom: 12px;
+    }
+
+    .rail-card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-subtle);
+      border-bottom: 6px solid var(--border-lip);
+      border-radius: 22px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .rail-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+
+    .coach-showcase {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--bg-elevated);
+      padding: 14px;
+      border-radius: 18px;
+      border: 2px solid var(--border-subtle);
+    }
+
+    .coach-bubble {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-soft);
+      line-height: 1.4;
+    }
+
+    .quest-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background: var(--bg-elevated);
+      padding: 12px 14px;
+      border-radius: 16px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .quest-top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .quest-bar-bg {
+      width: 100%;
+      height: 12px;
+      background: var(--bg-void);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+
+    .quest-bar-fill {
+      height: 100%;
+      background: var(--duo-gold);
+      border-radius: 99px;
+      transition: width 0.3s ease;
+    }
+
+    .center-map-column {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      height: 100%;
+      overflow-y: auto;
+      padding: 0 12px 28px 12px;
+      scroll-behavior: smooth;
+    }
+
+    .unit-header-banner {
+      background: linear-gradient(135deg, #58cc02 0%, #2ea800 100%);
+      border-bottom: 6px solid var(--duo-green-dark);
+      border-radius: 24px;
+      padding: 20px 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-shrink: 0;
+    }
+
+    .unit-header-banner.cefr-A2 { background: linear-gradient(135deg, #1cb0f6 0%, #0d84bf 100%); border-bottom-color: #09638f; }
+    .unit-header-banner.cefr-B1 { background: linear-gradient(135deg, #ff9600 0%, #d47100 100%); border-bottom-color: #9e5400; }
+    .unit-header-banner.cefr-B2 { background: linear-gradient(135deg, #ce82ff 0%, #9b42d6 100%); border-bottom-color: #7026a3; }
+    .unit-header-banner.cefr-C1 { background: linear-gradient(135deg, #ff4b4b 0%, #c92020 100%); border-bottom-color: #911010; }
+    .unit-header-banner.cefr-C2 { background: linear-gradient(135deg, #ffc800 0%, #cc8800 100%); border-bottom-color: #946000; color: #111b24; }
+
+    .unit-banner-text h2 {
+      font-size: 1.55rem;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+
+    .unit-banner-text p {
+      font-size: 0.96rem;
+      font-weight: 700;
+      opacity: 0.92;
+    }
+
+    .serpentine-path {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      padding: 20px 0 36px 0;
+      position: relative;
+    }
+
+    .path-step-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Winding horizontal offsets for Duolingo path feel */
+    .path-step-wrapper:nth-child(4n+2) { transform: translateX(68px); }
+    .path-step-wrapper:nth-child(4n+4) { transform: translateX(-68px); }
+
+    .start-floating-tag {
+      background: var(--text-white);
+      color: var(--duo-green-dark);
+      font-weight: 900;
+      font-size: 0.85rem;
+      padding: 6px 14px;
+      border-radius: 12px;
+      margin-bottom: 8px;
+      box-shadow: 0 4px 0 rgba(0,0,0,0.35);
+      animation: floatBob 1.6s infinite ease-in-out;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .orb-node {
+      width: 96px;
+      height: 88px;
+      border-radius: 50%;
+      background: var(--bg-elevated);
+      border: 4px solid var(--border-subtle);
+      border-bottom: 9px solid var(--border-lip);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 2.1rem;
+      color: #fff;
+      position: relative;
+    }
+
+    .orb-node.unlocked {
+      background: var(--duo-green);
+      border-color: #78e822;
+      border-bottom-color: var(--duo-green-dark);
+      box-shadow: 0 0 28px var(--duo-green-glow);
+    }
+
+    .orb-node.completed {
+      background: var(--duo-gold);
+      border-color: #ffe066;
+      border-bottom-color: var(--duo-gold-dark);
+      color: #111b24;
+    }
+
+    .orb-node.boss {
+      width: 112px;
+      height: 102px;
+      border-radius: 30px;
+      background: var(--duo-purple);
+      border-color: #dfb0ff;
+      border-bottom-color: var(--duo-purple-dark);
+    }
+
+    .orb-crowns {
+      position: absolute;
+      bottom: -14px;
+      background: var(--bg-card);
+      border: 2px solid var(--border-subtle);
+      padding: 2px 10px;
+      border-radius: 99px;
+      font-size: 0.78rem;
+      font-weight: 900;
+      color: var(--duo-gold);
+      white-space: nowrap;
+    }
+
+    .orb-label {
+      margin-top: 16px;
+      font-size: 1rem;
+      font-weight: 900;
+      color: var(--text-white);
+      background: var(--bg-card);
+      padding: 5px 14px;
+      border-radius: 12px;
+      border: 2px solid var(--border-subtle);
+    }
+
+    .league-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .league-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+      border-radius: 12px;
+      background: var(--bg-elevated);
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .league-row.me {
+      background: rgba(88, 204, 2, 0.18);
+      border: 2px solid var(--duo-green);
+    }
+
+    .grammar-note-box {
+      background: var(--bg-void);
+      border: 2px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 14px;
+      font-size: 0.9rem;
+      color: var(--text-soft);
+      line-height: 1.55;
+      max-height: 180px;
+      overflow-y: auto;
+    }
+
+    .lesson-arena {
+      max-width: 1120px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 20px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .lesson-top {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .lesson-progress-shell {
+      flex: 1;
+      height: 24px;
+      background: var(--bg-card);
+      border: 3px solid var(--border-subtle);
+      border-radius: 99px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .lesson-progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #58cc02, #89e219);
+      border-radius: 99px;
+      transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .combo-pill {
+      background: var(--duo-orange);
+      color: #fff;
+      font-weight: 900;
+      padding: 6px 14px;
+      border-radius: 99px;
+      font-size: 0.95rem;
+      border-bottom: 3px solid var(--duo-orange-dark);
+      transition: transform 0.2s ease;
+    }
+
+    .exercise-center-stage {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+      max-width: 940px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .ex-tag-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .ex-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      font-weight: 900;
+      color: var(--duo-blue);
+      background: rgba(28, 176, 246, 0.14);
+      padding: 5px 12px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .ex-headline {
+      font-size: 1.85rem;
+      font-weight: 900;
+    }
+
+    .coach-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: var(--bg-card);
+      border: 3px solid var(--border-subtle);
+      border-bottom: 6px solid var(--border-lip);
+      border-radius: 24px;
+      padding: 18px 24px;
+    }
+
+    .audio-btn-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .audio-trigger {
+      background: var(--duo-blue);
+      border: none;
+      border-bottom: 5px solid var(--duo-blue-dark);
+      color: #fff;
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .audio-trigger.slow {
+      width: 48px;
+      height: 56px;
+      background: var(--bg-elevated);
+      border: 2px solid var(--border-subtle);
+      border-bottom: 5px solid var(--border-lip);
+      font-size: 1.25rem;
+    }
+
+    .prompt-sentence-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .prompt-main-text {
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: var(--text-white);
+    }
+
+    .prompt-phonetic-sub {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--duo-gold);
+    }
+
+    .mc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .mc-card {
+      background: var(--bg-card);
+      border: 3px solid var(--border-subtle);
+      border-bottom: 7px solid var(--border-lip);
+      border-radius: 20px;
+      padding: 20px 22px;
+      color: var(--text-white);
+      font-size: 1.3rem;
+      font-weight: 800;
+      text-align: start;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .mc-card:hover {
+      background: var(--bg-elevated);
+    }
+
+    .mc-card.selected {
+      background: rgba(28, 176, 246, 0.2);
+      border-color: var(--duo-blue);
+      border-bottom-color: var(--duo-blue-dark);
+      color: #7dd3fc;
+    }
+
+    .mc-key-num {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      border: 2px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: var(--text-soft);
+      flex-shrink: 0;
+    }
+
+    .tiles-answer-well, .tiles-bank-well {
+      min-height: 76px;
+      background: var(--bg-card);
+      border: 3px dashed var(--border-subtle);
+      border-radius: 20px;
+      padding: 14px 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .tiles-answer-well {
+      border-style: solid;
+      background: var(--bg-void);
+    }
+
+    .tile-chip {
+      background: var(--bg-elevated);
+      color: var(--text-white);
+      border: 2px solid var(--border-subtle);
+      border-bottom: 5px solid var(--border-lip);
+      border-radius: 14px;
+      padding: 11px 20px;
+      font-size: 1.25rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .typing-container {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .typing-field {
+      width: 100%;
+      background: var(--bg-void);
+      border: 3px solid var(--border-subtle);
+      border-radius: 18px;
+      padding: 16px 20px;
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--text-white);
+    }
+
+    .arcade-keyboard {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .key-cap {
+      background: var(--bg-elevated);
+      color: var(--text-white);
+      border: 2px solid var(--border-subtle);
+      border-bottom: 4px solid var(--border-lip);
+      border-radius: 12px;
+      padding: 10px 16px;
+      font-size: 1.15rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .pairs-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .pair-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .mc-card.matched {
+      opacity: 0.25;
+      pointer-events: none;
+      border-color: var(--duo-green);
+    }
+
+    .lesson-bottom-dock {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 28px;
+      background: var(--bg-card);
+      border: 3px solid var(--border-subtle);
+      border-bottom: 6px solid var(--border-lip);
+      border-radius: 24px;
+      position: relative;
+    }
+
+    .lesson-bottom-dock.correct-state {
+      background: #14331b;
+      border-color: var(--duo-green);
+    }
+
+    .lesson-bottom-dock.wrong-state {
+      background: #3a181e;
+      border-color: var(--duo-red);
+      animation: shakeError 0.4s ease;
+    }
+
+    .feedback-status {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .feedback-icon-badge {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 900;
+    }
+
+    .lesson-bottom-dock.correct-state .feedback-icon-badge {
+      display: flex;
+      background: var(--duo-green);
+      color: #fff;
+    }
+
+    .lesson-bottom-dock.wrong-state .feedback-icon-badge {
+      display: flex;
+      background: var(--duo-red);
+      color: #fff;
+    }
+
+    .xp-float-badge {
+      position: absolute;
+      right: 48px;
+      top: -18px;
+      background: var(--duo-gold);
+      color: #111b24;
+      font-weight: 900;
+      padding: 6px 14px;
+      border-radius: 99px;
+      pointer-events: none;
+      animation: popUpXp 1s ease forwards;
+    }
+
+    .victory-card {
+      max-width: 680px;
+      width: 100%;
+      margin: auto;
+      background: var(--bg-card);
+      border: 4px solid var(--duo-gold);
+      border-bottom: 10px solid var(--duo-gold-dark);
+      border-radius: 32px;
+      padding: 36px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .victory-stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      width: 100%;
+    }
+
+    .v-stat-box {
+      background: var(--bg-elevated);
+      border: 2px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: 16px;
+    }
+
+    .v-stat-box .big {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--duo-gold);
+    }
+
+    .admin-studio {
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px 32px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .admin-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .admin-box {
+      background: var(--bg-card);
+      border: 2px solid var(--border-subtle);
+      border-bottom: 6px solid var(--border-lip);
+      border-radius: 22px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .admin-box label {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--text-soft);
+    }
+
+    .admin-box input, .admin-box select {
+      background: var(--bg-void);
+      border: 2px solid var(--border-subtle);
+      color: var(--text-white);
+      padding: 11px 14px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .hud-bar {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 10px 28px;
+      background: var(--bg-void);
+      border-top: 2px solid var(--border-subtle);
+      font-size: 0.84rem;
+      color: var(--text-soft);
+      font-weight: 700;
+    }
+
+    .hud-bar kbd {
+      background: var(--bg-elevated);
+      color: var(--duo-gold);
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border-subtle);
+      font-weight: 900;
+      margin-inline-end: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-frame">
+    <header class="topbar">
+      <div class="brand-cluster focusable" tabindex="0" data-action="go-home">
+        <div class="mascot-mini" id="header-mascot-icon">
+          <svg width="34" height="34" viewBox="0 0 64 64" fill="none">
+            <circle cx="32" cy="32" r="26" fill="#58cc02"/>
+            <circle cx="22" cy="26" r="8" fill="#fff"/>
+            <circle cx="42" cy="26" r="8" fill="#fff"/>
+            <circle cx="22" cy="26" r="4" fill="#111b24"/>
+            <circle cx="42" cy="26" r="4" fill="#111b24"/>
+            <polygon points="32,30 26,38 38,38" fill="#ffc800"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name" id="ui-brand-title">PolyglotTV</div>
+          <span class="brand-tag" id="ui-brand-sub">MyPC Arcade Edition</span>
+        </div>
+      </div>
+
+      <div class="course-switcher-bar">
+        <button class="pill-btn focusable" tabindex="0" data-action="cycle-ui-lang">
+          <span class="sub" id="lbl-ui">UI:</span>
+          <span class="val" id="val-ui">English</span>
+        </button>
+        <button class="pill-btn focusable" tabindex="0" data-action="cycle-src-lang">
+          <span class="sub" id="lbl-from">From:</span>
+          <span class="val" id="val-src">🇬🇧 English</span>
+        </button>
+        <button class="pill-btn focusable" tabindex="0" data-action="cycle-tgt-lang">
+          <span class="sub" id="lbl-learn">Learn:</span>
+          <span class="val" id="val-tgt">ⵣ Tamazight</span>
+        </button>
+        <button class="pill-btn focusable" tabindex="0" data-action="cycle-cefr">
+          <span class="sub" id="lbl-cefr">Level:</span>
+          <span class="val" id="val-cefr">A1 Beginner</span>
+        </button>
+      </div>
+
+      <div class="gamification-cluster">
+        <div class="stat-chip flame" title="Daily Streak">
+          <span>🔥</span> <span id="stat-streak">3</span>
+        </div>
+        <div class="stat-chip gems" title="Lingot Gems">
+          <span>💎</span> <span id="stat-gems">120</span>
+        </div>
+        <div class="stat-chip xp" title="Total XP">
+          <span>⚡</span> <span id="stat-xp">0</span> <small>XP</small>
+        </div>
+        <button class="pill-btn focusable" tabindex="0" data-action="toggle-sfx" id="btn-sfx" title="Toggle Arcade Sound Effects">
+          🔊 <span id="lbl-sfx">SFX</span>
+        </button>
+        <button class="pill-btn focusable" tabindex="0" data-action="open-admin" id="btn-admin">
+          ⚙️ <span id="lbl-admin">Admin</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main-stage">
+      <section id="screen-dashboard" class="screen active">
+        <div class="workspace-shell" id="dashboard-workspace" data-mobile-tab="path">
+          <!-- LEFT RAIL: ANIMATED COACH, DAILY QUESTS & SRS -->
+          <aside class="left-rail">
+            <div class="rail-card">
+              <div class="rail-card-header">
+                <span id="lbl-coach-title">🦉 Coach Ziryab</span>
+                <span style="color:var(--duo-green);font-size:0.85rem;">LIVE</span>
+              </div>
+              <div class="coach-showcase">
+                <div id="dashboard-mascot-svg" style="flex-shrink:0;"></div>
+                <p class="coach-bubble" id="coach-tip-text">
+                  "Keep your streak alive! Complete any path node or try a 60s Blitz round!"
+                </p>
+              </div>
+              <button class="btn-3d btn-gold focusable" tabindex="0" data-action="start-blitz">
+                ⚡ <span id="lbl-blitz-btn">60s XP Speed Blitz</span>
+              </button>
+            </div>
+
+            <div class="rail-card">
+              <div class="rail-card-header">
+                <span id="lbl-quests-title">🎯 Daily Quests</span>
+                <span style="color:var(--duo-gold);" id="quest-reward-tag">+30 💎</span>
+              </div>
+              <div class="quest-item">
+                <div class="quest-top">
+                  <span id="q1-label">Earn 50 XP today</span>
+                  <span id="q1-prog">0 / 50</span>
+                </div>
+                <div class="quest-bar-bg"><div class="quest-bar-fill" id="q1-bar" style="width:0%"></div></div>
+              </div>
+              <div class="quest-item">
+                <div class="quest-top">
+                  <span id="q2-label">Hit a 3x Combo Streak</span>
+                  <span id="q2-prog">0 / 3</span>
+                </div>
+                <div class="quest-bar-bg"><div class="quest-bar-fill" id="q2-bar" style="width:0%"></div></div>
+              </div>
+            </div>
+
+            <div class="rail-card">
+              <div class="rail-card-header">
+                <span id="lbl-srs-title">🧠 Spaced Repetition</span>
+                <span style="color:var(--duo-purple);" id="srs-badge-count">0 Due</span>
+              </div>
+              <p style="font-size:0.88rem;color:var(--text-soft);" id="lbl-srs-desc">
+                SM-2 memory curve schedules weak words right before you forget them.
+              </p>
+              <button class="btn-3d btn-purple focusable" tabindex="0" data-action="start-srs">
+                🔄 <span id="lbl-srs-btn">Supercharge Weak Words</span>
+              </button>
+            </div>
+          </aside>
+
+          <!-- CENTER COLUMN: SERPENTINE WINDING SKILL TREE -->
+          <div class="center-map-column">
+            <div class="unit-header-banner" id="unit-banner-box">
+              <div class="unit-banner-text">
+                <h2 id="unit-banner-title">Unit 1: Essential Foundations (A1)</h2>
+                <p id="unit-banner-desc">Master greetings, core expressions, and survival phrasing.</p>
+              </div>
+              <button class="btn-3d btn-slate focusable" tabindex="0" data-action="generate-ai-lesson" id="btn-ai-gen">
+                ✨ <span id="lbl-ai-gen">AI Custom Lesson</span>
+              </button>
+            </div>
+
+            <div class="serpentine-path" id="serpentine-nodes">
+              <!-- Populated dynamically with winding nodes -->
+            </div>
+          </div>
+
+          <!-- RIGHT RAIL: DIAMOND LEAGUE LEADERBOARD & AI GRAMMAR GUIDE -->
+          <aside class="right-rail">
+            <div class="rail-card">
+              <div class="rail-card-header">
+                <span id="lbl-league-title">🏆 Emerald TV League</span>
+                <span style="color:var(--duo-gold);font-size:0.85rem;">Top 5</span>
+              </div>
+              <div class="league-list" id="league-board">
+                <!-- Populated dynamically -->
+              </div>
+            </div>
+
+            <div class="rail-card">
+              <div class="rail-card-header">
+                <span id="lbl-grammar-title">💡 AI Grammar & Script Studio</span>
+              </div>
+              <div class="grammar-note-box" id="grammar-box">
+                Click below or during any exercise to generate a live morphology, script, and grammar breakdown for your current language pair.
+              </div>
+              <button class="btn-3d btn-blue focusable" tabindex="0" data-action="explain-unit-grammar" id="btn-grammar">
+                📖 <span id="lbl-grammar-btn">Explain Unit Grammar</span>
+              </button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="screen-lesson" class="screen">
+        <div class="lesson-arena" id="lesson-arena-box">
+          <div class="lesson-top">
+            <button class="btn-3d btn-slate focusable" tabindex="0" data-action="quit-lesson" style="padding:8px 16px;">✕</button>
+            <div class="lesson-progress-shell">
+              <div class="lesson-progress-bar" id="lesson-prog-bar"></div>
+            </div>
+            <div class="combo-pill" id="combo-indicator">🔥 1x COMBO</div>
+            <div class="stat-chip hearts">❤️ <span id="lesson-hearts">5</span></div>
+          </div>
+
+          <div class="exercise-center-stage">
+            <div class="ex-tag-row">
+              <span class="ex-badge" id="ex-type-tag">MULTIPLE CHOICE</span>
+              <span style="color:var(--text-soft);font-weight:800;font-size:0.9rem;" id="ex-step-counter">1 / 6</span>
+            </div>
+            <h2 class="ex-headline" id="ex-prompt-headline">Select the correct translation</h2>
+
+            <div class="coach-row">
+              <div id="lesson-mascot-slot"></div>
+              <div class="audio-btn-group">
+                <button class="audio-trigger focusable" tabindex="0" data-action="play-tts-fast" title="Play Normal Speed (Y)">🔊</button>
+                <button class="audio-trigger slow focusable" tabindex="0" data-action="play-tts-slow" title="Play Slow Turtle Speed">🐢</button>
+              </div>
+              <div class="prompt-sentence-stack">
+                <div class="prompt-main-text" id="ex-source-sentence">Hello, how are you today?</div>
+                <div class="prompt-phonetic-sub" id="ex-phonetic-hint"></div>
+              </div>
+            </div>
+
+            <div id="ex-interactive-zone">
+              <!-- Populated dynamically by exercise renderer -->
+            </div>
+          </div>
+
+          <footer class="lesson-bottom-dock" id="lesson-dock">
+            <div class="feedback-status">
+              <div class="feedback-icon-badge" id="feedback-icon">✓</div>
+              <div>
+                <div style="font-size:1.25rem;font-weight:900;" id="feedback-headline">Ready when you are!</div>
+                <div style="font-size:0.95rem;color:var(--text-soft);font-weight:700;" id="feedback-subtext">Use D-Pad / Stick / 1-4 keys to answer, then press Check.</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:14px;">
+              <button class="btn-3d btn-slate focusable" tabindex="0" data-action="explain-current-ex">
+                💡 <span id="lbl-explain-ex">Explain</span>
+              </button>
+              <button class="btn-3d btn-green focusable" tabindex="0" data-action="check-or-continue" id="btn-check-main">
+                CHECK
+              </button>
+            </div>
+          </footer>
+        </div>
+      </section>
+
+      <!-- VICTORY CELEBRATION SCREEN -->
+      <section id="screen-victory" class="screen">
+        <div class="victory-card">
+          <div id="victory-mascot-svg"></div>
+          <h1 style="font-size:2.3rem;font-weight:900;color:var(--duo-gold);" id="vic-title">LESSON COMPLETE!</h1>
+          <p style="font-size:1.1rem;color:var(--text-soft);font-weight:700;" id="vic-subtitle">You crushed that unit and leveled up your fluency!</p>
+          <div class="victory-stats-row">
+            <div class="v-stat-box">
+              <div style="font-size:0.85rem;color:var(--text-soft);font-weight:800;">TOTAL XP</div>
+              <div class="big" id="vic-xp">+35 XP</div>
+            </div>
+            <div class="v-stat-box">
+              <div style="font-size:0.85rem;color:var(--text-soft);font-weight:800;">MAX COMBO</div>
+              <div class="big" id="vic-combo">4x 🔥</div>
+            </div>
+            <div class="v-stat-box">
+              <div style="font-size:0.85rem;color:var(--text-soft);font-weight:800;">ACCURACY</div>
+              <div class="big" id="vic-acc">100%</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <button class="btn-3d btn-gold focusable" tabindex="0" data-action="finish-victory">
+              🏆 CONTINUE TO MAP
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-admin" class="screen">
+        <div class="admin-studio">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <h2 style="font-size:1.75rem;font-weight:900;">⚙️ Administrator AI, Speech & Course Studio</h2>
+              <p style="color:var(--text-soft);font-size:0.92rem;">Configure NVIDIA NIM, Google Gemini, OpenAI, and NVIDIA Riva Speech services. API keys are masked outside this screen.</p>
+            </div>
+            <button class="btn-3d btn-slate focusable" tabindex="0" data-action="close-admin">← Back to Map</button>
+          </div>
+
+          <div class="rail-card" style="flex-direction:row;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <strong>Configuration Scope:</strong>
+              <select id="adm-scope" class="focusable" tabindex="0" style="background:var(--bg-void);color:#fff;padding:8px 14px;border-radius:10px;border:2px solid var(--border-subtle);font-weight:800;">
+                <option value="global">Global Device Scope (All TV Profiles)</option>
+                <option value="user">Current MyPC User Profile Only</option>
+              </select>
+            </div>
+            <span style="font-size:0.85rem;color:var(--duo-gold);font-weight:700;">
+              Note: NVIDIA Riva natively supports EN, FR, ES, AR. Tamazight (zgh) uses automatic phonetic + WebSpeech synthesis fallback.
+            </span>
+          </div>
+
+          <div class="admin-columns">
+            <div class="admin-box">
+              <h3>1. Text & Curriculum Generation (LLM)</h3>
+              <label>AI Provider
+                <select id="adm-llm-provider" class="focusable" tabindex="0">
+                  <option value="nvidia">NVIDIA NIM (https://integrate.api.nvidia.com/v1)</option>
+                  <option value="gemini">Google Gemini API</option>
+                  <option value="openai">OpenAI ChatGPT API</option>
+                  <option value="offline">Bundled Offline Curriculum Only</option>
+                </select>
+              </label>
+              <label>API Base Endpoint
+                <input type="url" id="adm-llm-endpoint" class="focusable" tabindex="0" value="https://integrate.api.nvidia.com/v1" />
+              </label>
+              <label>Model Name
+                <input type="text" id="adm-llm-model" class="focusable" tabindex="0" value="nvidia/nemotron-3.5-lightning-30b-a3b" />
+              </label>
+              <label>Temperature (0.0 – 1.0)
+                <input type="number" step="0.1" min="0" max="1" id="adm-llm-temp" class="focusable" tabindex="0" value="0.3" />
+              </label>
+              <label>LLM API Key (Saved obfuscated, never shown to learners)
+                <input type="password" id="adm-llm-key" class="focusable" tabindex="0" placeholder="nvapi-... / AIza... / sk-..." autocomplete="off" />
+              </label>
+            </div>
+
+            <div class="admin-box">
+              <h3>2. Speech Services (TTS & STT) + Extensibility</h3>
+              <label>Text-to-Speech (TTS) Provider
+                <select id="adm-tts-provider" class="focusable" tabindex="0">
+                  <option value="riva">NVIDIA Riva REST Audio / NIM</option>
+                  <option value="openai">OpenAI TTS-1 Audio</option>
+                  <option value="webspeech">Browser Web Speech Synthesis</option>
+                </select>
+              </label>
+              <label>Speech-to-Text (STT) Provider
+                <select id="adm-stt-provider" class="focusable" tabindex="0">
+                  <option value="riva">NVIDIA Riva ASR / NIM</option>
+                  <option value="openai">OpenAI Whisper STT</option>
+                  <option value="webspeech">Browser SpeechRecognition</option>
+                </select>
+              </label>
+              <label>Riva / Speech Endpoint URL
+                <input type="url" id="adm-speech-endpoint" class="focusable" tabindex="0" value="https://integrate.api.nvidia.com/v1/audio" />
+              </label>
+              <label>Speech API Key (Optional — reuses LLM key if blank)
+                <input type="password" id="adm-speech-key" class="focusable" tabindex="0" placeholder="Leave blank to reuse LLM key" autocomplete="off" />
+              </label>
+              <div style="display:flex;gap:18px;margin-top:6px;">
+                <label style="flex-direction:row;align-items:center;gap:8px;color:#fff;">
+                  <input type="checkbox" id="adm-enable-speaking" checked /> Enable Speaking Exercises
+                </label>
+                <label style="flex-direction:row;align-items:center;gap:8px;color:#fff;">
+                  <input type="checkbox" id="adm-enable-aigen" checked /> Enable Live AI Lessons
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+            <button class="btn-3d btn-blue focusable" tabindex="0" data-action="test-admin-api">
+              🔌 Validate & Test Connection
+            </button>
+            <button class="btn-3d btn-green focusable" tabindex="0" data-action="save-admin-config">
+              💾 Save Configuration
+            </button>
+            <span id="adm-status-banner" style="font-weight:900;font-size:0.95rem;"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="hud-bar">
+      <span><kbd>D-Pad / Stick</kbd> Navigate</span>
+      <span><kbd>A / Enter</kbd> Select</span>
+      <span><kbd>X</kbd> Check / Continue</span>
+      <span><kbd>Y</kbd> Listen Audio</span>
+      <span><kbd>B / Back</kbd> Return</span>
+      <span><kbd>L1 / R1</kbd> Switch Course</span>
+      <span id="hud-input-status" style="margin-inline-start:auto;color:var(--duo-green);">🎮 Input Ready: Controller / TV Remote / Mouse</span>
+    </footer>
+
+    <nav class="mobile-bottom-nav" id="mobile-bottom-nav" aria-label="Mobile Navigation">
+      <button class="mob-nav-btn active focusable" tabindex="0" data-action="mob-tab" data-tab="path">
+        <span class="mob-icon">🗺️</span>
+        <span id="mob-lbl-path">Path</span>
+      </button>
+      <button class="mob-nav-btn focusable" tabindex="0" data-action="mob-tab" data-tab="quests">
+        <span class="mob-icon">🎯</span>
+        <span id="mob-lbl-quests">Quests & SRS</span>
+      </button>
+      <button class="mob-nav-btn focusable" tabindex="0" data-action="mob-tab" data-tab="league">
+        <span class="mob-icon">🏆</span>
+        <span id="mob-lbl-league">League & AI</span>
+      </button>
+      <button class="mob-nav-btn focusable" tabindex="0" data-action="mob-tab" data-tab="admin">
+        <span class="mob-icon">⚙️</span>
+        <span id="mob-lbl-admin">Admin</span>
+      </button>
+    </nav>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const DeviceDetector = {
+        isMobile: false,
+        activeMobileTab: "path",
+        check() {
+          const touchCapable = ("ontouchstart" in window) || (navigator.maxTouchPoints > 0);
+          const narrowViewport = window.innerWidth <= 820 || window.matchMedia("(max-width: 820px)").matches;
+          const mobileUA = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent || "");
+          this.isMobile = narrowViewport || (mobileUA && touchCapable && window.innerWidth <= 1024);
+
+          document.body.classList.toggle("is-mobile", this.isMobile);
+          const subTag = document.getElementById("ui-brand-sub");
+          if (subTag) {
+            subTag.textContent = this.isMobile ? "Mobile Touch Edition" : "MyPC Arcade Edition";
+          }
+          const hudStatus = document.getElementById("hud-input-status");
+          if (hudStatus && this.isMobile) {
+            hudStatus.textContent = "📱 Mobile Screen Detected: Touch & Swipe Ready";
+          }
+        },
+        setTab(tabName) {
+          this.activeMobileTab = tabName;
+          const ws = document.getElementById("dashboard-workspace");
+          if (tabName === "admin") {
+            openAdminModal();
+          } else {
+            showScreen("screen-dashboard");
+            if (ws) ws.setAttribute("data-mobile-tab", tabName);
+          }
+          document.querySelectorAll("#mobile-bottom-nav .mob-nav-btn").forEach(btn => {
+            btn.classList.toggle("active", btn.dataset.tab === tabName);
+          });
+        }
+      };
+
+      const SoundFX = {
+        enabled: true,
+        ctx: null,
+        init() {
+          if (!this.ctx && (window.AudioContext || window.webkitAudioContext)) {
+            this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+          }
+          if (this.ctx && this.ctx.state === "suspended") {
+            this.ctx.resume().catch(() => {});
+          }
+        },
+        tone(freq, type, duration, delay = 0, gainVal = 0.12) {
+          if (!this.enabled) return;
+          try {
+            this.init();
+            if (!this.ctx) return;
+            const osc = this.ctx.createOscillator();
+            const gain = this.ctx.createGain();
+            const start = this.ctx.currentTime + delay;
+            osc.type = type;
+            osc.frequency.setValueAtTime(freq, start);
+            gain.gain.setValueAtTime(gainVal, start);
+            gain.gain.exponentialRampToValueAtTime(0.001, start + duration);
+            osc.connect(gain);
+            gain.connect(this.ctx.destination);
+            osc.start(start);
+            osc.stop(start + duration);
+          } catch (_) {}
+        },
+        tick() { this.tone(520, "sine", 0.04, 0, 0.06); },
+        pop() { this.tone(680, "triangle", 0.07, 0, 0.1); },
+        correct() {
+          this.tone(523.25, "triangle", 0.12, 0, 0.15);    // C5
+          this.tone(659.25, "triangle", 0.12, 0.09, 0.15); // E5
+          this.tone(783.99, "triangle", 0.24, 0.18, 0.18); // G5
+          this.tone(1046.5, "sine", 0.3, 0.26, 0.14);      // C6
+        },
+        wrong() {
+          this.tone(180, "sawtooth", 0.18, 0, 0.14);
+          this.tone(145, "sawtooth", 0.28, 0.14, 0.14);
+        },
+        victory() {
+          [523.25, 659.25, 783.99, 1046.5, 1318.5].forEach((f, idx) => {
+            this.tone(f, "triangle", 0.22, idx * 0.09, 0.16);
+          });
+        }
+      };
+
+      function renderMascotSVG(mood = "happy", size = 68) {
+        const eyeLeft = mood === "happy" || mood === "victory" ? "M16 26 Q22 20 28 26" : "";
+        const crown = mood === "victory"
+          ? `<polygon points="18,10 25,2 32,9 39,2 46,10" fill="#ffc800" stroke="#cd9b00" stroke-width="2"/>`
+          : "";
+        const bodyColor = mood === "wrong" ? "#ff4b4b" : "#58cc02";
+        const wingLift = mood === "happy" || mood === "victory" ? "rotate(-18 10 36)" : "";
+
+        return `
+          <svg width="${size}" height="${size}" viewBox="0 0 64 64" fill="none" style="animation: floatBob 2.2s infinite ease-in-out;">
+            ${crown}
+            <ellipse cx="32" cy="36" rx="22" ry="22" fill="${bodyColor}"/>
+            <ellipse cx="32" cy="41" rx="14" ry="14" fill="#89e219" opacity="0.45"/>
+            <ellipse cx="10" cy="36" rx="6" ry="12" fill="${bodyColor}" transform="${wingLift}"/>
+            <ellipse cx="54" cy="36" rx="6" ry="12" fill="${bodyColor}"/>
+            <circle cx="23" cy="28" r="8" fill="#ffffff"/>
+            <circle cx="41" cy="28" r="8" fill="#ffffff"/>
+            ${eyeLeft
+              ? `<path d="M19 28 Q23 23 27 28" stroke="#111b24" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                 <path d="M37 28 Q41 23 45 28" stroke="#111b24" stroke-width="3.5" stroke-linecap="round" fill="none"/>`
+              : `<circle cx="23" cy="28" r="4" fill="#111b24"/><circle cx="41" cy="28" r="4" fill="#111b24"/>
+                 <circle cx="24.5" cy="26.5" r="1.5" fill="#fff"/><circle cx="42.5" cy="26.5" r="1.5" fill="#fff"/>`
+            }
+            <polygon points="32,31 27,39 37,39" fill="#ffc800"/>
+          </svg>
+        `;
+      }
+
+      const MyPCBridge = {
+        getProfile() {
+          try {
+            if (window.MyPC?.profile?.getCurrent) {
+              const p = window.MyPC.profile.getCurrent();
+              if (p && p.id) return p;
+            }
+          } catch (_) {}
+          return { id: "player_1", name: "You (Polyglot Hero)" };
+        },
+        async load(key, fallback) {
+          try {
+            if (window.MyPC?.storage?.get) {
+              const res = await window.MyPC.storage.get(key);
+              if (res !== undefined && res !== null) return typeof res === "string" ? JSON.parse(res) : res;
+            }
+          } catch (_) {}
+          try {
+            const raw = localStorage.getItem("polyglottv_v3_" + key);
+            return raw ? JSON.parse(raw) : fallback;
+          } catch (_) {
+            return fallback;
+          }
+        },
+        async save(key, val) {
+          const str = JSON.stringify(val);
+          try {
+            if (window.MyPC?.storage?.set) await window.MyPC.storage.set(key, str);
+          } catch (_) {}
+          try {
+            localStorage.setItem("polyglottv_v3_" + key, str);
+          } catch (_) {}
+        },
+        submitXP(xp) {
+          try {
+            if (window.MyPC?.scores?.submit) window.MyPC.scores.submit(xp);
+          } catch (_) {}
+        }
+      };
+
+      const I18N = {
+        en: {
+          ui: "UI:", from: "From:", learn: "Learn:", level: "Level:",
+          quests: "🎯 Daily Quests", srs: "🧠 Spaced Repetition",
+          srsBtn: "Supercharge Weak Words", blitzBtn: "60s XP Speed Blitz",
+          aiGen: "AI Custom Lesson", league: "🏆 Emerald TV League",
+          grammarTitle: "💡 AI Grammar & Script Studio", grammarBtn: "Explain Unit Grammar",
+          check: "CHECK", next: "CONTINUE", explain: "Explain",
+          mcPrompt: "Select the correct translation",
+          tilesPrompt: "Assemble the sentence using the word tiles",
+          typePrompt: "Type or tap the target translation",
+          matchPrompt: "Match the pairs to clear the board!",
+          speakPrompt: "Listen and speak this phrase out loud",
+          correctMsg: "Awesome! Spot on!", wrongMsg: "Oops! Correct solution:"
+        },
+        fr: {
+          ui: "UI :", from: "De :", learn: "Apprendre :", level: "Niveau :",
+          quests: "🎯 Quêtes du Jour", srs: "🧠 Répétition Espacée",
+          srsBtn: "Réviser les mots faibles", blitzBtn: "Blitz Chrono 60s",
+          aiGen: "Leçon IA sur mesure", league: "🏆 Ligue Émeraude TV",
+          grammarTitle: "💡 Studio Grammaire IA", grammarBtn: "Expliquer la grammaire",
+          check: "VÉRIFIER", next: "CONTINUER", explain: "Expliquer",
+          mcPrompt: "Choisissez la bonne traduction",
+          tilesPrompt: "Construisez la phrase avec les tuiles",
+          typePrompt: "Écrivez la traduction exacte",
+          matchPrompt: "Associez les paires de mots !",
+          speakPrompt: "Écoutez et prononcez cette phrase",
+          correctMsg: "Magnifique !", wrongMsg: "Presque ! Bonne réponse :"
+        },
+        ar: {
+          ui: "الواجهة:", from: "من:", learn: "تعلّم:", level: "المستوى:",
+          quests: "🎯 المهام اليومية", srs: "🧠 التكرار المتباعد",
+          srsBtn: "تقوية الكلمات الصعبة", blitzBtn: "تحدي السرعة 60 ثانية",
+          aiGen: "درس ذكاء اصطناعي", league: "🏆 الدوري الزمردي",
+          grammarTitle: "💡 استوديو القواعد الذكي", grammarBtn: "شرح القواعد والنحو",
+          check: "تحقق", next: "متابعة", explain: "اشرح لي",
+          mcPrompt: "اختر الترجمة الصحيحة",
+          tilesPrompt: "رتب البطاقات لتكوين الجملة الصحيحة",
+          typePrompt: "اكتب الترجمة الصحيحة",
+          matchPrompt: "طابق الأزواج المترادفة!",
+          speakPrompt: "استمع وانطق هذه العبارة بوضوح",
+          correctMsg: "إجابة عبقرية!", wrongMsg: "انتبه! الإجابة الصحيحة هي:"
+        },
+        es: {
+          ui: "UI:", from: "Desde:", learn: "Aprender:", level: "Nivel:",
+          quests: "🎯 Misiones Diarias", srs: "🧠 Repetición Espaciada",
+          srsBtn: "Repasar Palabras Débiles", blitzBtn: "Blitz Rápido 60s",
+          aiGen: "Lección IA Dinámica", league: "🏆 Liga Esmeralda TV",
+          grammarTitle: "💡 Estudio Gramatical IA", grammarBtn: "Explicar Gramática",
+          check: "COMPROBAR", next: "CONTINUAR", explain: "Explicar",
+          mcPrompt: "Selecciona la traducción correcta",
+          tilesPrompt: "Ordena las fichas para formar la frase",
+          typePrompt: "Escribe la traducción correcta",
+          matchPrompt: "¡Empareja los términos equivalentes!",
+          speakPrompt: "Escucha y pronuncia esta frase",
+          correctMsg: "¡Brillante!", wrongMsg: "Casi — respuesta correcta:"
+        }
+      };
+
+      const LANGUAGES = [
+        { code: "en", name: "English", flag: "🇬🇧", rtl: false, speech: "en-US", riva: true },
+        { code: "fr", name: "Français", flag: "🇫🇷", rtl: false, speech: "fr-FR", riva: true },
+        { code: "es", name: "Español", flag: "🇪🇸", rtl: false, speech: "es-ES", riva: true },
+        { code: "ar", name: "العربية", flag: "🇲🇦", rtl: true, speech: "ar-SA", riva: true },
+        { code: "zgh", name: "Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ)", flag: "ⵣ", rtl: false, speech: "tzm-MA", riva: false }
+      ];
+
+      const CEFR_META = [
+        { code: "A1", label: "A1 Beginner", title: "Unit 1: Survival & Warm Greetings" },
+        { code: "A2", label: "A2 Elementary", title: "Unit 2: Markets, Dining & Travel" },
+        { code: "B1", label: "B1 Intermediate", title: "Unit 3: Storytelling & Daily Life" },
+        { code: "B2", label: "B2 Upper-Int", title: "Unit 4: Technology & Global Debate" },
+        { code: "C1", label: "C1 Advanced", title: "Unit 5: Literature & Cultural Heritage" },
+        { code: "C2", label: "C2 Mastery", title: "Unit 6: Philosophy & Rhetoric" }
+      ];
+
+      const CURRICULUM = [
+        {
+          id: "u1_hello", cefr: "A1", node: 1, phoneticZgh: "Azul, mamenk ant assa?",
+          text: {
+            en: "Hello, how are you today?",
+            fr: "Bonjour, comment allez-vous aujourd'hui ?",
+            es: "Hola, ¿cómo estás hoy?",
+            ar: "مرحباً، كيف حالك اليوم؟",
+            zgh: "ⴰⵣⵓⵍ, ⵎⴰⵎⵏⴽ ⴰⵏⵜ ⴰⵙⵙⴰ?"
+          }
+        },
+        {
+          id: "u1_welcome", cefr: "A1", node: 1, phoneticZgh: "Ansuf s tgmmi nnegh ifulkin",
+          text: {
+            en: "Welcome to our peaceful home",
+            fr: "Bienvenue dans notre maison paisible",
+            es: "Bienvenido a nuestra casa pacífica",
+            ar: "أهلاً وسهلاً بك في بيتنا الهادئ",
+            zgh: "ⴰⵏⵙⵓⴼ ⵙ ⵜⴳⵎⵎⵉ ⵏⵏⵖ ⵉⴼⵓⵍⴽⵉⵏ"
+          }
+        },
+        {
+          id: "u1_thanks", cefr: "A1", node: 2, phoneticZgh: "Tanmmirt bahra f twisi nnek",
+          text: {
+            en: "Thank you very much for your help",
+            fr: "Merci beaucoup pour votre aide",
+            es: "Muchas gracias por tu ayuda",
+            ar: "شكراً جزيلاً على مساعدتك",
+            zgh: "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴱⴰⵀⵔⴰ ⴼ ⵜⵡⵉⵙⵉ ⵏⵏⴽ"
+          }
+        },
+        {
+          id: "u1_tea", cefr: "A1", node: 2, phoneticZgh: "Righ atay s liqamt d waman",
+          text: {
+            en: "I would like mint tea and cold water",
+            fr: "Je voudrais du thé à la menthe et de l'eau fraîche",
+            es: "Quisiera té con menta y agua fría",
+            ar: "أريد شاياً بالنعناع وماءً بارداً",
+            zgh: "ⵔⵉⵖ ⴰتاⵢ ⵙ ⵍⵉⵇⴰⵎⵜ ⴷ ⵡⴰⵎⴰⵏ"
+          }
+        },
+        {
+          id: "u2_train", cefr: "A2", node: 3, phoneticZgh: "Mani gh tlla tghsrt n umsizwr?",
+          text: {
+            en: "Where is the high-speed train station?",
+            fr: "Où se trouve la gare du train à grande vitesse ?",
+            es: "¿Dónde está la estación del tren de alta velocidad?",
+            ar: "أين تقع محطة القطار فائق السرعة؟",
+            zgh: "ⵎⴰⵏⵉ ⵖ ⵜⵍⵍⴰ ⵜⵖⵙⵔⵜ ⵏ ⵓⵎⵙⵉⵣⵡⵔ?"
+          }
+        },
+        {
+          id: "u2_market", cefr: "A2", node: 3, phoneticZgh: "Agadaz amqran iktar s ifcka",
+          text: {
+            en: "The grand market is full of fresh spices",
+            fr: "Le grand marché est plein d'épices fraîches",
+            es: "El gran mercado está lleno de especias frescas",
+            ar: "السوق الكبير مليء بالتوابل الطازجة",
+            zgh: "ⴰⴳⴰⴷⴰⵣ ⴰⵎⵇⵔⴰⵏ ⵉⴽⵜⴰⵔ ⵙ ⵉⴼⵛⴽⴰ"
+          }
+        },
+        {
+          id: "u3_doors", cefr: "B1", node: 4, phoneticZgh: "Almmud n tutlayt tamaynut irzzm tiggura",
+          text: {
+            en: "Learning a new language opens many doors",
+            fr: "Apprendre une nouvelle langue ouvre plusieurs portes",
+            es: "Aprender un nuevo idioma abre muchas puertas",
+            ar: "تعلّم لغة جديدة يفتح أبواباً كثيرة",
+            zgh: "ⴰⵍⵎⵎⵓⴷ ⵏ ⵜⵓⵜⵍⴰⵢⵜ ⵜⴰⵎⴰⵢⵏⵓⵜ ⵉⵕⵥⵥⵎ ⵜⵉⴳⴳⵓⵔⴰ"
+          }
+        },
+        {
+          id: "u4_tech", cefr: "B2", node: 5, phoneticZgh: "Tatiknulujit tzdi mddn ngr imnzawn",
+          text: {
+            en: "Modern technology connects people across continents",
+            fr: "La technologie moderne relie les peuples entre les continents",
+            es: "La tecnología moderna conecta a las personas entre continentes",
+            ar: "التكنولوجيا الحديثة تربط الشعوب عبر القارات",
+            zgh: "ⵜⴰⵜⵉⴽⵏⵓⵍⵓⵊⵉⵜ ⵜⵣⴷⵉ ⵎⴷⴷⵏ ⵏⴳⵔ ⵉⵎⵏⵥⴰⵡⵏ"
+          }
+        },
+        {
+          id: "u5_heritage", cefr: "C1", node: 5, phoneticZgh: "Ahttu n taysi tasnilst isbghur taghrma",
+          text: {
+            en: "Preserving linguistic heritage enriches human civilization",
+            fr: "Préserver le patrimoine linguistique enrichit la civilisation humaine",
+            es: "Preservar el patrimonio lingüístico enriquece la civilización humana",
+            ar: "الحفاظ على التراث اللغوي يثري الحضارة الإنسانية",
+            zgh: "ⴰحⵟⵟⵓ ⵏ ⵜⴰⵢⵙⵉ ⵜⴰⵙⵏⵉⵍⵙⵜ ⵉⵙⴱⵖⵓⵔ ⵜⴰⵖⵔⵎⴰ"
+          }
+        },
+        {
+          id: "u6_wisdom", cefr: "C2", node: 5, phoneticZgh: "Iwennan ilqayn mmaln tazmrt tamzruyant",
+          text: {
+            en: "Nuanced expressions reflect deep historical resilience",
+            fr: "Les expressions nuancées reflètent une résilience historique profonde",
+            es: "Las expresiones matizadas reflejan una profunda resiliencia histórica",
+            ar: "التعبيرات الدقيقة تعكس صموداً تاريخياً عميقاً",
+            zgh: "ⵉⵡⵏⵏⴰⵏ ⵉⵍقⴰⵢⵏ ⵎⵎⴰⵍⵏ ⵜⴰⵣⵎⵔⵜ ⵜⴰⵎⵣⵔⵓⵢⴰⵏⵜ"
+          }
+        }
+      ];
+
+      const State = {
+        uiLang: "en",
+        srcLang: "en",
+        tgtLang: "zgh",
+        cefr: "A1",
+        xp: 140,
+        todayXp: 20,
+        gems: 120,
+        streak: 3,
+        maxComboEver: 2,
+        nodeCrowns: {}, // key: src_tgt_cefr_nodeIdx -> 0..3
+        srsDeck: {},
+        session: null,
+        admin: {
+          scope: "global",
+          llmProvider: "nvidia",
+          llmEndpoint: "https://integrate.api.nvidia.com/v1",
+          llmModel: "nvidia/nemotron-3.5-lightning-30b-a3b",
+          llmTemp: 0.3,
+          llmKey: "",
+          ttsProvider: "riva",
+          sttProvider: "riva",
+          speechEndpoint: "https://integrate.api.nvidia.com/v1/audio",
+          speechKey: "",
+          enableSpeaking: true,
+          enableAiGen: true
+        }
+      };
+
+      const maskEncode = (s) => { try { return s ? btoa(encodeURIComponent(s)) : ""; } catch (_) { return s; } };
+      const maskDecode = (s) => { try { return s ? decodeURIComponent(atob(s)) : ""; } catch (_) { return s; } };
+
+      const AIEngine = {
+        async queryJSON(promptText) {
+          const cfg = State.admin;
+          const key = maskDecode(cfg.llmKey);
+          if (cfg.llmProvider === "offline" || !key) {
+            throw new Error("Offline mode active or API key not set.");
+          }
+
+          if (cfg.llmProvider === "nvidia" || cfg.llmProvider === "openai") {
+            const base = (cfg.llmProvider === "openai" && cfg.llmEndpoint.includes("nvidia"))
+              ? "https://api.openai.com/v1"
+              : cfg.llmEndpoint.replace(/\/$/, "");
+            const res = await fetch(`${base}/chat/completions`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json", "Authorization": `Bearer ${key}` },
+              body: JSON.stringify({
+                model: cfg.llmModel,
+                temperature: Number(cfg.llmTemp) || 0.3,
+                messages: [
+                  { role: "system", content: "You are a language curriculum API. Respond with raw valid JSON only." },
+                  { role: "user", content: promptText }
+                ]
+              })
+            });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            const raw = data.choices?.[0]?.message?.content || "";
+            return JSON.parse(raw.replace(/```json|```/g, "").trim());
+          }
+
+          if (cfg.llmProvider === "gemini") {
+            const m = cfg.llmModel.startsWith("gemini") ? cfg.llmModel : "gemini-2.5-flash";
+            const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${encodeURIComponent(key)}`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                contents: [{ parts: [{ text: promptText + "\nReturn raw JSON only." }] }],
+                generationConfig: { temperature: Number(cfg.llmTemp) || 0.3 }
+              })
+            });
+            if (!res.ok) throw new Error(`Gemini HTTP ${res.status}`);
+            const data = await res.json();
+            const raw = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+            return JSON.parse(raw.replace(/```json|```/g, "").trim());
+          }
+        }
+      };
+
+      const SpeechEngine = {
+        async speak(text, langCode, rate = 1.0) {
+          const langObj = LANGUAGES.find(l => l.code === langCode) || LANGUAGES[0];
+          const cfg = State.admin;
+          const key = maskDecode(cfg.speechKey) || maskDecode(cfg.llmKey);
+
+          if ((cfg.ttsProvider === "riva" || cfg.ttsProvider === "openai") && key && (cfg.ttsProvider !== "riva" || langObj.riva)) {
+            try {
+              const url = cfg.ttsProvider === "openai"
+                ? "https://api.openai.com/v1/audio/speech"
+                : `${cfg.speechEndpoint.replace(/\/$/, "")}/speech`;
+              const res = await fetch(url, {
+                method: "POST",
+                headers: { "Content-Type": "application/json", "Authorization": `Bearer ${key}` },
+                body: JSON.stringify({
+                  model: cfg.ttsProvider === "openai" ? "tts-1" : "riva-tts",
+                  input: text,
+                  voice: "alloy",
+                  speed: rate,
+                  language: langObj.speech
+                })
+              });
+              if (res.ok) {
+                const blob = await res.blob();
+                new Audio(URL.createObjectURL(blob)).play();
+                return;
+              }
+            } catch (_) {}
+          }
+
+          if ("speechSynthesis" in window) {
+            window.speechSynthesis.cancel();
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = langObj.speech;
+            u.rate = rate;
+            window.speechSynthesis.speak(u);
+          }
+        }
+      };
+
+      function renderDashboard() {
+        const t = I18N[State.uiLang] || I18N.en;
+        document.documentElement.lang = State.uiLang;
+        document.documentElement.dir = State.uiLang === "ar" ? "rtl" : "ltr";
+
+        const srcMeta = LANGUAGES.find(l => l.code === State.srcLang);
+        const tgtMeta = LANGUAGES.find(l => l.code === State.tgtLang);
+        const cefrMeta = CEFR_META.find(c => c.code === State.cefr) || CEFR_META[0];
+
+        document.getElementById("lbl-ui").textContent = t.ui;
+        document.getElementById("val-ui").textContent = LANGUAGES.find(l => l.code === State.uiLang)?.name || State.uiLang;
+        document.getElementById("lbl-from").textContent = t.from;
+        document.getElementById("val-src").textContent = `${srcMeta.flag} ${srcMeta.name}`;
+        document.getElementById("lbl-learn").textContent = t.learn;
+        document.getElementById("val-tgt").textContent = `${tgtMeta.flag} ${tgtMeta.name}`;
+        document.getElementById("lbl-cefr").textContent = t.level;
+        document.getElementById("val-cefr").textContent = cefrMeta.label;
+
+        document.getElementById("stat-streak").textContent = State.streak;
+        document.getElementById("stat-gems").textContent = State.gems;
+        document.getElementById("stat-xp").textContent = State.xp;
+        document.getElementById("lbl-sfx").textContent = SoundFX.enabled ? "SFX ON" : "MUTED";
+
+        document.getElementById("dashboard-mascot-svg").innerHTML = renderMascotSVG("happy", 64);
+        document.getElementById("lbl-quests-title").textContent = t.quests;
+        document.getElementById("lbl-srs-title").textContent = t.srs;
+        document.getElementById("lbl-srs-btn").textContent = t.srsBtn;
+        document.getElementById("lbl-blitz-btn").textContent = t.blitzBtn;
+        document.getElementById("lbl-ai-gen").textContent = t.aiGen;
+        document.getElementById("lbl-league-title").textContent = t.league;
+        document.getElementById("lbl-grammar-title").textContent = t.grammarTitle;
+        document.getElementById("lbl-grammar-btn").textContent = t.grammarBtn;
+
+        // Quests Progress
+        const q1Pct = Math.min(100, Math.round((State.todayXp / 50) * 100));
+        document.getElementById("q1-prog").textContent = `${Math.min(50, State.todayXp)} / 50`;
+        document.getElementById("q1-bar").style.width = `${q1Pct}%`;
+
+        const q2Pct = Math.min(100, Math.round((State.maxComboEver / 3) * 100));
+        document.getElementById("q2-prog").textContent = `${Math.min(3, State.maxComboEver)} / 3`;
+        document.getElementById("q2-bar").style.width = `${q2Pct}%`;
+
+        // SRS due count
+        const dueCount = Object.values(State.srsDeck).filter(d => d.due <= Date.now()).length;
+        document.getElementById("srs-badge-count").textContent = `${dueCount} Due`;
+
+        // Unit Banner
+        const banner = document.getElementById("unit-banner-box");
+        banner.className = `unit-header-banner cefr-${State.cefr}`;
+        document.getElementById("unit-banner-title").textContent = `${cefrMeta.title} (${State.cefr})`;
+        document.getElementById("unit-banner-desc").textContent = `${srcMeta.name} → ${tgtMeta.name} • Interactive Serpentine Path`;
+
+        // Serpentine Nodes
+        const pathEl = document.getElementById("serpentine-nodes");
+        pathEl.innerHTML = "";
+        const nodes = [
+          { idx: 1, icon: "👋", title: "1. Core Greetings", boss: false },
+          { idx: 2, icon: "🍵", title: "2. Hospitality & Dining", boss: false },
+          { idx: 3, icon: "🚄", title: "3. Travel & Markets", boss: false },
+          { idx: 4, icon: "🗣️", title: "4. Expressive Fluency", boss: false },
+          { idx: 5, icon: "👑", title: "5. Unit Boss Mastery", boss: true }
+        ];
+
+        let foundActiveStart = false;
+        nodes.forEach((n) => {
+          const crownKey = `${State.srcLang}_${State.tgtLang}_${State.cefr}_${n.idx}`;
+          const crowns = State.nodeCrowns[crownKey] || 0;
+          const isCompleted = crowns >= 1;
+          const isCurrent = !isCompleted && !foundActiveStart;
+          if (isCurrent) foundActiveStart = true;
+
+          const wrap = document.createElement("div");
+          wrap.className = "path-step-wrapper";
+          if (isCurrent) {
+            const tag = document.createElement("div");
+            tag.className = "start-floating-tag";
+            tag.textContent = "START HERE";
+            wrap.appendChild(tag);
+          }
+
+          const btn = document.createElement("button");
+          btn.className = `orb-node focusable ${isCompleted ? "completed" : "unlocked"} ${n.boss ? "boss" : ""}`;
+          btn.tabIndex = 0;
+          const stars = "⭐".repeat(Math.min(3, crowns)) || "☆☆☆";
+          btn.innerHTML = `
+            <span>${n.icon}</span>
+            <span class="orb-crowns">${stars}</span>
+          `;
+          btn.addEventListener("click", () => {
+            SoundFX.pop();
+            launchLesson(n.idx);
+          });
+
+          const lbl = document.createElement("div");
+          lbl.className = "orb-label";
+          lbl.textContent = n.title;
+
+          wrap.appendChild(btn);
+          wrap.appendChild(lbl);
+          pathEl.appendChild(wrap);
+        });
+
+        // Render League Leaderboard
+        const me = MyPCBridge.getProfile();
+        const rivals = [
+          { name: "Amira_TNG", xp: 320, me: false },
+          { name: "Youssef_Atlas", xp: 245, me: false },
+          { name: me.name, xp: State.xp, me: true },
+          { name: "Sofia_BCN", xp: 165, me: false },
+          { name: "Liam_TV", xp: 110, me: false }
+        ].sort((a, b) => b.xp - a.xp);
+
+        const board = document.getElementById("league-board");
+        board.innerHTML = "";
+        rivals.forEach((r, idx) => {
+          const row = document.createElement("div");
+          row.className = `league-row ${r.me ? "me" : ""}`;
+          const medal = idx === 0 ? "🥇" : idx === 1 ? "🥈" : idx === 2 ? "🥉" : `#${idx + 1}`;
+          row.innerHTML = `<span>${medal} ${r.name}</span><span style="color:var(--duo-gold);">${r.xp} XP</span>`;
+          board.appendChild(row);
+        });
+      }
+
+      function shuffle(arr) {
+        const a = [...arr];
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+
+      function normalizeStr(s) {
+        return (s || "").toLowerCase().replace(/[.,?!¡¿؟;:"']/g, "").replace(/\s+/g, " ").trim();
+      }
+
+      function buildLessonExercises(nodeIdx, customConcepts = null) {
+        const src = State.srcLang;
+        const tgt = State.tgtLang;
+        let pool = customConcepts || CURRICULUM.filter(c => c.node === nodeIdx || c.cefr === State.cefr);
+        if (pool.length < 3) pool = CURRICULUM.slice(0, 4);
+
+        const exercises = [];
+        pool.slice(0, 3).forEach((item, idx) => {
+          const srcText = item.text[src] || item.text.en;
+          const tgtText = item.text[tgt] || item.text.zgh;
+          const phonetic = tgt === "zgh" && item.phoneticZgh ? `Latin Phonetic: ${item.phoneticZgh}` : "";
+
+          const distractors = CURRICULUM
+            .filter(x => x.id !== item.id)
+            .slice(0, 3)
+            .map(x => x.text[tgt] || x.text.en);
+
+          // 1. Multiple Choice
+          exercises.push({
+            conceptId: item.id,
+            type: "multiple_choice",
+            sourceText: srcText,
+            targetText: tgtText,
+            phonetic,
+            options: shuffle([tgtText, ...distractors])
+          });
+
+          // 2. Word Tiles or Arcade Typing
+          if (idx % 2 === 0) {
+            const words = tgtText.split(/\s+/);
+            const decoyWords = (CURRICULUM[(idx + 2) % CURRICULUM.length].text[tgt] || "").split(/\s+/).slice(0, 2);
+            exercises.push({
+              conceptId: item.id,
+              type: "word_tiles",
+              sourceText: srcText,
+              targetText: tgtText,
+              phonetic,
+              tiles: shuffle([...words, ...decoyWords])
+            });
+          } else {
+            exercises.push({
+              conceptId: item.id,
+              type: "typing",
+              sourceText: srcText,
+              targetText: tgtText,
+              phonetic
+            });
+          }
+        });
+
+        // 4. Matching Pairs Board
+        const pairPool = CURRICULUM.slice(0, 4);
+        exercises.push({
+          conceptId: pairPool[0].id,
+          type: "matching",
+          sourceText: I18N[State.uiLang].matchPrompt,
+          targetText: "",
+          phonetic: "Match all 4 pairs to clear the board!",
+          pairs: pairPool.map(p => ({
+            id: p.id,
+            left: p.text[src] || p.text.en,
+            right: p.text[tgt] || p.text.zgh
+          }))
+        });
+
+        // 5. Speaking Studio
+        if (State.admin.enableSpeaking) {
+          const sp = pool[0];
+          exercises.push({
+            conceptId: sp.id,
+            type: "speaking",
+            sourceText: sp.text[src] || sp.text.en,
+            targetText: sp.text[tgt] || sp.text.zgh,
+            phonetic: tgt === "zgh" && sp.phoneticZgh ? `Pronounce: "${sp.phoneticZgh}"` : ""
+          });
+        }
+
+        return exercises;
+      }
+
+      function showScreen(screenId) {
+        document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
+        document.getElementById(screenId).classList.add("active");
+        document.body.classList.toggle("in-lesson", screenId === "screen-lesson");
+        if (screenId === "screen-dashboard") {
+          document.querySelectorAll("#mobile-bottom-nav .mob-nav-btn").forEach(btn => {
+            btn.classList.toggle("active", btn.dataset.tab === DeviceDetector.activeMobileTab);
+          });
+        }
+        SpatialFocus.refresh();
+      }
+
+      function launchLesson(nodeIdx, customList = null) {
+        const list = customList || buildLessonExercises(nodeIdx);
+        State.session = {
+          nodeIdx,
+          exercises: list,
+          index: 0,
+          hearts: 5,
+          combo: 1,
+          maxCombo: 1,
+          correctCount: 0,
+          earnedXp: 0,
+          answered: false,
+          userAnswer: "",
+          chosenTiles: [],
+          matchedIds: []
+        };
+        showScreen("screen-lesson");
+        renderActiveExercise();
+      }
+
+      function renderActiveExercise() {
+        const s = State.session;
+        if (!s) return;
+        const ex = s.exercises[s.index];
+        const t = I18N[State.uiLang] || I18N.en;
+
+        s.answered = false;
+        s.userAnswer = "";
+        s.chosenTiles = [];
+        s.matchedIds = [];
+
+        const pct = Math.round((s.index / s.exercises.length) * 100);
+        document.getElementById("lesson-prog-bar").style.width = `${pct}%`;
+        document.getElementById("combo-indicator").textContent = `🔥 ${s.combo}x COMBO`;
+        document.getElementById("lesson-hearts").textContent = s.hearts;
+        document.getElementById("ex-step-counter").textContent = `${s.index + 1} / ${s.exercises.length}`;
+        document.getElementById("ex-type-tag").textContent = ex.type.replace("_", " ").toUpperCase();
+
+        document.getElementById("lesson-mascot-slot").innerHTML = renderMascotSVG("idle", 58);
+        document.getElementById("ex-source-sentence").textContent = ex.sourceText;
+        document.getElementById("ex-phonetic-hint").textContent = ex.phonetic || "";
+
+        const dock = document.getElementById("lesson-dock");
+        dock.className = "lesson-bottom-dock";
+        document.getElementById("feedback-headline").textContent = "Ready when you are!";
+        document.getElementById("feedback-subtext").textContent = "Select your answer and press Check (or X on Gamepad).";
+        document.getElementById("btn-check-main").textContent = t.check;
+
+        const tgtMeta = LANGUAGES.find(l => l.code === State.tgtLang);
+        const zone = document.getElementById("ex-interactive-zone");
+        zone.innerHTML = "";
+        zone.dir = tgtMeta?.rtl ? "rtl" : "ltr";
+
+        if (ex.type === "multiple_choice") {
+          document.getElementById("ex-prompt-headline").textContent = t.mcPrompt;
+          const grid = document.createElement("div");
+          grid.className = "mc-grid";
+          ex.options.forEach((opt, i) => {
+            const btn = document.createElement("button");
+            btn.className = "mc-card focusable";
+            btn.tabIndex = 0;
+            btn.innerHTML = `<span>${opt}</span><span class="mc-key-num">${i + 1}</span>`;
+            btn.addEventListener("click", () => {
+              SoundFX.pop();
+              s.userAnswer = opt;
+              grid.querySelectorAll(".mc-card").forEach(c => c.classList.remove("selected"));
+              btn.classList.add("selected");
+              SpeechEngine.speak(opt, State.tgtLang, 1.0);
+            });
+            grid.appendChild(btn);
+          });
+          zone.appendChild(grid);
+        } else if (ex.type === "word_tiles") {
+          document.getElementById("ex-prompt-headline").textContent = t.tilesPrompt;
+          const answerWell = document.createElement("div");
+          answerWell.className = "tiles-answer-well";
+          const bankWell = document.createElement("div");
+          bankWell.className = "tiles-bank-well";
+
+          function syncTiles() {
+            answerWell.innerHTML = "";
+            bankWell.innerHTML = "";
+            s.chosenTiles.forEach((w, idx) => {
+              const chip = document.createElement("button");
+              chip.className = "tile-chip focusable";
+              chip.textContent = w;
+              chip.addEventListener("click", () => {
+                SoundFX.pop();
+                s.chosenTiles.splice(idx, 1);
+                s.userAnswer = s.chosenTiles.join(" ");
+                syncTiles();
+                SpatialFocus.refresh();
+              });
+              answerWell.appendChild(chip);
+            });
+
+            ex.tiles.forEach((w, idx) => {
+              const usedCount = s.chosenTiles.filter(x => x === w).length;
+              const availableUpToHere = ex.tiles.slice(0, idx + 1).filter(x => x === w).length;
+              if (usedCount >= availableUpToHere) return;
+              const chip = document.createElement("button");
+              chip.className = "tile-chip focusable";
+              chip.textContent = w;
+              chip.addEventListener("click", () => {
+                SoundFX.pop();
+                s.chosenTiles.push(w);
+                s.userAnswer = s.chosenTiles.join(" ");
+                syncTiles();
+                SpatialFocus.refresh();
+              });
+              bankWell.appendChild(chip);
+            });
+          }
+
+          syncTiles();
+          zone.appendChild(answerWell);
+          zone.appendChild(bankWell);
+        } else if (ex.type === "typing") {
+          document.getElementById("ex-prompt-headline").textContent = t.typePrompt;
+          const box = document.createElement("div");
+          box.className = "typing-container";
+
+          const inp = document.createElement("input");
+          inp.type = "text";
+          inp.className = "typing-field focusable";
+          inp.placeholder = ex.targetText.replace(/\S/g, "•");
+          inp.addEventListener("input", () => { s.userAnswer = inp.value; });
+
+          const kb = document.createElement("div");
+          kb.className = "arcade-keyboard";
+          const uniqueChars = Array.from(new Set(ex.targetText.split(""))).filter(c => c.trim());
+          shuffle(uniqueChars).forEach(ch => {
+            const k = document.createElement("button");
+            k.className = "key-cap focusable";
+            k.textContent = ch;
+            k.addEventListener("click", () => {
+              SoundFX.pop();
+              inp.value += ch;
+              s.userAnswer = inp.value;
+            });
+            kb.appendChild(k);
+          });
+
+          const spaceKey = document.createElement("button");
+          spaceKey.className = "key-cap focusable";
+          spaceKey.textContent = "␣ Space";
+          spaceKey.addEventListener("click", () => { inp.value += " "; s.userAnswer = inp.value; });
+
+          const hintKey = document.createElement("button");
+          hintKey.className = "key-cap focusable";
+          hintKey.style.color = "var(--duo-gold)";
+          hintKey.textContent = "💡 Auto-Fill Hint";
+          hintKey.addEventListener("click", () => {
+            SoundFX.pop();
+            inp.value = ex.targetText;
+            s.userAnswer = inp.value;
+          });
+
+          kb.appendChild(spaceKey);
+          kb.appendChild(hintKey);
+          box.appendChild(inp);
+          box.appendChild(kb);
+          zone.appendChild(box);
+        } else if (ex.type === "matching") {
+          document.getElementById("ex-prompt-headline").textContent = t.matchPrompt;
+          const cols = document.createElement("div");
+          cols.className = "pairs-columns";
+          const leftStack = document.createElement("div");
+          leftStack.className = "pair-stack";
+          const rightStack = document.createElement("div");
+          rightStack.className = "pair-stack";
+
+          let selL = null;
+          let selR = null;
+
+          function checkMatch() {
+            if (!selL || !selR) return;
+            if (selL.dataset.pid === selR.dataset.pid) {
+              SoundFX.correct();
+              selL.classList.add("matched");
+              selR.classList.add("matched");
+              s.matchedIds.push(selL.dataset.pid);
+              if (s.matchedIds.length === ex.pairs.length) {
+                s.userAnswer = "ALL_MATCHED";
+              }
+            } else {
+              SoundFX.wrong();
+            }
+            selL.classList.remove("selected");
+            selR.classList.remove("selected");
+            selL = null;
+            selR = null;
+          }
+
+          ex.pairs.forEach(p => {
+            const b = document.createElement("button");
+            b.className = "mc-card focusable";
+            b.dataset.pid = p.id;
+            b.textContent = p.left;
+            b.addEventListener("click", () => {
+              SoundFX.pop();
+              leftStack.querySelectorAll(".mc-card").forEach(x => x.classList.remove("selected"));
+              b.classList.add("selected");
+              selL = b;
+              checkMatch();
+            });
+            leftStack.appendChild(b);
+          });
+
+          shuffle(ex.pairs).forEach(p => {
+            const b = document.createElement("button");
+            b.className = "mc-card focusable";
+            b.dataset.pid = p.id;
+            b.textContent = p.right;
+            b.addEventListener("click", () => {
+              SoundFX.pop();
+              rightStack.querySelectorAll(".mc-card").forEach(x => x.classList.remove("selected"));
+              b.classList.add("selected");
+              selR = b;
+              checkMatch();
+            });
+            rightStack.appendChild(b);
+          });
+
+          cols.appendChild(leftStack);
+          cols.appendChild(rightStack);
+          zone.appendChild(cols);
+        } else if (ex.type === "speaking") {
+          document.getElementById("ex-prompt-headline").textContent = t.speakPrompt;
+          const card = document.createElement("div");
+          card.className = "rail-card";
+          card.innerHTML = `
+            <div style="font-size:1.5rem;font-weight:900;color:var(--duo-gold);">${ex.targetText}</div>
+            <div style="display:flex;gap:14px;flex-wrap:wrap;">
+              <button class="btn-3d btn-blue focusable" id="btn-stt-mic">🎙️ Hold / Tap to Speak</button>
+              <button class="btn-3d btn-green focusable" id="btn-stt-verify">✅ I Spoke It Clearly (TV Remote Verify)</button>
+            </div>
+            <div id="stt-live-msg" style="color:var(--text-soft);font-weight:700;">Use microphone or TV Remote Verify to confirm pronunciation.</div>
+          `;
+          zone.appendChild(card);
+
+          card.querySelector("#btn-stt-mic").addEventListener("click", () => {
+            const msgEl = card.querySelector("#stt-live-msg");
+            const Rec = window.SpeechRecognition || window.webkitSpeechRecognition;
+            if (!Rec) {
+              msgEl.textContent = "TV Browser has no microphone stream — click 'I Spoke It Clearly' to verify!";
+              return;
+            }
+            try {
+              const r = new Rec();
+              r.lang = LANGUAGES.find(l => l.code === State.tgtLang)?.speech || "en-US";
+              msgEl.textContent = "🎙️ Listening now...";
+              r.onresult = (ev) => {
+                const heard = ev.results?.[0]?.[0]?.transcript || "";
+                msgEl.textContent = `Heard: "${heard}"`;
+                s.userAnswer = ex.targetText;
+              };
+              r.onerror = () => {
+                msgEl.textContent = "Mic unavailable — click 'I Spoke It Clearly' to continue.";
+              };
+              r.start();
+            } catch (_) {}
+          });
+
+          card.querySelector("#btn-stt-verify").addEventListener("click", () => {
+            SoundFX.pop();
+            SpeechEngine.speak(ex.targetText, State.tgtLang, 1.0);
+            s.userAnswer = ex.targetText;
+            card.querySelector("#stt-live-msg").textContent = "✓ Pronunciation confirmed!";
+          });
+        }
+
+        SpatialFocus.refresh();
+      }
+
+      async function evaluateOrAdvance() {
+        const s = State.session;
+        if (!s) return;
+        const ex = s.exercises[s.index];
+        const t = I18N[State.uiLang] || I18N.en;
+        const dock = document.getElementById("lesson-dock");
+
+        if (!s.answered) {
+          const passed = ex.type === "matching"
+            ? s.userAnswer === "ALL_MATCHED"
+            : normalizeStr(s.userAnswer) === normalizeStr(ex.targetText);
+
+          s.answered = true;
+          if (passed) {
+            SoundFX.correct();
+            s.correctCount++;
+            const bonus = 5 * s.combo;
+            s.earnedXp += bonus;
+            s.combo++;
+            s.maxCombo = Math.max(s.maxCombo, s.combo);
+            State.maxComboEver = Math.max(State.maxComboEver, s.maxCombo);
+
+            dock.className = "lesson-bottom-dock correct-state";
+            document.getElementById("feedback-icon").textContent = "✓";
+            document.getElementById("feedback-headline").textContent = `${t.correctMsg} (+${bonus} XP)`;
+            document.getElementById("feedback-subtext").textContent = ex.targetText;
+            document.getElementById("lesson-mascot-slot").innerHTML = renderMascotSVG("happy", 58);
+
+            // Spawn floating XP badge
+            const xpPop = document.createElement("div");
+            xpPop.className = "xp-float-badge";
+            xpPop.textContent = `+${bonus} XP!`;
+            dock.appendChild(xpPop);
+            setTimeout(() => xpPop.remove(), 950);
+
+            SpeechEngine.speak(ex.targetText, State.tgtLang, 1.0);
+            State.srsDeck[ex.conceptId] = { due: Date.now() + 86400000 * 3 };
+          } else {
+            SoundFX.wrong();
+            s.combo = 1;
+            s.hearts = Math.max(1, s.hearts - 1);
+            document.getElementById("lesson-hearts").textContent = s.hearts;
+            dock.className = "lesson-bottom-dock wrong-state";
+            document.getElementById("feedback-icon").textContent = "✕";
+            document.getElementById("feedback-headline").textContent = t.wrongMsg;
+            document.getElementById("feedback-subtext").textContent = ex.targetText;
+            document.getElementById("lesson-mascot-slot").innerHTML = renderMascotSVG("wrong", 58);
+            State.srsDeck[ex.conceptId] = { due: Date.now() };
+          }
+
+          document.getElementById("combo-indicator").textContent = `🔥 ${s.combo}x COMBO`;
+          document.getElementById("btn-check-main").textContent = t.next;
+        } else {
+          s.index++;
+          if (s.index >= s.exercises.length) {
+            SoundFX.victory();
+            const totalAward = s.earnedXp + 20;
+            State.xp += totalAward;
+            State.todayXp += totalAward;
+            State.gems += 15;
+
+            const crownKey = `${State.srcLang}_${State.tgtLang}_${State.cefr}_${s.nodeIdx}`;
+            State.nodeCrowns[crownKey] = Math.min(3, (State.nodeCrowns[crownKey] || 0) + 1);
+
+            await savePlayerProgress();
+            MyPCBridge.submitXP(State.xp);
+
+            const acc = Math.round((s.correctCount / s.exercises.length) * 100);
+            document.getElementById("victory-mascot-svg").innerHTML = renderMascotSVG("victory", 96);
+            document.getElementById("vic-xp").textContent = `+${totalAward} XP`;
+            document.getElementById("vic-combo").textContent = `${s.maxCombo}x 🔥`;
+            document.getElementById("vic-acc").textContent = `${acc}%`;
+            State.session = null;
+            showScreen("screen-victory");
+          } else {
+            renderActiveExercise();
+          }
+        }
+      }
+
+      async function triggerAiLesson() {
+        const btn = document.getElementById("btn-ai-gen");
+        const old = btn.innerHTML;
+        btn.textContent = "⏳ Crafting AI Lesson...";
+        try {
+          const prompt = `Generate 3 language learning sentences at CEFR ${State.cefr} translating from ${State.srcLang} to ${State.tgtLang}. Return JSON array: [{"id":"ai_1","text":{"${State.srcLang}":"...","${State.tgtLang}":"..."}}]`;
+          const data = await AIEngine.queryJSON(prompt);
+          if (Array.isArray(data) && data.length > 0) {
+            launchLesson(1, buildLessonExercises(1, data));
+          } else {
+            launchLesson(1);
+          }
+        } catch (_) {
+          launchLesson(1);
+        } finally {
+          btn.innerHTML = old;
+        }
+      }
+
+      async function triggerGrammarExplanation(samplePhrase) {
+        const box = document.getElementById("grammar-box");
+        box.textContent = "✨ Consulting AI Grammar & Morphology Studio...";
+        const srcName = LANGUAGES.find(l => l.code === State.srcLang)?.name;
+        const tgtName = LANGUAGES.find(l => l.code === State.tgtLang)?.name;
+        try {
+          const res = await AIEngine.queryJSON(
+            `Give a concise grammar, script, and morphology breakdown for "${samplePhrase}" when learning ${tgtName} from ${srcName} at CEFR ${State.cefr}. Return JSON: {"guide":"..."}`
+          );
+          box.textContent = res.guide || "Grammar breakdown complete.";
+        } catch (_) {
+          const zghNote = State.tgtLang === "zgh"
+            ? " Tamazight uses the Neo-Tifinagh script (ⵜⴰⵎⴰⵣⵉⵖⵜ) with VSO/SVO word order and prefix/suffix state markers (ⴰ-, ⵜ-...-ⵜ)."
+            : "";
+          box.textContent = `[Built-in Grammar Studio • ${srcName} → ${tgtName} (${State.cefr})]: Analyzing "${samplePhrase}". Pay attention to verb-subject agreement and root patterns.${zghNote} Add your NVIDIA NIM, Gemini, or OpenAI key in ⚙️ Admin for live AI tutoring!`;
+        }
+      }
+
+      function openAdminModal() {
+        const c = State.admin;
+        document.getElementById("adm-scope").value = c.scope;
+        document.getElementById("adm-llm-provider").value = c.llmProvider;
+        document.getElementById("adm-llm-endpoint").value = c.llmEndpoint;
+        document.getElementById("adm-llm-model").value = c.llmModel;
+        document.getElementById("adm-llm-temp").value = c.llmTemp;
+        document.getElementById("adm-llm-key").value = maskDecode(c.llmKey);
+        document.getElementById("adm-tts-provider").value = c.ttsProvider;
+        document.getElementById("adm-stt-provider").value = c.sttProvider;
+        document.getElementById("adm-speech-endpoint").value = c.speechEndpoint;
+        document.getElementById("adm-speech-key").value = maskDecode(c.speechKey);
+        document.getElementById("adm-enable-speaking").checked = c.enableSpeaking;
+        document.getElementById("adm-enable-aigen").checked = c.enableAiGen;
+        document.getElementById("adm-status-banner").textContent = "";
+        showScreen("screen-admin");
+      }
+
+      async function saveAdminSettings() {
+        State.admin = {
+          scope: document.getElementById("adm-scope").value,
+          llmProvider: document.getElementById("adm-llm-provider").value,
+          llmEndpoint: document.getElementById("adm-llm-endpoint").value.trim(),
+          llmModel: document.getElementById("adm-llm-model").value.trim(),
+          llmTemp: parseFloat(document.getElementById("adm-llm-temp").value) || 0.3,
+          llmKey: maskEncode(document.getElementById("adm-llm-key").value.trim()),
+          ttsProvider: document.getElementById("adm-tts-provider").value,
+          sttProvider: document.getElementById("adm-stt-provider").value,
+          speechEndpoint: document.getElementById("adm-speech-endpoint").value.trim(),
+          speechKey: maskEncode(document.getElementById("adm-speech-key").value.trim()),
+          enableSpeaking: document.getElementById("adm-enable-speaking").checked,
+          enableAiGen: document.getElementById("adm-enable-aigen").checked
+        };
+        const keyName = State.admin.scope === "global" ? "admin_global" : `admin_${MyPCBridge.getProfile().id}`;
+        await MyPCBridge.save(keyName, State.admin);
+        const st = document.getElementById("adm-status-banner");
+        st.style.color = "var(--duo-green)";
+        st.textContent = `✓ Saved to ${State.admin.scope.toUpperCase()} storage!`;
+        SoundFX.correct();
+      }
+
+      async function validateAdminConnection() {
+        await saveAdminSettings();
+        const st = document.getElementById("adm-status-banner");
+        st.style.color = "var(--duo-gold)";
+        st.textContent = "⏳ Testing connection to provider...";
+        try {
+          const res = await AIEngine.queryJSON('Return {"ok":true}');
+          if (res) {
+            st.style.color = "var(--duo-green)";
+            st.textContent = `✓ Connected to ${State.admin.llmProvider.toUpperCase()} (${State.admin.llmModel})!`;
+          }
+        } catch (err) {
+          st.style.color = "var(--duo-red)";
+          st.textContent = `✕ Validation Error: ${err.message}. (Bundled offline lessons remain active.)`;
+        }
+      }
+
+      const SpatialFocus = {
+        idx: 0,
+        list() {
+          const activeScreen = document.querySelector(".screen.active");
+          return [
+            ...document.querySelectorAll(".topbar .focusable"),
+            ...(activeScreen ? activeScreen.querySelectorAll(".focusable:not([disabled])") : [])
+          ];
+        },
+        refresh() {
+          const items = this.list();
+          if (!items.length) return;
+          this.idx = Math.min(this.idx, items.length - 1);
+          this.focusEl(items[this.idx]);
+        },
+        focusEl(el) {
+          document.querySelectorAll(".gp-focus").forEach(x => x.classList.remove("gp-focus"));
+          if (el) {
+            el.classList.add("gp-focus");
+            el.focus({ preventScroll: false });
+          }
+        },
+        move(dir) {
+          const items = this.list();
+          if (!items.length) return;
+          SoundFX.tick();
+          const cur = document.activeElement && items.includes(document.activeElement)
+            ? document.activeElement
+            : items[this.idx] || items[0];
+          const r1 = cur.getBoundingClientRect();
+          const cx = r1.left + r1.width / 2;
+          const cy = r1.top + r1.height / 2;
+
+          let best = null;
+          let bestDist = Infinity;
+          items.forEach(cand => {
+            if (cand === cur) return;
+            const r2 = cand.getBoundingClientRect();
+            if (r2.width === 0 && r2.height === 0) return;
+            const nx = r2.left + r2.width / 2;
+            const ny = r2.top + r2.height / 2;
+            const dx = nx - cx;
+            const dy = ny - cy;
+
+            if (dir === "right" && dx <= 6) return;
+            if (dir === "left" && dx >= -6) return;
+            if (dir === "down" && dy <= 6) return;
+            if (dir === "up" && dy >= -6) return;
+
+            const dist = (dir === "left" || dir === "right")
+              ? Math.abs(dx) + Math.abs(dy) * 2.6
+              : Math.abs(dy) + Math.abs(dx) * 2.6;
+            if (dist < bestDist) {
+              bestDist = dist;
+              best = cand;
+            }
+          });
+
+          if (best) {
+            this.idx = items.indexOf(best);
+            this.focusEl(best);
+          }
+        },
+        activate() {
+          const el = document.activeElement;
+          if (el && el.classList.contains("focusable")) el.click();
+        }
+      };
+
+      async function savePlayerProgress() {
+        await MyPCBridge.save(`progress_${MyPCBridge.getProfile().id}`, {
+          uiLang: State.uiLang,
+          srcLang: State.srcLang,
+          tgtLang: State.tgtLang,
+          cefr: State.cefr,
+          xp: State.xp,
+          todayXp: State.todayXp,
+          gems: State.gems,
+          streak: State.streak,
+          maxComboEver: State.maxComboEver,
+          nodeCrowns: State.nodeCrowns,
+          srsDeck: State.srsDeck
+        });
+      }
+
+      function cycleOption(kind) {
+        SoundFX.pop();
+        if (kind === "ui") {
+          const order = ["en", "fr", "ar", "es"];
+          State.uiLang = order[(order.indexOf(State.uiLang) + 1) % order.length];
+        } else if (kind === "src") {
+          const next = (LANGUAGES.findIndex(l => l.code === State.srcLang) + 1) % LANGUAGES.length;
+          State.srcLang = LANGUAGES[next].code;
+          if (State.srcLang === State.tgtLang) cycleOption("tgt");
+        } else if (kind === "tgt") {
+          const next = (LANGUAGES.findIndex(l => l.code === State.tgtLang) + 1) % LANGUAGES.length;
+          State.tgtLang = LANGUAGES[next].code;
+          if (State.tgtLang === State.srcLang) cycleOption("tgt");
+        } else if (kind === "cefr") {
+          const next = (CEFR_META.findIndex(c => c.code === State.cefr) + 1) % CEFR_META.length;
+          State.cefr = CEFR_META[next].code;
+        }
+        savePlayerProgress();
+        renderDashboard();
+      }
+
+      function setupControllers() {
+        window.addEventListener("keydown", (e) => {
+          const inText = document.activeElement?.tagName === "INPUT" && document.activeElement.type === "text";
+          if (e.key === "ArrowUp") { e.preventDefault(); SpatialFocus.move("up"); }
+          else if (e.key === "ArrowDown") { e.preventDefault(); SpatialFocus.move("down"); }
+          else if (e.key === "ArrowLeft" && !inText) { e.preventDefault(); SpatialFocus.move("left"); }
+          else if (e.key === "ArrowRight" && !inText) { e.preventDefault(); SpatialFocus.move("right"); }
+          else if (e.key === "Enter" && !inText) { e.preventDefault(); SpatialFocus.activate(); }
+          else if (["1", "2", "3", "4"].includes(e.key) && !inText && State.session) {
+            const cards = document.querySelectorAll("#ex-interactive-zone .mc-card");
+            const idx = parseInt(e.key, 10) - 1;
+            if (cards[idx]) cards[idx].click();
+          } else if (e.key === "Escape" || e.keyCode === 10009) {
+            e.preventDefault();
+            State.session = null;
+            showScreen("screen-dashboard");
+            renderDashboard();
+          }
+        });
+
+        let lastGp = 0;
+        function pollGamepads(ts) {
+          if (ts - lastGp > 155) {
+            const pad = (navigator.getGamepads ? navigator.getGamepads() : [])[0];
+            if (pad) {
+              const b = pad.buttons;
+              const ax0 = pad.axes[0] || 0;
+              const ax1 = pad.axes[1] || 0;
+              if (b[12]?.pressed || ax1 < -0.5) { SpatialFocus.move("up"); lastGp = ts; }
+              else if (b[13]?.pressed || ax1 > 0.5) { SpatialFocus.move("down"); lastGp = ts; }
+              else if (b[14]?.pressed || ax0 < -0.5) { SpatialFocus.move("left"); lastGp = ts; }
+              else if (b[15]?.pressed || ax0 > 0.5) { SpatialFocus.move("right"); lastGp = ts; }
+              else if (b[0]?.pressed) { SpatialFocus.activate(); lastGp = ts; }
+              else if (b[1]?.pressed) { State.session = null; showScreen("screen-dashboard"); renderDashboard(); lastGp = ts; }
+              else if (b[2]?.pressed) { evaluateOrAdvance(); lastGp = ts; }
+              else if (b[3]?.pressed && State.session) {
+                const ex = State.session.exercises[State.session.index];
+                SpeechEngine.speak(ex.targetText || ex.sourceText, State.tgtLang, 1.0);
+                lastGp = ts;
+              } else if (b[4]?.pressed || b[5]?.pressed) {
+                cycleOption("tgt");
+                lastGp = ts;
+              }
+            }
+          }
+          requestAnimationFrame(pollGamepads);
+        }
+        requestAnimationFrame(pollGamepads);
+      }
+
+      async function boot() {
+        DeviceDetector.check();
+        window.addEventListener("resize", () => DeviceDetector.check());
+        window.addEventListener("orientationchange", () => setTimeout(() => DeviceDetector.check(), 100));
+
+        const saved = await MyPCBridge.load(`progress_${MyPCBridge.getProfile().id}`, null);
+        if (saved) Object.assign(State, saved);
+
+        const globalAdm = await MyPCBridge.load("admin_global", null);
+        const userAdm = await MyPCBridge.load(`admin_${MyPCBridge.getProfile().id}`, null);
+        if (userAdm && userAdm.scope === "user") Object.assign(State.admin, userAdm);
+        else if (globalAdm) Object.assign(State.admin, globalAdm);
+
+        document.body.addEventListener("click", (e) => {
+          const btn = e.target.closest("[data-action]");
+          if (!btn) return;
+          const act = btn.dataset.action;
+
+          if (act === "go-home" || act === "close-admin" || act === "finish-victory" || act === "quit-lesson") {
+            State.session = null;
+            if (DeviceDetector.activeMobileTab === "admin") DeviceDetector.activeMobileTab = "path";
+            showScreen("screen-dashboard");
+            renderDashboard();
+          } else if (act === "mob-tab") {
+            SoundFX.pop();
+            DeviceDetector.setTab(btn.dataset.tab || "path");
+          } else if (act === "cycle-ui-lang") cycleOption("ui");
+          else if (act === "cycle-src-lang") cycleOption("src");
+          else if (act === "cycle-tgt-lang") cycleOption("tgt");
+          else if (act === "cycle-cefr") cycleOption("cefr");
+          else if (act === "toggle-sfx") {
+            SoundFX.enabled = !SoundFX.enabled;
+            if (SoundFX.enabled) SoundFX.pop();
+            renderDashboard();
+          } else if (act === "open-admin") openAdminModal();
+          else if (act === "save-admin-config") saveAdminSettings();
+          else if (act === "test-admin-api") validateAdminConnection();
+          else if (act === "start-blitz" || act === "start-srs") launchLesson(1);
+          else if (act === "generate-ai-lesson") triggerAiLesson();
+          else if (act === "explain-unit-grammar") {
+            const sample = CURRICULUM.find(c => c.cefr === State.cefr)?.text[State.tgtLang] || CURRICULUM[0].text[State.tgtLang];
+            triggerGrammarExplanation(sample);
+          } else if (act === "play-tts-fast" && State.session) {
+            const ex = State.session.exercises[State.session.index];
+            SpeechEngine.speak(ex.targetText || ex.sourceText, State.tgtLang, 1.0);
+          } else if (act === "play-tts-slow" && State.session) {
+            const ex = State.session.exercises[State.session.index];
+            SpeechEngine.speak(ex.targetText || ex.sourceText, State.tgtLang, 0.65);
+          } else if (act === "check-or-continue") evaluateOrAdvance();
+          else if (act === "explain-current-ex" && State.session) {
+            const ex = State.session.exercises[State.session.index];
+            document.getElementById("feedback-subtext").textContent = ex.phonetic || `Target Form: "${ex.targetText}"`;
+          }
+        });
+
+        setupControllers();
+        renderDashboard();
+        SpatialFocus.refresh();
+      }
+
+      window.addEventListener("DOMContentLoaded", boot);
+    })();
+  </script>
+</body>
+</html>
