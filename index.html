@@ -83,7 +83,6 @@
       overflow: hidden;
     }
 
-    /**/
     /* OPTIONAL TOP HEADER BAR — HIDDEN BY DEFAULT, ENABLED IN SETTINGS */
     .permanent-top-navbar {
       display: none;
@@ -142,7 +141,6 @@
       margin-inline-end: 4px;
     }
 
-    /**/
     .sidebar-brand-box {
       display: flex;
       align-items: center;
@@ -325,7 +323,7 @@
       border-color: var(--duo-gold);
     }
 
-    /* 3-COLUMN DUOLINGO BODY BELOW PERMANENT TOP BAR */
+    /* 3-COLUMN DUOLINGO BODY BELOW TOP BAR */
     .duo-app-shell {
       display: grid;
       grid-template-columns: 230px 1fr 340px;
@@ -397,46 +395,6 @@
       height: 100%;
       overflow: hidden;
       position: relative;
-    }
-
-    /* INSTANT CEFR PILL BAR AT TOP OF LEARN FEED */
-    .cefr-quick-ribbon {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      padding: 10px 14px;
-      background: var(--bg-panel);
-      border: 2px solid var(--border-line);
-      border-radius: 16px;
-      flex-wrap: wrap;
-    }
-
-    .cefr-pill-group {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-
-    .cefr-chip-btn {
-      background: var(--bg-elevated);
-      border: 2px solid var(--border-line);
-      border-bottom: 3px solid var(--border-lip);
-      color: var(--text-muted);
-      font-family: inherit;
-      font-size: 0.82rem;
-      font-weight: 900;
-      padding: 6px 12px;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-
-    .cefr-chip-btn.active {
-      background: var(--duo-green);
-      border-color: var(--duo-green);
-      border-bottom-color: var(--duo-green-dark);
-      color: #ffffff;
     }
 
     /* SCROLLABLE TAB VIEWS */
@@ -869,9 +827,38 @@
     }
 
     .mc-option.matched {
-      opacity: 0.25;
-      pointer-events: none;
+      background: rgba(88, 204, 2, 0.16);
       border-color: var(--duo-green);
+      color: var(--duo-green);
+      opacity: 0.45;
+      pointer-events: none;
+    }
+
+    .cefr-pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .cefr-chip-btn {
+      background: var(--bg-elevated);
+      border: 2px solid var(--border-line);
+      border-bottom: 4px solid var(--border-lip);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.86rem;
+      font-weight: 900;
+      padding: 8px 12px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .cefr-chip-btn.active {
+      background: rgba(88, 204, 2, 0.18);
+      border-color: var(--duo-green);
+      border-bottom-color: var(--duo-green-dark);
+      color: var(--duo-green);
     }
 
     .key-badge {
@@ -955,11 +942,6 @@
       cursor: pointer;
     }
 
-    .vkey-btn:hover {
-      background: var(--bg-hover);
-      border-color: var(--duo-blue);
-    }
-
     .speaking-card {
       background: var(--bg-panel);
       border: 2px solid var(--border-line);
@@ -1002,7 +984,7 @@
       animation: shakeWrong 0.35s ease;
     }
 
-    /* MODALS (Course Switcher, Guidebook) */
+    /* MODALS */
     .modal-backdrop {
       position: fixed;
       inset: 0;
@@ -1132,10 +1114,6 @@
       gap: 8px;
       cursor: pointer;
       text-align: center;
-    }
-
-    .wizard-choice-card:hover {
-      background: var(--bg-hover);
     }
 
     .wizard-choice-card.selected {
@@ -1307,7 +1285,6 @@
       }
     }
 
-    /* ADMIN FORM INPUTS */
     .admin-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1339,9 +1316,8 @@
 </head>
 <body>
   <div class="app-master-frame">
-    <!-- ALWAYS-ON PERMANENT TOP HEADER BAR -->
+    <!-- ALWAYS-ON PERMANENT TOP HEADER BAR (Hidden by default, toggled in Settings) -->
     <header class="permanent-top-navbar">
-      <!-- 1. Brand Logo -->
       <div class="top-brand-cluster focusable" tabindex="0" data-action="switch-tab" data-tab="learn" title="PolyglotTV Home">
         <svg width="34" height="34" viewBox="0 0 64 64" fill="none">
           <rect width="64" height="64" rx="16" fill="#58cc02"/>
@@ -1354,22 +1330,18 @@
         <span class="brand-logo-text" id="ui-brand-title">PolyglotTV</span>
       </div>
 
-      <!-- 2. Always-Visible Course, Source, CEFR Level & UI Language Pickers -->
       <div class="top-course-controls">
-        <!-- Target Language ("Learn") Dropdown + Modal Trigger -->
         <div class="top-picker-select-wrap">
           <label for="top-select-target" id="lbl-top-learn">Learn:</label>
           <select id="top-select-target" class="top-native-select focusable" tabindex="0" title="Target Language to Learn"></select>
           <button class="widget-link focusable" tabindex="0" data-action="open-course-modal" title="All Courses & Add Language" style="font-size:0.95rem;padding:0 4px;">🌍</button>
         </div>
 
-        <!-- Source Language ("I Speak / From") Dropdown -->
         <div class="top-picker-select-wrap">
           <label for="top-select-source" id="lbl-top-from">From:</label>
           <select id="top-select-source" class="top-native-select focusable" tabindex="0" title="Source Language I Speak"></select>
         </div>
 
-        <!-- CEFR Level ("Level: A1-C2") Dropdown -->
         <div class="top-picker-select-wrap">
           <label for="top-select-cefr" id="lbl-top-level">Level:</label>
           <select id="top-select-cefr" class="top-native-select focusable" tabindex="0" title="CEFR Proficiency Level (A1-C2)">
@@ -1382,7 +1354,6 @@
           </select>
         </div>
 
-        <!-- Interface Language ("UI") Dropdown -->
         <div class="top-picker-select-wrap">
           <label for="top-select-ui" id="lbl-top-ui">UI:</label>
           <select id="top-select-ui" class="top-native-select focusable" tabindex="0" title="App Interface Language">
@@ -1394,20 +1365,11 @@
         </div>
       </div>
 
-      <!-- 3. Always-Visible Stats & Admin Button -->
       <div class="top-metrics-group">
-        <div class="metric-item streak" title="Daily Streak">
-          <span>🔥</span> <span id="top-streak-val">3</span>
-        </div>
-        <div class="metric-item xp" title="Total XP">
-          <span>⚡</span> <span id="top-xp-val">140</span>
-        </div>
-        <div class="metric-item gems" title="Gems">
-          <span>💎</span> <span id="top-gems-val">120</span>
-        </div>
-        <div class="metric-item hearts" title="Hearts">
-          <span>❤️</span> <span id="top-hearts-val">5</span>
-        </div>
+        <div class="metric-item streak" title="Daily Streak"><span>🔥</span> <span id="top-streak-val">3</span></div>
+        <div class="metric-item xp" title="Total XP"><span>⚡</span> <span id="top-xp-val">140</span></div>
+        <div class="metric-item gems" title="Gems"><span>💎</span> <span id="top-gems-val">120</span></div>
+        <div class="metric-item hearts" title="Hearts"><span>❤️</span> <span id="top-hearts-val">5</span></div>
         <button class="top-admin-btn focusable" tabindex="0" data-action="switch-tab" data-tab="settings" title="Admin & AI Settings">
           ⚙️ <span id="lbl-top-admin">Admin</span>
         </button>
@@ -1416,8 +1378,7 @@
 
     <!-- MAIN 3-COLUMN DUOLINGO BODY -->
     <div class="duo-app-shell">
-      <!---->
-      <!-- LEFT SIDEBAR (Classic Duolingo Web/TV Navigation) -->
+      <!-- LEFT SIDEBAR -->
       <aside class="left-nav-sidebar">
         <div class="sidebar-brand-box focusable" tabindex="0" data-action="switch-tab" data-tab="learn" title="PolyglotTV">
           <svg width="32" height="32" viewBox="0 0 64 64" fill="none">
@@ -1472,7 +1433,6 @@
       <div class="center-stage-col">
         <main id="tab-learn" class="tab-view active">
           <div class="feed-container">
-            <!-- Unit Header Banner -->
             <div class="unit-banner" id="unit-banner-card">
               <div class="unit-banner-info">
                 <span class="unit-super-label" id="unit-super-title">SECTION 1, UNIT 1</span>
@@ -1482,13 +1442,15 @@
                 <button class="guidebook-btn focusable" tabindex="0" data-action="open-guidebook">
                   📖 <span id="lbl-guidebook">Guidebook</span>
                 </button>
+                <button class="guidebook-btn focusable" tabindex="0" data-action="start-endless-mode" id="btn-endless-lesson">
+                  ♾️ <span id="lbl-endless-btn">Endless Mode</span>
+                </button>
                 <button class="guidebook-btn focusable" tabindex="0" data-action="generate-ai-lesson" id="btn-ai-lesson">
                   ✨ <span id="lbl-ai-btn">AI Lesson</span>
                 </button>
               </div>
             </div>
 
-            <!-- Winding Serpentine Skill Path -->
             <div class="serpentine-path" id="serpentine-path-container"></div>
           </div>
         </main>
@@ -1497,6 +1459,17 @@
           <div class="feed-container">
             <h2 style="font-size:1.6rem;font-weight:900;" id="prac-heading">🏋️ Practice Hub</h2>
             <p style="color:var(--text-muted);font-weight:700;" id="prac-sub">Strengthen weak vocabulary scheduled by the SM-2 Spaced Repetition curve or run a timed XP Blitz.</p>
+
+            <div class="widget-box" style="border-color:var(--duo-green);">
+              <div class="widget-header">
+                <span>♾️ Endless Learning Marathon</span>
+                <span style="color:var(--duo-green);">Infinite Exercises & AI Stream</span>
+              </div>
+              <p style="color:var(--text-muted);font-size:0.92rem;">Non-stop adaptive exercises that scale dynamically with your combo and never run out of fresh sentences.</p>
+              <button class="btn-duo green focusable" tabindex="0" data-action="start-endless-mode">
+                ♾️ Start Endless Learning Stream
+              </button>
+            </div>
 
             <div class="widget-box">
               <div class="widget-header">
@@ -1556,8 +1529,6 @@
           <div class="feed-container" style="max-width:780px;">
             <h2 style="font-size:1.6rem;font-weight:900;">⚙️ Settings & Admin Studio</h2>
 
-            <!---->
-            <!-- COURSE, LEVEL & HUD VISIBILITY SETTINGS -->
             <div class="widget-box">
               <div class="widget-header">
                 <span>🎓 Course, Level & Interface Bars</span>
@@ -1721,7 +1692,6 @@
 
       <!-- RIGHT SIDEBAR WIDGETS -->
       <aside class="right-widgets-sidebar">
-        <!---->
         <div class="right-stats-strip">
           <button class="flag-course-btn focusable" tabindex="0" data-action="open-course-modal" title="Switch Course or Level">
             <span id="sidebar-course-flag">ⵣ</span>
@@ -1763,8 +1733,7 @@
       </aside>
     </div>
 
-    <!---->
-    <!-- OPTIONAL BOTTOM CONTROLLER / BUTTONS GUI FOOTER (HIDDEN BY DEFAULT) -->
+    <!-- OPTIONAL BOTTOM CONTROLLER / BUTTONS GUI FOOTER (Hidden by default, toggled in Settings) -->
     <footer class="gamepad-hud-footer" id="gamepad-hud-footer">
       <div class="hud-shortcuts-list">
         <span class="hud-key-pill"><kbd>D-Pad / Stick</kbd> Navigate</span>
@@ -1775,20 +1744,20 @@
         <span class="hud-key-pill"><kbd>L1 / R1</kbd> Cycle Level</span>
       </div>
       <div id="controller-status-pill" style="color:var(--duo-gold);">
-        Input: TV Remote / Keyboard / Touch
+        Input: TV Remote / Controller / Gamepad Active
       </div>
     </footer>
   </div>
 
-  <!---->
   <!-- FULLSCREEN LESSON OVERLAY -->
   <div class="fullscreen-overlay" id="overlay-lesson">
     <div class="lesson-shell">
       <div class="lesson-top">
-        <button class="lesson-close-x focusable" tabindex="0" data-action="quit-lesson" title="Quit Lesson">✕</button>
+        <button class="lesson-close-x focusable" tabindex="0" data-action="quit-lesson" id="btn-lesson-quit" title="Quit Lesson">✕</button>
         <div class="lesson-prog-track">
           <div class="lesson-prog-fill" id="lesson-prog-bar"></div>
         </div>
+        <div class="metric-item xp" id="lesson-endless-counter" style="display:none;">♾️ #1</div>
         <div class="metric-item streak" id="lesson-combo-tag">🔥 1x</div>
         <div class="metric-item hearts">❤️ <span id="lesson-hearts-val">5</span></div>
       </div>
@@ -1871,7 +1840,6 @@
       <div style="font-size:0.9rem;font-weight:900;color:var(--text-muted);text-transform:uppercase;">I want to learn (Target Language):</div>
       <div class="course-grid" id="modal-course-grid"></div>
 
-      <!-- EXTENSIBLE CUSTOM LANGUAGE ADDER -->
       <div class="widget-box" style="background:var(--bg-elevated);margin-top:6px;">
         <div class="widget-header"><span>➕ Add Custom Language Course</span></div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;">
@@ -1895,9 +1863,7 @@
         </div>
       </div>
 
-      <div class="wizard-stage" id="wizard-stage-content">
-        <!-- Dynamically rendered by WizardEngine -->
-      </div>
+      <div class="wizard-stage" id="wizard-stage-content"></div>
 
       <div class="lesson-bottom-dock" id="wizard-bottom-dock">
         <button class="btn-duo outline focusable" tabindex="0" data-action="wizard-prev" id="btn-wizard-prev">← Back</button>
@@ -2075,7 +2041,6 @@
         }
       };
 
-      // 5 progressive items (A1 -> A2 -> B1 -> B2 -> C1/C2) for the placement quiz
       const PLACEMENT_QUIZ_INDICES = [0, 3, 4, 5, 6];
 
       const LANGUAGES = [
@@ -2098,98 +2063,191 @@
       const CURRICULUM = [
         {
           id: "c1", cefr: "A1", node: 1, phoneticZgh: "Azul, mamenk ant assa?",
-          text: {
-            en: "Hello, how are you today?",
-            fr: "Bonjour, comment allez-vous aujourd'hui ?",
-            es: "Hola, ¿cómo estás hoy?",
-            ar: "مرحباً، كيف حالك اليوم؟",
-            zgh: "ⴰⵣⵓⵍ, ⵎⴰⵎⵏⴽ ⴰⵏⵜ ⴰⵙⵙⴰ?"
-          }
+          text: { en: "Hello, how are you today?", fr: "Bonjour, comment allez-vous aujourd'hui ?", es: "Hola, ¿cómo estás hoy?", ar: "مرحباً، كيف حالك اليوم؟", zgh: "ⴰⵣⵓⵍ, ⵎⴰⵎⵏⴽ ⴰⵏⵜ ⴰⵙⵙⴰ?" }
         },
         {
           id: "c2", cefr: "A1", node: 1, phoneticZgh: "Ansuf s tgmmi nnegh ifulkin",
-          text: {
-            en: "Welcome to our peaceful home",
-            fr: "Bienvenue dans notre maison paisible",
-            es: "Bienvenido a nuestra casa pacífica",
-            ar: "أهلاً وسهلاً بك في بيتنا الهادئ",
-            zgh: "ⴰⵏⵙⵓⴼ ⵙ ⵜⴳⵎⵎⵉ ⵏⵏⵖ ⵉⴼⵓⵍⴽⵉⵏ"
-          }
+          text: { en: "Welcome to our peaceful home", fr: "Bienvenue dans notre maison paisible", es: "Bienvenido a nuestra casa pacífica", ar: "أهلاً وسهلاً بك في بيتنا الهادئ", zgh: "ⴰⵏⵙⵓⴼ ⵙ ⵜⴳⵎⵎⵉ ⵏⵏⵖ ⵉⴼⵓⵍⴽⵉⵏ" }
         },
         {
           id: "c3", cefr: "A1", node: 2, phoneticZgh: "Tanmmirt bahra f twisi nnek",
-          text: {
-            en: "Thank you very much for your help",
-            fr: "Merci beaucoup pour votre aide",
-            es: "Muchas gracias por tu ayuda",
-            ar: "شكراً جزيلاً على مساعدتك",
-            zgh: "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴱⴰⵀⵔⴰ ⴼ ⵜⵡⵉⵙⵉ ⵏⵏⴽ"
-          }
+          text: { en: "Thank you very much for your help", fr: "Merci beaucoup pour votre aide", es: "Muchas gracias por tu ayuda", ar: "شكراً جزيلاً على مساعدتك", zgh: "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴱⴰⵀⵔⴰ ⴼ ⵜⵡⵉⵙⵉ ⵏⵏⴽ" }
         },
         {
           id: "c4", cefr: "A2", node: 2, phoneticZgh: "Righ atay s liqamt d waman",
-          text: {
-            en: "I would like mint tea and cold water",
-            fr: "Je voudrais du thé à la menthe et de l'eau fraîche",
-            es: "Quisiera té con menta y agua fría",
-            ar: "أريد شاياً بالنعناع وماءً بارداً",
-            zgh: "ⵔⵉⵖ ⴰⵜⴰⵢ ⵙ ⵍⵉⵇⴰⵎⵜ ⴷ ⵡⴰⵎⴰⵏ"
-          }
+          text: { en: "I would like mint tea and cold water", fr: "Je voudrais du thé à la menthe et de l'eau fraîche", es: "Quisiera té con menta y agua fría", ar: "أريد شاياً بالنعناع وماءً بارداً", zgh: "ⵔⵉⵖ ⴰⵜⴰⵢ ⵙ ⵍⵉⵇⴰⵎⵜ ⴷ ⵡⴰⵎⴰⵏ" }
         },
         {
           id: "c5", cefr: "B1", node: 3, phoneticZgh: "Almmud n tutlayt tamaynut irzzm tiggura",
-          text: {
-            en: "Learning a new language opens many doors",
-            fr: "Apprendre une nouvelle langue ouvre plusieurs portes",
-            es: "Aprender un nuevo idioma abre muchas puertas",
-            ar: "تعلّم لغة جديدة يفتح أبواباً كثيرة",
-            zgh: "ⴰⵍⵎⵎⵓⴷ ⵏ ⵜⵓⵜⵍⴰⵢⵜ ⵜⴰⵎⴰⵢⵏⵓⵜ ⵉⵕⵥⵥⵎ ⵜⵉⴳⴳⵓⵔⴰ"
-          }
+          text: { en: "Learning a new language opens many doors", fr: "Apprendre une nouvelle langue ouvre plusieurs portes", es: "Aprender un nuevo idioma abre muchas puertas", ar: "تعلّم لغة جديدة يفتح أبواباً كثيرة", zgh: "ⴰⵍⵎⵎⵓⴷ ⵏ ⵜⵓⵜⵍⴰⵢⵜ ⵜⴰⵎⴰⵢⵏⵓⵜ ⵉⵕⵥⵥⵎ ⵜⵉⴳⴳⵓⵔⴰ" }
         },
         {
           id: "c6", cefr: "B2", node: 4, phoneticZgh: "Tatiknulujit tzdi mddn ngr imnzawn",
-          text: {
-            en: "Modern technology connects people across continents",
-            fr: "La technologie moderne relie les peuples entre les continents",
-            es: "La tecnología moderna conecta a las personas entre continentes",
-            ar: "التكنولوجيا الحديثة تربط الشعوب عبر القارات",
-            zgh: "ⵜⴰⵜⵉⴽⵏⵓⵍⵓⵊⵉⵜ ⵜⵣⴷⵉ ⵎⴷⴷⵏ ⵏⴳⵔ ⵉⵎⵏⵥⴰⵡⵏ"
-          }
+          text: { en: "Modern technology connects people across continents", fr: "La technologie moderne relie les peuples entre les continents", es: "La tecnología moderna conecta a las personas entre continentes", ar: "التكنولوجيا الحديثة تربط الشعوب عبر القارات", zgh: "ⵜⴰⵜⵉⴽⵏⵓⵍⵓⵊⵉⵜ ⵜⵣⴷⵉ ⵎⴷⴷⵏ ⵏⴳⵔ ⵉⵎⵏⵥⴰⵡⵏ" }
         },
         {
           id: "c7", cefr: "C1", node: 5, phoneticZgh: "Ahttu n taysi tasnilst isbghur taghrma",
-          text: {
-            en: "Preserving linguistic heritage enriches human civilization",
-            fr: "Préserver le patrimoine linguistique enrichit la civilisation humaine",
-            es: "Preservar el patrimonio lingüístico enriquece la civilización humana",
-            ar: "الحفاظ على التراث اللغوي يثري الحضارة الإنسانية",
-            zgh: "ⴰⵃⵟⵟⵓ ⵏ ⵜⴰⵢⵙⵉ ⵜⴰⵙⵏⵉⵍⵙⵜ ⵉⵙⴱⵖⵓⵔ ⵜⴰⵖⵔⵎⴰ"
-          }
+          text: { en: "Preserving linguistic heritage enriches human civilization", fr: "Préserver le patrimoine linguistique enrichit la civilisation humaine", es: "Preservar el patrimonio lingüístico enriquece la civilización humana", ar: "الحفاظ على التراث اللغوي يثري الحضارة الإنسانية", zgh: "ⴰⵃⵟⵟⵓ ⵏ ⵜⴰⵢⵙⵉ ⵜⴰⵙⵏⵉⵍⵙⵜ ⵉⵙⴱⵖⵓⵔ ⵜⴰⵖⵔⵎⴰ" }
         },
         {
           id: "c8", cefr: "C2", node: 5, phoneticZgh: "Iwnnan ilqayn mmaln tazmrt tamzruyant",
-          text: {
-            en: "Nuanced expressions reflect deep historical resilience",
-            fr: "Les expressions nuancées reflètent une résilience historique profonde",
-            es: "Las expresiones matizadas reflejan una profunda resiliencia histórica",
-            ar: "التعبيرات الدقيقة تعكس صموداً تاريخياً عميقاً",
-            zgh: "ⵉⵡⵏⵏⴰⵏ ⵉⵍⵇⴰⵢⵏ ⵎⵎⴰⵍⵏ ⵜⴰⵣⵎⵔⵜ ⵜⴰⵎⵣⵔⵓⵢⴰⵏⵜ"
-          }
+          text: { en: "Nuanced expressions reflect deep historical resilience", fr: "Les expressions nuancées reflètent une résilience historique profonde", es: "Las expresiones matizadas reflejan una profunda resiliencia histórica", ar: "التعبيرات الدقيقة تعكس صموداً تاريخياً عميقاً", zgh: "ⵉⵡⵏⵏⴰⵏ ⵉⵍⵇⴰⵢⵏ ⵎⵎⴰⵍⵏ ⵜⴰⵣⵎⵔⵜ ⵜⴰⵎⵣⵔⵓⵢⴰⵏⵜ" }
         }
       ];
 
+      const INFINITE_GRAMMAR_MATRIX = [
+        {
+          cefr: "A1",
+          subjects: [
+            { en: "I study", fr: "J'étudie", es: "Yo estudio", ar: "أنا أدرس", zgh: "ⵏⴽⴽ ⴰⵇⵇⵔⴰⵖ", phon: "Nekk aqqragh" },
+            { en: "We speak", fr: "Nous parlons", es: "Nosotros hablamos", ar: "نحن نتحدث", zgh: "ⵏⴽⴽⵏⵉ ⵏⵙⴰⵡⴰⵍ", phon: "Nekkni nsawal" },
+            { en: "My friend reads", fr: "Mon ami lit", es: "Mi amigo lee", ar: "صديقي يقرأ", zgh: "ⴰⵎⴷⴷⴰⴽⴽⵯⵍ ⵉⵏⵓ ⵉⵇⵇⵔⴰ", phon: "Amddakkul inu iqqra" },
+            { en: "She writes", fr: "Elle écrit", es: "Ella escribe", ar: "هي تكتب", zgh: "ⵏⵜⵜⴰⵜ ⵜⵜⴰⵔⴰ", phon: "Nttat ttara" }
+          ],
+          objects: [
+            { en: "a new book every morning", fr: "un nouveau livre chaque matin", es: "un libro nuevo cada mañana", ar: "كتاباً جديداً كل صباح", zgh: "ⴰⴷⵍⵉⵙ ⴰⵎⴰⵢⵏⵓ ⴽⵓ ⵜⵉⴼⴰⵡⵜ", phon: "adlis amaynu ku tifawt" },
+            { en: "useful words at home", fr: "des mots utiles à la maison", es: "palabras útiles en casa", ar: "كلمات مفيدة في البيت", zgh: "ⵉⵡⴰⵍⵉⵡⵏ ⵉⵏⴼⴰⵄⵏ ⵖ ⵜⴳⵎⵎⵉ", phon: "iwaliwn infa'n gh tgmmi" },
+            { en: "with joy in the city", fr: "avec joie dans la ville", es: "con alegría en la ciudad", ar: "بفرح في المدينة", zgh: "ⵙ ⵜⵓⵎⵔⵜ ⵖ ⵜⵎⴷⵉⵏⵜ", phon: "s tumrt gh tmdint" },
+            { en: "this beautiful language today", fr: "cette belle langue aujourd'hui", es: "este hermoso idioma hoy", ar: "هذه اللغة الجميلة اليوم", zgh: "ⵜⵓⵜⵍⴰⵢⵜ ⴰⴷ ⵉⴼⵓⵍⴽⵉⵏ ⴰⵙⵙⴰ", phon: "tutlayt ad ifulkin assa" }
+          ]
+        },
+        {
+          cefr: "A2",
+          subjects: [
+            { en: "The traveler is looking for", fr: "Le voyageur cherche", es: "El viajero busca", ar: "المسافر يبحث عن", zgh: "ⴰⵎⵙⵙⵓⴷⵓ ⴰⵔ ⵉⵙⵉⴳⴳⵉⵍ", phon: "Amssudu ar isiggil" },
+            { en: "Tomorrow we will visit", fr: "Demain nous visiterons", es: "Mañana visitaremos", ar: "غداً سنزور", zgh: "ⴰⵙⴽⴽⴰ ⵔⴰⴷ ⵏⵔⵣⴼ", phon: "Askka rad nrzf" },
+            { en: "They always buy", fr: "Ils achètent toujours", es: "Ellos siempre compran", ar: "هم يشترون دائماً", zgh: "ⵏⵜⵜⵏⵉ ⴰⵔ ⵙⵙⴰⵖⵏ ⴱⴷⴷⴰ", phon: "Nttni ar ssaghn bdda" }
+          ],
+          objects: [
+            { en: "fresh fruit at the central market", fr: "des fruits frais au marché central", es: "fruta fresca en el mercado central", ar: "فواكه طازجة في السوق المركزي", zgh: "ⵉⴳⵓⵎⵎⴰ ⵉⵎⴰⵢⵏⵓⵜⵏ ⵖ ⵓⴳⴰⴷⴰⵣ", phon: "igumma imaynutn gh ugadaz" },
+            { en: "the historic museum near the coast", fr: "le musée historique près de la côte", es: "el museo histórico cerca de la costa", ar: "المتحف التاريخي قرب الساحل", zgh: "ⴰⵙⴰⵍⴰⵢ ⴰⵎⵣⵔⵓⵢⴰⵏ ⴰⵎⴰ ⵏ ⵓⴼⵜⴰⵙ", phon: "asalay amzruyan ama n uftas" },
+            { en: "two tickets for the fast train", fr: "deux billets pour le train rapide", es: "dos billetes para el tren rápido", ar: "تذكرتين للقطار السريع", zgh: "ⵙⵏⴰⵜ ⵜⵏⴼⵓⵍⵉⵏ ⵏ ⵓⵎⵙⵉⵣⵡⵔ", phon: "snat tnfulin n umsizwr" }
+          ]
+        },
+        {
+          cefr: "B1",
+          subjects: [
+            { en: "Practicing every day helps learners master", fr: "Pratiquer chaque jour aide à maîtriser", es: "Practicar cada día ayuda a dominar", ar: "الممارسة اليومية تساعد على إتقان", zgh: "ⴰⵙⵡⵓⵔⵉ ⴽⵓ ⴰⵙⵙ ⴰⵔ ⵉⵜⵜⴰⵡⵙ ⵉ", phon: "Aswuri ku ass ar ittaws i" },
+            { en: "Our community works together to protect", fr: "Notre communauté travaille ensemble pour protéger", es: "Nuestra comunidad trabaja junta para proteger", ar: "مجتمعنا يعمل معاً لحماية", zgh: "ⴰⵎⵓⵏ ⵏⵏⵖ ⴰⵔ ⵉⵙⵡⵓⵔⵉ ⵉ ⵓⵃⵟⵟⵓ ⵏ", phon: "Amun nnegh ar iswuri i uhttu n" },
+            { en: "Sharing cultural stories strengthens", fr: "Partager des récits culturels renforce", es: "Compartir historias culturales fortalece", ar: "مشاركة القصص الثقافية تعزز", zgh: "ⴰⴱⵟⵟⵓ ⵏ ⵜⵓⵍⵍⵉⵙⵉⵏ ⵉⵙⴷⵓⵙ", phon: "Abttu n tullisin isdus" }
+          ],
+          objects: [
+            { en: "authentic pronunciation and confidence", fr: "une prononciation authentique et la confiance", es: "la pronunciación auténtica y la confianza", ar: "النطق الصحيح والثقة بالنفس", zgh: "ⴰⵙⵓⵙⵔⵓ ⵉⵖⵥⴰⵏⵏ ⴷ ⵜⴼⵍⵙⵜ", phon: "asusru ighzann d tflst" },
+            { en: "natural resources in the mountains", fr: "les ressources naturelles dans les montagnes", es: "los recursos naturales en las montañas", ar: "الموارد الطبيعية في الجبال", zgh: "ⵉⵙⵓⴳⴰⵎ ⵉⴳⴰⵎⴰⵏⵏ ⵖ ⵉⴷⵓⵔⴰⵔ", phon: "isugam igamann gh idurar" },
+            { en: "mutual understanding between generations", fr: "la compréhension mutuelle entre les générations", es: "el entendimiento mutuo entre generaciones", ar: "التفاهم المتبادل بين الأجيال", zgh: "ⴰⵎⵙⴼⴰⵀⴰⵎ ⵏⴳⵔ ⵜⵙⵓⵜⵉⵏ", phon: "amsfaham ngr tsutin" }
+          ]
+        },
+        {
+          cefr: "B2",
+          subjects: [
+            { en: "Scientific innovation transforms how societies approach", fr: "L'innovation scientifique transforme l'approche de", es: "La innovación científica transforma cómo abordamos", ar: "الابتكار العلمي يغير طريقة تعامل المجتمعات مع", zgh: "ⴰⵙⵏⴼⵍⵓⵍ ⴰⵎⴰⵙⵙⴰⵏ ⵉⵙⵏⴼⵍ", phon: "Asnflul amassan isnfl" },
+            { en: "Global collaboration is essential for solving", fr: "La collaboration mondiale est essentielle pour résoudre", es: "La colaboración global es esencial para resolver", ar: "التعاون العالمي ضروري لحل", zgh: "ⴰⵎⵢⴰⵡⴰⵙ ⴰⵎⴰⴹⵍⴰⵏ ⵉⵍⴰ ⴰⵜⵉⴳ ⵉ", phon: "Amyawas amadlan ila atig i" }
+          ],
+          objects: [
+            { en: "renewable energy and sustainable development", fr: "l'énergie renouvelable et le développement durable", es: "la energía renovable y el desarrollo sostenible", ar: "الطاقة المتجددة والتنمية المستدامة", zgh: "ⵜⴰⵥⴹⴰⵕⵜ ⵜⴰⵎⴰⵢⵏⵓⵜ ⴷ ⵜⴳⵎⵉ", phon: "tazdart tamaynut d tgmi" },
+            { en: "complex educational challenges in the digital era", fr: "les défis éducatifs complexes à l'ère numérique", es: "los retos educativos complejos en la era digital", ar: "التحديات التعليمية المعقدة في العصر الرقمي", zgh: "ⵉⵎⵓⴽⵔⵉⵙⵏ ⵏ ⵓⵙⴳⵎⵉ ⴰⵎⵓⵟⵟⵓⵏ", phon: "imukrisn n usgmi amuttun" }
+          ]
+        },
+        {
+          cefr: "C1",
+          subjects: [
+            { en: "Critical analysis of historical texts reveals", fr: "L'analyse critique des textes historiques révèle", es: "El análisis crítico de textos históricos revela", ar: "التحليل النقدي للنصوص التاريخية يكشف عن", zgh: "ⴰⵙⴼⵙⵉ ⴰⵏقدⵉ ⵏ ⵉⴹⵕⵉⵚⵏ ⵉⵎⵣⵔⵓⵢⴰⵏⵏ ⵉⵎⵎⴰⵍ", phon: "Asfsi anqdi n idrisn imzruyann immal" },
+            { en: "Multilingual fluency cultivates a deeper appreciation of", fr: "La maîtrise multilingue cultive une appréciation de", es: "La fluidez multilingüe cultiva un aprecio por", ar: "الطلاقة متعددة اللغات تنمي تقديراً أعمق لـ", zgh: "ⵜⴰⵥⴹⴰⵕⵜ ⵜⴰⴳⵜⵓⵜⵍⴰⵢⵜ ⵜⵙⴱⵖⵓⵔ", phon: "Tazdart tagtutlayt tsbghur" }
+          ],
+          objects: [
+            { en: "subtle philosophical perspectives across civilizations", fr: "des perspectives philosophiques subtiles entre civilisations", es: "perspectivas filosóficas sutiles entre civilizaciones", ar: "الرؤى الفلسفية الدقيقة عبر الحضارات", zgh: "ⵜⵉⵎⵓⵖⵍⵉⵡⵉⵏ ⵜⵉⴼⵍⵙⴰⴼⵉⵢⵉⵏ ⵏ ⵜⵖⵔⵎⵉⵡⵉⵏ", phon: "timughliwin tiflsafiyin n tghrmiwin" },
+            { en: "ancestral oral traditions and poetic metaphors", fr: "des traditions orales ancestrales et métaphores poétiques", es: "las tradiciones orales ancestrales y metáforas poéticas", ar: "التقاليد الشفهية العريقة والاستعارات الشعرية", zgh: "ⵜⴰⵢⵙⵉ ⵜⴰⵎⵉⵡⴰⵏⵜ ⴷ ⵜⵎⴷⵢⴰⵣⵜ", phon: "taysi tamiwant d tmdyazt" }
+          ]
+        },
+        {
+          cefr: "C2",
+          subjects: [
+            { en: "Epistemological inquiry into language structure demonstrates", fr: "L'enquête épistémologique sur la structure linguistique démontre", es: "La indagación epistemológica sobre el lenguaje demuestra", ar: "البحث المعرفي في بنية اللغة يبرهن على", zgh: "ⴰⵔⵣⵣⵓ ⴰⵎⴰⵙⵙⴰⵏ ⵖ ⵜⵓⵚⴽⵉⵡⵜ ⵏ ⵜⵓⵜⵍⴰⵢⵜ ⵉⵎⵎⴰⵍ", phon: "Arzzu amassan gh tuskiwt n tutlayt immal" },
+            { en: "Rhetorical mastery allows speakers to articulate", fr: "La maîtrise rhétorique permet d'articuler", es: "El dominio retórico permite articular", ar: "البلاغة اللغوية تمكّن المتحدثين من صياغة", zgh: "ⵜⴰⵏⴱⴰⴹⵜ ⵏ ⵡⴰⵡⴰⵍ ⴰⵔ ⵜⵜⴰⵊⵊⴰ ⴰⴷ ⵏⵙⵏⴼⴰⵍⵉ", phon: "Tanbadt n wawal ar ttajja ad nsnfali" }
+          ],
+          objects: [
+            { en: "abstract concepts with precision and elegance", fr: "des concepts abstraits avec précision et élégance", es: "conceptos abstractos con precisión y elegancia", ar: "المفاهيم المجردة بدقة وبلاغة عالية", zgh: "ⵉⵔⵎⵎⵓⵙⵏ ⵉⵍⵇⴰⵢⵏ ⵙ ⵜⵏⵖⴷⴰ ⴷ ⵓⴼⵓⵍⴽⵉ", phon: "irmmusn ilqayn s tnghda d ufulki" },
+            { en: "the interplay between collective memory and identity", fr: "l'interaction entre mémoire collective et identité", es: "la interacción entre memoria colectiva e identidad", ar: "التفاعل العميق بين الذاكرة الجماعية والهوية", zgh: "ⴰⵎⵢⴰⴳⴳⴰ ⵏⴳⵔ ⵜⵎⴽⵜⵉⵜ ⴷ ⵜⵎⴰⴳⵉⵜ", phon: "amyagga ngr tmktit d tmagit" }
+          ]
+        }
+      ];
+
+      const InfiniteGenerator = {
+        counter: 100,
+        aiQueue: [],
+        aiFetching: false,
+        synthesizeItem(cefrLevel, seedIndex = null) {
+          this.counter++;
+          const idx = seedIndex !== null ? seedIndex : this.counter;
+          const matrix = INFINITE_GRAMMAR_MATRIX.find(m => m.cefr === cefrLevel) || INFINITE_GRAMMAR_MATRIX[0];
+          const s = matrix.subjects[idx % matrix.subjects.length];
+          const o = matrix.objects[Math.floor(idx / matrix.subjects.length) % matrix.objects.length];
+
+          const item = {
+            id: `inf_${cefrLevel}_${idx}`,
+            cefr: cefrLevel,
+            node: (idx % 5) + 1,
+            phoneticZgh: `${s.phon} ${o.phon}`,
+            text: {
+              en: `${s.en} ${o.en}`,
+              fr: `${s.fr} ${o.fr}`,
+              es: `${s.es} ${o.es}`,
+              ar: `${s.ar} ${o.ar}`,
+              zgh: `${s.zgh} ${o.zgh}`
+            }
+          };
+
+          // Also support any custom-added languages automatically
+          LANGUAGES.forEach(l => {
+            if (!item.text[l.code]) {
+              item.text[l.code] = `${s.en} ${o.en} [${l.name}]`;
+            }
+          });
+          return item;
+        },
+        getBatch(cefrLevel, count = 4, offset = 0) {
+          const results = [];
+          while (this.aiQueue.length > 0 && results.length < count) {
+            results.push(this.aiQueue.shift());
+          }
+          let step = 0;
+          while (results.length < count) {
+            results.push(this.synthesizeItem(cefrLevel, offset + step + this.counter));
+            step++;
+          }
+          this.prefetchAI(cefrLevel);
+          return results;
+        },
+        async prefetchAI(cefrLevel) {
+          if (this.aiFetching || !State.admin.enableAiGen || !State.admin.llmKey) return;
+          this.aiFetching = true;
+          try {
+            const items = await AIService.askJSON(
+              `Generate 3 fresh unique sentences at CEFR ${cefrLevel} from ${State.srcLang} to ${State.tgtLang}. Return JSON array: [{"id":"ai_${Date.now()}","text":{"${State.srcLang}":"...","${State.tgtLang}":"..."}}]`
+            );
+            if (Array.isArray(items)) {
+              items.forEach(it => {
+                if (it && it.text && it.text[State.srcLang] && it.text[State.tgtLang]) {
+                  this.aiQueue.push(it);
+                }
+              });
+            }
+          } catch (_) {}
+          this.aiFetching = false;
+        }
+      };
+
       const State = {
         activeTab: "learn",
-        onboarded: false,      // Triggers First-Time Setup Wizard when false
+        onboarded: false,
         uiLang: "en",
         srcLang: "en",
         tgtLang: "zgh",
         cefr: "A1",
-        enrolledCourses: [     // Multi-course registry so user can switch between languages on left menu
-          { srcLang: "en", tgtLang: "zgh", cefr: "A1" }
-        ],
-        showTopBar: false,     // Disabled by default per user preference
-        showFooterHud: false,  // Hidden by default per user preference
+        unlockedUnits: 2,
+        enrolledCourses: [{ srcLang: "en", tgtLang: "zgh", cefr: "A1" }],
+        showTopBar: false,
+        showFooterHud: false,
         xp: 140,
         todayXp: 20,
         gems: 120,
@@ -2221,27 +2279,82 @@
 
       const MyPCBridge = {
         initialized: false,
+        keyBound: false,
+        gamepadBound: false,
+        initConfig: {
+          id: "polyglot-tv",
+          name: "PolyglotTV",
+          type: "app",
+          scores: true,
+          localMultiplayer: false,
+          configKeys: ["NVIDIA_API_KEY", "GEMINI_API_KEY", "OPENAI_API_KEY", "RIVA_API_KEY"]
+        },
         async init() {
           if (this.initialized) return;
           try {
-            if (window.MyPC) {
+            if (typeof window.MyPC !== "undefined" && window.MyPC) {
               if (typeof window.MyPC.init === "function") {
-                await window.MyPC.init({
-                  id: "polyglot-tv",
-                  name: "PolyglotTV",
-                  type: "app",
-                  scores: true,
-                  localMultiplayer: false,
-                  configKeys: ["NVIDIA_API_KEY", "GEMINI_API_KEY", "OPENAI_API_KEY", "RIVA_API_KEY"]
-                });
+                const res = window.MyPC.init(this.initConfig);
+                if (res && typeof res.then === "function") {
+                  await res;
+                }
               }
               if (typeof window.MyPC.ready === "function") {
                 window.MyPC.ready();
               }
               this.initialized = true;
+              this.bindListeners();
             }
           } catch (err) {
-            console.warn("MyPC.init fallback mode:", err);
+            console.warn("MyPC SDK init notice:", err);
+          }
+        },
+        bindListeners() {
+          if (typeof window.MyPC === "undefined" || !window.MyPC) return;
+          const pill = document.getElementById("controller-status-pill");
+
+          if (!this.gamepadBound && window.MyPC?.gamepad?.onButtonDown) {
+            this.gamepadBound = true;
+            window.MyPC.gamepad.onButtonDown((btn) => {
+              if (pill) pill.textContent = `Input: MyPC Gamepad (${btn})`;
+              MyPCBridge.dispatchButton(String(btn || "").toUpperCase());
+            });
+          }
+
+          if (!this.keyBound && typeof window.MyPC?.onKey === "function") {
+            this.keyBound = true;
+            window.MyPC.onKey((key) => {
+              const k = String(key?.key || key?.code || key || "").toUpperCase();
+              if (pill) pill.textContent = `Input: MyPC Remote (${k})`;
+              MyPCBridge.dispatchButton(k);
+            });
+          }
+        },
+        dispatchButton(code) {
+          if (["UP", "DPAD_UP", "ARROWUP", "LSTICK_UP"].includes(code)) {
+            SpatialNav.move("up");
+          } else if (["DOWN", "DPAD_DOWN", "ARROWDOWN", "LSTICK_DOWN"].includes(code)) {
+            SpatialNav.move("down");
+          } else if (["LEFT", "DPAD_LEFT", "ARROWLEFT", "LSTICK_LEFT"].includes(code)) {
+            SpatialNav.move("left");
+          } else if (["RIGHT", "DPAD_RIGHT", "ARROWRIGHT", "LSTICK_RIGHT"].includes(code)) {
+            SpatialNav.move("right");
+          } else if (["A", "SOUTH", "OK", "ENTER", "SELECT", "START", "BUTTON_A"].includes(code)) {
+            SpatialNav.activateFocused();
+          } else if (["B", "EAST", "BACK", "RETURN", "ESCAPE", "XF86BACK", "BUTTON_B"].includes(code)) {
+            SpatialNav.handleBack();
+          } else if (["X", "WEST", "BUTTON_X"].includes(code)) {
+            if (State.wizard) advanceWizardStep();
+            else if (State.session) checkOrContinue();
+          } else if (["Y", "NORTH", "BUTTON_Y"].includes(code)) {
+            if (State.session) {
+              const ex = State.session.exercises[State.session.index];
+              AIService.speak(ex.targetText || ex.sourceText, State.tgtLang, 1.0);
+            }
+          } else if (["L1", "LB", "LEFT_SHOULDER", "L2", "LT"].includes(code)) {
+            SpatialNav.cycleLevel(-1);
+          } else if (["R1", "RB", "RIGHT_SHOULDER", "R2", "RT"].includes(code)) {
+            SpatialNav.cycleLevel(1);
           }
         },
         getConfig(key) {
@@ -2428,7 +2541,6 @@
         return Object.values(State.srs).filter(x => x.due <= now).length;
       }
 
-      /**/
       function populateCourseAndSettingDropdowns() {
         const tgtSelect = document.getElementById("top-select-target");
         const srcSelect = document.getElementById("top-select-source");
@@ -2482,14 +2594,12 @@
         document.getElementById("pref-ui-lang").value = State.uiLang;
       }
 
-      /**/
       function renderApp() {
         const i18n = UI_I18N[State.uiLang] || UI_I18N.en;
         const wizI18n = WIZARD_I18N[State.uiLang] || WIZARD_I18N.en;
         document.documentElement.lang = State.uiLang;
         document.documentElement.dir = State.uiLang === "ar" ? "rtl" : "ltr";
 
-        // Update Left Menu Multi-Course Switcher Box
         const myCoursesLbl = document.getElementById("nav-lbl-mycourses");
         if (myCoursesLbl) myCoursesLbl.textContent = wizI18n.myCourses;
         const newCourseLbl = document.getElementById("nav-lbl-newcourse");
@@ -2524,7 +2634,6 @@
           });
         }
 
-        // Toggle Optional Top Bar & Optional Footer HUD (both OFF by default)
         const topNavbar = document.querySelector(".permanent-top-navbar");
         if (topNavbar) topNavbar.classList.toggle("visible", Boolean(State.showTopBar));
 
@@ -2543,14 +2652,12 @@
           footerHudBtn.className = `btn-duo ${State.showFooterHud ? "green" : "outline"} focusable`;
         }
 
-        // Update Top Bar Labels
         document.getElementById("lbl-top-learn").textContent = i18n.learn;
         document.getElementById("lbl-top-from").textContent = i18n.from;
         document.getElementById("lbl-top-level").textContent = i18n.level;
         document.getElementById("lbl-top-ui").textContent = i18n.ui;
         document.getElementById("lbl-top-admin").textContent = i18n.admin;
 
-        // Update Sidebar & Mobile Labels
         document.getElementById("nav-lbl-learn").textContent = i18n.navLearn;
         document.getElementById("nav-lbl-practice").textContent = i18n.navPractice;
         document.getElementById("nav-lbl-league").textContent = i18n.navLeague;
@@ -2563,7 +2670,6 @@
 
         populateCourseAndSettingDropdowns();
 
-        // Metrics in Top Bar & Right Sidebar Strip
         document.getElementById("top-streak-val").textContent = State.streak;
         document.getElementById("top-xp-val").textContent = State.xp;
         document.getElementById("top-gems-val").textContent = State.gems;
@@ -2579,64 +2685,90 @@
         document.getElementById("side-hearts-val").textContent = State.hearts;
         document.getElementById("practice-srs-count").textContent = `${getDueSRSCount()} words due`;
 
-        // Section & Unit Banner
         const secObj = SECTIONS.find(s => s.cefr === State.cefr) || SECTIONS[0];
-
         const banner = document.getElementById("unit-banner-card");
         banner.className = `unit-banner theme-${State.cefr}`;
         document.getElementById("unit-super-title").textContent = `${secObj.name.toUpperCase()} • ${srcObj.name.toUpperCase()} → ${tgtObj.name.toUpperCase()} (${State.cefr})`;
         document.getElementById("unit-main-title").textContent = secObj.unitTitle;
 
-        // Serpentine Path Nodes
         const pathBox = document.getElementById("serpentine-path-container");
         pathBox.innerHTML = "";
-        const steps = [
-          { idx: 1, icon: "⭐", label: `Lesson 1: ${State.cefr} Core Expressions` },
-          { idx: 2, icon: "🍵", label: `Lesson 2: ${State.cefr} Word Tiles & Script` },
-          { idx: 3, icon: "🎙️", label: `Lesson 3: ${State.cefr} Listening & Speaking` },
-          { idx: 4, icon: "🔥", label: `Lesson 4: ${State.cefr} Vocabulary Builder` },
-          { idx: 5, icon: "🏆", label: `${State.cefr} Unit Mastery Checkpoint`, chest: true }
-        ];
-
+        const totalUnits = Math.max(2, State.unlockedUnits || 2);
         let startMarked = false;
-        steps.forEach(st => {
-          const key = `${State.srcLang}_${State.tgtLang}_${State.cefr}_${st.idx}`;
-          const c = State.crowns[key] || 0;
-          const done = c > 0;
-          const isNext = !done && !startMarked;
-          if (isNext) startMarked = true;
 
-          const row = document.createElement("div");
-          row.className = "path-row";
-          if (isNext) {
-            const b = document.createElement("div");
-            b.className = "start-bubble";
-            b.textContent = i18n.start;
-            row.appendChild(b);
+        for (let u = 1; u <= totalUnits; u++) {
+          if (u > 1) {
+            const unitDivider = document.createElement("div");
+            unitDivider.style.cssText = "width:100%;max-width:520px;background:var(--bg-panel);border:2px solid var(--border-line);border-radius:16px;padding:12px 18px;margin:14px 0 4px 0;display:flex;justify-content:space-between;align-items:center;";
+            unitDivider.innerHTML = `
+              <div>
+                <div style="font-size:0.75rem;font-weight:900;color:var(--duo-gold);text-transform:uppercase;">ENDLESS PATH • UNIT ${u} (${State.cefr})</div>
+                <div style="font-size:1.05rem;font-weight:900;">Dynamic Mastery & Fluency Expansion #${u}</div>
+              </div>
+              <span style="font-size:1.4rem;">🚀</span>
+            `;
+            pathBox.appendChild(unitDivider);
           }
 
-          const orb = document.createElement("button");
-          orb.className = `path-orb focusable ${done ? "completed" : ""} ${st.chest ? "chest" : ""}`;
-          orb.tabIndex = 0;
-          orb.innerHTML = `
-            <span>${st.icon}</span>
-            <span class="orb-crown-pill">${"★".repeat(Math.min(3, c)) || "☆☆☆"}</span>
-          `;
-          orb.addEventListener("click", () => {
-            SoundFX.pop();
-            startLesson(st.idx);
+          const steps = [
+            { idx: (u - 1) * 5 + 1, icon: "⭐", label: `Unit ${u}.${1}: ${State.cefr} Expressions` },
+            { idx: (u - 1) * 5 + 2, icon: "🍵", label: `Unit ${u}.${2}: ${State.cefr} Word Builder` },
+            { idx: (u - 1) * 5 + 3, icon: "🎙️", label: `Unit ${u}.${3}: ${State.cefr} Listening & Speech` },
+            { idx: (u - 1) * 5 + 4, icon: "🔥", label: `Unit ${u}.${4}: ${State.cefr} Fluency Practice` },
+            { idx: (u - 1) * 5 + 5, icon: "🏆", label: `Unit ${u} Mastery Checkpoint`, chest: true }
+          ];
+
+          steps.forEach(st => {
+            const key = `${State.srcLang}_${State.tgtLang}_${State.cefr}_${st.idx}`;
+            const c = State.crowns[key] || 0;
+            const done = c > 0;
+            const isNext = !done && !startMarked;
+            if (isNext) startMarked = true;
+
+            const row = document.createElement("div");
+            row.className = "path-row";
+            if (isNext) {
+              const b = document.createElement("div");
+              b.className = "start-bubble";
+              b.textContent = i18n.start;
+              row.appendChild(b);
+            }
+
+            const orb = document.createElement("button");
+            orb.className = `path-orb focusable ${done ? "completed" : ""} ${st.chest ? "chest" : ""}`;
+            orb.tabIndex = 0;
+            orb.innerHTML = `
+              <span>${st.icon}</span>
+              <span class="orb-crown-pill">${"★".repeat(Math.min(3, c)) || "☆☆☆"}</span>
+            `;
+            orb.addEventListener("click", () => {
+              SoundFX.pop();
+              startLesson(st.idx, null, false);
+            });
+
+            const cap = document.createElement("div");
+            cap.className = "path-node-caption";
+            cap.textContent = st.label;
+
+            row.appendChild(orb);
+            row.appendChild(cap);
+            pathBox.appendChild(row);
           });
+        }
 
-          const cap = document.createElement("div");
-          cap.className = "path-node-caption";
-          cap.textContent = st.label;
+        const moreUnitsBtn = document.createElement("button");
+        moreUnitsBtn.className = "btn-duo blue focusable";
+        moreUnitsBtn.tabIndex = 0;
+        moreUnitsBtn.style.marginTop = "14px";
+        moreUnitsBtn.innerHTML = "➕ Unlock Next Endless Unit";
+        moreUnitsBtn.onclick = () => {
+          SoundFX.pop();
+          State.unlockedUnits = (State.unlockedUnits || 2) + 1;
+          saveAll();
+          renderApp();
+        };
+        pathBox.appendChild(moreUnitsBtn);
 
-          row.appendChild(orb);
-          row.appendChild(cap);
-          pathBox.appendChild(row);
-        });
-
-        // Quests & League
         const q1Pct = Math.min(100, Math.round((State.todayXp / 50) * 100));
         document.getElementById("w-q1-val").textContent = `${Math.min(50, State.todayXp)} / 50`;
         document.getElementById("w-q1-bar").style.width = `${q1Pct}%`;
@@ -2676,11 +2808,11 @@
 
       function openSetupWizard(canCancel = true) {
         State.wizard = {
-          step: 1, // 1: Native/UI Lang, 2: Target Lang, 3: Level Mode or Quiz, 4: Placement Quiz / Result
+          step: 1,
           canCancel,
           uiSrcLang: ["en", "fr", "ar", "es"].includes(State.srcLang) ? State.srcLang : State.uiLang,
           tgtLang: State.tgtLang === State.srcLang ? "zgh" : State.tgtLang,
-          mode: "quiz", // "scratch" | "quiz" | "manual"
+          mode: "quiz",
           cefr: State.cefr || "A1",
           quizIndex: 0,
           quizScore: 0,
@@ -2700,7 +2832,6 @@
         const overlay = document.getElementById("overlay-wizard");
         overlay.dir = isRtl ? "rtl" : "ltr";
 
-        // Progress bars
         const bars = document.querySelectorAll("#wizard-progress-bars .wizard-step-bar");
         bars.forEach((b, i) => b.classList.toggle("done", i < w.step));
 
@@ -2716,7 +2847,6 @@
         nextBtn.textContent = (UI_I18N[w.uiSrcLang] || UI_I18N.en).next + " →";
 
         if (w.step === 1) {
-          // STEP 1: Select User's Native / Source Language (Sets UI Language too)
           const uiChoices = [
             { code: "en", name: "English", native: "English", flag: "🇬🇧" },
             { code: "fr", name: "French", native: "Français", flag: "🇫🇷" },
@@ -2751,7 +2881,6 @@
             grid.appendChild(card);
           });
         } else if (w.step === 2) {
-          // STEP 2: Select Target Language to Learn (plus Custom Language Adder)
           stage.innerHTML = `
             <div class="wizard-mascot-header">
               <div>${mascotSVG("idle", 64)}</div>
@@ -2798,7 +2927,6 @@
             }
           };
         } else if (w.step === 3) {
-          // STEP 3: Choose Starting Path (Start from Scratch A1, 5-Question Placement Quiz, or Direct CEFR Selection)
           const tgtMeta = LANGUAGES.find(l => l.code === w.tgtLang) || LANGUAGES[0];
           stage.innerHTML = `
             <div class="wizard-mascot-header">
@@ -2859,7 +2987,6 @@
             cefrBar.appendChild(btn);
           });
         } else if (w.step === 4) {
-          // STEP 4: Either Run the 5-Question Placement Quiz OR Show Final Level Summary
           if (w.mode === "quiz" && w.quizIndex < 5) {
             const itemIdx = PLACEMENT_QUIZ_INDICES[w.quizIndex] ?? w.quizIndex;
             const item = CURRICULUM[itemIdx] || CURRICULUM[0];
@@ -2906,7 +3033,6 @@
               optGrid.appendChild(btn);
             });
 
-            // Also add an "I don't know yet" option so beginners aren't forced to guess blindly
             const skipBtn = document.createElement("button");
             skipBtn.className = `mc-option focusable ${w.quizSelectedOption === "__SKIP__" ? "selected" : ""}`;
             skipBtn.tabIndex = 0;
@@ -2920,7 +3046,6 @@
 
             nextBtn.textContent = w.quizIndex === 4 ? "See My Level →" : "Next Question →";
           } else {
-            // Placement Quiz Complete OR Direct Level Confirmation
             const tgtMeta = LANGUAGES.find(l => l.code === w.tgtLang) || LANGUAGES[0];
             const secObj = SECTIONS.find(s => s.cefr === w.cefr) || SECTIONS[0];
             stage.innerHTML = `
@@ -2943,6 +3068,7 @@
             nextBtn.textContent = t.startCourseBtn;
           }
         }
+        SpatialNav.ensureActiveFocus(true);
       }
 
       async function advanceWizardStep() {
@@ -2983,13 +3109,11 @@
             w.currentQuizId = null;
 
             if (w.quizIndex >= 5) {
-              // Map 0-5 score to CEFR A1-C2
               const scoreMap = ["A1", "A1", "A2", "B1", "B2", "C1"];
               w.cefr = scoreMap[Math.min(5, w.quizScore)] || "A1";
             }
             renderWizardStep();
           } else {
-            // Finalize Wizard & Save Course
             SoundFX.correct();
             State.uiLang = w.uiSrcLang;
             State.srcLang = w.uiSrcLang;
@@ -3059,37 +3183,7 @@
         });
 
         document.getElementById("modal-courses").classList.add("active");
-      }
-
-      function openSectionModal() {
-        const list = document.getElementById("modal-sections-list");
-        list.innerHTML = "";
-        SECTIONS.forEach(sec => {
-          const row = document.createElement("div");
-          row.className = "widget-box";
-          row.style.flexDirection = "row";
-          row.style.alignItems = "center";
-          row.style.justifyContent = "space-between";
-          row.innerHTML = `
-            <div>
-              <div style="font-weight:900;font-size:1.1rem;">${sec.name} • CEFR ${sec.cefr}</div>
-              <div style="color:var(--text-muted);font-size:0.88rem;">${sec.unitTitle}</div>
-            </div>
-          `;
-          const btn = document.createElement("button");
-          btn.className = `btn-duo ${sec.cefr === State.cefr ? "green" : "outline"} focusable`;
-          btn.textContent = sec.cefr === State.cefr ? "ACTIVE" : "SELECT";
-          btn.addEventListener("click", () => {
-            SoundFX.pop();
-            State.cefr = sec.cefr;
-            saveAll();
-            document.getElementById("modal-sections").classList.remove("active");
-            renderApp();
-          });
-          row.appendChild(btn);
-          list.appendChild(row);
-        });
-        document.getElementById("modal-sections").classList.add("active");
+        SpatialNav.ensureActiveFocus(true);
       }
 
       function openGuidebookModal() {
@@ -3114,34 +3208,39 @@
           list.appendChild(box);
         });
         document.getElementById("modal-guidebook").classList.add("active");
+        SpatialNav.ensureActiveFocus(true);
       }
 
       const shuffle = (a) => [...a].sort(() => Math.random() - 0.5);
       const norm = (s) => (s || "").toLowerCase().replace(/[.,?!¡¿؟;:"']/g, "").replace(/\s+/g, " ").trim();
 
-      function startLesson(nodeIdx, customItems = null) {
+      function buildExerciseBatch(nodeIdx, customItems = null) {
         const src = State.srcLang;
         const tgt = State.tgtLang;
-        const levelItems = CURRICULUM.filter(x => x.cefr === State.cefr);
-        const pool = customItems || (levelItems.length >= 2 ? [...levelItems, ...CURRICULUM.slice(0, 2)] : CURRICULUM);
+        const staticLevelItems = CURRICULUM.filter(x => x.cefr === State.cefr);
+        const generatedItems = InfiniteGenerator.getBatch(State.cefr, 4, nodeIdx * 7);
+        const fullPool = customItems || shuffle([...staticLevelItems, ...generatedItems]);
+        const distractionPool = [...CURRICULUM, ...InfiniteGenerator.getBatch(State.cefr, 4, nodeIdx * 13)];
         const exercises = [];
 
-        pool.slice(0, 3).forEach((item, i) => {
+        fullPool.slice(0, 3).forEach((item, i) => {
           const sTxt = item.text[src] || item.text.en;
           const tTxt = item.text[tgt] || item.text.zgh || item.text.en;
           const phon = tgt === "zgh" && item.phoneticZgh ? `Phonetic: ${item.phoneticZgh}` : "";
-          const decoys = CURRICULUM.filter(x => x.id !== item.id).slice(0, 3).map(x => x.text[tgt] || x.text.en);
+          const decoys = distractionPool
+            .filter(x => x.id !== item.id && (x.text[tgt] || x.text.en) !== tTxt)
+            .slice(0, 3)
+            .map(x => x.text[tgt] || x.text.en);
 
-          // 1. Multiple Choice
           exercises.push({
             id: item.id, type: "multiple_choice", sourceText: sTxt, targetText: tTxt, phonetic: phon,
             options: shuffle([tTxt, ...decoys])
           });
 
-          // 2. Word Tiles or 3. Typing with Multi-Script Virtual Keyboard
-          if (i % 2 === 0) {
+          if ((nodeIdx + i) % 2 === 0) {
             const words = tTxt.split(/\s+/);
-            const extra = (CURRICULUM[(i + 2) % CURRICULUM.length].text[tgt] || "ⴰⵣⵓⵍ").split(/\s+/).slice(0, 2);
+            const extraSource = distractionPool[(i + 2) % distractionPool.length];
+            const extra = (extraSource.text[tgt] || "ⴰⵣⵓⵍ").split(/\s+/).slice(0, 2);
             exercises.push({
               id: item.id, type: "word_tiles", sourceText: sTxt, targetText: tTxt, phonetic: phon,
               tiles: shuffle([...words, ...extra])
@@ -3151,15 +3250,22 @@
           }
         });
 
-        // 4. Matching Pairs
+        const matchSource = shuffle([...staticLevelItems, ...generatedItems]).slice(0, 4);
         exercises.push({
-          id: "match_1", type: "matching", sourceText: (UI_I18N[State.uiLang] || UI_I18N.en).matchPrompt, targetText: "", phonetic: "",
-          pairs: CURRICULUM.slice(0, 4).map(p => ({ id: p.id, left: p.text[src] || p.text.en, right: p.text[tgt] || p.text.zgh || p.text.en }))
+          id: `match_${Date.now()}`,
+          type: "matching",
+          sourceText: (UI_I18N[State.uiLang] || UI_I18N.en).matchPrompt,
+          targetText: "",
+          phonetic: "",
+          pairs: matchSource.map(p => ({
+            id: p.id,
+            left: p.text[src] || p.text.en,
+            right: p.text[tgt] || p.text.zgh || p.text.en
+          }))
         });
 
-        // 5. Speaking Exercise (with Riva/Browser STT + 1-Click Self-Verify TV/Mobile Fallback)
         if (State.admin.enableSpeaking) {
-          const spItem = pool[0] || CURRICULUM[0];
+          const spItem = fullPool[0] || CURRICULUM[0];
           const sTxt = spItem.text[src] || spItem.text.en;
           const tTxt = spItem.text[tgt] || spItem.text.zgh || spItem.text.en;
           exercises.push({
@@ -3167,9 +3273,23 @@
             phonetic: tgt === "zgh" && spItem.phoneticZgh ? `Phonetic: ${spItem.phoneticZgh}` : ""
           });
         }
+        return exercises;
+      }
 
+      function startLesson(nodeIdx, customItems = null, isEndless = false) {
+        const exercises = buildExerciseBatch(nodeIdx, customItems);
         State.session = {
-          nodeIdx, exercises, index: 0, combo: 1, answered: false, userAnswer: "", chosenTiles: [], matched: []
+          nodeIdx,
+          endless: isEndless,
+          endlessSolved: 0,
+          endlessXpEarned: 0,
+          exercises,
+          index: 0,
+          combo: 1,
+          answered: false,
+          userAnswer: "",
+          chosenTiles: [],
+          matched: []
         };
         document.getElementById("overlay-lesson").classList.add("active");
         renderExercise();
@@ -3186,10 +3306,25 @@
         s.matched = [];
 
         const tgtMeta = LANGUAGES.find(l => l.code === State.tgtLang) || LANGUAGES[0];
-        document.getElementById("lesson-prog-bar").style.width = `${Math.round((s.index / s.exercises.length) * 100)}%`;
+        const endlessTag = document.getElementById("lesson-endless-counter");
+        const quitBtn = document.getElementById("btn-lesson-quit");
+
+        if (s.endless) {
+          document.getElementById("lesson-prog-bar").style.width = `${((s.endlessSolved % 10) / 10) * 100}%`;
+          if (endlessTag) {
+            endlessTag.style.display = "inline-flex";
+            endlessTag.textContent = `♾️ #${s.endlessSolved + 1} • +${s.endlessXpEarned} XP`;
+          }
+          if (quitBtn) quitBtn.textContent = "🏁 Finish";
+        } else {
+          document.getElementById("lesson-prog-bar").style.width = `${Math.round((s.index / s.exercises.length) * 100)}%`;
+          if (endlessTag) endlessTag.style.display = "none";
+          if (quitBtn) quitBtn.textContent = "✕";
+        }
+
         document.getElementById("lesson-combo-tag").textContent = `🔥 ${s.combo}x`;
         document.getElementById("lesson-hearts-val").textContent = State.hearts;
-        document.getElementById("ex-kicker-tag").textContent = `${ex.type.replace("_", " ").toUpperCase()} • CEFR ${State.cefr}`;
+        document.getElementById("ex-kicker-tag").textContent = `${s.endless ? "♾️ ENDLESS STREAM • " : ""}${ex.type.replace("_", " ").toUpperCase()} • CEFR ${State.cefr}`;
         document.getElementById("lesson-mascot-avatar").innerHTML = mascotSVG("idle", 56);
         document.getElementById("ex-source-text").textContent = ex.sourceText;
         document.getElementById("ex-phonetic-sub").textContent = ex.phonetic || "";
@@ -3276,7 +3411,6 @@
           inp.oninput = () => { s.userAnswer = inp.value; };
           area.appendChild(inp);
 
-          // On-screen Multi-Script Virtual Keyboard (Tifinagh, Arabic, Accented Latin, plus Target Characters)
           const vkb = document.createElement("div");
           vkb.className = "virtual-kb-grid";
           const scriptExtras = State.tgtLang === "zgh"
@@ -3308,16 +3442,8 @@
           backKey.textContent = "⌫";
           backKey.onclick = () => { inp.value = inp.value.slice(0, -1); s.userAnswer = inp.value; };
 
-          const hintKey = document.createElement("button");
-          hintKey.className = "vkey-btn focusable";
-          hintKey.style.borderColor = "var(--duo-gold)";
-          hintKey.style.color = "var(--duo-gold)";
-          hintKey.textContent = "💡 Auto-Fill Hint";
-          hintKey.onclick = () => { inp.value = ex.targetText; s.userAnswer = inp.value; };
-
           vkb.appendChild(spaceKey);
           vkb.appendChild(backKey);
-          vkb.appendChild(hintKey);
           area.appendChild(vkb);
         } else if (ex.type === "matching") {
           document.getElementById("ex-prompt-title").textContent = i18n.matchPrompt;
@@ -3403,6 +3529,7 @@
             statusEl.textContent = "✓ Pronunciation verified! Press CHECK to continue.";
           };
         }
+        SpatialNav.ensureActiveFocus(true);
       }
 
       async function checkOrContinue() {
@@ -3422,8 +3549,17 @@
           if (ok) {
             SoundFX.correct();
             s.combo++;
+            if (s.endless) {
+              s.endlessSolved++;
+              const gained = 10 + Math.min(15, s.combo * 2);
+              s.endlessXpEarned += gained;
+              State.xp += gained;
+              State.todayXp += gained;
+            }
             dock.className = "lesson-bottom-dock correct";
-            document.getElementById("dock-feedback-title").textContent = "Awesome! +10 XP";
+            document.getElementById("dock-feedback-title").textContent = s.endless
+              ? `Awesome! Streak #${s.endlessSolved} (+${10 + Math.min(15, s.combo * 2)} XP)`
+              : "Awesome! +10 XP";
             document.getElementById("dock-feedback-sub").textContent = ex.targetText;
             AIService.speak(ex.targetText, State.tgtLang, 1.0);
           } else {
@@ -3437,12 +3573,22 @@
           document.getElementById("btn-check-main").textContent = i18n.next;
         } else {
           s.index++;
-          if (s.index >= s.exercises.length) {
+          if (s.endless && s.index >= s.exercises.length - 1) {
+            const moreExercises = buildExerciseBatch(s.nodeIdx + s.endlessSolved + 1);
+            s.exercises.push(...moreExercises);
+            saveAll();
+            Storage.submitScore(State.xp);
+          }
+
+          if (!s.endless && s.index >= s.exercises.length) {
             State.xp += 30;
             State.todayXp += 30;
             State.gems += 10;
             const key = `${State.srcLang}_${State.tgtLang}_${State.cefr}_${s.nodeIdx}`;
             State.crowns[key] = Math.min(3, (State.crowns[key] || 0) + 1);
+            if (s.nodeIdx >= (State.unlockedUnits || 2) * 5) {
+              State.unlockedUnits = (State.unlockedUnits || 2) + 1;
+            }
             await saveAll();
             Storage.submitScore(State.xp);
             State.session = null;
@@ -3461,6 +3607,7 @@
           srcLang: State.srcLang,
           tgtLang: State.tgtLang,
           cefr: State.cefr,
+          unlockedUnits: State.unlockedUnits,
           enrolledCourses: State.enrolledCourses,
           showTopBar: State.showTopBar,
           showFooterHud: State.showFooterHud,
@@ -3485,11 +3632,84 @@
       }
 
       const SpatialNav = {
-        move(dir) {
-          const focusables = Array.from(document.querySelectorAll(".focusable")).filter(el => {
+        getActiveRoot() {
+          const wizard = document.getElementById("overlay-wizard");
+          if (wizard && wizard.classList.contains("active")) return wizard;
+          const activeModal = document.querySelector(".modal-backdrop.active");
+          if (activeModal) return activeModal;
+          const lesson = document.getElementById("overlay-lesson");
+          if (lesson && lesson.classList.contains("active")) return lesson;
+          return document.querySelector(".app-master-frame") || document.body;
+        },
+        getFocusables() {
+          const root = this.getActiveRoot();
+          return Array.from(root.querySelectorAll(".focusable")).filter(el => {
+            if (el.disabled) return false;
             const r = el.getBoundingClientRect();
             return r.width > 0 && r.height > 0 && window.getComputedStyle(el).visibility !== "hidden";
           });
+        },
+        ensureActiveFocus(forceFirst = false) {
+          const focusables = this.getFocusables();
+          if (!focusables.length) return;
+          const cur = document.activeElement;
+          if (!forceFirst && cur && focusables.includes(cur)) {
+            if (!cur.classList.contains("gp-focused")) {
+              document.querySelectorAll(".gp-focused").forEach(n => n.classList.remove("gp-focused"));
+              cur.classList.add("gp-focused");
+            }
+            return;
+          }
+          const target = focusables[0];
+          if (target) {
+            document.querySelectorAll(".gp-focused").forEach(n => n.classList.remove("gp-focused"));
+            target.classList.add("gp-focused");
+            try { target.focus({ preventScroll: false }); } catch (_) {}
+          }
+        },
+        activateFocused() {
+          this.ensureActiveFocus();
+          const cur = document.activeElement;
+          if (cur && cur.classList.contains("focusable")) {
+            cur.click();
+          }
+        },
+        handleBack() {
+          const activeModal = document.querySelector(".modal-backdrop.active");
+          if (activeModal) {
+            activeModal.classList.remove("active");
+            this.ensureActiveFocus(true);
+            return;
+          }
+          const wizard = document.getElementById("overlay-wizard");
+          if (wizard && wizard.classList.contains("active")) {
+            if (State.wizard && State.wizard.step > 1) {
+              State.wizard.step--;
+              renderWizardStep();
+            } else if (State.wizard && State.wizard.canCancel) {
+              State.wizard = null;
+              wizard.classList.remove("active");
+              this.ensureActiveFocus(true);
+            }
+            return;
+          }
+          const lesson = document.getElementById("overlay-lesson");
+          if (lesson && lesson.classList.contains("active")) {
+            State.session = null;
+            lesson.classList.remove("active");
+            this.ensureActiveFocus(true);
+          }
+        },
+        cycleLevel(dir) {
+          const codes = SECTIONS.map(s => s.cefr);
+          const nextIdx = (codes.indexOf(State.cefr) + dir + codes.length) % codes.length;
+          State.cefr = codes[nextIdx];
+          enrollOrUpdateCourse(State.srcLang, State.tgtLang, State.cefr);
+          saveAll();
+          renderApp();
+        },
+        move(dir) {
+          const focusables = this.getFocusables();
           if (!focusables.length) return;
           const cur = document.activeElement && focusables.includes(document.activeElement)
             ? document.activeElement
@@ -3521,7 +3741,12 @@
               best = cand;
             }
           });
-          if (best) best.focus();
+          const nextTarget = best || cur;
+          if (nextTarget) {
+            document.querySelectorAll(".gp-focused").forEach(n => n.classList.remove("gp-focused"));
+            nextTarget.classList.add("gp-focused");
+            nextTarget.focus();
+          }
         }
       };
 
@@ -3533,108 +3758,49 @@
         updateViewportMode();
         window.addEventListener("resize", updateViewportMode);
 
-        // MyPC Gamepad SDK Listener
-        if (window.MyPC?.gamepad?.onButtonDown) {
-          window.MyPC.gamepad.onButtonDown((btn) => {
-            const pill = document.getElementById("controller-status-pill");
-            if (pill) pill.textContent = `Input: MyPC Gamepad (${btn})`;
-            if (btn === "UP" || btn === "DPAD_UP") SpatialNav.move("up");
-            else if (btn === "DOWN" || btn === "DPAD_DOWN") SpatialNav.move("down");
-            else if (btn === "LEFT" || btn === "DPAD_LEFT") SpatialNav.move("left");
-            else if (btn === "RIGHT" || btn === "DPAD_RIGHT") SpatialNav.move("right");
-            else if (btn === "A" || btn === "SOUTH") document.activeElement?.click();
-            else if (btn === "B" || btn === "EAST") {
-              document.querySelectorAll(".modal-backdrop").forEach(m => m.classList.remove("active"));
-              document.getElementById("overlay-lesson").classList.remove("active");
-              State.session = null;
-            } else if (btn === "X" || btn === "WEST") {
-              if (State.session) checkOrContinue();
-            } else if (btn === "Y" || btn === "NORTH") {
-              if (State.session) {
-                const ex = State.session.exercises[State.session.index];
-                AIService.speak(ex.targetText || ex.sourceText, State.tgtLang, 1.0);
-              }
-            }
-          });
-        }
+        // Initialize MyPC SDK listeners cleanly
+        MyPCBridge.init();
 
-        // Standard HTML5 Gamepad Polling Loop
+        // Continuous HTML5 Gamepad Polling Loop (Gale Controller, Xbox, PlayStation, Generic USB/BT)
         let lastGp = 0;
         function pollGp(ts) {
-          if (ts - lastGp > 160) {
+          if (ts - lastGp > 155) {
+            // Also read MyPC.gamepad.getState() if exposed by SDK
+            const sdkPad = typeof window.MyPC?.gamepad?.getState === "function"
+              ? window.MyPC.gamepad.getState(0)
+              : null;
             const pads = navigator.getGamepads ? navigator.getGamepads() : [];
-            const p = pads[0];
-            if (p) {
+            const p = pads[0] || pads[1] || pads[2] || pads[3] || sdkPad;
+            if (p && p.buttons) {
               const b = p.buttons;
-              const ax0 = p.axes[0] || 0;
-              const ax1 = p.axes[1] || 0;
-              if (b[12]?.pressed || ax1 < -0.5) { SpatialNav.move("up"); lastGp = ts; }
-              else if (b[13]?.pressed || ax1 > 0.5) { SpatialNav.move("down"); lastGp = ts; }
-              else if (b[14]?.pressed || ax0 < -0.5) { SpatialNav.move("left"); lastGp = ts; }
-              else if (b[15]?.pressed || ax0 > 0.5) { SpatialNav.move("right"); lastGp = ts; }
-              else if (b[0]?.pressed) { document.activeElement?.click(); lastGp = ts; }
-              else if (b[1]?.pressed) {
-                document.querySelectorAll(".modal-backdrop").forEach(m => m.classList.remove("active"));
-                document.getElementById("overlay-lesson").classList.remove("active");
-                State.session = null;
-                lastGp = ts;
-              } else if (b[2]?.pressed) {
-                if (State.session) checkOrContinue();
-                lastGp = ts;
-              } else if (b[3]?.pressed) {
-                if (State.session) {
-                  const ex = State.session.exercises[State.session.index];
-                  AIService.speak(ex.targetText || ex.sourceText, State.tgtLang, 1.0);
-                }
-                lastGp = ts;
-              } else if (b[4]?.pressed || b[5]?.pressed) {
-                const dir = b[5]?.pressed ? 1 : -1;
-                const codes = SECTIONS.map(s => s.cefr);
-                const nextIdx = (codes.indexOf(State.cefr) + dir + codes.length) % codes.length;
-                State.cefr = codes[nextIdx];
-                saveAll();
-                renderApp();
-                lastGp = ts;
-              }
+              const ax0 = p.axes?.[0] || 0;
+              const ax1 = p.axes?.[1] || 0;
+              if (b[12]?.pressed || ax1 < -0.5) { MyPCBridge.dispatchButton("UP"); lastGp = ts; }
+              else if (b[13]?.pressed || ax1 > 0.5) { MyPCBridge.dispatchButton("DOWN"); lastGp = ts; }
+              else if (b[14]?.pressed || ax0 < -0.5) { MyPCBridge.dispatchButton("LEFT"); lastGp = ts; }
+              else if (b[15]?.pressed || ax0 > 0.5) { MyPCBridge.dispatchButton("RIGHT"); lastGp = ts; }
+              else if (b[0]?.pressed) { MyPCBridge.dispatchButton("A"); lastGp = ts; }
+              else if (b[1]?.pressed) { MyPCBridge.dispatchButton("B"); lastGp = ts; }
+              else if (b[2]?.pressed) { MyPCBridge.dispatchButton("X"); lastGp = ts; }
+              else if (b[3]?.pressed) { MyPCBridge.dispatchButton("Y"); lastGp = ts; }
+              else if (b[4]?.pressed) { MyPCBridge.dispatchButton("L1"); lastGp = ts; }
+              else if (b[5]?.pressed) { MyPCBridge.dispatchButton("R1"); lastGp = ts; }
             }
           }
           requestAnimationFrame(pollGp);
         }
         requestAnimationFrame(pollGp);
-
-        // MyPC SDK Unified Key Handler (TV Remote + Controller Navigation)
-        if (typeof window.MyPC?.onKey === "function") {
-          window.MyPC.onKey((key) => {
-            const k = String(key || "").toUpperCase();
-            const pill = document.getElementById("controller-status-pill");
-            if (pill) pill.textContent = `Input: MyPC Key (${k})`;
-            if (k === "UP" || k === "ARROWUP" || k === "DPAD_UP") SpatialNav.move("up");
-            else if (k === "DOWN" || k === "ARROWDOWN" || k === "DPAD_DOWN") SpatialNav.move("down");
-            else if (k === "LEFT" || k === "ARROWLEFT" || k === "DPAD_LEFT") SpatialNav.move("left");
-            else if (k === "RIGHT" || k === "ARROWRIGHT" || k === "DPAD_RIGHT") SpatialNav.move("right");
-            else if (k === "OK" || k === "ENTER" || k === "SELECT" || k === "A") {
-              document.activeElement?.click();
-            } else if (k === "BACK" || k === "RETURN" || k === "ESCAPE" || k === "B") {
-              document.querySelectorAll(".modal-backdrop").forEach(m => m.classList.remove("active"));
-              document.getElementById("overlay-lesson").classList.remove("active");
-              State.session = null;
-            }
-          });
-        }
       }
 
       async function boot() {
-        // 1. MUST initialize MyPC SDK first so the MyPC container starts the app
         await MyPCBridge.init();
 
-        // 2. Load saved user progress and admin configuration via MyPC SDK storage
         const saved = await Storage.get(`state_${Storage.profileId()}`, null);
         if (saved) Object.assign(State, saved);
 
         const adm = await Storage.get("admin_global", null);
         if (adm) Object.assign(State.admin, adm);
 
-        // Hydrate API keys from MyPC host configKeys if not overridden in Admin Studio
         if (!State.admin.llmKey) {
           const hostKey =
             MyPCBridge.getConfig("NVIDIA_API_KEY") ||
@@ -3682,7 +3848,6 @@
           renderApp();
         };
 
-        // Top Bar Dropdown Listeners (when Top Bar is enabled in Settings)
         document.getElementById("top-select-target").addEventListener("change", (e) => handleTargetChange(e.target.value));
         document.getElementById("top-select-source").addEventListener("change", (e) => handleSourceChange(e.target.value));
         document.getElementById("top-select-cefr").addEventListener("change", (e) => handleCefrChange(e.target.value));
@@ -3693,7 +3858,6 @@
           renderApp();
         });
 
-        // Settings Screen Course & Level Dropdown Listeners
         document.getElementById("settings-select-target").addEventListener("change", (e) => handleTargetChange(e.target.value));
         document.getElementById("settings-select-source").addEventListener("change", (e) => handleSourceChange(e.target.value));
         document.getElementById("settings-select-cefr").addEventListener("change", (e) => handleCefrChange(e.target.value));
@@ -3738,13 +3902,7 @@
             State.showFooterHud = !State.showFooterHud;
             saveAll();
             renderApp();
-          } else if (act === "set-cefr") {
-            SoundFX.pop();
-            State.cefr = el.dataset.cefr;
-            saveAll();
-            renderApp();
           } else if (act === "open-course-modal") openCourseModal();
-          else if (act === "open-section-modal") openSectionModal();
           else if (act === "open-guidebook") openGuidebookModal();
           else if (act === "add-custom-lang") {
             const nameInp = document.getElementById("custom-lang-name").value.trim();
@@ -3759,8 +3917,16 @@
           } else if (act === "close-modals") {
             document.querySelectorAll(".modal-backdrop").forEach(m => m.classList.remove("active"));
           } else if (act === "quit-lesson") {
+            if (State.session?.endless && State.session.endlessXpEarned > 0) {
+              await saveAll();
+              Storage.submitScore(State.xp);
+            }
             State.session = null;
             document.getElementById("overlay-lesson").classList.remove("active");
+            renderApp();
+          } else if (act === "start-endless-mode") {
+            SoundFX.pop();
+            startLesson(1, null, true);
           } else if (act === "check-or-continue") checkOrContinue();
           else if (act === "play-tts-fast" && State.session) {
             const ex = State.session.exercises[State.session.index];
@@ -3788,7 +3954,7 @@
               const r = await AIService.askJSON(`Explain grammar for ${State.tgtLang} at CEFR ${State.cefr} in 2 sentences. Return {"note":"..."}`);
               box.textContent = r.note || "Focus on root patterns and word order.";
             } catch (_) {
-              box.textContent = `Key Grammar (${State.cefr}): Pay attention to verb agreement and particle placement in ${LANGUAGES.find(l => l.code === State.tgtLang)?.name}. (Add an API key in Settings & Admin for live AI tutoring.)`;
+              box.textContent = `Key Grammar (${State.cefr}): Pay attention to verb agreement and particle placement in ${LANGUAGES.find(l => l.code === State.tgtLang)?.name}.`;
             }
           } else if (act === "toggle-sfx") {
             SoundFX.enabled = !SoundFX.enabled;
@@ -3841,10 +4007,10 @@
 
         renderApp();
 
-        // Automatically open the First-Time Onboarding Setup Wizard if user hasn't completed setup yet
         if (!State.onboarded) {
           openSetupWizard(false);
         }
+        SpatialNav.ensureActiveFocus(true);
       }
 
       window.addEventListener("DOMContentLoaded", boot);
