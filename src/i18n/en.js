@@ -71,7 +71,7 @@ export default {
   aiTitle: "AI helper",
   aiLesson: "AI custom lesson",
   explainUnit: "Explain unit grammar",
-  aiOff: "AI is off. Add a key in the settings first.",
+  aiOff: "AI is off. The owner must set an AI key in the My PC App Store Manager.",
   pickTheme: "Pick a theme for your lesson",
   themes: {"food": "Food", "travel": "Travel", "family": "Family", "work": "Work", "health": "Health", "shopping": "Shopping"},
   blitzOver: "Time's up!",

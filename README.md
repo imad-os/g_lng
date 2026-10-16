@@ -54,6 +54,21 @@ Until Firestore is seeded, the app reads the same content from `content/build` o
 | `contentSource` | `"auto"` | `auto` tries Firestore then the static copy; `firestore` or `static` force one |
 | `audioBase` | `"audio"` | folder of pre-generated voice clips (`audio/<lang>/<hash>.mp3`, made by `python3 tools/gen-audio.py`); a missing clip falls back to the device voice |
 | `speech` | `true` | allow the device voice |
+| `llm` | none | language model for chat practice, AI lessons and explanations: `{ "provider": "nvidia" \| "openai" \| "gemini", "endpoint": "", "model": "", "key": "", "temperature": 0.4 }`. Empty `endpoint`/`model` use the provider's default. No `key` = AI off |
+| `tts` | device voice | voice that speaks to the learner: `{ "provider": "magpie" \| "openai" \| "riva", "endpoint": "", "voice": "Aria", "key": "" }`. Magpie speaks en/es/fr/de (the app sends the language with each request); other languages use the clips or the device voice |
+| `stt` | device mic | microphone for speaking exercises and chat: `{ "provider": "webspeech" \| "openai", "endpoint": "", "key": "" }` |
+
+Example (App Store Manager -> Config):
+
+```json
+{
+  "llm": { "provider": "nvidia", "model": "meta/llama-3.3-70b-instruct", "key": "nvapi-..." },
+  "tts": { "provider": "magpie", "voice": "Aria", "key": "nvapi-..." },
+  "stt": { "provider": "webspeech" }
+}
+```
+
+Keys, models and addresses are read only from this config; the app's AI screen no longer edits them. It only holds the switches (speaking exercises, AI lessons) and the CORS proxy for testing in a PC browser (turn it off on the TV). The config is visible to the app on every profile, so use keys you are happy to share with your users.
 | `ai` | `false` | AI extras (Phase 4) |
 
 ## Releasing

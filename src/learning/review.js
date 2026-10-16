@@ -1,7 +1,7 @@
 // Builds a review session from words that are due (then weak, then recent), as a lesson-shaped object.
-import { course } from '../data/progress-store.js?v=2.5.2';
-import { getLexicon } from '../data/content-repo.js?v=2.5.2';
-import { dueKeys, weakKeys } from './srs.js?v=2.5.2';
+import { course } from '../data/progress-store.js?v=2.5.3';
+import { getLexicon } from '../data/content-repo.js?v=2.5.3';
+import { dueKeys, weakKeys } from './srs.js?v=2.5.3';
 
 const SIZE = 10;
 

@@ -6,11 +6,29 @@
   "type": "app",
   "entry": "index.html",
   "icon": "icon.svg",
-  "version": "2.5.2",
+  "version": "2.5.3",
   "config": {
     "contentSource": "auto",
-    "audioBase": "",
+    "audioBase": "audio",
     "speech": true,
-    "ai": false
+    "ai": false,
+    "llm": {
+      "provider": "nvidia",
+      "endpoint": "",
+      "model": "",
+      "key": "",
+      "temperature": 0.4
+    },
+    "tts": {
+      "provider": "magpie",
+      "endpoint": "",
+      "voice": "Aria",
+      "key": ""
+    },
+    "stt": {
+      "provider": "webspeech",
+      "endpoint": "",
+      "key": ""
+    }
   }
 }

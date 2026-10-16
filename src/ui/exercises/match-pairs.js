@@ -1,9 +1,9 @@
 // match_pairs: pick a word on the left, then its meaning on the right.
-import { h, focusable } from '../../platform/dom.js?v=2.5.2';
-import { setFocus } from '../../platform/input.js?v=2.5.2';
-import { sfx } from '../../platform/audio.js?v=2.5.2';
-import { itemText } from '../components.js?v=2.5.2';
-import { gloss, shuffle } from './common.js?v=2.5.2';
+import { h, focusable } from '../../platform/dom.js?v=2.5.3';
+import { setFocus } from '../../platform/input.js?v=2.5.3';
+import { sfx } from '../../platform/audio.js?v=2.5.3';
+import { itemText } from '../components.js?v=2.5.3';
+import { gloss, shuffle } from './common.js?v=2.5.3';
 
 export default function matchPairs(ctx) {
   const { ex, vocab, from, course } = ctx;

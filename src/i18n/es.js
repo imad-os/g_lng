@@ -71,7 +71,7 @@ export default {
   aiTitle: "Ayudante de IA",
   aiLesson: "Lección de IA a medida",
   explainUnit: "Explicar la gramática de la unidad",
-  aiOff: "La IA está desactivada. Primero añade una clave en los ajustes.",
+  aiOff: "La IA está desactivada. El propietario debe definir una clave de IA en el My PC App Store Manager.",
   pickTheme: "Elige un tema para tu lección",
   themes: {"food": "Comida", "travel": "Viajes", "family": "Familia", "work": "Trabajo", "health": "Salud", "shopping": "Compras"},
   blitzOver: "¡Se acabó el tiempo!",

@@ -1,9 +1,9 @@
 // My languages: every course you have started with its progress, and a card to add another one.
-import { h, focusable } from '../../platform/dom.js?v=2.5.2';
-import { t, pickLang } from '../../platform/i18n.js?v=2.5.2';
-import { getMe } from '../../data/progress-store.js?v=2.5.2';
-import { course as progressOf } from '../../data/progress-store.js?v=2.5.2';
-import { learnerSummary } from '../../learning/learner-summary.js?v=2.5.2';
+import { h, focusable } from '../../platform/dom.js?v=2.5.3';
+import { t, pickLang } from '../../platform/i18n.js?v=2.5.3';
+import { getMe } from '../../data/progress-store.js?v=2.5.3';
+import { course as progressOf } from '../../data/progress-store.js?v=2.5.3';
+import { learnerSummary } from '../../learning/learner-summary.js?v=2.5.3';
 
 export function coursesScreen(app) {
   const me = getMe();
