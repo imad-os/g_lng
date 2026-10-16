@@ -1,15 +1,15 @@
 // Admin: the optional AI settings (language model, voices, switches). Keys are typed here and saved
 // only through saveAiConfig (MyPC.save, this profile). Everything works with arrows + OK:
 // choices cycle on OK, text fields open a dialog, because a TV remote cannot type inline.
-import { h, focusable } from '../../platform/dom.js?v=2.5.0';
-import { t } from '../../platform/i18n.js?v=2.5.0';
-import { aiConfig, saveAiConfig, LLM_PRESETS, TTS_PRESETS, STT_PRESETS } from '../../ai/config.js?v=2.5.0';
-import { testConnection } from '../../ai/client.js?v=2.5.0';
-import { openDialog, toast } from '../components.js?v=2.5.0';
+import { h, focusable } from '../../platform/dom.js?v=2.5.1';
+import { t } from '../../platform/i18n.js?v=2.5.1';
+import { aiConfig, saveAiConfig, LLM_PRESETS, TTS_PRESETS, STT_PRESETS } from '../../ai/config.js?v=2.5.1';
+import { testConnection } from '../../ai/client.js?v=2.5.1';
+import { openDialog, toast } from '../components.js?v=2.5.1';
 
 const TEMPS = [0, 0.2, 0.4, 0.7, 1];
 const LLM_NAMES = { nvidia: 'NVIDIA NIM', gemini: 'Google Gemini', openai: 'OpenAI', offline: null };
-const TTS_NAMES = { webspeech: null, openai: 'OpenAI', riva: 'NVIDIA Riva' };
+const TTS_NAMES = { webspeech: null, openai: 'OpenAI', riva: 'NVIDIA Riva', magpie: 'NVIDIA Magpie' };
 const STT_NAMES = { webspeech: null, openai: 'OpenAI Whisper' };
 
 export function adminScreen(app) {
@@ -84,6 +84,7 @@ export function adminScreen(app) {
   ttsRows.push(text(t('ai.key'), cfg.tts, 'key', { secret: true }));
   ttsRows.push(text(t('ai.voice'), cfg.tts, 'voice'));
   form.appendChild(h('p', { class: 'adm-note' }, t('ai.rivaNote')));
+  form.appendChild(h('p', { class: 'adm-note' }, t('ai.magpieNote')));
 
   // --- Voice in ---
   section(t('ai.stt'));
@@ -99,6 +100,10 @@ export function adminScreen(app) {
   section(t('ai.features'));
   check(t('ai.speaking'), cfg, 'speaking');
   check(t('ai.aiLessons'), cfg, 'aiLessons');
+  addRow(t('ai.corsProxy'), () => (cfg.corsProxy ? t('on') : t('off')), (refresh) => { cfg.corsProxy = !cfg.corsProxy; refresh(); });
+  text(t('ai.corsProxyUrl'), cfg, 'corsProxyUrl');
+  addRow(t('ai.unlockProxy'), () => '↗', () => { window.open(`${String(cfg.corsProxyUrl || '').replace(/\/*$/, '/')}corsdemo`, '_blank', 'noopener'); });
+  form.appendChild(h('p', { class: 'adm-note' }, t('ai.corsNote')));
   form.appendChild(h('p', { class: 'adm-note' }, t('ai.privacy')));
 
   function show(ok, message) {

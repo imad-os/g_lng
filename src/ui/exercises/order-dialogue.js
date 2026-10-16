@@ -1,8 +1,8 @@
 // order_dialogue: put the lines of a short conversation in order.
-import { h, focusable, clear } from '../../platform/dom.js?v=2.5.0';
-import { setFocus } from '../../platform/input.js?v=2.5.0';
-import { itemText } from '../components.js?v=2.5.0';
-import { gloss, shuffle } from './common.js?v=2.5.0';
+import { h, focusable, clear } from '../../platform/dom.js?v=2.5.1';
+import { setFocus } from '../../platform/input.js?v=2.5.1';
+import { itemText } from '../components.js?v=2.5.1';
+import { gloss, shuffle } from './common.js?v=2.5.1';
 
 export default function orderDialogue(ctx) {
   const { ex, vocab, from, course } = ctx;

@@ -1,10 +1,12 @@
 // Optional external voices: text-to-speech from a provider, speech-to-text from the browser or a provider.
 // Every failure is quiet (false / '') so the caller can fall back to the device voice; keys are never logged.
-import { aiConfig } from './config.js?v=2.5.0';
-import { t } from '../platform/i18n.js?v=2.5.0';
+import { aiConfig, viaProxy } from './config.js?v=2.5.1';
+import { t } from '../platform/i18n.js?v=2.5.1';
 
 const NO_EXTERNAL = new Set(['', 'zgh', 'tzm', 'ber']);   // Tamazight has no provider voice: device voice instead
 const baseLang = (code) => String(code || '').slice(0, 2).toLowerCase();
+// Magpie-Multilingual speaks these (language -> locale of its voices). Arabic and Tamazight use the device voice.
+const MAGPIE = { en: 'EN-US', es: 'ES-US', fr: 'FR-FR', de: 'DE-DE' };
 const trim = (u) => String(u || '').replace(/\/+$/, '');
 
 // ---- Text to speech ------------------------------------------------------------------------
@@ -34,14 +36,23 @@ export async function externalSpeak(text, langCode) {
   ttsCtl = ctl;
   const timer = setTimeout(() => ctl.abort(), 20000);
   try {
+    let res;
+    if (c.provider === 'magpie') {
+      const loc = MAGPIE[baseLang(langCode)];
+      if (!loc) return false;                           // language not supported by Magpie: device voice
+      const form = new FormData();                      // multipart: the browser sets the boundary, so no Content-Type
+      form.append('text', text);
+      form.append('language', loc.replace(/^(..)-(..)$/, (m, a, b) => `${a.toLowerCase()}-${b}`));
+      form.append('voice', `Magpie-Multilingual.${loc}.${c.voice || 'Aria'}`);
+      const r = viaProxy(trim(c.endpoint), { Authorization: `Bearer ${c.key}` });
+      res = await fetch(r.url, { method: 'POST', signal: ctl.signal, headers: r.headers, body: form });
+    } else {
     const body = c.provider === 'openai'
       ? { model: 'tts-1', input: text, voice: c.voice || 'alloy', response_format: 'mp3' }
       : { input: text, voice: c.voice || undefined, language_code: langCode, response_format: 'wav' };   // Riva-style, same route shape
-    const res = await fetch(`${trim(c.endpoint)}/audio/speech`, {
-      method: 'POST', signal: ctl.signal,
-      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${c.key}` },
-      body: JSON.stringify(body),
-    });
+    const r = viaProxy(`${trim(c.endpoint)}/audio/speech`, { 'Content-Type': 'application/json', Authorization: `Bearer ${c.key}` });
+    res = await fetch(r.url, { method: 'POST', signal: ctl.signal, headers: r.headers, body: JSON.stringify(body) });
+    }
     if (!res.ok) return false;
     const blob = await res.blob();
     if (ttsCtl !== ctl) return true;                    // another call or stop took over meanwhile

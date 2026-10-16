@@ -1,7 +1,7 @@
 // Language model client: OpenAI-compatible chat (NVIDIA NIM, OpenAI) and Gemini generateContent.
 // Error messages come from t('ai.err*') and never contain the key.
-import { aiConfig } from './config.js?v=2.5.0';
-import { t } from '../platform/i18n.js?v=2.5.0';
+import { aiConfig, viaProxy } from './config.js?v=2.5.1';
+import { t } from '../platform/i18n.js?v=2.5.1';
 
 const TIMEOUT_MS = 30000;
 
@@ -51,7 +51,8 @@ async function send(req, outer) {
   const onOuter = () => ctl.abort('cancel');
   if (outer) { if (outer.aborted) onOuter(); else outer.addEventListener('abort', onOuter, { once: true }); }
   try {
-    return await fetch(req.url, { method: 'POST', headers: req.headers, body: JSON.stringify(req.body), signal: ctl.signal });
+    const r = viaProxy(req.url, req.headers);
+    return await fetch(r.url, { method: 'POST', headers: r.headers, body: JSON.stringify(req.body), signal: ctl.signal });
   } catch (e) {
     if (ctl.signal.reason === 'timeout') throw new Error(t('ai.errTimeout'));
     if (ctl.signal.aborted) throw new Error(t('ai.errCancelled'));

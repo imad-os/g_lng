@@ -1,7 +1,7 @@
 // Reusable pieces: dialogs, toasts, item text, speaker buttons.
-import { h, focusable, ICONS } from '../platform/dom.js?v=2.5.0';
-import { pushScope, popScope } from '../platform/input.js?v=2.5.0';
-import { t } from '../platform/i18n.js?v=2.5.0';
+import { h, focusable, ICONS } from '../platform/dom.js?v=2.5.1';
+import { pushScope, popScope } from '../platform/input.js?v=2.5.1';
+import { t } from '../platform/i18n.js?v=2.5.1';
 
 let layer = null;
 export function initComponents(el) { layer = el; }

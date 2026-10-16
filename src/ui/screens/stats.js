@@ -1,10 +1,10 @@
 // Progress: totals, accuracy per exercise type, words to practise.
-import { h, focusable } from '../../platform/dom.js?v=2.5.0';
-import { t, pickLang } from '../../platform/i18n.js?v=2.5.0';
-import { getLexicon } from '../../data/content-repo.js?v=2.5.0';
-import { course as progressOf, getMe } from '../../data/progress-store.js?v=2.5.0';
-import { learnerSummary } from '../../learning/learner-summary.js?v=2.5.0';
-import { itemText } from '../components.js?v=2.5.0';
+import { h, focusable } from '../../platform/dom.js?v=2.5.1';
+import { t, pickLang } from '../../platform/i18n.js?v=2.5.1';
+import { getLexicon } from '../../data/content-repo.js?v=2.5.1';
+import { course as progressOf, getMe } from '../../data/progress-store.js?v=2.5.1';
+import { learnerSummary } from '../../learning/learner-summary.js?v=2.5.1';
+import { itemText } from '../components.js?v=2.5.1';
 
 export function statsScreen(app) {
   const me = getMe();

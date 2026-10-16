@@ -1,6 +1,7 @@
 // Texts of the optional AI features: t('ai.key'). Merged into the dictionaries by ./more.js.
 export default {
   en: {
+    magpieNote: "Magpie speaks English, Spanish, French and German (the voice name is the speaker, e.g. Aria). Arabic and Tamazight use the device voice.", corsProxy: "CORS proxy (PC browser test)", corsProxyUrl: "Proxy address", unlockProxy: "Unlock the proxy (open page)", corsNote: "Only for testing in a PC browser, where providers often block browser calls. Turn it off on the TV. Open the unlock page once and press its button.",
     adminTitle: 'AI settings', llm: 'Language model', tts: 'Voice (speaking to you)', stt: 'Microphone (you speaking)', features: 'Features',
     provider: 'Provider', endpoint: 'Address', model: 'Model', temperature: 'Creativity', key: 'API key', voice: 'Voice name',
     offline: 'Off (no AI)', deviceVoice: 'Device voice', deviceMic: 'Device microphone', notSet: 'Not set', ok: 'OK',
@@ -29,6 +30,7 @@ export default {
     errMicDenied: 'Microphone access was denied. Allow it and try again.',
   },
   fr: {
+    magpieNote: "Magpie parle anglais, espagnol, français et allemand (le nom de la voix est le locuteur, ex. Aria). Arabe et tamazight : voix de l’appareil.", corsProxy: "Proxy CORS (test navigateur PC)", corsProxyUrl: "Adresse du proxy", unlockProxy: "Débloquer le proxy (ouvrir la page)", corsNote: "Seulement pour tester dans un navigateur PC, où les fournisseurs bloquent souvent les appels. Désactivez-le sur la TV. Ouvrez la page de déblocage une fois.",
     adminTitle: 'Réglages IA', llm: 'Modèle de langage', tts: 'Voix (l’app vous parle)', stt: 'Micro (vous parlez)', features: 'Fonctions',
     provider: 'Fournisseur', endpoint: 'Adresse', model: 'Modèle', temperature: 'Créativité', key: 'Clé API', voice: 'Nom de la voix',
     offline: 'Désactivé (sans IA)', deviceVoice: 'Voix de l’appareil', deviceMic: 'Micro de l’appareil', notSet: 'Non défini', ok: 'OK',
@@ -57,6 +59,7 @@ export default {
     errMicDenied: 'L’accès au micro a été refusé. Autorisez-le puis réessayez.',
   },
   es: {
+    magpieNote: "Magpie habla inglés, español, francés y alemán (el nombre de la voz es el hablante, p. ej. Aria). Árabe y tamazight usan la voz del dispositivo.", corsProxy: "Proxy CORS (prueba en navegador de PC)", corsProxyUrl: "Dirección del proxy", unlockProxy: "Desbloquear el proxy (abrir página)", corsNote: "Solo para probar en un navegador de PC, donde los proveedores suelen bloquear las llamadas. Desactívalo en la TV. Abre la página de desbloqueo una vez.",
     adminTitle: 'Ajustes de IA', llm: 'Modelo de lenguaje', tts: 'Voz (la app te habla)', stt: 'Micrófono (tú hablas)', features: 'Funciones',
     provider: 'Proveedor', endpoint: 'Dirección', model: 'Modelo', temperature: 'Creatividad', key: 'Clave de API', voice: 'Nombre de la voz',
     offline: 'Desactivada (sin IA)', deviceVoice: 'Voz del dispositivo', deviceMic: 'Micrófono del dispositivo', notSet: 'Sin definir', ok: 'OK',
@@ -85,6 +88,7 @@ export default {
     errMicDenied: 'Se denegó el acceso al micrófono. Permítelo e inténtalo de nuevo.',
   },
   ar: {
+    magpieNote: "Magpie ينطق الإنجليزية والإسبانية والفرنسية والألمانية (اسم الصوت هو المتحدث، مثل Aria). العربية والأمازيغية تستخدمان صوت الجهاز.", corsProxy: "وسيط CORS (اختبار متصفح الحاسوب)", corsProxyUrl: "عنوان الوسيط", unlockProxy: "فتح الوسيط (افتح الصفحة)", corsNote: "للاختبار فقط في متصفح الحاسوب. أوقفه على التلفاز. افتح صفحة الفتح مرة واحدة.",
     adminTitle: 'إعدادات الذكاء الاصطناعي', llm: 'نموذج اللغة', tts: 'الصوت (التطبيق يتحدث إليك)', stt: 'الميكروفون (أنت تتحدث)', features: 'الميزات',
     provider: 'المزوّد', endpoint: 'العنوان', model: 'النموذج', temperature: 'الإبداع', key: 'مفتاح API', voice: 'اسم الصوت',
     offline: 'متوقف (بدون ذكاء اصطناعي)', deviceVoice: 'صوت الجهاز', deviceMic: 'ميكروفون الجهاز', notSet: 'غير محدد', ok: 'موافق',
