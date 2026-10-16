@@ -1,0 +1,16 @@
+/* Admin (AI settings). Prefix adm-. Chrome 108: no CSS nesting. */
+.adm-page { display: flex; flex-direction: column; padding-bottom: 24px; }
+.adm-page .page-head { margin-bottom: 12px; }
+.adm-form { flex: 1 1 auto; min-height: 0; overflow-y: auto; max-width: 960px; display: flex; flex-direction: column; gap: 10px; padding-inline-end: 8px; }
+.adm-section { margin: 14px 0 2px; font-size: 26px; color: var(--blue); }
+.adm-row { display: flex; justify-content: space-between; align-items: center; gap: 24px; min-height: 60px; padding: 0 24px; border: 0; border-radius: var(--radius); background: var(--panel); color: var(--text); cursor: pointer; font-size: 24px; flex: 0 0 auto; }
+.adm-value { max-width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--gold); }
+.adm-note { margin: 2px 0; font-size: 20px; color: var(--muted); }
+.adm-banner { max-width: 960px; margin-bottom: 10px; padding: 12px 20px; border-radius: var(--radius); font-size: 22px; background: var(--panel-2); }
+.adm-banner[hidden] { display: none; }
+.adm-banner.ok { border-inline-start: 8px solid var(--accent); }
+.adm-banner.bad { border-inline-start: 8px solid var(--red); }
+.adm-foot { display: flex; gap: 20px; margin-top: 14px; }
+.adm-input-wrap { margin-bottom: 24px; padding: 6px; border-radius: var(--radius); border: 2px solid var(--line); }
+.adm-input { width: 100%; box-sizing: border-box; padding: 12px 16px; font-size: 26px; color: var(--text); background: var(--bg); border: 0; border-radius: 12px; outline: none; }
+.adm-input-wrap.focused { border-color: var(--focus); }

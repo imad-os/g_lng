@@ -1,0 +1,87 @@
+/* Newer features: three-column home with the winding path, quests, league, blitz, onboarding, mascot, new exercises. */
+.row-gap { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
+.btn.gold { background: var(--gold); border-bottom-color: #c89b00; color: #3d2c00; }
+.btn.purple { background: #a560e8; border-bottom-color: #7d3fba; color: #fff; }
+.btn.small-btn.quit { min-width: 64px; padding: 0 18px; }
+.wide-rail { width: 100%; min-height: 56px; padding: 0 14px; font-size: 22px; }
+
+/* Home: rails + path */
+.topbar { padding: 14px 32px 6px; gap: 12px; }
+.topbar .goal { width: 190px; }
+.icon-chip { border: 0; cursor: pointer; font-size: 26px; }
+.home-body { flex: 1; display: flex; gap: 20px; padding: 0 28px 12px; min-height: 0; }
+.rail { width: 290px; flex: none; display: flex; flex-direction: column; gap: 10px; overflow: hidden; padding: 6px 4px; }
+.rail-card { background: var(--bg-2); border-radius: 20px; padding: 10px 14px; display: flex; flex-direction: column; gap: 8px; }
+.rail-card h3 { font-size: 24px; }
+.coach-row { display: flex; gap: 10px; align-items: center; }
+.bubble-tip { margin: 0; padding: 10px 12px; border-radius: 14px; background: var(--panel); line-height: 1.25; }
+.quest { display: flex; flex-direction: column; gap: 6px; }
+.quest-top { display: flex; justify-content: space-between; gap: 8px; }
+.quest-top .done { color: var(--accent); font-weight: 800; }
+.bar.thin { height: 12px; }
+.league-row { display: flex; gap: 10px; align-items: center; padding: 4px 8px; border-radius: 10px; }
+.league-row.me { background: var(--panel-2); color: var(--gold); font-weight: 800; }
+.center { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.level-tabs { gap: 8px; padding: 4px 0 8px; }
+.level-tab { min-width: 58px; height: 48px; font-size: 20px; }
+.path { padding: 4px 0 20px; }
+.unit { padding: 14px 18px 18px; margin-bottom: 14px; }
+.nodes { flex-direction: column; flex-wrap: nowrap; align-items: center; gap: 6px; }
+.node { position: relative; flex-direction: row; width: 300px; gap: 16px; justify-content: flex-start; padding: 6px 10px; }
+.node .disc { width: 78px; height: 78px; font-size: 32px; flex: none; }
+.node-text { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; min-width: 0; }
+.node-label { max-width: 170px; text-align: start; }
+.node.next .disc { box-shadow: 0 0 0 6px rgba(88, 204, 2, 0.35); }
+.node .stars svg { width: 18px; height: 18px; }
+
+/* Lesson */
+.lesson-top { gap: 18px; padding: 24px 80px 0; }
+.counter { font-weight: 800; font-size: 26px; min-width: 70px; text-align: center; color: var(--muted); }
+.combo { padding: 4px 14px; border-radius: 999px; background: #5a3a00; color: #ffb84a; font-weight: 800; font-size: 24px; }
+.hearts { font-weight: 800; font-size: 26px; }
+.prompt { padding: 18px 80px 0; }
+.ex-area { padding: 8px 80px; }
+.footer { padding: 16px 80px; }
+.footer-msg { display: flex; align-items: center; gap: 16px; min-width: 0; }
+.footer-btns { display: flex; align-items: center; gap: 16px; }
+.coach-slot:empty { display: none; }
+.speakers { display: inline-flex; gap: 12px; }
+.speaker.slow { background: #6b7fa3; }
+.ex-type, .ex-speak { gap: 22px; }
+.type-field { border: 3px solid var(--line); border-bottom-width: 6px; border-radius: var(--radius); background: var(--panel); padding: 10px 18px; cursor: text; }
+.type-input { width: 100%; background: transparent; border: 0; outline: none; color: var(--text); font: inherit; font-size: 36px; }
+.speak-note { min-height: 30px; }
+.ai-text { white-space: pre-wrap; max-height: 360px; overflow: hidden; font-size: 24px; }
+
+/* Mascot */
+.mascot { display: inline-block; flex: none; }
+.mascot.cheer { animation: hop 0.6s ease-in-out 2; }
+.low .mascot.cheer { animation: none; }
+@keyframes hop { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+
+/* Results, blitz, quiz */
+.result-tiles { flex-wrap: wrap; justify-content: center; }
+.result-tiles .card { min-width: 190px; }
+.quest-won { font-size: 26px; color: var(--gold); display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.blitz, .quiz { position: absolute; inset: 0; display: flex; flex-direction: column; }
+.quiz { padding: 0; }
+.quiz-ex { padding: 0 80px; gap: 22px; }
+.quiz .prompt { padding-top: 24px; }
+
+/* Onboarding */
+.welcome { display: flex; flex-direction: column; align-items: center; text-align: center; padding-top: 70px; }
+.welcome .course-grid { width: 100%; max-width: 900px; grid-template-columns: repeat(2, 1fr); }
+.welcome-mascot { margin-bottom: 10px; }
+.course-card.add .native { font-size: 56px; color: var(--accent); }
+.level-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.level-card { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 14px 22px; border-radius: 20px; border: 3px solid var(--line); border-bottom-width: 6px; background: var(--panel); cursor: pointer; text-align: start; }
+.level-card .code { font-size: 38px; }
+.level-foot { margin-top: 22px; display: flex; justify-content: center; }
+.theme-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+
+.rail-card.review-card { gap: 6px; }
+.rail-card h3 { margin: 0; }
+.quest-top span:first-child { white-space: nowrap; }
+.coach-row .mascot { transform: scale(0.85); }
+.bubble-tip { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; font-size: 21px; }
+.coach-row { align-items: flex-start; }

@@ -81,8 +81,10 @@ function buildUnit(L, level, unit) {
   const sentences = unit.sentences.filter((s) => s.text[L]).map((s) => entry('s', s));
   const dialogue = (unit.dialogue || []).filter((id) => vocab[`s.${id}`]).map((id) => `s.${id}`);
 
-  // 4 learn lessons for a small unit; big units get more lessons of at most 6 new words each.
-  const learnLessons = Math.max(4, Math.ceil(words.length / 6));
+  // Short lessons, about 10 questions each: at most 5 new words per learn lesson, so a unit of
+  // 48 words becomes 10 learn lessons, then a conversation and a review.
+  const typeable = !['ar', 'zgh'].includes(L);      // typing a Latin-script answer; Arabic and Tifinagh need their own keyboards
+  const learnLessons = Math.max(3, Math.ceil(words.length / 5));
   const wordGroups = chunk(words, learnLessons);
   const sentenceGroups = chunk(sentences, learnLessons);
   const lessons = [];
@@ -98,41 +100,45 @@ function buildUnit(L, level, unit) {
     lessons.push({ id, unit: unitId, level: level.id, order, type, title, newWords, vocab: lessonVocab, ex });
   };
 
-  // Learn lessons: new words, then sentences that use them.
+  // Learn lessons: meet the new words, practise them, then one or two sentences that use them.
   wordGroups.forEach((group, i) => {
     const known = wordGroups.slice(0, i).flat();
     const title = {};
-    for (const g of UI_LANGS) title[g] = group.map((k) => vocab[k].g[g]).filter(Boolean).join(g === 'ar' ? '، ' : ', ');
+    for (const g of UI_LANGS) title[g] = group.slice(0, 3).map((k) => vocab[k].g[g]).filter(Boolean).join(g === 'ar' ? '، ' : ', ');
+    const mine = shuffle(group, rand);
+    const sents = sentenceGroups[i] || [];
     makeLesson('learn', i + 1, title, group, (add) => {
       for (const k of group) add(pick('pick_translation', k, words));
-      for (const k of group.length > 4 ? shuffle(group, rand).slice(0, 3) : group) add(pick('listen_pick', k, words));
       if (group.length + known.length >= 3) add({ type: 'match_pairs', items: shuffle([...group, ...shuffle(known, rand)].slice(0, 5), rand) });
-      for (const k of group.length > 4 ? shuffle(group, rand).slice(0, 3) : group) add(pick('pick_target', k, words));
-      for (const s of (sentenceGroups[i] || []).slice(0, 3)) add(wordBank(s));
-      const s0 = (sentenceGroups[i] || [])[0];
-      if (s0) add(fillGap(s0));
-      add(trueFalse(group[Math.floor(rand() * group.length)], words));
+      add(pick('listen_pick', mine[0], words));
+      add(pick('pick_target', mine[1] || mine[0], words));
+      if (sents[0]) add(wordBank(sents[0]));
+      if (typeable) add({ type: 'type_answer', item: mine[2] || mine[0] });
+      else if (sents[1]) add(fillGap(sents[1]));
+      if (i % 2 === 0 && sents[0]) add({ type: 'speak', item: sents[0] });
     });
   });
 
-  // Lesson 5: the unit's conversation.
+  // The unit's conversation.
   if (sentences.length >= 3) {
     makeLesson('story', wordGroups.length + 1, LESSON_TITLES.story, [], (add) => {
       if (dialogue.length >= 3) add({ type: 'order_dialogue', items: dialogue });
-      for (const s of shuffle(sentences, rand).slice(0, 3)) add(trueFalse(s, sentences));
-      for (const s of shuffle(sentences, rand).slice(0, 2)) add(pick('listen_pick', s, sentences));
+      for (const s of shuffle(sentences, rand).slice(0, 2)) add(trueFalse(s, sentences));
+      add(pick('listen_pick', shuffle(sentences, rand)[0], sentences));
       for (const s of shuffle(sentences, rand).slice(0, 3)) add(wordBank(s));
       for (const s of shuffle(sentences, rand).slice(0, 2)) add(pick('pick_translation', s, sentences));
+      add({ type: 'speak', item: shuffle(sentences, rand)[0] });
     });
   }
 
   // Last lesson: unit review.
   makeLesson('review', lessons.length + 1, LESSON_TITLES.review, [], (add) => {
-    for (const k of shuffle(words, rand).slice(0, 4)) add(pick('pick_target', k, words));
-    for (const k of shuffle(words, rand).slice(0, 3)) add(pick('listen_pick', k, words));
+    for (const k of shuffle(words, rand).slice(0, 3)) add(pick('pick_target', k, words));
+    for (const k of shuffle(words, rand).slice(0, 2)) add(pick('listen_pick', k, words));
     add({ type: 'match_pairs', items: shuffle(words, rand).slice(0, 5) });
-    for (const s of shuffle(sentences, rand).slice(0, 3)) add(wordBank(s));
-    for (const s of shuffle(sentences, rand).slice(0, 2)) add(fillGap(s));
+    for (const s of shuffle(sentences, rand).slice(0, 2)) add(wordBank(s));
+    add(fillGap(shuffle(sentences, rand)[0]));
+    if (typeable) add({ type: 'type_answer', item: shuffle(words, rand)[0] });
   });
 
   const lexicon = { unit: unitId, words: Object.fromEntries(words.map((k) => [k, vocab[k]])) };
@@ -180,9 +186,14 @@ function refs(e) {
   return out;
 }
 
+// Splits a list into n groups of nearly equal size (the first groups get the extra item).
 function chunk(list, n) {
-  const size = Math.ceil(list.length / n) || 1;
   const out = [];
-  for (let i = 0; i < list.length; i += size) out.push(list.slice(i, i + size));
+  let at = 0;
+  for (let i = 0; i < n; i++) {
+    const size = Math.floor(list.length / n) + (i < list.length % n ? 1 : 0);
+    if (size) out.push(list.slice(at, at + size));
+    at += size;
+  }
   return out;
 }

@@ -40,5 +40,6 @@ export const ICONS = {
   star: '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2l3 7h7l-5.6 4.3 2.1 7.2L12 16.3 5.5 20.5l2.1-7.2L2 9h7z"/></svg>',
   chat: '<svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2z"/></svg>',
   trophy: '<svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><path d="M7 2h10v2h4v3a5 5 0 0 1-4.6 5A5 5 0 0 1 13 15v3h4v3H7v-3h4v-3a5 5 0 0 1-3.4-3A5 5 0 0 1 3 7V4h4V2zm0 4H5v1a3 3 0 0 0 2 2.8V6zm10 0v3.8A3 3 0 0 0 19 7V6h-2z"/></svg>',
+  turtle: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 5C7.6 5 4 8 4 12v1h14v-1c0-4-2.600-7-6-7zM2 14v2h3l1 2h2l-1-2h8l-1 2h2l1-2h4v-2H2zm19-6a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"/></svg>',
   lock: '<svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M17 9V7A5 5 0 0 0 7 7v2H5v13h14V9h-2zM9 7a3 3 0 0 1 6 0v2H9V7z"/></svg>',
 };

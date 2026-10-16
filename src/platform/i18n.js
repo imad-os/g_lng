@@ -1,13 +1,15 @@
 // Interface texts in the 4 languages My PC supports (info.lang), English as the fallback.
-import en from '../i18n/en.js?v=2.1.0';
-import fr from '../i18n/fr.js?v=2.1.0';
-import es from '../i18n/es.js?v=2.1.0';
-import ar from '../i18n/ar.js?v=2.1.0';
+import en from '../i18n/en.js?v=2.2.0';
+import fr from '../i18n/fr.js?v=2.2.0';
+import es from '../i18n/es.js?v=2.2.0';
+import ar from '../i18n/ar.js?v=2.2.0';
+import more from '../i18n/more.js?v=2.2.0';
 
 export const UI_LANGS = ['en', 'fr', 'es', 'ar'];
-const DICTS = { en, fr, es, ar };
+// more.js holds the texts of newer features per language: { en: { ai: {...} }, fr: {...} }.
+const DICTS = { en: { ...en, ...more.en }, fr: { ...fr, ...more.fr }, es: { ...es, ...more.es }, ar: { ...ar, ...more.ar } };
 let lang = 'en';
-let dict = en;
+let dict = DICTS.en;
 
 export function setUiLang(l) {
   lang = DICTS[l] ? l : 'en';
@@ -21,7 +23,7 @@ export function uiLang() { return lang; }
 // t('unit', { n: 2 }) -> 'Unit 2'; t('prompts.word_bank')
 export function t(key, vars) {
   let v = key.split('.').reduce((o, k) => (o ? o[k] : undefined), dict);
-  if (v === undefined) v = key.split('.').reduce((o, k) => (o ? o[k] : undefined), en);
+  if (v === undefined) v = key.split('.').reduce((o, k) => (o ? o[k] : undefined), DICTS.en);
   if (typeof v !== 'string') return v === undefined ? key : v;
   return vars ? v.replace(/\{(\w+)\}/g, (_, k) => (vars[k] !== undefined ? vars[k] : '')) : v;
 }

@@ -1,7 +1,7 @@
 // Reusable pieces: dialogs, toasts, item text, speaker buttons.
-import { h, focusable, ICONS } from '../platform/dom.js?v=2.1.0';
-import { pushScope, popScope } from '../platform/input.js?v=2.1.0';
-import { t } from '../platform/i18n.js?v=2.1.0';
+import { h, focusable, ICONS } from '../platform/dom.js?v=2.2.0';
+import { pushScope, popScope } from '../platform/input.js?v=2.2.0';
+import { t } from '../platform/i18n.js?v=2.2.0';
 
 let layer = null;
 export function initComponents(el) { layer = el; }
@@ -34,8 +34,11 @@ export function itemText(v, course, cls = '') {
     v.tr ? h('span', { class: 'tr', dir: 'ltr' }, v.tr) : null);
 }
 
+// Normal-speed speaker plus a slow one (turtle). onPlay(slow) says the item.
 export function speakerButton(onPlay, big = false) {
-  return focusable(h('button', { class: `speaker${big ? ' big' : ''}`, 'aria-label': t('replay'), html: ICONS.speaker }), onPlay);
+  return h('span', { class: 'speakers' },
+    focusable(h('button', { class: `speaker${big ? ' big' : ''}`, 'aria-label': t('replay'), html: ICONS.speaker }), () => onPlay(false)),
+    focusable(h('button', { class: `speaker slow${big ? ' big' : ''}`, 'aria-label': t('slow'), html: ICONS.turtle }), () => onPlay(true)));
 }
 
 export function starsRow(n, max = 3) {

@@ -1,6 +1,6 @@
 // Spaced repetition (Leitner boxes 0-5). A right answer moves a word up a box and pushes its next
 // review further away; a wrong one drops it back to box 0, due today.
-import { today } from './day.js?v=2.1.0';
+import { today } from './day.js?v=2.2.0';
 
 const INTERVAL = [0, 1, 2, 4, 8, 16];   // days until the next review, by box
 

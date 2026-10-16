@@ -1,4 +1,6 @@
 // Runs one lesson: the exercise queue, retries of mistakes at the end, and the result.
+export const MAX_HEARTS = 5;
+
 export class LessonRun {
   constructor(lesson, { canHear }) {
     this.lesson = lesson;
@@ -9,7 +11,13 @@ export class LessonRun {
     this.words = new Map();       // word key -> every answer right so far
     this.mistakes = [];
     this.typeStats = {};          // type -> [attempts, right]
+    this.hearts = lesson.review ? Infinity : MAX_HEARTS;   // practice rounds never cost hearts
+    this.combo = 0;
+    this.maxCombo = 0;
   }
+
+  get outOfHearts() { return this.hearts <= 0; }
+  refill(n) { this.hearts = n; }
 
   get current() { return this.queue[this.pos] || null; }
   get done() { return this.pos >= this.queue.length; }
@@ -18,6 +26,8 @@ export class LessonRun {
   // detail.words: word keys this answer says something about (see exercise modules).
   answer(correct, detail = {}) {
     const e = this.current;
+    if (detail.skipped) { if (!this.firstTry.has(e.id)) this.firstTry.set(e.id, true); this.combo = 0; return; }
+    if (correct) { this.combo++; this.maxCombo = Math.max(this.maxCombo, this.combo); } else { this.combo = 0; this.hearts--; }
     if (!this.firstTry.has(e.id)) {
       this.firstTry.set(e.id, correct);
       const s = this.typeStats[e.type] || (this.typeStats[e.type] = [0, 0]);
@@ -38,12 +48,12 @@ export class LessonRun {
   result() {
     let right = 0;
     for (const v of this.firstTry.values()) if (v) right++;
-    return { firstTryRight: right, total: this.total, accuracy: this.total ? right / this.total : 1, mistakes: this.mistakes };
+    return { firstTryRight: right, total: this.total, accuracy: this.total ? right / this.total : 1, mistakes: this.mistakes, maxCombo: this.maxCombo };
   }
 }
 
 // Word keys that an exercise checks (sentences are not tracked word by word).
 export function wordsOf(e, vocab) {
-  const keys = e.type === 'match_pairs' ? e.items : [e.item];
+  const keys = e.type === 'match_pairs' ? e.items : e.item ? [e.item] : [];
   return keys.filter((k) => vocab[k] && vocab[k].k === 'w');
 }

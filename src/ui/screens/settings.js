@@ -1,9 +1,9 @@
 // Settings: translation language, daily goal, device voice, reset course.
-import { h, focusable } from '../../platform/dom.js?v=2.1.0';
-import { t, UI_LANGS } from '../../platform/i18n.js?v=2.1.0';
-import { configureAudio } from '../../platform/audio.js?v=2.1.0';
-import { getMe, saveMe, resetCourse } from '../../data/progress-store.js?v=2.1.0';
-import { openDialog, toast } from '../components.js?v=2.1.0';
+import { h, focusable } from '../../platform/dom.js?v=2.2.0';
+import { t, UI_LANGS } from '../../platform/i18n.js?v=2.2.0';
+import { configureAudio, setSfx } from '../../platform/audio.js?v=2.2.0';
+import { getMe, saveMe, resetCourse } from '../../data/progress-store.js?v=2.2.0';
+import { openDialog, toast } from '../components.js?v=2.2.0';
 
 const LANG_NAMES = { en: 'English', fr: 'Français', es: 'Español', ar: 'العربية' };
 const GOALS = [10, 20, 30, 50];
@@ -29,6 +29,9 @@ export function settingsScreen(app) {
     me.speech = !me.speech; saveMe();
     configureAudio({ base: app.config.audioBase, speech: me.speech && app.config.speech });
   });
+  row(t('sound'), () => (me.sfx ? t('on') : t('off')), () => { me.sfx = !me.sfx; setSfx(me.sfx); saveMe(); });
+  const admin = focusable(h('button', { class: 'setting-row' }, h('span', null, t('adminTitle')), h('b', null, '›')), () => app.go.admin());
+  rows.appendChild(admin);
   const reset = focusable(h('button', { class: 'btn danger' }, t('resetCourse')), () => openDialog({
     title: t('resetTitle'), text: t('resetText'),
     buttons: [{ label: t('reset'), kind: 'danger', onSelect: () => { resetCourse(app.lang); toast(t('reset')); app.go.home(); } }, { label: t('cancel'), kind: 'primary' }],

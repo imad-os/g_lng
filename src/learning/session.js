@@ -1,8 +1,9 @@
 // Applies a finished lesson or review to the learner's saved progress.
-import { course, saveCourse, getMe } from '../data/progress-store.js?v=2.1.0';
-import { record, introduce, srsKey } from './srs.js?v=2.1.0';
-import { starsFor, xpFor, addXp } from './rewards.js?v=2.1.0';
-import { today } from './day.js?v=2.1.0';
+import { course, saveCourse, getMe } from '../data/progress-store.js?v=2.2.0';
+import { record, introduce, srsKey } from './srs.js?v=2.2.0';
+import { starsFor, xpFor, gemsFor, addXp } from './rewards.js?v=2.2.0';
+import { settleQuests } from './quests.js?v=2.2.0';
+import { today } from './day.js?v=2.2.0';
 
 export function finishLesson(lang, lesson, run) {
   const p = course(lang);
@@ -22,6 +23,9 @@ export function finishLesson(lang, lesson, run) {
   const xp = xpFor(res);
   p.c.xp += xp;
   addXp(me, xp);
+  const gems = gemsFor(res, stars);
+  me.gems += gems;
+  const quests = settleQuests(me, { combo: res.maxCombo, lessons: 1 });
   saveCourse(lang);
-  return { ...res, stars, xp };
+  return { ...res, stars, xp, gems, quests };
 }

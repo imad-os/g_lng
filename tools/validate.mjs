@@ -2,7 +2,7 @@
 //   node tools/validate.mjs        (exit code 1 when anything is wrong)
 import { readBuild, tokenize, UI_LANGS } from './lib/common.mjs';
 
-const TYPES = new Set(['pick_translation', 'pick_target', 'listen_pick', 'word_bank', 'fill_gap', 'match_pairs', 'true_false', 'order_dialogue']);
+const TYPES = new Set(['pick_translation', 'pick_target', 'listen_pick', 'word_bank', 'fill_gap', 'match_pairs', 'true_false', 'order_dialogue', 'type_answer', 'speak']);
 const MAX_DOC_BYTES = 900 * 1024;   // Firestore allows 1 MiB per document
 const errors = [];
 const fail = (where, msg) => errors.push(`${where}: ${msg}`);
@@ -93,6 +93,10 @@ function checkLesson(path, lesson) {
         break;
       case 'order_dialogue':
         if (e.items.length < 3) fail(at, 'fewer than 3 lines');
+        if (e.items.length > 6) fail(at, 'more than 6 lines do not fit the screen');
+        break;
+      case 'type_answer': case 'speak':
+        if (!lesson.vocab[e.item].t) fail(at, 'empty text');
         break;
     }
   }

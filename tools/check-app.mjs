@@ -31,7 +31,7 @@ for (const file of ownFiles()) {
     if (m[2] !== `?v=${version}`) errors.push(`${rel}: ${m[1]} is not loaded with ?v=${version}`);
   }
   if (rel.endsWith('.js')) for (const [re, msg] of BANNED) if (re.test(text)) errors.push(`${rel}: ${msg}`);
-  if (rel.endsWith('.css') && /\{[^}]*\{/.test(text.replace(/@(media|font-face|supports)[^{]*\{/g, ''))) errors.push(`${rel}: CSS nesting (not in Chrome 108)`);
+  if (rel.endsWith('.css') && /\{[^}]*\{/.test(text.replace(/@keyframes[^{]*\{(?:[^{}]*\{[^}]*\})*[^{}]*\}/g, '').replace(/@(media|font-face|supports)[^{]*\{/g, ''))) errors.push(`${rel}: CSS nesting (not in Chrome 108)`);
 }
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 console.log(`OK: app files load with ?v=${version}, manifest valid`);
