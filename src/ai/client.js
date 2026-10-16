@@ -1,8 +1,8 @@
 // Language model client: OpenAI-compatible chat (NVIDIA NIM, OpenAI) and Gemini generateContent.
 // Error messages come from t('ai.err*') and never contain the key.
-import { aiConfig, viaProxy } from './config.js?v=2.5.4';
-import { setAiStatus } from './status.js?v=2.5.4';
-import { t } from '../platform/i18n.js?v=2.5.4';
+import { aiConfig, viaProxy } from './config.js?v=2.5.5';
+import { setAiStatus } from './status.js?v=2.5.5';
+import { t } from '../platform/i18n.js?v=2.5.5';
 
 const TIMEOUT_MS = 30000;
 
@@ -96,6 +96,7 @@ async function run(cfg, req, signal) {
     const more = await detail(res);
     const where = `${cfg.llm.provider} · ${cfg.llm.model}`;
     if (res.status === 401 || res.status === 403) throw new Error(`${t('ai.errKey')} [${res.status}${more}]`);
+    if (res.status === 410) throw new Error(`${t('ai.errGone')} [${where}${more}]`);
     if (res.status === 404) throw new Error(`${t('ai.errModel')} [${where}${more}]`);
     if (res.status === 429) throw new Error(t('ai.errBusy'));
     throw new Error(`${t('ai.errServer', { n: res.status })}${more ? ` [${more.slice(2)}]` : ''}`);

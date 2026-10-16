@@ -1,10 +1,10 @@
 // speak: read the sentence aloud. The device listens when it can; otherwise the learner says it and confirms.
-import { h, focusable } from '../../platform/dom.js?v=2.5.4';
-import { t } from '../../platform/i18n.js?v=2.5.4';
-import { itemText, speakerButton } from '../components.js?v=2.5.4';
-import { sttAvailable, listenOnce } from '../../ai/speech.js?v=2.5.4';
-import { gloss } from './common.js?v=2.5.4';
-import { normalize } from './type-answer.js?v=2.5.4';
+import { h, focusable } from '../../platform/dom.js?v=2.5.5';
+import { t } from '../../platform/i18n.js?v=2.5.5';
+import { itemText, speakerButton } from '../components.js?v=2.5.5';
+import { sttAvailable, listenOnce } from '../../ai/speech.js?v=2.5.5';
+import { gloss } from './common.js?v=2.5.5';
+import { normalize } from './type-answer.js?v=2.5.5';
 
 function matches(heard, target) {
   const want = normalize(target).split(' ').filter(Boolean);

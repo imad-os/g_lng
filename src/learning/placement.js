@@ -1,5 +1,5 @@
 // Placement quiz: 12 questions that climb through the course's levels, to suggest where to start.
-import { getLevel, getLexicon } from '../data/content-repo.js?v=2.5.4';
+import { getLevel, getLexicon } from '../data/content-repo.js?v=2.5.5';
 
 export const QUIZ_LENGTH = 12;
 

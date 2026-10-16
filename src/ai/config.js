@@ -1,10 +1,10 @@
 // Optional AI settings. Saved only through MyPC.save (per profile); keys never leave this device except
 // in the request to the provider the user chose. Nothing here is logged.
-import { loadExtra, saveExtra } from '../data/progress-store.js?v=2.5.4';
+import { loadExtra, saveExtra } from '../data/progress-store.js?v=2.5.5';
 
 // Provider presets: the endpoint and model shown when the user switches provider (both stay editable).
 export const LLM_PRESETS = {
-  nvidia: { endpoint: 'https://integrate.api.nvidia.com/v1', model: 'meta/llama-3.3-70b-instruct' },
+  nvidia: { endpoint: 'https://integrate.api.nvidia.com/v1', model: 'meta/llama-3.1-8b-instruct' },
   openai: { endpoint: 'https://api.openai.com/v1', model: 'gpt-4o-mini' },
   gemini: { endpoint: 'https://generativelanguage.googleapis.com/v1beta', model: 'gemini-2.0-flash' },
   offline: { endpoint: '', model: '' },

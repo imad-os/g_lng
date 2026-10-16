@@ -1,7 +1,7 @@
 /* Base: a fixed 1280x720 stage scaled to the window (src/platform/screen.js). Chrome 108: no CSS nesting. */
 @font-face {
   font-family: 'Noto Sans Tifinagh';
-  src: url('../assets/fonts/NotoSansTifinagh-Regular.ttf?v=2.5.4') format('truetype');
+  src: url('../assets/fonts/NotoSansTifinagh-Regular.ttf?v=2.5.5') format('truetype');
   font-display: swap;
 }
 

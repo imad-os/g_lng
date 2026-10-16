@@ -1,6 +1,7 @@
 // Texts of the optional AI features: t('ai.key'). Merged into the dictionaries by ./more.js.
 export default {
   en: {
+    errGone: "The provider has retired this model. Set another \"model\" under \"llm\" in the app config.",
     errCors: "If it keeps failing here, the browser may block the call (CORS): turn on the CORS proxy in the AI settings.",
     configured: "Set by the owner", noKey: "No key", ownerNote: "The model, voices, addresses and API keys are set by the owner in the My PC App Store Manager (Config). They are not edited here.", pcTest: "Test in a PC browser",
     magpieNote: "Magpie speaks English, Spanish, French and German (the voice name is the speaker, e.g. Aria). Arabic and Tamazight use the device voice.", corsProxy: "CORS proxy (PC browser test)", corsProxyUrl: "Proxy address", unlockProxy: "Unlock the proxy (open page)", corsNote: "Only for testing in a PC browser, where providers often block browser calls. Turn it off on the TV. Open the unlock page once and press its button.",
@@ -32,6 +33,7 @@ export default {
     errMicDenied: 'Microphone access was denied. Allow it and try again.',
   },
   fr: {
+    errGone: "Le fournisseur a retiré ce modèle. Indiquez un autre « model » sous « llm » dans la config de l’app.",
     errCors: "Si cela échoue encore, le navigateur bloque peut-être l’appel (CORS) : activez le proxy CORS dans les réglages IA.",
     configured: "Réglé par le propriétaire", noKey: "Pas de clé", ownerNote: "Le modèle, les voix, les adresses et les clés API sont réglés par le propriétaire dans le My PC App Store Manager (Config). Ils ne se modifient pas ici.", pcTest: "Test dans un navigateur PC",
     magpieNote: "Magpie parle anglais, espagnol, français et allemand (le nom de la voix est le locuteur, ex. Aria). Arabe et tamazight : voix de l’appareil.", corsProxy: "Proxy CORS (test navigateur PC)", corsProxyUrl: "Adresse du proxy", unlockProxy: "Débloquer le proxy (ouvrir la page)", corsNote: "Seulement pour tester dans un navigateur PC, où les fournisseurs bloquent souvent les appels. Désactivez-le sur la TV. Ouvrez la page de déblocage une fois.",
@@ -63,6 +65,7 @@ export default {
     errMicDenied: 'L’accès au micro a été refusé. Autorisez-le puis réessayez.',
   },
   es: {
+    errGone: "El proveedor retiró este modelo. Indica otro «model» en «llm» de la config de la app.",
     errCors: "Si sigue fallando, el navegador puede estar bloqueando la llamada (CORS): activa el proxy CORS en los ajustes de IA.",
     configured: "Definido por el propietario", noKey: "Sin clave", ownerNote: "El modelo, las voces, las direcciones y las claves API las define el propietario en el My PC App Store Manager (Config). No se editan aquí.", pcTest: "Prueba en un navegador de PC",
     magpieNote: "Magpie habla inglés, español, francés y alemán (el nombre de la voz es el hablante, p. ej. Aria). Árabe y tamazight usan la voz del dispositivo.", corsProxy: "Proxy CORS (prueba en navegador de PC)", corsProxyUrl: "Dirección del proxy", unlockProxy: "Desbloquear el proxy (abrir página)", corsNote: "Solo para probar en un navegador de PC, donde los proveedores suelen bloquear las llamadas. Desactívalo en la TV. Abre la página de desbloqueo una vez.",
@@ -94,6 +97,7 @@ export default {
     errMicDenied: 'Se denegó el acceso al micrófono. Permítelo e inténtalo de nuevo.',
   },
   ar: {
+    errGone: "سحب المزوّد هذا النموذج. ضع \"model\" آخر ضمن \"llm\" في إعدادات التطبيق.",
     errCors: "إذا استمر الفشل فقد يحجب المتصفح الطلب (CORS): فعّل وسيط CORS في إعدادات الذكاء الاصطناعي.",
     configured: "يحدده المالك", noKey: "لا مفتاح", ownerNote: "النموذج والأصوات والعناوين ومفاتيح API يحددها المالك في My PC App Store Manager (Config). لا تُعدَّل هنا.", pcTest: "اختبار في متصفح الحاسوب",
     magpieNote: "Magpie ينطق الإنجليزية والإسبانية والفرنسية والألمانية (اسم الصوت هو المتحدث، مثل Aria). العربية والأمازيغية تستخدمان صوت الجهاز.", corsProxy: "وسيط CORS (اختبار متصفح الحاسوب)", corsProxyUrl: "عنوان الوسيط", unlockProxy: "فتح الوسيط (افتح الصفحة)", corsNote: "للاختبار فقط في متصفح الحاسوب. أوقفه على التلفاز. افتح صفحة الفتح مرة واحدة.",

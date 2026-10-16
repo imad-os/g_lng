@@ -62,7 +62,7 @@ Example (App Store Manager -> Config):
 
 ```json
 {
-  "llm": { "provider": "nvidia", "model": "meta/llama-3.3-70b-instruct", "key": "nvapi-..." },
+  "llm": { "provider": "nvidia", "model": "meta/llama-3.1-8b-instruct", "key": "nvapi-..." },
   "tts": { "provider": "magpie", "voice": "Aria", "key": "nvapi-..." },
   "stt": { "provider": "webspeech" }
 }

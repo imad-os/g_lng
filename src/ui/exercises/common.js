@@ -1,5 +1,5 @@
 // Shared parts of the exercise screens.
-import { h, focusable } from '../../platform/dom.js?v=2.5.4';
+import { h, focusable } from '../../platform/dom.js?v=2.5.5';
 
 export function shuffle(list) {
   const a = list.slice();
