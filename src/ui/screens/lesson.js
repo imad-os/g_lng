@@ -1,22 +1,22 @@
 // The lesson player: one exercise at a time with a progress bar and counter, hearts, combo, Check / Continue
 // in the footer, and mistakes retried at the end.
-import { h, focusable, clear, ICONS } from '../../platform/dom.js?v=2.5.6';
-import { t } from '../../platform/i18n.js?v=2.5.6';
-import { setFocus, focusFirst, focused } from '../../platform/input.js?v=2.5.6';
-import { say, sfx, canSpeak, preload, stopVoice } from '../../platform/audio.js?v=2.5.6';
-import { LessonRun, wordsOf, MAX_HEARTS } from '../../learning/lesson-engine.js?v=2.5.6';
-import { finishLesson } from '../../learning/session.js?v=2.5.6';
-import { getMe, saveMe } from "../../data/progress-store.js?v=2.5.6";
-import { openDialog, itemText } from '../components.js?v=2.5.6';
-import { mascot } from '../mascot.js?v=2.5.6';
-import pick from '../exercises/pick.js?v=2.5.6';
-import trueFalse from '../exercises/true-false.js?v=2.5.6';
-import fillGap from '../exercises/fill-gap.js?v=2.5.6';
-import wordBank from '../exercises/word-bank.js?v=2.5.6';
-import matchPairs from '../exercises/match-pairs.js?v=2.5.6';
-import orderDialogue from '../exercises/order-dialogue.js?v=2.5.6';
-import typeAnswer from '../exercises/type-answer.js?v=2.5.6';
-import speak from '../exercises/speak.js?v=2.5.6';
+import { h, focusable, clear, ICONS } from '../../platform/dom.js?v=2.5.7';
+import { t } from '../../platform/i18n.js?v=2.5.7';
+import { setFocus, focusFirst, focused } from '../../platform/input.js?v=2.5.7';
+import { say, sfx, canSpeak, preload, stopVoice } from '../../platform/audio.js?v=2.5.7';
+import { LessonRun, wordsOf, MAX_HEARTS } from '../../learning/lesson-engine.js?v=2.5.7';
+import { finishLesson } from '../../learning/session.js?v=2.5.7';
+import { getMe, saveMe } from "../../data/progress-store.js?v=2.5.7";
+import { openDialog, itemText } from '../components.js?v=2.5.7';
+import { mascot } from '../mascot.js?v=2.5.7';
+import pick from '../exercises/pick.js?v=2.5.7';
+import trueFalse from '../exercises/true-false.js?v=2.5.7';
+import fillGap from '../exercises/fill-gap.js?v=2.5.7';
+import wordBank from '../exercises/word-bank.js?v=2.5.7';
+import matchPairs from '../exercises/match-pairs.js?v=2.5.7';
+import orderDialogue from '../exercises/order-dialogue.js?v=2.5.7';
+import typeAnswer from '../exercises/type-answer.js?v=2.5.7';
+import speak from '../exercises/speak.js?v=2.5.7';
 
 const EXERCISES = {
   pick_translation: pick, pick_target: pick, listen_pick: pick,

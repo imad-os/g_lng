@@ -1,13 +1,13 @@
 // Chat practice (optional AI): talk to a model in the language you learn. Type with a keyboard or speak into the mic;
 // the model keeps to the level of the course and writes "Fix: ..." when there is a mistake.
-import { h, focusable, clear } from '../../platform/dom.js?v=2.5.6';
-import { t } from '../../platform/i18n.js?v=2.5.6';
-import { setFocus } from '../../platform/input.js?v=2.5.6';
-import { say } from '../../platform/audio.js?v=2.5.6';
-import { course as progressOf } from '../../data/progress-store.js?v=2.5.6';
-import { chatTurn } from '../../ai/tasks.js?v=2.5.6';
-import { sttAvailable, listenOnce } from '../../ai/speech.js?v=2.5.6';
-import { toast } from '../components.js?v=2.5.6';
+import { h, focusable, clear } from '../../platform/dom.js?v=2.5.7';
+import { t } from '../../platform/i18n.js?v=2.5.7';
+import { setFocus } from '../../platform/input.js?v=2.5.7';
+import { say } from '../../platform/audio.js?v=2.5.7';
+import { course as progressOf } from '../../data/progress-store.js?v=2.5.7';
+import { chatTurn } from '../../ai/tasks.js?v=2.5.7';
+import { sttAvailable, listenOnce } from '../../ai/speech.js?v=2.5.7';
+import { toast } from '../components.js?v=2.5.7';
 
 const MAX_TURNS = 12;     // keeps the request small; older turns are dropped
 

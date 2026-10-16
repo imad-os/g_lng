@@ -1,5 +1,5 @@
 // Texts of newer features, per language. AI texts live in ./ai.js and are merged under the key "ai".
-import ai from './ai.js?v=2.5.6';
+import ai from './ai.js?v=2.5.7';
 
 export default {
   en: { ai: ai.en, chatTitle: "Chat practice", chatSend: "Send", leagueEmpty: "Earn XP to join this week's league.", leagueOffline: "League unavailable offline.", leagueYou: "You", leagueRename: "Change name", leagueNameHint: "Your name in the league", leagueOutside: "You: {xp} XP (outside the top)", leagueSave: "Save", leagueResets: "Resets every week" },

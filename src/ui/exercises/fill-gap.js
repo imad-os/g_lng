@@ -1,7 +1,7 @@
 // fill_gap: pick the missing word of a sentence.
-import { h } from '../../platform/dom.js?v=2.5.6';
-import { tokenize } from '../../learning/text.js?v=2.5.6';
-import { choiceGrid, gloss, shuffle } from './common.js?v=2.5.6';
+import { h } from '../../platform/dom.js?v=2.5.7';
+import { tokenize } from '../../learning/text.js?v=2.5.7';
+import { choiceGrid, gloss, shuffle } from './common.js?v=2.5.7';
 
 export default function fillGap(ctx) {
   const { ex, vocab, from, course } = ctx;

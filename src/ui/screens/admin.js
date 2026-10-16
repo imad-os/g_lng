@@ -1,10 +1,10 @@
 // AI settings: only the switches live here. Providers, models, addresses and API keys are set by the owner in the
 // My PC App Store Manager (Config -> MyPC.app_config), so nothing secret is typed on the TV. Everything works with arrows + OK.
-import { h, focusable } from '../../platform/dom.js?v=2.5.6';
-import { t } from '../../platform/i18n.js?v=2.5.6';
-import { aiConfig, saveAiConfig } from '../../ai/config.js?v=2.5.6';
-import { testConnection } from '../../ai/client.js?v=2.5.6';
-import { openDialog, toast } from '../components.js?v=2.5.6';
+import { h, focusable } from '../../platform/dom.js?v=2.5.7';
+import { t } from '../../platform/i18n.js?v=2.5.7';
+import { aiConfig, saveAiConfig } from '../../ai/config.js?v=2.5.7';
+import { testConnection } from '../../ai/client.js?v=2.5.7';
+import { openDialog, toast } from '../components.js?v=2.5.7';
 
 const NAMES = { nvidia: 'NVIDIA NIM', gemini: 'Google Gemini', openai: 'OpenAI', riva: 'NVIDIA Riva', magpie: 'NVIDIA Magpie', webspeech: null, offline: null };
 

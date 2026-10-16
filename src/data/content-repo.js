@@ -1,8 +1,8 @@
 // Course content: picks a source (Firestore or the static copy), caches documents in memory,
 // and keeps the small structural ones (catalog, course, level, unit) on the device between runs.
-import { firestoreSource } from './firestore.js?v=2.5.6';
-import { staticSource } from './static-source.js?v=2.5.6';
-import { VERSION } from '../version.js?v=2.5.6';
+import { firestoreSource } from './firestore.js?v=2.5.7';
+import { staticSource } from './static-source.js?v=2.5.7';
+import { VERSION } from '../version.js?v=2.5.7';
 
 const CACHE_KEY = 'dualingo_content_cache';
 const memory = new Map();

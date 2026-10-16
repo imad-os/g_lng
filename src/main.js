@@ -1,31 +1,31 @@
 // Entry point: My PC lifecycle, boot, and navigation between screens.
-import { ensureIdentity } from './data/league.js?v=2.5.6';
-import { readConfig } from './config.js?v=2.5.6';
-import { setUiLang, uiLang, t, UI_LANGS } from './platform/i18n.js?v=2.5.6';
-import { initScreen, destroyScreen } from './platform/screen.js?v=2.5.6';
-import { handleAction } from './platform/input.js?v=2.5.6';
-import { configureAudio, startAudio, pauseAudio, resumeAudio, destroyAudio, setVolume, stopVoice, setExternalSpeech } from './platform/audio.js?v=2.5.6';
-import { openContent, getCourse, getLesson, getUnit, getLexicon, flushContentCache } from './data/content-repo.js?v=2.5.6';
-import { openProgress, getMe, saveMe, saveCourse, course as progressOf } from './data/progress-store.js?v=2.5.6';
-import { buildReview } from './learning/review.js?v=2.5.6';
-import { initRouter, show, menuChosen } from './ui/router.js?v=2.5.6';
-import { initComponents, initAiBadge, openDialog, toast } from './ui/components.js?v=2.5.6';
-import { mascot } from './ui/mascot.js?v=2.5.6';
-import { h } from './platform/dom.js?v=2.5.6';
-import { coursesScreen } from './ui/screens/courses.js?v=2.5.6';
-import { speakScreen, learnWhatScreen, chooseLevelScreen, placementScreen } from './ui/screens/welcome.js?v=2.5.6';
-import { homeScreen } from './ui/screens/home.js?v=2.5.6';
-import { lessonScreen } from './ui/screens/lesson.js?v=2.5.6';
-import { resultsScreen } from './ui/screens/results.js?v=2.5.6';
-import { statsScreen } from './ui/screens/stats.js?v=2.5.6';
-import { settingsScreen } from './ui/screens/settings.js?v=2.5.6';
-import { blitzScreen } from './ui/screens/blitz.js?v=2.5.6';
-import { setAppAiConfig } from './ai/config.js?v=2.5.6';
-import { chatScreen } from './ui/screens/chat.js?v=2.5.6';
-import { adminScreen } from './ui/screens/admin.js?v=2.5.6';
-import { aiReady } from './ai/config.js?v=2.5.6';
-import { explainExercise, explainUnit, customLesson } from './ai/tasks.js?v=2.5.6';
-import { externalTtsEnabled, externalSpeak, stopExternalSpeech } from './ai/speech.js?v=2.5.6';
+import { ensureIdentity } from './data/league.js?v=2.5.7';
+import { readConfig } from './config.js?v=2.5.7';
+import { setUiLang, uiLang, t, UI_LANGS } from './platform/i18n.js?v=2.5.7';
+import { initScreen, destroyScreen } from './platform/screen.js?v=2.5.7';
+import { handleAction } from './platform/input.js?v=2.5.7';
+import { configureAudio, startAudio, pauseAudio, resumeAudio, destroyAudio, setVolume, stopVoice, setExternalSpeech } from './platform/audio.js?v=2.5.7';
+import { openContent, getCourse, getLesson, getUnit, getLexicon, flushContentCache } from './data/content-repo.js?v=2.5.7';
+import { openProgress, getMe, saveMe, saveCourse, course as progressOf } from './data/progress-store.js?v=2.5.7';
+import { buildReview } from './learning/review.js?v=2.5.7';
+import { initRouter, show, menuChosen } from './ui/router.js?v=2.5.7';
+import { initComponents, initAiBadge, openDialog, toast } from './ui/components.js?v=2.5.7';
+import { mascot } from './ui/mascot.js?v=2.5.7';
+import { h } from './platform/dom.js?v=2.5.7';
+import { coursesScreen } from './ui/screens/courses.js?v=2.5.7';
+import { speakScreen, learnWhatScreen, chooseLevelScreen, placementScreen } from './ui/screens/welcome.js?v=2.5.7';
+import { homeScreen } from './ui/screens/home.js?v=2.5.7';
+import { lessonScreen } from './ui/screens/lesson.js?v=2.5.7';
+import { resultsScreen } from './ui/screens/results.js?v=2.5.7';
+import { statsScreen } from './ui/screens/stats.js?v=2.5.7';
+import { settingsScreen } from './ui/screens/settings.js?v=2.5.7';
+import { blitzScreen } from './ui/screens/blitz.js?v=2.5.7';
+import { setAppAiConfig } from './ai/config.js?v=2.5.7';
+import { chatScreen } from './ui/screens/chat.js?v=2.5.7';
+import { adminScreen } from './ui/screens/admin.js?v=2.5.7';
+import { aiReady } from './ai/config.js?v=2.5.7';
+import { explainExercise, explainUnit, customLesson } from './ai/tasks.js?v=2.5.7';
+import { externalTtsEnabled, externalSpeak, stopExternalSpeech } from './ai/speech.js?v=2.5.7';
 
 const MyPC = window.MyPC;
 
@@ -117,7 +117,10 @@ MyPC.init({
   async onInit(info) {
     const me = openProgress(MyPC, info.lang);
     ensureIdentity(me, info.profile && info.profile.name);
-    setUiLang(UI_LANGS.includes(me.ui) ? me.ui : info.lang);
+    // The language the learner speaks comes from My PC (info.lang). The picker is only shown when it is not one of ours.
+    app.sysLang = UI_LANGS.includes(info.lang) ? info.lang : null;
+    if (!UI_LANGS.includes(me.from)) me.from = app.sysLang || '';
+    setUiLang(UI_LANGS.includes(me.ui) ? me.ui : (app.sysLang || 'en'));
     if (info.quality && info.quality.tier === 'low') document.body.classList.add('low');
     initScreen(document.getElementById('stage'));
     initRouter(document.getElementById('screen'), MyPC);
@@ -146,6 +149,7 @@ MyPC.init({
     const me = getMe();
     if (app.lang) app.go.home();
     else if (me.started.length) app.go.courses();
+    else if (app.sysLang) { me.from = app.sysLang; app.go.learnWhat(); }
     else app.go.welcome();
   },
   onPause() { pauseAudio(); },

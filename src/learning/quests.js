@@ -1,5 +1,5 @@
 // Daily quests: three small goals that reset every day and pay gems.
-import { today } from './day.js?v=2.5.6';
+import { today } from './day.js?v=2.5.7';
 
 export const QUESTS = [
   { id: 'xp', goal: 50, reward: 20 },

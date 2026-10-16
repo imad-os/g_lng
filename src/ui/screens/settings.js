@@ -1,9 +1,9 @@
 // Settings: translation language, daily goal, device voice, reset course.
-import { h, focusable } from '../../platform/dom.js?v=2.5.6';
-import { t, UI_LANGS } from '../../platform/i18n.js?v=2.5.6';
-import { configureAudio, setSfx } from '../../platform/audio.js?v=2.5.6';
-import { getMe, saveMe, resetCourse } from '../../data/progress-store.js?v=2.5.6';
-import { openDialog, toast } from '../components.js?v=2.5.6';
+import { h, focusable } from '../../platform/dom.js?v=2.5.7';
+import { t, UI_LANGS } from '../../platform/i18n.js?v=2.5.7';
+import { configureAudio, setSfx } from '../../platform/audio.js?v=2.5.7';
+import { getMe, saveMe, resetCourse } from '../../data/progress-store.js?v=2.5.7';
+import { openDialog, toast } from '../components.js?v=2.5.7';
 
 const LANG_NAMES = { en: 'English', fr: 'Français', es: 'Español', ar: 'العربية' };
 const GOALS = [10, 20, 30, 50];

@@ -1,14 +1,14 @@
 // First-run and "add a language" flow: who you are (language you speak) -> what to learn -> where to start,
 // with "I am not sure" leading to a 12-question placement quiz that also offers "I am not sure" on every question.
-import { h, focusable, clear } from '../../platform/dom.js?v=2.5.6';
-import { t, pickLang, setUiLang, UI_LANGS } from '../../platform/i18n.js?v=2.5.6';
-import { getMe, saveMe } from '../../data/progress-store.js?v=2.5.6';
-import { getCourse } from '../../data/content-repo.js?v=2.5.6';
-import { sfx, say } from '../../platform/audio.js?v=2.5.6';
-import { buildQuiz, estimateLevel, QUIZ_LENGTH } from '../../learning/placement.js?v=2.5.6';
-import { toast, itemText, speakerButton } from '../components.js?v=2.5.6';
-import { choiceGrid, gloss } from '../exercises/common.js?v=2.5.6';
-import { setFocus } from '../../platform/input.js?v=2.5.6';
+import { h, focusable, clear } from '../../platform/dom.js?v=2.5.7';
+import { t, pickLang, setUiLang, UI_LANGS } from '../../platform/i18n.js?v=2.5.7';
+import { getMe, saveMe } from '../../data/progress-store.js?v=2.5.7';
+import { getCourse } from '../../data/content-repo.js?v=2.5.7';
+import { sfx, say } from '../../platform/audio.js?v=2.5.7';
+import { buildQuiz, estimateLevel, QUIZ_LENGTH } from '../../learning/placement.js?v=2.5.7';
+import { toast, itemText, speakerButton } from '../components.js?v=2.5.7';
+import { choiceGrid, gloss } from '../exercises/common.js?v=2.5.7';
+import { setFocus } from '../../platform/input.js?v=2.5.7';
 
 const NATIVE = { en: 'English', fr: 'Français', es: 'Español', ar: 'العربية' };
 
