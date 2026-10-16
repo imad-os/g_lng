@@ -7,6 +7,9 @@ import { SRC, BUILD, UI_LANGS, readJson, writeJson, tokenize, rng, shuffle, hash
 
 const meta = readJson(path.join(SRC, 'courses.json'));
 const levelById = Object.fromEntries(meta.levels.map((l) => [l.id, l]));
+// A unit only appears in a course when it has enough words in that language to make real lessons.
+const MIN_WORDS = 6;
+const hasUnit = (u, L) => u.words.filter((w) => w.text[L]).length >= MIN_WORDS;
 
 // Units grouped by level: content/src/<level>/<unit>.json
 const unitsByLevel = {};
@@ -31,7 +34,7 @@ for (const course of meta.courses) {
   const courseLevels = [];
   for (const levelId of course.levels) {
     const level = levelById[levelId];
-    const units = (unitsByLevel[levelId] || []).filter((u) => u.words.some((w) => w.text[L]));
+    const units = (unitsByLevel[levelId] || []).filter((u) => hasUnit(u, L));
     const unitSummaries = [];
     for (const unit of units) {
       const built = buildUnit(L, level, unit);
@@ -52,7 +55,7 @@ put('meta/catalog', {
   courses: meta.courses.map((c) => ({
     id: c.id, name: c.name, native: c.native, rtl: c.rtl,
     levels: c.levels,
-    ready: c.levels.filter((id) => (unitsByLevel[id] || []).some((u) => u.words.some((w) => w.text[c.id]))),
+    ready: c.levels.filter((id) => (unitsByLevel[id] || []).some((u) => hasUnit(u, c.id))),
   })),
 });
 for (const d of docs) writeJson(path.join(BUILD, d.path + '.json'), d.data);

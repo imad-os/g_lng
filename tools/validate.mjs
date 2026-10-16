@@ -16,6 +16,14 @@ for (const { path, data } of docs) {
   if (size > MAX_DOC_BYTES) fail(path, `${size} bytes is too big for one Firestore document`);
   noNestedArrays(path, data, 'root');
   if (/\/lessons\//.test(path)) checkLesson(path, data);
+  if (/\/lexicon\//.test(path)) {
+    const seenText = new Map();
+    for (const [k, v] of Object.entries(data.words)) {
+      const t = v.t.toLowerCase();
+      if (seenText.has(t)) fail(path, `${k} and ${seenText.get(t)} have the same text "${v.t}"`);
+      seenText.set(t, k);
+    }
+  }
   if (/\/levels\//.test(path)) for (const u of data.units) for (const l of u.lessons) if (!byPath[path.replace(/levels\/.*/, `lessons/${l.id}`)]) fail(path, `lesson ${l.id} has no document`);
 }
 

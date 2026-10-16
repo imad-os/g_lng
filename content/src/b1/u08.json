@@ -1,0 +1,39 @@
+{
+  "id": "u08", "level": "b1", "order": 8,
+  "title": { "en": "Around town", "fr": "En ville", "es": "En la ciudad", "ar": "في المدينة" },
+  "tip": {
+    "en": "Ask where something is with 'Where is...?' and answer with 'here' or 'there'.",
+    "fr": "Demandez où se trouve quelque chose avec « Où est... ? » et répondez « ici » ou « là ».",
+    "es": "Pregunta dónde está algo con «¿Dónde está...?» y responde «aquí» o «allí».",
+    "ar": "اسأل عن مكان شيء بـ«أين...؟» وأجب بـ«هنا» أو «هناك»."
+  },
+  "words": [
+    { "id": "school", "text": { "en": "school", "fr": "école", "es": "escuela", "ar": "مدرسة", "de": "Schule" }, "tr": { "ar": "madrasa" } },
+    { "id": "shop", "text": { "en": "shop", "fr": "magasin", "es": "tienda", "ar": "محل", "de": "Geschäft" }, "tr": { "ar": "maḥall" } },
+    { "id": "market", "text": { "en": "market", "fr": "marché", "es": "mercado", "ar": "سوق", "de": "Markt", "zgh": "ⴰⵙⵓⵇ" }, "tr": { "ar": "sūq", "zgh": "asuq" } },
+    { "id": "street", "text": { "en": "street", "fr": "rue", "es": "calle", "ar": "شارع", "de": "Straße" }, "tr": { "ar": "shāriʿ" } },
+    { "id": "city", "text": { "en": "city", "fr": "ville", "es": "ciudad", "ar": "مدينة", "de": "Stadt", "zgh": "ⵜⴰⵎⴷⵉⵏⵜ" }, "tr": { "ar": "madīna", "zgh": "tamdint" } },
+    { "id": "bank", "text": { "en": "bank", "fr": "banque", "es": "banco", "ar": "بنك", "de": "Bank" }, "tr": { "ar": "bank" } },
+    { "id": "hospital", "text": { "en": "hospital", "fr": "hôpital", "es": "hospital", "ar": "مستشفى", "de": "Krankenhaus" }, "tr": { "ar": "mustashfā" } },
+    { "id": "station", "text": { "en": "station", "fr": "gare", "es": "estación", "ar": "محطة", "de": "Bahnhof" }, "tr": { "ar": "maḥaṭṭa" } },
+    { "id": "park", "text": { "en": "park", "fr": "parc", "es": "parque", "ar": "حديقة", "de": "Park" }, "tr": { "ar": "ḥadīqa" } },
+    { "id": "where", "text": { "en": "where", "fr": "où", "es": "dónde", "ar": "أين", "de": "wo", "zgh": "ⵎⴰⵏⵉ" }, "tr": { "ar": "ayna", "zgh": "mani" } },
+    { "id": "here", "text": { "en": "here", "fr": "ici", "es": "aquí", "ar": "هنا", "de": "hier", "zgh": "ⴷⴰ" }, "tr": { "ar": "hunā", "zgh": "da" } },
+    { "id": "there", "text": { "en": "there", "fr": "là", "es": "allí", "ar": "هناك", "de": "dort", "zgh": "ⴷⵉⵏⵏ" }, "tr": { "ar": "hunāk", "zgh": "dinn" } }
+  ],
+  "sentences": [
+    { "id": "s01", "text": { "en": "Where is the school?", "fr": "Où est l'école ?", "es": "¿Dónde está la escuela?", "ar": "أين المدرسة؟", "de": "Wo ist die Schule?" }, "tr": { "ar": "ayna al-madrasa?" } },
+    { "id": "s02", "text": { "en": "The school is here.", "fr": "L'école est ici.", "es": "La escuela está aquí.", "ar": "المدرسة هنا.", "de": "Die Schule ist hier." }, "tr": { "ar": "al-madrasa hunā." } },
+    { "id": "s03", "text": { "en": "The shop is there.", "fr": "Le magasin est là.", "es": "La tienda está allí.", "ar": "المحل هناك.", "de": "Das Geschäft ist dort." }, "tr": { "ar": "al-maḥall hunāk." } },
+    { "id": "s04", "text": { "en": "The market is big.", "fr": "Le marché est grand.", "es": "El mercado es grande.", "ar": "السوق كبير.", "de": "Der Markt ist groß." }, "tr": { "ar": "as-sūq kabīr." } },
+    { "id": "s05", "text": { "en": "The city is big.", "fr": "La ville est grande.", "es": "La ciudad es grande.", "ar": "المدينة كبيرة.", "de": "Die Stadt ist groß." }, "tr": { "ar": "al-madīna kabīra." } },
+    { "id": "s06", "text": { "en": "The street is small.", "fr": "La rue est petite.", "es": "La calle es pequeña.", "ar": "الشارع صغير.", "de": "Die Straße ist klein." }, "tr": { "ar": "ash-shāriʿ ṣaghīr." } },
+    { "id": "s07", "text": { "en": "Where is the bank?", "fr": "Où est la banque ?", "es": "¿Dónde está el banco?", "ar": "أين البنك؟", "de": "Wo ist die Bank?" }, "tr": { "ar": "ayna al-bank?" } },
+    { "id": "s08", "text": { "en": "The bank is there.", "fr": "La banque est là.", "es": "El banco está allí.", "ar": "البنك هناك.", "de": "Die Bank ist dort." }, "tr": { "ar": "al-bank hunāk." } },
+    { "id": "s09", "text": { "en": "The hospital is here.", "fr": "L'hôpital est ici.", "es": "El hospital está aquí.", "ar": "المستشفى هنا.", "de": "Das Krankenhaus ist hier." }, "tr": { "ar": "al-mustashfā hunā." } },
+    { "id": "s10", "text": { "en": "The station is there.", "fr": "La gare est là.", "es": "La estación está allí.", "ar": "المحطة هناك.", "de": "Der Bahnhof ist dort." }, "tr": { "ar": "al-maḥaṭṭa hunāk." } },
+    { "id": "s11", "text": { "en": "The park is here.", "fr": "Le parc est ici.", "es": "El parque está aquí.", "ar": "الحديقة هنا.", "de": "Der Park ist hier." }, "tr": { "ar": "al-ḥadīqa hunā." } },
+    { "id": "s12", "text": { "en": "Thank you, goodbye!", "fr": "Merci, au revoir !", "es": "Gracias, adiós.", "ar": "شكرا، مع السلامة.", "de": "Danke, tschüss!" }, "tr": { "ar": "shukran, maʿa as-salāma." } }
+  ],
+  "dialogue": ["s01", "s02", "s12"]
+}
