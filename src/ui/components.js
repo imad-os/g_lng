@@ -1,8 +1,8 @@
 // Reusable pieces: dialogs, toasts, item text, speaker buttons.
-import { aiStatus, onAiStatus } from '../ai/status.js?v=2.6.0';
-import { h, focusable, ICONS } from '../platform/dom.js?v=2.6.0';
-import { pushScope, popScope } from '../platform/input.js?v=2.6.0';
-import { t } from '../platform/i18n.js?v=2.6.0';
+import { aiStatus, onAiStatus } from '../ai/status.js?v=2.7.0';
+import { h, focusable, ICONS } from '../platform/dom.js?v=2.7.0';
+import { pushScope, popScope } from '../platform/input.js?v=2.7.0';
+import { t } from '../platform/i18n.js?v=2.7.0';
 
 let layer = null;
 export function initComponents(el) { layer = el; }

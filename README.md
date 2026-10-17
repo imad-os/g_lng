@@ -54,33 +54,25 @@ Until Firestore is seeded, the app reads the same content from `content/build` o
 | `contentSource` | `"auto"` | `auto` tries Firestore then the static copy; `firestore` or `static` force one |
 | `audioBase` | `"audio"` | folder of pre-generated voice clips (`audio/<lang>/<hash>.mp3`, made by `python3 tools/gen-audio.py`); a missing clip falls back to the device voice |
 | `speech` | `true` | allow the device voice |
-| `llm` | none | language model for chat practice, AI lessons and explanations: `{ "provider": "nvidia" \| "openai" \| "gemini", "endpoint": "", "model": "", "key": "", "temperature": 0.4 }`. Empty `endpoint`/`model` use the provider's default. No `key` = AI off |
-| `tts` | device voice | voice that speaks to the learner: `{ "provider": "magpie" \| "openai" \| "riva", "endpoint": "", "voice": "Aria", "key": "" }`. Magpie speaks en/es/fr/de (the app sends the language with each request); other languages use the clips or the device voice |
-| `stt` | device mic | microphone for speaking exercises and chat: `{ "provider": "webspeech" \| "openai", "endpoint": "", "key": "" }` |
-
-| `corsProxy` | off | `{ "enabled": true, "url": "https://<your-worker>.workers.dev/" }`: sends the AI calls through your own CORS proxy (see below). Needed because My PC opens the app in a browser frame, and AI providers do not allow browser calls |
+| `ai` | `{}` | which My PC AI service and model the app uses: `{ "provider": "nvidia", "model": "meta/llama-3.3-70b-instruct", "voice": "Aria" }`. All optional: without it the app asks NVIDIA with the model shown here. `voice` is the Magpie speaker |
 
 Example (App Store Manager -> Config):
 
 ```json
-{
-  "llm": { "provider": "nvidia", "model": "meta/llama-3.1-8b-instruct", "key": "nvapi-..." },
-  "tts": { "provider": "magpie", "voice": "Aria", "key": "nvapi-..." },
-  "stt": { "provider": "webspeech" }
-}
+{ "ai": { "provider": "nvidia", "model": "meta/llama-3.3-70b-instruct", "voice": "Aria" } }
 ```
 
-### CORS proxy (needed for the AI voice and chat)
+### AI, voice and microphone (through My PC)
 
-The app runs inside a browser frame, so AI providers (NVIDIA, OpenAI, Gemini) refuse its calls (CORS). The public `cors-anywhere` demo only works on a PC after unlocking it by hand, never on a TV. Deploy your own once:
+The app has no API key, address or proxy of its own. Everything AI goes through My PC (guide section 14, API level 10):
 
-1. Cloudflare dashboard -> Workers & Pages -> Create -> Worker, paste `tools/cors-proxy-worker.js`, deploy (free plan is enough).
-2. In Config add `"corsProxy": { "enabled": true, "url": "https://<your-worker>.workers.dev/" }`.
+- **Chat practice, AI lessons, explanations**: `MyPC.ai.generate` with the service above. Add the service once on the TV: **My PC Settings > AI** (NVIDIA, with its key). The first AI use asks the user to allow it.
+- **Voice that speaks**: after the recorded clips, NVIDIA Magpie through `MyPC.ai.generate({ task: "speech" })` for English, Spanish, French and German (set the Magpie function in My PC Settings > AI > NVIDIA). Arabic and Tamazight use the clips or the device voice.
+- **Speaking exercises**: `MyPC.mic.record` then `MyPC.ai.generate({ task: "transcribe" })` with a service that transcribes (Gemini or OpenAI added in My PC). Without one, the "I said it" button stays.
+- An older My PC (API level below 10) or no service set up: the AI buttons explain why and everything else works. The badge at the bottom left shows the service/model and any error.
+- Testing in a PC browser: AI needs a provider object with your own test key (never committed); see the guide. Test inside My PC when you can.
 
-The worker only forwards to NVIDIA, OpenAI and Google AI hosts and never stores keys. If the voice fails, the badge at the bottom left shows the reason (for example `request blocked (CORS?)` or the provider's error).
-
-Keys, models and addresses are read only from this config; the app's AI screen no longer edits them. It only holds the switches (speaking exercises, AI lessons) and the CORS proxy for testing in a PC browser (turn it off on the TV). The config is visible to the app on every profile, so use keys you are happy to share with your users.
-| `ai` | `false` | AI extras (Phase 4) |
+The AI screen only shows what My PC reports and holds the switches (speaking exercises, AI lessons).
 
 ## Releasing
 

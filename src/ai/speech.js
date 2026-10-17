@@ -1,15 +1,15 @@
-// Optional external voices: text-to-speech from a provider, speech-to-text from the browser or a provider.
-// Every failure is quiet (false / '') so the caller can fall back to the device voice; keys are never logged.
-import { aiConfig, viaProxy } from './config.js?v=2.6.0';
-import { setAiStatus } from './status.js?v=2.6.0';
-import { playVoiceBytes } from '../platform/audio.js?v=2.6.0';
-import { t } from '../platform/i18n.js?v=2.6.0';
+// Optional external voice: NVIDIA Magpie text-to-speech and speech to text, both through My PC (bridge.js).
+// Every failure is quiet (false / '') so the caller can fall back to the device voice; keys never reach the app.
+import { aiConfig } from './config.js?v=2.7.0';
+import { aiSupported, micSupported, generate, explain, hopeless, voiceName, recordAndTranscribe, cancelRecording, knownProviders } from './bridge.js?v=2.7.0';
+import { setAiStatus } from './status.js?v=2.7.0';
+import { playVoiceBytes } from '../platform/audio.js?v=2.7.0';
+import { t } from '../platform/i18n.js?v=2.7.0';
 
-const NO_EXTERNAL = new Set(['', 'zgh', 'tzm', 'ber']);   // Tamazight has no provider voice: device voice instead
 const baseLang = (code) => String(code || '').slice(0, 2).toLowerCase();
-// Magpie-Multilingual speaks these (language -> locale of its voices). Arabic and Tamazight use the device voice.
-const MAGPIE = { en: 'EN-US', es: 'ES-US', fr: 'FR-FR', de: 'DE-DE' };
-const trim = (u) => String(u || '').replace(/\/+$/, '');
+// Magpie-Multilingual speaks these (language -> locale code My PC wants). Arabic and Tamazight use the device voice.
+const MAGPIE = { en: 'en-US', es: 'es-US', fr: 'fr-FR', de: 'de-DE' };
+const LABEL = 'NVIDIA Magpie';
 
 // ---- Text to speech ------------------------------------------------------------------------
 
@@ -17,10 +17,11 @@ let audioEl = null;
 let audioUrl = null;
 let finish = null;          // resolves the pending externalSpeak when playback is stopped
 let ttsCtl = null;
+let ttsOff = false;         // My PC said no service / not allowed / too old: stop asking in this session
 
 export function externalTtsEnabled() {
   const c = aiConfig();
-  return c.enabled !== false && c.tts.provider !== 'webspeech' && !!c.tts.endpoint && !!String(c.tts.key || '').trim();
+  return c.enabled !== false && !ttsOff && aiSupported();
 }
 
 export function stopExternalSpeech() {
@@ -32,51 +33,29 @@ export function stopExternalSpeech() {
 
 export async function externalSpeak(text, langCode, slow = false) {
   stopExternalSpeech();
-  if (!externalTtsEnabled() || !text || NO_EXTERNAL.has(baseLang(langCode))) return false;
-  const c = aiConfig().tts;
+  const loc = MAGPIE[baseLang(langCode)];
+  if (!externalTtsEnabled() || !text || !loc) return false;
+  const voice = voiceName();
   const ctl = new AbortController();
   ttsCtl = ctl;
-  const label = { magpie: 'NVIDIA Magpie', openai: 'OpenAI TTS', riva: 'NVIDIA Riva' }[c.provider] || c.provider;
-  let loading = false;
-  const fail = (why) => setAiStatus({ kind: 'voice', busy: false, label, error: why });      // shown in the badge: the owner can see what went wrong
-  const loaded = () => { if (loading && ttsCtl === ctl) { loading = false; setAiStatus({ kind: 'voice', busy: false, label: `${label}${c.voice ? ' · ' + c.voice : ''}` }); } };
-  const timer = setTimeout(() => ctl.abort(), 20000);
+  const label = `${LABEL} · ${voice}`;
+  let loading = true;
+  const fail = (why) => setAiStatus({ kind: 'voice', busy: false, label: LABEL, error: why });      // shown in the badge: the owner can see what went wrong
+  const loaded = () => { if (loading && ttsCtl === ctl) { loading = false; setAiStatus({ kind: 'voice', busy: false, label }); } };
+  const timer = setTimeout(() => ctl.abort(), 25000);
+  setAiStatus({ kind: 'voice', busy: true, error: '', label });
   try {
-    let res;
-    if (c.provider === 'magpie') {
-      const loc = MAGPIE[baseLang(langCode)];
-      if (!loc) return false;                           // language not supported by Magpie: device voice
-      const form = new FormData();                      // multipart: the browser sets the boundary, so no Content-Type
-      form.append('text', text);
-      form.append('language', loc.replace(/^(..)-(..)$/, (m, a, b) => `${a.toLowerCase()}-${b}`));
-      form.append('voice', `Magpie-Multilingual.${loc}.${c.voice || 'Aria'}`);
-      loading = true; setAiStatus({ kind: 'voice', busy: true, error: '', label: `${label} · ${c.voice || 'Aria'}` });
-      const r = viaProxy(trim(c.endpoint), { Authorization: `Bearer ${c.key}` });
-      res = await fetch(r.url, { method: 'POST', signal: ctl.signal, headers: r.headers, body: form });
-    } else {
-    const body = c.provider === 'openai'
-      ? { model: 'tts-1', input: text, voice: c.voice || 'alloy', response_format: 'mp3' }
-      : { input: text, voice: c.voice || undefined, language_code: langCode, response_format: 'wav' };   // Riva-style, same route shape
-    loading = true; setAiStatus({ kind: 'voice', busy: true, error: '', label: `${label}${c.voice ? ` · ${c.voice}` : ''}` });
-    const r = viaProxy(`${trim(c.endpoint)}/audio/speech`, { 'Content-Type': 'application/json', Authorization: `Bearer ${c.key}` });
-    res = await fetch(r.url, { method: 'POST', signal: ctl.signal, headers: r.headers, body: JSON.stringify(body) });
-    }
-    if (!res.ok) {
-      let more = '';
-      try { more = (await res.text()).replace(/\s+/g, ' ').slice(0, 80); } catch (e) { /* no body */ }
-      loaded();
-      fail(`${res.status}${more ? ` ${more}` : ''}`);
-      return false;
-    }
-    const bytes = await res.arrayBuffer();
+    const res = await generate({ provider: 'nvidia', task: 'speech', model: 'magpie-multilingual', prompt: text, voice, language: loc }, { signal: ctl.signal });
+    const part = ((res && res.parts) || []).find((p) => p && p.type === 'audio' && p.data);
     loaded();
     if (ttsCtl !== ctl) return true;                    // another call or stop took over meanwhile
-    if (!bytes.byteLength) { fail('empty audio'); return false; }
+    if (!part || !(part.data.byteLength || part.data.length)) { fail('empty audio'); return false; }
+    const bytes = part.data instanceof ArrayBuffer ? part.data : new Uint8Array(part.data).buffer;
     try {
       const played = await playVoiceBytes(bytes.slice(0), slow);
       if (played) return true;
     } catch (e) { /* decode failed: try the audio element below */ }
-    audioUrl = URL.createObjectURL(new Blob([bytes], { type: res.headers.get('content-type') || 'audio/wav' }));
+    audioUrl = URL.createObjectURL(new Blob([bytes], { type: part.mime || 'audio/wav' }));
     const el = new Audio(audioUrl);
     audioEl = el;
     const ok = await new Promise((resolve) => {
@@ -88,8 +67,10 @@ export async function externalSpeak(text, langCode, slow = false) {
     if (!ok) fail('cannot play the audio here');
     return ok;
   } catch (e) {
-    if (!ctl.stopped) fail(aiConfig().corsProxy ? 'request failed (proxy or network)' : 'request blocked (CORS?) - set up the CORS proxy');
-    return !!ctl.stopped;                               // stopped on purpose is not a failure
+    if (ctl.stopped) return true;                       // stopped on purpose is not a failure
+    if (hopeless(e)) ttsOff = true;
+    fail(e && e.code ? explain(e) : 'request failed');
+    return false;
   } finally {
     loaded();
     clearTimeout(timer);
@@ -99,73 +80,24 @@ export async function externalSpeak(text, langCode, slow = false) {
 
 // ---- Speech to text ------------------------------------------------------------------------
 
-const Recognition = () => window.SpeechRecognition || window.webkitSpeechRecognition;
-let abortFn = null;
+let sttOff = false;
 
 export function sttAvailable() {
   const c = aiConfig();
-  if (c.enabled === false || c.speaking === false) return false;
-  if (c.stt.provider === 'openai') return !!(navigator.mediaDevices && window.MediaRecorder && c.stt.endpoint && String(c.stt.key || '').trim());
-  return !!Recognition();
+  if (c.enabled === false || c.speaking === false || sttOff || !micSupported()) return false;
+  const list = knownProviders();                        // known after the AI settings were opened or a mic try
+  return !(list && list.length && !list.some((p) => p.tasks && p.tasks.transcribe));
 }
 
-export function abortListening() { if (abortFn) { const f = abortFn; abortFn = null; f(); } }
+export function abortListening() { cancelRecording(); }
 
 export async function listenOnce(langCode, { timeoutMs = 6000 } = {}) {
   abortListening();
-  const c = aiConfig().stt;
-  return c.provider === 'openai' ? recordAndTranscribe(c, langCode, timeoutMs) : webSpeech(langCode, timeoutMs);
-}
-
-function webSpeech(langCode, timeoutMs) {
-  return new Promise((resolve, reject) => {
-    const R = Recognition();
-    if (!R) { reject(new Error(t('ai.errNoMic'))); return; }
-    const rec = new R();
-    rec.lang = langCode || 'en-US';
-    rec.interimResults = false;
-    rec.maxAlternatives = 1;
-    let text = '', failure = null;
-    const timer = setTimeout(() => { try { rec.stop(); } catch (e) { /* already stopped */ } }, timeoutMs);
-    rec.onresult = (ev) => { text = Array.from(ev.results).map((r) => r[0].transcript).join(' ').trim(); };
-    rec.onerror = (ev) => { if (ev.error === 'not-allowed' || ev.error === 'service-not-allowed') failure = new Error(t('ai.errMicDenied')); };
-    rec.onend = () => { clearTimeout(timer); abortFn = null; if (failure) reject(failure); else resolve(text); };
-    abortFn = () => { clearTimeout(timer); try { rec.abort(); } catch (e) { /* ignore */ } };
-    try { rec.start(); } catch (e) { clearTimeout(timer); abortFn = null; reject(new Error(t('ai.errNoMic'))); }
-  });
-}
-
-async function recordAndTranscribe(c, langCode, timeoutMs) {
-  let stream;
-  try { stream = await navigator.mediaDevices.getUserMedia({ audio: true }); } catch (e) { throw new Error(t('ai.errMicDenied')); }
-  const stopTracks = () => stream.getTracks().forEach((tr) => tr.stop());
-  let blob;
   try {
-    const rec = new MediaRecorder(stream);
-    const chunks = [];
-    blob = await new Promise((resolve, reject) => {
-      rec.ondataavailable = (e) => { if (e.data && e.data.size) chunks.push(e.data); };
-      rec.onerror = () => reject(new Error(t('ai.errNoMic')));
-      rec.onstop = () => resolve(new Blob(chunks, { type: rec.mimeType || 'audio/webm' }));
-      const timer = setTimeout(() => { if (rec.state !== 'inactive') rec.stop(); }, timeoutMs);
-      abortFn = () => { clearTimeout(timer); if (rec.state !== 'inactive') rec.stop(); chunks.length = 0; };
-      rec.start();
-    });
-  } finally { abortFn = null; stopTracks(); }
-  if (blob.size < 1200) return '';                        // silence
-  const form = new FormData();
-  form.append('file', blob, 'speech.webm');
-  form.append('model', 'whisper-1');
-  if (baseLang(langCode)) form.append('language', baseLang(langCode));
-  const ctl = new AbortController();
-  const timer = setTimeout(() => ctl.abort(), 20000);
-  try {
-    const r = viaProxy(`${trim(c.endpoint)}/audio/transcriptions`, { Authorization: `Bearer ${c.key}` });
-    const res = await fetch(r.url, { method: 'POST', body: form, headers: r.headers, signal: ctl.signal });
-    if (!res.ok) throw new Error(t('ai.errServer', { n: res.status }));
-    const data = await res.json();
-    return typeof data.text === 'string' ? data.text.trim() : '';
+    return await recordAndTranscribe(langCode, { maxSeconds: Math.ceil(timeoutMs / 1000) });
   } catch (e) {
-    throw new Error(e.message && e.message.length < 120 && !/fetch|abort/i.test(e.message) ? e.message : t('ai.errNetwork'));
-  } finally { clearTimeout(timer); }
+    if (e && e.code === 'cancelled') return '';
+    if (hopeless(e) || (e && e.code === 'no-mic')) sttOff = e.code !== 'denied';
+    throw Object.assign(new Error(e && e.code ? explain(e, 'mic') : t('ai.errNoMic')), { code: e && e.code });
+  }
 }

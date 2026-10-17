@@ -1,8 +1,8 @@
 // What the model is asked to do: explain an exercise or a unit, or invent a small custom lesson.
 // The model is never trusted: its JSON is parsed and checked strictly before a lesson is built from it.
-import { chat } from './client.js?v=2.6.0';
-import { t, pickLang } from '../platform/i18n.js?v=2.6.0';
-import { tokenize } from '../learning/text.js?v=2.6.0';
+import { chat } from './client.js?v=2.7.0';
+import { t, pickLang } from '../platform/i18n.js?v=2.7.0';
+import { tokenize } from '../learning/text.js?v=2.7.0';
 
 const UI_NAMES = { en: 'English', fr: 'French', es: 'Spanish', ar: 'Arabic' };
 const MAX_LEN = 90;
@@ -112,13 +112,20 @@ export function buildLesson(words, { from, theme }) {
   };
 }
 
+function wordsSchema(course, from) {
+  const str = { type: 'string' };
+  const props = { t: str, en: str, ...(from !== 'en' ? { [from]: str } : {}), ...(needsTr(course) ? { tr: str } : {}) };
+  return { type: 'object', properties: { words: { type: 'array', items: { type: 'object', properties: props, required: ['t', 'en'] } } }, required: ['words'] };
+}
+
 export async function customLesson({ course, from, theme, count = LESSON_SIZE, signal }) {
   const wanted = Math.max(6, Math.min(12, count | 0 || LESSON_SIZE));
   const subject = clean(theme || '').slice(0, 60);
   if (!subject) throw new Error(t('ai.errNoTheme'));
   const fromName = UI_NAMES[from] || 'English';
   const reply = await chat({
-    json: true, signal,
+    json: true, signal, maxTokens: 900,
+    schema: wordsSchema(course, from),
     system: 'You write vocabulary lists for a language-learning app. Answer ONLY with a JSON object, no markdown, no comments.',
     user: `Target language: ${courseName(course)}. Learner's language: ${fromName} (code "${from}").\n`
       + `Theme: "${subject}".\nGive ${wanted} useful beginner words or short phrases (at most 4 words each) about the theme.\n`
@@ -142,7 +149,7 @@ export function chatSystem({ course, from, level }) {
 }
 
 // history: [{role:'user'|'assistant', content}] (the first turn is the model's opening when history is empty).
-export async function chatTurn({ course, from, level, history, signal }) {
+export async function chatTurn({ course, from, level, history, signal, onDelta }) {
   const messages = history.length ? history : [{ role: 'user', content: 'Start the conversation with a greeting and one easy question.' }];
-  return chat({ system: chatSystem({ course, from, level }), messages, signal });
+  return chat({ system: chatSystem({ course, from, level }), messages, signal, onDelta, maxTokens: 300 });
 }
