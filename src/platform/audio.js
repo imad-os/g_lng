@@ -108,6 +108,25 @@ export async function say(item, ttsLang, slow = false) {
   window.speechSynthesis.speak(u);
 }
 
+// Plays downloaded voice bytes (wav/mp3) through the app's AudioContext, like the clips. An <audio> element would need a
+// user gesture, which the My PC iframe never gets from the TV remote. Returns true when it ended, null when there is no
+// AudioContext, and throws when the bytes cannot be decoded.
+export async function playVoiceBytes(bytes, slow = false) {
+  if (!ctx) return null;
+  if (ctx.state === 'suspended') { try { await ctx.resume(); } catch (e) { /* stays suspended */ } }
+  const buf = await new Promise((res, rej) => ctx.decodeAudioData(bytes, res, rej));
+  if (playing) { try { playing.stop(); } catch (e) { /* already ended */ } }
+  return new Promise((resolve) => {
+    const src = ctx.createBufferSource();
+    src.buffer = buf;
+    src.playbackRate.value = slow ? 0.65 : 1;
+    src.connect(gain);
+    src.onended = () => { if (playing === src) playing = null; resolve(true); };
+    playing = src;
+    src.start();
+  });
+}
+
 export function stopVoice() {
   if (externalStop) externalStop();
   if (playing) { try { playing.stop(); } catch (e) { /* already ended */ } playing = null; }

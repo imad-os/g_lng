@@ -124,3 +124,5 @@
 /* The layer now always holds the AI badge: it must not block clicks on the screen below; dialogs still do. */
 .layer { pointer-events: none; }
 .layer > .dialog-back { pointer-events: auto; }
+
+.ai-badge.err { background: rgba(120, 30, 30, .92); max-width: 70%; }

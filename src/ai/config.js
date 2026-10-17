@@ -34,6 +34,13 @@ function fromApp(kind, presets, fallbackProvider) {
   return { ...p, provider, key: str(a.key), ...(str(a.endpoint) ? { endpoint: str(a.endpoint) } : {}), ...(str(a.model) ? { model: str(a.model) } : {}), ...(str(a.voice) ? { voice: str(a.voice) } : {}) };
 }
 
+// The owner can turn the proxy on for everyone and point it at their own: "corsProxy": { "enabled": true, "url": "https://..." }.
+function proxyApp() {
+  const p = appAi.corsProxy;
+  if (p === true) return { enabled: true, url: '' };
+  return p && typeof p === 'object' ? { enabled: p.enabled === true, url: str(p.url) } : { enabled: false, url: '' };
+}
+
 const defaults = () => ({
   enabled: true,
   speaking: true,
@@ -59,7 +66,8 @@ export function aiConfig() {
   llm.temperature = Number.isFinite(temp) && (appAi.llm || {}).temperature !== '' ? Math.min(1, Math.max(0, temp)) : 0.4;
   return {
     enabled: saved.enabled !== false, speaking: saved.speaking !== false, aiLessons: saved.aiLessons !== false,
-    corsProxy: saved.corsProxy === true, corsProxyUrl: str(saved.corsProxyUrl) || d.corsProxyUrl,
+    corsProxy: saved.corsProxy !== undefined ? saved.corsProxy === true : proxyApp().enabled,
+    corsProxyUrl: str(saved.corsProxyUrl) || proxyApp().url || d.corsProxyUrl,
     llm,
     tts: fromApp('tts', TTS_PRESETS, 'openai'),
     stt: fromApp('stt', STT_PRESETS, 'openai'),

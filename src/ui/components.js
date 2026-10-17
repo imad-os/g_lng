@@ -62,9 +62,9 @@ export function initAiBadge() {
   onAiStatus((s) => {
     clearTimeout(hide);
     badge.hidden = !s.label;
-    badge.className = `ai-badge ${s.busy ? 'busy' : ''}`;
-    badge.textContent = `${s.kind === 'voice' ? '🔊' : '🤖'} ${s.label}`;
-    if (!s.busy) hide = setTimeout(() => { badge.hidden = true; }, 4000);
+    badge.className = `ai-badge ${s.busy ? 'busy' : ''} ${s.error ? 'err' : ''}`;
+    badge.textContent = s.error ? `⚠ ${s.label}: ${s.error}` : `${s.kind === 'voice' ? '🔊' : '🤖'} ${s.label}`;
+    if (!s.busy) hide = setTimeout(() => { badge.hidden = true; }, s.error ? 9000 : 4000);
   });
 }
 

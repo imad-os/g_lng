@@ -88,13 +88,25 @@ function buildUnit(L, level, unit) {
   const typeable = !['ar', 'zgh'].includes(L);      // typing a Latin-script answer; Arabic and Tifinagh need their own keyboards
   const learnLessons = Math.max(1, Math.ceil(words.length / 5));
   const wordGroups = chunk(words, learnLessons);
-  const sentenceGroups = chunk(sentences, learnLessons);
+  const usesOf = Object.fromEntries(unit.sentences.filter((s) => s.text[L]).map((s) => [`s.${s.id}`, (s.uses || []).map((w) => `w.${w}`).filter((k) => words.includes(k))]));
+  // Each learn lesson gets the sentences that use the words it introduces (and, if possible, only words met so far).
+  const taken = new Set();
+  const sentenceGroups = wordGroups.map((group, i) => {
+    const seen = new Set([...wordGroups.slice(0, i + 1).flat()]);
+    const mineSet = new Set(group);
+    const ranked = sentences.filter((k) => !taken.has(k) && usesOf[k].some((w) => mineSet.has(w)))
+      .map((k) => ({ k, extra: usesOf[k].filter((w) => !seen.has(w)).length, hits: usesOf[k].filter((w) => mineSet.has(w)).length }))
+      .sort((a, b) => a.extra - b.extra || b.hits - a.hits);
+    const chosen = ranked.slice(0, 2).map((r) => r.k);
+    chosen.forEach((k) => taken.add(k));
+    return chosen;
+  });
   const lessons = [];
   const makeLesson = (type, order, title, newWords, build) => {
     const id = `${unitId}-l${order}`;
     const ex = [];
     const add = (e) => { if (e) ex.push({ id: `${id}-e${String(ex.length + 1).padStart(2, '0')}`, ...e }); };
-    build(add);
+    build(add, ex);
     const used = new Set();
     for (const e of ex) for (const k of refs(e)) used.add(k);
     const lessonVocab = {};
@@ -109,7 +121,7 @@ function buildUnit(L, level, unit) {
     for (const g of UI_LANGS) title[g] = group.slice(0, 3).map((k) => vocab[k].g[g]).filter(Boolean).join(g === 'ar' ? '، ' : ', ');
     const mine = shuffle(group, rand);
     const sents = sentenceGroups[i] || [];
-    makeLesson('learn', i + 1, title, group, (add) => {
+    makeLesson('learn', i + 1, title, group, (add, ex) => {
       for (const k of group) add(pick('pick_translation', k, words));
       if (group.length + known.length >= 3) add({ type: 'match_pairs', items: shuffle([...group, ...shuffle(known, rand)].slice(0, 5), rand) });
       add(pick('listen_pick', mine[0], words));
@@ -117,7 +129,8 @@ function buildUnit(L, level, unit) {
       if (sents[0]) add(wordBank(sents[0]));
       if (typeable) add({ type: 'type_answer', item: mine[2] || mine[0] });
       else if (sents[1]) add(fillGap(sents[1]));
-      if (i % 2 === 0 && sents[0]) add({ type: 'speak', item: sents[0] });
+      if (i % 2 === 0) add({ type: 'speak', item: sents[0] || mine[0] });
+      while (ex.length < 8) { const tf = trueFalse(group[ex.length % group.length], [...group, ...known]); if (!tf) break; add(tf); }
     });
   });
 

@@ -58,6 +58,8 @@ Until Firestore is seeded, the app reads the same content from `content/build` o
 | `tts` | device voice | voice that speaks to the learner: `{ "provider": "magpie" \| "openai" \| "riva", "endpoint": "", "voice": "Aria", "key": "" }`. Magpie speaks en/es/fr/de (the app sends the language with each request); other languages use the clips or the device voice |
 | `stt` | device mic | microphone for speaking exercises and chat: `{ "provider": "webspeech" \| "openai", "endpoint": "", "key": "" }` |
 
+| `corsProxy` | off | `{ "enabled": true, "url": "https://<your-worker>.workers.dev/" }`: sends the AI calls through your own CORS proxy (see below). Needed because My PC opens the app in a browser frame, and AI providers do not allow browser calls |
+
 Example (App Store Manager -> Config):
 
 ```json
@@ -67,6 +69,15 @@ Example (App Store Manager -> Config):
   "stt": { "provider": "webspeech" }
 }
 ```
+
+### CORS proxy (needed for the AI voice and chat)
+
+The app runs inside a browser frame, so AI providers (NVIDIA, OpenAI, Gemini) refuse its calls (CORS). The public `cors-anywhere` demo only works on a PC after unlocking it by hand, never on a TV. Deploy your own once:
+
+1. Cloudflare dashboard -> Workers & Pages -> Create -> Worker, paste `tools/cors-proxy-worker.js`, deploy (free plan is enough).
+2. In Config add `"corsProxy": { "enabled": true, "url": "https://<your-worker>.workers.dev/" }`.
+
+The worker only forwards to NVIDIA, OpenAI and Google AI hosts and never stores keys. If the voice fails, the badge at the bottom left shows the reason (for example `request blocked (CORS?)` or the provider's error).
 
 Keys, models and addresses are read only from this config; the app's AI screen no longer edits them. It only holds the switches (speaking exercises, AI lessons) and the CORS proxy for testing in a PC browser (turn it off on the TV). The config is visible to the app on every profile, so use keys you are happy to share with your users.
 | `ai` | `false` | AI extras (Phase 4) |
