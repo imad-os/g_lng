@@ -1,7 +1,7 @@
 // Language model client: every call goes to MyPC.ai (see bridge.js). Error messages come from t('ai.err*').
-import { generate, fail, lastTurns, llmTarget, aiSupported } from './bridge.js?v=2.7.0';
-import { setAiStatus } from './status.js?v=2.7.0';
-import { t } from '../platform/i18n.js?v=2.7.0';
+import { generate, fail, lastTurns, llmTarget, aiSupported } from './bridge.js?v=2.7.1';
+import { setAiStatus } from './status.js?v=2.7.1';
+import { t } from '../platform/i18n.js?v=2.7.1';
 
 const START = 'Start the conversation with a greeting and one easy question.';
 // `messages` (optional) is the conversation so far: [{role: 'user' | 'assistant', content}]; otherwise `user` is the only turn.
@@ -14,12 +14,12 @@ export async function chat({ system, user, messages, json = false, schema, signa
   if (earlier.length && earlier[0].role !== 'user') earlier.unshift({ role: 'user', content: START });
   const { provider, model } = llmTarget();
   const req = {
-    provider, ...(model ? { model } : {}), system: system || undefined,
+    ...(provider ? { provider } : {}), ...(model ? { model } : {}), system: system || undefined,
     ...(earlier.length ? { messages: earlier } : {}), prompt: last.content,
     output: json ? 'json' : 'text', ...(json && schema ? { schema } : {}),
     temperature: 0.4, maxTokens,
   };
-  const label = `${provider}${model ? ` · ${model}` : ''}`;
+  let label = [provider, model].filter(Boolean).join(' · ') || 'AI';
   setAiStatus({ kind: 'llm', busy: true, label });
   try {
     let res;
@@ -28,6 +28,7 @@ export async function chat({ system, user, messages, json = false, schema, signa
         res = await generate({ ...req, output: 'text', schema: undefined }, { signal, onDelta });
       } else throw e;
     }
+    if (res && (res.provider || res.model)) label = [res.provider, res.model].filter(Boolean).join(' · ');   // what My PC really used
     const text = json && res && res.json !== undefined ? JSON.stringify(res.json) : String((res && res.text) || '').trim();
     if (!text) throw new Error(t('ai.errEmpty'));
     return text;

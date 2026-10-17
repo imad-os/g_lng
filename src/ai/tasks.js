@@ -1,8 +1,8 @@
 // What the model is asked to do: explain an exercise or a unit, or invent a small custom lesson.
 // The model is never trusted: its JSON is parsed and checked strictly before a lesson is built from it.
-import { chat } from './client.js?v=2.7.0';
-import { t, pickLang } from '../platform/i18n.js?v=2.7.0';
-import { tokenize } from '../learning/text.js?v=2.7.0';
+import { chat } from './client.js?v=2.7.1';
+import { t, pickLang } from '../platform/i18n.js?v=2.7.1';
+import { tokenize } from '../learning/text.js?v=2.7.1';
 
 const UI_NAMES = { en: 'English', fr: 'French', es: 'Spanish', ar: 'Arabic' };
 const MAX_LEN = 90;

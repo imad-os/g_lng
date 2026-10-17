@@ -1,7 +1,7 @@
 // Optional AI switches. Saved only through MyPC.save (per profile). The AI service, model and keys are My PC's
 // (Settings > AI on the TV); the owner can pick service and model in the App Store Manager (Config): see bridge.js.
-import { loadExtra, saveExtra } from '../data/progress-store.js?v=2.7.0';
-import { aiSupported } from './bridge.js?v=2.7.0';
+import { loadExtra, saveExtra } from '../data/progress-store.js?v=2.7.1';
+import { aiSupported } from './bridge.js?v=2.7.1';
 
 export function aiConfig() {
   let saved = {};

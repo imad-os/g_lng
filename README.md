@@ -54,21 +54,21 @@ Until Firestore is seeded, the app reads the same content from `content/build` o
 | `contentSource` | `"auto"` | `auto` tries Firestore then the static copy; `firestore` or `static` force one |
 | `audioBase` | `"audio"` | folder of pre-generated voice clips (`audio/<lang>/<hash>.mp3`, made by `python3 tools/gen-audio.py`); a missing clip falls back to the device voice |
 | `speech` | `true` | allow the device voice |
-| `ai` | `{}` | which My PC AI service and model the app uses: `{ "provider": "nvidia", "model": "meta/llama-3.3-70b-instruct", "voice": "Aria" }`. All optional: without it the app asks NVIDIA with the model shown here. `voice` is the Magpie speaker |
+| `ai` | `{}` | optional: `{ "provider": "nvidia", "model": "...", "voice": "Aria" }`. Leave `provider` and `model` out and the app uses whatever service and model My PC has (App Store Manager > AI services); set them only to force one. `voice` is the Magpie speaker |
 
 Example (App Store Manager -> Config):
 
 ```json
-{ "ai": { "provider": "nvidia", "model": "meta/llama-3.3-70b-instruct", "voice": "Aria" } }
+{ "ai": { "voice": "Aria" } }
 ```
 
 ### AI, voice and microphone (through My PC)
 
 The app has no API key, address or proxy of its own. Everything AI goes through My PC (guide section 14, API level 10):
 
-- **Chat practice, AI lessons, explanations**: `MyPC.ai.generate` with the service above. Add the service once on the TV: **My PC Settings > AI** (NVIDIA, with its key). The first AI use asks the user to allow it.
-- **Voice that speaks**: after the recorded clips, NVIDIA Magpie through `MyPC.ai.generate({ task: "speech" })` for English, Spanish, French and German (set the Magpie function in My PC Settings > AI > NVIDIA). Arabic and Tamazight use the clips or the device voice.
-- **Speaking exercises**: `MyPC.mic.record` then `MyPC.ai.generate({ task: "transcribe" })` with a service that transcribes (Gemini or OpenAI added in My PC). Without one, the "I said it" button stays.
+- **Chat practice, AI lessons, explanations**: `MyPC.ai.generate` with the service above. Set the service once for every TV: **App Store Manager > AI services** (NVIDIA, with its key). The first AI use asks the user to allow it.
+- **Voice that speaks**: after the recorded clips, NVIDIA Magpie through `MyPC.ai.generate({ task: "speech" })` for English, Spanish, French and German (set the Magpie function in App Store Manager > AI services > NVIDIA). Arabic and Tamazight use the clips or the device voice.
+- **Speaking exercises**: `MyPC.mic.record` then `MyPC.ai.generate({ task: "transcribe" })` with a service that transcribes (Gemini or OpenAI added in AI services). Without one, the "I said it" button stays.
 - An older My PC (API level below 10) or no service set up: the AI buttons explain why and everything else works. The badge at the bottom left shows the service/model and any error.
 - Testing in a PC browser: AI needs a provider object with your own test key (never committed); see the guide. Test inside My PC when you can.
 

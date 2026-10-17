@@ -1,8 +1,7 @@
 // The only door to AI, the voice and the microphone: My PC (MyPC.ai, MyPC.mic, guide section 14). The keys stay on the TV;
 // the app never sees them, never calls a provider itself and has no proxy. Errors become short texts of t('ai.err*').
-import { t } from '../platform/i18n.js?v=2.7.0';
+import { t } from '../platform/i18n.js?v=2.7.1';
 
-export const DEFAULT_MODEL = 'meta/llama-3.3-70b-instruct';
 const MAX_TURNS = 10;
 
 let MP = null;
@@ -27,11 +26,10 @@ export function micSupported() {
   return true;
 }
 
-// Language model target: the app config picks the service and model, otherwise NVIDIA and the guide's model.
+// Language model target: only what the owner put in the app config (ai.provider, ai.model). Empty means My PC decides:
+// the app config on its side, else the service and model set in the App Store Manager > AI services.
 export function llmTarget() {
-  const provider = str(appAi.provider) || 'nvidia';
-  const model = str(appAi.model) || (provider === 'nvidia' ? DEFAULT_MODEL : '');
-  return { provider, model };
+  return { provider: str(appAi.provider), model: str(appAi.model) };
 }
 export const voiceName = () => str(appAi.voice) || 'Aria';
 

@@ -1,7 +1,7 @@
 // Global weekly league over Firestore REST. Each player writes only their own document league/w<week>/players/<id>
 // ({name, xp}); anyone can read the top list. Scores are not verified (there is no login), the rules only cap the growth.
-import { firebaseConfig } from './firebase-config.js?v=2.7.0';
-import { decodeFields } from './firestore.js?v=2.7.0';
+import { firebaseConfig } from './firebase-config.js?v=2.7.1';
+import { decodeFields } from './firestore.js?v=2.7.1';
 
 const root = `https://firestore.googleapis.com/v1/projects/${encodeURIComponent(firebaseConfig.projectId)}/databases/(default)/documents/`;
 const key = '?key=' + encodeURIComponent(firebaseConfig.apiKey);
