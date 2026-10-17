@@ -6,7 +6,7 @@
   "type": "app",
   "entry": "index.html",
   "icon": "icon.svg",
-  "version": "2.5.7",
+  "version": "2.6.0",
   "config": {
     "contentSource": "auto",
     "audioBase": "audio",

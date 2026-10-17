@@ -1,6 +1,6 @@
 // Owner settings from the App Store Manager's Config button (MyPC.app_config), with defaults.
 // app_config is not secret: never put API keys here.
-import { firebaseConfig } from './data/firebase-config.js?v=2.5.7';
+import { firebaseConfig } from './data/firebase-config.js?v=2.6.0';
 
 export function readConfig(appConfig) {
   const c = appConfig && typeof appConfig === 'object' ? appConfig : {};

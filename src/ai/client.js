@@ -1,8 +1,8 @@
 // Language model client: OpenAI-compatible chat (NVIDIA NIM, OpenAI) and Gemini generateContent.
 // Error messages come from t('ai.err*') and never contain the key.
-import { aiConfig, viaProxy } from './config.js?v=2.5.7';
-import { setAiStatus } from './status.js?v=2.5.7';
-import { t } from '../platform/i18n.js?v=2.5.7';
+import { aiConfig, viaProxy } from './config.js?v=2.6.0';
+import { setAiStatus } from './status.js?v=2.6.0';
+import { t } from '../platform/i18n.js?v=2.6.0';
 
 const TIMEOUT_MS = 30000;
 

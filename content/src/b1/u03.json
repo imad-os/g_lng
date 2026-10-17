@@ -1,40 +1,35 @@
 {
   "id": "u03", "level": "b1", "order": 3,
-  "title": { "en": "Numbers 1 to 10", "fr": "Les nombres de 1 à 10", "es": "Números del 1 al 10", "ar": "الأعداد من 1 إلى 10" },
-  "tip": {
-    "en": "Learn the numbers in order, as a song: one, two, three. Then use them with words you already know, like brothers and sisters.",
-    "fr": "Apprenez les nombres dans l'ordre, comme une chanson : un, deux, trois. Utilisez-les ensuite avec des mots connus, comme frères et sœurs.",
-    "es": "Aprende los números en orden, como una canción: uno, dos, tres. Después úsalos con palabras que ya conoces, como hermanos y hermanas.",
-    "ar": "تعلّم الأعداد بالترتيب كأنها أغنية: واحد، اثنان، ثلاثة. ثم استعملها مع كلمات تعرفها مثل الإخوة والأخوات."
-  },
+  "title": {"en":"Numbers 1 to 10","fr":"Les nombres de 1 à 10","es":"Números del 1 al 10","ar":"الأعداد من 1 إلى 10"},
+  "tip": {"en":"Learn the numbers in order, as a song: one, two, three. Then use them with words you already know, like brothers and sisters.","fr":"Apprenez les nombres dans l'ordre, comme une chanson : un, deux, trois. Utilisez-les ensuite avec des mots connus, comme frères et sœurs.","es":"Aprende los números en orden, como una canción: uno, dos, tres. Después úsalos con palabras que ya conoces, como hermanos y hermanas.","ar":"تعلّم الأعداد بالترتيب كأنها أغنية: واحد، اثنان، ثلاثة. ثم استعملها مع كلمات تعرفها مثل الإخوة والأخوات."},
   "words": [
-    { "id": "one", "text": { "en": "one", "fr": "un", "es": "uno", "ar": "واحد", "de": "eins", "zgh": "ⵢⴰⵏ" }, "tr": { "ar": "wāḥid", "zgh": "yan" } },
-    { "id": "two", "text": { "en": "two", "fr": "deux", "es": "dos", "ar": "اثنان", "de": "zwei", "zgh": "ⵙⵉⵏ" }, "tr": { "ar": "ithnān", "zgh": "sin" } },
-    { "id": "three", "text": { "en": "three", "fr": "trois", "es": "tres", "ar": "ثلاثة", "de": "drei", "zgh": "ⴽⵔⴰⴹ" }, "tr": { "ar": "thalātha", "zgh": "krad" } },
-    { "id": "four", "text": { "en": "four", "fr": "quatre", "es": "cuatro", "ar": "أربعة", "de": "vier", "zgh": "ⴽⴽⵓⵥ" }, "tr": { "ar": "arbaʿa", "zgh": "kkuz" } },
-    { "id": "five", "text": { "en": "five", "fr": "cinq", "es": "cinco", "ar": "خمسة", "de": "fünf", "zgh": "ⵙⵎⵎⵓⵙ" }, "tr": { "ar": "khamsa", "zgh": "smmus" } },
-    { "id": "six", "text": { "en": "six", "fr": "six", "es": "seis", "ar": "ستة", "de": "sechs", "zgh": "ⵙⴹⵉⵙ" }, "tr": { "ar": "sitta", "zgh": "sdis" } },
-    { "id": "seven", "text": { "en": "seven", "fr": "sept", "es": "siete", "ar": "سبعة", "de": "sieben", "zgh": "ⵙⴰ" }, "tr": { "ar": "sabʿa", "zgh": "sa" } },
-    { "id": "eight", "text": { "en": "eight", "fr": "huit", "es": "ocho", "ar": "ثمانية", "de": "acht", "zgh": "ⵜⴰⵎ" }, "tr": { "ar": "thamāniya", "zgh": "tam" } },
-    { "id": "nine", "text": { "en": "nine", "fr": "neuf", "es": "nueve", "ar": "تسعة", "de": "neun", "zgh": "ⵜⵣⴰ" }, "tr": { "ar": "tisʿa", "zgh": "tza" } },
-    { "id": "ten", "text": { "en": "ten", "fr": "dix", "es": "diez", "ar": "عشرة", "de": "zehn", "zgh": "ⵎⵔⴰⵡ" }, "tr": { "ar": "ʿashara", "zgh": "mraw" } },
-    { "id": "zero", "text": { "en": "zero", "fr": "zéro", "es": "cero", "ar": "صفر", "de": "null" }, "tr": { "ar": "ṣifr" } },
-    { "id": "how_many", "text": { "en": "how many", "fr": "combien", "es": "cuántos", "ar": "كم", "de": "wie viele" }, "tr": { "ar": "kam" } }
+    {"id":"one","text":{"en":"one","fr":"un","es":"uno","ar":"واحد","de":"eins","zgh":"ⵢⴰⵏ"},"tr":{"ar":"wāḥid","zgh":"yan"}},
+    {"id":"two","text":{"en":"two","fr":"deux","es":"dos","ar":"اثنان","de":"zwei","zgh":"ⵙⵉⵏ"},"tr":{"ar":"ithnān","zgh":"sin"}},
+    {"id":"three","text":{"en":"three","fr":"trois","es":"tres","ar":"ثلاثة","de":"drei","zgh":"ⴽⵔⴰⴹ"},"tr":{"ar":"thalātha","zgh":"krad"}},
+    {"id":"four","text":{"en":"four","fr":"quatre","es":"cuatro","ar":"أربعة","de":"vier","zgh":"ⴽⴽⵓⵥ"},"tr":{"ar":"arbaʿa","zgh":"kkuz"}},
+    {"id":"five","text":{"en":"five","fr":"cinq","es":"cinco","ar":"خمسة","de":"fünf","zgh":"ⵙⵎⵎⵓⵙ"},"tr":{"ar":"khamsa","zgh":"smmus"}},
+    {"id":"six","text":{"en":"six","fr":"six","es":"seis","ar":"ستة","de":"sechs","zgh":"ⵙⴹⵉⵙ"},"tr":{"ar":"sitta","zgh":"sdis"}},
+    {"id":"seven","text":{"en":"seven","fr":"sept","es":"siete","ar":"سبعة","de":"sieben","zgh":"ⵙⴰ"},"tr":{"ar":"sabʿa","zgh":"sa"}},
+    {"id":"eight","text":{"en":"eight","fr":"huit","es":"ocho","ar":"ثمانية","de":"acht","zgh":"ⵜⴰⵎ"},"tr":{"ar":"thamāniya","zgh":"tam"}},
+    {"id":"nine","text":{"en":"nine","fr":"neuf","es":"nueve","ar":"تسعة","de":"neun","zgh":"ⵜⵣⴰ"},"tr":{"ar":"tisʿa","zgh":"tza"}},
+    {"id":"ten","text":{"en":"ten","fr":"dix","es":"diez","ar":"عشرة","de":"zehn","zgh":"ⵎⵔⴰⵡ"},"tr":{"ar":"ʿashara","zgh":"mraw"}},
+    {"id":"zero","text":{"en":"zero","fr":"zéro","es":"cero","ar":"صفر","de":"null"},"tr":{"ar":"ṣifr"}},
+    {"id":"how_many","text":{"en":"how many","fr":"combien","es":"cuántos","ar":"كم","de":"wie viele"},"tr":{"ar":"kam"}}
   ],
   "sentences": [
-    { "id": "s01", "text": { "en": "I have three brothers.", "fr": "J'ai trois frères.", "es": "Tengo tres hermanos.", "ar": "عندي ثلاثة إخوة.", "de": "Ich habe drei Brüder." }, "tr": { "ar": "ʿindī thalāthat ikhwa." } },
-    { "id": "s02", "text": { "en": "I have one sister.", "fr": "J'ai une sœur.", "es": "Tengo una hermana.", "ar": "عندي أخت واحدة.", "de": "Ich habe eine Schwester." }, "tr": { "ar": "ʿindī ukht wāḥida." } },
-    { "id": "s03", "text": { "en": "How many brothers do you have?", "fr": "Combien de frères as-tu ?", "es": "¿Cuántos hermanos tienes?", "ar": "كم أخا عندك؟", "de": "Wie viele Brüder hast du?" }, "tr": { "ar": "kam akhan ʿindak?" } },
-    { "id": "s04", "text": { "en": "Two and three are five.", "fr": "Deux et trois font cinq.", "es": "Dos y tres son cinco.", "ar": "اثنان وثلاثة خمسة.", "de": "Zwei und drei sind fünf." }, "tr": { "ar": "ithnān wa-thalātha khamsa." } },
-    { "id": "s05", "text": { "en": "Four brothers and one sister.", "fr": "Quatre frères et une sœur.", "es": "Cuatro hermanos y una hermana.", "ar": "أربعة إخوة وأخت واحدة.", "de": "Vier Brüder und eine Schwester." }, "tr": { "ar": "arbaʿat ikhwa wa-ukht wāḥida." } },
-    { "id": "s06", "text": { "en": "Two, please.", "fr": "Deux, s'il vous plaît.", "es": "Dos, por favor.", "ar": "اثنان من فضلك.", "de": "Zwei, bitte." }, "tr": { "ar": "ithnān min faḍlik." } },
-    { "id": "s07", "text": { "en": "Five and five are ten.", "fr": "Cinq et cinq font dix.", "es": "Cinco y cinco son diez.", "ar": "خمسة وخمسة عشرة.", "de": "Fünf und fünf sind zehn." }, "tr": { "ar": "khamsa wa-khamsa ʿashara." } },
-    { "id": "s08", "text": { "en": "Zero is not one.", "fr": "Zéro n'est pas un.", "es": "Cero no es uno.", "ar": "الصفر ليس واحدا.", "de": "Null ist nicht eins." }, "tr": { "ar": "aṣ-ṣifr laysa wāḥidan." } },
-    { "id": "s09", "text": { "en": "Nine and one are ten.", "fr": "Neuf et un font dix.", "es": "Nueve y uno son diez.", "ar": "تسعة وواحد عشرة.", "de": "Neun und eins sind zehn." }, "tr": { "ar": "tisʿa wa-wāḥid ʿashara." } },
-    { "id": "s10", "text": { "en": "How many sisters? Two.", "fr": "Combien de sœurs ? Deux.", "es": "¿Cuántas hermanas? Dos.", "ar": "كم أختا؟ اثنتان.", "de": "Wie viele Schwestern? Zwei." }, "tr": { "ar": "kam ukhtan? ithnatān." } },
-    { "id": "s11", "text": { "en": "Six, seven, eight.", "fr": "Six, sept, huit.", "es": "Seis, siete, ocho.", "ar": "ستة، سبعة، ثمانية.", "de": "Sechs, sieben, acht.", "zgh": "ⵙⴹⵉⵙ, ⵙⴰ, ⵜⴰⵎ." }, "tr": { "ar": "sitta, sabʿa, thamāniya.", "zgh": "sdis, sa, tam." } },
-    { "id": "s12", "text": { "en": "And you?", "fr": "Et toi ?", "es": "¿Y tú?", "ar": "وأنت؟", "de": "Und du?" }, "tr": { "ar": "wa-anta?" } },
-    { "id": "s13", "text": { "en": "One, two, three!", "fr": "Un, deux, trois !", "es": "¡Uno, dos, tres!", "ar": "واحد، اثنان، ثلاثة!", "de": "Eins, zwei, drei!", "zgh": "ⵢⴰⵏ, ⵙⵉⵏ, ⴽⵔⴰⴹ!" }, "tr": { "ar": "wāḥid, ithnān, thalātha!", "zgh": "yan, sin, krad!" } }
+    {"id":"s01","text":{"en":"I have three brothers.","fr":"J'ai trois frères.","es":"Tengo tres hermanos.","ar":"عندي ثلاثة إخوة.","de":"Ich habe drei Brüder."},"tr":{"ar":"ʿindī thalāthat ikhwa."},"uses":["three"]},
+    {"id":"s02","text":{"en":"I have one sister.","fr":"J'ai une sœur.","es":"Tengo una hermana.","ar":"عندي أخت واحدة.","de":"Ich habe eine Schwester."},"tr":{"ar":"ʿindī ukht wāḥida."},"uses":["one"]},
+    {"id":"s03","text":{"en":"How many brothers do you have?","fr":"Combien de frères as-tu ?","es":"¿Cuántos hermanos tienes?","ar":"كم أخا عندك؟","de":"Wie viele Brüder hast du?"},"tr":{"ar":"kam akhan ʿindak?"},"uses":["how_many"]},
+    {"id":"s04","text":{"en":"Two and three are five.","fr":"Deux et trois font cinq.","es":"Dos y tres son cinco.","ar":"اثنان وثلاثة خمسة.","de":"Zwei und drei sind fünf."},"tr":{"ar":"ithnān wa-thalātha khamsa."},"uses":["two","three","five"]},
+    {"id":"s05","text":{"en":"Four brothers and one sister.","fr":"Quatre frères et une sœur.","es":"Cuatro hermanos y una hermana.","ar":"أربعة إخوة وأخت واحدة.","de":"Vier Brüder und eine Schwester."},"tr":{"ar":"arbaʿat ikhwa wa-ukht wāḥida."},"uses":["one","four"]},
+    {"id":"s06","text":{"en":"Two, please.","fr":"Deux, s'il vous plaît.","es":"Dos, por favor.","ar":"اثنان من فضلك.","de":"Zwei, bitte."},"tr":{"ar":"ithnān min faḍlik."},"uses":["two"]},
+    {"id":"s07","text":{"en":"Five and five are ten.","fr":"Cinq et cinq font dix.","es":"Cinco y cinco son diez.","ar":"خمسة وخمسة عشرة.","de":"Fünf und fünf sind zehn."},"tr":{"ar":"khamsa wa-khamsa ʿashara."},"uses":["five","ten"]},
+    {"id":"s08","text":{"en":"Zero is not one.","fr":"Zéro n'est pas un.","es":"Cero no es uno.","ar":"الصفر ليس واحدا.","de":"Null ist nicht eins."},"tr":{"ar":"aṣ-ṣifr laysa wāḥidan."},"uses":["one","zero"]},
+    {"id":"s09","text":{"en":"Nine and one are ten.","fr":"Neuf et un font dix.","es":"Nueve y uno son diez.","ar":"تسعة وواحد عشرة.","de":"Neun und eins sind zehn."},"tr":{"ar":"tisʿa wa-wāḥid ʿashara."},"uses":["one","nine","ten"]},
+    {"id":"s10","text":{"en":"How many sisters? Two.","fr":"Combien de sœurs ? Deux.","es":"¿Cuántas hermanas? Dos.","ar":"كم أختا؟ اثنتان.","de":"Wie viele Schwestern? Zwei."},"tr":{"ar":"kam ukhtan? ithnatān."},"uses":["two","how_many"]},
+    {"id":"s11","text":{"en":"Six, seven, eight.","fr":"Six, sept, huit.","es":"Seis, siete, ocho.","ar":"ستة، سبعة، ثمانية.","de":"Sechs, sieben, acht.","zgh":"ⵙⴹⵉⵙ, ⵙⴰ, ⵜⴰⵎ."},"tr":{"ar":"sitta, sabʿa, thamāniya.","zgh":"sdis, sa, tam."},"uses":["six","seven","eight"]},
+    {"id":"s12","text":{"en":"And you?","fr":"Et toi ?","es":"¿Y tú?","ar":"وأنت؟","de":"Und du?"},"tr":{"ar":"wa-anta?"},"uses":[]},
+    {"id":"s13","text":{"en":"One, two, three!","fr":"Un, deux, trois !","es":"¡Uno, dos, tres!","ar":"واحد، اثنان، ثلاثة!","de":"Eins, zwei, drei!","zgh":"ⵢⴰⵏ, ⵙⵉⵏ, ⴽⵔⴰⴹ!"},"tr":{"ar":"wāḥid, ithnān, thalātha!","zgh":"yan, sin, krad!"},"uses":["one","two","three"]}
   ],
-  "dialogue": ["s03", "s01", "s12", "s02"]
+  "dialogue": ["s03","s01","s12","s02"]
 }

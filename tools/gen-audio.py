@@ -3,7 +3,7 @@
 
 Free and offline: eSpeak NG (pip install espeakng-loader) + ffmpeg. The clip name is the item's `a` key from the
 content build (language + hash of the text), so identical texts share one file. Existing clips are kept.
-Usage: python3 tools/gen-audio.py [lang ...]
+Usage: python3 tools/gen-audio.py [--prune] [lang ...]   (--prune also deletes clips no lesson uses any more)
 """
 import ctypes, glob, json, os, subprocess, sys
 import espeakng_loader
@@ -34,7 +34,8 @@ def encode(pcm, out):
                     '-af', 'loudnorm=I=-18:TP=-2,silenceremove=1:0:-50dB', '-codec:a', 'libmp3lame', '-b:a', '24k', '-ar', '22050', out],
                    input=pcm, check=True)
 
-langs = sys.argv[1:] or list(VOICES)
+prune = '--prune' in sys.argv
+langs = [a for a in sys.argv[1:] if a != '--prune'] or list(VOICES)
 todo = {}
 for f in glob.glob('content/build/courses/*/lessons/*.json'):
     try: d = json.load(open(f))
@@ -53,3 +54,10 @@ for a, text in sorted(todo.items()):
     done += 1
     if done % 500 == 0: print(done, flush=True)
 print('written', done)
+if prune:
+    keep = {f'audio/{a}.mp3' for a in todo}
+    gone = 0
+    for l in langs:
+        for f in glob.glob(f'audio/{l}/*.mp3'):
+            if f not in keep: os.remove(f); gone += 1
+    print('pruned', gone)

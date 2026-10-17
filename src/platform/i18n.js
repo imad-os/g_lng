@@ -1,9 +1,9 @@
 // Interface texts in the 4 languages My PC supports (info.lang), English as the fallback.
-import en from '../i18n/en.js?v=2.5.7';
-import fr from '../i18n/fr.js?v=2.5.7';
-import es from '../i18n/es.js?v=2.5.7';
-import ar from '../i18n/ar.js?v=2.5.7';
-import more from '../i18n/more.js?v=2.5.7';
+import en from '../i18n/en.js?v=2.6.0';
+import fr from '../i18n/fr.js?v=2.6.0';
+import es from '../i18n/es.js?v=2.6.0';
+import ar from '../i18n/ar.js?v=2.6.0';
+import more from '../i18n/more.js?v=2.6.0';
 
 export const UI_LANGS = ['en', 'fr', 'es', 'ar'];
 // more.js holds the texts of newer features per language: { en: { ai: {...} }, fr: {...} }.
