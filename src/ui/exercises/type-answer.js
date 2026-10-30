@@ -1,10 +1,11 @@
-// type_answer: see the meaning, type the word. Case, punctuation and accents are forgiven.
-import { h, focusable } from '../../platform/dom.js?v=2.7.1';
-import { t } from '../../platform/i18n.js?v=2.7.1';
-import { speakerButton } from '../components.js?v=2.7.1';
-import { gloss } from './common.js?v=2.7.1';
+// type_answer: see the meaning, type the word. Case, punctuation, accents (el nino = el niño) and one slip in a long word are forgiven.
+import { h, focusable } from '../../platform/dom.js?v=2.7.2';
+import { t } from '../../platform/i18n.js?v=2.7.2';
+import { speakerButton } from '../components.js?v=2.7.2';
+import { gloss } from './common.js?v=2.7.2';
+import { normalize, sameAnswer } from '../../learning/forgive.js?v=2.7.2';
 
-export const normalize = (s) => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
+export { normalize };
 
 export default function typeAnswer(ctx) {
   const { ex, vocab, from, course } = ctx;
@@ -24,7 +25,7 @@ export default function typeAnswer(ctx) {
       h('div', { class: 'ex-head' }, speakerButton((slow) => ctx.say(ex.item, slow)), h('span', { class: 'meaning big', dir: 'auto' }, gloss(item, from))),
       field, h('div', null, skip)),
     check() {
-      const ok = normalize(input.value) === normalize(item.t);
+      const ok = sameAnswer(input.value, item.t);
       input.blur();
       ctx.answer(ok, { picked: input.value, solution: item.t });
     },

@@ -1,17 +1,12 @@
 // speak: read the sentence aloud. The device listens when it can; otherwise the learner says it and confirms.
-import { h, focusable } from '../../platform/dom.js?v=2.7.1';
-import { t } from '../../platform/i18n.js?v=2.7.1';
-import { itemText, speakerButton } from '../components.js?v=2.7.1';
-import { sttAvailable, listenOnce } from '../../ai/speech.js?v=2.7.1';
-import { gloss } from './common.js?v=2.7.1';
-import { normalize } from './type-answer.js?v=2.7.1';
+import { h, focusable } from '../../platform/dom.js?v=2.7.2';
+import { t } from '../../platform/i18n.js?v=2.7.2';
+import { itemText, speakerButton } from '../components.js?v=2.7.2';
+import { sttAvailable, listenOnce } from '../../ai/speech.js?v=2.7.2';
+import { gloss } from './common.js?v=2.7.2';
+import { heardEnough } from '../../learning/forgive.js?v=2.7.2';
 
-function matches(heard, target) {
-  const want = normalize(target).split(' ').filter(Boolean);
-  const got = new Set(normalize(heard).split(' '));
-  if (!want.length) return false;
-  return want.filter((w) => got.has(w)).length / want.length >= 0.6;
-}
+const matches = heardEnough;
 
 export default function speak(ctx) {
   const { ex, vocab, from, course } = ctx;

@@ -1,7 +1,7 @@
 // Language model client: every call goes to MyPC.ai (see bridge.js). Error messages come from t('ai.err*').
-import { generate, fail, lastTurns, llmTarget, aiSupported } from './bridge.js?v=2.7.1';
-import { setAiStatus } from './status.js?v=2.7.1';
-import { t } from '../platform/i18n.js?v=2.7.1';
+import { generate, fail, lastTurns, llmTarget, aiSupported } from './bridge.js?v=2.7.2';
+import { setAiStatus } from './status.js?v=2.7.2';
+import { t } from '../platform/i18n.js?v=2.7.2';
 
 const START = 'Start the conversation with a greeting and one easy question.';
 // `messages` (optional) is the conversation so far: [{role: 'user' | 'assistant', content}]; otherwise `user` is the only turn.

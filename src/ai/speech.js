@@ -1,10 +1,10 @@
 // Optional external voice: NVIDIA Magpie text-to-speech and speech to text, both through My PC (bridge.js).
 // Every failure is quiet (false / '') so the caller can fall back to the device voice; keys never reach the app.
-import { aiConfig } from './config.js?v=2.7.1';
-import { aiSupported, micSupported, generate, explain, hopeless, voiceName, recordAndTranscribe, cancelRecording, knownProviders } from './bridge.js?v=2.7.1';
-import { setAiStatus } from './status.js?v=2.7.1';
-import { playVoiceBytes } from '../platform/audio.js?v=2.7.1';
-import { t } from '../platform/i18n.js?v=2.7.1';
+import { aiConfig } from './config.js?v=2.7.2';
+import { aiSupported, micSupported, generate, explain, hopeless, voiceName, recordAndTranscribe, cancelRecording, knownProviders } from './bridge.js?v=2.7.2';
+import { setAiStatus } from './status.js?v=2.7.2';
+import { playVoiceBytes } from '../platform/audio.js?v=2.7.2';
+import { t } from '../platform/i18n.js?v=2.7.2';
 
 const baseLang = (code) => String(code || '').slice(0, 2).toLowerCase();
 // Magpie-Multilingual speaks these (language -> locale code My PC wants). Arabic and Tamazight use the device voice.

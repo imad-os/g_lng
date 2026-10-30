@@ -1,11 +1,11 @@
 // AI settings: what My PC reports (service, model, voice, microphone) and the switches. The AI service and its keys live in
 // My PC (Settings > AI on the TV); the owner can pick service and model in the App Store Manager (Config). Nothing secret here.
-import { h, focusable } from '../../platform/dom.js?v=2.7.1';
-import { t } from '../../platform/i18n.js?v=2.7.1';
-import { aiConfig, saveAiConfig } from '../../ai/config.js?v=2.7.1';
-import { testConnection } from '../../ai/client.js?v=2.7.1';
-import { aiSupported, micSupported, providers, llmTarget, voiceName } from '../../ai/bridge.js?v=2.7.1';
-import { toast } from '../components.js?v=2.7.1';
+import { h, focusable } from '../../platform/dom.js?v=2.7.2';
+import { t } from '../../platform/i18n.js?v=2.7.2';
+import { aiConfig, saveAiConfig } from '../../ai/config.js?v=2.7.2';
+import { testConnection } from '../../ai/client.js?v=2.7.2';
+import { aiSupported, micSupported, providers, llmTarget, voiceName } from '../../ai/bridge.js?v=2.7.2';
+import { toast } from '../components.js?v=2.7.2';
 
 export function adminScreen(app) {
   const cfg = aiConfig();

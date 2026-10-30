@@ -1,6 +1,6 @@
 // The only door to AI, the voice and the microphone: My PC (MyPC.ai, MyPC.mic, guide section 14). The keys stay on the TV;
 // the app never sees them, never calls a provider itself and has no proxy. Errors become short texts of t('ai.err*').
-import { t } from '../platform/i18n.js?v=2.7.1';
+import { t } from '../platform/i18n.js?v=2.7.2';
 
 const MAX_TURNS = 10;
 
